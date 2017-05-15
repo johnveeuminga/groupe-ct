@@ -1,0 +1,19 @@
+@import "utilities/reset";
+
+
+@import "utilities/typography";
+@import "utilities/variables";
+
+@import "utilities/flex";
+
+@import "utilities/mixins";
+@import "utilities/remixins";
+@import "utilities/helpers";
+
+//LAYOUTS
+@import "elements/elements";
+@import "layouts/header";
+@import "layouts/footer";
+
+//PAGES
+@import "pages/home";

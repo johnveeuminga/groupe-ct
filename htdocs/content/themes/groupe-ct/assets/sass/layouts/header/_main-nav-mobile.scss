@@ -1,0 +1,66 @@
+.nav-content-container.nav-mobile {
+  position: relative;
+  background-color: $primary-bg;
+  height:80px;
+
+  @media (min-width: $screen-md-min) {
+    display: none;
+  }
+
+  .nav-content {
+    @include flexbox();
+    @include justify-content(space-between);
+    @include align-items(center);
+  }
+
+  .nav-logo-container {
+    height:75px;
+    width: 75px;
+    background-image: url($assets + "images/logo/logo-ct.png");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: 70px;
+
+  }
+
+
+  .nav-menu-btn-container {
+    background-color: $blue;
+    padding:10px;
+  }
+
+  #menu-btn {
+    width: 25px;
+    height: 25px;
+    position: relative;
+    top:6px;
+    cursor: pointer;
+  }
+
+
+  #menu-btn span{
+    display: block;
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background: white;
+    border-radius: 9px;
+    opacity: 1;
+    left: 0;
+  }
+  #menu-btn span:nth-child(1) {
+    top: 0px;
+  }
+
+  #menu-btn span:nth-child(2),#menu-btn span:nth-child(3) {
+    top: 6px;
+  }
+
+  #menu-btn span:nth-child(4) {
+    top: 12px;
+  }
+
+
+}
+
+

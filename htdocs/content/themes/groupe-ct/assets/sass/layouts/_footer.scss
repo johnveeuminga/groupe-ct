@@ -1,0 +1,140 @@
+.footer-main-container {
+
+  padding: 25px 0;
+  background-color: $black;
+  color:white;
+  @media (min-width: $screen-md-min) {
+    padding:100px 0 50px;
+  }
+  .footer-top {
+    @include flexbox();
+    @include flex-direction(column);
+    text-align: center;
+
+    @media (min-width: $screen-sm-min) {
+      @include flex-direction(row);
+      @include flex-wrap(wrap);
+      @include justify-content(center);
+      text-align: left;
+    }
+
+    @media (min-width: $screen-md-min) {
+      @include justify-content(space-between);
+    }
+
+    .footer-nav {
+      @media (min-width: $screen-sm-min) {
+       flex-basis:40%;
+      }
+      @media (min-width: $screen-md-min) {
+        @include flex-direction(row);
+        flex-basis:auto;
+      }
+    }
+
+    .footer-nav-05 {
+      display: none;
+      @media (min-width: $screen-md-min) {
+        display:block;
+      }
+    }
+
+    .footer-nav-title {
+      @include set-font(14px, $poppins, 400, white);
+      margin:35px 0 10px;
+      @media (min-width: $screen-md-min) {
+        margin-bottom:25px;
+      }
+    }
+
+    .menu-item {
+      padding:5px 0;
+    }
+
+    .nav-link {
+      @include set-font(14px, $mada, 300, $grey-light);
+      font-family: $mada;
+      font-weight: 300;
+      font-size: 14px;
+      text-decoration: none;
+    }
+
+    .footer-nav.contact .nav-link-container {
+      @include flexbox();
+      @include justify-content(space-between);
+      margin-top:50px;
+
+      @media (min-width: $screen-md-min) {
+        display:none;
+      }
+
+      .nav-link {
+        @include set-font(14px, $poppins, 400, white);
+      }
+
+    }
+  }//FOOTER TOP END
+
+  .footer-bottom {
+
+    @include flexbox();
+    @include flex-direction(column);
+
+
+    @media (min-width: $screen-sm-min) {
+      @include justify-content(space-between);
+      @include align-content(center);
+      margin-top:20px;
+    }
+    @media (min-width: $screen-md-min) {
+
+      @include flex-direction(row-reverse);
+      margin-top:50px;
+    }
+
+    .social-media-container {
+      margin:15px 0;
+      text-align: center;
+      .fa {
+        color:white;
+      }
+      .fa-circle-thin {
+        opacity: 0.5;
+      }
+      a {
+        text-decoration: none;
+      }
+    }
+
+
+    .legal-container {
+      @include flexbox();
+      @include flex-direction(column);
+      @include align-items(center);
+      text-align: center;
+
+      @media (min-width: $screen-md-min) {
+        @include flex-direction(row);
+      }
+
+      p, a {
+        font-family: $mada;
+        font-weight: 300;
+        font-size: 14px;
+        color:$grey-light;
+      }
+      a {
+        margin-top:5px;
+        @media (min-width: $screen-sm-min) {
+          margin-top:0;
+          margin-left:5px;
+        }
+      }
+    }
+
+
+
+  }//FOOTER BOTTOM END
+
+
+}//FOOTER END

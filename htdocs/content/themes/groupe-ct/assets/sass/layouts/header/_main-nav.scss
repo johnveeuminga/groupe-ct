@@ -1,0 +1,122 @@
+.nav-content-container.desktop {
+  position: relative;
+  background-color: $primary-bg;
+  display: none;
+  @media (min-width: $screen-md-min) {
+    @include flexbox();
+  }
+
+  .nav-logo-container {
+    background-image: url($assets + "images/logo/logo-ct.png");
+    background-position: 50% bottom;
+    background-repeat: no-repeat;
+    background-size: 150px;
+  }
+
+  .nav-container {
+    @include flexbox();
+    @include flex-direction(column);
+    padding: 40px 20px 0px;
+
+    .nav-top{
+      margin-bottom:40px;
+    }
+
+    .nav-link-container {
+      @include flexbox();
+      @include justify-content(flex-end);
+      li {
+       @include flexbox();
+      }
+      .nav-link {
+        text-decoration: none;
+        font-family: $poppins;
+        font-weight: 400;
+      }
+    }
+
+    .nav-top .nav-link{
+      font-size: 14px;
+      color:$grey-light;
+      padding:0 15px;
+      border-right:1px solid $grey-light;
+    }
+
+    .nav-top .link-account{
+      border-right:none;
+      margin-left:25px;
+      position: relative;
+      color:$black;
+      &:before {
+        content:url($assets + "/images/icon/icon-account.png");
+        position: absolute;
+        left:-15px;
+        top:-5px;
+      }
+    }
+
+
+    .nav-bottom .menu-item{
+      @include flexbox();
+      margin-left:10px;
+      position: relative;
+      &:before {
+        display: none;
+        content:url($assets + "/images/icon/icon-white-triangle.png");
+        width: 50px;
+        @include center-img(50%,-60%);
+        z-index: 200;
+      }
+    }
+
+    .show-arrow {
+      &:before {
+        display: block!important;
+      }
+    }
+
+
+
+    .nav-bottom .nav-link{
+      font-size: 16px;
+      color:$black;
+      padding-bottom: 20px;
+      &:after {
+        padding-left:5px;
+        font-family: FontAwesome;
+        content: "\f0d7";
+      }
+    }
+  }
+
+
+
+  .nav-contact-us {
+    background-color: $blue;
+    @include flexbox();
+    @include flex-direction(column);
+    @include justify-content(center);
+    @include align-items(center);
+    .contact-us-link {
+      display: block;
+      width:100%;
+      height:100%;
+      color:white;
+      font-family: $poppins;
+      font-size: 14px;
+      text-decoration: none;
+      text-align: center;
+      span {
+        width:100%;
+        display:block;
+        padding-top: 50px;
+      }
+      .icon-arrow {
+        //width: 30px;
+        margin-top:10px;
+      }
+    }
+  }
+}
+
+

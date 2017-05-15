@@ -1,0 +1,59 @@
+
+.sub-menu-main-container {
+
+  background-color: $black;
+  position: absolute;
+  left:0;
+  top:0;
+  z-index: 900;
+  width:100%;
+  @include set-font(16px, $poppins, 400, white);
+
+  .sub-menu-container {
+    @include flexbox();
+    @include flex-direction(column);
+  }
+
+  .sub-menu-title {
+    margin-bottom: 25px;
+  }
+  .nav-section-title {
+    padding-bottom:15px;
+  }
+
+  .sub-menu-container {
+    @include flexbox();
+    padding: 50px 0;
+  }
+
+  .nav-sub{
+    .menu-item {
+      padding:10px 0;
+    }
+
+    .nav-link {
+      color:$grey-light;
+      text-transform: uppercase;
+      text-decoration: none;
+      position: relative;
+      &:after {
+        display: none;
+        content:url($assets + "/images/icon/icon-red-arrow.png");
+        position: absolute;
+        right:-60px;
+        top:0px;
+      }
+
+      &:hover {
+        color:$red;
+        &:after {
+          display:block;
+        }
+      }
+    }
+
+  }
+}
+
+
+
