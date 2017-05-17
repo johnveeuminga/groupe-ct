@@ -37,6 +37,15 @@
             }
         );
 
+        /***** TESTIMONIALS *******/
+
+        $('body').on('click', '.slider-dot', function (e) {
+            var $slideNumber = $(this).attr('class').split(' ')[1] ;
+            e.preventDefault();
+            $(this).addClass('active-dot').siblings().removeClass('active-dot');
+            $('.slider-main-container .' + $slideNumber).addClass('active-slide').siblings().removeClass('active-slide');
+        });
+
 
     });
 }(jQuery));

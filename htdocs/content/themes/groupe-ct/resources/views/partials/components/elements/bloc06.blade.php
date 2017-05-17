@@ -1,3 +1,8 @@
+<div class="bloc-name row">
+    <h1>BLOC #6</h1>
+</div>
+
+
 <section class="three-col-icons-main-container row default-padding ">
     <div class="col-md-10 col-md-offset-1">
 

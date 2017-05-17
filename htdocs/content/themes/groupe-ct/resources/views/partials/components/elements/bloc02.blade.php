@@ -1,6 +1,9 @@
+<div class="bloc-name row">
+    <h1>BLOC #2 Slider / #3 Text image</h1>
+</div>
 
 <div  class="img-plus-text row default-padding">
-    <h1 class="bloc-name">BLOCK : 2(slider) et 3  </h1>
+
     <div class="img-container col-md-5 col-lg-4 col-lg-offset-1">
         <img src="{{ themosis_assets() }}/images/img/img-service01.png" alt="">
     </div>

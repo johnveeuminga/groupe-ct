@@ -1,8 +1,5 @@
 .testimonials-main-container {
-  @include flexbox();
-  @include flex-direction(column);
-  //
-  @include justify-content(center);
+
 
 
   position: relative;
@@ -13,20 +10,50 @@
   background: linear-gradient(to bottom right, $gradient-black-first, $gradient-black-second); /* Standard syntax (must be last) */
 
   padding: 70px 30px 15px 30px;
-  border: 1px solid blue;
 
-  @media (min-width: $screen-md-min) {
-    @include flex-direction(row-reverse);
-    @include align-items(center);
+
+  .slider-main-container {
+    position: relative;
+    border: 1px solid red;
+    width: 100%;
+    min-height:550px;
+    @media (min-width: $screen-sm-min) {
+
+    }
+    @media (min-width: $screen-md-min) {
+      min-height:350px;
+    }
+
   }
 
-  .img-container:first-of-type {
+  .slide-container {
+    @include flexbox();
+    @include flex-direction(column);
+    @include justify-content(center);
+
+    position: absolute;
+    left:0;
+    top:0;
+    z-index: 10;
+    opacity: 0;
+    @include transition(opacity 0.5s ease);
+    @media (min-width: $screen-md-min) {
+      @include flex-direction(row);
+      @include align-items(center);
+    }
+  }
+
+  .active-slide {
+   opacity: 1;
+  }
+
+  .img-container.mobile {
     @media (min-width: $screen-md-min) {
       display:none;
     }
   }
 
-  .img-container:last-of-type {
+  .img-container.desktop{
     display:none;
     @media (min-width: $screen-md-min) {
       display:block;
@@ -88,5 +115,23 @@
   .slider-dot {
     position: relative;
     top:15px;
+    display: block;
+    width:25px;
+    height:25px;
+    border: 1px solid red;
+    &:before {
+      //position: absolute;
+      //top:-6px;
+      @include center-img(50%,50%);
+      content: url( $assets + "/images/icon/icon-slider-bullet-inactive.png");
+    }
+  }
+}
+
+.active-dot {
+  &:before {
+   // top:-9px!important;
+    //left:-4px;
+    content: url( $assets + "/images/icon/icon-slider-bullet-active.png")!important;
   }
 }

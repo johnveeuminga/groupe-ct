@@ -5,6 +5,7 @@
 @import "blocs/bloc04";
 @import "blocs/bloc05";
 @import "blocs/bloc06";
+@import "blocs/bloc07";
 
 
 /***** STRUCTURE ******/
@@ -92,9 +93,8 @@ section {
 }
 
 .bloc-name {
-  position: absolute;
-  left:5px;
-  top:-10px;
-  font-size: 16px;
-  color:$red;
+  background-color: $red;
+  padding: 25px;
+  margin:50px 0;
+  @include set-font(16px, $poppins, 400, white);
 }

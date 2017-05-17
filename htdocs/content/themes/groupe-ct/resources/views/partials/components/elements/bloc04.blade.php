@@ -1,5 +1,8 @@
+<div class="bloc-name row">
+    <h1>BLOC #4</h1>
+</div>
 <section class="four-col-icons-main-container row default-padding ">
-    <h1 class="bloc-name">BLOCK : 4 (four-col-icons) </h1>
+
     <div class="col-md-10 col-md-offset-1">
 
         <div class="four-col-icons-container row">
