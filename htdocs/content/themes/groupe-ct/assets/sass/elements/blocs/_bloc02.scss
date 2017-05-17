@@ -1,0 +1,85 @@
+.img-plus-text {
+  @include flexbox();
+  @include flex-direction(column);
+  position: relative;
+
+  .img-container {
+    padding: 15px 0;
+    text-align: center;
+    flex-basis: 100%;
+
+    img {
+      width:100%;
+      max-width:580px;
+    }
+  }
+  .text-container {
+    @include flexbox();
+    @include flex-direction(column);
+    padding: 25px 0px;
+    @media (min-width: $screen-sm-min) {
+      padding: 25px 0 0 30px;
+    }
+    @media (min-width: $screen-md-min) {
+      padding: 25px 0 0 30px;
+    }
+    .title {
+     @extend .poppins44BoldBlack;
+      text-transform: uppercase;
+
+      @media (min-width: $screen-sm-min) {
+        @include set-font(32px, $poppins, 700, $black);
+        padding: 30px 0;
+      }
+      @media (min-width: $screen-md-min) {
+        @include set-font(45px, $poppins, 700, $black);
+        padding: 60px 0 20px;
+      }
+
+    }
+    .text {
+      margin: 25px 0 50px;
+      @include set-font(16px, $mada, 300, $black);
+      line-height: 32px;
+      @media (min-width: $screen-sm-min) {
+        @include set-font(22px, $mada, 300, $black);
+
+      }
+
+    }
+  }//TEXT CONTAINER END
+
+  .contact-container {
+
+    @include flexbox();
+    @include flex-direction(column);
+    text-align: center;
+    @media (min-width: $screen-xs-min) {
+      @include flex-direction(row);
+      @include justify-content(space-between);
+    }
+
+    @media (min-width: $screen-md-min) {
+      @include flex-direction(row);
+      text-align: left;
+    }
+    .contact-content:first-of-type {
+      margin-bottom:25px;
+    }
+
+    .contact-location {
+      @extend .mada22RegBlack;
+    }
+
+    .contact-phone {
+      @extend .mada30RegBlue;
+      margin-bottom: 20px;
+    }
+
+    a {
+      display:block;
+    }
+
+  }//CONTACT CONTAINER END
+
+}

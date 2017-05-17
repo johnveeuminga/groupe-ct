@@ -1,0 +1,102 @@
+.section02-main-container {
+
+  @media (min-width: $screen-md-min) {
+    margin-top:200px;
+  }
+  /************************************************/
+
+  .section-title {
+    @media (min-width: $screen-sm-min) {
+      width:82%;
+      @include set-font(45px, $poppins, 700, $black);
+      text-transform: uppercase;
+      line-height: 50px;
+    }
+  }
+  .section-subtitle {
+    @media (min-width: $screen-sm-min) {
+      margin:50px 0;
+      width:50%;
+      @include set-font(22px, $mada, 300, $black);
+      line-height: 32px;
+    }
+  }
+
+  /************************************************/
+
+  .nav-section-container .nav-link-container {
+    @include flexbox();
+    @include justify-content(center);
+
+    border: 1px solid red;
+    overflow: hidden;
+    .menu-item {
+
+      @include flexbox();
+      @include justify-content(center);
+
+      height: 150px;
+      position: relative;
+      flex-basis:33.33%;
+
+      &:before {
+        border-bottom: 120px solid black;
+        border-left: 0px solid transparent;
+        border-right: 120px solid transparent;
+        content: "";
+        height: 0;
+        right: -10px;
+        position: absolute;
+        z-index: 100;
+        top: 20px;
+        width: 0;
+        @include rotate(-135)
+      }
+
+      &:nth-child(3):before {
+        display:none;
+      }
+    }
+
+
+
+    .menu-item:nth-child(1){
+      background-color: #3884b2;
+      &:before {
+        //border-bottom-color: #3884b2;
+      }
+    }.menu-item:nth-child(2){
+       background-color: #3f6881;
+           &:before {
+             border-bottom-color: #3f6881;
+           }
+     }
+    .menu-item:nth-child(3){
+      background-color: #0c7060;
+    }
+
+    .nav-link {
+      @include set-font(28px, $poppins, 600, white);
+      @include flexbox();
+      @include justify-content(center);
+      @include align-items(center);
+      position: relative;
+      z-index: 200;
+    }
+  }
+
+  .earning-item {
+    border: 1px solid red;
+    .earning-img {
+
+    }
+    .earning-title {
+
+    }
+    .earning-desc {
+
+    }
+  }
+
+
+}//SECTION 02 END

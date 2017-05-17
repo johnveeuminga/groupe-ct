@@ -1,4 +1,10 @@
-@import "./components/img-plus-text";
+/****** BLOCS *******/
+
+
+@import "blocs/bloc02";
+@import "blocs/bloc04";
+@import "blocs/bloc05";
+@import "blocs/bloc06";
 
 
 /***** STRUCTURE ******/
@@ -13,11 +19,82 @@
   margin-right: 0!important;
 }
 
+/***** TYPOGRAPHY ********/
+
+.nav-link, a {
+  text-decoration: none!important;
+}
+
+/***** POPPINS *****/
+
+.poppins44BoldBlack {
+  @include set-font(30px, $poppins, 700, $black);
+  @media (min-width: $screen-md-min) {
+    @include set-font(44px, $poppins, 700, $black);
+  }
+}
+
+/****** MADA *******/
+.mada22RegBlack {
+  @include set-font(22px, $mada, 400, $black);
+  line-height: 32px;
+}
+
+.mada30RegBlue {
+  @include set-font(30px, $mada, 400, $blue);
+  line-height: 32px;
+}
+
 /***** BUTTONS *****/
 
 .primary-btn {
-  padding: 20px 40px;
-  background-color: white;
+  padding: 15px 25px;
   @include set-font(15px, $poppins, 700, $blue);
+  background-color: white;
   text-decoration: none;
+
+  @media (min-width: $screen-sm-min) {
+    padding: 20px 40px;
+    @include set-font(15px, $poppins, 700, $blue);
+  }
+
+}
+
+.primary-btn-blue {
+  @extend .primary-btn;
+  background-color: $blue;
+  color:white;
+  width:50%;
+  margin:auto;
+  @media (min-width: $screen-xs-min) {
+    width:auto;
+  }
+  @media (min-width: $screen-lg-min) {
+  }
+}
+
+.cta-see-more {
+  @include set-font(15px, $poppins, 700, $blue );
+  text-transform: uppercase;
+  position: relative;
+  &:after {
+    content:url($assets + "/images/icon/icon-cta-arrow-blue.png");
+    position: absolute;
+    right:-40px;
+    top:3.5px;
+  }
+}
+
+/* JUST FOR DEV */
+
+section {
+
+}
+
+.bloc-name {
+  position: absolute;
+  left:5px;
+  top:-10px;
+  font-size: 16px;
+  color:$red;
 }

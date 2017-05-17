@@ -1,3 +1,9 @@
 <section id="home" class="home-main-container">
-    @include('partials.components.elements.img-plus-text')
+    @include('partials.components.elements.bloc02')
+    @include('partials.components.elements.bloc03')
+    @include('partials.components.elements.bloc04')
+    @include('partials.components.elements.bloc05')
+    @include('partials.components.elements.bloc06')
+
+    @include('partials.components.home.home-sections.section02')
 </section>

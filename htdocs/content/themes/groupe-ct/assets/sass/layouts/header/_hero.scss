@@ -1,6 +1,6 @@
 .hero {
   position: relative;
-
+  background-color: grey;
 
   .hero-content-container {
 
@@ -9,20 +9,42 @@
     position: relative;
     background-image: url($assets + "/images/bg/bg01.png");
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
 
     .hero-title-container {
       color:white;
-      //border: 1px solid red;
-      @include center-img(50%, 70%);
+      border: 1px solid red;
+      //@include center-img(70%, 70%);
+      padding: 50px 30px 0 30px;
       z-index: 300;
+      @media (min-width: $screen-sm-min) {
+        @include center-img(50%, 80%);
+        padding: 0;
+        width:90%;
+      }
+
       .hero-title {
-        @include set-font(60px, $poppins, 700, white);
+        @include set-font(40px, $poppins, 700, white);
+        line-height: 45px;
+        @media (min-width: $screen-sm-min) {
+          //@include center-img(50%, 70%);
+          @include set-font(60px, $poppins, 700, white);
+          line-height: 80px;
+        }
+        @media (min-width: $screen-md-min) {
+          @include set-font(60px, $poppins, 700, white);
+        }
       }
       .hero-subtitle {
-        padding: 40px 0 50px;
-        @include set-font(18px, $poppins, 300, white);
-        line-height:38px;
+
+        padding: 20px 0 50px;
+        @include set-font(16px, $poppins, 300, white);
+        line-height:25px;
+        @media (min-width: $screen-sm-min) {
+          padding: 30px 0 50px;
+          @include set-font(18px, $poppins, 300, white);
+          line-height:38px;
+        }
         span {
           font-weight: 700;
         }
@@ -30,8 +52,12 @@
 
       .hero-arrow {
         display: block;
-        margin:auto;
-        margin-top:60px;
+        @include center-img(50%, 0%);
+        border: 1px solid red;
+        @media (min-width: $screen-sm-min) {
+          margin-top:100px;
+          position: relative;
+        }
       }
 
     }
@@ -43,13 +69,19 @@
     height: 0;
     border-left: 0px solid transparent;
     border-right: 100vw solid transparent;
-    border-bottom: 480px solid white;
+    border-bottom: 180px solid red;
     position: absolute;
     z-index: 100;
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
+    @media (min-width: $screen-sm-min) {
+      border-bottom: 480px solid white;
+    }
 
+    @media (min-width: $screen-md-min) {
+      border-bottom: 480px solid white;
+    }
   }
 
 }
