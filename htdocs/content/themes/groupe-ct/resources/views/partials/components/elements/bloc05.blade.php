@@ -28,7 +28,7 @@
     </div>
     <div class="slider-link-container">
         @for($i = 1; $i < 5; $i++)
-            <a class="slider-dot slide0{{ $i }} @if($i == 1) {{ 'active-dot' }} @endif" href="#"></a>
+            <a class="slider-dot slide0{{ $i }} white-dot @if($i == 1) {{ 'active-dot' }} @endif" href="#"></a>
         @endfor
     </div>
 

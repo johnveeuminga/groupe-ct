@@ -3,7 +3,7 @@
 </div>
 
 
-<section class="three-col-icons-main-container row default-padding ">
+<div class="three-col-icons-main-container row default-padding ">
     <div class="col-md-10 col-md-offset-1">
 
         <div class="three-col-icons-container">
@@ -60,4 +60,4 @@
         </div>
 
     </div>
-</section>
+</div>

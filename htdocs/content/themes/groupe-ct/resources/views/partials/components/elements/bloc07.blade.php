@@ -2,7 +2,7 @@
     <h1>BLOC #7</h1>
 </div>
 
-<section class="two-col-icons-text-main-container row default-padding ">
+<div class="two-col-icons-text-main-container row default-padding ">
 
     <div class="col-md-10 col-md-offset-1">
 
@@ -58,4 +58,4 @@
         </div>
 
     </div>
-</section>
+</div>

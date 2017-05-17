@@ -1,7 +1,45 @@
 .img-plus-text {
-  @include flexbox();
-  @include flex-direction(column);
-  position: relative;
+  //@include flexbox();
+  //@include flex-direction(column);
+  //position: relative;
+
+
+  .slider-main-container {
+    position: relative;
+
+    width: 100%;
+    min-height:780px;
+    border: 1px solid blue;
+    @media (min-width: $screen-sm-min) {
+
+    }
+    @media (min-width: $screen-md-min) {
+      min-height:350px;
+    }
+  }
+
+  .slide-container {
+    @include flexbox();
+    @include flex-direction(column);
+
+    position: absolute;
+
+    left:0;
+    top:0;
+    z-index: 10;
+    opacity: 0;
+    @include transition(opacity 0.5s ease);
+    @media (min-width: $screen-md-min) {
+      @include flex-direction(row);
+      @include align-items(center);
+    }
+  }
+
+  .active-slide {
+    opacity: 1;
+  }
+
+
 
   .img-container {
     padding: 15px 0;
@@ -16,14 +54,14 @@
   .text-container {
     @include flexbox();
     @include flex-direction(column);
-    padding: 25px 0px;
+    //padding: 25px 0px;
     @media (min-width: $screen-sm-min) {
       padding: 25px 0 0 30px;
     }
     @media (min-width: $screen-md-min) {
       padding: 25px 0 0 30px;
     }
-    .title {
+    .text-container-title {
      @extend .poppins44BoldBlack;
       text-transform: uppercase;
 
@@ -35,17 +73,21 @@
         @include set-font(45px, $poppins, 700, $black);
         padding: 60px 0 20px;
       }
-
     }
+    .text-container-subtitle {
+      @include set-font(22px, $poppins, 700, $blue);
+      text-transform: uppercase;
+      margin:15px 0;
+    }
+
+
     .text {
-      margin: 25px 0 50px;
+      margin: 15px 0px;
       @include set-font(16px, $mada, 300, $black);
       line-height: 32px;
       @media (min-width: $screen-sm-min) {
         @include set-font(22px, $mada, 300, $black);
-
       }
-
     }
   }//TEXT CONTAINER END
 
@@ -80,6 +122,17 @@
       display:block;
     }
 
+
+    .primary-btn-blue {
+      margin:auto;
+      @media (min-width: $screen-xs-min) {
+        //width:225px!important;
+      }
+    }
+
   }//CONTACT CONTAINER END
 
-}
+
+
+
+}//IMG PLUS TEXT END

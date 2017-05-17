@@ -1,7 +1,7 @@
 <div class="bloc-name row">
     <h1>BLOC #4</h1>
 </div>
-<section class="four-col-icons-main-container row default-padding ">
+<div class="four-col-icons-main-container row default-padding ">
 
     <div class="col-md-10 col-md-offset-1">
 
@@ -61,4 +61,4 @@
         </div>
 
     </div>
-</section>
+</div>
