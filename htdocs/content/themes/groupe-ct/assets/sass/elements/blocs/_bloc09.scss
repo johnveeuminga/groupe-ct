@@ -1,0 +1,17 @@
+.chart-main-container {
+
+  .chart-container {
+    border: 1px solid red;
+    width: 40%;
+  }
+  .chart {
+
+  }
+  .chart-text {
+    text-align: center;
+    p {
+      @include set-font(22px, $poppins, 300, $blue);
+    }
+  }
+
+}
