@@ -5,7 +5,7 @@
     <div class="sub-menu-container snl1 hideMe">
 
         <div class="sub-menu-title-container col-xs-10 col-xs-offset-2">
-            <h2 class="sub-menu-title"></h2>
+            <h2 class="sub-menu-title">Un accompagnement sur mesure </h2>
         </div>
 
         <div class="nav-sub-container row">
