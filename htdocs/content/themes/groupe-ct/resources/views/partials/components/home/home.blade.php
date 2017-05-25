@@ -7,6 +7,7 @@
     @include('partials.components.elements.bloc07')
     @include('partials.components.elements.bloc08')
     @include('partials.components.elements.bloc09')
+    @include('partials.components.elements.bloc10')
 
 
 </section>

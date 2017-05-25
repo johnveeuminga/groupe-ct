@@ -8,6 +8,7 @@
 @import "blocs/bloc07";
 @import "blocs/bloc08";
 @import "blocs/bloc09";
+@import "blocs/bloc10";
 
 
 /***** STRUCTURE ******/
@@ -30,6 +31,23 @@
 
 /***** POPPINS *****/
 
+.poppins14BoldBlue{
+  @include set-font(14px, $poppins, 700, $blue);
+  @media (min-width: $screen-sm-min) {
+    @include set-font(14px, $poppins, 700, $blue);
+  }
+}
+
+
+.poppins22BoldBlack {
+
+  @include set-font(18px, $poppins, 700, $black);
+  @media (min-width: $screen-sm-min) {
+    @include set-font(22px, $poppins, 700, $black);
+  }
+
+}
+
 .poppins44BoldBlack {
   @include set-font(30px, $poppins, 700, $black);
   @media (min-width: $screen-md-min) {
@@ -38,6 +56,15 @@
 }
 
 /****** MADA *******/
+
+.mada18LightBlack {
+
+  @include set-font(16px, $mada, 300, $black);
+  @media (min-width: $screen-sm-min) {
+    @include set-font(18px, $mada, 300, $black);
+  }
+}
+
 .mada22RegBlack {
   @include set-font(22px, $mada, 400, $black);
   line-height: 32px;
@@ -139,8 +166,8 @@
 
 /* JUST FOR DEV */
 
-section {
-
+#footer {
+  margin-top:50px;
 }
 
 .bloc-name {

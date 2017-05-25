@@ -1,0 +1,67 @@
+.products-main-container{
+
+  background-color: #f6f6f6;
+  border: 1px solid red;
+  .col-md-10 {
+    padding:50px 0;
+  }
+}
+
+
+.product-main-container {
+  position: relative;
+  z-index: 1;
+  max-width:370px;
+
+  .product-img-container {
+    text-align: center;
+    .product-img {
+      -webkit-box-shadow: 0px 0px 41px 1px rgba(0,0,0,0.2);
+      -moz-box-shadow: 0px 0px 41px 1px rgba(0,0,0,0.2);
+      box-shadow: 0px 0px 41px 1px rgba(0,0,0,0.2);
+    }
+  }
+
+  .product-text-container {
+
+    position: relative;
+    top:-10px;
+    z-index: 10;
+    background-color: white;
+    padding:40px 40px 10px 40px;
+
+
+    -webkit-box-shadow: 0px 0px 41px 1px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0px 0px 41px 1px rgba(0,0,0,0.2);
+    box-shadow: 0px 0px 41px 1px rgba(0,0,0,0.2);
+
+    .product-title {
+     @extend .poppins22BoldBlack;
+     text-transform: uppercase;
+    }
+    .product-desc {
+      @extend .mada18LightBlack;
+      margin: 20px 0;
+      padding-bottom:20px;
+      border-bottom:1px solid $blue;
+      line-height: 27px;
+    }
+    .product-download-pdf {
+      @include inline-flex();
+      @include align-items(center);
+      @extend .poppins14BoldBlue;
+
+      letter-spacing: 0.08em;
+      &:after {
+        content: url($assets + "/images/icon/pdf_dl.png");
+        margin-left:15px;
+      }
+    }
+  }
+
+}
+
+
+
+
+

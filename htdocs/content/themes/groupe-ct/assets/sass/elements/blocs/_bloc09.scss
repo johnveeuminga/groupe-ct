@@ -1,17 +1,30 @@
-.chart-main-container {
 
-  .chart-container {
-    border: 1px solid red;
-    width: 40%;
-  }
+.chart-main-container {
+  max-width:375px;
+
+
   .chart {
 
   }
-  .chart-text {
-    text-align: center;
-    p {
-      @include set-font(22px, $poppins, 300, $blue);
-    }
+  .doughnut-chart {
+    max-width:375px;
   }
 
+  
+  .chart-text {
+    text-align: center;
+
+    p {
+      margin:25px 0;
+      @include set-font(22px, $poppins, 300, $blue);
+    }
+    span {
+      @include set-font(14px, $mada, 400, $blue);
+    }
+  }
 }
+
+
+
+
+
