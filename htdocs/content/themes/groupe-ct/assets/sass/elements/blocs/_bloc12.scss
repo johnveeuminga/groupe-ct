@@ -73,11 +73,7 @@
   }
 }
 
-.reverse-elem {
-  @media (min-width: $screen-sm-min) {
-    @include flex-direction(row-reverse);
-  }
-}
+
 
 
 

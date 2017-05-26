@@ -44,8 +44,8 @@
         </div>
         <div class="buffer"></div>
         <div class="prod-logiciel-text-container">
-            <h3 class="prod-logiciel-title">Publication titre</h3>
-            <p class="prod-logiciel-subtitle">date de publication </p>
+            <h3 class="prod-logiciel-title">EcopyPDF Pro Office</h3>
+            <p class="prod-logiciel-subtitle">CONVERSION DE DOCUMENTS</p>
             <p class="prod-logiciel-text">
                 Nunc elementum venenatis dui, quis tempor nulla molestie quis. Quisque dignissim sagittis
                 lorem id blandit. Nulla facilisi. Sed blandit quam ut arcu facilisis aliquet. Orci varius

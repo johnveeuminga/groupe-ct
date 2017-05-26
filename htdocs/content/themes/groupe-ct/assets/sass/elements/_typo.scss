@@ -11,25 +11,25 @@
 // TITLE //
 
 
-.poppins30BoldBlack {
-  @include set-font(30px, $poppins, 700, $black);
-}
 
-// SUBTITLE //
+
+
+.poppins22BoldWhite {
+  @include set-font(22px, $poppins, 700, white);
+}
+.poppins22BoldBlue{
+  @include set-font(22px, $poppins, 700, $blue);
+}
 
 .poppins22BoldGreen {
   @include set-font(22px, $poppins, 700, $green);
 }
 
-
-// TEXT //
-
-.mada22LightBlack {
-  @include set-font(22px, $mada, 300, $black);
-  line-height: 32px;
+.poppins30BoldBlack {
+  @include set-font(30px, $poppins, 700, $black);
 }
 
-// OTHER //
+
 
 .poppins15BoldRed {
   @include set-font(15px, $poppins, 700, $red);
@@ -70,12 +70,32 @@
 
 /****** MADA *******/
 
-.mada18LightBlack {
 
+
+.mada18LightBlack {
   @include set-font(16px, $mada, 300, $black);
   @media (min-width: $screen-sm-min) {
     @include set-font(18px, $mada, 300, $black);
   }
+}
+
+.mada18RegBlack {
+  @include set-font(16px, $mada, 400, $black);
+  @media (min-width: $screen-sm-min) {
+    @include set-font(18px, $mada, 400, $black);
+  }
+}
+
+.mada18RegBlue {
+  @include set-font(16px, $mada, 400, $blue);
+  @media (min-width: $screen-sm-min) {
+    @include set-font(18px, $mada, 400, $blue);
+  }
+}
+
+.mada22LightBlack {
+  @include set-font(22px, $mada, 300, $black);
+  line-height: 32px;
 }
 
 .mada22RegBlack {

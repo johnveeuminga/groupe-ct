@@ -10,7 +10,7 @@
         <!-- PUBLICATION MAIN CONTAINER START -->
         <div class="publication-main-container">
             <!-- THE ELEMENT START  -->
-            <div class="publication-container img-left">
+            <div class="publication-container"> <!-- reverse-elem : to swap img and text div -->
                 <div class="publication-img-container">
                     <div class="publication-img"></div>
                     <span></span>
@@ -38,7 +38,7 @@
                     <span></span>
                 </div>
                 <div class="buffer"></div>
-                <div class="publication-text-container">
+                <div class="publication-text-container reverse-elem"> <!-- reverse-elem : to swap img and text div -->
                     <p class="publication-cat"><?php _e('catégorie', THEME_TEXTDOMAIN); ?></p>
                     <h3 class="publication-title">publication titre</h3>
                     <p class="publication-date">date de publication</p>
