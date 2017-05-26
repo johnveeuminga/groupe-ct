@@ -1,13 +1,23 @@
 
 .chart-main-container {
-  max-width:375px;
-
-
-  .chart {
-
+  @include flexbox();
+  @include flex-direction(column);
+  @include align-items(center);
+  @media (min-width: $screen-sm-min) {
+    @include flex-direction(row);
+    @include justify-content(space-around);
   }
+}
+
+
+.chart-container {
+  max-width:375px;
+  margin:50px 0;
   .doughnut-chart {
-    max-width:375px;
+    margin:auto;
+    width:215px!important;
+    height:215px!important;
+
   }
 
   

@@ -8,6 +8,8 @@
     @include('partials.components.elements.bloc08')
     @include('partials.components.elements.bloc09')
     @include('partials.components.elements.bloc10')
+    @include('partials.components.elements.bloc11')
+    @include('partials.components.elements.bloc12')
 
 
 </section>

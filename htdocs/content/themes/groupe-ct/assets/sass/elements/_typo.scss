@@ -1,0 +1,90 @@
+// GLOBAL STRUCTURE //
+
+.nav-link, a {
+  text-decoration: none!important;
+}
+
+
+
+
+
+// TITLE //
+
+
+.poppins30BoldBlack {
+  @include set-font(30px, $poppins, 700, $black);
+}
+
+// SUBTITLE //
+
+.poppins22BoldGreen {
+  @include set-font(22px, $poppins, 700, $green);
+}
+
+
+// TEXT //
+
+.mada22LightBlack {
+  @include set-font(22px, $mada, 300, $black);
+  line-height: 32px;
+}
+
+// OTHER //
+
+.poppins15BoldRed {
+  @include set-font(15px, $poppins, 700, $red);
+}
+.poppins15BoldBlue {
+  @include set-font(15px, $poppins, 700, $blue);
+}
+
+.mada17LightBlack {
+  @include set-font(17px, $mada, 300, $black);
+}
+
+/***** POPPINS *****/
+
+.poppins14BoldBlue{
+  @include set-font(14px, $poppins, 700, $blue);
+  @media (min-width: $screen-sm-min) {
+    @include set-font(14px, $poppins, 700, $blue);
+  }
+}
+
+
+
+
+.poppins22BoldBlack {
+  @include set-font(18px, $poppins, 700, $black);
+  @media (min-width: $screen-sm-min) {
+    @include set-font(22px, $poppins, 700, $black);
+  }
+}
+
+.poppins44BoldBlack {
+  @include set-font(30px, $poppins, 700, $black);
+  @media (min-width: $screen-md-min) {
+    @include set-font(44px, $poppins, 700, $black);
+  }
+}
+
+/****** MADA *******/
+
+.mada18LightBlack {
+
+  @include set-font(16px, $mada, 300, $black);
+  @media (min-width: $screen-sm-min) {
+    @include set-font(18px, $mada, 300, $black);
+  }
+}
+
+.mada22RegBlack {
+  @include set-font(22px, $mada, 400, $black);
+  line-height: 32px;
+}
+
+.mada30RegBlue {
+  @include set-font(30px, $mada, 400, $blue);
+  line-height: 32px;
+}
+

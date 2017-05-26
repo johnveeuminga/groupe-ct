@@ -9,6 +9,9 @@
 @import "blocs/bloc08";
 @import "blocs/bloc09";
 @import "blocs/bloc10";
+@import "blocs/bloc11";
+@import "blocs/bloc12";
+
 
 
 /***** STRUCTURE ******/
@@ -25,57 +28,10 @@
 
 /***** TYPOGRAPHY ********/
 
-.nav-link, a {
-  text-decoration: none!important;
-}
-
-/***** POPPINS *****/
-
-.poppins14BoldBlue{
-  @include set-font(14px, $poppins, 700, $blue);
-  @media (min-width: $screen-sm-min) {
-    @include set-font(14px, $poppins, 700, $blue);
-  }
-}
+@import "typo";
 
 
-.poppins22BoldBlack {
-
-  @include set-font(18px, $poppins, 700, $black);
-  @media (min-width: $screen-sm-min) {
-    @include set-font(22px, $poppins, 700, $black);
-  }
-
-}
-
-.poppins44BoldBlack {
-  @include set-font(30px, $poppins, 700, $black);
-  @media (min-width: $screen-md-min) {
-    @include set-font(44px, $poppins, 700, $black);
-  }
-}
-
-/****** MADA *******/
-
-.mada18LightBlack {
-
-  @include set-font(16px, $mada, 300, $black);
-  @media (min-width: $screen-sm-min) {
-    @include set-font(18px, $mada, 300, $black);
-  }
-}
-
-.mada22RegBlack {
-  @include set-font(22px, $mada, 400, $black);
-  line-height: 32px;
-}
-
-.mada30RegBlue {
-  @include set-font(30px, $mada, 400, $blue);
-  line-height: 32px;
-}
-
-/***** BUTTONS *****/
+/***** BUTTONS & CTA *****/
 
 .primary-btn {
   padding: 20px 30px;
@@ -115,6 +71,35 @@
     top:3.5px;
   }
 }
+
+.brochure-download-pdf {
+  @include inline-flex();
+  @include align-items(center);
+  @extend .poppins14BoldBlue;
+  letter-spacing: 0.08em;
+  &:after {
+    content: url($assets + "/images/icon/pdf_dl_blue.png");
+    margin-left:15px;
+  }
+}
+
+.brochure-download-pdf-blue {
+  @extend .brochure-download-pdf;
+  &:after {
+    content: url($assets + "/images/icon/pdf_dl_blue.png");
+  }
+}
+
+.brochure-download-pdf-white {
+  @extend .brochure-download-pdf;
+  color:white;
+  background-color: $blue;
+  padding: 10px 30px;
+  &:after {
+    content: url($assets + "/images/icon/pdf_dl_white.png");
+  }
+}
+
 
 .slider-link-container {
   border-bottom: 2px solid #aaaaaa;

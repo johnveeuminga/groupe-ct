@@ -98,3 +98,9 @@ img.carret-right {
       display: none!important;
   }
 }
+
+.reverse-elem {
+  @media (min-width: $screen-sm-min) {
+    @include flex-direction(row-reverse);
+  }
+}

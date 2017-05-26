@@ -82,8 +82,8 @@ Chart.pluginService.register({
             type: 'doughnut',
             data: data,
             options: {
-                responsive: true,
-                maintainAspectRatio: true,
+                //responsive: true,
+
                 legend: {
                     display: false,
                 },
@@ -105,6 +105,50 @@ Chart.pluginService.register({
                 cutoutPercentage: 80
             }
         });
+
+        var data = {
+            labels: [
+                "Red",
+                "Blue",
+            ],
+            datasets: [
+                {
+                    data: [60, 40],
+                    backgroundColor: [
+                        "#063a65",
+                        "#cdd8e0",
+                    ],
+                }]
+        };
+
+        var promisedDeliveryChart = new Chart(document.getElementsByClassName('doughnut-chart02'), {
+            type: 'doughnut',
+            data: data,
+            options: {
+                //responsive: true,
+
+                legend: {
+                    display: false,
+                },
+                elements: {
+                    center: {
+                        // the longest text that could appear in the center
+                        maxText: '100%',
+                        text: '60%',
+                        fontColor: '#063a65',
+                        fontFamily: "'Helvetica Neue', 'Helvetica', 'Arial', sans-serif",
+                        fontStyle: 'normal',
+                        // fontSize: 12,
+                        // if a fontSize is NOT specified, we will scale (within the below limits) maxText to take up the maximum space in the center
+                        // if these are not specified either, we default to 1 and 256
+                        minFontSize: 1,
+                        maxFontSize: 256,
+                    }
+                },
+                cutoutPercentage: 80
+            }
+        });
+
 
 
     });
