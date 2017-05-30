@@ -11,11 +11,26 @@
 .contact-info-main-container {
   @include flexbox();
   @include justify-content(space-between);
+  @include flex-direction(column);
+  @include align-items(center);
+  @media (min-width: $screen-xs-min) {
+    @include flex-direction(row);
+    @include flex-wrap(wrap);
+  }
 }
 
 .contact-info-container {
   padding:40px 0;
- // @include flex-basis(33.33%);
+  @include flexbox();
+  @include flex-direction(column);
+  width: 100%;
+  @media (min-width: $screen-xs-min) {
+    width:calc(100%/2);
+  }
+  @media (min-width: $screen-sm-min) {
+    width:calc(100%/3);
+  }
+
   .contact-info-title {
     @extend .poppins22BoldBlue;
     text-transform: uppercase;
