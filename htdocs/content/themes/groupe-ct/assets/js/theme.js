@@ -57,7 +57,7 @@
             e.preventDefault();
 
             $(this).parent().toggleClass('active-header');
-            $(this).parent().siblings('.content').toggleClass('open-content');
+            $(this).parent().siblings('.toggle-content').toggleClass('open-content');
             $(this).siblings('.triangle-blue').toggleClass('toggle-triangle');
             $(this).siblings('.toggle-content-carret').toggleClass('toggle-carret');
 

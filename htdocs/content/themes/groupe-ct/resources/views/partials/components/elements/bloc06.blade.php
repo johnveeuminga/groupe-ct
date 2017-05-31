@@ -4,7 +4,7 @@
 
 
 <div class="three-col-icons-main-container row default-padding ">
-    <div class="col-md-10 col-md-offset-1">
+    <div class="col-xs-12">
 
         <div class="three-col-icons-container">
             <h2 class="three-col-icons-upper-title"><ul><li>Produits et solution</li></ul></h2>

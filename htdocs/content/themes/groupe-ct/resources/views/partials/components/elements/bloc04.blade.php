@@ -3,7 +3,7 @@
 </div>
 <div class="four-col-icons-main-container row default-padding ">
 
-    <div class="col-md-10 col-md-offset-1">
+    <div class="col-xs-12">
 
         <div class="four-col-icons-container row">
             <div class="four-col-icons-item col-md-3">

@@ -3,7 +3,7 @@
 </div>
 
 <div class="default-padding ">
-    <div class="col-md-10 col-md-offset-1">
+    <div class="col-xs-12">
 
         <div class="chart-main-container">
             <!-- THE ELEMENT START  -->

@@ -5,7 +5,7 @@
 
 
 <div class="default-padding">
-    <div class="col-md-10 col-md-offset-1">
+    <div class="col-xs-12">
 
        <div class="contact-main-container">
            {{-- BLUE BAR WITH TITLE START --}}
