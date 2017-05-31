@@ -40,11 +40,11 @@
     padding-bottom:25px;
     @media (min-width: $screen-sm-min) {
       @include flex-basis(50%);
-      padding-left:15px;
+     // padding-left:15px;
       max-width:600px;
     }
     @media (min-width: $screen-md-min) {
-      padding-left:35px;
+     // padding-left:35px;
     }
     .publication-cat, .publication-title, .publication-date {
       text-transform: uppercase;
