@@ -1,5 +1,6 @@
 .toggle-main-container {
-  margin:10px 0;
+  margin:10px auto;
+  max-width:1200px;
 
   .toggle-content {
     @include flexbox();

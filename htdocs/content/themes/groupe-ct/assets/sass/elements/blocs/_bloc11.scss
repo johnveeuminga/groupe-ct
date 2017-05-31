@@ -1,7 +1,8 @@
 .prod-logiciel-main-container{
   @include flexbox();
   @include flex-direction(column);
-
+  margin:10px auto;
+  max-width:1200px;
 }
 
 .prod-logiciel-container {

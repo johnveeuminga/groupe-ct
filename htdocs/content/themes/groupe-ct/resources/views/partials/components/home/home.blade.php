@@ -1,4 +1,4 @@
-<section id="home" class="home-main-container page-main-container">
+<section id="home" class="home-main-container">
     @include('partials.components.elements.bloc02')
     @include('partials.components.elements.bloc03')
     @include('partials.components.elements.bloc04')
@@ -14,6 +14,7 @@
     @include('partials.components.elements.bloc14')
     @include('partials.components.elements.bloc15')
     @include('partials.components.elements.bloc16')
+    @include('partials.components.elements.bloc17')
 
 
 </section>

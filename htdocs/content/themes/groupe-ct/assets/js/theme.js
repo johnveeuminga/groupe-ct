@@ -1,7 +1,8 @@
 (function($) {
     $(document).ready(function() {
 
-        // $window =  $(window);
+
+
 
 
         /***** MENU *******/
@@ -62,6 +63,43 @@
             $(this).siblings('.toggle-content-carret').toggleClass('toggle-carret');
 
         });
+
+
+        /******* TRIGGER COUNT ANIMATION  *******/
+        var statsContainerTop = $('.stats-number-container .line').offset().top;
+        var animDone = false;
+        $(window).scroll(function() {
+
+            var scrollBottom = $(window).scrollTop() + $(window).height();
+
+
+            console.log(scrollBottom + "TOP : "+ statsContainerTop);
+            if(scrollBottom >= statsContainerTop) {
+
+                if(!animDone) {
+                    $('.count').each(function () {
+                        $(this).prop('Counter',0).animate({
+                            Counter: $(this).text()
+                        }, {
+                            duration: 2000,
+                            easing: 'swing',
+                            step: function (now) {
+                                $(this).text(Math.ceil(now));
+                            }
+                        });
+                    });
+
+                }
+
+                animDone = true;
+            }
+
+
+        });
+
+
+
+
 
 
     });

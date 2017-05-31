@@ -61,6 +61,14 @@
   }
 }
 
+.poppins24LightWhite {
+  @include set-font(24px, $poppins, 300, white);
+  @media (min-width: $screen-sm-min) {
+    @include set-font(24px, $poppins, 300, white);
+  }
+  line-height: 32px;
+}
+
 .poppins25BoldBlue {
   @include set-font(25px, $poppins, 700, $blue);
   @media (min-width: $screen-md-min) {
@@ -73,6 +81,10 @@
   @media (min-width: $screen-md-min) {
     @include set-font(44px, $poppins, 700, $black);
   }
+}
+
+.poppins90SemiBoldWhite {
+  @include set-font(90px, $poppins, 600, white);
 }
 
 /****** MADA *******/

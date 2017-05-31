@@ -1,4 +1,6 @@
 .publication-main-container{
+  margin:10px auto;
+  max-width:1200px;
   @include flexbox();
   @include flex-direction(column);
   @media (min-width: $screen-md-min) {

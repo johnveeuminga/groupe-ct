@@ -1,0 +1,42 @@
+.stats-main-container {
+
+  background-image: url($assets + "/images/bg/bg-stats.png");
+  min-height:740px;
+
+
+  .stats-container {
+    border: 1px solid blue;
+    @include flexbox();
+    @include flex-direction(column);
+    @include align-items(center);
+    @include justify-content(center);
+  }
+
+  .stats-number-container {
+
+    margin-top:60px;
+    margin-bottom:30px;
+    .stats-number {
+      @extend .poppins90SemiBoldWhite;
+
+    }
+    .line {
+      border: 2px solid white;
+      width:25px;
+      margin:auto;
+      margin-top:10px;
+    }
+  }
+
+  .stats-desc-container {
+    text-align: center;
+    .stats-desc {
+      @extend .poppins24LightWhite;
+    }
+  }
+
+
+}
+
+
+
