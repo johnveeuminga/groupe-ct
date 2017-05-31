@@ -61,6 +61,13 @@
   }
 }
 
+.poppins25BoldBlue {
+  @include set-font(25px, $poppins, 700, $blue);
+  @media (min-width: $screen-md-min) {
+    @include set-font(25px, $poppins, 700, $blue);
+  }
+}
+
 .poppins44BoldBlack {
   @include set-font(30px, $poppins, 700, $black);
   @media (min-width: $screen-md-min) {

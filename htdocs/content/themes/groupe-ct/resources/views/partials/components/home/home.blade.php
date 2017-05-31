@@ -13,6 +13,7 @@
     @include('partials.components.elements.bloc13')
     @include('partials.components.elements.bloc14')
     @include('partials.components.elements.bloc15')
+    @include('partials.components.elements.bloc16')
 
 
 </section>
