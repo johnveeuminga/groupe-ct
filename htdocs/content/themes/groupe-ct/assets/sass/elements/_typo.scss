@@ -38,6 +38,10 @@
   @include set-font(15px, $poppins, 700, $blue);
 }
 
+.poppins15BoldBlack {
+  @include set-font(15px, $poppins, 700, $black);
+}
+
 .mada17LightBlack {
   @include set-font(17px, $mada, 300, $black);
 }
@@ -52,7 +56,12 @@
 }
 
 
-
+.poppins20SemiBoldWhite {
+  @include set-font(20px, $poppins, 600, white);
+  @media (min-width: $screen-sm-min) {
+    @include set-font(20px, $poppins, 600, white);
+  }
+}
 
 .poppins22BoldBlack {
   @include set-font(18px, $poppins, 700, $black);
@@ -89,7 +98,16 @@
 
 /****** MADA *******/
 
+.mada14LightWhite {
+  @include set-font(14px, $mada, 300, white);
+}
 
+.mada18LightWhite {
+  @include set-font(18px, $mada, 300, white);
+  @media (min-width: $screen-sm-min) {
+    @include set-font(18px, $mada, 300, white);
+  }
+}
 
 .mada18LightBlack {
   @include set-font(16px, $mada, 300, $black);
