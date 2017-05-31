@@ -73,7 +73,6 @@
             var scrollBottom = $(window).scrollTop() + $(window).height();
 
 
-            console.log(scrollBottom + "TOP : "+ statsContainerTop);
             if(scrollBottom >= statsContainerTop) {
 
                 if(!animDone) {

@@ -1,21 +1,30 @@
 .stats-main-container {
 
   background-image: url($assets + "/images/bg/bg-stats.png");
-  min-height:740px;
-
+  background-repeat: no-repeat;
+  background-size: cover;
+  //min-height:740px;
+  padding: 170px 0;
 
   .stats-container {
-    border: 1px solid blue;
     @include flexbox();
     @include flex-direction(column);
     @include align-items(center);
-    @include justify-content(center);
+    padding: 50px 0;
+    @media (min-width: $screen-md-min) {
+      padding:0;
+    }
+  }
+
+  .stats-icon-container {
+    height:100px;
   }
 
   .stats-number-container {
-
     margin-top:60px;
     margin-bottom:30px;
+
+
     .stats-number {
       @extend .poppins90SemiBoldWhite;
 
@@ -30,6 +39,7 @@
 
   .stats-desc-container {
     text-align: center;
+
     .stats-desc {
       @extend .poppins24LightWhite;
     }
