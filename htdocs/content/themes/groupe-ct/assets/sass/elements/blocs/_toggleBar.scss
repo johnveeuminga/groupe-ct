@@ -37,7 +37,7 @@
 
 .toggle-content {
   overflow: hidden;
-  //max-height:0px;
+  max-height:0px;
   @include transition(max-height 0.6s ease);
   width:80%;
   margin:auto;
