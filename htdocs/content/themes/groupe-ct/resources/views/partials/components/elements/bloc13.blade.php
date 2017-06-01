@@ -4,10 +4,7 @@
 
 
 
-<div class="default-padding">
-    <div class="col-xs-12">
-
-       <div class="contact-main-container">
+       <div class="contact-main-container default-padding default-width">
            {{-- BLUE BAR WITH TITLE START --}}
            <div class="contact-header">
                <h2>Québec</h2>
@@ -28,7 +25,7 @@
            </div>
        </div>
 
-        <div class="contact-main-container">
+        <div class="contact-main-container default-padding default-width">
             {{-- BLUE BAR WITH TITLE START --}}
             <div class="contact-header">
                 <h2>Québec</h2>
@@ -68,5 +65,3 @@
             </div>
         </div>
 
-    </div>
-</div>

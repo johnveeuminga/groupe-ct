@@ -2,6 +2,7 @@
 
 
 @import "blocs/bloc02";
+@import "blocs/bloc03";
 @import "blocs/bloc04";
 @import "blocs/bloc05";
 @import "blocs/bloc06";
@@ -16,6 +17,7 @@
 @import "blocs/bloc15";
 @import "blocs/bloc16";
 @import "blocs/bloc17";
+@import "blocs/bloc18";
 
 /****** PARTS OF SOME BLOCS *******/
 @import "blocs/toggleBar";
@@ -36,6 +38,12 @@
 .row {
   margin-left: 0!important;
   margin-right: 0!important;
+}
+
+.reverse-elem {
+  @media (min-width: $screen-sm-min) {
+    @include flex-direction(row-reverse);
+  }
 }
 
 /***** TYPOGRAPHY ********/
@@ -174,3 +182,4 @@
   margin:50px 0;
   @include set-font(16px, $poppins, 400, white);
 }
+

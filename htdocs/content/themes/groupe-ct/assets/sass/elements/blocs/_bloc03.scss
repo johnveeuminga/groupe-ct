@@ -1,1 +1,15 @@
-@extend .img-plus-text;
+.img-plus-text-normal {
+
+  border: 1px solid red;
+  @media (min-width: $screen-md-min) {
+    @include flexbox();
+
+  }
+  .primary-btn-blue {
+    margin:auto;
+    @media (min-width: $screen-sm-min) {
+      width:150px;
+    }
+  }
+
+}

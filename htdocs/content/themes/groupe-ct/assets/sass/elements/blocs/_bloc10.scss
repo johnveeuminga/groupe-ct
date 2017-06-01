@@ -4,10 +4,7 @@
   @include flex-direction(column);
   @include align-items(center);
 
-  background-color: #f6f6f6;
-
-  max-width:1200px;
-  margin:auto;
+  //background-color: #f6f6f6;
 
   @media (min-width: $screen-sm-min) {
     @include flex-direction(row);

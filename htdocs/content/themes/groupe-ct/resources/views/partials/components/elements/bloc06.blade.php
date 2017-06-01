@@ -3,7 +3,7 @@
 </div>
 
 
-<div class="three-col-icons-main-container row default-padding ">
+<div class="three-col-icons-main-container default-padding ">
     <div class="col-xs-12">
 
         <div class="three-col-icons-container">

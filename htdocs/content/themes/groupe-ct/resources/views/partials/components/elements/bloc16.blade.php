@@ -41,7 +41,8 @@
                     </div>
 
                     <div class="timeline-date-container">
-                        <img class="timeline-dot" src="{{ themosis_assets() }}/images/timeline-icon/timeline-dot-right.png" alt="">
+                        <img class="timeline-dot dot-right" src="{{ themosis_assets() }}/images/timeline-icon/timeline-dot-right.png" alt="">
+                        <img class="timeline-dot dot-left" src="{{ themosis_assets() }}/images/timeline-icon/timeline-dot-left.png" alt="">
                         <span class="timeline-date">1987 </span>
                     </div>
                 </div>
@@ -79,7 +80,8 @@
                     </div>
 
                     <div class="timeline-date-container">
-                        <img class="timeline-dot" src="{{ themosis_assets() }}/images/timeline-icon/timeline-dot-left.png" alt="">
+                        <img class="timeline-dot dot-left" src="{{ themosis_assets() }}/images/timeline-icon/timeline-dot-left.png" alt="">
+                        <img class="timeline-dot dot-right" src="{{ themosis_assets() }}/images/timeline-icon/timeline-dot-right.png" alt="">
                         <span class="timeline-date">1987 </span>
                     </div>
                 </div>
@@ -115,7 +117,8 @@
                     </div>
 
                     <div class="timeline-date-container">
-                        <img class="timeline-dot" src="{{ themosis_assets() }}/images/timeline-icon/timeline-dot-right.png" alt="">
+                        <img class="timeline-dot dot-right" src="{{ themosis_assets() }}/images/timeline-icon/timeline-dot-right.png" alt="">
+                        <img class="timeline-dot dot-left" src="{{ themosis_assets() }}/images/timeline-icon/timeline-dot-left.png" alt="">
                         <span class="timeline-date">1987 </span>
                     </div>
                 </div>

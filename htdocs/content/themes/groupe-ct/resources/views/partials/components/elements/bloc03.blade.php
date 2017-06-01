@@ -2,12 +2,13 @@
     <h1>BLOC #3 Text image</h1>
 </div>
 
-<div class="img-plus-text row default-padding">
+<div class="img-plus-text img-plus-text-normal default-padding default-width">
 
-    <div class="img-container col-md-5 col-lg-4 col-lg-offset-1">
+    <div class="img-container">
         <img src="{{ themosis_assets() }}/images/img/img-service01.png" alt="">
     </div>
-    <div class="text-container col-md-7 col-lg-5">
+    <div class="buffer"></div>
+    <div class="text-container">
         <h2 class="text-container-title">Un accompagnement sur mesure celon votre environnement</h2>
         <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
             sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis

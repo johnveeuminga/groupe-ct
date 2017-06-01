@@ -1,8 +1,6 @@
 
 .toggle-main-container {
   margin:10px auto;
-  max-width:1200px;
-
   .toggle-content {
     @include flexbox();
     @include flex-direction(column);

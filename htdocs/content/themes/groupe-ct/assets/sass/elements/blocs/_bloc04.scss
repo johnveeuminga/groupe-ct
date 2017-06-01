@@ -1,13 +1,13 @@
 .four-col-icons-main-container {
   position: relative;
   .four-col-icons-container {
+
     @include flexbox();
-    @media (min-width: $screen-xs-min) {
-      @include justify-content(space-between);
-    }
-    @media (min-width: $screen-md-min) {
-
-
+    @include flex-direction(column);
+    @media (min-width: $screen-sm-min) {
+      @include flex-direction(row);
+      @include flex-wrap(wrap);
+      @include align-items(center);
     }
   }
 
@@ -15,9 +15,6 @@
     text-align: center;
     margin-bottom: 50px;
 
-    @media (min-width: $screen-xs-min) {
-     flex-basis:45%;
-    }
     @media (min-width: $screen-md-min) {
       @include flexbox();
       @include flex-direction(column);

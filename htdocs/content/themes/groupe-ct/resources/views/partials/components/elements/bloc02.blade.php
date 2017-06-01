@@ -2,15 +2,16 @@
     <h1>BLOC #2 Slider</h1>
 </div>
 
-<div class="img-plus-text row default-padding">
+<div class="img-plus-text default-padding default-width">
 
     <div class="slider-main-container">
         @for($i = 1; $i < 5; $i++)
             <div class="slide-container slide0{{ $i }} @if($i == 1) {{ 'active-slide' }} @endif">
-                <div class="img-container col-md-5 col-lg-4 col-lg-offset-1">
+                <div class="img-container">
                     <img src="{{ themosis_assets() }}/images/img/img-service01.png" alt="">
                 </div>
-                <div class="text-container col-md-7 col-lg-5">
+                <div class="buffer"></div>
+                <div class="text-container">
                     <h2 class="text-container-title">{{ $i }}Des histoires et des succès</h2>
                     <h3 class="text-container-subtitle">Maisonbureau</h3>
                     <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor

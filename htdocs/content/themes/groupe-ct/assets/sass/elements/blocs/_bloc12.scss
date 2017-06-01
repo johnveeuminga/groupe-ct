@@ -1,11 +1,6 @@
 .publication-main-container{
-  margin:10px auto;
-  max-width:1200px;
   @include flexbox();
   @include flex-direction(column);
-  @media (min-width: $screen-md-min) {
-
-  }
 }
 
 .publication-container {
@@ -74,6 +69,12 @@
     }
   }
 }
+
+//.reverse-elem {
+//  @media (min-width: $screen-sm-min) {
+//    @include flex-direction(row-reverse);
+//  }
+//}
 
 
 

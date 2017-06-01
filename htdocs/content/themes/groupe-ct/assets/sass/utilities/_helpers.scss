@@ -5,13 +5,16 @@
   margin:0!important;
 }
 
-img.carret-right {
+.default-width {
+  max-width:1200px;
+  margin:auto;
+}
 
+img.carret-right {
   @include rotate(-90);
 }
 
 .open{
-
   max-height: 500px!important;
 }
 
@@ -33,74 +36,4 @@ img.carret-right {
   opacity: 1!important;
 }
 
-.showButton {
-  .btn-discover {
-    top:0!important;
-  }
-}
 
-
-.show-in-mobile-only {
-  @media (min-width: $screen-sm-min) {
-    display: none!important;
-  }
-}
-
-.show-in-tablet {
-  @media (min-width: $screen-sm-min) {
-    display: block!important;
-  }
-}
-
-.show-in-mobile-tablet {
-  @media (min-width: $screen-md-min) {
-    display: none!important;
-  }
-}
-
-.show-in-tablet {
-  @media (min-width: $screen-xs-min) {
-    display: none!important;
-  }
-  @media (min-width: $screen-sm-min) {
-    display: block!important;
-  }
-}
-
-.show-in-desktop {
-  @media (min-width: $screen-xs-min) {
-    display: none!important;
-  }
-
-  @media (min-width: $screen-md-min) {
-    display: flex!important;
-  }
-}
-
-
-
-
-.hidden-xs-up {
-  @media (min-width: $screen-xs-min) {
-    display: none!important;
-  }
-}
-
-
-.hidden-md-up {
-  @media (min-width: $screen-md-min) {
-    display: none!important;
-  }
-}
-
-.hidden-md-down {
-  @media (min-width: $screen-md-min) {
-      display: none!important;
-  }
-}
-
-.reverse-elem {
-  @media (min-width: $screen-sm-min) {
-    @include flex-direction(row-reverse);
-  }
-}
