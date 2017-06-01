@@ -32,17 +32,21 @@
 }
 
 
-@mixin placeholder($font-size, $font-family, $font-weight, $color){
+@mixin placeholder($font-size, $font-family, $font-weight, $color, $opacity){
   ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
     @include set-font($font-size, $font-family, $font-weight, $color);
+    opacity: $opacity;
   }
   ::-moz-placeholder { /* Firefox 19+ */
     @include set-font($font-size, $font-family, $font-weight, $color);
+    opacity: $opacity;
   }
   :-ms-input-placeholder { /* IE 10+ */
     @include set-font($font-size, $font-family, $font-weight, $color);
+    opacity: $opacity;
   }
   :-moz-placeholder { /* Firefox 18- */
     @include set-font($font-size, $font-family, $font-weight, $color);
+    opacity: $opacity;
   }
 }

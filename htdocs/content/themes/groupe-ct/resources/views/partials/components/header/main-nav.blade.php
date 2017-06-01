@@ -51,11 +51,14 @@
             <div class="contact-field-container">
 
                 <div class="contact-row">
-                    <select name="sexe" id="sexe">
-                        <option value="">Mr/Me</option>
-                        <option value="mr">Mr</option>
-                        <option value="me">Me</option>
-                    </select>
+                    <div class="select-container">
+                        <select name="sexe" id="sexe">
+                            <option value=""  disabled selected hidden>Mr/Me</option>
+                            <option value="mr">Mr</option>
+                            <option value="me">Me</option>
+                        </select>
+                    </div>
+
                     <label for="first-name"></label>
                     <input type="text" id="first-name" placeholder="<?php _e('Prénom *', THEME_TEXTDOMAIN); ?>">
                     <label for="name"></label>
