@@ -3,8 +3,6 @@
 
 
 
-
-
         /***** MENU *******/
         $('.nav-bottom .nav-link').on('click',function(){
             var $navIndex = $(this).attr('class').split(' ')[1];

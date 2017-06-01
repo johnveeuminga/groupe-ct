@@ -60,4 +60,9 @@
         </div>
     </div>
 
+    <div class="btn-container">
+        <a class="primary-btn-blue" href="#"><?php _e('En savoir plus', THEME_TEXTDOMAIN); ?></a>
+    </div>
+
+
 </div>

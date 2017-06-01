@@ -3,7 +3,6 @@
 </div>
 
 
-
 <div class="toggle-main-container default-padding default-width">
     <div class="toggle-content-header">
         <div class="toggle-title-container">
@@ -43,7 +42,7 @@
     </div>
 
     <div class="toggle-content">
-        @for ($i = 1; $i <= 8; $i++)
+        @for ($i = 1; $i <= 3; $i++)
             {{-- job INFO START --}}
             <div class="team-info-container">
                 {{-- BLUE BAR WITH TITLE END --}}
@@ -59,4 +58,3 @@
         @endfor
     </div>
 </div> <!-- toggle-main-container END -->
-

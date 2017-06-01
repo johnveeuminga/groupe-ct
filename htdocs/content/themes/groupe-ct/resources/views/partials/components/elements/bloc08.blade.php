@@ -9,7 +9,7 @@
         <div class="toggle-content-container">
             <div class="toggle-content-header">
                 <div class="title-container">
-                    <img src="{{ themosis_assets() }}/images/icon/icon-bars-white.png" alt="">
+                    <img class="title-icon" src="{{ themosis_assets() }}/images/icon/icon-bars-white.png" alt="">
                     <h3 class="toggle-content-title" href="">Efficacité d’entreprise</h3>
                 </div>
                 <img class="toggle-content-carret" src="{{ themosis_assets() }}/images/icon/icon-chevron-white.png" alt="">

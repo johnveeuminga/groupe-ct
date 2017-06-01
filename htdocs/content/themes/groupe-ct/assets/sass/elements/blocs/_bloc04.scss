@@ -1,5 +1,6 @@
 .four-col-icons-main-container {
   position: relative;
+  text-align: center;
   .four-col-icons-container {
 
     @include flexbox();
@@ -48,6 +49,10 @@
     }
 
   }//END FOUR COL ICON ITEM
+
+  .btn-container {
+      margin-top:50px;
+  }
 
 
 }//SECTION 02 END
