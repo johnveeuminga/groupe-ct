@@ -8,9 +8,9 @@
     <div class="benefits-container default-padding default-width">
 
 
-        <div class="cat col-sm-4"><img class="over papier" src="{{ themosis_assets() }}/images/img/img-over-papier.png" alt=""></div>
-        <div class="cat col-sm-4"><img class="over hybrid" src="{{ themosis_assets() }}/images/img/img-over-hybrid.png" alt=""></div>
-        <div class="cat col-sm-4"><img class="over num" src="{{ themosis_assets() }}/images/img/img-over-num.png" alt=""></div>
+        <div class="cat col-sm-4"><a href="#"><img class="over papier" src="{{ themosis_assets() }}/images/img/img-over-papier.png" alt=""></a></div>
+        <div class="cat col-sm-4"><a href="#"><img class="over hybrid" src="{{ themosis_assets() }}/images/img/img-over-hybrid.png" alt=""></a></div>
+        <div class="cat col-sm-4"><a href="#"><img class="over num" src="{{ themosis_assets() }}/images/img/img-over-num.png" alt=""></a></div>
 
 
     </div>
