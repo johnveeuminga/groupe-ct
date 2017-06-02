@@ -71,10 +71,21 @@
                     <input type="text" id="town" placeholder="<?php _e('Ville *', THEME_TEXTDOMAIN); ?>">
                 </div>
                 <div class="contact-row">
+                    <div class="select-container">
+                        <select name="departement" id="departement">
+                            <option value=""  disabled selected hidden>Département</option>
+                            <option value="1">Ressource humaine</option>
+                            <option value="2">Administration</option>
+                        </select>
+                    </div>
+                    <label for="email"></label>
+                    <input type="email" id="email" placeholder="<?php _e('Courriel *', THEME_TEXTDOMAIN); ?>">
+                </div>
+                <div class="contact-row">
                     <label for="phone"></label>
                     <input type="text" id="phone" placeholder="<?php _e("Téléphone", THEME_TEXTDOMAIN); ?>">
                     <label for="email"></label>
-                    <input type="email" id="town" placeholder="<?php _e('Courriel *', THEME_TEXTDOMAIN); ?>">
+                    <input type="text" id="post" placeholder="<?php _e('Poste *', THEME_TEXTDOMAIN); ?>">
                 </div>
                 <div class="contact-row">
                     <textarea rows="6" cols="10" placeholder="<?php _e('Message', THEME_TEXTDOMAIN); ?>"></textarea>

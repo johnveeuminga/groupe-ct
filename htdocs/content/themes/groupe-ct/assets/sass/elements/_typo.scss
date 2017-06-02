@@ -7,8 +7,29 @@
 
 
 
+/***** POPPINS *****/
 
-// TITLE //
+.poppins14BoldBlue{
+  @include set-font(14px, $poppins, 700, $blue);
+  @media (min-width: $screen-sm-min) {
+    @include set-font(14px, $poppins, 700, $blue);
+  }
+}
+
+.poppins15LightdBlue {
+  @include set-font(15px, $poppins, 300, $blue);
+}
+
+.poppins15BoldRed {
+  @include set-font(15px, $poppins, 700, $red);
+}
+.poppins15BoldBlue {
+  @include set-font(15px, $poppins, 700, $blue);
+}
+
+.poppins15BoldBlack {
+  @include set-font(15px, $poppins, 700, $black);
+}
 
 
 
@@ -25,35 +46,11 @@
   @include set-font(22px, $poppins, 700, $green);
 }
 
+
 .poppins30BoldBlack {
   @include set-font(30px, $poppins, 700, $black);
 }
 
-
-
-.poppins15BoldRed {
-  @include set-font(15px, $poppins, 700, $red);
-}
-.poppins15BoldBlue {
-  @include set-font(15px, $poppins, 700, $blue);
-}
-
-.poppins15BoldBlack {
-  @include set-font(15px, $poppins, 700, $black);
-}
-
-.mada17LightBlack {
-  @include set-font(17px, $mada, 300, $black);
-}
-
-/***** POPPINS *****/
-
-.poppins14BoldBlue{
-  @include set-font(14px, $poppins, 700, $blue);
-  @media (min-width: $screen-sm-min) {
-    @include set-font(14px, $poppins, 700, $blue);
-  }
-}
 
 
 .poppins20SemiBoldWhite {
@@ -84,6 +81,13 @@
     @include set-font(25px, $poppins, 700, $blue);
   }
 }
+.poppins25BoldBlack {
+  @include set-font(25px, $poppins, 700, $black);
+  @media (min-width: $screen-md-min) {
+    @include set-font(25px, $poppins, 700, $black);
+  }
+}
+
 
 .poppins44BoldBlack {
   @include set-font(30px, $poppins, 700, $black);
@@ -100,6 +104,10 @@
 
 .mada14LightWhite {
   @include set-font(14px, $mada, 300, white);
+}
+
+.mada17LightBlack {
+  @include set-font(17px, $mada, 300, $black);
 }
 
 .mada18LightWhite {

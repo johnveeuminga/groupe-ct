@@ -4,33 +4,50 @@
   @include flexbox();
   @include flex-direction(column);
   position: relative;
-  width: 100px;
+  width: 40px;
   height: 100%;
-  padding-top:60px;
+
+ // padding-top:60px;
   background-color:white;
-  border: 3px solid $blue;
+ // border: 3px solid $blue;
   z-index: 1;
 
   -webkit-box-shadow: 2px 2px 50px 2px rgba(0,0,0,0.55);
   -moz-box-shadow: 2px 2px 50px 2px rgba(0,0,0,0.55);
   box-shadow: 2px 2px 50px 2px rgba(0,0,0,0.55);
-
-  @media (min-width: $screen-sm-min) {
-    width: 100px;
+  @media (min-width: $screen-xs-min) {
+    margin-left:calc(50% - 200px);
   }
   @media (min-width: $screen-md-min) {
+    margin-left: 0;
     margin:auto;
   }
 }
 
+.timeline-bar-line {
+  border-left: 3px solid $blue;
+  height:90%;
+  width:1px;
+  margin:auto;
+  position: absolute;
+  @include center-img(50%, 50%);
+  z-index: 1;
+}
 
 .timeline-event-main-container{
-
   @include flexbox();
-  @include justify-content(space-between);
+  @include flex-direction(column);
   position: relative;
   z-index: 100;
   width:440px;
+
+  .timeline-event-container {
+    @include flexbox();
+    @include align-items(flex-start);
+    position: relative;
+    left:2px;
+    margin-bottom:60px;
+  }
 
   .timeline-date-container{
     @include flexbox();
@@ -38,124 +55,68 @@
     margin-left:20px;
   }
 
-  .timeline-date {
-    margin-top:5px;
-    @extend .poppins25BoldBlue;
-  }
-
-  .timeline-event-container {
-    @include flexbox();
-    @include flex-direction(column);
-  }
-
-  .timeline-event {
-    @extend .poppins15BoldBlue;
-    margin-bottom: 10px;
-  }
 
   .event {
     @include flexbox();
     @include align-items(flex-start);
     margin:10px 0;
-
   }
 
-  .event-txt {
+  .event-line {
 
+    margin-top:5px;
+    width:30px;
+    margin-left:10px;
+    margin-right:10px;
+    border-bottom: 3px solid $blue;
+    @media (min-width: $screen-sm-min) {
+      width:90px;
+      margin-left:20px;
+      margin-right:30px;
+    }
+  }
+
+
+
+  .event-txt {
+    margin-top: -5px;
     width:300px;
     @media (min-width: $screen-sm-min) {
       width:300px;
     }
-    border: 1px solid red;
+
+    .timeline-date {
+      @extend .poppins22BoldBlue;
+      text-transform: uppercase;
+    }
+
+    .timeline-event {
+      @extend .poppins15LightdBlue;
+      margin-top: 5px;
+      text-transform: uppercase;
+    }
+
   }
 
-  .event-icon {
-    @include flexbox();
-    @include align-items(flex-start);
-  }
-
-  .timeline-icon {
-    margin-top:-10px;
-  }
 
 }
 
 /**************************************/
 
-.timeline-event-main-container.odd {
-  @include flex-direction(row-reverse);
 
-  right: -80px;
-
-  .timeline-date-container {
-    @include flex-direction(row-reverse);
-  }
-  .event {
-    @include flex-direction(row-reverse);
-  }
-
-  .timeline-dot {
-    margin-left:0px;
-    margin-right:20px;
-  }
-
-  .dot-right {
-   // display:none;
-  }
-  .dot-left {
-    display: none;
-  }
-
-  .timeline-icon {
-    margin-right:5px;
-  }
-}
-
-
-
-
-.timeline-event-main-container.even {
-
-  @extend .timeline-event-main-container.odd;
-  .dot-left {
-    display:none;
-  }
-
+.timeline-event-container.left {
   @media (min-width: $screen-md-min) {
-    @include flex-direction(row);
-    left: -444px;
-
-    .timeline-date-container {
-      @include flex-direction(row);
-    }
+    @include flex-direction(row-reverse);
+    left:-405px;
     .event {
-      @include flex-direction(row);
-    }
-
-    .event-txt {
+      @include flex-direction(row-reverse);
       text-align: right;
     }
 
-    .timeline-dot {
-      margin-left:20px;
-      margin-right:0px;
-    }
-
-    .dot-left {
-      display:block;
-    }
-    .dot-right {
-      border: 1px solid red;
-      @media (min-width: $screen-md-min) {
-        display: none;
-      }
-    }
-
-    .timeline-icon {
-      margin-left:5px;
+    .event-line {
+      margin-left:30px;
+      margin-right:20px;
     }
   }
 
-
 }
-

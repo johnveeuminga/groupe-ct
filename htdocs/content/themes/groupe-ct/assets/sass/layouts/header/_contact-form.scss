@@ -1,6 +1,6 @@
 .contact-form-container {
   position: absolute;
-  bottom:-674px;
+  bottom:-759px;
   right:0;
   z-index: 9999;
   width:620px;
@@ -43,7 +43,6 @@
         @include flex-basis(17%);
         border:1px solid white;
         margin-right:3%;
-
         background: url($assets + "/images/icon/icon-arrow.png") no-repeat 85% 50%;
       }
       select {
@@ -56,20 +55,49 @@
         @include flex-basis(35%);
       }
     }
-    /*** ROW #2 and #3 ***/
-    .contact-row:nth-child(2), .contact-row:nth-child(3) {
+    /*** ROW #2 **/
+    .contact-row:nth-child(2){
       input {
         @include flex-basis(45%);
+
+      }
+    }
+
+    .contact-row:nth-child(3) {
+      .select-container {
+        @include flex-basis(48%);
+        border:1px solid white;
+        margin-right:3%;
+        background: url($assets + "/images/icon/icon-arrow.png") no-repeat 85% 50%;
+        select {
+          border:none;
+          opacity: 0.6;
+          width:100%;
+        }
+      }
+      input {
+        @include flex-basis(45%);
+
+      }
+    }
+
+    .contact-row:nth-child(4){
+      #phone {
+         @include flex-basis(45%);
+      }
+      #post {
+        width:90px;
+        margin-left: calc(3% - 1px);
       }
     }
     /*** ROW #4 ***/
-    .contact-row:nth-child(4) {
+    .contact-row:nth-child(5) {
       textarea {
         width:100%;
       }
     }
     /*** ROW #5 ***/
-    .contact-row:nth-child(5) {
+    .contact-row:nth-child(6) {
 
       .check-container{
         @include flexbox();

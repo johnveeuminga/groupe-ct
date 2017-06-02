@@ -3,13 +3,8 @@
 </div>
 
 
-<div class="three-col-icons-main-container default-padding ">
-    <div class="col-xs-12">
+<div class="three-col-icons-main-container default-padding default-width">
 
-        <div class="three-col-icons-container">
-            <h2 class="three-col-icons-upper-title"><ul><li>Produits et solution</li></ul></h2>
-            <h1 class="three-col-icons-title">le meilleur de l'insdustrie</h1>
-        </div>
 
         <div class="three-col-icons-container row">
             <div class="three-col-icons-item col-md-4">
@@ -59,5 +54,5 @@
 
         </div>
 
-    </div>
+
 </div>

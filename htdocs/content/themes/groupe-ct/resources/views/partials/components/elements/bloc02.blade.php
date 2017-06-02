@@ -11,7 +11,9 @@
                     <img src="{{ themosis_assets() }}/images/img/img-service01.png" alt="">
                 </div>
                 <div class="buffer"></div>
+
                 <div class="text-container">
+                    <li class="upper-title">Amet dolor simaet</li>
                     <h2 class="text-container-title">{{ $i }}Des histoires et des succès</h2>
                     <h3 class="text-container-subtitle">Maisonbureau</h3>
                     <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor

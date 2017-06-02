@@ -92,6 +92,35 @@
   }
 }
 
+/************** TITLE ************************/
+
+.upper-title {
+    margin:15px 0;
+    @include set-font(22px, $poppins, 600, $red);
+    list-style: square;
+    text-transform: uppercase;
+}
+
+.section-title-container {
+
+  .title {
+
+    @extend .poppins30BoldBlack;
+    text-transform: uppercase;
+    margin:30px 0;
+    @media (min-width: $screen-sm-min) {
+      @include set-font(45px, $poppins, 700, $black);
+    }
+  }
+  .desc {
+    @extend .mada22LightBlack;
+    max-width:770px;
+  }
+
+}
+
+/**********************************************/
+
 .brochure-download-pdf {
   @include inline-flex();
   @include align-items(center);

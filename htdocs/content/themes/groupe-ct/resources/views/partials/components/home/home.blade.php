@@ -16,6 +16,11 @@
     @include('partials.components.elements.bloc16')
     @include('partials.components.elements.bloc17')
     @include('partials.components.elements.bloc18')
+    @include('partials.components.elements.bloc-section-title')
+
+    <!-- SECTIONS STATIC -->
+
+        @include('partials.components.home.home-sections.section02')
 
 
 </section>
