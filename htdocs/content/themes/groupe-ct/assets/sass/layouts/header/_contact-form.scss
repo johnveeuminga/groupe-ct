@@ -1,0 +1,173 @@
+.contact-form-container {
+  position: absolute;
+  bottom:-759px;
+  right:0;
+  z-index: 9999;
+  width:620px;
+  background-color: $black;
+  padding:40px;
+
+  .contact-form-title {
+    @extend .poppins20SemiBoldWhite;
+    margin-bottom:30px;
+  }
+
+  .contact-field-container {
+    @include flexbox();
+    @include flex-direction(column);
+
+
+    .contact-row {
+      @include flexbox();
+      margin:10px 0;
+      input:not(:first-of-type){
+        margin-left:3%;
+      }
+    }
+
+    input, select, textarea {
+      -webkit-appearance: none;
+      -webkit-border-radius: 0px;
+      background-color: transparent;
+      outline: none;
+      border:1px solid white;
+      resize: none;
+      padding: 20px 10px;
+      @include border-radius(2px);
+      @extend .mada18LightWhite;
+    }
+
+    /*** ROW #1 ***/
+    .contact-row:nth-child(1){
+      .select-container {
+        @include flex-basis(17%);
+        border:1px solid white;
+        margin-right:3%;
+        background: url($assets + "/images/icon/icon-arrow.png") no-repeat 85% 50%;
+      }
+      select {
+        border:none;
+        opacity: 0.6;
+        width:100%;
+      }
+
+      input {
+        @include flex-basis(35%);
+      }
+    }
+    /*** ROW #2 **/
+    .contact-row:nth-child(2){
+      input {
+        @include flex-basis(45%);
+
+      }
+    }
+
+    .contact-row:nth-child(3) {
+      .select-container {
+        @include flex-basis(48%);
+        border:1px solid white;
+        margin-right:3%;
+        background: url($assets + "/images/icon/icon-arrow.png") no-repeat 85% 50%;
+        select {
+          border:none;
+          opacity: 0.6;
+          width:100%;
+        }
+      }
+      input {
+        @include flex-basis(45%);
+
+      }
+    }
+
+    .contact-row:nth-child(4){
+      #phone {
+         @include flex-basis(45%);
+      }
+      #post {
+        width:90px;
+        margin-left: calc(3% - 1px);
+      }
+    }
+    /*** ROW #4 ***/
+    .contact-row:nth-child(5) {
+      textarea {
+        width:100%;
+      }
+    }
+    /*** ROW #5 ***/
+    .contact-row:nth-child(6) {
+
+      .check-container{
+        @include flexbox();
+        @include flex-basis(60%);
+        @extend .mada18LightWhite;
+      }
+      .submit-btn {
+        @include border-radius(2px);
+        width:240px;
+        padding:15px 0;
+        background-color: white;
+        border:none;
+        @extend .poppins15BoldBlack;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+      }
+    }
+
+    @include placeholder(18px, $mada, 300, white, 0.6);
+
+  }
+
+.mandatory-field-msg {
+  @extend .mada14LightWhite;
+}
+
+}//CONTACT FORM END
+
+/* Cachons la case à cocher */
+[type="checkbox"]:not(:checked),
+[type="checkbox"]:checked {
+  position: absolute;
+  left: -9999px;
+}
+
+[type="checkbox"]:not(:checked) + label,
+[type="checkbox"]:checked + label {
+  position: relative; /* permet de positionner les pseudo-éléments */
+  padding-left: 30px; /* fait un peu d'espace pour notre case à venir */
+  cursor: pointer;    /* affiche un curseur adapté */
+  @media (max-width: $screen-sm-min) {
+    //padding-left: 30px;
+  }
+}
+
+/* Aspect des checkboxes */
+/* :before sert à créer la case à cocher */
+[type="checkbox"]:not(:checked) + label:before,
+[type="checkbox"]:checked + label:before {
+  content:  url($assets + "/images/icon/form-unchecked.png");
+  position: absolute;
+  left:0px; top: -5px;
+
+}
+
+//* Aspect général de la coche */
+[type="checkbox"]:not(:checked) + label:after,
+[type="checkbox"]:checked + label:after {
+  content:  url($assets + "/images/icon/form-checked.png");
+  position: absolute;
+  left:0px; top: -5px;
+  transition: all .2s; /* on prévoit une animation */
+}
+/* Aspect si "pas cochée" */
+[type="checkbox"]:not(:checked) + label:after {
+  opacity: 0; /* coche invisible */
+  transform: scale(0); /* mise à l'échelle à 0 */
+}
+/* Aspect si "cochée" */
+[type="checkbox"]:checked + label:after {
+  opacity: 1; /* coche opaque */
+  transform: scale(1); /* mise à l'échelle 1:1 */
+}

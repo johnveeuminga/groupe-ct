@@ -1,7 +1,6 @@
 (function($) {
     $(document).ready(function() {
 
-        // $window =  $(window);
 
 
         /***** MENU *******/
@@ -23,7 +22,7 @@
             }, function() {
                var $navIndex = $(this).attr('class').split(' ')[1];
                 $('.s'+ $navIndex).addClass('hideMe');
-               $(this).parent().removeClass('show-arrow');
+                $(this).parent().removeClass('show-arrow');
             }
         );
 
@@ -49,6 +48,55 @@
             }
             $(this).parent().siblings('.slider-main-container').find('.' + $slideNumber).addClass('active-slide').siblings().removeClass('active-slide');
         });
+
+        /***** Toggle content  *******/
+
+        $('body').on('click', '.open-toggle-content', function (e) {
+
+            e.preventDefault();
+
+            $(this).parent().toggleClass('active-header');
+            $(this).parent().siblings('.toggle-content').toggleClass('open-content');
+            $(this).siblings('.triangle-blue').toggleClass('toggle-triangle');
+            $(this).siblings('.toggle-content-carret').toggleClass('toggle-carret');
+
+        });
+
+
+        /******* TRIGGER COUNT ANIMATION  *******/
+        var statsContainerTop = $('.stats-number-container .line').offset().top;
+        var animDone = false;
+        $(window).scroll(function() {
+
+            var scrollBottom = $(window).scrollTop() + $(window).height();
+
+
+            if(scrollBottom >= statsContainerTop) {
+
+                if(!animDone) {
+                    $('.count').each(function () {
+                        $(this).prop('Counter',0).animate({
+                            Counter: $(this).text()
+                        }, {
+                            duration: 2000,
+                            easing: 'swing',
+                            step: function (now) {
+                                $(this).text(Math.ceil(now));
+                            }
+                        });
+                    });
+
+                }
+
+                animDone = true;
+            }
+
+
+        });
+
+
+
+
 
 
     });

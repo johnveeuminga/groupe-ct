@@ -2,12 +2,25 @@
 
 
 @import "blocs/bloc02";
+@import "blocs/bloc03";
 @import "blocs/bloc04";
 @import "blocs/bloc05";
 @import "blocs/bloc06";
 @import "blocs/bloc07";
 @import "blocs/bloc08";
+@import "blocs/bloc09";
+@import "blocs/bloc10";
+@import "blocs/bloc11";
+@import "blocs/bloc12";
+@import "blocs/bloc13";
+@import "blocs/bloc14";
+@import "blocs/bloc15";
+@import "blocs/bloc16";
+@import "blocs/bloc17";
+@import "blocs/bloc18";
 
+/****** PARTS OF SOME BLOCS *******/
+@import "blocs/toggleBar";
 
 /***** STRUCTURE ******/
 
@@ -16,45 +29,36 @@
   padding:0!important;
 }
 
+
+.page-main-container {
+  max-width:1200px;
+  margin:auto;
+}
+
 .row {
   margin-left: 0!important;
   margin-right: 0!important;
 }
 
-/***** TYPOGRAPHY ********/
-
-.nav-link, a {
-  text-decoration: none!important;
-}
-
-/***** POPPINS *****/
-
-.poppins44BoldBlack {
-  @include set-font(30px, $poppins, 700, $black);
-  @media (min-width: $screen-md-min) {
-    @include set-font(44px, $poppins, 700, $black);
+.reverse-elem {
+  @media (min-width: $screen-sm-min) {
+    @include flex-direction(row-reverse);
   }
 }
 
-/****** MADA *******/
-.mada22RegBlack {
-  @include set-font(22px, $mada, 400, $black);
-  line-height: 32px;
-}
+/***** TYPOGRAPHY ********/
 
-.mada30RegBlue {
-  @include set-font(30px, $mada, 400, $blue);
-  line-height: 32px;
-}
+@import "typo";
 
-/***** BUTTONS *****/
+
+/***** BUTTONS & CTA *****/
 
 .primary-btn {
   padding: 20px 30px;
   @include set-font(15px, $poppins, 700, $blue);
   background-color: white;
   text-decoration: none;
-
+  text-transform: uppercase;
   @media (min-width: $screen-sm-min) {
     padding: 20px 40px;
     @include set-font(15px, $poppins, 700, $blue);
@@ -80,13 +84,71 @@
   @include set-font(15px, $poppins, 700, $blue );
   text-transform: uppercase;
   position: relative;
+  @include flexbox();
+  @include align-items(center);
   &:after {
     content:url($assets + "/images/icon/icon-cta-arrow-blue.png");
-    position: absolute;
-    right:-40px;
-    top:3.5px;
+    margin-left:40px;
   }
 }
+
+/************** TITLE ************************/
+
+.upper-title {
+    margin:15px 0;
+    @include set-font(22px, $poppins, 600, $red);
+    list-style: square;
+    text-transform: uppercase;
+}
+
+.section-title-container {
+
+  .title {
+
+    @extend .poppins30BoldBlack;
+    text-transform: uppercase;
+    margin:30px 0;
+    @media (min-width: $screen-sm-min) {
+      @include set-font(45px, $poppins, 700, $black);
+    }
+  }
+  .desc {
+    @extend .mada22LightBlack;
+    max-width:770px;
+  }
+
+}
+
+/**********************************************/
+
+.brochure-download-pdf {
+  @include inline-flex();
+  @include align-items(center);
+  @extend .poppins14BoldBlue;
+  letter-spacing: 0.08em;
+  &:after {
+    content: url($assets + "/images/icon/pdf_dl_blue.png");
+    margin-left:15px;
+  }
+}
+
+.brochure-download-pdf-blue {
+  @extend .brochure-download-pdf;
+  &:after {
+    content: url($assets + "/images/icon/pdf_dl_blue.png");
+  }
+}
+
+.brochure-download-pdf-white {
+  @extend .brochure-download-pdf;
+  color:white;
+  background-color: $blue;
+  padding: 10px 30px;
+  &:after {
+    content: url($assets + "/images/icon/pdf_dl_white.png");
+  }
+}
+
 
 .slider-link-container {
   border-bottom: 2px solid #aaaaaa;
@@ -135,11 +197,18 @@
   position: relative!important;
 }
 
+.shadow {
+  -webkit-box-shadow: 0px 0px 41px 1px rgba(0,0,0,0.2);
+  -moz-box-shadow: 0px 0px 41px 1px rgba(0,0,0,0.2);
+  box-shadow: 0px 0px 41px 1px rgba(0,0,0,0.2);
+}
+
+
 
 /* JUST FOR DEV */
 
-section {
-
+#footer {
+  margin-top:50px;
 }
 
 .bloc-name {
@@ -148,3 +217,4 @@ section {
   margin:50px 0;
   @include set-font(16px, $poppins, 400, white);
 }
+

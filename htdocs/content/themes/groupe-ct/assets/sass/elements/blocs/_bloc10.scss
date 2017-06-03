@@ -1,0 +1,84 @@
+.product-main-container{
+
+  @include flexbox();
+  @include flex-direction(column);
+  @include align-items(center);
+
+  //background-color: #f6f6f6;
+
+  @media (min-width: $screen-sm-min) {
+    @include flex-direction(row);
+    //mm@include justify-content(center);
+    @include flex-wrap(wrap);
+
+  }
+}//PRODUCT MAIN CONTAINER END
+
+
+.product-container {
+  position: relative;
+  z-index: 1;
+  //width:320px;
+  margin: 80px 0;
+  @media (min-width: $screen-sm-min) {
+    width:calc(100%/2);
+  }
+  @media (min-width: $screen-md-min) {
+    width:calc(100%/3);
+  }
+
+  .product-inner-container {
+    padding: 0 2%;
+  }
+
+  .product-img-container {
+    text-align: center;
+    .product-img {
+      -webkit-box-shadow: 0px 0px 41px 1px rgba(0,0,0,0.2);
+      -moz-box-shadow: 0px 0px 41px 1px rgba(0,0,0,0.2);
+      box-shadow: 0px 0px 41px 1px rgba(0,0,0,0.2);
+    }
+  }
+
+  .product-text-container {
+
+    position: relative;
+    top:-10px;
+    z-index: 10;
+    background-color: white;
+    padding:40px 40px 10px 40px;
+    max-width:380px;
+
+    -webkit-box-shadow: 0px 0px 41px 1px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0px 0px 41px 1px rgba(0,0,0,0.2);
+    box-shadow: 0px 0px 41px 1px rgba(0,0,0,0.2);
+
+    .product-title {
+     @extend .poppins22BoldBlack;
+     text-transform: uppercase;
+    }
+    .product-desc {
+      @extend .mada18LightBlack;
+      margin: 20px 0;
+      padding-bottom:20px;
+      border-bottom:1px solid $blue;
+      line-height: 27px;
+    }
+    .product-download-pdf {
+      @include inline-flex();
+      @include align-items(center);
+      @extend .poppins14BoldBlue;
+
+      letter-spacing: 0.08em;
+      &:after {
+        content: url($assets + "/images/icon/pdf_dl.png");
+        margin-left:15px;
+      }
+    }
+  }
+}//PRODUCT CONTAINER END
+
+
+
+
+

@@ -92,11 +92,12 @@
 
 
   .nav-contact-us {
-    background-color: $blue;
     @include flexbox();
     @include flex-direction(column);
     @include justify-content(center);
     @include align-items(center);
+    position: relative;
+    background-color: $blue;
     .contact-us-link {
       display: block;
       width:100%;
@@ -116,7 +117,8 @@
         margin-top:10px;
       }
     }
+
+
   }
 }
-
 

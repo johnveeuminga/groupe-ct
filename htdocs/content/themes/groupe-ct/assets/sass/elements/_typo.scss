@@ -1,0 +1,155 @@
+// GLOBAL STRUCTURE //
+
+.nav-link, a {
+  text-decoration: none!important;
+}
+
+
+
+
+/***** POPPINS *****/
+
+.poppins14BoldBlue{
+  @include set-font(14px, $poppins, 700, $blue);
+  @media (min-width: $screen-sm-min) {
+    @include set-font(14px, $poppins, 700, $blue);
+  }
+}
+
+.poppins15LightdBlue {
+  @include set-font(15px, $poppins, 300, $blue);
+}
+
+.poppins15BoldRed {
+  @include set-font(15px, $poppins, 700, $red);
+}
+.poppins15BoldBlue {
+  @include set-font(15px, $poppins, 700, $blue);
+}
+
+.poppins15BoldBlack {
+  @include set-font(15px, $poppins, 700, $black);
+}
+
+
+
+
+
+.poppins22BoldWhite {
+  @include set-font(22px, $poppins, 700, white);
+}
+.poppins22BoldBlue{
+  @include set-font(22px, $poppins, 700, $blue);
+}
+
+.poppins22BoldGreen {
+  @include set-font(22px, $poppins, 700, $green);
+}
+
+
+.poppins30BoldBlack {
+  @include set-font(30px, $poppins, 700, $black);
+}
+
+
+
+.poppins20SemiBoldWhite {
+  @include set-font(20px, $poppins, 600, white);
+  @media (min-width: $screen-sm-min) {
+    @include set-font(20px, $poppins, 600, white);
+  }
+}
+
+.poppins22BoldBlack {
+  @include set-font(18px, $poppins, 700, $black);
+  @media (min-width: $screen-sm-min) {
+    @include set-font(22px, $poppins, 700, $black);
+  }
+}
+
+.poppins24LightWhite {
+  @include set-font(24px, $poppins, 300, white);
+  @media (min-width: $screen-sm-min) {
+    @include set-font(24px, $poppins, 300, white);
+  }
+  line-height: 32px;
+}
+
+.poppins25BoldBlue {
+  @include set-font(25px, $poppins, 700, $blue);
+  @media (min-width: $screen-md-min) {
+    @include set-font(25px, $poppins, 700, $blue);
+  }
+}
+.poppins25BoldBlack {
+  @include set-font(25px, $poppins, 700, $black);
+  @media (min-width: $screen-md-min) {
+    @include set-font(25px, $poppins, 700, $black);
+  }
+}
+
+
+.poppins44BoldBlack {
+  @include set-font(30px, $poppins, 700, $black);
+  @media (min-width: $screen-md-min) {
+    @include set-font(44px, $poppins, 700, $black);
+  }
+}
+
+.poppins90SemiBoldWhite {
+  @include set-font(90px, $poppins, 600, white);
+}
+
+/****** MADA *******/
+
+.mada14LightWhite {
+  @include set-font(14px, $mada, 300, white);
+}
+
+.mada17LightBlack {
+  @include set-font(17px, $mada, 300, $black);
+}
+
+.mada18LightWhite {
+  @include set-font(18px, $mada, 300, white);
+  @media (min-width: $screen-sm-min) {
+    @include set-font(18px, $mada, 300, white);
+  }
+}
+
+.mada18LightBlack {
+  @include set-font(16px, $mada, 300, $black);
+  @media (min-width: $screen-sm-min) {
+    @include set-font(18px, $mada, 300, $black);
+  }
+}
+
+.mada18RegBlack {
+  @include set-font(16px, $mada, 400, $black);
+  @media (min-width: $screen-sm-min) {
+    @include set-font(18px, $mada, 400, $black);
+  }
+}
+
+.mada18RegBlue {
+  @include set-font(16px, $mada, 400, $blue);
+  @media (min-width: $screen-sm-min) {
+    @include set-font(18px, $mada, 400, $blue);
+  }
+}
+
+.mada22LightBlack {
+  @include set-font(22px, $mada, 300, $black);
+  line-height: 32px;
+}
+
+.mada22RegBlack {
+  @include set-font(22px, $mada, 400, $black);
+  line-height: 32px;
+}
+
+.mada30RegBlue {
+  @include set-font(30px, $mada, 400, $blue);
+  line-height: 32px;
+}
+

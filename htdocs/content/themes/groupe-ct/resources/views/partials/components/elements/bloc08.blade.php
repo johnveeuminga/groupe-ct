@@ -2,20 +2,21 @@
     <h1>BLOC #8 Tirroir</h1>
 </div>
 
-<div class="toggle-content-main-container row default-padding ">
-    <div class="col-md-10 col-md-offset-1">
+<div class="toggle-content-main-container default-padding default-width">
 
+
+        <!-- THE ELEMENT START  -->
         <div class="toggle-content-container">
             <div class="toggle-content-header">
                 <div class="title-container">
-                    <img src="{{ themosis_assets() }}/images/icon/icon-bars-white.png" alt="">
-                    <h3 class="toggle-content-title">Efficacité d’entreprise</h3>
+                    <img class="title-icon" src="{{ themosis_assets() }}/images/icon/icon-bars-white.png" alt="">
+                    <h3 class="toggle-content-title" href="">Efficacité d’entreprise</h3>
                 </div>
-
+                <img class="toggle-content-carret" src="{{ themosis_assets() }}/images/icon/icon-chevron-white.png" alt="">
                 <div class="triangle-blue"></div>
-                <img src="{{ themosis_assets() }}/images/icon/icon-chevron-white.png" alt="">
+                <a class="open-toggle-content" href="#"></a>
             </div>
-            <div class="content">
+            <div class="toggle-content">
 
                 <div class="wys-content">
                     <h4>Analyse de la performance</h4>
@@ -29,45 +30,8 @@
                         culpa qui officia deserunt mollit anim id est laborum.
                     </p>
                 </div>
-                <div class="bloc-text-main-container">
-                    <div class="text-bloc-container">
-                        <h3 class="text-bloc-title">Lorem ipsum dolor sit amet consectetur</h3>
-                        <p class="text-bloc-text">
-                            te irure dolor in reprehenderit in vDuis aute irure dolor in reprehenderit in voluptate velit
-                            esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                            sunt in culpa qui officia deserunt mollit anim id.
-                        </p>
-                    </div>
-                    <div class="text-bloc-container">
-                        <h3 class="text-bloc-title">Lorem ipsum dolor sit amet consectetur</h3>
-                        <p class="text-bloc-text">
-                            te irure dolor in reprehenderit in vDuis aute irure dolor in reprehenderit in voluptate velit
-                            esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                            sunt in culpa qui officia deserunt mollit anim id.
-                        </p>
-                    </div>
-                    <div class="text-bloc-container">
-                        <h3 class="text-bloc-title">Lorem ipsum dolor sit amet consectetur</h3>
-                        <p class="text-bloc-text">
-                            te irure dolor in reprehenderit in vDuis aute irure dolor in reprehenderit in voluptate velit
-                            esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                            sunt in culpa qui officia deserunt mollit anim id.
-                        </p>
-                    </div>
-                    <div class="text-bloc-container">
-                        <h3 class="text-bloc-title">Lorem ipsum dolor sit amet consectetur</h3>
-                        <p class="text-bloc-text">
-                            te irure dolor in reprehenderit in vDuis aute irure dolor in reprehenderit in voluptate velit
-                            esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                            sunt in culpa qui officia deserunt mollit anim id.
-                        </p>
-                    </div>
-
-                </div>
-
-
-            </div>
+            </div><!-- CONTENT END -->
         </div>
+        <!-- THE ELEMENT END  -->
 
-    </div>
 </div>

@@ -1,0 +1,57 @@
+.stats-main-container {
+
+  background-image: url($assets + "/images/bg/bg-stats.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  //min-height:740px;
+  padding: 170px 0;
+
+  .stats-container {
+    @include flexbox();
+    @include flex-direction(column);
+    @include align-items(center);
+    padding: 50px 0;
+    @media (min-width: $screen-md-min) {
+      padding:0;
+    }
+  }
+
+  .stats-icon-container {
+    height:100px;
+  }
+
+  .stats-number-container {
+    margin-top:60px;
+    margin-bottom:30px;
+
+
+    .stats-number {
+      @extend .poppins90SemiBoldWhite;
+
+    }
+    .line {
+      border: 2px solid white;
+      width:25px;
+      margin:auto;
+      margin-top:10px;
+    }
+  }
+
+  .stats-desc-container {
+    text-align: center;
+
+    .stats-desc {
+      @extend .poppins24LightWhite;
+    }
+  }
+
+
+}
+
+
+.main-container {
+  border: 1px solid red;
+  .container {
+    border: 1px solid blue;
+  }
+}

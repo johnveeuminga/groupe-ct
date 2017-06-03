@@ -1,29 +1,4 @@
 .three-col-icons-main-container {
-  position: relative;
-
-  /***************************************************************/
-  .three-col-icons-container {
-
-    .three-col-icons-upper-title {
-      margin-bottom:15px;
-      ul li {
-        @include set-font(22px, $poppins, 600, $red);
-        list-style: square;
-        margin-left:22px;
-        text-transform: uppercase;
-      }
-    }
-
-    .three-col-icons-title {
-      @include set-font(30px, $poppins, 700, $black);
-      text-transform: uppercase;
-      @media (min-width: $screen-sm-min) {
-        @include set-font(45px, $poppins, 700, $black);
-      }
-    }
-  }
-
-  /***************************************************************/
 
   .three-col-icons-item {
     margin: 50px 0;
@@ -33,15 +8,12 @@
     @media (min-width: $screen-md-min) {
       @include flexbox();
       @include flex-direction(column);
-      //@include align-items(center);
     }
 
     .three-col-icons-img-container {
-     // text-align: center;
+
       margin-bottom: 30px;
-      @media (min-width: $screen-xs-min) {
-        //margin-bottom: 0px;
-      }
+
       @media (min-width: $screen-md-min) {
         text-align: left;
         margin-left: 15px;
@@ -57,7 +29,7 @@
         @include set-font(25px, $poppins, 700, $blue);
       }
       .three-col-icons-desc {
-        @include set-font(22px, $mada, 300, $black);
+        @extend .mada22LightBlack;
         margin: 15px 0;
       }
     }
@@ -74,9 +46,6 @@
     color:$green;
   }
 
-
-  /***************************************************************/
-
-}//SECTION 02 END
+}//SECTION END
 
 
