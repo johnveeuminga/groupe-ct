@@ -1,5 +1,4 @@
 <?php
-die ('it works');
 
 /**
  * Tells WordPress to load the WordPress theme and output it.
