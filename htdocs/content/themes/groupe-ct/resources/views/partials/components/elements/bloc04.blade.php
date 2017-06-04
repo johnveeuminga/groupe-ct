@@ -11,7 +11,8 @@
     <div class="four-col-icons-container">
         <div class="four-col-icons-item col-xs-12 col-sm-6 col-md-3">
             <div class="four-col-icons-img-container">
-                <img class="four-col-icons-img" src="{{ themosis_assets() }}/images/icon/icon-bars-circle.png " alt="" >
+                <img class="four-col-icons-img" src="{{ themosis_assets() }}/images/icon/icon-bars-circle.png" alt="" >
+                <img class="four-col-icons-img" src="{{ themosis_assets() }}/images/icon/icon-bars.png " alt="" >
             </div>
 
             <h3 class="four-col-icons-title">Efficacité <br>
@@ -23,7 +24,8 @@
         </div>
         <div class="four-col-icons-item col-xs-12 col-sm-6 col-md-3">
             <div class="four-col-icons-img-container">
-                <img class="four-col-icons-img" src="{{ themosis_assets() }}/images/icon/icon-dollar-circle.png " alt="" >
+                <img class="four-col-icons-img" src="{{ themosis_assets() }}/images/icon/icon-dollar-circle.png" alt="" >
+                <img class="four-col-icons-img" src="{{ themosis_assets() }}/images/icon/icon-dollar_v2.png " alt="" >
             </div>
 
             <h3 class="four-col-icons-title">Efficacité<br>
@@ -35,7 +37,8 @@
         </div>
         <div class="four-col-icons-item col-xs-12 col-sm-6 col-md-3">
             <div class="four-col-icons-img-container">
-                <img class="four-col-icons-img" src="{{ themosis_assets() }}/images/icon/icon-lock-circle.png " alt="" >
+                <img class="four-col-icons-img" src="{{ themosis_assets() }}/images/icon/icon-lock-circle.png" alt="" >
+                <img class="four-col-icons-img" src="{{ themosis_assets() }}/images/icon/icon-lock.png" alt="" >
             </div>
 
             <h3 class="four-col-icons-title">Efficacité<br>
@@ -47,7 +50,8 @@
         </div>
         <div class="four-col-icons-item col-xs-12 col-sm-6 col-md-3">
             <div class="four-col-icons-img-container">
-                <img class="four-col-icons-img" src="{{ themosis_assets() }}/images/icon/icon-paper-stack-circle.png " alt="" >
+                <img class="four-col-icons-img" src="{{ themosis_assets() }}/images/icon/icon-paper-stack-circle.png" alt="" >
+                <img class="four-col-icons-img" src="{{ themosis_assets() }}/images/icon/icon-paper-stack.png" alt="" >
             </div>
 
             <h3 class="four-col-icons-title">Efficacité<br>

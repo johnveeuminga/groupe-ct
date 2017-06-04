@@ -10,6 +10,7 @@
  */
 
 Route::any('front', 'HomeController@index');
+Route::any('page', 'HomeController@blocs');
 //Route::any('singular', ['recette' , 'uses' => 'HomeController@recipe_single']);
 //Route::any('postTypeArchive', ['recette' , 'uses' => 'HomeController@recipe_list']);
 //Route::any('template', ['legal-notice' , 'uses' => 'HomeController@legal_notice']);

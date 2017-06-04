@@ -2,7 +2,7 @@
 
 <div class="sub-menu-main-container">
 
-    <div class="sub-menu-container snl1 hideMe">
+    <div class="sub-menu-container snl1 ">
 
         <div class="sub-menu-title-container col-xs-10 col-xs-offset-2">
             <h2 class="sub-menu-title">Un accompagnement sur mesure </h2>
