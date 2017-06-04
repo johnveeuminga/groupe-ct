@@ -24,6 +24,25 @@
 
     .four-col-icons-img-container {
       text-align: center;
+
+      @media (min-width: $screen-md-min) {
+        height:100px;
+        @include flexbox();
+        @include align-items(center);
+      }
+    }
+
+    .four-col-icons-img-container img:nth-child(1) {
+      @media (min-width: $screen-md-min) {
+        display: none;
+      }
+    }
+
+    .four-col-icons-img-container img:nth-child(2) {
+      display: none;
+      @media (min-width: $screen-md-min) {
+        display: block;
+      }
     }
 
     .four-col-icons-title {

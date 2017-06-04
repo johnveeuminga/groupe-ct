@@ -32,8 +32,19 @@
 }
 
 
+.poppins20SemiBoldWhite {
+  @include set-font(20px, $poppins, 600, white);
+  @media (min-width: $screen-sm-min) {
+    @include set-font(20px, $poppins, 600, white);
+  }
+}
 
-
+.poppins22RegBlack {
+  @include set-font(18px, $poppins, 400, $black);
+  @media (min-width: $screen-sm-min) {
+    @include set-font(22px, $poppins, 400, $black);
+  }
+}
 
 .poppins22BoldWhite {
   @include set-font(22px, $poppins, 700, white);
@@ -42,6 +53,12 @@
   @include set-font(22px, $poppins, 700, $blue);
 }
 
+.poppins22BoldBlack {
+  @include set-font(18px, $poppins, 700, $black);
+  @media (min-width: $screen-sm-min) {
+    @include set-font(22px, $poppins, 700, $black);
+  }
+}
 .poppins22BoldGreen {
   @include set-font(22px, $poppins, 700, $green);
 }
@@ -53,19 +70,9 @@
 
 
 
-.poppins20SemiBoldWhite {
-  @include set-font(20px, $poppins, 600, white);
-  @media (min-width: $screen-sm-min) {
-    @include set-font(20px, $poppins, 600, white);
-  }
-}
 
-.poppins22BoldBlack {
-  @include set-font(18px, $poppins, 700, $black);
-  @media (min-width: $screen-sm-min) {
-    @include set-font(22px, $poppins, 700, $black);
-  }
-}
+
+
 
 .poppins24LightWhite {
   @include set-font(24px, $poppins, 300, white);

@@ -6,11 +6,7 @@
         /***** MENU *******/
         $('.nav-bottom .nav-link').on('click',function(){
             var $navIndex = $(this).attr('class').split(' ')[1];
-            console.log($navIndex);
-
-            //$('.s'+ $navIndex).toggleClass('hideMe');
-            $('.s'+ $navIndex).removeClass('hideMe').siblings().addClass('hideMe');
-
+            $('.sub-menu-container '+ $navIndex).removeClass('hideMe').siblings().addClass('hideMe');
         });
 
 
@@ -36,7 +32,36 @@
             }
         );
 
-        /***** Sliders with dots *******/
+
+        /**** ECHELLE NUMERIQUE ********/
+
+        $( ".cat" ).hover(
+            function() {
+                var $catSection = $(this).attr('class').split(' ')[1];
+                $('.benefit-bg.' + $catSection).removeClass('hideMe');
+            }, function() {
+                var $catSection = $(this).attr('class').split(' ')[1];
+                $('.benefit-bg.' + $catSection).addClass('hideMe');
+            }
+        );
+
+      /*  $( ".contact-form-container" ).hover(
+            function() {
+
+                $(this).removeClass('hideMe');
+            }, function() {
+
+                $(this).addClass('hideMe');
+            }
+        );
+
+        */
+
+        $('.contact-us-link').on('click', function () {
+            $(this).siblings('.contact-form-container').toggleClass('hideMe');
+        });
+
+                /***** Sliders with dots *******/
 
         $('body').on('click', '.slider-dot', function (e) {
             var $slideNumber = $(this).attr('class').split(' ')[1] ;
@@ -64,7 +89,7 @@
 
 
         /******* TRIGGER COUNT ANIMATION  *******/
-        var statsContainerTop = $('.stats-number-container .line').offset().top;
+/*    var statsContainerTop = $('.stats-number-container .line').offset().top;
         var animDone = false;
         $(window).scroll(function() {
 
@@ -91,8 +116,7 @@
                 animDone = true;
             }
 
-
-        });
+        });*/
 
 
 

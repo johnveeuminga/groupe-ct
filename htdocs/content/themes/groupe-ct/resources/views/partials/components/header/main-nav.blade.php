@@ -46,7 +46,7 @@
             <span><?php _e('CONTACTEZ-NOUS', THEME_TEXTDOMAIN); ?></span>
             <img class="icon-arrow" src="{{ themosis_assets() }}/images/icon/icon-arrow.png" alt="arrow contact us">
         </a>
-        <div class="contact-form-container">
+        <div class="contact-form-container hideMe">
             <h2 class="contact-form-title"><?php _e('Contactez-nous pour lorem ipsum', THEME_TEXTDOMAIN); ?></h2>
             <div class="contact-field-container">
 

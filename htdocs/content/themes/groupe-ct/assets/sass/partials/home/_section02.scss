@@ -1,11 +1,27 @@
 .section02-main-container {
-  border: 1px solid red;
 
+  .benefits-title-container {
+    @include flexbox();
+    @include align-items(center);
+    @include justify-content(space-between);
+    text-align: center;
+    .line {
+      border-bottom: 2px solid $grey-light;
+      opacity: 0.6;
+      @include flex-basis(37.33%);
+    }
+    .title {
+
+      @extend .poppins22RegBlack;
+      text-transform: uppercase;
+      @include flex-basis(25%);
+    }
+
+  }
 
   .benefits-container {
-    border: 1px solid blue;
     position: relative;
-    background-image: url($assets + "/images/img/img-benefits-full.png");
+    background-image: url($assets + "/images/echelle/img-benefits-full.png");
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: center;
@@ -13,31 +29,34 @@
     @include flexbox();
   }
 
-  .cat {
-    position: relative;
-    img {
-      display:none;
-      width:545px;
-    }
-  }
-
-  .cat:nth-child(2) {
-   left: -40px;
-  }
-  .cat:nth-child(3) {
-    left: -50px;
-  }
-  .cat:hover {
-    img {
-      display: block;
-    }
-  }
-
-  .over {
+  .benefit-bg {
+    height:200px;
+    width:100%;
     position: absolute;
-    top:-30px;
-    left:-50px;
+    left:0px;
+    top:0;
+    background-repeat: no-repeat;
+    background-size: 101%;
+    background-position: center;
+    z-index: 1;
   }
+
+  .benefit-bg.paper {
+    background-image: url($assets + "/images/echelle/img-over-papier.png");
+  }
+  .benefit-bg.hyb {
+    background-image: url($assets + "/images/echelle/img-over-hybrid.png");
+  }
+  .benefit-bg.num {
+    background-image: url($assets + "/images/echelle/img-over-num.png");
+  }
+
+
+  .cat{
+    position: relative;
+    z-index:9999;
+  }
+
 
 
 
