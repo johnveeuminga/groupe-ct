@@ -8,7 +8,7 @@
  */
 class BaseLego
 {
-    protected function generate_cta($prefix)
+    protected function generate_cta($prefix, $conditional_logic = 0)
     {
         return [
             [
@@ -18,7 +18,7 @@ class BaseLego
                 'type' => 'text',
                 'instructions' => '',
                 'required' => 0,
-                'conditional_logic' => 0,
+                'conditional_logic' => $conditional_logic,
                 'wrapper' => array (
                     'width' => '',
                     'class' => '',
@@ -37,7 +37,7 @@ class BaseLego
                 'type' => 'url',
                 'instructions' => '',
                 'required' => 0,
-                'conditional_logic' => 0,
+                'conditional_logic' => $conditional_logic,
                 'wrapper' => array (
                     'width' => '',
                     'class' => '',
@@ -53,7 +53,7 @@ class BaseLego
                 'type' => 'true_false',
                 'instructions' => '',
                 'required' => 0,
-                'conditional_logic' => 0,
+                'conditional_logic' => $conditional_logic,
                 'wrapper' => array (
                     'width' => '',
                     'class' => '',
@@ -91,7 +91,7 @@ class BaseLego
         ];
     }
 
-    protected function generate_text($prefix, $label)
+    protected function generate_text($prefix, $label, $conditional_logic = 0)
     {
         return [
             'key' => $prefix . '_key',
@@ -100,7 +100,7 @@ class BaseLego
             'type' => 'text',
             'instructions' => '',
             'required' => 0,
-            'conditional_logic' => 0,
+            'conditional_logic' => $conditional_logic,
             'wrapper' => array (
                 'width' => '',
                 'class' => '',
@@ -183,7 +183,7 @@ class BaseLego
         ];
     }
 
-    protected function generate_image($prefix, $label, $size_instruction)
+    protected function generate_image($prefix, $label, $size_instruction, $conditional_logic = 0)
     {
         return [
             'key' => $prefix . '_key',
@@ -192,7 +192,7 @@ class BaseLego
             'type' => 'image',
             'instructions' => $size_instruction,
             'required' => 0,
-            'conditional_logic' => 0,
+            'conditional_logic' => $conditional_logic,
             'wrapper' => array (
                 'width' => '',
                 'class' => '',
@@ -251,4 +251,92 @@ class BaseLego
             'maxlength' => '',
         ];
     }
+
+	/**
+	 * @param $prefix
+	 * @param $label
+	 * @param array $fields
+	 * @param int $min
+	 * @param int $max
+	 * @param int|array $conditional_logic
+	 *
+	 * @return array
+	 */
+    protected function generate_repeater($prefix, $label, $fields = [], $min = 1, $max = 0, $conditional_logic = 0)
+    {
+    	return [
+		    'key' => $prefix . '_key',
+		    'label' => $label,
+		    'name' => $prefix,
+		    'type' => 'repeater',
+		    'instructions' => '',
+		    'required' => 0,
+		    'conditional_logic' => $conditional_logic,
+		    'wrapper' => array (
+			    'width' => '',
+			    'class' => '',
+			    'id' => '',
+		    ),
+		    'collapsed' => '',
+		    'min' => $min,
+		    'max' => $max,
+		    'layout' => 'block',
+		    'button_label' => '',
+		    'sub_fields' => $fields
+	    ];
+    }
+
+
+    protected function generate_select($prefix, $label, $choices = [])
+    {
+    	return [
+		    'key' => $prefix . '_key',
+		    'label' => $label,
+		    'name' => $prefix,
+		    'type' => 'select',
+		    'instructions' => '',
+		    'required' => 0,
+		    'conditional_logic' => 0,
+		    'wrapper' => array (
+			    'width' => '',
+			    'class' => '',
+			    'id' => '',
+		    ),
+		    'choices' => $choices,
+		    'default_value' => [],
+		    'allow_null' => 0,
+		    'multiple' => 0,
+		    'ui' => 0,
+		    'ajax' => 0,
+		    'return_format' => 'value',
+		    'placeholder' => '',
+	    ];
+    }
+
+    protected function generate_object($prefix, $label, $post_types)
+    {
+	    return [
+		    'key' => $prefix . '_key' ,
+		    'label' => $label,
+		    'name' => $prefix,
+		    'type' => 'post_object',
+		    'instructions' => '',
+		    'required' => 0,
+		    'conditional_logic' => 0,
+		    'wrapper' => array (
+			    'width' => '',
+			    'class' => '',
+			    'id' => '',
+		    ),
+		    'post_type' => $post_types,
+		    'taxonomy' => array (
+		    ),
+		    'allow_null' => 0,
+		    'multiple' => 0,
+		    'return_format' => 'object',
+		    'ui' => 1,
+        ];
+    }
+
+
 }

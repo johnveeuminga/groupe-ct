@@ -11,196 +11,58 @@ class Lego1 extends BaseLego implements LegoInterface
     private function get_unique_fields()
     {
         return [
-            array (
-                'key' => 'bloc_1_header_slides_key',
-                'label' => 'Slides',
-                'name' => 'bloc_1_header_slides',
-                'type' => 'repeater',
-                'instructions' => '',
-                'required' => 0,
-                'conditional_logic' => array (
-                    array (
-                        array (
-                            'field' => 'field_5920b402429a2',
-                            'operator' => '==',
-                            'value' => 'bloc_1_header_format_hero',
-                        ),
-                    ),
-                ),
-                'wrapper' => array (
-                    'width' => '',
-                    'class' => '',
-                    'id' => '',
-                ),
-                'collapsed' => '',
-                'min' => 0,
-                'max' => 0,
-                'layout' => 'table',
-                'button_label' => '',
-                'sub_fields' => [
-                    array (
-                        'key' => 'field_5920ba4f6dde6',
-                        'label' => 'Subheader',
-                        'name' => 'bloc_2_subheader',
-                        'type' => 'text',
-                        'instructions' => '',
-                        'required' => 0,
-                        'conditional_logic' => 0,
-                        'wrapper' => array (
-                            'width' => '',
-                            'class' => '',
-                            'id' => '',
-                        ),
-                        'default_value' => '',
-                        'placeholder' => '',
-                        'prepend' => '',
-                        'append' => '',
-                        'maxlength' => '',
-                    ),
-                    array (
-                        'key' => 'field_5920ba676dde7',
-                        'label' => 'Title',
-                        'name' => 'bloc_2_title',
-                        'type' => 'text',
-                        'instructions' => '',
-                        'required' => 0,
-                        'conditional_logic' => 0,
-                        'wrapper' => array (
-                            'width' => '',
-                            'class' => '',
-                            'id' => '',
-                        ),
-                        'default_value' => '',
-                        'placeholder' => '',
-                        'prepend' => '',
-                        'append' => '',
-                        'maxlength' => '',
-                    ),
-                    array (
-                        'key' => 'field_5920ba956dde8',
-                        'label' => 'Subtitle',
-                        'name' => 'bloc_2_subtitle',
-                        'type' => 'text',
-                        'instructions' => '',
-                        'required' => 0,
-                        'conditional_logic' => 0,
-                        'wrapper' => array (
-                            'width' => '',
-                            'class' => '',
-                            'id' => '',
-                        ),
-                        'default_value' => '',
-                        'placeholder' => '',
-                        'prepend' => '',
-                        'append' => '',
-                        'maxlength' => '',
-                    ),
-                    array (
-                        'key' => 'field_5920baa66dde9',
-                        'label' => 'Description',
-                        'name' => 'bloc_2_description',
-                        'type' => 'textarea',
-                        'instructions' => '',
-                        'required' => 0,
-                        'conditional_logic' => 0,
-                        'wrapper' => array (
-                            'width' => '',
-                            'class' => '',
-                            'id' => '',
-                        ),
-                        'default_value' => '',
-                        'placeholder' => '',
-                        'maxlength' => '',
-                        'rows' => '',
-                        'new_lines' => 'wpautop',
-                    ),
-                    array (
-                        'key' => 'field_5920bb1e6dded',
-                        'label' => 'Phone label 1',
-                        'name' => 'bloc_2_phone_label_1',
-                        'type' => 'text',
-                        'instructions' => '',
-                        'required' => 0,
-                        'conditional_logic' => 0,
-                        'wrapper' => array (
-                            'width' => '',
-                            'class' => '',
-                            'id' => '',
-                        ),
-                        'default_value' => '',
-                        'placeholder' => '',
-                        'prepend' => '',
-                        'append' => '',
-                        'maxlength' => '',
-                    ),
-                    array (
-                        'key' => 'field_5920bb316ddee',
-                        'label' => 'Phone number 1',
-                        'name' => 'bloc_2_phone_number_1',
-                        'type' => 'text',
-                        'instructions' => '',
-                        'required' => 0,
-                        'conditional_logic' => 0,
-                        'wrapper' => array (
-                            'width' => '',
-                            'class' => '',
-                            'id' => '',
-                        ),
-                        'default_value' => '',
-                        'placeholder' => '',
-                        'prepend' => '',
-                        'append' => '',
-                        'maxlength' => '',
-                    ),
-                    array (
-                        'key' => 'field_5920bb526ddef',
-                        'label' => 'Phone label 2',
-                        'name' => 'bloc_2_phone_label_2',
-                        'type' => 'text',
-                        'instructions' => '',
-                        'required' => 0,
-                        'conditional_logic' => 0,
-                        'wrapper' => array (
-                            'width' => '',
-                            'class' => '',
-                            'id' => '',
-                        ),
-                        'default_value' => '',
-                        'placeholder' => '',
-                        'prepend' => '',
-                        'append' => '',
-                        'maxlength' => '',
-                    ),
-                    array (
-                        'key' => 'field_5920bb726ddf0',
-                        'label' => 'Phone number 2',
-                        'name' => 'bloc_2_phone_number',
-                        'type' => 'text',
-                        'instructions' => '',
-                        'required' => 0,
-                        'conditional_logic' => 0,
-                        'wrapper' => array (
-                            'width' => '',
-                            'class' => '',
-                            'id' => '',
-                        ),
-                        'default_value' => '',
-                        'placeholder' => '',
-                        'prepend' => '',
-                        'append' => '',
-                        'maxlength' => '',
-                    ),
-                    $this->generate_cta('bloc_2')[0],
-                    $this->generate_cta('bloc_2')[1],
-                    $this->generate_cta('bloc_2')[2],
-                ]
-            ),
+        	$this->generate_select('bloc_1_header_type', 'Header Type', [
+		        'standard' => 'Standard',
+        		'hero' => 'Hero',
+	        ]),
+			$this->generate_repeater(
+				'bloc_1_hero_slide',
+				'Hero Slide',
+				[
+					$this->generate_image('bloc_1_hero_slide_image', 'Image', 'TBDxTBD'),
+					$this->generate_text('bloc_1_hero_slide_title', 'Title'),
+					$this->generate_cta('bloc_1_hero_slide_cta')[0],
+					$this->generate_cta('bloc_1_hero_slide_cta')[1],
+					$this->generate_cta('bloc_1_hero_slide_cta')[2],
+				],
+				1,
+				0,
+				[[[
+					'field' => 'bloc_1_header_type_key',
+					'operator' => '===',
+					'value' => 'hero'
+				]]]
+			),
+	        $this->generate_image('bloc_1_header_image', 'Image', 'TBDxTBD',
+		        [[[
+			        'field' => 'bloc_1_header_type_key',
+			        'operator' => '===',
+			        'value' => 'standard'
+		        ]]]
+	        ),
+	        $this->generate_text('bloc_1_header_title', 'Title',
+		        [[[
+			        'field' => 'bloc_1_header_type_key',
+			        'operator' => '===',
+			        'value' => 'standard'
+		        ]]]
+	        ),
+	        $this->generate_cta('bloc_1_header_cta', [[[
+		            'field' => 'bloc_1_header_type_key',
+		            'operator' => '===',
+		            'value' => 'standard'
+            ]]])[0],
+	        $this->generate_cta('bloc_1_header_cta', [[[
+		        'field' => 'bloc_1_header_type_key',
+		        'operator' => '===',
+		        'value' => 'standard'
+	        ]]])[1],
+	        $this->generate_cta('bloc_1_header_cta', [[[
+		        'field' => 'bloc_1_header_type_key',
+		        'operator' => '===',
+		        'value' => 'standard'
+	        ]]])[2],
         ];
-    }
-
-    protected function get_subfields()
-    {
-        return array_merge($this->get_unique_fields());
     }
 
     public function get_fields_layout()
@@ -210,7 +72,9 @@ class Lego1 extends BaseLego implements LegoInterface
             'name' => 'bloc_1_header',
             'label' => 'Bloc 1 - Header',
             'display' => 'block',
-            'sub_fields' => $this->get_subfields(),
+            'sub_fields' => $this->get_unique_fields(),
+	        'min' => '',
+	        'max' => ''
         ];
     }
 }

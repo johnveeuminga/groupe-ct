@@ -5,30 +5,11 @@ class Lego7 extends BaseLego implements LegoInterface
     public function get_unique_fields()
     {
         return [
-            array (
-                'key' => 'bloc_7_row_repeater_key',
-                'label' => 'Row repeater',
-                'name' => 'bloc_7_row_repeater',
-                'type' => 'repeater',
-                'instructions' => '',
-                'required' => 0,
-                'conditional_logic' => 0,
-                'wrapper' => array (
-                    'width' => '',
-                    'class' => '',
-                    'id' => '',
-                ),
-                'collapsed' => '',
-                'min' => 1,
-                'max' => 0,
-                'layout' => 'block',
-                'button_label' => '',
-                'sub_fields' => array (
-                    $this->generate_image('bloc_8_icon', 'Icon', 'TBDxTBD'),
-                    $this->generate_text('bloc_8_title', 'text'),
-                    $this->generate_textarea('bloc_8_description', 'text'),
-                )
-            )
+        	$this->generate_repeater('bloc_7_row', 'Rows', [
+		        $this->generate_image('bloc_7_row_icon', 'Icon', 'TBDxTBD'),
+		        $this->generate_text('bloc_7_row_title', 'Title'),
+		        $this->generate_textarea('bloc_7_row_description', 'Description'),
+	        ])
         ];
     }
 
