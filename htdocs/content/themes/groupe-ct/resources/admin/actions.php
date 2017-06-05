@@ -17,17 +17,17 @@
  * Note: make sure to update the script statement below based on the terminal/console message
  * when launching the "gulp watch" task.
  */
-Action::add('wp_footer', function()
-{
-    if (defined('BS') && BS):
-        ?>
-        <script type="text/javascript" id="__bs_script__">
-            //<![CDATA[
-            document.write('<script async src="http://HOST:3000/browser-sync/browser-sync-client.2.12.7.js"><\/script>'.replace("HOST", location.hostname));
-            //]]>
-        </script>
-        <?php
-    endif;
-});
+//Action::add('wp_footer', function()
+//{
+//    if (defined('BS') && BS):
+//        ?>
+<!--        <script type="text/javascript" id="__bs_script__">-->
+<!--            //<![CDATA[-->
+<!--            document.write('<script async src="http://HOST:3000/browser-sync/browser-sync-client.2.12.7.js"><\/script>'.replace("HOST", location.hostname));-->
+<!--            //]]>-->
+<!--        </script>-->
+<!--        --><?php
+//    endif;
+//});
 
 add_filter('show_admin_bar', '__return_false');
