@@ -21,12 +21,19 @@
 
   .benefits-container {
     position: relative;
-    background-image: url($assets + "/images/echelle/img-benefits-full.png");
+    max-width:700px;
+    margin:auto;
+    background-image: url($assets + "/images/echelle/img-benefits-full-mobile.png");
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: center;
-    height:200px;
+    height:504px;
     @include flexbox();
+    @media (min-width: $screen-md-min) {
+      max-width:1200px;
+      background-image: url($assets + "/images/echelle/img-benefits-full.png");
+      height:200px;
+    }
   }
 
   .benefit-bg {
