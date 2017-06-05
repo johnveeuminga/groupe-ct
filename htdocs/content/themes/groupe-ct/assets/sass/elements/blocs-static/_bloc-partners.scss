@@ -2,7 +2,10 @@
 
   background-color: $grey;
   text-align: center;
-  padding: 60px 100px;
+  padding: 50px 15px;
+  @media (min-width: $screen-sm-min) {
+    padding: 60px 100px;
+  }
 
   .partners-text {
     @extend .mada22LightBlack;
@@ -16,13 +19,21 @@
 
   .partners-logo-row {
     @include flexbox();
+    @include flex-direction(column);
     @include align-items(center);
     @include justify-content(space-between);
     margin-bottom: 30px;
+    @media (min-width: $screen-xs-min) {
+      @include flex-direction(row);
+    }
   }
 
   .logo-container {
-    width:calc(100% / 3);
+    margin:15px 0;
+    @media (min-width: $screen-xs-min) {
+      width:calc(100% / 3);
+      margin:0;
+    }
   }
 
 

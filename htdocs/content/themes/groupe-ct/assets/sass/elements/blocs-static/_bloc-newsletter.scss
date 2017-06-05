@@ -44,7 +44,8 @@
 
       }
 
-      input, select, textarea {
+      input, select{
+
         -webkit-appearance: none;
         -webkit-border-radius: 0px;
         background-color: transparent;
@@ -56,12 +57,23 @@
         @extend .mada18LightWhite;
       }
 
+      input,  .select-container{
+        margin:15px 0;
+        @media (min-width: $screen-sm-min) {
+          margin:0;
+        }
+      }
+
+
+
       /*** ROW #1 ***/
       .contact-row:nth-child(1){
         .select-container {
           @include flex-basis(17%);
           border:1px solid white;
-          margin-right:3%;
+          @media (min-width: $screen-sm-min) {
+            margin-right:3%;
+          }
           background: url($assets + "/images/icon/icon-arrow.png") no-repeat 85% 50%;
         }
         select {
@@ -82,7 +94,10 @@
         .select-container {
           @include flex-basis(48%);
           border:1px solid white;
-          margin-left:3%;
+
+          @media (min-width: $screen-sm-min) {
+            margin-left:3%;
+          }
           background: url($assets + "/images/icon/icon-arrow.png") no-repeat 85% 50%;
           select {
             border:none;
@@ -111,6 +126,10 @@
           @include flex-basis(70%);
           @include align-items(center);
           @extend .mada18LightWhite;
+          margin-bottom: 15px;
+          @media (min-width: $screen-sm-min) {
+            margin-bottom: 0px;
+          }
         }
 
         label:before {
@@ -126,6 +145,11 @@
           @extend .poppins15BoldBlack;
           text-transform: uppercase;
           letter-spacing: 0.1em;
+          margin-bottom: 15px;
+          @media (min-width: $screen-sm-min) {
+
+            margin-bottom: 0px;
+          }
         }
       }
 
