@@ -31,6 +31,11 @@
   @include set-font(15px, $poppins, 700, $black);
 }
 
+.poppins16MediumWhite {
+  @include set-font(16px, $poppins, 500, white);
+}
+
+
 
 .poppins20SemiBoldWhite {
   @include set-font(20px, $poppins, 600, white);
@@ -44,6 +49,10 @@
   @media (min-width: $screen-sm-min) {
     @include set-font(22px, $poppins, 400, $black);
   }
+}
+
+.poppins22SemiBoldWhite {
+  @include set-font(22px, $poppins, 600, white);
 }
 
 .poppins22BoldWhite {
@@ -69,11 +78,6 @@
 }
 
 
-
-
-
-
-
 .poppins24LightWhite {
   @include set-font(24px, $poppins, 300, white);
   @media (min-width: $screen-sm-min) {
@@ -95,6 +99,13 @@
   }
 }
 
+.poppins30SemiBoldWhite {
+  @include set-font(30px, $poppins, 600, white);
+}
+
+.poppins30BoldWhite {
+  @include set-font(30px, $poppins, 700, white);
+}
 
 .poppins44BoldBlack {
   @include set-font(30px, $poppins, 700, $black);
@@ -119,6 +130,7 @@
 
 .mada18LightWhite {
   @include set-font(18px, $mada, 300, white);
+  line-height: 27px;
   @media (min-width: $screen-sm-min) {
     @include set-font(18px, $mada, 300, white);
   }
@@ -147,6 +159,11 @@
 
 .mada22LightBlack {
   @include set-font(22px, $mada, 300, $black);
+  line-height: 32px;
+}
+
+.mada22LightWhite{
+  @include set-font(22px, $mada, 300, white);
   line-height: 32px;
 }
 

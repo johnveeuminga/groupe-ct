@@ -1,18 +1,27 @@
-.nav-content-container {
+.bloc-newsletter{
+  background-color: $blue-dark;
+  padding: 100px 0;
 
   .contact-form-container {
 
-    position: absolute;
-    bottom:-799px;
-    right:0;
-    z-index: 9999;
-    width:620px;
-    background-color: $black;
-    padding:40px;
+    max-width:630px;
+    margin: auto;
 
-    .contact-form-title {
-      @extend .poppins20SemiBoldWhite;
-      margin-bottom:30px;
+    .newsletter-title-container {
+      text-align: center;
+      color:white!important;
+      margin-bottom: 60px;
+      .newsletter-upper-title {
+        @extend .poppins22SemiBoldWhite;
+      }
+      .newsletter-title {
+        @extend .poppins30BoldWhite;
+        margin-top:30px;
+        margin-bottom: 45px;
+      }
+      .newsletter-desc {
+        @extend .mada22LightWhite;
+      }
     }
 
     .contact-field-container {
@@ -22,10 +31,17 @@
 
       .contact-row {
         @include flexbox();
-        margin:10px 0;
-        input:not(:first-of-type){
-          margin-left:3%;
+        @include flex-direction(column);
+
+        @media (min-width: $screen-sm-min) {
+          margin:10px 0;
+          @include flex-direction(row);
+          input:not(:first-of-type){
+            margin-left:3%;
+          }
         }
+
+
       }
 
       input, select, textarea {
@@ -62,15 +78,11 @@
       .contact-row:nth-child(2){
         input {
           @include flex-basis(45%);
-
         }
-      }
-
-      .contact-row:nth-child(3) {
         .select-container {
           @include flex-basis(48%);
           border:1px solid white;
-          margin-right:3%;
+          margin-left:3%;
           background: url($assets + "/images/icon/icon-arrow.png") no-repeat 85% 50%;
           select {
             border:none;
@@ -80,36 +92,34 @@
         }
         input {
           @include flex-basis(45%);
-
         }
       }
 
-      .contact-row:nth-child(4){
-        #phone {
-          @include flex-basis(45%);
-        }
-        #post {
-          width:90px;
-          margin-left: calc(3% - 1px);
+      .contact-row:nth-child(3) {
+        input {
+          @include flex-basis(100%);
         }
       }
+
+
       /*** ROW #4 ***/
-      .contact-row:nth-child(5) {
-        textarea {
-          width:100%;
-        }
-      }
-      /*** ROW #5 ***/
-      .contact-row:nth-child(6) {
-
+      .contact-row:nth-child(4) {
+        @include flexbox();
+        @include justify-content(space-between);
         .check-container{
           @include flexbox();
-          @include flex-basis(60%);
+          @include flex-basis(70%);
+          @include align-items(center);
           @extend .mada18LightWhite;
         }
+
+        label:before {
+          top:0px;
+        }
+
         .submit-btn {
           @include border-radius(2px);
-          width:240px;
+          width:165px;
           padding:15px 0;
           background-color: white;
           border:none;

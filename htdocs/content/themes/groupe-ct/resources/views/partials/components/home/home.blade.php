@@ -2,8 +2,10 @@
 
     <!-- SECTIONS STATIC -->
 
-        @include('partials.components.home.home-sections.section02')
-        @include('partials.components.home.home-sections.section-news')
+        @include('partials.components.blocs-static.bloc-echelle')
+        @include('partials.components.blocs-static.bloc-news')
+        @include('partials.components.blocs-static.bloc-newsletter')
+        @include('partials.components.blocs-static.bloc-partners')
 
 
 </section>

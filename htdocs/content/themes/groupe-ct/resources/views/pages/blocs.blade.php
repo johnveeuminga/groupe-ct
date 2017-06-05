@@ -3,7 +3,7 @@
 @section('main')
     <div class="container-fluid">
 
-        @include('partials.components.elements.blocs')
+        @include('partials.components.blocs-dynamic.blocs')
 
     </div>
 @endsection

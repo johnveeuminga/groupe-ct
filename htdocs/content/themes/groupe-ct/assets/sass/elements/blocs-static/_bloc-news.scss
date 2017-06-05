@@ -1,43 +1,46 @@
-.section-news-container {
+.bloc-news-container {
   @include flexbox();
   @include flex-direction(column);
-  //@include justify-content(center);
   @include align-items(center);
+
   @media (min-width: $screen-md-min) {
     @include flex-direction(row);
+    @include justify-content(space-between);
   }
 
 .news-main-container {
   max-width:585px;
-  border: 1px solid red;
-  max-height: 790px;
+  height: 490px;
+  margin:30px 0;
+
   background-image: url($assets + "/images/news-bg01.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 
   @media (min-width: $screen-md-min) {
-    max-height: 590px;
+    height: 590px;
+    width:calc(100%/2);
   }
 
   .news-inner-container {
     padding:60px 30px 20px 30px;
     @media (min-width: $screen-md-min) {
-      adding:120px 60px 40px 60px;
+      padding:120px 60px 40px 60px;
     }
   }
   .news-date {
-    @include set-font(16px, $poppins, 500, white);
+    @extend .poppins16MediumWhite;
   }
   .news-title {
-    @include set-font(30px, $poppins, 600, white);
+    @extend .poppins30SemiBoldWhite;
     padding-top: 30px;
     padding-bottom: 60px;
 
   }
   .news-excerpt {
-    @include set-font(18px, $mada, 300, white);
-    height: 280px;
+    @extend .mada18LightWhite;
+    height: 180px;
     border-bottom: 1px solid white;
     margin-bottom:30px;
     @media (min-width: $screen-md-min) {

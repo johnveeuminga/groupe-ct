@@ -3,8 +3,8 @@
 </div>
 
 
-<section id="home-news" class="section-news">
-    <div class="section-news-container default-padding default-width">
+<section id="home-news" class="bloc-news">
+    <div class="bloc-news-container default-padding default-width">
 
         <div class="news-main-container">
             <div class="news-inner-container">

@@ -84,7 +84,7 @@
                 <div class="contact-row">
                     <label for="phone"></label>
                     <input type="text" id="phone" placeholder="<?php _e("Téléphone", THEME_TEXTDOMAIN); ?>">
-                    <label for="email"></label>
+                    <label for="post"></label>
                     <input type="text" id="post" placeholder="<?php _e('Poste *', THEME_TEXTDOMAIN); ?>">
                 </div>
                 <div class="contact-row">
