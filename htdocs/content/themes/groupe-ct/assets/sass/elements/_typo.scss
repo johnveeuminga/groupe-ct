@@ -35,7 +35,9 @@
   @include set-font(16px, $poppins, 500, white);
 }
 
-
+.poppins18SemiBoldWhite {
+  @include set-font(18px, $poppins, 600, white);
+}
 
 .poppins20SemiBoldWhite {
   @include set-font(20px, $poppins, 600, white);
@@ -72,6 +74,9 @@
   @include set-font(22px, $poppins, 700, $green);
 }
 
+.poppins28SemiBoldWhite {
+  @include set-font(28px, $poppins, 600, white);
+}
 
 .poppins30BoldBlack {
   @include set-font(30px, $poppins, 700, $black);

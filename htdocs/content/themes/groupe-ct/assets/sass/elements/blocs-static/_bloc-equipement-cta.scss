@@ -1,7 +1,16 @@
 .bloc-equipement-main-container {
 
-  border: 1px solid red;
   @include flexbox();
+  @include flex-wrap(wrap);
 
+  .equipement-title {
+    @extend .poppins22BoldBlue;
+    text-transform: uppercase;
+  }
+
+  .equipement-desc {
+    @extend .mada18LightBlack;
+    margin:30px 0;
+  }
 
 }//SECTION END
