@@ -16,9 +16,12 @@
             <div class="benefit-bg hyb hideMe"></div>
             <div class="benefit-bg num hideMe"></div>
 
-            <div class="cat paper col-sm-4"></div>
-            <div class="cat hyb col-sm-4"></div>
-            <div class="cat num col-sm-4"></div>
+            <div class="cat-container">
+                <div class="cat paper col-sm-4"></div>
+                <div class="cat hyb col-sm-4"></div>
+                <div class="cat num col-sm-4"></div>
+            </div>
+
 
         </div>
     </div>
