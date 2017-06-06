@@ -33,6 +33,18 @@
         );
 
 
+        /**** CONTACT FORM ****/
+
+        $("#sexe").select2({
+            placeholder: "Mr/Me",
+
+        });
+
+        $("#departement").select2({
+            placeholder: "Departement"
+        });
+
+
         /**** ECHELLE NUMERIQUE ********/
 
         $( ".cat" ).hover(
@@ -45,23 +57,12 @@
             }
         );
 
-      /*  $( ".contact-form-container" ).hover(
-            function() {
-
-                $(this).removeClass('hideMe');
-            }, function() {
-
-                $(this).addClass('hideMe');
-            }
-        );
-
-        */
 
         $('.contact-us-link').on('click', function () {
             $(this).siblings('.contact-form-container').toggleClass('hideMe');
         });
 
-                /***** Sliders with dots *******/
+        /***** Sliders with dots *******/
 
         $('body').on('click', '.slider-dot', function (e) {
             var $slideNumber = $(this).attr('class').split(' ')[1] ;

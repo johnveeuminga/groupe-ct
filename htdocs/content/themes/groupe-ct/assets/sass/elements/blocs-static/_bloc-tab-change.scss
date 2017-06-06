@@ -52,6 +52,7 @@
   .tab-change-icon {
     max-width:70px;
     margin-bottom:30px;
+    height:66px;
   }
   .tab-change-title {
     @extend .poppins28SemiBoldWhite;
@@ -93,7 +94,7 @@
     border-width: 65px 0 65px 32px;
     border-color: #007bff transparent transparent transparent;
     @include rotate(90);
-    left:48%;
+    left:44%;
     bottom:-79px;
     position: absolute;
     z-index: 100;
@@ -117,7 +118,7 @@
     border-width: 65px 0 65px 32px;
     border-color: #007bff transparent transparent transparent;
     @include rotate(90);
-    left:48%;
+    left:44%;
     bottom:-81px;
     position: absolute;
     z-index: 99;

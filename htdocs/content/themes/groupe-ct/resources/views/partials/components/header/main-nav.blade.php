@@ -46,18 +46,18 @@
             <span><?php _e('CONTACTEZ-NOUS', THEME_TEXTDOMAIN); ?></span>
             <img class="icon-arrow" src="{{ themosis_assets() }}/images/icon/icon-arrow.png" alt="arrow contact us">
         </a>
-        <div class="contact-form-container hideMe">
+        <div class="contact-form-container">
             <h2 class="contact-form-title"><?php _e('Contactez-nous pour lorem ipsum', THEME_TEXTDOMAIN); ?></h2>
             <div class="contact-field-container">
 
                 <div class="contact-row">
-                    <div class="select-container">
-                        <select name="sexe" id="sexe">
-                            <option value=""  disabled selected hidden>Mr/Me</option>
-                            <option value="mr">Mr</option>
-                            <option value="me">Me</option>
-                        </select>
-                    </div>
+
+                    <select name="sexe" id="sexe">
+                        <option value=""  disabled selected hidden>Mr/Me</option>
+                        <option value="mr">Mr</option>
+                        <option value="me">Me</option>
+                    </select>
+
 
                     <label for="first-name"></label>
                     <input type="text" id="first-name" placeholder="<?php _e('Prénom *', THEME_TEXTDOMAIN); ?>">
@@ -71,13 +71,13 @@
                     <input type="text" id="town" placeholder="<?php _e('Ville *', THEME_TEXTDOMAIN); ?>">
                 </div>
                 <div class="contact-row">
-                    <div class="select-container">
-                        <select name="departement" id="departement">
-                            <option value=""  disabled selected hidden>Département</option>
-                            <option value="1">Ressource humaine</option>
-                            <option value="2">Administration</option>
-                        </select>
-                    </div>
+
+                    <select name="departement" id="departement">
+                        <option value=""  disabled selected hidden>Département</option>
+                        <option value="1">Ressource humaine</option>
+                        <option value="2">Administration</option>
+                    </select>
+
                     <label for="email"></label>
                     <input type="email" id="email" placeholder="<?php _e('Courriel *', THEME_TEXTDOMAIN); ?>">
                 </div>
