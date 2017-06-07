@@ -93,19 +93,26 @@
     border-style: solid;
     border-width: 65px 0 65px 32px;
     border-color: #007bff transparent transparent transparent;
-    @include rotate(90);
-    left:44%;
+
+
+
     bottom:-79px;
     position: absolute;
     z-index: 100;
+    @include rotate(90);
+    @include align-self(center);
+
+    @media (min-width: $screen-sm-min) {
+      left:44%;
+    }
 
     @media (min-width: $screen-md-min) {
       border-width: 65px 0 65px 32px;
       left: auto;
       bottom:auto;
       right:-32px;
-
       top:38%;
+
       @include rotate(0);
     }
 
@@ -117,11 +124,16 @@
     border-style: solid;
     border-width: 65px 0 65px 32px;
     border-color: #007bff transparent transparent transparent;
+    @include align-self(center);
     @include rotate(90);
-    left:44%;
+
+
     bottom:-81px;
     position: absolute;
     z-index: 99;
+    @media (min-width: $screen-sm-min) {
+      left:44%;
+    }
 
     @media (min-width: $screen-md-min) {
       left: auto;
