@@ -1,5 +1,11 @@
 .bloc-product-search-main-container {
 
+  .product-dropdown-container {
+    background-color: white;
+  }
 
+  .dropdown-title {
+    @extend .poppins15BoldBlack;
+  }
 
 }//SECTION END

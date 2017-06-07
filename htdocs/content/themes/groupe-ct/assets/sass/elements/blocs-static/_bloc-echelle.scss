@@ -53,7 +53,7 @@
     @media (min-width: $screen-sm-min) {
       @include flex-direction(row);
       max-width:1200px;
-      background-image: url($assets + "/images/echelle/img-benefits-full.png");
+      background-image: url($assets + "/images/echelle/echelle-desktop.png");
       height:200px;
     }
 
@@ -84,7 +84,7 @@
   .benefit-bg.paper {
     background-image: url($assets + "/images/echelle/over-papier.png");
     @media (min-width: $screen-sm-min) {
-      background-image: url($assets + "/images/echelle/img-over-papier.png");
+      background-image: url($assets + "/images/echelle/over-papier-desktop.png");
     }
 
 
@@ -92,14 +92,14 @@
   .benefit-bg.hyb {
     background-image: url($assets + "/images/echelle/over-hybrid.png");
     @media (min-width: $screen-sm-min) {
-      background-image: url($assets + "/images/echelle/img-over-hybrid.png");
+      background-image: url($assets + "/images/echelle/over-hybrid-desktop.png");
     }
 
   }
   .benefit-bg.num {
     background-image: url($assets + "/images/echelle/over-num.png");
     @media (min-width: $screen-sm-min) {
-      background-image: url($assets + "/images/echelle/img-over-num.png");
+      background-image: url($assets + "/images/echelle/over-num-desktop.png");
     }
 
 
