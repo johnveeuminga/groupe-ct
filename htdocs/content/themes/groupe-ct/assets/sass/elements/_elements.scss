@@ -28,6 +28,7 @@
 @import "blocs-static/bloc-wheel";
 @import "blocs-static/bloc-tab-change";
 @import "blocs-static/bloc-product-search";
+@import "blocs-static/bloc-contact";
 
 /****** PARTS OF SOME BLOCS *******/
 @import "blocs/toggleBar";
@@ -64,9 +65,10 @@
 /***** BUTTONS & CTA *****/
 
 .primary-btn {
-  padding: 20px 30px;
+  padding: 15px 30px;
   @include set-font(15px, $poppins, 700, $blue);
   background-color: white;
+  color:white;
   text-decoration: none;
   text-transform: uppercase;
   @media (min-width: $screen-sm-min) {
@@ -79,16 +81,28 @@
 .primary-btn-blue {
   @extend .primary-btn;
   background-color: $blue;
-  color:white;
+
   width:50%;
  // margin:auto;
   text-align: center;
   @media (min-width: $screen-xs-min) {
     width:200px;
   }
-  @media (min-width: $screen-lg-min) {
+}
+
+.primary-btn-blue-sky {
+  @extend .primary-btn;
+  background-color: $blue-sky;
+  text-align: center;
+  @media (min-width: $screen-xs-min) {
+    width:200px;
+  }
+  @media (min-width: $screen-sm-min) {
+    padding: 20px 40px;
+    @include set-font(15px, $poppins, 700, white);
   }
 }
+
 
 .cta-see-more {
   @include set-font(15px, $poppins, 700, $blue );
@@ -231,7 +245,7 @@
 .bloc-name {
   background-color: $red;
   padding: 25px;
-  margin:50px 0;
+  //margin:50px 0;
   @include set-font(16px, $poppins, 400, white);
 }
 

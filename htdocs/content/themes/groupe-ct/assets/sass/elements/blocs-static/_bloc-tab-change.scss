@@ -145,13 +145,15 @@
     }
 
   }
+  /***************************/
+  /**** Table Change 01 ******/
 
-  .tab-change-container:nth-child(1) {
+  .tc01:nth-child(1) {
     background-color: $blue01;
-    border-bottom: 2px solid #0B2D4F;
+    border-bottom: 2px solid #05355f;
 
     @media (min-width: $screen-md-min) {
-      border-right: 2px solid #0B2D4F;
+      border-right: 2px solid #05355f;
       border-bottom:none;
     }
 
@@ -163,11 +165,11 @@
     }
   }
 
-  .tab-change-container:nth-child(2) {
+  .tc01:nth-child(2) {
     background-color: $blue02;
-    border-bottom: 2px solid #16385D;
+    border-bottom: 2px solid #15456f;
     @media (min-width: $screen-md-min) {
-      border-right: 2px solid #16385D;
+      border-right: 2px solid #15456f;
       border-bottom:none;
     }
 
@@ -175,27 +177,137 @@
       border-color: transparent transparent transparent $blue02;
     }
     .triangle-border {
-      border-color: transparent transparent transparent #16385D;
+      border-color: transparent transparent transparent #103a61;
     }
   }
 
-  .tab-change-container:nth-child(3) {
+  .tc01:nth-child(3) {
     background-color: $blue03;
-    border-bottom: 2px solid #274B70;
+    border-bottom: 2px solid #2a5b84;
     @media (min-width: $screen-md-min) {
-      border-right: 2px solid #274B70;
+      border-right: 2px solid #2a5b84;
       border-bottom:none;
     }
     .triangle {
       border-color: transparent transparent transparent $blue03;
     }
     .triangle-border {
-      border-color: transparent transparent transparent #274B70;
+      border-color: transparent transparent transparent #26547e;
     }
   }
 
-  .tab-change-container:nth-child(4) {
+  .tc01:nth-child(4) {
     background-color: $blue04;
+  }
+
+  /***************************/
+  /**** Table Change 02 ******/
+
+  .tc02:nth-child(1) {
+    background-color: $blue05;
+    border-bottom: 2px solid #267ab2;
+
+    @media (min-width: $screen-md-min) {
+      border-right: 2px solid #267ab2;
+      border-bottom:none;
+    }
+
+    .triangle {
+      border-color: transparent transparent transparent $blue05;
+    }
+    .triangle-border {
+      border-color: transparent transparent transparent #2d78b0;
+    }
+  }
+
+  .tc02:nth-child(2) {
+    background-color: $blue06;
+    border-bottom: 2px solid #3787bb;
+    @media (min-width: $screen-md-min) {
+      border-right: 2px solid #3787bb;
+      border-bottom:none;
+    }
+
+    .triangle {
+      border-color: transparent transparent transparent $blue06;
+    }
+    .triangle-border {
+      border-color: transparent transparent transparent #307db4;
+    }
+  }
+
+  .tc02:nth-child(3) {
+    background-color: $blue07;
+    border-bottom: 2px solid #4b95c3;
+    @media (min-width: $screen-md-min) {
+      border-right: 2px solid #4b95c3;
+      border-bottom:none;
+    }
+    .triangle {
+      border-color: transparent transparent transparent $blue07;
+    }
+    .triangle-border {
+      border-color: transparent transparent transparent #3e86b9;
+    }
+  }
+
+  .tc02:nth-child(4) {
+    background-color: $blue08;
+  }
+
+  /***************************/
+  /**** Table Change 03 ******/
+
+  .tc03:nth-child(1) {
+    background-color: $green01;
+    border-bottom: 2px solid #047160;
+
+    @media (min-width: $screen-md-min) {
+      border-right: 2px solid #047160;
+      border-bottom:none;
+    }
+
+    .triangle {
+      border-color: transparent transparent transparent $green01;
+    }
+    .triangle-border {
+      border-color: transparent transparent transparent #036f5d;
+    }
+  }
+
+  .tc03:nth-child(2) {
+    background-color: $green02;
+    border-bottom: 2px solid #168573;
+    @media (min-width: $screen-md-min) {
+      border-right: 2px solid #168573;
+      border-bottom:none;
+    }
+
+    .triangle {
+      border-color: transparent transparent transparent $green02;
+    }
+    .triangle-border {
+      border-color: transparent transparent transparent #137f6d;
+    }
+  }
+
+  .tc03:nth-child(3) {
+    background-color: $green03;
+    border-bottom: 2px solid #2b9583;
+    @media (min-width: $screen-md-min) {
+      border-right: 2px solid #2b9583;
+      border-bottom:none;
+    }
+    .triangle {
+      border-color: transparent transparent transparent $green03;
+    }
+    .triangle-border {
+      border-color: transparent transparent transparent #228775;
+    }
+  }
+
+  .tc03:nth-child(4) {
+    background-color: $green04;
   }
 
 

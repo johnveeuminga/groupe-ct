@@ -120,6 +120,17 @@
         });*/
 
 
+        /*** NAV PRODUCT **/
+
+        $('.nav-type-container a').on('click', function (e) {
+            e.preventDefault();
+            $(this).parent().addClass('item-type-active').siblings().removeClass('item-type-active');
+        });
+
+        $('.nav-cat-container a').on('click', function (e) {
+            e.preventDefault();
+            $(this).parent().addClass('item-cat-active').siblings().removeClass('item-cat-active');
+        });
 
 
 

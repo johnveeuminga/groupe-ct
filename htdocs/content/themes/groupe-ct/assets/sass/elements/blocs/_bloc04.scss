@@ -15,7 +15,6 @@
   .four-col-icons-item {
     text-align: center;
     margin-bottom: 50px;
-
     @media (min-width: $screen-md-min) {
       @include flexbox();
       @include flex-direction(column);

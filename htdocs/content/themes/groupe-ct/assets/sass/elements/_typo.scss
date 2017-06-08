@@ -35,6 +35,15 @@
   @include set-font(16px, $poppins, 500, white);
 }
 
+.poppins17SemiBoldBlueSky {
+  @include set-font(17px, $poppins, 600, $blue-sky);
+}
+
+.poppins18LightWhite {
+  @include set-font(18px, $poppins, 300, white);
+  line-height: 32px;
+}
+
 .poppins18SemiBoldWhite {
   @include set-font(18px, $poppins, 600, white);
 }
