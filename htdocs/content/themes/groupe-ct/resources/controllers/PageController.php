@@ -17,4 +17,7 @@ class PageController extends MainController
 		return view('pages.page',[]);
 	}
 
+
+
+
 }

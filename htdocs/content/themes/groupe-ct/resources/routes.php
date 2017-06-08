@@ -12,7 +12,9 @@
 Route::any('front', 'HomeController@index');
 Route::get('/components', 'HomeController@blocs');
 Route::any('page', 'PageController@index');
-//Route::any('singular', ['recette' , 'uses' => 'HomeController@recipe_single']);
+Route::any('page', 'HomeController@publication');
+//Route::any('single', ['publications' , 'uses' => 'HomeController@publication']);
+
 //Route::any('postTypeArchive', ['recette' , 'uses' => 'HomeController@recipe_list']);
 //Route::any('template', ['legal-notice' , 'uses' => 'HomeController@legal_notice']);
 

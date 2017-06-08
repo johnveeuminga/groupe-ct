@@ -9,7 +9,9 @@
     <!-- THE ELEMENT START  -->
     <div class="publication-container"> <!-- reverse-elem : to swap img and text div -->
         <div class="publication-img-container">
-            <div class="publication-img"></div>
+
+            <img class="image-pub shadow" src="{{ themosis_assets() }}/images/img/img_pub01.png" alt="">
+
             <span></span>
         </div>
         <div class="buffer"></div>
@@ -31,7 +33,8 @@
     <!-- THE ELEMENT START  -->
     <div class="publication-container reverse-elem">
         <div class="publication-img-container">
-            <div class="publication-img"></div>
+
+            <img class="image-pub shadow" src="{{ themosis_assets() }}/images/img/img_pub01.png" alt="">
             <span></span>
         </div>
         <div class="buffer"></div>

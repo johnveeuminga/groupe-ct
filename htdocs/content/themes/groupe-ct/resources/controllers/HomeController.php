@@ -19,5 +19,8 @@ class HomeController  extends MainController
 
         ]);
     }
-
+    public function publication()
+    {
+        return view('pages.publication-single',[]);
+    }
 }

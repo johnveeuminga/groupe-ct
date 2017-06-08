@@ -3,6 +3,11 @@
 
 <!--    INCLUDE HEADER COMPONENTS -->
     @include('partials.components.header.main-nav')
-    @include('partials.components.header.hero')
+
+    @if(is_front_page())
+        @include('partials.components.header.hero')
+    @else
+        @include('partials.components.header.hero-page')
+    @endif
 
 </section>

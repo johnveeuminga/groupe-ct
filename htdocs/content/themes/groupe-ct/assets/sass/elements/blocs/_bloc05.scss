@@ -53,14 +53,15 @@
   .img-container.desktop{
     display:none;
     @media (min-width: $screen-md-min) {
-      display:block;
+      //display:block;
+      @include flexbox();
+      @include align-items(center);
+      @include justify-content(center);
     }
   }
 
   .img-container {
-    img {
-      width:100%;
-    }
+    max-width: 580px;
   }
   .text-container {
     @include flexbox();

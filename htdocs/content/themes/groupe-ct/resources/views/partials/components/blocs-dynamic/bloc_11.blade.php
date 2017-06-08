@@ -8,7 +8,8 @@
     <!-- THE ELEMENT START  -->
     <div class="prod-logiciel-container"><!-- reverse-elem : to swap img and text div -->
         <div class="prod-logiciel-img-container">
-            <div class="prod-logiciel-img"></div>
+            <a class="youtube-lity" href="//www.youtube.com/watch?v=XSGBVzeBUbk" data-lity></a>
+            <img class="img-video shadow" src="{{ themosis_assets() }}/images/img/img_pub01.png" alt="">
             <span class="prod-logiciel-lang">Vidéo disponible en anglais seulement</span>
         </div>
         <div class="buffer"></div>
@@ -30,7 +31,8 @@
     <!-- THE ELEMENT START  -->
     <div class="prod-logiciel-container reverse-elem"><!-- reverse-elem : to swap img and text div -->
         <div class="prod-logiciel-img-container">
-            <div class="prod-logiciel-img"></div>
+            <a class="youtube-lity" href="//www.youtube.com/watch?v=XSGBVzeBUbk" data-lity></a>
+            <img class="img-video shadow" src="{{ themosis_assets() }}/images/img/img_pub01.png" alt="">
             <span class="prod-logiciel-lang">Vidéo disponible en anglais seulement</span>
         </div>
         <div class="buffer"></div>

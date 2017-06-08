@@ -35,15 +35,18 @@
 
 /***** STRUCTURE ******/
 
+body {
+  background-color: white;
+}
+
+#global-container {
+  max-width:1920px!important;
+  margin:auto!important;
+}
+
 //Reset flexboxgrid
 .container-fluid {
   padding:0!important;
-}
-
-
-.page-main-container {
-  max-width:1200px;
-  margin:auto;
 }
 
 .row {
@@ -60,6 +63,18 @@
 /***** TYPOGRAPHY ********/
 
 @import "typo";
+
+.red-border:after {
+  content:"";
+  position: absolute;
+  z-index: -1;
+  left:0;
+  bottom:16px;
+  border-bottom: 12px solid #a91b2d;
+  width:98%;
+  margin:auto;
+  margin-left:6px;
+}
 
 
 /***** BUTTONS & CTA *****/
@@ -81,7 +96,7 @@
 .primary-btn-blue {
   @extend .primary-btn;
   background-color: $blue;
-
+  color:white;
   width:50%;
  // margin:auto;
   text-align: center;
