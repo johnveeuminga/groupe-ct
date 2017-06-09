@@ -2,7 +2,7 @@
 
   @include flexbox();
   @include flex-direction(column);
-  @media (min-width: $screen-md-min) {
+  @media (min-width: 1240px) {
     @include flex-direction(row);
   }
 
@@ -19,7 +19,7 @@
 
 
     @include flex-basis(100%);
-    @media (min-width: $screen-md-min) {
+    @media (min-width: 1240px) {
       @include flex-direction(column);
       @include flex-basis(33%);
       padding: 25px 4%;
@@ -36,14 +36,14 @@
 
     @include flex-basis(40%);
     margin-bottom:25px;
-    @media (min-width: $screen-md-min) {
+    @media (min-width: 1240px) {
       @include flex-basis(40%);
     }
   }
 
   .tab-change-img-container {
 
-    @media (min-width: $screen-md-min) {
+    @media (min-width: 1240px) {
       text-align: center;
       height:96px;
     }
@@ -58,7 +58,7 @@
     @extend .poppins28SemiBoldWhite;
     text-transform: uppercase;
     text-align: center;
-    @media (min-width: $screen-md-min) {
+    @media (min-width: 1240px) {
       height:90px;
       margin-bottom:25px;
       text-align: left;
@@ -70,7 +70,7 @@
 
   .tab-change-content-container {
     @include flex-basis(60%);
-    @media (min-width: $screen-md-min) {
+    @media (min-width: 1240px) {
       @include flex-basis(100%);
     }
   }
@@ -106,7 +106,7 @@
       left:44%;
     }
 
-    @media (min-width: $screen-md-min) {
+    @media (min-width: 1240px) {
       border-width: 65px 0 65px 32px;
       left: auto;
       bottom:auto;
@@ -135,7 +135,7 @@
       left:44%;
     }
 
-    @media (min-width: $screen-md-min) {
+    @media (min-width: 1240px) {
       left: auto;
       bottom:auto;
       right:-34px;
@@ -152,7 +152,7 @@
     background-color: $blue01;
     border-bottom: 2px solid #05355f;
 
-    @media (min-width: $screen-md-min) {
+    @media1240px {
       border-right: 2px solid #05355f;
       border-bottom:none;
     }
@@ -168,7 +168,7 @@
   .tc01:nth-child(2) {
     background-color: $blue02;
     border-bottom: 2px solid #15456f;
-    @media (min-width: $screen-md-min) {
+    @media (min-width: 1240px) {
       border-right: 2px solid #15456f;
       border-bottom:none;
     }
@@ -184,7 +184,7 @@
   .tc01:nth-child(3) {
     background-color: $blue03;
     border-bottom: 2px solid #2a5b84;
-    @media (min-width: $screen-md-min) {
+    @media (min-width: 1240px) {
       border-right: 2px solid #2a5b84;
       border-bottom:none;
     }
@@ -207,7 +207,7 @@
     background-color: $blue05;
     border-bottom: 2px solid #267ab2;
 
-    @media (min-width: $screen-md-min) {
+    @media (min-width: 1240px) {
       border-right: 2px solid #267ab2;
       border-bottom:none;
     }
@@ -223,7 +223,7 @@
   .tc02:nth-child(2) {
     background-color: $blue06;
     border-bottom: 2px solid #3787bb;
-    @media (min-width: $screen-md-min) {
+    @media (min-width: 1240px) {
       border-right: 2px solid #3787bb;
       border-bottom:none;
     }
@@ -239,7 +239,7 @@
   .tc02:nth-child(3) {
     background-color: $blue07;
     border-bottom: 2px solid #4b95c3;
-    @media (min-width: $screen-md-min) {
+    @media (min-width: 1240px) {
       border-right: 2px solid #4b95c3;
       border-bottom:none;
     }
@@ -262,7 +262,7 @@
     background-color: $green01;
     border-bottom: 2px solid #047160;
 
-    @media (min-width: $screen-md-min) {
+    @media (min-width: 1240px) {
       border-right: 2px solid #047160;
       border-bottom:none;
     }
@@ -278,7 +278,7 @@
   .tc03:nth-child(2) {
     background-color: $green02;
     border-bottom: 2px solid #168573;
-    @media (min-width: $screen-md-min) {
+    @media (min-width: 1240px) {
       border-right: 2px solid #168573;
       border-bottom:none;
     }
@@ -294,7 +294,7 @@
   .tc03:nth-child(3) {
     background-color: $green03;
     border-bottom: 2px solid #2b9583;
-    @media (min-width: $screen-md-min) {
+    @media (min-width: 1240px) {
       border-right: 2px solid #2b9583;
       border-bottom:none;
     }

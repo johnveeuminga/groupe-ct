@@ -7,7 +7,6 @@
         @include('partials.components.blocs-static.bloc-newsletter')
         @include('partials.components.blocs-static.bloc-partners')
         @include('partials.components.blocs-static.bloc-equipment-cta')
-        @include('partials.components.blocs-static.bloc-wheel')
         @include('partials.components.blocs-static.bloc-tab-change01')
         @include('partials.components.blocs-static.bloc-tab-change02')
         @include('partials.components.blocs-static.bloc-tab-change03')
