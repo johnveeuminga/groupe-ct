@@ -38,30 +38,7 @@
       max-width:600px;
     }
 
-    .publication-cat, .publication-title, .publication-date {
-      text-transform: uppercase;
-    }
-    .publication-cat {
-      @extend .poppins15BoldRed;
-      margin-top:25px;
-      @media (min-width: $screen-sm-min) {
-        margin-top:0px;
-      }
-    }
 
-    .publication-title {
-      @extend .poppins30BoldBlack;
-      margin:10px 0;
-    }
-
-    .publication-date {
-      @extend .poppins15BoldBlue;
-    }
-
-    .publication-text {
-      @extend .mada22LightBlack;
-      margin: 25px 0;
-    }
   }
 }
 

@@ -1,2 +1,94 @@
 
+.publication-single-main-container {
+
+  .publication-container {
+    @include flexbox();
+    @include flex-direction(column);
+    margin-top:50px;
+  }
+
+
+  .publication-page-title-container, .other-publication-title-container {
+    text-align: center;
+
+    .page-title {
+      @extend .poppins44BoldBlack;
+      text-transform: uppercase;
+    }
+  }
+
+  .publication-nav-item {
+    @include set-font(15px, $poppins, 700, $blue );
+    @extend .poppins15BoldBlue;
+    position: relative;
+  }
+
+  .publication-nav {
+    @include flexbox();
+    @include align-items(center);
+    @include justify-content(space-between);
+    border-top:1px solid $grey-light;
+    border-bottom:1px solid $grey-light;
+    padding:15px 0;
+    margin-top:50px;
+    margin-bottom:30px;
+  }
+
+
+  .link-pub-list:before {
+    content:url($assets + "/images/icon/icon-pub-list.png");
+    position: absolute;
+    left:-30px;
+    top:-5px;
+  }
+
+  .cta-pub-left, .cta-pub-right {
+
+    color:transparent;
+    @media (min-width: $screen-sm-min) {
+      color:$blue;
+    }
+
+    text-transform: uppercase;
+    position: relative;
+    @include flexbox();
+    @include align-items(center);
+  }
+
+  .cta-pub-left:before {
+    content:url($assets + "/images/icon/icon-cta-arrow-blue.png");
+    @include rotate(180);
+    margin-right:10px;
+    margin-top:-5px;
+  }
+  .cta-pub-right:after {
+    content:url($assets + "/images/icon/icon-cta-arrow-blue.png");
+    margin-left:10px;
+    margin-top:2px;
+  }
+}
+
+.pub-info-container {
+  margin-bottom:40px;
+}
+
+.other-publication-container {
+  @include flexbox();
+  @include flex-direction(column);
+
+  @media (min-width: $screen-sm-min) {
+    @include align-items(center);
+  }
+  @media (min-width: $screen-md-min) {
+    @include flex-direction(row);
+  }
+
+  .publication-container {
+    @media (min-width: $screen-md-min) {
+      padding:0 2%;
+      width:calc(100%/3);
+    }
+
+  }
+}
 

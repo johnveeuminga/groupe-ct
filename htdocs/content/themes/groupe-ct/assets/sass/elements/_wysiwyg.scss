@@ -1,0 +1,44 @@
+.wysiwyg-container {
+
+  h1,h2,h3,h4,h5,h6 {
+    font-family: $poppins;
+    font-weight: 700;
+    margin:15px 0;
+  }
+
+  h1 {
+    @extend .poppins30BoldBlack;
+  }
+  h2 {
+    @extend .poppins26BoldBlack ;
+  }
+  h3 {
+    @extend .poppins22BoldBlack;
+  }
+  h4 {
+    @extend .poppins18BoldBlack;
+  }
+  h5 {
+    @extend .poppins14BoldBlack;
+  }
+  h6 {
+    @extend .poppins12BoldBlack;
+  }
+  p {
+    @extend .mada18LightBlack;
+    margin:20px 0;
+  }
+  a {
+    @extend .poppins15BoldBlue;
+
+  }
+
+  li {
+    @extend .mada18RegBlack;
+    margin:10px 0;
+  }
+
+  img {
+    max-width:100%;
+  }
+}
