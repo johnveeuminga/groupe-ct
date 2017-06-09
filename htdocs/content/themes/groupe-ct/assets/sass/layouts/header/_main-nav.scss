@@ -37,7 +37,10 @@
       .nav-link {
         text-decoration: none;
         font-family: $poppins;
-        font-weight: 400;
+        font-weight: 500;
+        &:hover {
+          color: $red;
+        }
       }
     }
 

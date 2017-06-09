@@ -66,18 +66,17 @@
         <div class="footer-bottom">
 
             <div class="social-media-container">
+
                 <a class="social-link" href="#">
-                    <span class="fa-stack fa-lg">
-                        <i class="fa fa-circle-thin fa-stack-2x"></i>
-                        <i class="fa fa-facebook fa-stack-1x"></i>
-                    </span>
+                    <img class="social-icon" src="{{ themosis_assets() }}/images/icon/icon-linked.png" alt="">
+                    <img class="social-icon over" src="{{ themosis_assets() }}/images/icon/icon-over-linked.png" alt="">
                 </a>
+
                 <a class="social-link" href="#">
-                    <span class="fa-stack fa-lg">
-                        <i class="fa fa-circle-thin fa-stack-2x"></i>
-                        <i class="fa fa-linkedin fa-stack-1x"></i>
-                    </span>
+                    <img class="social-icon" src="{{ themosis_assets() }}/images/icon/icon-fb.png" alt="">
+                    <img class="social-icon over" src="{{ themosis_assets() }}/images/icon/icon-over-fb.png" alt="">
                 </a>
+
             </div>
             <div class="legal-container">
                 <p>© <?php echo date("Y"); ?> Groupe C.T Tous droits réservé</p>
