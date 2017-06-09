@@ -61,28 +61,28 @@
       }
     }
 
-
+    .nav-bottom {
+      @include flexbox();
+      @include flex-direction(column);
+    }
     .nav-bottom .menu-item{
 
       @include flexbox();
+
       margin-left:10px;
       position: relative;
-      &:before {
-        display: none;
+    }
 
-        content:url($assets + "/images/icon/icon-white-triangle.png");
-        width: 50px;
-        @include center-img(50%,-60%);
-        z-index: 1000;
-      }
+    .menu-item-triangle {
+      display: none;
+      content:url($assets + "/images/icon/icon-white-triangle.png");
+      width: 50px;
+      @include center-img(50%,-60%);
+      z-index: 1000;
     }
 
     .show-arrow {
-      &:before {
-        display: block!important;
-
-
-      }
+      display: block!important;
     }
 
 

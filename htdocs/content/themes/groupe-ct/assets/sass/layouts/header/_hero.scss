@@ -8,19 +8,27 @@
     @include align-items(center);
     @include justify-content(center);
     position: relative;
-    border: 1px solid blue;
     width: 100%;
     min-height: 675px;
     background-image: url($assets + "/images/bg-pub.png");
     background-repeat: no-repeat;
     background-size: cover;
 
+    .hero-content {
+      @include flexbox();
+      @include flex-basis(60%);
+      //@include align-items(center);
+      @include justify-content(center);
+      @include flex-direction(column);
+    }
+
     .hero-title-container {
       color: white;
       width: auto;
-      border: 1px solid red;
-      max-width:900px;
+
+
       .hero-title {
+        display: inline;
         position: relative;
         z-index: 10;
         margin-left: -5px;
@@ -49,11 +57,11 @@
 
       z-index: -1;
       left: 0;
-      bottom: 16px;
+      bottom: 40px;
       border-bottom: 12px solid #a91b2d;
       width: 98%;
       margin: auto;
-      margin-left: 6px;
+      margin-left: 12px;
 
     }
 

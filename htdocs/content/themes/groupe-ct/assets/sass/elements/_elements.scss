@@ -260,7 +260,7 @@ body {
 .bloc-name {
   background-color: $red;
   padding: 25px;
-  //margin:50px 0;
+  margin:50px 0;
   @include set-font(16px, $poppins, 400, white);
 }
 

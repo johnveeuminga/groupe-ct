@@ -10,7 +10,7 @@
         });
 
 
-       $( ".nav-bottom .nav-link" ).hover(
+       /*$( ".nav-bottom .nav-link" ).hover(
             function() {
                 var $navIndex = $(this).attr('class').split(' ')[1];
                 $('.s'+ $navIndex).removeClass('hideMe');
@@ -20,15 +20,39 @@
                 $('.s'+ $navIndex).addClass('hideMe');
                 $(this).parent().removeClass('show-arrow');
             }
+        );*/
+
+        $( ".nav-bottom .nav-link" ).hover(
+            function() {
+                var $navIndex = $(this).attr('class').split(' ')[1];
+                $('.sub-menu-main-container').find('.'+ $navIndex).removeClass('hideMe');
+                $(this).siblings('.menu-item-triangle').addClass('show-arrow');
+            }, function() {
+                var $navIndex = $(this).attr('class').split(' ')[1];
+                $('.sub-menu-main-container').find('.'+ $navIndex).addClass('hideMe');
+                $(this).siblings('.menu-item-triangle').removeClass('show-arrow');
+            }
+        );
+
+        $( ".menu-item-triangle" ).hover(
+            function() {
+                console.log(234234);
+                var $navIndex = $(this).siblings('.nav-link').attr('class').split(' ')[1];
+                $('.sub-menu-main-container').find('.'+ $navIndex).removeClass('hideMe');
+                $(this).addClass('show-arrow');
+            }
         );
 
         $( ".sub-menu-container" ).hover(
             function() {
-                //var $navIndex = $(this).attr('class').split(' ')[1];
+                var $navIndex = $(this).attr('class').split(' ')[1];
                 $(this).removeClass('hideMe');
+                console.log($('.nav-link.' + $navIndex));
+                $('.nav-link.' + $navIndex).siblings('.menu-item-triangle').addClass('show-arrow');
             }, function() {
-               // var $navIndex = $(this).attr('class').split(' ')[1];
+                var $navIndex = $(this).attr('class').split(' ')[1];
                 $(this).addClass('hideMe');
+                $('.nav-link.' + $navIndex).siblings('.menu-item-triangle').removeClass('show-arrow');
             }
         );
 
