@@ -1,6 +1,6 @@
 .publication-list-main-container {
 
-  padding-top:35px;
+  padding:130px 0;
 
   @include flexbox();
   @include flex-direction(column);
@@ -36,8 +36,13 @@
     border-top:1px solid $grey-light;
     border-bottom:1px solid $grey-light;
     padding:15px 0;
-    margin-top:50px;
+    margin-top:0px;
     margin-bottom:30px;
+  }
+
+  .publication-nav:last-of-type {
+
+    margin-top:50px;
   }
 
   .publication-nav-item {
