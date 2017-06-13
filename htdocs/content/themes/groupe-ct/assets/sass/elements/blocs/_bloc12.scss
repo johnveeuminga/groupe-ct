@@ -37,12 +37,15 @@
       @include flex-basis(50%);
       max-width:600px;
     }
-
-
   }
 }
 
+.publication-container:first-of-type {
+  @media (min-width: $screen-sm-min) {
+    margin-top:50px;
+  }
 
+}
 
 
 

@@ -119,8 +119,26 @@ body {
     padding: 20px 40px;
     @include set-font(15px, $poppins, 700, white);
   }
-
 }
+
+.primary-btn-grey {
+  @extend .primary-btn;
+  background-color: $grey-light;
+  text-align: center;
+
+  &:hover {
+    background-color: $blue-sky;
+  }
+
+  @media (min-width: $screen-xs-min) {
+    width:200px;
+  }
+  @media (min-width: $screen-sm-min) {
+    padding: 20px 40px;
+    @include set-font(15px, $poppins, 700, white);
+  }
+}
+
 
 
 .cta-see-more {
@@ -230,6 +248,7 @@ body {
   }
 }
 
+//**** SLIDER *****//
 
 .slider-link-container {
   border-bottom: 2px solid #aaaaaa;
@@ -277,6 +296,84 @@ body {
   opacity: 1!important;
   position: relative!important;
 }
+
+/***********************/
+
+/*** ITEM CAT SEARCH ****/
+.select-title {
+  @extend .poppins15BoldBlack;
+}
+
+.nav-cat-container {
+
+  .menu-item-container {
+    @include flexbox();
+    @include flex-wrap(wrap);
+    margin: 10px 0;
+    padding-bottom: 30px;
+    border-bottom:1px solid #8295a0;
+  }
+
+  .menu-item {
+    margin:35px 0;
+    margin-right: 20px;
+  }
+}
+
+.item-cat-active a{
+  background-color: $blue-dark!important;
+}
+
+
+.publication-nav {
+  @include flexbox();
+  @include align-items(center);
+  @include justify-content(space-between);
+  border-top:1px solid $grey-light;
+  border-bottom:1px solid $grey-light;
+  padding:15px 0;
+  margin-top:50px;
+  margin-bottom:30px;
+}
+
+.publication-nav-item {
+  @include set-font(15px, $poppins, 700, $blue );
+  @extend .poppins15BoldBlue;
+  position: relative;
+}
+
+.active-pagination {
+  color:$blue!important;
+}
+
+.cta-pub-left, .cta-pub-right {
+
+  color:transparent;
+  @media (min-width: $screen-sm-min) {
+    color:$blue;
+  }
+
+  text-transform: uppercase;
+  position: relative;
+  @include flexbox();
+  @include align-items(center);
+}
+
+.cta-pub-left:before {
+  content:url($assets + "/images/icon/icon-cta-arrow-blue.png");
+  @include rotate(180);
+  margin-right:10px;
+  margin-top:-5px;
+}
+.cta-pub-right:after {
+  content:url($assets + "/images/icon/icon-cta-arrow-blue.png");
+  margin-left:10px;
+  margin-top:2px;
+}
+
+//**************************/
+
+
 
 .shadow {
   -webkit-box-shadow: 0px 0px 41px 1px rgba(0,0,0,0.2);

@@ -17,11 +17,7 @@
     }
   }
 
-  .publication-nav-item {
-    @include set-font(15px, $poppins, 700, $blue );
-    @extend .poppins15BoldBlue;
-    position: relative;
-  }
+
 
   .publication-nav {
     @include flexbox();
@@ -32,6 +28,12 @@
     padding:15px 0;
     margin-top:50px;
     margin-bottom:30px;
+  }
+
+  .publication-nav-item {
+    @include set-font(15px, $poppins, 700, $blue );
+    @extend .poppins15BoldBlue;
+    position: relative;
   }
 
 
@@ -91,4 +93,6 @@
 
   }
 }
+
+
 
