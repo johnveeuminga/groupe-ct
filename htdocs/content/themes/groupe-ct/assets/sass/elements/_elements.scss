@@ -263,11 +263,16 @@ body {
     display: block;
     width:25px;
     height:25px;
-    border: 1px solid red;
     &:before {
       @include center-img(50%,50%);
       content: url( $assets + "/images/icon/icon-slider-bullet-inactive.png");
     }
+  }
+  .slider-dot:first-of-type {
+    margin-left:-10px;
+  }
+  .slider-dot:last-of-type {
+    margin-right:-10px;
   }
 }
 

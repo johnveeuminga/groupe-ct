@@ -13,5 +13,5 @@ Route::any('front', 'HomeController@index');
 Route::get('/components', 'HomeController@blocs');
 Route::any('page', 'PageController@index');
 
-Route::any('page', 'PageController@publication');
+Route::any('single', 'PageController@publication');
 Route::any('postTypeArchive', ['publications' , 'uses' => 'PageController@publication_list']);
