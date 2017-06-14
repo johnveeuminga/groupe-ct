@@ -15,7 +15,7 @@
                 <p class="contact-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                     labore et dolore magna aliqua.
                 </p>
-                <img class="contact-cta" src="{{ themosis_assets() }}/images/icon/icon-cta-arrow-white.png" alt="">
+                <a class="contact-link-cta" href="#"><img class="contact-cta" src="{{ themosis_assets() }}/images/icon/icon-cta-arrow-white.png" alt=""></a>
             </div>
         </div>
 
@@ -26,7 +26,7 @@
                 <p class="contact-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                     labore et dolore magna aliqua.
                 </p>
-                <img class="contact-cta" src="{{ themosis_assets() }}/images/icon/icon-cta-arrow-white.png" alt="">
+                <a class="contact-link-cta" href="#"><img class="contact-cta" src="{{ themosis_assets() }}/images/icon/icon-cta-arrow-white.png" alt=""></a>
             </div>
         </div>
 
@@ -37,7 +37,7 @@
                 <p class="contact-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                     labore et dolore magna aliqua.
                 </p>
-                <img class="contact-cta" src="{{ themosis_assets() }}/images/icon/icon-cta-arrow-white.png" alt="">
+                <a class="contact-link-cta" href="#"><img class="contact-cta" src="{{ themosis_assets() }}/images/icon/icon-cta-arrow-white.png" alt=""></a>
             </div>
         </div>
 

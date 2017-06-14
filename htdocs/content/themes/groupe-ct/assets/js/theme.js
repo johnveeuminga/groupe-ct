@@ -143,8 +143,8 @@
             e.preventDefault();
             $(this).parent().addClass('item-cat-active').siblings().removeClass('item-cat-active');
 
+            //Filter products
             var $catProd = $(this).attr('class').split(' ')[1];
-
             $('.product-container').not('.product-container.' + $catProd).addClass('hideMe');
             $('.product-container.' + $catProd).removeClass('hideMe');
 

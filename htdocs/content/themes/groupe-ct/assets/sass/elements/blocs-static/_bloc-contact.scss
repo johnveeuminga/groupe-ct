@@ -19,6 +19,17 @@
       padding-top:75px;
       padding-bottom: 60px;
     }
+
+
+    .contact-link-cta {
+      margin:15px 0;
+      @media (min-width: $screen-md-min) {
+        margin-top:60px;
+      }
+
+      display: block;
+    }
+
   }
 
   .contact-title {
@@ -34,16 +45,9 @@
 
   .contact-text {
     @extend .poppins18LightWhite;
-    //text-align: center;
   }
 
-  .contact-cta {
-    margin:15px 0;
-    @media (min-width: $screen-md-min) {
-      margin-top:60px;
-    }
 
-  }
 
 
 
