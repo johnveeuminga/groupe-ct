@@ -2,7 +2,7 @@
 
 <div class="sub-menu-main-container">
 
-    <div class="sub-menu-container nl1 row hideMe">
+    <div class="sub-menu-container nl1 row hide-from-screen">
 
         <div class="sub-menu-title-container col-xs-10 col-xs-offset-2">
             <h2 class="sub-menu-title">Le meilleur de l’industrie sous un même toît</h2>
@@ -46,7 +46,7 @@
     </div>
 
 
-    <div class="sub-menu-container nl2 row hideMe">
+    <div class="sub-menu-container nl2 row hide-from-screen">
 
         <div class="sub-menu-title-container col-xs-10 col-xs-offset-2">
             <h2 class="sub-menu-title">Le meilleur de l’industrie sous un même toît</h2>
@@ -89,7 +89,7 @@
         </div>
     </div>
 
-    <div class="sub-menu-container nl3 row hideMe">
+    <div class="sub-menu-container nl3 row hide-from-screen">
 
         <div class="sub-menu-title-container col-xs-10 col-xs-offset-2">
             <h2 class="sub-menu-title">Le meilleur de l’industrie sous un même toît</h2>
@@ -132,7 +132,7 @@
         </div>
     </div>
 
-    <div class="sub-menu-container nl4 row hideMe">
+    <div class="sub-menu-container nl4 row hide-from-screen">
 
         <div class="sub-menu-title-container col-xs-10 col-xs-offset-2">
             <h2 class="sub-menu-title">Le meilleur de l’industrie sous un même toît</h2>
@@ -175,7 +175,7 @@
         </div>
     </div>
 
-    <div class="sub-menu-container nl5 row hideMe">
+    <div class="sub-menu-container nl5 row hide-from-screen">
 
         <div class="sub-menu-title-container col-xs-10 col-xs-offset-2">
             <h2 class="sub-menu-title">Le meilleur de l’industrie sous un même toît</h2>

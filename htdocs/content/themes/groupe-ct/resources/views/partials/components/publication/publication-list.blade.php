@@ -13,7 +13,7 @@
             </p>
         </div>
 
-        <nav class="nav-cat-container default-padding default-width">
+        <nav class="nav-cat-container">
             <h3 class="select-title"><?php _e('Sélectionnez la catégorie de votre choix', THEME_TEXTDOMAIN); ?></h3>
             <ul class="menu-item-container">
                 <li class="menu-item item-cat-active"><a class="primary-btn-grey" href="#"><?php _e('Nouvelle', THEME_TEXTDOMAIN); ?></a></li>
@@ -26,17 +26,18 @@
 
         <div class="publication-nav-container">
             <div class="publication-nav">
-                <a class="publication-nav-item active-pagination" href="#">1</a>
-                <a class="publication-nav-item" href="#">2</a>
-                <a class="publication-nav-item" href="#">3</a>
-                <a class="publication-nav-item" href="#">4</a>
-                <a class="publication-nav-item" href="#">5</a>
+                <a class="publication-nav-item pagination active-pagination" href="#">1</a>
+                <a class="publication-nav-item pagination" href="#">2</a>
+                <a class="publication-nav-item pagination" href="#">3</a>
+                <a class="publication-nav-item pagination" href="#">4</a>
+                <a class="publication-nav-item pagination" href="#">5</a>
+                <a class="publication-nav-item pagination next" href="#"><img src="{{ themosis_assets() }}/images/icon/chevron-right-grey.png" alt=""></a>
                 <a class="publication-nav-item cta-pub-right" href="#"><?php _e('Publication suivante', THEME_TEXTDOMAIN); ?></a>
             </div>
         </div>
 
         <!-- INSERT PUBLICATIONS HERE -->
-        <div class="publication-main-container">
+        <div class="publication-main-container default-padding default-width">
             @for ($i = 1; $i <= 7; $i++)
                     <div class="publication-container @if($i%2==1) {{ 'reverse-elem' }} @endif"> <!-- reverse-elem : to swap img and text div -->
                         <div class="publication-img-container">
@@ -65,14 +66,14 @@
 
         <div class="publication-nav-container">
             <div class="publication-nav">
-                <a class="publication-nav-item active-pagination" href="#">1</a>
-                <a class="publication-nav-item" href="#">2</a>
-                <a class="publication-nav-item" href="#">3</a>
-                <a class="publication-nav-item" href="#">4</a>
-                <a class="publication-nav-item" href="#">5</a>
+                <a class="publication-nav-item pagination active-pagination" href="#">1</a>
+                <a class="publication-nav-item pagination" href="#">2</a>
+                <a class="publication-nav-item pagination" href="#">3</a>
+                <a class="publication-nav-item pagination" href="#">4</a>
+                <a class="publication-nav-item pagination" href="#">5</a>
+                <a class="publication-nav-item pagination next" href="#"><img src="{{ themosis_assets() }}/images/icon/chevron-right-grey.png" alt=""></a>
                 <a class="publication-nav-item cta-pub-right" href="#"><?php _e('Publication suivante', THEME_TEXTDOMAIN); ?></a>
             </div>
         </div>
-
 
 </section>

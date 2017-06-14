@@ -12,20 +12,20 @@
         $( ".nav-bottom .nav-link" ).hover(
             function() {
                 var $navIndex = $(this).attr('class').split(' ')[1];
-                $('.sub-menu-main-container').find('.'+ $navIndex).removeClass('hideMe');
+                $('.sub-menu-main-container').find('.'+ $navIndex).removeClass('hide-from-screen');
                 $(this).siblings('.menu-item-triangle').addClass('show-arrow');
             }, function() {
                 var $navIndex = $(this).attr('class').split(' ')[1];
-                $('.sub-menu-main-container').find('.'+ $navIndex).addClass('hideMe');
+                $('.sub-menu-main-container').find('.'+ $navIndex).addClass('hide-from-screen');
                 $(this).siblings('.menu-item-triangle').removeClass('show-arrow');
             }
         );
 
         $( ".menu-item-triangle" ).hover(
             function() {
-                console.log(234234);
+
                 var $navIndex = $(this).siblings('.nav-link').attr('class').split(' ')[1];
-                $('.sub-menu-main-container').find('.'+ $navIndex).removeClass('hideMe');
+                $('.sub-menu-main-container').find('.'+ $navIndex).removeClass('hide-from-screen');
                 $(this).addClass('show-arrow');
             }
         );
@@ -33,12 +33,12 @@
         $( ".sub-menu-container" ).hover(
             function() {
                 var $navIndex = $(this).attr('class').split(' ')[1];
-                $(this).removeClass('hideMe');
+                $(this).removeClass('hide-from-screen');
                 console.log($('.nav-link.' + $navIndex));
                 $('.nav-link.' + $navIndex).siblings('.menu-item-triangle').addClass('show-arrow');
             }, function() {
                 var $navIndex = $(this).attr('class').split(' ')[1];
-                $(this).addClass('hideMe');
+                $(this).addClass('hide-from-screen');
                 $('.nav-link.' + $navIndex).siblings('.menu-item-triangle').removeClass('show-arrow');
             }
         );
@@ -145,7 +145,7 @@
 
         /*** NAV PAGINATION **/
 
-        $('.publication-nav-item').on('click', function (e) {
+        $('.publication-nav-item.pagination').on('click', function (e) {
             e.preventDefault();
             $(this).addClass('active-pagination').siblings().removeClass('active-pagination');
         });

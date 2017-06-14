@@ -8,7 +8,7 @@
         <div class="publication-nav-container">
             <div class="publication-nav">
                 <a class="publication-nav-item cta-pub-left" href="#"><?php _e('Publication précédente', THEME_TEXTDOMAIN); ?></a>
-                <a class="publication-nav-item link-pub-list" href="#"><?php _e('Liste', THEME_TEXTDOMAIN); ?></a>
+                <a class="publication-nav-item link-pub-list" href="{{ get_home_url() }}/publications"><?php _e('Liste', THEME_TEXTDOMAIN); ?></a>
                 <a class="publication-nav-item cta-pub-right" href="#"><?php _e('Publication suivante', THEME_TEXTDOMAIN); ?></a>
             </div>
         </div>

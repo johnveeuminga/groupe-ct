@@ -2,16 +2,19 @@
 .sub-menu-main-container {
 
   background-color: $black;
-  position: absolute;
-  left:0;
-  top:0;
+  position: relative;
   z-index: 900;
   width:100%;
   @include set-font(16px, $poppins, 400, white);
-
   .sub-menu-container {
     @include flexbox();
     @include flex-direction(column);
+    position: absolute;
+    width: 100%;
+    left:0;
+    top:0;
+    background-color: $black;
+    @include transition(left 0.6s ease);
   }
 
   .sub-menu-title {
@@ -56,4 +59,10 @@
 }
 
 
+.hide-from-screen {
 
+  position: absolute!important;
+  left:-3000px!important;
+  top:0!important;
+
+}

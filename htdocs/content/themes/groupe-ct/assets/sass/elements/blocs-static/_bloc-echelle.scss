@@ -35,7 +35,8 @@
     @include flexbox();
     @include flex-direction(column);
     position: relative;
-    max-width:700px;
+    //max-width:700px;
+    width:100%;
     margin:auto;
     background-image: url($assets + "/images/echelle/echelle-mobile.png");
     background-repeat: no-repeat;
@@ -44,16 +45,22 @@
     height:304px;
     left:0;
     top:0;
-
+    text-align: center;
+    //img {
+    //  max-width:535px;
+    //  border: 1px solid blue;
+    //  margin:auto;
+    //}
 
     @media (min-width: $screen-xs-min) {
       height:450px;
+
     }
 
     @media (min-width: $screen-sm-min) {
       @include flex-direction(row);
       max-width:1200px;
-      background-image: url($assets + "/images/echelle/echelle-desktop.png");
+      background-image: url($assets + "/images/echelle/echelle-desktopv02.png");
       height:200px;
     }
 
@@ -70,6 +77,13 @@
 
     left:0px;
     top:0;
+
+    //img {
+    //  max-width:575px;
+    //  border: 1px solid black;
+    //  margin:auto;
+    //}
+
     @media (min-width: $screen-xs-min) {
       height:450px;
     }
@@ -77,29 +91,37 @@
       height:200px;
 
     }
+    a {
+      position: absolute;
+      display: block;
+      width: 100%;
+      height: 100%;
+
+    }
 
 
   }
 
   .benefit-bg.paper {
-    background-image: url($assets + "/images/echelle/over-papier.png");
+    background-image: url($assets + "/images/echelle/over-papier-mobilev02.png");
+
     @media (min-width: $screen-sm-min) {
-      background-image: url($assets + "/images/echelle/over-papier-desktop.png");
+      background-image: url($assets + "/images/echelle/over-papier-desktopv02.png");
     }
 
 
   }
   .benefit-bg.hyb {
-    background-image: url($assets + "/images/echelle/over-hybrid.png");
+     background-image: url($assets + "/images/echelle/over-hybrid-mobilev02.png");
     @media (min-width: $screen-sm-min) {
-      background-image: url($assets + "/images/echelle/over-hybrid-desktop.png");
+      background-image: url($assets + "/images/echelle/over-hybrid-desktopv02.png");
     }
 
   }
   .benefit-bg.num {
-    background-image: url($assets + "/images/echelle/over-num.png");
+    background-image: url($assets + "/images/echelle/over-num-mobilev02.png");
     @media (min-width: $screen-sm-min) {
-      background-image: url($assets + "/images/echelle/over-num-desktop.png");
+      background-image: url($assets + "/images/echelle/over-num-desktopv02.png");
     }
 
 
@@ -116,12 +138,8 @@
       top:0%;
     }
 
-    @media (min-width: 600px) {
-      top:10%;
-    }
-
-    @media (min-width: 660px) {
-      top:0%;
+    @media (min-width:$screen-xs-min) {
+      top:5%;
     }
 
     @media (min-width: $screen-sm-min) {
@@ -135,18 +153,22 @@
     position: relative;
     z-index:9999;
     height:75px;
+
     @media (min-width: 500px) {
       height:100px;
     }
-    @media (min-width: 600px) {
-      height:120px;
+    @media (min-width: $screen-xs-min) {
+      height:130px!important;
     }
     @media (min-width: 660px) {
-      height:150px;
+      height:200px;
     }
-    @media (min-width: $screen-xs-min) {
-      height:100px;
+    @media (min-width: $screen-sm-min) {
+      height:100px!important;
     }
+
+
+
   }
 
 
