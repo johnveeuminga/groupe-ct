@@ -138,9 +138,16 @@
             $(this).parent().addClass('item-type-active').siblings().removeClass('item-type-active');
         });
 
+
         $('.nav-cat-container a').on('click', function (e) {
             e.preventDefault();
             $(this).parent().addClass('item-cat-active').siblings().removeClass('item-cat-active');
+
+            var $catProd = $(this).attr('class').split(' ')[1];
+
+            $('.product-container').not('.product-container.' + $catProd).addClass('hideMe');
+            $('.product-container.' + $catProd).removeClass('hideMe');
+
         });
 
         /*** NAV PAGINATION **/
