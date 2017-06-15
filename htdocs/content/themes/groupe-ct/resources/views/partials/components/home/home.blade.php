@@ -12,6 +12,7 @@
         @include('partials.components.blocs-static.bloc-tab-change03')
         @include('partials.components.blocs-static.bloc-product-search')
         @include('partials.components.blocs-static.bloc-contact')
+        @include('partials.components.blocs-static.bloc-wysiwyg')
 
 
 </section>
