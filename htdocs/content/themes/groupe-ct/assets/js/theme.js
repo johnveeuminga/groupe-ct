@@ -46,14 +46,30 @@
 
         /**** CONTACT FORM ****/
 
-        $("#sexe").select2({
-            placeholder: "Mr/Me",
-
+        $('.contact-us-link').on('click', function () {
+            $(this).siblings('.contact-form-container').toggleClass('hideMe');
         });
 
-        $("#departement").select2({
-            placeholder: "Departement"
-        });
+        $( ".contact-us-link" ).hover(
+            function() {
+                console.log('over');
+                $('.hero .contact-form-container').removeClass('hideMe');
+            }, function() {
+                console.log('nope');
+                $('.hero .contact-form-container').addClass('hideMe');
+            }
+        );
+
+        $('.hero .contact-form-container').hover(
+            function() {
+                console.log('over');
+                $(this).removeClass('hideMe');
+            }, function() {
+                console.log('nope');
+                $(this).addClass('hideMe');
+            }
+        );
+
 
 
         /**** ECHELLE NUMERIQUE ********/
@@ -69,9 +85,6 @@
         );
 
 
-        $('.contact-us-link').on('click', function () {
-            $(this).siblings('.contact-form-container').toggleClass('hideMe');
-        });
 
         /***** Sliders with dots *******/
 

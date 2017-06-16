@@ -87,6 +87,9 @@ body {
   color:white;
   text-decoration: none;
   text-transform: uppercase;
+  &:hover {
+    background-color: #d2deea;
+  }
   @media (min-width: $screen-sm-min) {
     padding: 20px 40px;
     @include set-font(15px, $poppins, 700, $blue);
@@ -378,6 +381,10 @@ body {
 
 //**************************/
 
+
+
+
+/***************/
 
 
 .shadow {

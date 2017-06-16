@@ -1,7 +1,7 @@
 <section class="hero row">
 
     @include('partials.components.header.sub-menu')
-
+    @include('partials.components.header.contact-form')
     <div class="hero-content-container">
 
         <div class="hero-content">
