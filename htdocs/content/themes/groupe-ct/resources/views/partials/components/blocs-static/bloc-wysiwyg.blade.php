@@ -14,7 +14,10 @@
             </div>
             <div class="wysiwyg-container">
 
-                <h1><img class="aligncenter wp-image-18 size-full" src="http://groupe-ct.local/content/uploads/2017/06/pub-bg.png" alt="" width="1538" height="707" /> <img class="size-medium wp-image-20 alignnone" src="http://groupe-ct.local/content/uploads/2017/06/news-bg01-298x300.png" alt="" width="298" height="300" /><img class="alignnone size-medium wp-image-21" src="http://groupe-ct.local/content/uploads/2017/06/news-bg02-297x300.png" alt="" width="297" height="300" /><img class="alignnone size-medium wp-image-19" src="http://groupe-ct.local/content/uploads/2017/06/team_nic_pinto-300x194.png" alt="" width="300" height="194" /></h1>
+                <img class="aligncenter wp-image-18 size-full" src="http://groupe-ct.local/content/uploads/2017/06/pub-bg.png" alt="" width="1538" height="707" /> 
+                <img class="size-medium wp-image-20 alignnone" src="http://groupe-ct.local/content/uploads/2017/06/news-bg01-298x300.png" alt="" width="298" height="300" />
+                <img class="alignnone size-medium wp-image-21" src="http://groupe-ct.local/content/uploads/2017/06/news-bg02-297x300.png" alt="" width="297" height="300" />
+                <img class="alignnone size-medium wp-image-19" src="http://groupe-ct.local/content/uploads/2017/06/team_nic_pinto-300x194.png" alt="" width="300" height="194" />
                 <h1>This is an Heading 1</h1>
                 <h2>This is an Heading 2</h2>
                 <h3>This is an Heading 3</h3>

@@ -94,9 +94,12 @@
 
     .social-media-container {
       margin:15px 0;
-      text-align: center;
       position: relative;
       @include flexbox();
+      @include justify-content(center);
+      @media (min-width: $screen-sm-min) {
+
+      }
       .social-link {
         text-decoration: none;
         display: block;

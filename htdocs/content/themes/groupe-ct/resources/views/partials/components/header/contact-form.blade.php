@@ -1,4 +1,4 @@
-<div class="contact-form-container ">
+<div class="contact-form-container hideMe">
     <form id="contact-us-form">
         <h2 class="contact-form-title"><?php _e('Contactez-nous pour lorem ipsum', THEME_TEXTDOMAIN); ?></h2>
         <div class="contact-field-container">
