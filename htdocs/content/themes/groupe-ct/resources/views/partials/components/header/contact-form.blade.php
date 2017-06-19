@@ -1,4 +1,4 @@
-<div class="contact-form-container hideMe">
+<div class="contact-form-container ">
     <form id="contact-us-form">
         <h2 class="contact-form-title"><?php _e('Contactez-nous pour lorem ipsum', THEME_TEXTDOMAIN); ?></h2>
         <div class="contact-field-container">
@@ -9,7 +9,6 @@
 
             <div class="contact-row">
                 <select name="sexe" class="sexe">
-                    <option value=""  disabled selected hidden>Mr/Me</option>
                     <option value="mr">Mr</option>
                     <option value="me">Me</option>
                 </select>

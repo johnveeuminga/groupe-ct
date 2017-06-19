@@ -41,7 +41,12 @@
 
       }
 
-      select {
+      textarea:focus, input:focus, select:focus, .select2-selection:focus{
+        outline: none;
+      }
+
+
+      .selection{
         border:none;
         -webkit-appearance: none;
         -webkit-border-radius: 0px;
@@ -51,15 +56,42 @@
         @extend .mada18LightWhite;
       }
 
+      .select2-selection {
+        background-color: transparent;
+        border:none;
+      }
+      .select2-selection__arrow {
+        display: none;
+      }
+
+
+
+        //select {
+      //  border:none;
+      //  -webkit-appearance: none;
+      //  -webkit-border-radius: 0px;
+      //  background-color: transparent;
+      //  padding: 20px 10px;
+      //  @include border-radius(2px);
+      //  @extend .mada18LightWhite;
+      //}
+
 
       /*** ROW #1 ***/
       .contact-row:nth-child(2){
 
+        .select2-container {
+           @include flex-basis(17%);
+           border:1px solid white;
+           margin-right:3%;
+           background: url($assets + "/images/icon/icon-arrow.png") no-repeat 85% 50%;
+           background-color: transparent;
+        }
         select {
-          @include flex-basis(17%);
-          border:1px solid white;
-          margin-right:3%;
-          background: url($assets + "/images/icon/icon-arrow.png") no-repeat 85% 50%;
+         // @include flex-basis(17%);
+         // border:1px solid white;
+         // margin-right:3%;
+         // background: url($assets + "/images/icon/icon-arrow.png") no-repeat 85% 50%;
         }
 
         input {

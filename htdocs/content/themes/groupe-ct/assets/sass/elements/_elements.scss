@@ -87,6 +87,7 @@ body {
   color:white;
   text-decoration: none;
   text-transform: uppercase;
+  @include transition(all 0.25s ease);
   &:hover {
     background-color: #d2deea;
   }
@@ -150,6 +151,7 @@ body {
   position: relative;
   @include flexbox();
   @include align-items(center);
+  @include transition(all 0.25s ease);
   &:after {
     content:url($assets + "/images/icon/icon-cta-arrow-blue.png");
     margin-left:40px;

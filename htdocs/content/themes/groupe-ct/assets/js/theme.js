@@ -48,25 +48,29 @@
 
 
 
-        $( ".contact-us-link" ).hover(
-            function() {
-                console.log('over');
-                $('.hero .contact-form-container').removeClass('hideMe');
-            }, function() {
-                console.log('nope');
-                $('.hero .contact-form-container').addClass('hideMe');
-            }
-        );
+        // $( ".contact-us-link" ).hover(
+        //     function() {
+        //         $('.hero .contact-form-container').removeClass('hideMe');
+        //     }, function() {
+        //         $('.hero .contact-form-container').addClass('hideMe');
+        //     }
+        // );
+        //
+        // $('.hero .contact-form-container').hover(
+        //     function() {
+        //         $(this).removeClass('hideMe');
+        //     }, function() {
+        //         $(this).addClass('hideMe');
+        //     }
+        // );
 
-        $('.hero .contact-form-container').hover(
-            function() {
-                console.log('over');
-                $(this).removeClass('hideMe');
-            }, function() {
-                console.log('nope');
-                $(this).addClass('hideMe');
-            }
-        );
+        $(".sexe").select2({
+            placeholder: "Mr/Me",
+            allowClear: true
+        });
+
+
+
 
 
 
