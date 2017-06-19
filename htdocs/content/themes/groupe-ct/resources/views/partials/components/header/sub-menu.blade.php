@@ -1,23 +1,20 @@
-
-
 <div class="sub-menu-main-container">
 
     <div class="sub-menu-container nl1 row hide-from-screen">
 
         <div class="sub-menu-title-container col-xs-10 col-xs-offset-2">
-            <h2 class="sub-menu-title">Le meilleur de l’industrie sous un même toît</h2>
+            <h2 class="sub-menu-title"></h2>
         </div>
 
         <div class="nav-sub-container row">
             <nav class="nav-sub nav-sub-left col-xs-3 col-xs-offset-2">
                 <div class="nav-section-title-container">
-                    <h3 class="nav-section-title">1 Un accompagnement sur mesure selon votre environnement</h3>
+                    <h3 class="nav-section-title"><a href="#"><?= __('Un accompagnement sur mesure adapté à votre entreprise', GROUPE_CT) ?></a></h3>
                 </div>
                 <ul class="nav-link-container">
-                    <li class="menu-item"><a class="nav-link" href="#">Donec lacus mauris</a></li>
-                    <li class="menu-item"><a class="nav-link" href="#">Nullam ante</a></li>
-                    <li class="menu-item"><a class="nav-link" href="#">Etiam porttitor consectetur </a></li>
-                    <li class="menu-item"><a class="nav-link" href="#">Mauris commodo</a></li>
+                    <li class="menu-item"><a class="nav-link" href="#"><?= __('Environnement papier', GROUPE_CT) ?></a></li>
+                    <li class="menu-item"><a class="nav-link" href="#"><?= __('Environnement hybride', GROUPE_CT) ?></a></li>
+                    <li class="menu-item"><a class="nav-link" href="#"><?= __('Environnement numérique', GROUPE_CT) ?></a></li>
                 </ul>
             </nav>
             <nav class="nav-sub nav-sub-center col-xs-3">

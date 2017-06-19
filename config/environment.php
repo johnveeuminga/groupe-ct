@@ -6,8 +6,7 @@
 return function() {
     // Check for the environment variable
 
-
-    if ('production' === $_SERVER['APP_ENV'])
+    if (isset($_SERVER['APP_ENV']) && 'production' === $_SERVER['APP_ENV'])
     {
         // Return the environment file slug name: .env.{$slug}.php
         return 'production';

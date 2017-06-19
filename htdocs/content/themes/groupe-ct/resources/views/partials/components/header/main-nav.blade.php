@@ -34,8 +34,9 @@
 
         <nav class="nav-bottom">
             <ul class="nav-link-container">
-                <li class="menu-item"><a class="nav-link nl1" href="#">SERVICES ET CONSEIL</a><img class="menu-item-triangle" src="{{ themosis_assets() }}/images/icon/icon-white-triangle.png" alt=""></li>
-                <li class="menu-item"><a class="nav-link nl2" href="#">PRODUITS ET SOLUTIONS</a><img class="menu-item-triangle" src="{{ themosis_assets() }}/images/icon/icon-white-triangle.png" alt=""></li>
+                <li class="menu-item"><a class="nav-link" href="#"><?= __('Accueil', GROUPE_CT) ?></a></li>
+                <li class="menu-item"><a class="nav-link nl1" href="#"><?= __('Approche-conseil', GROUPE_CT) ?></a><img class="menu-item-triangle" src="{{ themosis_assets() }}/images/icon/icon-white-triangle.png" alt=""></li>
+                <li class="menu-item"><a class="nav-link nl2" href="#"><?= __('Produits et solutions', GROUPE_CT) ?></a><img class="menu-item-triangle" src="{{ themosis_assets() }}/images/icon/icon-white-triangle.png" alt=""></li>
                 <li class="menu-item"><a class="nav-link nl3" href="#">SOUTIENT TECHNIQUE</a><img class="menu-item-triangle" src="{{ themosis_assets() }}/images/icon/icon-white-triangle.png" alt=""></li>
                 <li class="menu-item"><a class="nav-link nl4" href="#">À PROPOS</a><img class="menu-item-triangle" src="{{ themosis_assets() }}/images/icon/icon-white-triangle.png" alt=""></li>
                 <li class="menu-item"><a class="nav-link nl5" href="#">NOUVELLES</a><img class="menu-item-triangle" src="{{ themosis_assets() }}/images/icon/icon-white-triangle.png" alt=""></li>
@@ -49,7 +50,5 @@
         </a>
 
     </div>
-
-
 
 </div> <!-- SECTION END -->
