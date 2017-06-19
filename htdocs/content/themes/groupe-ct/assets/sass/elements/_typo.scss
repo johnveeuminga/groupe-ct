@@ -162,7 +162,7 @@
 
 .poppins80BoldWhite {
 
-  @include set-font(65px, $poppins, 700, white);
+  @include set-font(50px, $poppins, 700, white);
   @media (min-width: $screen-sm-min) {
     @include set-font(80px, $poppins, 700, white);
   }

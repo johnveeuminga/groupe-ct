@@ -10,12 +10,13 @@
     position: relative;
     width: 100%;
     min-height: 675px;
-    //height:1100px;
-    //height:100vh;
     background-image: url($assets + "/images/home-bg.png");
 
     background-repeat: no-repeat;
-    background-size: 100%;
+
+    @media (min-width: $screen-sm-min) {
+      background-size: 100%;
+    }
 
     .hero-content {
       @include flexbox();
