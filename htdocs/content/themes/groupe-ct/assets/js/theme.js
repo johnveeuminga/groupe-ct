@@ -46,9 +46,7 @@
 
         /**** CONTACT FORM ****/
 
-        $('.contact-us-link').on('click', function () {
-            $(this).siblings('.contact-form-container').toggleClass('hideMe');
-        });
+
 
         $( ".contact-us-link" ).hover(
             function() {
@@ -153,14 +151,21 @@
 
 
         $('.nav-cat-container a').on('click', function (e) {
+
             e.preventDefault();
-            $(this).parent().addClass('item-cat-active').siblings().removeClass('item-cat-active');
 
             //Filter products
             var $catProd = $(this).attr('class').split(' ')[1];
-            $('.product-container').not('.product-container.' + $catProd).addClass('hideMe');
-            $('.product-container.' + $catProd).removeClass('hideMe');
+            $('.product-container').fadeOut(300);
+            $('.product-container.' + $catProd).fadeIn(300);
 
+            //Add active class to button
+            if( $(this).parent().hasClass('item-cat-active') ){
+                $(this).parent().removeClass('item-cat-active')
+                 $('.product-container').fadeIn(300);
+            }else {
+                $(this).parent().addClass('item-cat-active').siblings().removeClass('item-cat-active');
+            }
         });
 
         /*** NAV PAGINATION **/

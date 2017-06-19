@@ -192,14 +192,17 @@
 
 .error-msg-container {
   @include set-font(14px, $mada, 300, $red);
-  //border: 1px solid red;
-  //height:30px;
+  .error {
+    display: block;
+    margin:5px 0;
+  }
+
 }
+
 
 .field-error {
   border: 1px solid $red!important;
   color: $red!important;
-
 }
 
 .submit-btn {

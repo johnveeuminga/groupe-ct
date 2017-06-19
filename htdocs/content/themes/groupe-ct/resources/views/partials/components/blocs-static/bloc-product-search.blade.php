@@ -30,7 +30,7 @@
             <nav class="nav-cat-container default-padding default-width">
                 <h3 class="select-title"><?php _e('Sélectionnez la catégorie de votre choix', THEME_TEXTDOMAIN); ?></h3>
                 <ul class="menu-item-container">
-                    <li class="menu-item item-cat-active"><a class="primary-btn-blue-sky prod-printer" href="#"><?php _e('Imprimante', THEME_TEXTDOMAIN); ?></a></li>
+                    <li class="menu-item"><a class="primary-btn-blue-sky prod-printer" href="#"><?php _e('Imprimante', THEME_TEXTDOMAIN); ?></a></li>
                     <li class="menu-item"><a class="primary-btn-blue-sky prod-multia4" href="#"><?php _e('Multifonction A4', THEME_TEXTDOMAIN); ?></a></li>
                     <li class="menu-item"><a class="primary-btn-blue-sky prod-multia3" href="#"><?php _e('Multifonction A3', THEME_TEXTDOMAIN); ?></a></li>
                     <li class="menu-item"><a class="primary-btn-blue-sky prod-num" href="#"><?php _e('Numérisateur', THEME_TEXTDOMAIN); ?></a></li>
