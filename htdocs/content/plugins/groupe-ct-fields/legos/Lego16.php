@@ -8,9 +8,8 @@ class Lego16 extends BaseLego implements LegoInterface
 {
 	public function get_unique_fields()
 	{
-		return [
-			// TODO
-		];
+		// THIS IS VOLUNTARILY EMPTY -- TIMELINE EVENTS WILL BE DEFINED IN TEMPLATES
+		return [];
 	}
 
 	public function get_fields_layout()

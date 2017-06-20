@@ -19,6 +19,7 @@ include_once __DIR__ . '/legos/Lego14.php';
 include_once __DIR__ . '/legos/Lego15.php';
 include_once __DIR__ . '/legos/Lego16.php';
 include_once __DIR__ . '/legos/Lego17.php';
+include_once __DIR__ . '/legos/Lego18.php';
 
 class LegoBuilder
 {
@@ -43,6 +44,7 @@ class LegoBuilder
 		    $lego15 = new Lego15();
 		    $lego16 = new Lego16();
 		    $lego17 = new Lego17();
+		    $lego18 = new Lego18();
 
 	        acf_add_local_field_group(array (
 	            'key' => 'group_5920b39e18711',
@@ -79,6 +81,7 @@ class LegoBuilder
 	                        'bloc_15_layout_key' => $lego15->get_fields_layout(),
 	                        'bloc_16_layout_key' => $lego16->get_fields_layout(),
 	                        'bloc_17_layout_key' => $lego17->get_fields_layout(),
+	                        'bloc_18_layout_key' => $lego18->get_fields_layout(),
 	                    ),
 	                    'button_label' => 'Add Row',
 	                    'min' => '',
