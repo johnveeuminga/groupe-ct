@@ -1,19 +1,20 @@
 <section id="home-newsletter" class="bloc-newsletter">
     <div class="bloc-newsletter-container default-padding default-width">
+        <form id="form-newsletter" method="post">
             <div class="contact-form-container">
                 <div class="newsletter-title-container">
                     <h3 class="newsletter-upper-title">{{ pll__('Infolettre') }}</h3>
                     <h2 class="newsletter-title">{{ pll__('Restez à la page') }}</h2>
                     <p class="newsletter-desc">{{ pll__('Abonnez-vous à l\'infolettre pour recevoir les dernières nouvelles de Groupe CT.') }}</p>
                 </div>
+                <div id="newsletter-success-container" style="display: none;">
+                    <p>{{ pll__('Merci de votre intérêt ! Vous recevrez un courriel sous peu pour compléter votre inscription. À bientôt !') }}</p>
+                </div>
+                <div id="newsletter-errors-container" style="display: none;">
+                    <p class="error-required">{{ pll__('Veuillez remplir tous les champs requis.') }}</p>
+                    <p class="error-email">{{ pll__('Veuillez utiliser un format de courriel valide.') }}</p>
+                </div>
                 <div class="contact-field-container">
-                    <div id="newsletter-success-container" style="display: none;">
-                        <p>{{ pll__('Merci de votre intérêt ! Vous recevrez un courriel sous peu pour compléter votre inscription. À bientôt !') }}</p>
-                    </div>
-                    <div id="newsletter-errors-container" style="display: none;">
-                        <p class="error-required">{{ pll__('Veuillez remplir tous les champs requis.') }}</p>
-                        <p class="error-email">{{ pll__('Veuillez utiliser un format de courriel valide.') }}</p>
-                    </div>
                     <div class="contact-row">
                         <div class="select-container">
                             <select name="title" id="newsletter-title">
@@ -44,6 +45,7 @@
                     </div>
                 </div>
             </div>
+        </form>
     </div>
 </section>
 
