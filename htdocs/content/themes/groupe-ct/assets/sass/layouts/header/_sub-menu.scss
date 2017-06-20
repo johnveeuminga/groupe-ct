@@ -19,9 +19,19 @@
 
   .sub-menu-title {
     margin-bottom: 25px;
+    text-transform: uppercase;
+
+    a {
+      color: white;
+    }
   }
   .nav-section-title {
     padding-bottom:15px;
+    text-transform: uppercase;
+
+    a {
+      color: white;
+    }
   }
 
   .sub-menu-container {
@@ -30,6 +40,11 @@
   }
 
   .nav-sub{
+
+    &.col-xs-3 {
+
+    }
+
     .menu-item {
       padding:10px 0;
     }
