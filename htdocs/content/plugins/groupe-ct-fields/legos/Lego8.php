@@ -15,7 +15,7 @@ class Lego8 extends BaseLego implements LegoInterface
 		        $this->generate_wysiwyg('bloc_8_content',   __('Content', 'GROUPE-CT') ),
 		        $this->generate_true_false('bloc_8_active', __('Open by default?', 'GROUPE-CT') ),
 		        $this->generate_repeater('bloc_8_blocks', 'Drawer Blocks', [
-		        	$this->generate_object('bloc_8_block', 'Block', ['blocs'])
+		        	$this->generate_object('bloc_8_block', 'Block', ['bloc'])
 		        ] ),
 
 	        ] )
