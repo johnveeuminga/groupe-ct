@@ -40,24 +40,24 @@
             </nav>
             <nav class="nav-sub nav-sub-center col-xs-3">
                 <div class="nav-section-title-container">
-                    <h3 class="nav-section-title">Un accompagnement sur mesure selon votre environnement</h3>
+                    <h3 class="nav-section-title"><a href="{{ PageHelper::get_page_permalink(PageHelper::PAGE_2_2_1_PARC_IMPRESSION) }}"><?= __('Services d\'impression gérés', GROUPE_CT) ?></a></h3>
                 </div>
                 <ul class="nav-link-container">
-                    <li class="menu-item"><a class="nav-link" href="#">Sur mesure selon vos besoins</a></li>
-                    <li class="menu-item"><a class="nav-link" href="#">Sur mesure selon vos besoins</a></li>
-                    <li class="menu-item"><a class="nav-link" href="#">Sur mesure selon vos besoins</a></li>
-                    <li class="menu-item"><a class="nav-link" href="#">Sur mesure selon vos besoins</a></li>
+                    @include('partials.components.header.sub-menu-nav-link-atom', ['page_id' => PageHelper::PAGE_2_2_1_PARC_IMPRESSION])
+                    @include('partials.components.header.sub-menu-nav-link-atom', ['page_id' => PageHelper::PAGE_2_2_2_RECUPERATION_COUT])
+                    @include('partials.components.header.sub-menu-nav-link-atom', ['page_id' => PageHelper::PAGE_2_2_3_FOLLOW_ME_PRINTING])
+                    @include('partials.components.header.sub-menu-nav-link-atom', ['page_id' => PageHelper::PAGE_2_2_4_AUTOMATISATION_FLUX])
                 </ul>
             </nav>
             <nav class="nav-sub nav-sub-right col-xs-3">
                 <div class="nav-section-title-container">
-                    <h3 class="nav-section-title">Un accompagnement sur mesure selon votre environnement</h3>
+                    <h3 class="nav-section-title"><a href="{{ PageHelper::get_page_permalink(PageHelper::PAGE_2_3_1_NUMERISATION_INTELLIGENTE) }}"><?= __('Gestion électronique des documents', GROUPE_CT) ?></a></h3>
                 </div>
                 <ul class="nav-link-container">
-                    <li class="menu-item"><a class="nav-link" href="#">Sur mesure selon vos besoins</a></li>
-                    <li class="menu-item"><a class="nav-link" href="#">Sur mesure selon vos besoins</a></li>
-                    <li class="menu-item"><a class="nav-link" href="#">Sur mesure selon vos besoins</a></li>
-                    <li class="menu-item"><a class="nav-link" href="#">Sur mesure selon vos besoins</a></li>
+                    @include('partials.components.header.sub-menu-nav-link-atom', ['page_id' => PageHelper::PAGE_2_3_1_NUMERISATION_INTELLIGENTE])
+                    @include('partials.components.header.sub-menu-nav-link-atom', ['page_id' => PageHelper::PAGE_2_3_2_NUMERISATION_TRAITEMENT])
+                    @include('partials.components.header.sub-menu-nav-link-atom', ['page_id' => PageHelper::PAGE_2_3_3_ARCHIVAGE])
+                    @include('partials.components.header.sub-menu-nav-link-atom', ['page_id' => PageHelper::PAGE_2_3_4_AUTOMATISATION_PROCESSUS])
                 </ul>
             </nav>
         </div>

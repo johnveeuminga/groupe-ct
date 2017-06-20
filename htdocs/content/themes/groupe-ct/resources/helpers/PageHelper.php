@@ -12,6 +12,14 @@ class PageHelper
     const PAGE_2_1_2_EQUIPEMENTS_PRODUCTION = 'equipements-production';
     const PAGE_2_1_3_IMPRESSION_GRAND_FORMAT = 'impression-grand-format';
     const PAGE_2_1_4_FOURNITURES = 'fournitures';
+    const PAGE_2_2_1_PARC_IMPRESSION = 'parc-impression';
+    const PAGE_2_2_2_RECUPERATION_COUT = 'recuperation-cout';
+    const PAGE_2_2_3_FOLLOW_ME_PRINTING = 'follow-me-printing';
+    const PAGE_2_2_4_AUTOMATISATION_FLUX = 'automatisation-flux';
+    const PAGE_2_3_1_NUMERISATION_INTELLIGENTE = 'numerisation-intelligente';
+    const PAGE_2_3_2_NUMERISATION_TRAITEMENT = 'numerisation-traitement';
+    const PAGE_2_3_3_ARCHIVAGE = 'archivage';
+    const PAGE_2_3_4_AUTOMATISATION_PROCESSUS = 'automatisation-processus';
 
     private static function get_pages_array()
     {
@@ -54,6 +62,38 @@ class PageHelper
 		    ],
 		    self::PAGE_2_1_4_FOURNITURES => [
 			    'fr' => 211,
+			    'en' => null,
+		    ],
+		    self::PAGE_2_2_1_PARC_IMPRESSION => [
+			    'fr' => 214,
+			    'en' => null,
+		    ],
+		    self::PAGE_2_2_2_RECUPERATION_COUT => [
+			    'fr' => 216,
+			    'en' => null,
+		    ],
+		    self::PAGE_2_2_3_FOLLOW_ME_PRINTING => [
+			    'fr' => 218,
+			    'en' => null,
+		    ],
+		    self::PAGE_2_2_4_AUTOMATISATION_FLUX => [
+			    'fr' => 220,
+			    'en' => null,
+		    ],
+		    self::PAGE_2_3_1_NUMERISATION_INTELLIGENTE => [
+			    'fr' => 222,
+			    'en' => null,
+		    ],
+		    self::PAGE_2_3_2_NUMERISATION_TRAITEMENT => [
+			    'fr' => 225,
+			    'en' => null,
+		    ],
+		    self::PAGE_2_3_3_ARCHIVAGE => [
+			    'fr' => 227,
+			    'en' => null,
+		    ],
+		    self::PAGE_2_3_4_AUTOMATISATION_PROCESSUS => [
+			    'fr' => 229,
 			    'en' => null,
 		    ],
 	    ];
