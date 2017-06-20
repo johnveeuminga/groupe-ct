@@ -13,8 +13,8 @@ class MainController extends BaseController
     public function __construct()
     {
         Asset::add('jquery', '//code.jquery.com/jquery-3.1.1.min.js', '3.1.1', true);
-        Asset::add('screen-css', themosis_assets() . '/css/screen.min.css');
-        Asset::add('theme-js',  themosis_assets() . '/js/theme.min.js', ['jquery'], '', false);
+        Asset::add('screen-css', themosis_assets() . '/css/screen.min.css', ['select2-css']);
+        Asset::add('theme-js',  themosis_assets() . '/js/theme.min.js', ['jquery', 'select2-js'], '', false);
 
 
         Asset::add('validate-js', '//cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.16.0/jquery.validate.min.js', ['jquery'],'1.16.0', true);

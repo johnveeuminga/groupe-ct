@@ -41,6 +41,7 @@ if (function_exists('pll_register_string'))
     /** ERRORS **/
     pll_register_string('', 'Veuillez remplir tous les champs requis.', GROUPE_CT, false);
     pll_register_string('', 'Veuillez utiliser un format de courriel valide.', GROUPE_CT, false);
-    pll_register_string('', 'Veuillez utiliser un format de courriel valide.', GROUPE_CT, false);
+    pll_register_string('', 'Votre adresse est déjà inscrite dans notre base de données, merci de votre intérêt.', GROUPE_CT, false);
+    pll_register_string('', 'La requête n\'est pas valide, veuillez réessayer.', GROUPE_CT, false);
 
 }

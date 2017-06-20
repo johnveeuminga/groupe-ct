@@ -16,7 +16,7 @@ return [
     /* --------------------------------------------------------------- */
     // Global Javascript namespace of your theme
     /* --------------------------------------------------------------- */
-    'namespace' => 'themosis',
+    'namespace' => 'groupect',
 
     /* --------------------------------------------------------------- */
     // Set WordPress admin ajax file without the PHP extension

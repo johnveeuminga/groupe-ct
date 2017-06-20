@@ -24,6 +24,7 @@
       .newsletter-desc {
         @extend .mada22LightWhite;
       }
+
     }
 
     .contact-field-container {
@@ -161,6 +162,11 @@
 
     .mandatory-field-msg {
       @extend .mada14LightWhite;
+    }
+
+    select > option{
+      background-color: $blue-dark;
+      @extend .mada18LightWhite;
     }
 
   }//CONTACT FORM END

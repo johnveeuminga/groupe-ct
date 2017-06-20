@@ -64,10 +64,10 @@
         //     }
         // );
 
-        $(".newsletter-title").select2({
-            // placeholder: "Mr/Me",
-            allowClear: true
-        });
+        // $("#newsletter-title").select2({
+        //     minimumResultsForSearch: Infinity
+        // });
+
 
 
 
@@ -113,6 +113,46 @@
             $(this).siblings('.toggle-content-carret').toggleClass('toggle-carret');
 
         });
+
+        /** Newsletter **/
+        $('#form-newsletter').on('submit', function(e) {
+            e.preventDefault();
+
+            var validate = true; // RÉMI FAIT LA VALIDATION ICI
+
+            if (validate) {
+                submit_form_newsletter($(this));
+            } else {
+                // SHOW ERROR MESSAGE
+            }
+        });
+
+        function submit_form_newsletter($form) {
+            $form.find('.form-messages').hide(250);
+            $.ajax({
+                url: groupect.ajaxurl,
+                type: 'POST',
+                dataType: 'json',
+                data: {
+                    action: 'newsletter',
+                    security: 'form_newsletter',
+                    'newsletter-title': $form.find('#newsletter-title').val(),
+                    'newsletter-firstname': $form.find('#newsletter-firstname').val(),
+                    'newsletter-lastname': $form.find('#newsletter-lastname').val(),
+                    'newsletter-compagny-name': $form.find('#newsletter-compagny-name').val(),
+                    'newsletter-phone': $form.find('#newsletter-phone').val(),
+                    'newsletter-email': $form.find('#newsletter-email').val()
+                }
+            }).done(function(data) {
+                if (data.status === 'success') {
+                    $form.find('.newsletter-desc').hide();
+                    $form.find('.newsletter-success').show(250);
+                } else {
+                    $form.find('.server-error').html(data.error.message).show();
+                    $form.find('.form-errors').show(250);
+                }
+            });
+        }
 
 
         /******* TRIGGER COUNT ANIMATION  *******/
