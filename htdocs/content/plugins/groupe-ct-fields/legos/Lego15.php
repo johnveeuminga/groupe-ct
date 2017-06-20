@@ -9,7 +9,9 @@ class Lego15 extends BaseLego implements LegoInterface
 	public function get_unique_fields()
 	{
 		return [
-			// TODO
+			$this->generate_repeater('bloc_15_team', __('Team', 'GROUPE-CT'), [
+				$this->generate_object('bloc_15_team_member', __('Member'), ['team_member'])
+			]),
 		];
 	}
 

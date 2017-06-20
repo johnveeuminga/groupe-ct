@@ -49,7 +49,7 @@ class Lego4 extends BaseLego implements LegoInterface
 
             'key' => 'bloc_4_key',
             'name' => 'bloc_4',
-            'label' => 'Bloc 4 - 4 icons',
+            'label' => __('Bloc 4 - 4 icons', 'GROUPE-CT'),
             'display' => 'block',
             'sub_fields' => $this->get_unique_fields(),
             'min' => '',

@@ -90,7 +90,7 @@ class LegoBuilder
 	                    array (
 	                        'param' => 'post_type',
 	                        'operator' => '==',
-	                        'value' => 'blocs',
+	                        'value' => 'bloc',
 	                    ),
 	                ),
 	            ),
@@ -141,7 +141,7 @@ class LegoBuilder
 								    'id' => '',
 							    ),
 							    'post_type' => array (
-								    0 => 'blocs',
+								    0 => 'bloc',
 							    ),
 							    'taxonomy' => array (
 							    ),
