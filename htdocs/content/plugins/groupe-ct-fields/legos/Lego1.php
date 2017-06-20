@@ -1,10 +1,8 @@
 <?php
 
 /**
- * Created by PhpStorm.
- * User: michael
- * Date: 20/05/17
- * Time: 6:11 PM
+ * Class Lego1
+ * Header (Homepage & Standard)
  */
 class Lego1 extends BaseLego implements LegoInterface
 {
@@ -26,7 +24,7 @@ class Lego1 extends BaseLego implements LegoInterface
 					$this->generate_cta('bloc_1_hero_slide_cta')[2],
 				],
 				1,
-				0,
+				6,
 				[[[
 					'field' => 'bloc_1_header_type_key',
 					'operator' => '===',

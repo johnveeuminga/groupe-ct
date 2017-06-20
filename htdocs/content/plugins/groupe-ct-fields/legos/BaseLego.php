@@ -114,7 +114,7 @@ class BaseLego
         ];
     }
 
-    protected function generate_textarea($prefix, $label)
+    protected function generate_textarea($prefix, $label, $conditional_logic = 0, $required = 0)
     {
         return [
             'key' => $prefix . '_key',
@@ -122,8 +122,8 @@ class BaseLego
             'name' => $prefix,
             'type' => 'textarea',
             'instructions' => '',
-            'required' => 0,
-            'conditional_logic' => 0,
+            'required' => $required,
+            'conditional_logic' => $conditional_logic,
             'wrapper' => array (
                 'width' => '',
                 'class' => '',
@@ -183,7 +183,7 @@ class BaseLego
         ];
     }
 
-    protected function generate_image($prefix, $label, $size_instruction, $conditional_logic = 0)
+    protected function generate_image($prefix, $label, $size_instruction, $conditional_logic = 0, $required = 0)
     {
         return [
             'key' => $prefix . '_key',
@@ -191,7 +191,7 @@ class BaseLego
             'name' => $prefix,
             'type' => 'image',
             'instructions' => $size_instruction,
-            'required' => 0,
+            'required' => $required,
             'conditional_logic' => $conditional_logic,
             'wrapper' => array (
                 'width' => '',
@@ -313,7 +313,7 @@ class BaseLego
 	    ];
     }
 
-    protected function generate_object($prefix, $label, $post_types)
+    protected function generate_object($prefix, $label, $post_types = [])
     {
 	    return [
 		    'key' => $prefix . '_key' ,
