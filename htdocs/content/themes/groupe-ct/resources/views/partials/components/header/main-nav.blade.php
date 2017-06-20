@@ -26,9 +26,9 @@
             <ul class="nav-link-container">
                 <li class="menu-item"><a class="nav-link" href="#">{{ pll_current_language() === 'fr' ? 'English' : 'Français' }}</a></li>
                 <li class="menu-item"><a class="nav-link" href="{{ PageHelper::get_page_permalink(PageHelper::PAGE_4_0_A_PROPOS) }}">{{ PageHelper::get_page_title(PageHelper::PAGE_4_0_A_PROPOS) }}</a></li>
-                <li class="menu-item"><a class="nav-link" href="#newsletter"><?= __('Infolettre', GROUPE_CT) ?></a></li>
+                <li class="menu-item"><a class="nav-link" href="#newsletter">{{ pll__('Infolettre') }}</a></li>
                 <li class="menu-item"><a class="nav-link" href="{{ PageHelper::get_page_permalink(PageHelper::PAGE_4_6_CARRIERE) }}">{{ PageHelper::get_page_title(PageHelper::PAGE_4_6_CARRIERE) }}</a></li>
-                <li class="menu-item"><a class="nav-link link-account" href="{{ PageHelper::get_page_permalink(PageHelper::PAGE_3_0_ASSISTANCE) }}#TBD"><?= __('Mon compte', GROUPE_CT) ?></a></li>
+                <li class="menu-item"><a class="nav-link link-account" href="{{ PageHelper::get_page_permalink(PageHelper::PAGE_3_0_ASSISTANCE) }}#TBD">{{ pll__('Mon compte') }}</a></li>
             </ul>
         </nav>
 
@@ -45,7 +45,7 @@
     </div>
     <div class="nav-contact-us col-xs-2">
         <a class="contact-us-link" href="#">
-            <span><?= __('CONTACTEZ-NOUS', GROUPE_CT); ?></span>
+            <span>{{ pll__('CONTACTEZ-NOUS') }}</span>
             <img class="icon-arrow" src="{{ themosis_assets() }}/images/icon/icon-arrow.png" alt="arrow contact us">
         </a>
 
