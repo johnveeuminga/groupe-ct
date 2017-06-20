@@ -147,11 +147,19 @@
                 if (data.status === 'success') {
                     $form.find('.newsletter-desc').hide();
                     $form.find('.contact-field-container').hide(250, function () {
-                        $form.find('.newsletter-success').show(250);
+                        $form.find('.newsletter-success').show(250, function() {
+                            setTimeout(function () {
+                                $('html, body').animate({scrollTop:$('#home-newsletter').position().top}, 'fast');
+                            }, 25);
+                        });
                     });
                 } else {
                     $form.find('.server-error').html(data.error.message).show();
-                    $form.find('.form-errors').show(250);
+                    $form.find('.form-errors').show(250, function () {
+                        setTimeout(function () {
+                            $('html, body').animate({scrollTop:$('.form-errors').position().top - 30}, 'fast');
+                        }, 50);
+                    });
                 }
             });
         }

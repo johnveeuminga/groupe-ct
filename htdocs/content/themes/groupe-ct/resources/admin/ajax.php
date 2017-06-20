@@ -23,7 +23,7 @@ Ajax::listen('newsletter', function() {
             ]
         );
 
-        if ($result['status'] === 200) {
+        if ($result['status'] === 'pending') {
             echo json_encode([
                 'status' => 'success'
             ]);

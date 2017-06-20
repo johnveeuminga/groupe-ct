@@ -1,18 +1,17 @@
 <div class="contact-form-container ">
     <form id="contact-us-form">
-        <h2 class="contact-form-title"><?php _e('Contactez-nous pour lorem ipsum', THEME_TEXTDOMAIN); ?></h2>
+        <h2 class="contact-form-title">{{ pll__('En savoir plus ? Contactez-nous.') }}</h2>
         <div class="contact-field-container">
 
             <div class="error-msg-container">
             </div>
 
-
             <div class="contact-row">
-                <select name="sexe" class="sexe">
-                    <option value="mr">Mr</option>
-                    <option value="me">Me</option>
+                <select name="newsletter-title" id="newsletter-title">
+                    <option value=""  disabled selected hidden>{{ pll__('Titre*') }}</option>
+                    <option value="m">{{ pll__('M.') }}</option>
+                    <option value="mme">{{ pll__('Mme') }}</option>
                 </select>
-
 
                 <label for="first_name"></label>
                 <input type="text" name="first_name" id="first_name" placeholder="<?php _e('Prénom *', THEME_TEXTDOMAIN); ?>">
