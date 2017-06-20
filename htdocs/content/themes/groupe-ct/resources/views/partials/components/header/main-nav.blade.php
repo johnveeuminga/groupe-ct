@@ -26,9 +26,9 @@
             <ul class="nav-link-container">
                 <li class="menu-item"><a class="nav-link" href="#">{{ pll_current_language() === 'fr' ? 'English' : 'French' }}</a></li>
                 <li class="menu-item"><a class="nav-link" href="{{ PageHelper::get_page_permalink(PageHelper::PAGE_4_0_A_PROPOS) }}">{{ PageHelper::get_page_title(PageHelper::PAGE_4_0_A_PROPOS) }}</a></li>
-                <li class="menu-item"><a class="nav-link" href="#newsletter">{{ __('Infolettre', GROUPE_CT) }}</a></li>
-                <li class="menu-item"><a class="nav-link" href="#">{{ __('Carrière', GROUPE_CT) }}</a></li>
-                <li class="menu-item"><a class="nav-link link-account" href="#">Mon compte</a></li>
+                <li class="menu-item"><a class="nav-link" href="#newsletter"><?= __('Infolettre', GROUPE_CT) ?></a></li>
+                <li class="menu-item"><a class="nav-link" href="{{ PageHelper::get_page_permalink(PageHelper::PAGE_4_6_CARRIERE) }}"><?= __('Carrière', GROUPE_CT) ?></a></li>
+                <li class="menu-item"><a class="nav-link link-account" href="{{ PageHelper::get_page_permalink(PageHelper::PAGE_3_0_ASSISTANCE) }}#TBD"><?= __('Mon compte', GROUPE_CT) ?></a></li>
             </ul>
         </nav>
 
