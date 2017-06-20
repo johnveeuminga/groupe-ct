@@ -20,6 +20,16 @@ class PageHelper
     const PAGE_2_3_2_NUMERISATION_TRAITEMENT = 'numerisation-traitement';
     const PAGE_2_3_3_ARCHIVAGE = 'archivage';
     const PAGE_2_3_4_AUTOMATISATION_PROCESSUS = 'automatisation-processus';
+    const PAGE_3_0_ASSISTANCE = 'assistance-technique';
+    const PAGE_4_0_A_PROPOS = 'a-propos';
+    const PAGE_4_1_MOT_DIRECTION = 'mot-direciton';
+    const PAGE_4_2_DIVISIONS = 'divisions';
+    const PAGE_4_3_HISTORIQUE = 'historique';
+    const PAGE_4_4_EQUIPE = 'equipe';
+    const PAGE_4_5_DEVELOPPEMENT_DURABLE = 'developpement-durable';
+    const PAGE_4_6_CARRIERE = 'carriere';
+    const PAGE_4_7_NOUS_JOINDRE = 'nous-joindre';
+    const PAGE_5_0_PUBLICATIONS = 'publications';
 
     private static function get_pages_array()
     {
@@ -94,6 +104,46 @@ class PageHelper
 		    ],
 		    self::PAGE_2_3_4_AUTOMATISATION_PROCESSUS => [
 			    'fr' => 229,
+			    'en' => null,
+		    ],
+		    self::PAGE_3_0_ASSISTANCE => [
+			    'fr' => 231,
+			    'en' => null,
+		    ],
+		    self::PAGE_4_0_A_PROPOS => [
+			    'fr' => 233,
+			    'en' => null,
+		    ],
+		    self::PAGE_4_1_MOT_DIRECTION => [
+			    'fr' => 235,
+			    'en' => null,
+		    ],
+		    self::PAGE_4_2_DIVISIONS => [
+			    'fr' => 237,
+			    'en' => null,
+		    ],
+		    self::PAGE_4_3_HISTORIQUE => [
+			    'fr' => 239,
+			    'en' => null,
+		    ],
+		    self::PAGE_4_4_EQUIPE => [
+			    'fr' => 241,
+			    'en' => null,
+		    ],
+		    self::PAGE_4_5_DEVELOPPEMENT_DURABLE => [
+			    'fr' => 243,
+			    'en' => null,
+		    ],
+		    self::PAGE_4_6_CARRIERE => [
+			    'fr' => 245,
+			    'en' => null,
+		    ],
+		    self::PAGE_4_7_NOUS_JOINDRE=> [
+			    'fr' => 247,
+			    'en' => null,
+		    ],
+		    self::PAGE_5_0_PUBLICATIONS => [
+			    'fr' => 249,
 			    'en' => null,
 		    ],
 	    ];
