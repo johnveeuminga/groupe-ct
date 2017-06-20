@@ -16,7 +16,7 @@ class Lego7 extends BaseLego implements LegoInterface
 		        $this->generate_image('bloc_7_col_2_icon', 'Icon', 'TBDxTBD'),
 		        $this->generate_text('bloc_7_col_2_title', 'Title'),
 		        $this->generate_textarea('bloc_7_col_2_description', 'Description'),
-	        ], 1, -1)
+	        ] )
         ];
     }
 
