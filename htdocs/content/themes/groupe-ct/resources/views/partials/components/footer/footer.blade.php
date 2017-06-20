@@ -3,27 +3,25 @@
 
         <div class="footer-top">
             <nav class="footer-nav footer-nav-01">
-                <h4 class="footer-nav-title">SERVICES</h4>
+                <h4 class="footer-nav-title"><a href="{{ PageHelper::get_page_permalink(PageHelper::PAGE_1_0_APPROCHE_CONSEIL) }}">{{ PageHelper::get_page_title(PageHelper::PAGE_1_0_APPROCHE_CONSEIL) }}</a></h4>
+
                 <ul class="nav-link-container">
-                    <li class="menu-item"><a class="nav-link" href="#">Gestion documentaire</a></li>
-                    <li class="menu-item"><a class="nav-link" href="#">Gestion documentaire</a></li>
-                    <li class="menu-item"><a class="nav-link" href="#">Gestion documentaire</a></li>
-                    <li class="menu-item"><a class="nav-link" href="#">Gestion documentaire</a></li>
-                    <li class="menu-item"><a class="nav-link" href="#">Gestion documentaire</a></li>
+                    @include('partials.components.header.sub-menu-nav-link-atom', ['page_id' => PageHelper::PAGE_1_1_ENVIRONNEMENT_PAPIER])
+                    @include('partials.components.header.sub-menu-nav-link-atom', ['page_id' => PageHelper::PAGE_1_2_ENVIRONNEMENT_HYBRIDE])
+                    @include('partials.components.header.sub-menu-nav-link-atom', ['page_id' => PageHelper::PAGE_1_3_ENVIRONNEMENT_NUMERIQUE])
                 </ul>
             </nav>
             <nav class="footer-nav footer-nav-02">
-                <h4 class="footer-nav-title">PRODUITS ET SOLITIONS</h4>
+                <h4 class="footer-nav-title"><a href="{{ PageHelper::get_page_permalink(PageHelper::PAGE_2_0_PRODUITS_SOLUTIONS) }}">{{ PageHelper::get_page_title(PageHelper::PAGE_2_0_PRODUITS_SOLUTIONS) }}</a></h4>
                 <ul class="nav-link-container">
-                    <li class="menu-item"><a class="nav-link" href="#">Gestion documentaire</a></li>
-                    <li class="menu-item"><a class="nav-link" href="#">Gestion documentaire</a></li>
-                    <li class="menu-item"><a class="nav-link" href="#">Gestion documentaire</a></li>
-                    <li class="menu-item"><a class="nav-link" href="#">Gestion documentaire</a></li>
-                    <li class="menu-item"><a class="nav-link" href="#">Gestion documentaire</a></li>
+                    @include('partials.components.header.sub-menu-nav-link-atom', ['page_id' => PageHelper::PAGE_2_1_1_EQUIPEMENTS_BUREAU])
+                    @include('partials.components.header.sub-menu-nav-link-atom', ['page_id' => PageHelper::PAGE_2_1_2_EQUIPEMENTS_PRODUCTION])
+                    @include('partials.components.header.sub-menu-nav-link-atom', ['page_id' => PageHelper::PAGE_2_1_3_IMPRESSION_GRAND_FORMAT])
+                    @include('partials.components.header.sub-menu-nav-link-atom', ['page_id' => PageHelper::PAGE_2_1_4_FOURNITURES])
                 </ul>
             </nav>
             <nav class="footer-nav footer-nav-03">
-                <h4 class="footer-nav-title">SOUTIEN</h4>
+                <h4 class="footer-nav-title"><a href="{{ PageHelper::get_page_permalink(PageHelper::PAGE_3_0_ASSISTANCE) }}">{{ PageHelper::get_page_title(PageHelper::PAGE_3_0_ASSISTANCE) }}</a></h4>
                 <ul class="nav-link-container">
                     <li class="menu-item"><a class="nav-link" href="#">Gestion documentaire</a></li>
                     <li class="menu-item"><a class="nav-link" href="#">Gestion documentaire</a></li>
@@ -33,17 +31,7 @@
                 </ul>
             </nav>
             <nav class="footer-nav footer-nav-04">
-                <h4 class="footer-nav-title">PUBLICATION</h4>
-                <ul class="nav-link-container">
-                    <li class="menu-item"><a class="nav-link" href="#">Gestion documentaire</a></li>
-                    <li class="menu-item"><a class="nav-link" href="#">Gestion documentaire</a></li>
-                    <li class="menu-item"><a class="nav-link" href="#">Gestion documentaire</a></li>
-                    <li class="menu-item"><a class="nav-link" href="#">Gestion documentaire</a></li>
-                    <li class="menu-item"><a class="nav-link" href="#">Gestion documentaire</a></li>
-                </ul>
-            </nav>
-            <nav class="footer-nav footer-nav-05">
-                <h4 class="footer-nav-title">SERVICES5</h4>
+                <h4 class="footer-nav-title"><a href="{{ PageHelper::get_page_permalink(PageHelper::PAGE_4_0_A_PROPOS) }}">{{ PageHelper::get_page_title(PageHelper::PAGE_3_0_ASSISTANCE) }}</a></h4>
                 <ul class="nav-link-container">
                     <li class="menu-item"><a class="nav-link" href="#">Gestion documentaire</a></li>
                     <li class="menu-item"><a class="nav-link" href="#">Gestion documentaire</a></li>
@@ -80,7 +68,7 @@
             </div>
             <div class="legal-container">
                 <p>© <?php echo date("Y"); ?> Groupe C.T Tous droits réservé</p>
-                <a href="#"><?php _e('Mentions Légales', THEME_TEXTDOMAIN); ?></a>
+                <a href="#">{{  pll__('Mentions légales', THEME_TEXTDOMAIN); }}</a>
             </div>
 
 

@@ -15,3 +15,4 @@ pll_register_string('', 'Commander des fournitures', GROUPE_CT, false);
 pll_register_string('', 'Contacter le service à la clientèle', GROUPE_CT, false);
 pll_register_string('', 'Fournir une lecture de compteurs', GROUPE_CT, false);
 pll_register_string('', 'Une entreprise à taille humaine', GROUPE_CT, false);
+pll_register_string('', 'Mentions légales', GROUPE_CT, false);
