@@ -339,4 +339,27 @@ class BaseLego
     }
 
 
+	protected function generate_url($prefix, $label)
+	{
+		return [
+			'key' => $prefix . '_key',
+			'label' => $label,
+			'name' => $prefix,
+			'type' => 'url',
+			'instructions' => '',
+			'required' => 0,
+			'conditional_logic' => 0,
+			'wrapper' => array (
+				'width' => '',
+				'class' => '',
+				'id' => '',
+			),
+			'default_value' => '',
+			'placeholder' => '',
+		];
+	}
+
+
+
+
 }

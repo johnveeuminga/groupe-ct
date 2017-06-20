@@ -12,6 +12,13 @@ include_once __DIR__ . '/legos/Lego7.php';
 include_once __DIR__ . '/legos/Lego8.php';
 include_once __DIR__ . '/legos/Lego9.php';
 include_once __DIR__ . '/legos/Lego10.php';
+include_once __DIR__ . '/legos/Lego11.php';
+include_once __DIR__ . '/legos/Lego12.php';
+include_once __DIR__ . '/legos/Lego13.php';
+include_once __DIR__ . '/legos/Lego14.php';
+include_once __DIR__ . '/legos/Lego15.php';
+include_once __DIR__ . '/legos/Lego16.php';
+include_once __DIR__ . '/legos/Lego17.php';
 
 class LegoBuilder
 {
@@ -29,6 +36,13 @@ class LegoBuilder
 	        $lego8 = new Lego8();
 	        $lego9 = new Lego9();
 		    $lego10 = new Lego10();
+		    $lego11 = new Lego11();
+		    $lego12 = new Lego12();
+		    $lego13 = new Lego13();
+		    $lego14 = new Lego14();
+		    $lego15 = new Lego15();
+		    $lego16 = new Lego16();
+		    $lego17 = new Lego17();
 
 	        acf_add_local_field_group(array (
 	            'key' => 'group_5920b39e18711',
@@ -58,6 +72,13 @@ class LegoBuilder
 	                        'bloc_8_layout_key' => $lego8->get_fields_layout(),
 	                        'bloc_9_layout_key' => $lego9->get_fields_layout(),
 	                        'bloc_10_layout_key' => $lego10->get_fields_layout(),
+	                        'bloc_11_layout_key' => $lego11->get_fields_layout(),
+	                        'bloc_12_layout_key' => $lego12->get_fields_layout(),
+	                        'bloc_13_layout_key' => $lego13->get_fields_layout(),
+	                        'bloc_14_layout_key' => $lego14->get_fields_layout(),
+	                        'bloc_15_layout_key' => $lego15->get_fields_layout(),
+	                        'bloc_16_layout_key' => $lego16->get_fields_layout(),
+	                        'bloc_17_layout_key' => $lego17->get_fields_layout(),
 	                    ),
 	                    'button_label' => 'Add Row',
 	                    'min' => '',
