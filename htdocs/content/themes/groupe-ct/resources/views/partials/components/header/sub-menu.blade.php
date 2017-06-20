@@ -66,7 +66,7 @@
     <div class="sub-menu-container nl3 row hide-from-screen">
 
         <div class="sub-menu-title-container col-xs-10 col-xs-offset-2">
-            {{--<h2 class="sub-menu-title">Le meilleur de l’industrie sous un même toît</h2>--}}
+            <h2 class="sub-menu-title"></h2>
         </div>
 
         <div class="nav-sub-container row">
@@ -89,7 +89,7 @@
     <div class="sub-menu-container nl4 row hide-from-screen">
 
         <div class="sub-menu-title-container col-xs-10 col-xs-offset-2">
-            {{--<h2 class="sub-menu-title">Le meilleur de l’industrie sous un même toît</h2>--}}
+            <h2 class="sub-menu-title"></h2>
         </div>
 
         <div class="nav-sub-container row">
