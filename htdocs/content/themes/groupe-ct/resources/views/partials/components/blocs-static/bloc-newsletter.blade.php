@@ -1,6 +1,5 @@
 <section id="home-newsletter" class="bloc-newsletter">
     <div class="bloc-newsletter-container default-padding default-width">
-        <form id="form-newsletter" method="post">
             <div class="contact-form-container">
                 <div class="newsletter-title-container">
                     <h3 class="newsletter-upper-title">{{ pll__('Infolettre') }}</h3>
@@ -45,7 +44,6 @@
                     </div>
                 </div>
             </div>
-        </form>
     </div>
 </section>
 
