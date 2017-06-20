@@ -53,7 +53,7 @@
                 <button type="submit" class="primary-btn submit-btn"><?php _e('Envoyer', THEME_TEXTDOMAIN); ?></button>
 
             </div>
-            <span class="mandatory-field-msg">*Champs obligatoires</span>
+            <scpan class="mandatory-field-msg">*Champs obligatoires</scpan>
         </div>
     </form>
 </div>

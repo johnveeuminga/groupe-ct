@@ -64,8 +64,8 @@
         //     }
         // );
 
-        $(".sexe").select2({
-            placeholder: "Mr/Me",
+        $(".newsletter-title").select2({
+            // placeholder: "Mr/Me",
             allowClear: true
         });
 
