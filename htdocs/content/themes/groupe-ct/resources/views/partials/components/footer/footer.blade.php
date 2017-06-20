@@ -68,7 +68,7 @@
             </div>
             <div class="legal-container">
                 <p>© <?php echo date("Y"); ?> Groupe C.T Tous droits réservé</p>
-                <a href="#">{{  pll__('Mentions légales'); }}</a>
+                <a href="#">{{ pll__('Mentions légales') }}</a>
             </div>
 
 
