@@ -37,4 +37,10 @@ if (function_exists('pll_register_string'))
     pll_register_string('', 'Retirée', GROUPE_CT, false);
     pll_register_string('', 'Soumettre', GROUPE_CT, false);
     pll_register_string('', 'Merci de votre intérêt ! Vous recevrez un courriel sous peu pour compléter votre inscription. À bientôt !', GROUPE_CT, false);
+
+    /** ERRORS **/
+    pll_register_string('', 'Veuillez remplir tous les champs requis.', GROUPE_CT, false);
+    pll_register_string('', 'Veuillez utiliser un format de courriel valide.', GROUPE_CT, false);
+    pll_register_string('', 'Veuillez utiliser un format de courriel valide.', GROUPE_CT, false);
+
 }
