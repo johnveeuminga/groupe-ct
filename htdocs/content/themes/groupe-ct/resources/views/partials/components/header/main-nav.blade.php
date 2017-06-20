@@ -34,9 +34,9 @@
 
         <nav class="nav-bottom">
             <ul class="nav-link-container">
-                <li class="menu-item"><a class="nav-link" href="#"><?= __('Accueil', GROUPE_CT) ?></a></li>
-                <li class="menu-item"><a class="nav-link nl1" href="#"><?= __('Approche-conseil', GROUPE_CT) ?></a><img class="menu-item-triangle" src="{{ themosis_assets() }}/images/icon/icon-white-triangle.png" alt=""></li>
-                <li class="menu-item"><a class="nav-link nl2" href="#"><?= __('Produits et solutions', GROUPE_CT) ?></a><img class="menu-item-triangle" src="{{ themosis_assets() }}/images/icon/icon-white-triangle.png" alt=""></li>
+                @include('partials.components.header.main-nav-link-atom', ['page_id' => PageHelper::PAGE_0_ACCUEIL, 'has_submenu' => false, 'submenu_id' => null])
+                @include('partials.components.header.main-nav-link-atom', ['page_id' => PageHelper::PAGE_1_0_APPROCHE_CONSEIL, 'has_submenu' => true, 'submenu_id' => 1])
+                @include('partials.components.header.main-nav-link-atom', ['page_id' => PageHelper::PAGE_2_0_PRODUITS_SOLUTIONS, 'has_submenu' => true, 'submenu_id' => 2])
                 <li class="menu-item"><a class="nav-link nl3" href="#">SOUTIENT TECHNIQUE</a><img class="menu-item-triangle" src="{{ themosis_assets() }}/images/icon/icon-white-triangle.png" alt=""></li>
                 <li class="menu-item"><a class="nav-link nl4" href="#">À PROPOS</a><img class="menu-item-triangle" src="{{ themosis_assets() }}/images/icon/icon-white-triangle.png" alt=""></li>
                 <li class="menu-item"><a class="nav-link nl5" href="#">NOUVELLES</a><img class="menu-item-triangle" src="{{ themosis_assets() }}/images/icon/icon-white-triangle.png" alt=""></li>
