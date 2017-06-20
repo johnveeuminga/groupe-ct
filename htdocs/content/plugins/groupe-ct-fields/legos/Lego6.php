@@ -1,5 +1,9 @@
 <?php
 
+/**
+ * Class Lego6
+ * 3-columns with icons
+ */
 class Lego6 extends BaseLego implements LegoInterface
 {
     public function get_unique_fields()

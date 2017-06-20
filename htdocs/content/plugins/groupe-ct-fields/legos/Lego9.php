@@ -1,18 +1,31 @@
 <?php
 
+/**
+ * Class Lego9
+ * Statistics
+ */
 class Lego9 extends BaseLego implements LegoInterface
 {
     public function get_unique_fields()
     {
         return [
             $this->generate_text('bloc_9_title', 'Title'),
-            $this->generate_text('bloc_9_label', 'Label'),
-            $this->generate_color_picker('bloc_9_primary', 'Primary Color'),
-            $this->generate_color_picker('bloc_9_secondary', 'Secondary Color'),
-            $this->generate_color_picker('bloc_9_unfilled', 'Unfilled color'),
-            $this->generate_number('bloc_9_percent', 'Percentage filled'),
-            $this->generate_textarea('bloc_9_description', 'Description'),
-            $this->generate_text('bloc_9_source', 'Source'),
+	        $this->generate_tab('bloc_9_1',                    __('Icon 1', 'GROUPE-CT') ),
+            $this->generate_text('bloc_9_1_label',             __('Label', 'GROUPE-CT') ),
+            $this->generate_color_picker('bloc_9_1_primary',   __('Primary Color', 'GROUPE-CT') ),
+            $this->generate_color_picker('bloc_9_1_secondary', __('Secondary Color', 'GROUPE-CT') ),
+            $this->generate_color_picker('bloc_9_1_unfilled',  __('Unfilled color', 'GROUPE-CT') ),
+            $this->generate_number('bloc_9_1_percentage',      __('Percentage filled', 'GROUPE-CT') ),
+            $this->generate_textarea('bloc_9_1_description',   __('Description', 'GROUPE-CT') ),
+            $this->generate_text('bloc_9_1_source',            __('Source', 'GROUPE-CT') ),
+	        $this->generate_tab('bloc_9_2',                    __('Icon 2', 'GROUPE-CT') ),
+	        $this->generate_text('bloc_9_2_label',             __('Label', 'GROUPE-CT') ),
+	        $this->generate_color_picker('bloc_9_2_primary',   __('Primary Color', 'GROUPE-CT') ),
+	        $this->generate_color_picker('bloc_9_2_secondary', __('Secondary Color', 'GROUPE-CT') ),
+	        $this->generate_color_picker('bloc_9_2_unfilled',  __('Unfilled color', 'GROUPE-CT') ),
+	        $this->generate_number('bloc_9_2_percentage',      __('Percentage filled', 'GROUPE-CT') ),
+	        $this->generate_textarea('bloc_9_2_description',   __('Description', 'GROUPE-CT') ),
+	        $this->generate_text('bloc_9_2_source',            __('Source', 'GROUPE-CT') ),
         ];
     }
 

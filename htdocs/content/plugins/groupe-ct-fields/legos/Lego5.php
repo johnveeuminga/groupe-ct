@@ -1,5 +1,9 @@
 <?php
 
+/**
+ * Class Lego5
+ * Testimonials
+ */
 class Lego5 extends BaseLego implements LegoInterface
 {
     public function get_unique_fields()
@@ -10,7 +14,7 @@ class Lego5 extends BaseLego implements LegoInterface
 		        $this->generate_textarea('bloc_5_slide_testimonial', 'Text'),
 		        $this->generate_text('bloc_5_slide_author', 'Author'),
 		        $this->generate_text('bloc_5_slide_author_title', 'Author Title'),
-	        ])
+	        ], 1,-1)
         ];
     }
 
