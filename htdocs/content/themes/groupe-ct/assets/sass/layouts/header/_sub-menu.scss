@@ -39,12 +39,14 @@
       text-transform: uppercase;
       text-decoration: none;
       position: relative;
-      &:after {
-        display: none;
-        content:url($assets + "/images/icon/icon-red-arrow.png");
-        position: absolute;
-        right:-60px;
-        top:0px;
+      &.has-submen {
+        &:after {
+          display: none;
+          content:url($assets + "/images/icon/icon-red-arrow.png");
+          position: absolute;
+          right:-60px;
+          top:0px;
+        }
       }
 
       &:hover {
