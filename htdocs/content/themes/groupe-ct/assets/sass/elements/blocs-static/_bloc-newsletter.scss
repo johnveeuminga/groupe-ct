@@ -12,6 +12,7 @@
       color:white!important;
       margin-bottom: 60px;
       .newsletter-upper-title {
+        text-transform: uppercase;
         @extend .poppins22SemiBoldWhite;
       }
       .newsletter-title {
