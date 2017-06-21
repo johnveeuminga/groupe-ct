@@ -153,7 +153,6 @@ class Blocs {
 				case "bloc_18":
 					break;
 				case "bloc_static":
-				    var_dump(get_sub_field('bloc_static_file'));die();
 				    $this->fields['bloc_static_file'] = get_sub_field('bloc_static_file');
 					break;
 				default:
@@ -167,13 +166,9 @@ class Blocs {
 
 	public function load_path()
     {
-        $dir = $this->block_type === 'bloc_static' ? 'blocs-static' : 'blocs-dynamic';
-        $this->get_fields();
-        var_dump($this->fields);
-//        $file = $this->block  _type === 'bloc_static' ? $this->fields['bloc_static'] : $this->block_type;
-//        var_dump('partials.components.' . $dir . '.' . $file);
-//die();        return 'partials.components.' . $dir . '.' . $file;
-//die();        return 'partials.components.' . $dir . '.' . $file;
+        $dir = 'partials.components.' . ($this->block_type === 'bloc_static' ? 'blocs-static.' : 'blocs-dynamic.');
+        $block_type = 'bloc_static' === $this->block_type ? $this->get_field('bloc_static_file') : $this->block_type;
+        return $dir . $block_type;
     }
 
 }
