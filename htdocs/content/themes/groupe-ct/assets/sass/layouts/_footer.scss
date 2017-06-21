@@ -111,14 +111,15 @@
           margin-left:15px;
         }
         .social-icon.over {
-          display: none;
+          opacity: 0;
           position: absolute;
           left:0;
           top:0;
+          @include transition(opacity 0.25s ease);
         }
         &:hover {
           .social-icon.over {
-            display: block!important;
+            opacity: 1!important;
           }
         }
       }

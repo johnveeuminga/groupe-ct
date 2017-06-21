@@ -66,6 +66,13 @@
   @include transform(scale($scale));
 }
 
+@mixin scaleImportant($scale) {
+  -webkit-transform: scale($scale)!important;
+  -moz-transform: scale($scale)!important;
+  -ms-transform: scale($scale)!important;
+  transform: scale($scale)!important;
+}
+
 @mixin translate ($x, $y) {
   @include transform(translate($x, $y) );
 }

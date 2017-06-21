@@ -13,6 +13,7 @@
         @include('partials.components.blocs-static.bloc-product-search')
         @include('partials.components.blocs-static.bloc-contact')
         @include('partials.components.blocs-static.bloc-wysiwyg')
+        @include('partials.components.blocs-static.bloc-support-technique')
 
 
 </section>
