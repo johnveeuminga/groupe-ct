@@ -1,11 +1,6 @@
 {{--<section id="home-echelle" class="bloc-echelle-main-container">--}}
     {{--<div class="bloc-echelle-container default-padding default-width">--}}
 
-        {{--<div class="benefits-title-container">--}}
-            {{--<div class="line"></div>--}}
-            {{--<div class="title"><?php _e('Échelle numérique', THEME_TEXTDOMAIN); ?></div>--}}
-            {{--<div class="line"></div>--}}
-        {{--</div>--}}
         {{--<div class="benefits-container">--}}
             {{--<img src="{{ themosis_assets() }}/images/echelle/echelle-mobile.png" alt="">--}}
             {{--<div class="benefit-bg paper hideMe">--}}
@@ -33,11 +28,18 @@
 {{--</section>--}}
 
 <section id="home-echelle" class="bloc-echelle-main-container">
+
+    <div class="benefits-title-container">
+        <div class="line"></div>
+        <div class="title"><?php _e('Échelle numérique', THEME_TEXTDOMAIN); ?></div>
+        <div class="line"></div>
+    </div>
+
     <div class="bloc-echelle-container default-padding default-width bloc-echelle-michael">
-        <div class="hover-zone zone-papier" data-target="#hover-papier"></div>
-        <div class="hover-zone zone-hybride" data-target="#hover-hybride"></div>
-        <div class="hover-zone zone-numerique" data-target="#hover-numerique"></div>
-        <img src="{{ themosis_assets() }}/images/echelle/desktop/main.png" class="" />
+        <a href="{{ PageHelper::get_page_permalink(PageHelper::PAGE_1_1_ENVIRONNEMENT_PAPIER) }}"><div class="hover-zone zone-papier" data-target="#hover-papier"></div></a>
+        <a href="{{ PageHelper::get_page_permalink(PageHelper::PAGE_1_2_ENVIRONNEMENT_HYBRIDE) }}"><div class="hover-zone zone-hybride" data-target="#hover-hybride"></div></a>
+        <a href="{{ PageHelper::get_page_permalink(PageHelper::PAGE_1_3_ENVIRONNEMENT_NUMERIQUE) }}"><div class="hover-zone zone-numerique" data-target="#hover-numerique"></div></a>
+        <img id="echelle-background-image" src="{{ themosis_assets() }}/images/echelle/desktop/main.png" class="" />
         <img id="hover-papier" src="{{ themosis_assets() }}/images/echelle/desktop/hover-papier.png">
         <img id="hover-hybride" src="{{ themosis_assets() }}/images/echelle/desktop/hover-hybride.png">
         <img id="hover-numerique" src="{{ themosis_assets() }}/images/echelle/desktop/hover-numerique.png">

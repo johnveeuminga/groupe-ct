@@ -33,6 +33,7 @@
     #hover-hybride,
     #hover-numerique {
       position: absolute;
+      max-width: 48%;
       z-index: 500;
       top: -15px;
       left: -2000px;
@@ -42,6 +43,10 @@
         transition: 0.5s;
         left: -15px;
       }
+    }
+
+    #echelle-background-image {
+      width: 100%;
     }
 
     #hover-hybride.slide-in {
