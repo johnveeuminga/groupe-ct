@@ -1,9 +1,15 @@
-<div class="contact-form-container hideMe">
+<div class="contact-form-container hideMe" style="">
     <form id="contact-us-form" method="post">
         <h2 class="contact-form-title">{{ pll__('En savoir plus ? Contactez-nous.') }}</h2>
+
+        <p class="contact-success-message" style="display: none;">{{ pll__('Merci de votre intérêt ! Votre demande a été bien reçue. Nous communiquerons avec vous sous peu.') }}</p>
+
         <div class="contact-field-container">
 
-            <div class="error-msg-container">
+            <div class="error-msg-container" style="display: none;">
+                <p class="error-required" style="display: none;">{{ pll__('Veuillez remplir tous les champs requis.') }}</p>
+                <p class="error-email" style="display: none;">{{ pll__('Veuillez utiliser un format de courriel valide.') }}</p>
+                <p class="error server-error" style="display: none;"></p>
             </div>
 
             <div class="contact-row">
@@ -43,16 +49,16 @@
             </div>
             <div class="contact-row">
                 <label for="contact-phone"></label>
-                <input type="text" id="contact-phone" name="contact-phone" placeholder="{{ pll__('Téléphone') }}">
+                <input type="text" id="contact-phone" name="contact-phone" placeholder="{{ pll__('Téléphone') }}*">
                 <label for="contact-ext"></label>
                 <input type="text" id="contact-ext" name="contact-ext" placeholder="{{ pll__('Poste') }}">
             </div>
             <div class="contact-row">
-                <textarea rows="6" cols="10" name="contact-message" placeholder="{{ pll__('Message*') }}"></textarea>
+                <textarea rows="6" cols="10" id="contact-message" name="contact-message" placeholder="{{ pll__('Message*') }}"></textarea>
             </div>
             <div class="contact-row">
                 <div class="check-container">
-                    <input type="checkbox" name="accept" id="accept" class="contact-accept"><label for="accept">{{ pll__('J\'accepte de recevoir l\'infolettre et les offres du Groupe CT. ') }}</label>
+                    <input type="checkbox" name="contact-accept" id="contact-accept" class="contact-accept"><label for="contact-accept">{{ pll__('J\'accepte de recevoir l\'infolettre et les offres du Groupe CT. ') }}</label>
                 </div>
 
                 <button type="submit" class="primary-btn submit-btn">{{ pll__('Envoyer') }}</button>

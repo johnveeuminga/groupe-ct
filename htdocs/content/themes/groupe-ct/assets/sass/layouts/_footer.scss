@@ -40,10 +40,12 @@
     }
 
     .footer-nav-title {
-      @include set-font(14px, $poppins, 400, white);
       margin:35px 0 10px;
       @media (min-width: $screen-md-min) {
         margin-bottom:25px;
+      }
+      a {
+        @include set-font(14px, $poppins, 400, white);
       }
     }
 

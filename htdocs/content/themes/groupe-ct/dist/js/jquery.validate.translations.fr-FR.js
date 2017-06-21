@@ -5,9 +5,9 @@
 (function($) {
     $(document).ready(function() {
             $.extend( $.validator.messages, {
-                required: "Ce champ est obligatoire.",
+                required: "Veuillez remplir tous les champs requis.",
                 remote: "Veuillez corriger ce champ.",
-                email: "Veuillez fournir un courriel valide.",
+                email: "Veuillez utiliser un format de courriel valide.",
                 url: "Veuillez fournir une adresse URL valide.",
                 date: "Veuillez fournir une date valide.",
                 dateISO: "Veuillez fournir une date valide (ISO).",
