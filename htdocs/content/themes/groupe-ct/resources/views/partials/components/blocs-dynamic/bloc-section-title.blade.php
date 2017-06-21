@@ -8,7 +8,7 @@
         @endif
 
         @if(isset($title))
-            <h1 class="title {{ isset($title_center) && $title_center === true ? 'align-center' : '' }}">{{ $title }}</h1> <!-- align-center : text-align:center for title and desc  -->
+            <h2 class="title {{ isset($title_center) && $title_center === true ? 'align-center' : '' }}">{{ $title }}</h2> <!-- align-center : text-align:center for title and desc  -->
         @endif
 
         @if(isset($desc))

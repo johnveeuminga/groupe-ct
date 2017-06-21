@@ -3,7 +3,7 @@
 ])
 
 <div class="bloc-partners-container default-width">
-    <h2>{{ pll__('Nos partenaires') }}</h2>
+    <h2 class="title">{{ pll__('Nos partenaires') }}</h2>
     <div class="partners-text-container">
         <p class="partners-text">
             {!! nl2br(pll__('Partenaire description')) !!}
