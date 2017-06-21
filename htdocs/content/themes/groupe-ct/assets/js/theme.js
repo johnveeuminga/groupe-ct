@@ -179,6 +179,11 @@
             });
         }
 
+        $('.open-contact').on('click', open_contact);
+
+        function open_contact() {
+
+        }
 
         /******* TRIGGER COUNT ANIMATION  *******/
 /*    var statsContainerTop = $('.stats-number-container .line').offset().top;

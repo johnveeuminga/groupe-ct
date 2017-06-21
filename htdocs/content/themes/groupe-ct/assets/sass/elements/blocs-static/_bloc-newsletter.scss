@@ -21,10 +21,11 @@
         @extend .poppins22SemiBoldWhite;
       }
       .newsletter-title {
-        @extend .poppins30BoldWhite;
+        @extend .poppins50BoldBlack;
         text-transform: uppercase;
         margin-top:30px;
         margin-bottom: 45px;
+
       }
 
       p {

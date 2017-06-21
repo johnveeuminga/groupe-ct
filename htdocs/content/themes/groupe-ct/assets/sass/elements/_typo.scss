@@ -150,6 +150,10 @@
   @include set-font(30px, $poppins, 700, $black);
 }
 
+.poppins50BoldBlack {
+  @include set-font(30px, $poppins, 700, $black);
+}
+
 
 .poppins44BoldBlack {
   @include set-font(30px, $poppins, 700, $black);
