@@ -16,7 +16,7 @@
                     <?php
                         $block = new \Theme\Models\Blocs(get_row_layout());
                     ?>
-                    @include('partials.components.blocs-dynamic.'.get_row_layout())
+                    @include($block->load_path())
                 @endwhile
 
             @endwhile
