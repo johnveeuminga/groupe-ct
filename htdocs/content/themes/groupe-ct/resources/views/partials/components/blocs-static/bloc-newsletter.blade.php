@@ -6,28 +6,27 @@
                     <h3 class="newsletter-upper-title">{{ pll__('Infolettre') }}</h3>
                     <h2 class="newsletter-title">{{ pll__('Restez à la page') }}</h2>
                     <p class="newsletter-desc">{{ pll__('Abonnez-vous à l\'infolettre pour recevoir les dernières nouvelles de Groupe CT.') }}</p>
+                    <p class="newsletter-success" style="display: none;">{{ pll__('Merci de votre intérêt ! Vous recevrez un courriel sous peu pour compléter votre inscription. À bientôt !') }}</p>
                 </div>
-                <div id="newsletter-success-container" style="display: none;">
-                    <p>{{ pll__('Merci de votre intérêt ! Vous recevrez un courriel sous peu pour compléter votre inscription. À bientôt !') }}</p>
-                </div>
-                <div id="newsletter-errors-container" style="display: none;">
-                    <p class="error-required">{{ pll__('Veuillez remplir tous les champs requis.') }}</p>
-                    <p class="error-email">{{ pll__('Veuillez utiliser un format de courriel valide.') }}</p>
+                <div id="newsletter-errors-container" class="form-messages form-errors error-msg-container" style="display: none;">
+                    <p class="error-required" style="display: none;">{{ pll__('Veuillez remplir tous les champs requis.') }}</p>
+                    <p class="error-email" style="display: none;">{{ pll__('Veuillez utiliser un format de courriel valide.') }}</p>
+                    <p class="error server-error" style="display: none;"></p>
                 </div>
                 <div class="contact-field-container">
                     <div class="contact-row">
                         <div class="select-container">
-                            <select name="title" id="newsletter-title">
+                            <select name="newsletter-title" id="newsletter-title">
                                 <option value=""  disabled selected hidden>{{ pll__('Titre*') }}</option>
                                 <option value="m">{{ pll__('M.') }}</option>
                                 <option value="mme">{{ pll__('Mme') }}</option>
                             </select>
                         </div>
 
-                        <label for="newsletter-first-name"></label>
-                        <input type="text" id="newsletter-first-name" placeholder="{{ pll__('Prénom*') }}">
-                        <label for="newsletter-name"></label>
-                        <input type="text" id="newsletter-name" placeholder="{{ pll__('Nom*') }}">
+                        <label for="newsletter-firstname"></label>
+                        <input type="text" id="newsletter-firstname" name="newsletter-firstname" placeholder="{{ pll__('Prénom*') }}">
+                        <label for="newsletter-lastname"></label>
+                        <input type="text" id="newsletter-lastname" name="newsletter-lastname" placeholder="{{ pll__('Nom*') }}">
                     </div>
                     <div class="contact-row">
                         <label for="newsletter-compagny-name"></label>
@@ -37,10 +36,10 @@
                     </div>
                     <div class="contact-row">
                         <label for="newsletter-email"></label>
-                        <input type="email" id="newsletter-email" name="newsletter-name" placeholder="{{ pll__('Courriel*') }}">
+                        <input type="email" id="newsletter-email" name="newsletter-email" placeholder="{{ pll__('Courriel*') }}">
                     </div>
                     <div class="contact-row">
-                        <scpan class="mandatory-field-msg">*Champs obligatoires</scpan>
+                        <scpan class="mandatory-field-msg">{{ pll__('* Champs obligatoires') }}</scpan>
                         <button type="submit" class="submit-btn">{{ pll__('Soumettre') }}</button>
                     </div>
                 </div>

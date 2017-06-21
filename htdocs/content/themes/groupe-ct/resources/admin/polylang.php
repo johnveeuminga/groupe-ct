@@ -38,9 +38,29 @@ if (function_exists('pll_register_string'))
     pll_register_string('', 'Soumettre', GROUPE_CT, false);
     pll_register_string('', 'Merci de votre intérêt ! Vous recevrez un courriel sous peu pour compléter votre inscription. À bientôt !', GROUPE_CT, false);
 
+    /** CONTACT FORM */
+    pll_register_string('', 'En savoir plus ? Contactez-nous.', GROUPE_CT, false);
+    pll_register_string('', 'Ville*', GROUPE_CT, false);
+    pll_register_string('', 'En savoir plus ? Contactez-nous.', GROUPE_CT, false);
+    pll_register_string('', 'Département', GROUPE_CT, false);
+    pll_register_string('', 'Comptabilité/finances', GROUPE_CT, false);
+    pll_register_string('', 'Marketing', GROUPE_CT, false);
+    pll_register_string('', 'Administration', GROUPE_CT, false);
+    pll_register_string('', 'Technologies de l\'information', GROUPE_CT, false);
+    pll_register_string('', 'Ventes', GROUPE_CT, false);
+    pll_register_string('', 'Achats', GROUPE_CT, false);
+    pll_register_string('', 'Ressources humaines', GROUPE_CT, false);
+    pll_register_string('', 'Autre', GROUPE_CT, false);
+    pll_register_string('', 'Message*', GROUPE_CT, false);
+    pll_register_string('', 'J\'accepte de recevoir l\'infolettre et les offres du Groupe CT.', GROUPE_CT, false);
+    pll_register_string('', 'Envoyer', GROUPE_CT, false);
+    pll_register_string('', 'Merci de votre intérêt ! Votre demande a été bien reçue. Nous communiquerons avec vous sous peu.', GROUPE_CT, false);
+    pll_register_string('', '* Champs obligatoires', GROUPE_CT, false);
+
     /** ERRORS **/
     pll_register_string('', 'Veuillez remplir tous les champs requis.', GROUPE_CT, false);
     pll_register_string('', 'Veuillez utiliser un format de courriel valide.', GROUPE_CT, false);
-    pll_register_string('', 'Veuillez utiliser un format de courriel valide.', GROUPE_CT, false);
+    pll_register_string('', 'Votre adresse est déjà inscrite dans notre base de données, merci de votre intérêt.', GROUPE_CT, false);
+    pll_register_string('', 'La requête n\'est pas valide, veuillez réessayer.', GROUPE_CT, false);
 
 }

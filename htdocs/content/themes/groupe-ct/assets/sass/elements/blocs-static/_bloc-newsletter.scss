@@ -1,6 +1,11 @@
 .bloc-newsletter{
   background-color: $blue-dark;
-  padding: 100px 0;
+  padding: 50px 0;
+
+  @media ($screen-sm-min) {
+    padding: 100px 0;
+  }
+
 
   .contact-form-container {
 
@@ -21,10 +26,12 @@
         margin-top:30px;
         margin-bottom: 45px;
       }
-      .newsletter-desc {
+      p {
         @extend .mada22LightWhite;
       }
+
     }
+
 
     .contact-field-container {
       @include flexbox();
@@ -78,6 +85,7 @@
           }
           background: url($assets + "/images/icon/icon-arrow.png") no-repeat 85% 50%;
         }
+
         select {
           border:none;
           opacity: 0.6;
@@ -161,6 +169,12 @@
 
     .mandatory-field-msg {
       @extend .mada14LightWhite;
+      margin-bottom: 15px;
+    }
+
+    select > option{
+      background-color: $blue-dark;
+      @extend .mada18LightWhite;
     }
 
   }//CONTACT FORM END
