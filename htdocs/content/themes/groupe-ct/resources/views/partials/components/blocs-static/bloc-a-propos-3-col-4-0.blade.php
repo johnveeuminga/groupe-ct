@@ -27,7 +27,7 @@
             <div class="about-img-container">
                 <img class="contact-icon" src="{{ themosis_assets() }}/images/icon/icon-divisions.png" alt="">
             </div>
-            <h2 class="contact-title">{{ pll__('Nos sociétés') }}</h2>
+            <h2 class="contact-title">{!!  pll__('Nos<br/>sociétés') !!}</h2>
             <p class="contact-text">{!! nl2br(pll__('Contact a propos col 3')) !!}</p>
             <a class="contact-link-cta" href="{{ PageHelper::get_page_permalink(PageHelper::PAGE_4_2_DIVISIONS) }}"><img class="contact-cta" src="{{ themosis_assets() }}/images/icon/icon-cta-arrow-white.png" alt=""></a>
         </div>
