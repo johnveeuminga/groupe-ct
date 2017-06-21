@@ -5,7 +5,7 @@
             <div class="about-img-container">
                 <img class="contact-icon" src="{{ themosis_assets() }}/images/icon/icon-help.png" alt="">
             </div>
-            <h2 class="contact-title">{{ pll__('Demander<br/>conseil') }}</h2>
+            <h2 class="contact-title">{!!  pll__('Demander<br/>conseil') !!}</h2>
             <p class="contact-text">{!! nl2br(pll__('Contact nous joindre col 1')) !!}</p>
             <a class="contact-link-cta" href="{{ PageHelper::get_page_permalink(PageHelper::PAGE_4_3_HISTORIQUE) }}"><img class="contact-cta" src="{{ themosis_assets() }}/images/icon/icon-cta-arrow-white.png" alt=""></a>
         </div>
