@@ -1,14 +1,12 @@
 @include('partials.components.blocs-dynamic.bloc-section-title', [
-    'title' => pll__('Nos partenaires'),
-    'title_center' => true,
-    'desc' => 'Partner descr'
+    'desc' => pll__('Nos partenaires')
 ])
 
 <div class="bloc-partners-container default-width">
+    <h2>{{ pll__('Nos partenaires') }}</h2>
     <div class="partners-text-container">
         <p class="partners-text">
-            <span class="beBold">Groupe CT</span> est l’une des plus importantes entreprises indépendantes de produits de gestion documentaire au Canada.
-            Notre partenariat avec les plus grands manufacturiers nous permet d’offrir le meilleur de l’industrie.
+            {!! nl2br(pll__('Partenaire description')) !!}
         </p>
     </div>
     <div class="partners-logo-container">
