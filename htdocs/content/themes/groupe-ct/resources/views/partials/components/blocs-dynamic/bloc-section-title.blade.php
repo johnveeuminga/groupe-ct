@@ -12,7 +12,7 @@
         @endif
 
         @if(isset($desc))
-            <p class="desc">{{ $desc }}</p>
+            <p class="desc">{{ nl2br($desc) }}</p>
         @endif
     </div>
     <!-- TITLE END -->
