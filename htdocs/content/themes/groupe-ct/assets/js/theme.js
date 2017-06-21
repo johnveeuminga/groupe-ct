@@ -48,29 +48,21 @@
 
 
 
-        // $( ".contact-us-link" ).hover(
-        //     function() {
-        //         $('.hero .contact-form-container').removeClass('hideMe');
-        //     }, function() {
-        //         $('.hero .contact-form-container').addClass('hideMe');
-        //     }
-        // );
-        //
-        // $('.hero .contact-form-container').hover(
-        //     function() {
-        //         $(this).removeClass('hideMe');
-        //     }, function() {
-        //         $(this).addClass('hideMe');
-        //     }
-        // );
+        $( ".contact-us-link" ).hover(
+            function() {
+                $('.hero .contact-form-container').removeClass('hideMe');
+            }, function() {
+                $('.hero .contact-form-container').addClass('hideMe');
+            }
+        );
 
-        // $("#newsletter-title").select2({
-        //     minimumResultsForSearch: Infinity
-        // });
-
-
-
-
+        $('.hero .contact-form-container').hover(
+            function() {
+                $(this).removeClass('hideMe');
+            }, function() {
+                $(this).addClass('hideMe');
+            }
+        );
 
 
 
