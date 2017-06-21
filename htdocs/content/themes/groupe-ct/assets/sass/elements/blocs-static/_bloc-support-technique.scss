@@ -1,0 +1,67 @@
+.tech-support-main-container {
+
+  .form-container {
+    margin-top: 35px;
+  }
+
+  .form-left-container {
+    padding-left:0;
+    padding-right:25px;
+  }
+  .form-right-container {
+    padding-left:25px;
+    padding-right:0;
+  }
+
+  p {
+    @extend .mada22LightBlack;
+  }
+
+  .tech-support-input {
+    -webkit-appearance: none;
+    border:1px solid $grey-light;
+    @include border-radius(2px);
+    padding: 25px 15px;
+
+  }
+  .input-container {
+    @include flexbox();
+    margin-bottom: 20px;
+    @include placeholder(18px, $mada, 300, $grey-placeholder, 1);
+  }
+
+  .form-env-container {
+    @include flexbox();
+
+    .form-left-container p:first-of-type{
+      margin-bottom:30px;
+    }
+
+    #env-division {
+      width:100%;
+    }
+    .input-container:nth-child(2) {
+      @include flexbox();
+      @include justify-content(space-between);
+    }
+    .input-container:nth-child(2) .tech-support-input{
+     @include flex-basis(43%);
+    }
+
+    .form-footer {
+      @include flexbox();
+      @include justify-content(space-between);
+      @include align-items(center);
+
+      .link-forgot-psw {
+        @extend .mada18RegBlack;
+      }
+    }
+
+  }
+
+  .isBold {
+    @extend .mada22RegBlack;
+  }
+
+}//SECTION END
