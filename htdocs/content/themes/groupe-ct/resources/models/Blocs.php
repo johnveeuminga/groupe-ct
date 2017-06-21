@@ -101,8 +101,34 @@ class Blocs {
 					$this->fields['bloc_5_slides'] = get_sub_field('bloc_5_slide');
 					break;
 				case "bloc_6":
+					$this->fields['bloc_6_subheader'] = get_sub_field('bloc_6_subheader');
+					$this->fields['bloc_6_title'] = get_sub_field('bloc_6_title');
+					$this->fields['bloc_6_description'] = get_sub_field('bloc_6_description');
+
+					$this->fields['bloc_6_1_icon'] = get_sub_field('bloc_6_1_icon');
+					$this->fields['bloc_6_1_title'] = get_sub_field('bloc_6_1_title');
+					$this->fields['bloc_6_1_description'] = get_sub_field('bloc_6_1_description');
+					$this->fields['bloc_6_1_cta_label'] = get_sub_field('bloc_6_1_cta_label');
+					$this->fields['bloc_6_1_cta_link'] = get_sub_field('bloc_6_1_cta_link');
+					$this->fields['bloc_6_1_cta_blank'] = get_sub_field('bloc_6_1_cta_blank');
+
+					$this->fields['bloc_6_2_icon'] = get_sub_field('bloc_6_2_icon');
+					$this->fields['bloc_6_2_title'] = get_sub_field('bloc_6_2_title');
+					$this->fields['bloc_6_2_description'] = get_sub_field('bloc_6_2_description');
+					$this->fields['bloc_6_2_cta_label'] = get_sub_field('bloc_6_2_cta_label');
+					$this->fields['bloc_6_2_cta_link'] = get_sub_field('bloc_6_2_cta_link');
+					$this->fields['bloc_6_2_cta_blank'] = get_sub_field('bloc_6_2_cta_blank');
+
+					$this->fields['bloc_6_3_icon'] = get_sub_field('bloc_6_3_icon');
+					$this->fields['bloc_6_3_title'] = get_sub_field('bloc_6_3_title');
+					$this->fields['bloc_6_3_description'] = get_sub_field('bloc_6_3_description');
+					$this->fields['bloc_6_3_cta_label'] = get_sub_field('bloc_6_3_cta_label');
+					$this->fields['bloc_6_3_cta_link'] = get_sub_field('bloc_6_3_cta_link');
+					$this->fields['bloc_6_3_cta_blank'] = get_sub_field('bloc_6_3_cta_blank');
+
 					break;
 				case "bloc_7":
+
 					break;
 				case "bloc_8":
 					break;
