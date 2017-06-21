@@ -2,7 +2,7 @@
 
     <div class="contact-container">
         <div class="inner-container">
-            <div class="img-container">
+            <div class="about-img-container">
                 <img class="contact-icon" src="{{ themosis_assets() }}/images/icon/icon-help.png" alt="">
             </div>
             <h2 class="contact-title">{{ pll__('Demander conseil') }}</h2>
@@ -13,7 +13,7 @@
 
     <div class="contact-container">
         <div class="inner-container">
-            <div class="img-container">
+            <div class="about-img-container">
                 <img class="contact-icon" src="{{ themosis_assets() }}/images/icon/icon-assist.png" alt="">
             </div>
             <h2 class="contact-title">{{ pll__('Assistance technique') }}</h2>
@@ -24,7 +24,7 @@
 
     <div class="contact-container">
         <div class="inner-container">
-            <div class="img-container">
+            <div class="about-img-container">
                 <img class="contact-icon" src="{{ themosis_assets() }}/images/icon/icon-fourniture.png" alt="">
             </div>
             <h2 class="contact-title">{{ pll__('Commande de fournitures') }}</h2>

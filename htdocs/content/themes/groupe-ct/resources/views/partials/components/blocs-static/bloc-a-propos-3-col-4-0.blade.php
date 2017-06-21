@@ -2,7 +2,7 @@
 
     <div class="contact-container">
         <div class="inner-container">
-            <div class="img-container">
+            <div class="about-img-container">
                 <img class="contact-icon" src="{{ themosis_assets() }}/images/icon/icon-historique.png" alt="">
             </div>
             <h2 class="contact-title">{{ pll__('À l\'avant-garde depuis 1987') }}</h2>
@@ -13,7 +13,7 @@
 
     <div class="contact-container">
         <div class="inner-container">
-            <div class="img-container">
+            <div class="about-img-container">
                 <img class="contact-icon" src="{{ themosis_assets() }}/images/icon/icon-equipe.png" alt="">
             </div>
             <h2 class="contact-title">{{ pll__('Une équipe engagée') }}</h2>
@@ -24,7 +24,7 @@
 
     <div class="contact-container">
         <div class="inner-container">
-            <div class="img-container">
+            <div class="about-img-container">
                 <img class="contact-icon" src="{{ themosis_assets() }}/images/icon/icon-divisions.png" alt="">
             </div>
             <h2 class="contact-title">{{ pll__('Nos sociétés') }}</h2>
