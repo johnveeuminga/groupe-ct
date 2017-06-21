@@ -153,4 +153,12 @@ if (function_exists('pll_register_string'))
     /** Partners bloc-static/bloc-tab-change-2-3.blade.php  */
     pll_register_string('MODULE Partenaire', 'Partenaire description', GROUPE_CT, true);
 
+    /** Bloc À propos conatct bloc-static/... */
+    pll_register_string('À PROPOS - SECTION 3 BLOCS DE TEXTE', 'À l\'avant-garde depuis 1987', GROUPE_CT, false);
+    pll_register_string('À PROPOS - SECTION 3 BLOCS DE TEXTE', 'Contact col 1', GROUPE_CT, true);
+    pll_register_string('À PROPOS - SECTION 3 BLOCS DE TEXTE', 'Une équipe engagée', GROUPE_CT, false);
+    pll_register_string('À PROPOS - SECTION 3 BLOCS DE TEXTE', 'Contact col 2', GROUPE_CT, true);
+    pll_register_string('À PROPOS - SECTION 3 BLOCS DE TEXTE', 'Nos sociétés', GROUPE_CT, false);
+    pll_register_string('À PROPOS - SECTION 3 BLOCS DE TEXTE', 'Contact col 3', GROUPE_CT, true);
+
 }

@@ -11,7 +11,7 @@
         @include('partials.components.blocs-static.bloc-tab-change-2-2')
         @include('partials.components.blocs-static.bloc-tab-change-2-3')
         @include('partials.components.blocs-static.bloc-product-search')
-        @include('partials.components.blocs-static.bloc-contact')
+        @include('partials.components.blocs-static.bloc-a-propos-3-col')
         @include('partials.components.blocs-static.bloc-wysiwyg')
         @include('partials.components.blocs-static.bloc-support-technique')
 
