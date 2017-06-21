@@ -1,7 +1,3 @@
-@include('partials.components.blocs-dynamic.bloc-section-title', [
-    'desc' => pll__('Nos partenaires')
-])
-
 <div class="bloc-partners-container default-width">
     <h2 class="title">{{ pll__('Nos partenaires') }}</h2>
     <div class="partners-text-container">
