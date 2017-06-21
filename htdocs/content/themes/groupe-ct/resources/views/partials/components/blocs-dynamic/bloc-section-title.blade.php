@@ -1,19 +1,19 @@
-<div class="bloc-name row">
-    <h1>BLOC SECTION TITLE</h1>
-</div>
-
 <div class="default-padding default-width">
 
     <!-- TITLE START -->
     <div class="section-title-container">
-        <li class="upper-title-no-dot">Amet dolor simaet</li> <!-- upper-title-no-dot : enleve le list style -->
 
-        <h1 class="title">le meilleur de l'insdustrie</h1> <!-- align-center : text-align:center for title and desc  -->
+        @if(isset($subheader))
+            <li class="upper-title-no-dot">{{ $subheader }}</li> <!-- upper-title-no-dot : enleve le list style -->
+        @endif
 
-        <p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-            ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-            ut labore et dolore magna aliqua
-        </p>
+        @if(isset($title))
+            <h1 class="title">{{ $title }}</h1> <!-- align-center : text-align:center for title and desc  -->
+        @endif
+
+        @if(isset($desc))
+            <p class="desc">{{ $desc }}</p>
+        @endif
     </div>
     <!-- TITLE END -->
 </div>

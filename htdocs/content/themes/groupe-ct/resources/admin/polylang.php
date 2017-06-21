@@ -64,4 +64,8 @@ if (function_exists('pll_register_string'))
     pll_register_string('', 'Votre adresse est déjà inscrite dans notre base de données, merci de votre intérêt.', GROUPE_CT, false);
     pll_register_string('', 'La requête n\'est pas valide, veuillez réessayer.', GROUPE_CT, false);
 
+    /** Gestion changement 1 */
+    pll_register_string('', 'Accompagnement sur mesure à chaque étape', false);
+    pll_register_string('', 'Gestion changement description 1', true);
+
 }

@@ -1,6 +1,7 @@
-<div class="bloc-name row">
-    <h1>BLOC GESTION CHANGEMENT 01</h1>
-</div>
+@include('partials.components.blocs-dynamic.bloc-section-title', [
+    'title' => pll__('Accompagnement sur mesure à chaque étape'),
+    'desc' => pll__('Gestion changement description 1'),
+])
 
 
 <div class="bloc-container default-width">
