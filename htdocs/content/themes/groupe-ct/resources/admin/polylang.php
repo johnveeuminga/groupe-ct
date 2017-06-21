@@ -162,7 +162,7 @@ if (function_exists('pll_register_string'))
     pll_register_string('À PROPOS 4.0 - SECTION 3 BLOCS DE TEXTE', 'Contact a propos col 3', GROUPE_CT, true);
 
     /** Bloc Nous joindre contact bloc-static/bloc-a-propos-3-col-4-7-col */
-    pll_register_string('NOUS JOINDRE 4.7 - 3 BLOCS STATIQUES', 'Demander conseil', GROUPE_CT, false);
+    pll_register_string('NOUS JOINDRE 4.7 - 3 BLOCS STATIQUES', 'Demander<br/>conseil', GROUPE_CT, false);
     pll_register_string('NOUS JOINDRE 4.7 - 3 BLOCS STATIQUES', 'Contact nous joindre col 1', GROUPE_CT, true);
     pll_register_string('NOUS JOINDRE 4.7 - 3 BLOCS STATIQUES', 'Assistance technique', GROUPE_CT, false);
     pll_register_string('NOUS JOINDRE 4.7 - 3 BLOCS STATIQUES', 'Contact nous joindre col 2', GROUPE_CT, true);
