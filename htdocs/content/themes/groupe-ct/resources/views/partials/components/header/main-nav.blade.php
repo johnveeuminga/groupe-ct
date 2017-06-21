@@ -24,32 +24,30 @@
 
         <nav class="nav-top">
             <ul class="nav-link-container">
-                <li class="menu-item"><a class="nav-link" href="#">English</a></li>
-                <li class="menu-item"><a class="nav-link" href="#">Nous joindre</a></li>
-                <li class="menu-item"><a class="nav-link" href="#">Infolettre</a></li>
-                <li class="menu-item"><a class="nav-link" href="#">Carrière</a></li>
-                <li class="menu-item"><a class="nav-link link-account" href="#">Mon compte</a></li>
+                <li class="menu-item"><a class="nav-link" href="#">{{ pll_current_language() === 'fr' ? 'English' : 'Français' }}</a></li>
+                <li class="menu-item"><a class="nav-link" href="{{ PageHelper::get_page_permalink(PageHelper::PAGE_4_0_A_PROPOS) }}">{{ PageHelper::get_page_title(PageHelper::PAGE_4_0_A_PROPOS) }}</a></li>
+                <li class="menu-item"><a class="nav-link" href="#newsletter">{{ pll__('Infolettre') }}</a></li>
+                <li class="menu-item"><a class="nav-link" href="{{ PageHelper::get_page_permalink(PageHelper::PAGE_4_6_CARRIERE) }}">{{ PageHelper::get_page_title(PageHelper::PAGE_4_6_CARRIERE) }}</a></li>
+                <li class="menu-item"><a class="nav-link link-account" href="{{ PageHelper::get_page_permalink(PageHelper::PAGE_3_0_ASSISTANCE) }}#TBD">{{ pll__('Mon compte') }}</a></li>
             </ul>
         </nav>
 
         <nav class="nav-bottom">
             <ul class="nav-link-container">
-                <li class="menu-item"><a class="nav-link nl1" href="#">SERVICES ET CONSEIL</a><img class="menu-item-triangle" src="{{ themosis_assets() }}/images/icon/icon-white-triangle.png" alt=""></li>
-                <li class="menu-item"><a class="nav-link nl2" href="#">PRODUITS ET SOLUTIONS</a><img class="menu-item-triangle" src="{{ themosis_assets() }}/images/icon/icon-white-triangle.png" alt=""></li>
-                <li class="menu-item"><a class="nav-link nl3" href="#">SOUTIENT TECHNIQUE</a><img class="menu-item-triangle" src="{{ themosis_assets() }}/images/icon/icon-white-triangle.png" alt=""></li>
-                <li class="menu-item"><a class="nav-link nl4" href="#">À PROPOS</a><img class="menu-item-triangle" src="{{ themosis_assets() }}/images/icon/icon-white-triangle.png" alt=""></li>
-                <li class="menu-item"><a class="nav-link nl5" href="#">NOUVELLES</a><img class="menu-item-triangle" src="{{ themosis_assets() }}/images/icon/icon-white-triangle.png" alt=""></li>
+                @include('partials.components.header.main-nav-link-atom', ['page_id' => PageHelper::PAGE_1_0_APPROCHE_CONSEIL, 'has_submenu' => true, 'submenu_id' => 1])
+                @include('partials.components.header.main-nav-link-atom', ['page_id' => PageHelper::PAGE_2_0_PRODUITS_SOLUTIONS, 'has_submenu' => true, 'submenu_id' => 2])
+                @include('partials.components.header.main-nav-link-atom', ['page_id' => PageHelper::PAGE_3_0_ASSISTANCE, 'has_submenu' => true, 'submenu_id' => 3])
+                @include('partials.components.header.main-nav-link-atom', ['page_id' => PageHelper::PAGE_4_0_A_PROPOS, 'has_submenu' => true, 'submenu_id' => 4])
+                @include('partials.components.header.main-nav-link-atom', ['page_id' => PageHelper::PAGE_5_0_PUBLICATIONS, 'has_submenu' => false,   'submenu_id' => null])
             </ul>
         </nav>
     </div>
     <div class="nav-contact-us col-xs-2">
         <a class="contact-us-link" href="#">
-            <span><?php _e('CONTACTEZ-NOUS', THEME_TEXTDOMAIN); ?></span>
+            <span>{{ pll__('CONTACTEZ-NOUS') }}</span>
             <img class="icon-arrow" src="{{ themosis_assets() }}/images/icon/icon-arrow.png" alt="arrow contact us">
         </a>
 
     </div>
-
-
 
 </div> <!-- SECTION END -->

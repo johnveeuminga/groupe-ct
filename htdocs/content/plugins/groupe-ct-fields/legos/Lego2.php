@@ -1,13 +1,29 @@
 <?php
 
+/**
+ * Class Lego2
+ * Text/Image & Image/Text - Slider
+ */
 class Lego2 extends BaseLego implements LegoInterface
 {
     public function get_unique_fields()
     {
         return [
-        	$this->generate_text('bloc_2_title', 'Title'),
-			$this->generate_textarea('bloc_2_text', 'Text'),
-	        $this->generate_image('bloc_2_image', 'Image', 'TBDxTBD')
+	        $this->generate_repeater('bloc_2_slide',           __('Testimonial', 'GROUPE-CT'), [
+		        $this->generate_text('bloc_2_slide_subheader', __('Subheader', 'GROUPE-CT') ),
+	            $this->generate_text('bloc_2_slide_title',     __('Title', 'GROUPE-CT') ),
+		        $this->generate_text('bloc_2_slide_subtitle',  __('Subtitle', 'GROUPE-CT') ),
+				$this->generate_textarea('bloc_2_slide_text',  __('Text', 'GROUPE-CT') ),
+		        $this->generate_cta('bloc_2_slide_cta' )[0],
+		        $this->generate_cta('bloc_2_slide_cta' )[1],
+		        $this->generate_cta('bloc_2_slide_cta' )[2],
+		        $this->generate_text('bloc_2_slide_phone_1_label',     __('Phone 1 - Label', 'GROUPE-CT') ),
+		        $this->generate_text('bloc_2_slide_phone_1',           __('Phone 1', 'GROUPE-CT') ),
+		        $this->generate_text('bloc_2_slide_phone_2_label',     __('Phone 2 - Label', 'GROUPE-CT') ),
+		        $this->generate_text('bloc_2_slide_phone_2',           __('Phone 2', 'GROUPE-CT') ),
+		        $this->generate_image('bloc_2_slide_image',            __('Image', 'GROUPE-CT'), __('TBDxTBD', 'GROUPE-CT') ),
+		        $this->generate_true_false( 'bloc_2_slide_image_left', __('Image on the left?', 'GROUPE-CT') ),
+            ])
         ];
     }
 
@@ -17,7 +33,7 @@ class Lego2 extends BaseLego implements LegoInterface
 
             'key' => 'bloc_2_key',
             'name' => 'bloc_2',
-            'label' => 'Bloc 2 - Text / Image',
+            'label' => __('Bloc 2 - Text/Image - Slider', 'GROUPE-CT'),
             'display' => 'block',
             'sub_fields' => $this->get_unique_fields(),
             'min' => '',

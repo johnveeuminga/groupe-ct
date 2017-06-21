@@ -8,7 +8,7 @@
  */
 class BaseLego
 {
-    protected function generate_cta($prefix, $conditional_logic = 0)
+	public function generate_cta($prefix, $conditional_logic = 0)
     {
         return [
             [
@@ -68,7 +68,7 @@ class BaseLego
         ];
     }
 
-    protected function generate_tab($prefix, $tab_name)
+	public function generate_tab($prefix, $tab_name)
     {
         return [
             'key' => $prefix . '_tab_key',
@@ -91,7 +91,7 @@ class BaseLego
         ];
     }
 
-    protected function generate_text($prefix, $label, $conditional_logic = 0)
+    public function generate_text($prefix, $label, $conditional_logic = 0)
     {
         return [
             'key' => $prefix . '_key',
@@ -114,7 +114,7 @@ class BaseLego
         ];
     }
 
-    protected function generate_textarea($prefix, $label)
+    public function generate_textarea($prefix, $label, $conditional_logic = 0, $required = 0)
     {
         return [
             'key' => $prefix . '_key',
@@ -122,8 +122,8 @@ class BaseLego
             'name' => $prefix,
             'type' => 'textarea',
             'instructions' => '',
-            'required' => 0,
-            'conditional_logic' => 0,
+            'required' => $required,
+            'conditional_logic' => $conditional_logic,
             'wrapper' => array (
                 'width' => '',
                 'class' => '',
@@ -137,7 +137,7 @@ class BaseLego
         ];
     }
 
-    protected function generate_wysiwyg($prefix, $label)
+	public function generate_wysiwyg($prefix, $label)
     {
         return [
             'key' => $prefix . '_key',
@@ -160,7 +160,7 @@ class BaseLego
         ];
     }
 
-    protected function generate_true_false($prefix, $label)
+	public function generate_true_false($prefix, $label)
     {
         return [
             'key' => $prefix . '_key',
@@ -183,7 +183,7 @@ class BaseLego
         ];
     }
 
-    protected function generate_image($prefix, $label, $size_instruction, $conditional_logic = 0)
+	public function generate_image($prefix, $label, $size_instruction, $conditional_logic = 0, $required = 0)
     {
         return [
             'key' => $prefix . '_key',
@@ -191,7 +191,7 @@ class BaseLego
             'name' => $prefix,
             'type' => 'image',
             'instructions' => $size_instruction,
-            'required' => 0,
+            'required' => $required,
             'conditional_logic' => $conditional_logic,
             'wrapper' => array (
                 'width' => '',
@@ -206,7 +206,7 @@ class BaseLego
         ];
     }
 
-    protected function generate_color_picker($prefix, $label)
+	public function generate_color_picker($prefix, $label)
     {
         return [
             'key' => $prefix . '_key',
@@ -229,7 +229,7 @@ class BaseLego
         ];
     }
 
-    protected function generate_number($prefix, $label)
+	public function generate_number($prefix, $label)
     {
         return [
             'key' => $prefix . '_key',
@@ -262,7 +262,7 @@ class BaseLego
 	 *
 	 * @return array
 	 */
-    protected function generate_repeater($prefix, $label, $fields = [], $min = 1, $max = 0, $conditional_logic = 0)
+	public function generate_repeater($prefix, $label, $fields = [], $min = 1, $max = 0, $conditional_logic = 0)
     {
     	return [
 		    'key' => $prefix . '_key',
@@ -287,7 +287,7 @@ class BaseLego
     }
 
 
-    protected function generate_select($prefix, $label, $choices = [])
+	public function generate_select($prefix, $label, $choices = [])
     {
     	return [
 		    'key' => $prefix . '_key',
@@ -313,7 +313,7 @@ class BaseLego
 	    ];
     }
 
-    protected function generate_object($prefix, $label, $post_types)
+	public function generate_object($prefix, $label, $post_types = [])
     {
 	    return [
 		    'key' => $prefix . '_key' ,
@@ -337,6 +337,76 @@ class BaseLego
 		    'ui' => 1,
         ];
     }
+
+
+	public function generate_url($prefix, $label)
+	{
+		return [
+			'key' => $prefix . '_key',
+			'label' => $label,
+			'name' => $prefix,
+			'type' => 'url',
+			'instructions' => '',
+			'required' => 0,
+			'conditional_logic' => 0,
+			'wrapper' => array (
+				'width' => '',
+				'class' => '',
+				'id' => '',
+			),
+			'default_value' => '',
+			'placeholder' => '',
+		];
+	}
+
+
+	public function generate_file($prefix, $label, $mimetype = '')
+	{
+		return [
+			'key' => $prefix . '_key',
+			'label' => $label,
+			'name' => $prefix,
+			'type' => 'file',
+			'instructions' => '',
+			'required' => 0,
+			'conditional_logic' => 0,
+			'wrapper' => array (
+				'width' => '',
+				'class' => '',
+				'id' => '',
+			),
+			'return_format' => 'array',
+			'library' => 'uploadedTo',
+			'min_size' => '',
+			'max_size' => '',
+			'mime_types' => $mimetype,
+		];
+
+	}
+
+
+	public function generate_datepicker($prefix, $label)
+	{
+		return [
+			'key' => $prefix . '_key',
+			'label' => $label,
+			'name' => $prefix,
+			'type' => 'date_picker',
+			'instructions' => '',
+			'required' => 0,
+			'conditional_logic' => 0,
+			'wrapper' => array (
+				'width' => '',
+				'class' => '',
+				'id' => '',
+			),
+			'display_format' => 'Y-m-d',
+			'return_format' => 'Y-m-d',
+			'first_day' => 1
+		];
+
+	}
+
 
 
 }

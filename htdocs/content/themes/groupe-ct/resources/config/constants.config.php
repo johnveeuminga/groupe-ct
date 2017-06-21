@@ -9,5 +9,6 @@ return [
 	 * The key is the constant NAME (be sure to write it in capitals)
 	 * and key's value is the constant VALUE.
 	 */
-	'THEME_VERSION'	=> '1.0.0'
+	'THEME_VERSION'	=> '1.0.0',
+	'GROUPE_CT'	=> 'GROUPE_CT',
 ];

@@ -1,16 +1,20 @@
 <?php
 
+/**
+ * Class Lego5
+ * Testimonials
+ */
 class Lego5 extends BaseLego implements LegoInterface
 {
     public function get_unique_fields()
     {
         return [
-        	$this->generate_repeater('bloc_5_slide', 'Testimonial', [
-		        $this->generate_image('bloc_5_slide_image', 'Image', 'TBDxTBD'),
-		        $this->generate_textarea('bloc_5_slide_testimonial', 'Text'),
-		        $this->generate_text('bloc_5_slide_author', 'Author'),
-		        $this->generate_text('bloc_5_slide_author_title', 'Author Title'),
-	        ])
+        	$this->generate_repeater('bloc_5_slide',                 __('Testimonial', 'GROUPE-CT'), [
+		        $this->generate_image('bloc_5_slide_image',          __('Image', 'GROUPE-CT'), __('TBDxTBD', 'GROUPE-CT') ),
+		        $this->generate_textarea('bloc_5_slide_testimonial', __('Text', 'GROUPE-CT') ),
+		        $this->generate_text('bloc_5_slide_author',          __('Author', 'GROUPE-CT') ),
+		        $this->generate_text('bloc_5_slide_author_title',    __('Author Title', 'GROUPE-CT') ),
+	        ] )
         ];
     }
 
@@ -20,7 +24,7 @@ class Lego5 extends BaseLego implements LegoInterface
 
             'key' => 'bloc_5_key',
             'name' => 'bloc_5',
-            'label' => 'Bloc 5 - Testimonials',
+            'label' => __('Bloc 5 - Testimonials', 'GROUPE-CT'),
             'display' => 'block',
             'sub_fields' => $this->get_unique_fields(),
             'min' => '',

@@ -1,38 +1,42 @@
 <?php
 
+/**
+ * Class Lego4
+ * 4-columns with icons
+ */
 class Lego4 extends BaseLego implements LegoInterface
 {
     public function get_unique_fields()
     {
         return [
-            $this->generate_text('bloc_4_subheader', 'Subheader'),
-            $this->generate_text('bloc_4_title', 'Title'),
-            $this->generate_textarea('bloc_4_description', 'Description'),
-            $this->generate_tab('bloc_4_1', 'Icon 1'),
-            $this->generate_image('bloc_4_1_icon', 'Icon', '50x50'),
-            $this->generate_text('bloc_4_1_title', 'Title'),
-            $this->generate_textarea('bloc_4_1_description', 'Description'),
+            $this->generate_text('bloc_4_subheader',         __('Subheader', 'GROUPE-CT') ),
+            $this->generate_text('bloc_4_title',             __('Title', 'GROUPE-CT') ),
+            $this->generate_textarea('bloc_4_description',   __('Description', 'GROUPE-CT') ),
+            $this->generate_tab('bloc_4_1',                  __('Icon 1', 'GROUPE-CT') ),
+            $this->generate_image('bloc_4_1_icon',           __('Icon', 'GROUPE-CT'), __('50x50', 'GROUPE-CT') ),
+            $this->generate_text('bloc_4_1_title',           __('Title', 'GROUPE-CT') ),
+            $this->generate_textarea('bloc_4_1_description', __('Description', 'GROUPE-CT') ),
             $this->generate_cta('bloc_4_1')[0],
             $this->generate_cta('bloc_4_1')[1],
             $this->generate_cta('bloc_4_1')[2],
-            $this->generate_tab('bloc_4_2', 'Icon 2'),
-            $this->generate_image('bloc_4_2_icon', 'Icon', '50x50'),
-            $this->generate_text('bloc_4_2_title', 'Title'),
-            $this->generate_textarea('bloc_4_2_description', 'Description'),
+            $this->generate_tab('bloc_4_2',                  __('Icon 2', 'GROUPE-CT') ),
+            $this->generate_image('bloc_4_2_icon',           __('Icon', 'GROUPE-CT'), __('50x50', 'GROUPE-CT') ),
+            $this->generate_text('bloc_4_2_title',           __('Title', 'GROUPE-CT') ),
+            $this->generate_textarea('bloc_4_2_description', __('Description', 'GROUPE-CT') ),
             $this->generate_cta('bloc_4_2')[0],
             $this->generate_cta('bloc_4_2')[1],
             $this->generate_cta('bloc_4_2')[2],
-            $this->generate_tab('bloc_4_3', 'Icon 3'),
-            $this->generate_image('bloc_4_3_icon', 'Icon', '50x50'),
-            $this->generate_text('bloc_4_3_title', 'Title'),
-            $this->generate_textarea('bloc_4_3_description', 'Description'),
+            $this->generate_tab('bloc_4_3',                  __('Icon 3', 'GROUPE-CT') ),
+            $this->generate_image('bloc_4_3_icon',           __('Icon', 'GROUPE-CT'), __('50x50', 'GROUPE-CT') ),
+            $this->generate_text('bloc_4_3_title',           __('Title', 'GROUPE-CT') ),
+            $this->generate_textarea('bloc_4_3_description', __('Description', 'GROUPE-CT') ),
             $this->generate_cta('bloc_4_3')[0],
             $this->generate_cta('bloc_4_3')[1],
             $this->generate_cta('bloc_4_3')[2],
-            $this->generate_tab('bloc_4_4', 'Icon 4'),
-            $this->generate_image('bloc_4_4_icon', 'Icon', '50x50'),
-            $this->generate_text('bloc_4_1_title', 'Title'),
-            $this->generate_textarea('bloc_4_1_description', 'Description'),
+            $this->generate_tab('bloc_4_4',                  __('Icon 4', 'GROUPE-CT') ),
+            $this->generate_image('bloc_4_4_icon',           __('Icon', 'GROUPE-CT'), __('50x50', 'GROUPE-CT') ),
+            $this->generate_text('bloc_4_1_title',           __('Title', 'GROUPE-CT') ),
+            $this->generate_textarea('bloc_4_1_description', __('Description', 'GROUPE-CT') ),
             $this->generate_cta('bloc_4_4')[0],
             $this->generate_cta('bloc_4_4')[1],
             $this->generate_cta('bloc_4_4')[2],
@@ -45,7 +49,7 @@ class Lego4 extends BaseLego implements LegoInterface
 
             'key' => 'bloc_4_key',
             'name' => 'bloc_4',
-            'label' => 'Bloc 4 - 4 icons',
+            'label' => __('Bloc 4 - 4 icons', 'GROUPE-CT'),
             'display' => 'block',
             'sub_fields' => $this->get_unique_fields(),
             'min' => '',

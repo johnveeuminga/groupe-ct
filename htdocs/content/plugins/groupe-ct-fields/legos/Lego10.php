@@ -1,9 +1,14 @@
 <?php
 
+/**
+ * Class Lego10
+ * Products and Categories
+ */
 class Lego10 extends BaseLego implements LegoInterface
 {
     public function get_unique_fields()
     {
+    	// THIS IS VOLUNTARILY EMPTY -- PRODUCTS WILL BE DEFINED IN TEMPLATES
         return [];
     }
 
