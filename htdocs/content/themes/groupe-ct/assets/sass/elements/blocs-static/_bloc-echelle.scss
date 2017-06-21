@@ -1,4 +1,64 @@
 .bloc-echelle-main-container {
+  overflow: hidden;
+  padding: 50px;
+
+  .bloc-echelle-michael {
+    position: relative;
+
+    .hover-zone {
+      position: absolute;
+      width: 33.33%;
+      left: 0;
+      height: 100%;
+      cursor: pointer;
+
+      &.zone-papier {
+        z-index: 999;
+        background: transparent;
+      }
+      &.zone-hybride{
+        z-index: 999;
+        background: transparent;
+        left: 33.33%;
+
+      }
+      &.zone-numerique {
+        z-index: 999;
+        background: transparent;
+        left: 66.66%;
+      }
+    }
+
+    #hover-papier,
+    #hover-hybride,
+    #hover-numerique {
+      position: absolute;
+      max-width: 48%;
+      z-index: 500;
+      top: -15px;
+      left: -2000px;
+
+      &.slide-in {
+        display: block;
+        transition: 0.5s;
+        left: -15px;
+      }
+    }
+
+    #echelle-background-image {
+      width: 100%;
+    }
+
+    #hover-hybride.slide-in {
+      left: 30%;
+    }
+
+    #hover-numerique.slide-in {
+      left: 63%;
+    }
+  }
+
+
 
   .benefits-title-container {
     @include flexbox();

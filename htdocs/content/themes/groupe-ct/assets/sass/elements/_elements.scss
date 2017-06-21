@@ -221,6 +221,15 @@ body {
 }
 
 
+.title {
+  @extend .poppins30BoldBlack;
+  text-transform: uppercase;
+  margin:30px 0;
+  @media (min-width: $screen-sm-min) {
+    @include set-font(45px, $poppins, 700, $black);
+  }
+}
+
 .section-title-container {
   .title {
 
@@ -233,6 +242,7 @@ body {
   }
   .desc {
     @extend .mada22LightBlack;
+    padding-bottom: 30px;
   }
 
 }

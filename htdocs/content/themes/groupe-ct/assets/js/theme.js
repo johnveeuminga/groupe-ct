@@ -16,8 +16,10 @@
                 $(this).siblings('.menu-item-triangle').addClass('show-arrow');
             }, function() {
                 var $navIndex = $(this).attr('class').split(' ')[1];
-                $('.sub-menu-main-container').find('.'+ $navIndex).addClass('hide-from-screen');
-                $(this).siblings('.menu-item-triangle').removeClass('show-arrow');
+                if ($('.sub-menu-main-container')) {
+                    // $('.sub-menu-main-container').find('.'+ $navIndex).addClass('hide-from-screen');
+                    // $(this).siblings('.menu-item-triangle').removeClass('show-arrow');
+                }
             }
         );
 
@@ -47,20 +49,42 @@
         /**** CONTACT FORM ****/
 
 
+        var contact_timeout_id = null;
 
         $( ".contact-us-link" ).hover(
             function() {
-                $('.hero .contact-form-container').removeClass('hideMe');
+                if (contact_timeout_id !== null) {
+                    window.clearTimeout(contact_timeout_id);
+                    contact_timeout_id = null;
+                }
+                else {
+                    $('.hero .contact-form-container').removeClass('hideMe');
+                }
             }, function() {
-                $('.hero .contact-form-container').addClass('hideMe');
+                if (contact_timeout_id === null) {
+                    contact_timeout_id = window.setTimeout(function() {
+                        contact_timeout_id = null; // EDIT: added this line
+                        $('.hero .contact-form-container').addClass('hideMe');
+                    }, 1000);
+                }
             }
         );
 
         $('.hero .contact-form-container').hover(
             function() {
-                $(this).removeClass('hideMe');
+                if (contact_timeout_id !== null) {
+                    window.clearTimeout(contact_timeout_id);
+                    contact_timeout_id = null;
+                } else {
+                    $(this).removeClass('hideMe');
+                }
             }, function() {
-                $(this).addClass('hideMe');
+                if (contact_timeout_id === null) {
+                    contact_timeout_id = window.setTimeout(function() {
+                        contact_timeout_id = null; // EDIT: added this line
+                        $('.hero .contact-form-container').addClass('hideMe');
+                    }, 1000);
+                }
             }
         );
 
@@ -68,16 +92,13 @@
 
         /**** ECHELLE NUMERIQUE ********/
 
-        $( ".cat" ).hover(
-            function() {
-                var $catSection = $(this).attr('class').split(' ')[1];
-                $('.benefit-bg.' + $catSection).removeClass('hideMe');
-            }, function() {
-                var $catSection = $(this).attr('class').split(' ')[1];
-                $('.benefit-bg.' + $catSection).addClass('hideMe');
-            }
-        );
-
+        console.log($('.hover-zone'));
+        $('.hover-zone').hover(function () {
+            console.log($(this).data('target'));
+           $($(this).data('target')).addClass('slide-in');
+        }, function () {
+            $($(this).data('target')).removeClass('slide-in');
+        });
 
 
         /***** Sliders with dots *******/
@@ -127,7 +148,6 @@
                 dataType: 'json',
                 data: {
                     action: 'newsletter',
-                    security: 'form_newsletter',
                     'newsletter-title': $form.find('#newsletter-title').val(),
                     'newsletter-firstname': $form.find('#newsletter-firstname').val(),
                     'newsletter-lastname': $form.find('#newsletter-lastname').val(),
@@ -156,6 +176,11 @@
             });
         }
 
+        $('.open-contact').on('click', open_contact);
+
+        function open_contact() {
+
+        }
 
         /******* TRIGGER COUNT ANIMATION  *******/
 /*    var statsContainerTop = $('.stats-number-container .line').offset().top;
