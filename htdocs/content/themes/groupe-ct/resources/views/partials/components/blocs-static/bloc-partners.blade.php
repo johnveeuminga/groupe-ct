@@ -12,7 +12,7 @@
                 <img class="partners-logo" src="{{ themosis_assets() }}/images/logo/logo-canon.png" alt="">
             </div>
             <div class="logo-container">
-                <img class="partners-logo" src="{{ themosis_assets() }}/images/logo/logo-hp.png" alt="">
+                <img class="partners-logo" src="{{ themosis_assets() }}/images/logo/logo-oce.png" alt="">
             </div>
             <div class="logo-container">
                 <img class="partners-logo" src="{{ themosis_assets() }}/images/logo/logo-hp.png" alt="">
@@ -21,13 +21,13 @@
 
         <div class="partners-logo-row">
             <div class="logo-container">
-                <img class="partners-logo" src="{{ themosis_assets() }}/images/logo/logo-oki.png" alt="">
+                <img class="partners-logo" src="{{ themosis_assets() }}/images/logo/logo-kyocera.png" alt="">
             </div>
             <div class="logo-container">
                 <img class="partners-logo" src="{{ themosis_assets() }}/images/logo/logo-oki.png" alt="">
             </div>
             <div class="logo-container">
-                <img class="partners-logo" src="{{ themosis_assets() }}/images/logo/logo-oki.png" alt="">
+                <img class="partners-logo" src="{{ themosis_assets() }}/images/logo/logo-lexmark.png" alt="">
             </div>
 
         </div>
