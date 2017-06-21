@@ -92,16 +92,13 @@
 
         /**** ECHELLE NUMERIQUE ********/
 
-        $( ".cat" ).hover(
-            function() {
-                var $catSection = $(this).attr('class').split(' ')[1];
-                $('.benefit-bg.' + $catSection).removeClass('hideMe');
-            }, function() {
-                var $catSection = $(this).attr('class').split(' ')[1];
-                $('.benefit-bg.' + $catSection).addClass('hideMe');
-            }
-        );
-
+        console.log($('.hover-zone'));
+        $('.hover-zone').hover(function () {
+            console.log($(this).data('target'));
+           $($(this).data('target')).addClass('slide-in');
+        }, function () {
+            $($(this).data('target')).removeClass('slide-in');
+        });
 
 
         /***** Sliders with dots *******/
