@@ -69,7 +69,7 @@ if (function_exists('pll_register_string'))
     pll_register_string('MODULE sur la page 2.0 PRODUITS ET SOLUTIONS', 'FORMATION', false);
     pll_register_string('MODULE sur la page 2.0 PRODUITS ET SOLUTIONS', 'SUIVI ET AMÉLIORATION CONTINUE', false);
 
-    /** Gestion changement 1 bloc-static/bloc-tab-change01.blade.php */
+    /** Gestion changement 1 bloc-static/bloc-tab-change-2-0.blade.php */
     pll_register_string('MODULE sur la page 2.0 PRODUITS ET SOLUTIONS', 'Accompagnement sur mesure à chaque étape', false);
     pll_register_string('MODULE sur la page 2.0 PRODUITS ET SOLUTIONS', 'Gestion changement description 1', true);
     pll_register_string('MODULE sur la page 2.0 PRODUITS ET SOLUTIONS', 'Prévoir selon vos besoins', false);
@@ -89,7 +89,7 @@ if (function_exists('pll_register_string'))
     pll_register_string('MODULE sur la page 2.0 PRODUITS ET SOLUTIONS', 'Rapports de performance périodiques', false);
     pll_register_string('MODULE sur la page 2.0 PRODUITS ET SOLUTIONS', 'Accompagnement en continu pour vous informer et vous conseiller sur les meilleures pratiques pouvant bonifier votre environnement', false);
 
-    /** Gestion changement 2 bloc-static/bloc-tab-change02.blade.php */
+    /** Gestion changement 2 bloc-static/bloc-tab-change-2-1.blade.php */
     pll_register_string('MODULE sur la page 2.1 ÉQUIPEMENTS D\'IMPRESSION', 'Maîtrisez le potentiel de vos nouveaux équipements', GROUPE_CT, false);
     pll_register_string('MODULE sur la page 2.1 ÉQUIPEMENTS D\'IMPRESSION', 'Gestion changement description 2', GROUPE_CT, true);
     pll_register_string('MODULE sur la page 2.1 ÉQUIPEMENTS D\'IMPRESSION', 'Préparer et organiser l\'installation', GROUPE_CT, false);
@@ -109,7 +109,7 @@ if (function_exists('pll_register_string'))
     pll_register_string('MODULE sur la page 2.1 ÉQUIPEMENTS D\'IMPRESSION', 'Rapports de performance périodiques de vos appareils d\'impression', GROUPE_CT, false);
     pll_register_string('MODULE sur la page 2.1 ÉQUIPEMENTS D\'IMPRESSION', 'Conseils et optimisation en continu selon vos besoins opérationnels', GROUPE_CT, false);
 
-    /** Gestion changement 3 bloc-static/bloc-tab-change03.blade.php */
+    /** Gestion changement 3 bloc-static/bloc-tab-change-2-2.blade.php */
     pll_register_string('MODULE sur la page 2.2 SERVICES D\'IMPRESSION GÉRÉS', 'Une transition agile et sans tracas', GROUPE_CT, false);
     pll_register_string('MODULE sur la page 2.2 SERVICES D\'IMPRESSION GÉRÉS', 'Gestion changement description 3', GROUPE_CT, true);
     pll_register_string('MODULE sur la page 2.2 SERVICES D\'IMPRESSION GÉRÉS', 'Organisation détaillée en amont', GROUPE_CT, false);
@@ -129,7 +129,7 @@ if (function_exists('pll_register_string'))
     pll_register_string('MODULE sur la page 2.2 SERVICES D\'IMPRESSION GÉRÉS', 'Bonification avec des modules permettant des fonctionnalités et des gains supplémentaires', GROUPE_CT, false);
     pll_register_string('MODULE sur la page 2.2 SERVICES D\'IMPRESSION GÉRÉS', 'Rapport de performance du parc d\'impression et réévaluation des besoins d\'impression en continu selon les objectifs organisationnels', GROUPE_CT, false);
 
-    /** Gestion changement 4 bloc-static/bloc-tab-change04.blade.php */
+    /** Gestion changement 4 bloc-static/bloc-tab-change-2-3.blade.php */
     pll_register_string('MODULE sur la page 2.3 GESTION ÉLECTRONIQUE DES DOCUMENTS', 'Réussir votre transition vers la GED', GROUPE_CT, false);
     pll_register_string('MODULE sur la page 2.3 GESTION ÉLECTRONIQUE DES DOCUMENTS', 'Gestion changement description 4', GROUPE_CT, true);
     pll_register_string('MODULE sur la page 2.3 GESTION ÉLECTRONIQUE DES DOCUMENTS', 'Préparer la transition', GROUPE_CT, false);
@@ -149,5 +149,8 @@ if (function_exists('pll_register_string'))
     pll_register_string('MODULE sur la page 2.3 GESTION ÉLECTRONIQUE DES DOCUMENTS', 'Assistance technique en continu pour vous aider à faire évoluer votre solution', GROUPE_CT, false);
     pll_register_string('MODULE sur la page 2.3 GESTION ÉLECTRONIQUE DES DOCUMENTS', 'Mesure des résultats de performance pour connaître les gains de productivité et économies de coûts', GROUPE_CT, false);
     pll_register_string('MODULE sur la page 2.3 GESTION ÉLECTRONIQUE DES DOCUMENTS', 'Accompagnement en continu pour vous informer des nouvelles tendances et technologies qui pourraient bonifier votre environnement numérique', GROUPE_CT, false);
+
+    /** Partners bloc-static/bloc-tab-change-2-3.blade.php  */
+    pll_register_string('MODULE Partenaire', 'Partenaire description', GROUPE_CT, true);
 
 }

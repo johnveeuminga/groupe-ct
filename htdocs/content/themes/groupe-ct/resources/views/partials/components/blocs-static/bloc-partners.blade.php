@@ -1,7 +1,8 @@
-<div class="bloc-name row">
-    <h1>BLOC PARTERS</h1>
-</div>
-
+@include('partials.components.blocs-dynamic.bloc-section-title', [
+    'title' => pll__('Nos partenaires'),
+    'title_center' => true,
+    'desc' => 'Partner descr'
+])
 
 <div class="bloc-partners-container default-width">
     <div class="partners-text-container">
