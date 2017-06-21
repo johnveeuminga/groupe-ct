@@ -1,5 +1,5 @@
-<div class="contact-form-container ">
-    <form id="contact-us-form">
+<div class="contact-form-container hideMe">
+    <form id="contact-us-form" method="post">
         <h2 class="contact-form-title">{{ pll__('En savoir plus ? Contactez-nous.') }}</h2>
         <div class="contact-field-container">
 
@@ -7,52 +7,58 @@
             </div>
 
             <div class="contact-row">
-                <select name="newsletter-title" id="newsletter-title">
+                <select name="contact-title" id="contact-title">
                     <option value=""  disabled selected hidden>{{ pll__('Titre*') }}</option>
                     <option value="m">{{ pll__('M.') }}</option>
                     <option value="mme">{{ pll__('Mme') }}</option>
                 </select>
 
-                <label for="first_name"></label>
-                <input type="text" name="first_name" id="first_name" placeholder="<?php _e('Prénom *', THEME_TEXTDOMAIN); ?>">
-                <label for="name"></label>
-                <input type="text" name="name" id="name" placeholder="<?php _e('Nom *', THEME_TEXTDOMAIN); ?>">
+                <label for="contact-firstname"></label>
+                <input type="text" id="contact-firstname" name="contact-firstname" placeholder="{{ pll__('Prénom*') }}">
+                <label for="contact-lastname"></label>
+                <input type="text" id="contact-lastname" name="contact-lastname" placeholder="{{ pll__('Nom*') }}">
             </div>
             <div class="contact-row">
-                <label for="compagny_name"></label>
-                <input type="text" name="compagny_name" id="compagny_name" placeholder="<?php _e("Nom de l'entreprise *", THEME_TEXTDOMAIN); ?>">
-                <label for="town"></label>
-                <input type="text" name="town" id="town" placeholder="<?php _e('Ville *', THEME_TEXTDOMAIN); ?>">
+                <label for="contact-compagny-name"></label>
+                <input type="text" id="contact-compagny-name" name="contact-compagny-name" placeholder="{{ pll__('Entreprise*') }}">
+                <label for="contact-city"></label>
+                <input type="text" id="contact-city" name="contact-city" placeholder="{{ pll__('Ville*') }}">
             </div>
             <div class="contact-row">
 
-                <select name="departement" id="departement">
-                    <option value=""  disabled selected hidden>Département</option>
-                    <option value="1">Ressource humaine</option>
-                    <option value="2">Administration</option>
+                <select name="contact-departement" id="contact-departement">
+                    <option value=""  selected>{{ pll__('Département') }}</option>
+                    <option>{{ pll__('Comptabilité/finances') }}</option>
+                    <option>{{ pll__('Marketing') }}</option>
+                    <option>{{ pll__('Administration') }}</option>
+                    <option>{{ pll__('Technologies de l\'information') }}</option>
+                    <option>{{ pll__('Ventes') }}</option>
+                    <option>{{ pll__('Achats') }}</option>
+                    <option>{{ pll__('Ressources humaines') }}</option>
+                    <option>{{ pll__('Autre') }}</option>
                 </select>
 
-                <label for="email"></label>
-                <input type="email" name="email" id="email" class="" placeholder="<?php _e('Courriel *', THEME_TEXTDOMAIN); ?>">
+                <label for="contact-email"></label>
+                <input type="email" id="contact-email" name="contact-email" placeholder="{{ pll__('Courriel*') }}">
             </div>
             <div class="contact-row">
-                <label for="phone"></label>
-                <input type="text" name="phone" id="phone" placeholder="<?php _e("Téléphone", THEME_TEXTDOMAIN); ?>">
-                <label for="extension"></label>
-                <input type="text" name="extension" id="extension" placeholder="<?php _e('Poste *', THEME_TEXTDOMAIN); ?>">
+                <label for="contact-phone"></label>
+                <input type="text" id="contact-phone" name="contact-phone" placeholder="{{ pll__('Téléphone') }}">
+                <label for="contact-ext"></label>
+                <input type="text" id="contact-ext" name="contact-ext" placeholder="{{ pll__('Poste') }}">
             </div>
             <div class="contact-row">
-                <textarea rows="6" cols="10" name="msg" placeholder="<?php _e('Message *', THEME_TEXTDOMAIN); ?>"></textarea>
+                <textarea rows="6" cols="10" name="contact-message" placeholder="{{ pll__('Message*') }}"></textarea>
             </div>
             <div class="contact-row">
                 <div class="check-container">
-                    <input type="checkbox" name="accept" id="accept" class="contact-accept"><label for="accept">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</label>
+                    <input type="checkbox" name="accept" id="accept" class="contact-accept"><label for="accept">{{ pll__('J\'accepte de recevoir l\'infolettre et les offres du Groupe CT. ') }}</label>
                 </div>
 
-                <button type="submit" class="primary-btn submit-btn"><?php _e('Envoyer', THEME_TEXTDOMAIN); ?></button>
+                <button type="submit" class="primary-btn submit-btn">{{ pll__('Envoyer') }}</button>
 
             </div>
-            <scpan class="mandatory-field-msg">*Champs obligatoires</scpan>
+            <span class="mandatory-field-msg">{{ pll__('* Champs obligatoires') }}</span>
         </div>
     </form>
 </div>

@@ -230,6 +230,9 @@
         });
 
 
+        $('select').on('change', function() {
+            parseInt($(this).selectedIndex) === 1 ? $(this).css('color', 'rgba(255, 255, 255, 0.6)') : $(this).css('color', 'rgba(255, 255, 255, 1)') ;
+        })
 
     });
 }(jQuery));

@@ -55,6 +55,7 @@ if (function_exists('pll_register_string'))
     pll_register_string('', 'J\'accepte de recevoir l\'infolettre et les offres du Groupe CT.', GROUPE_CT, false);
     pll_register_string('', 'Envoyer', GROUPE_CT, false);
     pll_register_string('', 'Merci de votre intérêt ! Votre demande a été bien reçue. Nous communiquerons avec vous sous peu.', GROUPE_CT, false);
+    pll_register_string('', '* Champs obligatoires', GROUPE_CT, false);
 
     /** ERRORS **/
     pll_register_string('', 'Veuillez remplir tous les champs requis.', GROUPE_CT, false);

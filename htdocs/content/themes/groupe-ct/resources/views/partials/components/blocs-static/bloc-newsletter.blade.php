@@ -39,7 +39,7 @@
                         <input type="email" id="newsletter-email" name="newsletter-email" placeholder="{{ pll__('Courriel*') }}">
                     </div>
                     <div class="contact-row">
-                        <scpan class="mandatory-field-msg">*Champs obligatoires</scpan>
+                        <scpan class="mandatory-field-msg">{{ pll__('* Champs obligatoires') }}</scpan>
                         <button type="submit" class="submit-btn">{{ pll__('Soumettre') }}</button>
                     </div>
                 </div>
