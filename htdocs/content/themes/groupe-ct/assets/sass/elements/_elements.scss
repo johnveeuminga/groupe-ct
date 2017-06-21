@@ -80,6 +80,10 @@ body {
 
 /***** BUTTONS & CTA *****/
 
+a {
+
+}
+
 .primary-btn {
   padding: 15px 30px;
   @include set-font(15px, $poppins, 700, $blue);
@@ -157,10 +161,49 @@ body {
     margin-left:40px;
   }
   &:hover {
-    opacity: 0.7;
+    opacity: 0.8;
   }
 }
 
+.contact-link-cta, .news-read-more-cta{
+  @include transition(all 0.25s ease);
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+
+.brochure-download-pdf {
+  @include inline-flex();
+  @include align-items(center);
+  @extend .poppins14BoldBlue;
+  letter-spacing: 0.08em;
+  @include transition(all 0.25s ease);
+  &:hover {
+    opacity: 0.8;
+  }
+  &:after {
+    content: url($assets + "/images/icon/pdf_dl_blue.png");
+    margin-left:15px;
+  }
+}
+
+.brochure-download-pdf-blue {
+  @extend .brochure-download-pdf;
+  &:after {
+    content: url($assets + "/images/icon/pdf_dl_blue.png");
+  }
+}
+
+.brochure-download-pdf-white {
+  @extend .brochure-download-pdf;
+  color:white;
+  background-color: $blue;
+  padding: 10px 30px;
+  &:after {
+    content: url($assets + "/images/icon/pdf_dl_white.png");
+  }
+}
 
 
 /************** TITLE ************************/
@@ -225,33 +268,7 @@ body {
 
 /**********************************************/
 
-.brochure-download-pdf {
-  @include inline-flex();
-  @include align-items(center);
-  @extend .poppins14BoldBlue;
-  letter-spacing: 0.08em;
-  &:after {
-    content: url($assets + "/images/icon/pdf_dl_blue.png");
-    margin-left:15px;
-  }
-}
 
-.brochure-download-pdf-blue {
-  @extend .brochure-download-pdf;
-  &:after {
-    content: url($assets + "/images/icon/pdf_dl_blue.png");
-  }
-}
-
-.brochure-download-pdf-white {
-  @extend .brochure-download-pdf;
-  color:white;
-  background-color: $blue;
-  padding: 10px 30px;
-  &:after {
-    content: url($assets + "/images/icon/pdf_dl_white.png");
-  }
-}
 
 //**** SLIDER *****//
 
@@ -268,9 +285,13 @@ body {
     display: block;
     width:25px;
     height:25px;
+
+
     &:before {
+
       @include center-img(50%,50%);
       content: url( $assets + "/images/icon/icon-slider-bullet-inactive.png");
+
     }
   }
   .slider-dot:first-of-type {
@@ -282,6 +303,7 @@ body {
 }
 
 .active-dot {
+
   &:before {
     content: url( $assets + "/images/icon/icon-slider-bullet-active.png")!important;
   }
@@ -297,10 +319,13 @@ body {
 }
 
 .active-dot-blue {
+
   &:before {
     content: url( $assets + "/images/icon/icon-slider-bullet-active-blue.png")!important;
   }
 }
+
+
 
 .active-slide {
   opacity: 1!important;

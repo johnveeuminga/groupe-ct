@@ -67,6 +67,7 @@
     .nav-bottom {
       @include flexbox();
       @include flex-direction(column);
+
     }
     .nav-bottom .menu-item{
 
