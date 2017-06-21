@@ -11,22 +11,22 @@ class Lego1 extends BaseLego implements LegoInterface
         return [
         	$this->generate_select('bloc_1_header_type', __('Header Type', 'GROUPE-CT'), [
 		        'standard' => __('Standard', 'GROUPE-CT'),
-        		'hero' => __('Hero', 'GROUPE-CT'),
+        		'slider' => __('Slider', 'GROUPE-CT'),
 	        ]),
-			$this->generate_repeater('bloc_1_hero_slide', __('Hero Slide', 'GROUPE-CT'),
+			$this->generate_repeater('bloc_1_slider', __('Slider', 'GROUPE-CT'),
 				[
-					$this->generate_image('bloc_1_hero_slide_image', __('Image', 'GROUPE-CT'), __('TBDxTBD', 'GROUPE-CT') ),
-					$this->generate_text('bloc_1_hero_slide_title', __('Title', 'GROUPE-CT') ),
-					$this->generate_cta('bloc_1_hero_slide_cta')[0],
-					$this->generate_cta('bloc_1_hero_slide_cta')[1],
-					$this->generate_cta('bloc_1_hero_slide_cta')[2],
+					$this->generate_image('bloc_1_slide_image', __('Image', 'GROUPE-CT'), __('TBDxTBD', 'GROUPE-CT') ),
+					$this->generate_text('bloc_1_slide_title', __('Title', 'GROUPE-CT') ),
+					$this->generate_cta('bloc_1_slide')[0],
+					$this->generate_cta('bloc_1_slide')[1],
+					$this->generate_cta('bloc_1_slide')[2],
 				],
 				1,
 				6,
 				[[[
 					'field' => 'bloc_1_header_type_key',
 					'operator' => '===',
-					'value' => 'hero'
+					'value' => 'slider'
 				]]]
 			),
 	        $this->generate_image('bloc_1_header_image', __('Image', 'GROUPE-CT'), __('TBDxTBD', 'GROUPE-CT'),
@@ -65,7 +65,7 @@ class Lego1 extends BaseLego implements LegoInterface
     {
         return [
             'key' => '5920b3ad5aec0',
-            'name' => 'bloc_1_header',
+            'name' => 'bloc_1',
             'label' => __('Bloc 1 - Header', 'GROUPE-CT'),
             'display' => 'block',
             'sub_fields' => $this->get_unique_fields(),

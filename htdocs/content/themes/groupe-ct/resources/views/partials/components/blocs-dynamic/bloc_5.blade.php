@@ -1,35 +1,30 @@
-<div class="bloc-name row">
-    <h1>BLOC #5 : Testimonials</h1>
-</div>
-
+<!-- Bloc 5 - Testimonials -->
 <div class="testimonials-main-container row">
 
     <div class="slider-main-container">
-        @for($i = 1; $i < 5; $i++)
-            <div class="slide-container slide0{{ $i }} @if($i == 1) {{ 'active-slide' }} @endif">
-                <div class="img-container mobile">
-                    <img src="{{ themosis_assets() }}/images/logo/logo-loblaw.png" alt="">
-                </div>
-
-                <div class="text-container col-md-6">
-                    <img class="testimonial-quote" src="{{ themosis_assets() }}/images/icon/icon-testimonial-quote-top.png" alt="">
-                    <p class="text">{{ $i }}Groupe CT c’est la garantiede la satisfaction,
-                        du dévouement de notre équipe lorem ipsum dolor sit amet, consectetur adipiscing.
-                    </p>
-                    <img class="testimonial-quote" src="{{ themosis_assets() }}/images/icon/icon-testimonial-quote-bottom.png" alt="">
-                    <p class="testimonial-name">LOREM IPSUM - <span class="testimonial-desc">Président, Loblaws</span></p>
-                </div>
-
-                <div class="img-container desktop col-md-6">
-                    <img src="{{ themosis_assets() }}/images/logo/logo-loblaw.png" alt="">
-                </div>
+    @foreach($block->get_field('bloc_5_slides') as $i => $slide)
+        <div class="slide-container slide{{ $i }} @if($i == 0) {{ 'active-slide' }} @endif">
+            <div class="img-container mobile">
+                <img src="{{ themosis_assets() }}/images/logo/logo-loblaw.png" alt="">
             </div>
-        @endfor
+
+            <div class="text-container col-md-6">
+                <img class="testimonial-quote" src="{{ themosis_assets() }}/images/icon/icon-testimonial-quote-top.png" alt="">
+                <p class="text">{{ $slide['bloc_5_slide_testimonial'] }}</p>
+                <img class="testimonial-quote" src="{{ themosis_assets() }}/images/icon/icon-testimonial-quote-bottom.png" alt="">
+                <p class="testimonial-name">{{ $slide['bloc_5_slide_author'] }} - <span class="testimonial-desc">{{ $slide['bloc_5_slide_author_title'] }}</span></p>
+            </div>
+
+            <div class="img-container desktop col-md-6">
+                <img src="{{ $slide['bloc_5_slide_image']['url'] }}" alt="{{ $slide['bloc_5_slide_image']['alt'] }}">
+            </div>
+        </div>
+    @endforeach
     </div>
     <div class="slider-link-container">
-        @for($i = 1; $i < 5; $i++)
-            <a class="slider-dot slide0{{ $i }} white-dot @if($i == 1) {{ 'active-dot' }} @endif" href="#"></a>
-        @endfor
+    @foreach($block->get_field('bloc_5_slides') as $i => $slide)
+        <a class="slider-dot slide{{ $i }} white-dot @if($i == 0) {{ 'active-dot' }} @endif" href="#"></a>
+    @endforeach
     </div>
 
 </div>
