@@ -48,6 +48,7 @@ class Blocs {
 					$this->fields['bloc_2_slides'] = get_sub_field('bloc_2_slide');
 					break;
 				case "bloc_3":
+					$this->fields['bloc_3_subheader'] = get_sub_field('bloc_3_subheader');
 					$this->fields['bloc_3_title'] = get_sub_field('bloc_3_title');
 					$this->fields['bloc_3_subtitle'] = get_sub_field('bloc_3_subtitle');
 					$this->fields['bloc_3_text'] = get_sub_field('bloc_3_text');

@@ -22,7 +22,7 @@ class Lego3 extends BaseLego implements LegoInterface
 	        $this->generate_text('bloc_3_phone_2_location',  __('Phone 2 - Location', 'GROUPE-CT') ),
 	        $this->generate_text('bloc_3_phone_2_label',     __('Phone 2 - Label', 'GROUPE-CT') ),
 	        $this->generate_text('bloc_3_phone_2',           __('Phone 2', 'GROUPE-CT') ),
-	        $this->generate_image('bloc_3_image',            __('Image', 'GROUPE-CT'), ___('Minimum Width : 580px | Minimum Height : 580px', 'GROUPE-CT') ),
+	        $this->generate_image('bloc_3_image',            __('Image', 'GROUPE-CT'), __('Minimum Width : 580px | Minimum Height : 580px', 'GROUPE-CT') ),
 	        $this->generate_true_false( 'bloc_3_image_left', __('Image on the left?', 'GROUPE-CT') ),
         ];
     }
