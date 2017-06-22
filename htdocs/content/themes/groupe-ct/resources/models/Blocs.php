@@ -22,7 +22,6 @@ class Blocs {
 		}
 
 		return $this->fields[$field_name];
-
 	}
 
 	public function get_fields()
@@ -49,6 +48,7 @@ class Blocs {
 					$this->fields['bloc_2_slides'] = get_sub_field('bloc_2_slide');
 					break;
 				case "bloc_3":
+					$this->fields['bloc_3_subheader'] = get_sub_field('bloc_3_subheader');
 					$this->fields['bloc_3_title'] = get_sub_field('bloc_3_title');
 					$this->fields['bloc_3_subtitle'] = get_sub_field('bloc_3_subtitle');
 					$this->fields['bloc_3_text'] = get_sub_field('bloc_3_text');
@@ -151,6 +151,18 @@ class Blocs {
 				case "bloc_17":
 					break;
 				case "bloc_18":
+					break;
+				case "bloc_19":
+                    $this->fields['bloc_19_subheader'] = get_sub_field('bloc_19_subheader');
+                    $this->fields['bloc_19_subheader_carret'] = get_sub_field('bloc_19_subheader_carret');
+                    $this->fields['bloc_19_center_subheader'] = get_sub_field('bloc_19_center_subheader');
+                    $this->fields['bloc_19_title'] = get_sub_field('bloc_19_title');
+                    $this->fields['bloc_19_center_title'] = get_sub_field('bloc_19_center_title');
+                    $this->fields['bloc_19_description'] = get_sub_field('bloc_19_description');
+                    $this->fields['bloc_19_center_description'] = get_sub_field('bloc_19_center_description');
+                    break;
+				case "bloc_20":
+                    $this->fields['bloc_20_wysiwyg'] = get_sub_field('bloc_20_wysiwyg');
 					break;
 				case "bloc_static":
 				    $this->fields['bloc_static_file'] = get_sub_field('bloc_static_file');

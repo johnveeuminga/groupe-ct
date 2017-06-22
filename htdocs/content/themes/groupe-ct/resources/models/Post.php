@@ -13,4 +13,9 @@ use Illuminate\Database\Eloquent\Model;
 class Post extends Model
 {
 
+    public static function get_features()
+    {
+
+
+    }
 }

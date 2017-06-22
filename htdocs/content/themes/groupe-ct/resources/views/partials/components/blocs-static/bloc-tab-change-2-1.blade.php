@@ -1,6 +1,12 @@
-@include('partials.components.blocs-dynamic.bloc-section-title', [
-    'title' => pll__('Maîtrisez le potentiel de vos nouveaux équipements'),
-    'desc' => pll__('Gestion changement description 2'),
+@include('partials.components.blocs-dynamic.bloc_19', [
+    'block' => null,
+    'bloc_19_subheader_carret' => false,
+    'bloc_19_subheader' => false,
+    'bloc_19_center_title' => false,
+    'bloc_19_center_description' => false,
+
+    'bloc_19_title' => pll__('Maîtrisez le potentiel de vos nouveaux équipements'),
+    'bloc_19_description' => pll__('Gestion changement description 2'),
 ])
 
 <div class="bloc-container default-width">

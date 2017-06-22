@@ -1,7 +1,3 @@
-<div class="bloc-name row">
-    <h1>SECTION NEWS</h1>
-</div>
-
 
 <section id="home-news" class="bloc-news">
     <div class="bloc-news-container default-padding default-width">
