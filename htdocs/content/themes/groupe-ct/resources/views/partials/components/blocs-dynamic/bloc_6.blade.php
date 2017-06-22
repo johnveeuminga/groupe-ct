@@ -3,46 +3,37 @@
     <div class="three-col-icons-container row">
         <div class="three-col-icons-item col-md-4">
             <div class="three-col-icons-img-container">
-                <img class="three-col-icons-img" src="{{ themosis_assets() }}/images/icon/icon-printer-circle.png " alt="" >
+                <img class="three-col-icons-img" src="{{ $block->get_field('bloc_6_1_icon')['url'] }}" alt="{{ $block->get_field('bloc_6_1_icon')['alt'] }}" >
             </div>
             <div class="three-col-icon-text">
-                <h3 class="three-col-icons-title">Équipements et fournitures d’impression d’entreprise</h3>
+                <h3 class="three-col-icons-title">{{ $block->get_field('bloc_6_1_title') }}</h3>
 
-                <p class="three-col-icons-desc">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua.
-                </p>
-                <a class="cta-see-more" href="#"><?php _e('en savoir plus', THEME_TEXTDOMAIN); ?></a>
+                <p class="three-col-icons-desc">{{ $block->get_field('bloc_6_1_description') }}</p>
+                <a class="cta-see-more" href="{{ $block->get_field('bloc_6_1_cta_link') }}" {{ $block->get_field('bloc_6_1_cta_blank') ? 'target="blank"' : '' }}>{{ $block->get_field('bloc_6_1_cta_label') }}</a>
             </div>
 
         </div>
         <div class="three-col-icons-item col-md-4">
             <div class="three-col-icons-img-container">
-                <img class="three-col-icons-img" src="{{ themosis_assets() }}/images/icon/icon-bulb-circle.png " alt="" >
+                <img class="three-col-icons-img" src="{{ $block->get_field('bloc_6_2_icon')['url'] }}" alt="{{ $block->get_field('bloc_6_2_icon')['alt'] }}" >
             </div>
             <div class="three-col-icon-text">
-                <h3 class="three-col-icons-title">Gestion électronique des documents</h3>
+                <h3 class="three-col-icons-title">{{ $block->get_field('bloc_6_2_title') }}</h3>
 
-                <p class="three-col-icons-desc">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua.
-                </p>
-                <a class="cta-see-more" href="#"><?php _e('en savoir plus', THEME_TEXTDOMAIN); ?></a>
+                <p class="three-col-icons-desc">{{ $block->get_field('bloc_6_2_description') }}</p>
+                <a class="cta-see-more" href="{{ $block->get_field('bloc_6_2_cta_link') }}" {{ $block->get_field('bloc_6_2_cta_blank') ? 'target="blank"' : '' }}>{{ $block->get_field('bloc_6_2_cta_label') }}</a>
             </div>
         </div>
 
         <div class="three-col-icons-item col-md-4">
             <div class="three-col-icons-img-container">
-                <img class="three-col-icons-img" src="{{ themosis_assets() }}/images/icon/icon-e-paper-circle.png " alt="" >
+                <img class="three-col-icons-img" src="{{ $block->get_field('bloc_6_3_icon')['url'] }}" alt="{{ $block->get_field('bloc_6_3_icon')['alt'] }}" >
             </div>
             <div class="three-col-icon-text">
-                <h3 class="three-col-icons-title">Gestion électronique des documents</h3>
+                <h3 class="three-col-icons-title">{{ $block->get_field('bloc_6_3_title') }}</h3>
 
-                <p class="three-col-icons-desc">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua.
-                </p>
-                <a class="cta-see-more" href="#"><?php _e('en savoir plus', THEME_TEXTDOMAIN); ?></a>
+                <p class="three-col-icons-desc">{{ $block->get_field('bloc_6_3_description') }}</p>
+                <a class="cta-see-more" href="{{ $block->get_field('bloc_6_3_cta_link') }}" {{ $block->get_field('bloc_6_3_cta_blank') ? 'target="blank"' : '' }}>{{ $block->get_field('bloc_6_3_cta_label') }}</a>
             </div>
         </div>
 

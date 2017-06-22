@@ -21,6 +21,7 @@ class Lego2 extends BaseLego implements LegoInterface
 		        $this->generate_text('bloc_2_slide_phone_1',           __('Phone 1', 'GROUPE-CT') ),
 		        $this->generate_text('bloc_2_slide_phone_2_label',     __('Phone 2 - Label', 'GROUPE-CT') ),
 		        $this->generate_text('bloc_2_slide_phone_2',           __('Phone 2', 'GROUPE-CT') ),
+		        // FIXME Image size to be defined
 		        $this->generate_image('bloc_2_slide_image',            __('Image', 'GROUPE-CT'), __('TBDxTBD', 'GROUPE-CT') ),
 		        $this->generate_true_false( 'bloc_2_slide_image_left', __('Image on the left?', 'GROUPE-CT') ),
             ])

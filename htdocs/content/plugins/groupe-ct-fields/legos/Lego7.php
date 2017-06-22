@@ -10,9 +10,11 @@ class Lego7 extends BaseLego implements LegoInterface
     {
         return [
         	$this->generate_repeater('bloc_7_row', 'Rows', [
+		        // FIXME Image size to be defined
 		        $this->generate_image('bloc_7_col_1_icon', 'Icon', 'TBDxTBD'),
 		        $this->generate_text('bloc_7_col_1_title', 'Title'),
 		        $this->generate_textarea('bloc_7_col_1_description', 'Description'),
+		        // FIXME Image size to be defined
 		        $this->generate_image('bloc_7_col_2_icon', 'Icon', 'TBDxTBD'),
 		        $this->generate_text('bloc_7_col_2_title', 'Title'),
 		        $this->generate_textarea('bloc_7_col_2_description', 'Description'),

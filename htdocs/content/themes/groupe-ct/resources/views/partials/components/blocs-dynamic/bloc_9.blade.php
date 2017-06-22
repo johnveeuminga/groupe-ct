@@ -1,77 +1,43 @@
-<div class="bloc-name row">
-    <h1>BLOC #9 Charts</h1>
-</div>
-
+<!-- Block 9 - Statistics -->
 <div class="default-padding ">
     <div class="col-xs-12">
 
         <div class="chart-main-container">
             <!-- THE ELEMENT START  -->
-                <div class="chart-container">
-                    <div class="chart">
-                        <canvas class="doughnut-chart01 doughnut-chart"></canvas>
-                    </div>
-                    <div class="chart-text">
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
-                        </p>
-                        <span>Document Scanning in the Office</span>
-                    </div>
+            <div class="chart-container">
+                <div class="chart">
+                    <canvas class="doughnut-chart01 doughnut-chart" data-initiated="false" data-description="{{ $block->get_field('bloc_9_1_description') }}" data-unfilled="{{ $block->get_field('bloc_9_1_unfilled') }}" data-primary="{{ $block->get_field('bloc_9_1_primary') }}" data-percentage="{{ $block->get_field('bloc_9_1_percentage') }}" data-label="{{ $block->get_field('bloc_9_1_label') }}"></canvas>
                 </div>
+                <div class="chart-text">
+                    <p>{{ $block->get_field('bloc_9_1_description') }}</p>
+                    <span>{{ $block->get_field('bloc_9_1_source') }}</span>
+                </div>
+            </div>
             <!-- THE ELEMENT END  -->
 
             <!-- THE ELEMENT START  -->
             <div class="chart-container">
                 <div class="chart">
-                    <canvas class="doughnut-chart02 doughnut-chart"></canvas>
+                    <canvas class="doughnut-chart02 doughnut-chart" data-initiated="false" data-description="{{ $block->get_field('bloc_9_2_description') }}" data-unfilled="{{ $block->get_field('bloc_9_2_unfilled') }}" data-primary="{{ $block->get_field('bloc_9_2_primary') }}" data-percentage="{{ $block->get_field('bloc_9_2_percentage') }}" data-label="{{ $block->get_field('bloc_9_2_label') }}"></canvas>
                 </div>
                 <div class="chart-text">
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
-                    </p>
-                    <span>Document Scanning in the Office</span>
+                    <p>{{ $block->get_field('bloc_9_2_description') }}</p>
+                    <span>{{ $block->get_field('bloc_9_2_source') }}</span>
                 </div>
             </div>
             <!-- THE ELEMENT END  -->
         </div>
+        <!-- FIXME -->
+        <h3>Missing fields</h3>
+        <ul>
+            <li>bloc_9_title</li>
+        </ul>
     </div>
 </div>
 
 <script>
 
-//    var data = {
-//        datasets: [
-//            {
-//                data: [60, 40],
-//                backgroundColor: [
-//                    "#063a65",
-//                    "#cdd8e0",
-//                ],
-//            }]
-//    };
 
-//    var inView = false;
-//
-//    function isScrolledIntoView(elem) {
-//        var docViewTop = $(window).scrollTop();
-//        var docViewBottom = docViewTop + $(window).height();
-//
-//        var elemTop = $(elem).offset().top;
-//        var elemBottom = elemTop + $(elem).height();
-//
-//        return ((elemTop <= docViewBottom) && (elemBottom >= docViewTop));
-//    }
-//
-//    $(window).scroll(function () {
-//        if (isScrolledIntoView('.doughnut-chart01')) {
-//            if (inView) {
-//                return;
-//            }
-//            inView = true;
-//            new Chart(document.getElemenstByClassName("doughnut-chart01").getContext("2d")).Doughnut(data);
-//        } else {
-//            inView = false;
-//        }
-//    });
+
 
 </script>

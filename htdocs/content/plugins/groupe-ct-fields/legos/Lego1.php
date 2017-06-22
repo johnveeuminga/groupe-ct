@@ -15,6 +15,7 @@ class Lego1 extends BaseLego implements LegoInterface
 	        ]),
 			$this->generate_repeater('bloc_1_slider', __('Slider', 'GROUPE-CT'),
 				[
+					// FIXME Image size to be defined
 					$this->generate_image('bloc_1_slide_image', __('Image', 'GROUPE-CT'), __('TBDxTBD', 'GROUPE-CT') ),
 					$this->generate_text('bloc_1_slide_title', __('Title', 'GROUPE-CT') ),
 					$this->generate_cta('bloc_1_slide')[0],
@@ -29,6 +30,7 @@ class Lego1 extends BaseLego implements LegoInterface
 					'value' => 'slider'
 				]]]
 			),
+	        // FIXME Image size to be defined
 	        $this->generate_image('bloc_1_header_image', __('Image', 'GROUPE-CT'), __('TBDxTBD', 'GROUPE-CT'),
 		        [[[
 			        'field' => 'bloc_1_header_type_key',
