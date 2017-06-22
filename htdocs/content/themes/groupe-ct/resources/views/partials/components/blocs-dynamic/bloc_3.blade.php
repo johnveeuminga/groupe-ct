@@ -2,7 +2,7 @@
 <div class="img-plus-text img-plus-text-normal default-padding default-width">
 
     <div class="img-container">
-        <img src="{{ $block->get_field('bloc_3_image')['url') }}" alt="{{ $block->get_field('bloc_3_image']['alt') }}">
+        <img src="{{ $block->get_field('bloc_3_image')['url'] }}" alt="{{ $block->get_field('bloc_3_image')['alt'] }}">
     </div>
     <div class="buffer"></div>
     <div class="text-container">
