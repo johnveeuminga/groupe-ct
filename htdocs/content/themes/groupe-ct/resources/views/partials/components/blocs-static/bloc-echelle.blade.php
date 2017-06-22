@@ -29,11 +29,13 @@
 
 <section id="home-echelle" class="bloc-echelle-main-container">
 
-    <div class="benefits-title-container">
-        <div class="line"></div>
-        <div class="title"><?php _e('Échelle numérique', THEME_TEXTDOMAIN); ?></div>
-        <div class="line"></div>
-    </div>
+    @if (is_front_page() === false)
+        <div class="benefits-title-container">
+            <div class="line"></div>
+            <div class="title"><?php _e('Échelle numérique', THEME_TEXTDOMAIN); ?></div>
+            <div class="line"></div>
+        </div>
+    @endif
 
     <div class="bloc-echelle-container default-padding default-width bloc-echelle-michael">
         <a href="{{ PageHelper::get_page_permalink(PageHelper::PAGE_1_1_ENVIRONNEMENT_PAPIER) }}"><div class="hover-zone zone-papier" data-target="#hover-papier"></div></a>
