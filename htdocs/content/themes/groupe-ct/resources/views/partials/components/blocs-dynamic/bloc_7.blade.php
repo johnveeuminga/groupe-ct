@@ -1,51 +1,21 @@
 <!-- Block 7 - Row repeater -->
 <div class="two-col-icons-text-main-container default-padding default-width">
+    @foreach($block->get_field('bloc_7_rows') as $row)
     <div class="two-col-icons-text-item col-xs-12 col-sm-6">
         <div class="two-col-icons-text-img-container">
-            <img class="two-col-icons-text-img" src="{{ themosis_assets() }}/images/icon/icon-bars-circle.png " alt="" >
+            <img class="two-col-icons-text-img" src="{{ $row['bloc_7_col_1_icon']['url'] }}" alt="{{ $row['bloc_7_col_1_icon']['alt'] }}">
         </div>
 
-        <h3 class="two-col-icons-text-title">Efficacité
-            d’entreprise</h3>
-        <p class="two-col-icons-text-desc">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua.
-        </p>
+        <h3 class="two-col-icons-text-title">{{ $row['bloc_7_col_1_title'] }}</h3>
+        <p class="two-col-icons-text-desc">{{ $row['bloc_7_col_1_description'] }}</p>
     </div>
     <div class="two-col-icons-text-item col-xs-12 col-sm-6">
         <div class="two-col-icons-text-img-container">
-            <img class="two-col-icons-text-img" src="{{ themosis_assets() }}/images/icon/icon-dollar-circle.png " alt="" >
+            <img class="two-col-icons-text-img" src="{{ $row['bloc_7_col_2_icon']['url'] }}" alt="{{ $row['bloc_7_col_2_icon']['alt'] }}">
         </div>
 
-        <h3 class="two-col-icons-text-title">Efficacité
-            d’entreprise</h3>
-        <p class="two-col-icons-text-desc">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua.
-        </p>
+        <h3 class="two-col-icons-text-title">{{ $row['bloc_7_col_2_title'] }}</h3>
+        <p class="two-col-icons-text-desc">{{ $row['bloc_7_col_2_description'] }}</p>
     </div>
-    <div class="two-col-icons-text-item col-xs-12 col-sm-6">
-        <div class="two-col-icons-text-img-container">
-            <img class="two-col-icons-text-img" src="{{ themosis_assets() }}/images/icon/icon-lock-circle.png " alt="" >
-        </div>
-
-        <h3 class="two-col-icons-text-title">Efficacité
-            d’entreprise</h3>
-        <p class="two-col-icons-text-desc">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua.
-        </p>
-    </div>
-    <div class="two-col-icons-text-item col-xs-12 col-sm-6">
-        <div class="two-col-icons-text-img-container">
-            <img class="two-col-icons-text-img" src="{{ themosis_assets() }}/images/icon/icon-paper-stack-circle.png " alt="" >
-        </div>
-
-        <h3 class="two-col-icons-text-title">Efficacité
-            d’entreprise</h3>
-        <p class="two-col-icons-text-desc">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua.
-        </p>
-    </div>
+    @endforeach
 </div>

@@ -46,6 +46,7 @@
       }
       a {
         @include set-font(14px, $poppins, 400, white);
+        text-transform: uppercase;
       }
     }
 
@@ -59,6 +60,10 @@
       font-weight: 300;
       font-size: 14px;
       text-decoration: none;
+      &:hover {
+        @include transition(all 0.25s ease);
+        color: white;
+      }
     }
 
     .footer-nav.contact .nav-link-container {

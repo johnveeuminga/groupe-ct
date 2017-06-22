@@ -1,4 +1,4 @@
-Chart.pluginService.register({
+Chart.plugins.register({
     afterUpdate: function (chart) {
         if (chart.config.options.elements.center) {
             var helpers = Chart.helpers;
@@ -56,101 +56,71 @@ Chart.pluginService.register({
             ctx.fillText(centerConfig.text, centerX, centerY);
             ctx.restore();
         }
-    },
-})
+    }
+});
 
 (function($) {
     $(document).ready(function() {
 
+        function isScrolledIntoView(elem) {
+            var docViewTop = jQuery(window).scrollTop();
+            var docViewBottom = docViewTop + jQuery(window).height();
 
-        var data = {
-            labels: [
-                "Red",
-                "Blue",
-            ],
-            datasets: [
-                {
-                    data: [60, 40],
-                    backgroundColor: [
-                        "#063a65",
-                        "#cdd8e0",
-                    ],
-                }]
-        };
+            var elemTop = jQuery(elem).offset().top;
+            var elemBottom = elemTop + jQuery(elem).height();
 
-        var promisedDeliveryChart = new Chart(document.getElementsByClassName('doughnut-chart01'), {
-            type: 'doughnut',
-            data: data,
-            options: {
-                //responsive: true,
+            return ((elemTop <= docViewBottom) && (elemBottom >= docViewTop));
+        }
 
-                legend: {
-                    display: false,
-                },
-                elements: {
-                    center: {
-                        // the longest text that could appear in the center
-                        maxText: '100%',
-                        text: '60%',
-                        fontColor: '#063a65',
-                        fontFamily: "'Helvetica Neue', 'Helvetica', 'Arial', sans-serif",
-                        fontStyle: 'normal',
-                        // fontSize: 12,
-                        // if a fontSize is NOT specified, we will scale (within the below limits) maxText to take up the maximum space in the center
-                        // if these are not specified either, we default to 1 and 256
-                        minFontSize: 1,
-                        maxFontSize: 256,
-                    }
-                },
-                cutoutPercentage: 80
-            }
+
+        jQuery(window).scroll(function () {
+            $('.doughnut-chart').each(function() {
+                if (isScrolledIntoView($(this)) && $(this).data('initiated') === false) {
+                    $(this).data('initiated', true);
+                    var description = $(this).data('description'),
+                        percentage = parseInt($(this).data('percentage')),
+                        rest = 100 - percentage,
+                        primary = $(this).data('primary'),
+                        unfilled = $(this).data('unfilled'),
+                        label = $(this).data('label');
+
+                    var data = {
+                        labels: [ description, "" ],
+                        datasets: [{
+                            data: [ percentage, rest ],
+                            backgroundColor: [ primary, unfilled ]
+                        }]
+                    };
+                    new Chart($(this), {
+                        type: 'doughnut',
+                        data: data,
+                        options: {
+                            //responsive: true,
+                            legend: {
+                                display: false
+                            },
+                            elements: {
+                                center: {
+                                    // the longest text that could appear in the center
+                                    maxText: '100%',
+                                    text: label,
+                                    fontColor: '#063a65',
+                                    fontFamily: "'Helvetica Neue', 'Helvetica', 'Arial', sans-serif",
+                                    fontStyle: 'normal',
+                                    // fontSize: 12,
+                                    // if a fontSize is NOT specified, we will scale (within the below limits) maxText to take up the maximum space in the center
+                                    // if these are not specified either, we default to 1 and 256
+                                    minFontSize: 1,
+                                    maxFontSize: 256,
+                                }
+                            },
+                            cutoutPercentage: 80
+                        }
+                    });
+                }
+            });
+
         });
-
-        var data = {
-            labels: [
-                "Red",
-                "Blue",
-            ],
-            datasets: [
-                {
-                    data: [60, 40],
-                    backgroundColor: [
-                        "#063a65",
-                        "#cdd8e0",
-                    ],
-                }]
-        };
-
-        var promisedDeliveryChart = new Chart(document.getElementsByClassName('doughnut-chart02'), {
-            type: 'doughnut',
-            data: data,
-            options: {
-                //responsive: true,
-
-                legend: {
-                    display: false,
-                },
-                elements: {
-                    center: {
-                        // the longest text that could appear in the center
-                        maxText: '100%',
-                        text: '60%',
-                        fontColor: '#063a65',
-                        fontFamily: "'Helvetica Neue', 'Helvetica', 'Arial', sans-serif",
-                        fontStyle: 'normal',
-                        // fontSize: 12,
-                        // if a fontSize is NOT specified, we will scale (within the below limits) maxText to take up the maximum space in the center
-                        // if these are not specified either, we default to 1 and 256
-                        minFontSize: 1,
-                        maxFontSize: 256,
-                    }
-                },
-                cutoutPercentage: 80
-            }
-        });
-
-
-
     });
 }(jQuery));
 

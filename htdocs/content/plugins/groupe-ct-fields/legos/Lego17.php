@@ -9,6 +9,7 @@ class Lego17 extends BaseLego implements LegoInterface
 	public function get_unique_fields()
 	{
 		return [
+			// FIXME Image size to be defined
 			$this->generate_image('bloc_17_background_image', __('Background Image', 'GROUPE-CT'), __('TBDxTBD', 'GROUPE-CT') ),
 			$this->generate_tab('bloc_17_1',                  __('Statistic 1', 'GROUPE-CT') ),
 			$this->generate_image('bloc_17_1_icon',           __('Icon', 'GROUPE-CT'), __('50x50', 'GROUPE-CT') ),

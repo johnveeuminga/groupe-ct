@@ -20,6 +20,7 @@ class LegoStatic extends BaseLego implements LegoInterface
 			    'bloc-partners' => 'Bloc Partenaires',
 			    'bloc-latest-news' => 'Bloc dernières nouvelles',
 			    'bloc-newsletter' => 'Bloc Infolettre',
+			    'bloc-support-technique' => 'Bloc Support Technique 3.0',
             ]),
 		];
 	}

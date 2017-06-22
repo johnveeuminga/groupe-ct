@@ -10,6 +10,7 @@ class Lego11 extends BaseLego implements LegoInterface
 	{
 		return [
 			$this->generate_true_false( 'bloc_11_slide_image_left', __('Image on the left?', 'GROUPE-CT') ),
+			// FIXME Image size to be defined
 			$this->generate_image('bloc_11_slide_image',            __('Image', 'GROUPE-CT'), __('TBDxTBD', 'GROUPE-CT') ),
 			$this->generate_url('bloc_11_video_link',               __('Video Link', 'GROUPE-CT') ),
 			$this->generate_text('bloc_11_video_caption',           __('Video Caption', 'GROUPE-CT') ),

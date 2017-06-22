@@ -10,6 +10,7 @@ class Lego5 extends BaseLego implements LegoInterface
     {
         return [
         	$this->generate_repeater('bloc_5_slide',                 __('Testimonial', 'GROUPE-CT'), [
+		        // FIXME Image size to be defined
 		        $this->generate_image('bloc_5_slide_image',          __('Image', 'GROUPE-CT'), __('TBDxTBD', 'GROUPE-CT') ),
 		        $this->generate_textarea('bloc_5_slide_testimonial', __('Text', 'GROUPE-CT') ),
 		        $this->generate_text('bloc_5_slide_author',          __('Author', 'GROUPE-CT') ),
