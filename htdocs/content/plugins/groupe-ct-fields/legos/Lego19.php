@@ -11,6 +11,7 @@ class Lego19 extends BaseLego implements LegoInterface
 		return [
 			$this->generate_text('bloc_19_subheader', 'Subheader'),
             $this->generate_true_false('bloc_19_subheader_carret', 'Subheader red square'),
+            $this->generate_true_false('bloc_19_center_subheader', 'Center subheader'),
 			$this->generate_text('bloc_19_title', 'Title'),
 			$this->generate_true_false('bloc_19_center_title', 'Center Title'),
 			$this->generate_wysiwyg('bloc_19_description', 'Description'),

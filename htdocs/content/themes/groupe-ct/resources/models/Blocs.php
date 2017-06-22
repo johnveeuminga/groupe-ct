@@ -155,6 +155,7 @@ class Blocs {
 				case "bloc_19":
                     $this->fields['bloc_19_subheader'] = get_sub_field('bloc_19_subheader');
                     $this->fields['bloc_19_subheader_carret'] = get_sub_field('bloc_19_subheader_carret');
+                    $this->fields['bloc_19_center_subheader'] = get_sub_field('bloc_19_center_subheader');
                     $this->fields['bloc_19_title'] = get_sub_field('bloc_19_title');
                     $this->fields['bloc_19_center_title'] = get_sub_field('bloc_19_center_title');
                     $this->fields['bloc_19_description'] = get_sub_field('bloc_19_description');
