@@ -10,7 +10,7 @@
  */
 
 Route::get('/components', 'HomeController@blocs');
-Route::any('front', 'HomeController@index');
+Route::any('front', 'PageController@index');
 Route::any('page', 'PageController@index');
 
 Route::any('single', 'PageController@publication');

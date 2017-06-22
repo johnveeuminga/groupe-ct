@@ -2,18 +2,21 @@
 <div class="img-plus-text default-padding default-width">
     <div class="slider-main-container">
         @foreach($block->get_field('bloc_2_slides') as $i => $slide)
-            <div class="slide-container slide{{ $i }} @if($i == 0) {{ 'active-slide' }} @endif">
+            <div class="slide-container slide{{ $i }} @if($i == 0) {{ 'active-slide' }} @endif @if($slide['bloc_2_slide_image_left']) reverse-elem @endif">
                 <div class="img-container">
                     <img src="{{ $slide['bloc_2_slide_image']['url'] }}" alt="{{ $slide['bloc_2_slide_image']['alt'] }}">
                 </div>
                 <div class="buffer"></div>
 
                 <div class="text-container">
-                    <li class="upper-title">{{ $slide['bloc_2_slide_subheader'] }}</li>
-                    <h2 class="text-container-title">{{ $slide['bloc_2_slide_title'] }}</h2>
-                    <h3 class="text-container-subtitle">{{ $slide['bloc_2_slide_subtitle'] }}</h3>
-                    <p class="text">{{ $slide['bloc_2_slide_text'] }}</p>
-                    <a class="btn-bloc2 primary-btn-blue" href="{{ $slide['bloc_2_slide_cta_link'] }}" {{ $slide['bloc_2_slide_cta_blank'] ? "target='_blank'" : "" }}>{{ $slide['bloc_2_slide_cta_label'] }}</a>
+                    @if (!empty($slide['bloc_2_slide_subheader']))<li class="upper-title">{{ $slide['bloc_2_slide_subheader'] }}</li>@endif
+                    @if (!empty($slide['bloc_2_slide_title']))<h2 class="text-container-title">{{ $slide['bloc_2_slide_title'] }}</h2>@endif
+                    @if (!empty($slide['bloc_2_slide_subtitle']))<h3 class="text-container-subtitle">{{ $slide['bloc_2_slide_subtitle'] }}</h3>@endif
+                    @if (!empty($slide['bloc_2_slide_text']))<p class="text">{{ $slide['bloc_2_slide_text'] }}</p>@endif
+
+
+
+                    @if (!empty($slide['bloc_2_slide_cta_link']))<a class="btn-bloc2 primary-btn-blue" href="{{ $slide['bloc_2_slide_cta_link'] }}" {{ $slide['bloc_2_slide_cta_blank'] ? "target='_blank'" : "" }}>{{ $slide['bloc_2_slide_cta_label'] }}</a>@endif
 
                     <!-- FIXME -->
                     <h3>Missing fields</h3>

@@ -242,7 +242,6 @@ body {
   }
   .desc {
     @extend .mada22LightBlack;
-    padding-bottom: 30px;
   }
 
 }
@@ -431,10 +430,6 @@ body {
 
 
 /* JUST FOR DEV */
-
-#footer {
-  margin-top:50px;
-}
 
 .bloc-name {
   background-color: $red;

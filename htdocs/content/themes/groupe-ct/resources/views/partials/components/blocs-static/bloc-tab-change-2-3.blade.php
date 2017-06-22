@@ -1,6 +1,12 @@
-@include('partials.components.blocs-dynamic.bloc-section-title', [
-    'title' => pll__('Réussir votre transition vers la GED'),
-    'desc' => pll__('Gestion changement description 4'),
+@include('partials.components.blocs-dynamic.bloc_19', [
+    'block' => null,
+    'bloc_19_subheader_carret' => false,
+    'bloc_19_subheader' => false,
+    'bloc_19_center_title' => false,
+    'bloc_19_center_description' => false,
+
+    'bloc_19_title' => pll__('Réussir votre transition vers la GED'),
+    'bloc_19_description' => pll__('Gestion changement description 4'),
 ])
 
 <div class="bloc-container default-width">
