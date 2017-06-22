@@ -22,7 +22,6 @@ class Blocs {
 		}
 
 		return $this->fields[$field_name];
-
 	}
 
 	public function get_fields()
@@ -151,6 +150,17 @@ class Blocs {
 				case "bloc_17":
 					break;
 				case "bloc_18":
+					break;
+				case "bloc_19":
+                    $this->fields['bloc_19_subheader'] = get_sub_field('bloc_19_subheader');
+                    $this->fields['bloc_19_subheader_carret'] = get_sub_field('bloc_19_subheader_carret');
+                    $this->fields['bloc_19_title'] = get_sub_field('bloc_19_title');
+                    $this->fields['bloc_19_center_title'] = get_sub_field('bloc_19_center_title');
+                    $this->fields['bloc_19_description'] = get_sub_field('bloc_19_description');
+                    $this->fields['bloc_19_center_description'] = get_sub_field('bloc_19_center_description');
+                    break;
+				case "bloc_20":
+                    $this->fields['bloc_20_wysiwyg'] = get_sub_field('bloc_20_wysiwyg');
 					break;
 				case "bloc_static":
 				    $this->fields['bloc_static_file'] = get_sub_field('bloc_static_file');

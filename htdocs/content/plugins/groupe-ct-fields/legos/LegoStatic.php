@@ -26,7 +26,6 @@ class LegoStatic extends BaseLego implements LegoInterface
 	public function get_fields_layout()
 	{
 		return [
-
 			'key' => 'bloc_static_key',
 			'name' => 'bloc_static',
 			'label' => 'Bloc Static',
