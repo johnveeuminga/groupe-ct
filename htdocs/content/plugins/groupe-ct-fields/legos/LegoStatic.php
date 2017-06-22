@@ -17,8 +17,9 @@ class LegoStatic extends BaseLego implements LegoInterface
 			    'bloc-tab-change-2-1' => 'Bloc Équipements d\'impression - 2.1',
 			    'bloc-tab-change-2-2' => 'Bloc Services d\'impression gérés - 2.2',
 			    'bloc-tab-change-2-3' => 'Bloc Gestion électronique des documents - 2.3',
-			    'bloc-tab-newsletter' => 'Bloc Partenaires',
-			    'bloc-tab-partner' => 'Bloc Infolettre',
+			    'bloc-partners' => 'Bloc Partenaires',
+			    'bloc-latest-news' => 'Bloc dernières nouvelles',
+			    'bloc-newsletter' => 'Bloc Infolettre',
             ]),
 		];
 	}
