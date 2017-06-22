@@ -170,6 +170,9 @@ if (function_exists('pll_register_string'))
     pll_register_string('NOUS JOINDRE 4.7 - 3 BLOCS STATIQUES', 'Commande de fournitures', GROUPE_CT, false);
     pll_register_string('NOUS JOINDRE 4.7 - 3 BLOCS STATIQUES', 'Contact nous joindre col 3', GROUPE_CT, true);
 
+    /** Latest news */
+    pll_register_string('DERNIÈREs PUBLICATIONS', 'Lire la nouvelle', GROUPE_CT, false);
+
     /** misc */
     pll_register_string('MISC', 'CONTACTEZ-NOUS', GROUPE_CT, false);
 
