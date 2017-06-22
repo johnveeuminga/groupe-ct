@@ -8,7 +8,7 @@
     <div class="text-container">
         <!-- FIXME -->
         @if (!empty('bloc_3_subtitle'))<p class="upper-title">{{ $block['bloc_3_subtitle'] }}</p>@endif
-        @if (!empty('bloc_3_title'))<h2 class="text-container-title">{{ $block['bloc_3_title'] }}</h2@endif>
+        @if (!empty('bloc_3_title'))<h2 class="text-container-title">{{ $block['bloc_3_title'] }}</h2>@endif
         @if (!empty('bloc_3_text'))<p class="text">{{ $block['bloc_3_text'] }}</p>@endif
         @if (!empty($block['bloc_3_phone_1']) || !empty($block['bloc_3_phone_2']))
             <div class="contact-container">
