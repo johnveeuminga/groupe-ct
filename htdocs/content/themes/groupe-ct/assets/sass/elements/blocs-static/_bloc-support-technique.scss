@@ -1,19 +1,37 @@
 .tech-support-main-container {
 
+  /**** General css ****/
   .form-container {
     margin-top: 35px;
+    @include flexbox();
+    @include flex-direction(column);
+    @media (min-width: $screen-md-min) {
+      @include flex-direction(row);
+    }
+
+    .form-left-container, .form-right-container {
+      @include flexbox();
+      @include flex-direction(column);
+
+    }
+    .form-left-container {
+      margin-bottom:30px;
+      @media (min-width: $screen-md-min) {
+        margin-bottom:0px;
+        padding-left:0;
+        padding-right:25px;
+      }
+    }
+    .form-right-container {
+
+      @media (min-width: $screen-md-min) {
+        padding-left:25px;
+        padding-right:0;
+      }
+    }
   }
 
-  .form-left-container {
-    padding-left:0;
-    padding-right:25px;
-  }
-  .form-right-container {
-    padding-left:25px;
-    padding-right:0;
-  }
-
-  p {
+  .form-container p {
     @extend .mada22LightBlack;
   }
 
@@ -22,32 +40,40 @@
     border:1px solid $grey-light;
     @include border-radius(2px);
     padding: 25px 15px;
+    margin-bottom: 20px;
 
   }
   .input-container {
     @include flexbox();
-    margin-bottom: 20px;
+    @include flex-direction(column);
+    @media (min-width: $screen-sm-min) {
+      @include flex-direction(row);
+    }
     @include placeholder(18px, $mada, 300, $grey-placeholder, 1);
+    //margin-bottom: 20px;
   }
 
-  .form-env-container {
-    @include flexbox();
+  /*** THE FORMS ****/
 
+  #form-env-container {
     .form-left-container p:first-of-type{
       margin-bottom:30px;
     }
-
-    #env-division {
-      width:100%;
-    }
     .input-container:nth-child(2) {
       @include flexbox();
-      @include justify-content(space-between);
+      @include flex-direction(column);
+      @media (min-width: $screen-md-min) {
+        @include flex-direction(row);
+        @include justify-content(space-between);
+      }
     }
     .input-container:nth-child(2) .tech-support-input{
-     @include flex-basis(43%);
-    }
+      @include flex-basis(43%);
 
+      @media (min-width: $screen-md-min) {
+        margin-bottom: 0;
+      }
+    }
     .form-footer {
       @include flexbox();
       @include justify-content(space-between);
@@ -57,11 +83,24 @@
         @extend .mada18RegBlack;
       }
     }
+  }
+
+  #form-assistance-container {
+    @include flex-direction(column);
+    .form-left-container {
+
+
+    }
 
   }
 
+
   .isBold {
     @extend .mada22RegBlack;
+  }
+
+  .fullWidth {
+    width:100%;
   }
 
 }//SECTION END
