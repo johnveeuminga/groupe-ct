@@ -46,6 +46,11 @@
       }
       a {
         @include set-font(14px, $poppins, 400, white);
+        text-transform: uppercase;
+        &:hover {
+          @include transition(all 0.25s ease);
+          color: white;
+        }
       }
     }
 
