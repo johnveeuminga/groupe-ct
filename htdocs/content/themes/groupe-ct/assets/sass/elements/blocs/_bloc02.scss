@@ -74,7 +74,7 @@
       }
     }
     .text-container-subtitle {
-      @include set-font(22px, $poppins, 700, $blue);
+      @include set-font(45px, $poppins, 700, $dark-gray);
       text-transform: uppercase;
       margin:15px 0;
     }
