@@ -64,6 +64,7 @@ if (function_exists('pll_register_string'))
     pll_register_string('', 'Votre adresse est déjà inscrite dans notre base de données, merci de votre intérêt.', GROUPE_CT, false);
     pll_register_string('', 'La requête n\'est pas valide, veuillez réessayer.', GROUPE_CT, false);
 
+    /** Gestion changement général */
     pll_register_string('MODULE sur la page 2.0 PRODUITS ET SOLUTIONS', 'PLANIFICATION', false);
     pll_register_string('MODULE sur la page 2.0 PRODUITS ET SOLUTIONS', 'EXÉCUTION ET INSTALLATION', false);
     pll_register_string('MODULE sur la page 2.0 PRODUITS ET SOLUTIONS', 'FORMATION', false);
@@ -168,5 +169,8 @@ if (function_exists('pll_register_string'))
     pll_register_string('NOUS JOINDRE 4.7 - 3 BLOCS STATIQUES', 'Contact nous joindre col 2', GROUPE_CT, true);
     pll_register_string('NOUS JOINDRE 4.7 - 3 BLOCS STATIQUES', 'Commande de fournitures', GROUPE_CT, false);
     pll_register_string('NOUS JOINDRE 4.7 - 3 BLOCS STATIQUES', 'Contact nous joindre col 3', GROUPE_CT, true);
+
+    /** misc */
+    pll_register_string('MISC', 'CONTACTEZ-NOUS', GROUPE_CT, false);
 
 }
