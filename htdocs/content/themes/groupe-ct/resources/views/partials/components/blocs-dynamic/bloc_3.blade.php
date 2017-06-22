@@ -28,6 +28,6 @@
                 @endif
             </div>
         @endif
-        @if ($slide['bloc_3_slide_cta_link'))<a class="btn-bloc2 primary-btn-blue" href="{{ $slide['bloc_3_slide_cta_link') }}" {{ $slide['bloc_3_slide_cta_blank'] ? "target='_blank'" : "" }}>{{ $slide['bloc_3_slide_cta_label') }}</a>@endif
+        @if ($slide['bloc_3_slide_cta_link'])<a class="btn-bloc2 primary-btn-blue" href="{{ $block->get_field('bloc_3_slide_cta_link') }}" {{ $$block->get_field('bloc_3_slide_cta_blank') ? "target='_blank'" : "" }}>{{ $block->get_field('bloc_3_slide_cta_label') }}</a>@endif
     </div>
 </div>
