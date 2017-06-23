@@ -3,8 +3,8 @@
 $acf_fields = new BaseLego();
 
 acf_add_local_field_group(array (
-    'key' => 'post_field_group',
-    'title' => 'Post Details',
+    'key' => 'page_field_group',
+    'title' => 'Page Details',
     'fields' => array (
         $acf_fields->generate_text('page_html_title', __('Titre H1 HTML', GROUPE_CT)),
     ),
