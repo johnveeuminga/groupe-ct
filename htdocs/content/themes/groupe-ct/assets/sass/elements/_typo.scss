@@ -31,6 +31,9 @@
 .poppins15BoldRed {
   @include set-font(15px, $poppins, 700, $red);
 }
+.poppins15BoldWhite {
+  @include set-font(15px, $poppins, 700, white);
+}
 .poppins15BoldBlue {
   @include set-font(15px, $poppins, 700, $blue);
 }
