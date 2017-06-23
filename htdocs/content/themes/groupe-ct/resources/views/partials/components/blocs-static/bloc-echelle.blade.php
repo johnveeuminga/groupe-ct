@@ -42,8 +42,8 @@
         <a href="{{ PageHelper::get_page_permalink(PageHelper::PAGE_1_2_ENVIRONNEMENT_HYBRIDE) }}"><div class="hover-zone zone-hybride" data-target="#hover-hybride"></div></a>
         <a href="{{ PageHelper::get_page_permalink(PageHelper::PAGE_1_3_ENVIRONNEMENT_NUMERIQUE) }}"><div class="hover-zone zone-numerique" data-target="#hover-numerique"></div></a>
         <img id="echelle-background-image" src="{{ themosis_assets() }}/images/echelle/desktop/main.png" class="" />
-        <img id="hover-papier" src="{{ themosis_assets() }}/images/echelle/desktop/hover-papier.png">
-        <img id="hover-hybride" src="{{ themosis_assets() }}/images/echelle/desktop/hover-hybride.png">
-        <img id="hover-numerique" src="{{ themosis_assets() }}/images/echelle/desktop/hover-numerique.png">
+        <img id="hover-papier {{ PageHelper::PAGE_1_1_ENVIRONNEMENT_PAPIER === get_the_ID() ? 'active' : '' }}" src="{{ themosis_assets() }}/images/echelle/desktop/hover-papier.png">
+        <img id="hover-hybride {{ PageHelper::PAGE_1_2_ENVIRONNEMENT_HYBRIDE === get_the_ID() ? 'active' : '' }}" src="{{ themosis_assets() }}/images/echelle/desktop/hover-hybride.png">
+        <img id="hover-numerique {{ PageHelper::PAGE_1_3_ENVIRONNEMENT_NUMERIQUE === get_the_ID() ? 'active' : '' }}" src="{{ themosis_assets() }}/images/echelle/desktop/hover-numerique.png">
     </div>
 </section>

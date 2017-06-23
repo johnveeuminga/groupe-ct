@@ -38,11 +38,13 @@
       top: -15px;
       left: -2000px;
 
-      &.slide-in {
+      &.slide-in,
+      &.active {
         display: block;
         transition: 0.5s;
         left: -15px;
       }
+
     }
 
     #echelle-background-image {
