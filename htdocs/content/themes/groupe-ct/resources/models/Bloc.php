@@ -2,7 +2,7 @@
 
 namespace Theme\Models;
 
-class Blocs {
+class Bloc {
 
 	private $block_type;
 	private $fields;
@@ -154,6 +154,7 @@ class Blocs {
 					$this->fields['bloc_9_2_source'] = get_sub_field('bloc_9_2_source');
 					break;
 				case "bloc_10":
+					$this->fields['bloc_10_products'] =
 					break;
 				case "bloc_11":
 					break;

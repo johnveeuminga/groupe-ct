@@ -1,9 +1,4 @@
-<div class="bloc-name row">
-    <h1>BLOC #10 Products</h1>
-</div>
-
-
-
+<!-- Block 10 - Products and Categories -->
 <div class="product-main-container default-padding default-width">
     <!-- THE ELEMENT START  -->
 
