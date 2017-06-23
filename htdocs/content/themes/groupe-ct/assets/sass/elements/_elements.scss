@@ -156,7 +156,7 @@ body {
   @include transition(all 0.25s ease);
   &:after {
     content:url($assets + "/images/icon/icon-cta-arrow-blue.png");
-    margin-left:40px;
+    margin-left: 20px;
   }
   &:hover {
     opacity: 0.8;
