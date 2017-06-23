@@ -1,4 +1,10 @@
 .two-col-icons-text-main-container {
+
+  margin-top: 30px;
+  @media (min-width: $screen-sm-min) {
+    margin-top: 120px;
+  }
+
   @include flexbox();
   @include flex-direction(column);
   @media (min-width: $screen-sm-min) {
