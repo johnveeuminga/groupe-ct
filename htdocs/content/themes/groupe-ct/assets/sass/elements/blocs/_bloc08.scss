@@ -11,7 +11,7 @@
     @include flexbox();
     @include justify-content(space-between);
     @include align-items(center);
-    @include transition(transform 0.5s ease);
+    @include transition(transform 2s ease);
     height:75px;
     padding: 0px 15px;
     background-color: $blue-sky;
@@ -74,6 +74,7 @@
     }
 
     &.active-header {
+      @include transition(transform 2s ease);
       background-color: $blue;
     }
   }
