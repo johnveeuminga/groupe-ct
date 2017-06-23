@@ -1,5 +1,5 @@
 .bloc-newsletter{
-  background-color: $newsletter-dark-blue;
+  background-color: $newsletter-light-blue;
 
   padding: 30px 0;
 
@@ -12,9 +12,9 @@
   }
 
   @media (min-width: $screen-sm-min) {
-    background: url($assets + "/images/bg/background_newsletter.png") $blue-light no-repeat bottom;
     background-size: cover;
     padding: 100px 0;
+    background: url($assets + "/images/bg/background_newsletter.png") $blue-light no-repeat bottom;
   }
   .newsletter-contact-form-container {
 
