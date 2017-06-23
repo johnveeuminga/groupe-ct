@@ -1,5 +1,9 @@
 .three-col-icons-main-container {
 
+  @media (min-width: $screen-lg-min) {
+    margin: 185px 0 50px 0;
+  }
+
   .three-col-icons-item {
     margin: 50px 0;
     @media (min-width: $screen-xs-min) {
