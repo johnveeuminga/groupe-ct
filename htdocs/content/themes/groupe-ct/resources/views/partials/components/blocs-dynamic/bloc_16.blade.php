@@ -1,8 +1,4 @@
-<div class="bloc-name row">
-    <h1>BLOC #16 Timeline </h1>
-</div>
-
-
+<!-- Block 16 - Timeline -->
 <div class="timeline-main-container default-padding">
     <div class="timeline-bar">
         <div class="timeline-bar-line"></div>
