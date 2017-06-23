@@ -43,6 +43,13 @@
         transition: 0.5s;
         left: -15px;
       }
+
+      &.active {
+        display: block;
+        transition: 0.5s;
+        left: -15px;
+      }
+
     }
 
     #echelle-background-image {
