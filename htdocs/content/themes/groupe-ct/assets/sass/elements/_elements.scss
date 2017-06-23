@@ -212,7 +212,7 @@ body {
   list-style: square;
   text-transform: uppercase;
 
-  :before {
+  &:before {
     content: "";
     background-color: $red;
     display: inline-block;
