@@ -10,7 +10,7 @@ class Lego6 extends BaseLego implements LegoInterface
     {
         return [
             $this->generate_tab('bloc_6_1',                __('Icon 1', 'GROUPE-CT') ),
-            $this->generate_image('bloc_6_1_icon',         __('Icon', 'GROUPE-CT'), __('50x50', 'GROUPE-CT') ),
+            $this->generate_image('bloc_6_1_icon',         __('Icon', 'GROUPE-CT'), __('Width 125px | Height 125px', 'GROUPE-CT') ),
             $this->generate_text('bloc_6_1_title',         __('Title', 'GROUPE-CT') ),
             $this->generate_textarea('bloc_6_1_description', 'Description'),
             $this->generate_cta('bloc_6_1')[0],
