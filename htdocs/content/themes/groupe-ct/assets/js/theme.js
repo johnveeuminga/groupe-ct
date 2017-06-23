@@ -49,8 +49,7 @@
         /**** CONTACT FORM ****/
 
 
-        var contact_timeout_id = null;
-
+        console.log($(".open-contact-form"));
         $(".open-contact-form").on('click', function (e) {
             e.preventDefault();
             $('.hero .contact-form-container').hasClass('slide-in') ? $('.hero .contact-form-container').removeClass('slide-in') : $('.hero .contact-form-container').addClass('slide-in');
