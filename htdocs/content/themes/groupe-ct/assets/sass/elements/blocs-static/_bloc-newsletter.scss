@@ -1,7 +1,7 @@
 .bloc-newsletter{
   background-color: $blue-dark;
 
-  @media ($screen-sm-min) {
+  @media (min-width: $screen-sm-min) {
     background: url($assets + "/images/bg/background_newsletter.png") no-repeat bottom;
     background-color: transparent;
     background-size: cover;
