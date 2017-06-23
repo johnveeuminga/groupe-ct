@@ -6,9 +6,9 @@
     </div>
     <div class="buffer"></div>
     <div class="text-container">
-        @if (!empty('bloc_3_subheader'))<p class="upper-title">{{ $block->get_field('bloc_3_subheader') }}</p>@endif
-        @if (!empty('bloc_3_title'))<h2 class="text-container-title">{{ $block->get_field('bloc_3_title') }}</h2>@endif
-        @if (!empty('bloc_3_text'))<p class="text">{{ $block->get_field('bloc_3_text') }}</p>@endif
+        @if (!empty($block->get_field('bloc_3_subheader')))<p class="upper-title">{{ $block->get_field('bloc_3_subheader') }}</p>@endif
+        @if (!empty($block->get_field('bloc_3_title')))<h2 class="text-container-title">{{ $block->get_field('bloc_3_title') }}</h2>@endif
+        @if (!empty($block->get_field('bloc_3_text')))<p class="text">{{ $block->get_field('bloc_3_text') }}</p>@endif
         @if (!empty($block->get_field('bloc_3_phone_1')) || !empty($block->get_field('bloc_3_phone_2')))
             <div class="contact-container">
                 @if (!empty($block->get_field('bloc_3_phone_1')))
