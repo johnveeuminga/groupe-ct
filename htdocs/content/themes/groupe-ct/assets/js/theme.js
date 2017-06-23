@@ -64,7 +64,7 @@
 
         $window.scroll(function() {
             if ( $window.scrollTop() >= distance ) {
-                $('.contact-form-container').hasClass('sticky')
+                $('.contact-form-container').addClass('sticky')
             } else {
                 $('.contact-form-container').removeClass('sticky')
             }
