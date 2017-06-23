@@ -12,7 +12,7 @@
   }
 
   @media (min-width: $screen-sm-min) {
-    background: url($assets + "/images/bg/background_newsletter.png") $newsletter-dark-blue no-repeat bottom;
+    background: url($assets + "/images/bg/background_newsletter.png") $blue-light no-repeat bottom;
     background-size: cover;
     padding: 100px 0;
   }
