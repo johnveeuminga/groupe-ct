@@ -1,8 +1,8 @@
 <?php
 
 namespace Theme\Models;
-
-use Illuminate\Database\Eloquent\Model;
+use Themosis\Metabox\Meta;
+use WP_Query;
 
 /**
  * Class Post.
@@ -10,10 +10,48 @@ use Illuminate\Database\Eloquent\Model;
  *
  * @package Theme\Models
  */
-class Post extends Model
+class Post
 {
 
-    public static function get_features()
+	public static function all($hydrate = true)
+	{
+		return self::first(-1, $hydrate);
+
+	}
+
+	public static function first($nb = 1, $hydrate = true)
+	{
+		$query = new WP_Query([
+			'post_type'         => 'post',
+			'posts_per_page'    => $nb,
+			'post_status'       => 'publish',
+			'orderby' => 'post_title',
+			'order' => 'ASC'
+		]);
+		$posts = $query->get_posts();
+		if ($hydrate)
+		{
+			$posts = self::hydrate($posts);
+		}
+		return $posts;
+
+	}
+
+
+	public static function hydrate($posts)
+	{
+		foreach ($posts as $post)
+		{
+			$post->image = ['url' => get_the_post_thumbnail_url($post, 'full'), 'alt' => get_the_post_thumbnail_caption($post)];
+			$post->category = get_category(wp_get_post_categories($post->ID)[0])->name;
+			$post->excerpt = get_post_meta($post->ID, 'excerpt')[0];
+			$post->permalink = get_permalink($post->ID);
+		}
+
+		return $posts;
+	}
+
+    public static function get_featured()
     {
         $meta_query[] = array(
             'key'     => 'post_is_featured',

@@ -1,5 +1,5 @@
 <?php
-$posts = \Theme\Models\Post::get_features();
+$posts = \Theme\Models\Post::get_featured();
 ?>
 <section id="home-news" class="bloc-news">
     <div class="bloc-news-container default-padding default-width">
