@@ -28,7 +28,9 @@
 
     .hero-title-container {
       color: white;
-      width: auto;
+      width: 90%;
+      margin: auto;
+      text-align: center;
 
 
       .hero-title {
@@ -37,6 +39,7 @@
         z-index: 10;
         margin-left: -5px;
         margin-right: -5px;
+        text-transform: uppercase;
         @extend .poppins80BoldWhite;
       }
     }
