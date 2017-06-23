@@ -30,6 +30,10 @@
         @include flexbox();
         @include align-items(flex-end);
       }
+
+      img {
+        margin: auto;
+      }
     }
 
     .four-col-icons-title {
