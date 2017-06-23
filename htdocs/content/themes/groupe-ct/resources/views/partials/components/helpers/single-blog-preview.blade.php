@@ -1,4 +1,4 @@
-<div class="news-main-container" style="@if(get_field('post_featured_image', $post->ID)) background-image: url('{{ get_field('post_featured_image', $post->ID) }}'); @endif">
+<div class="news-main-container" style="@if(get_field('post_featured_image', $post->ID)) background-image: url('{{ get_field('post_featured_image', $post->ID)['url'] }}'); @endif">
     <div class="news-inner-container">
         <div class="news-content">
             @if (get_field('post_show_date', $post->ID))
