@@ -49,9 +49,9 @@
         /**** CONTACT FORM ****/
 
 
-        console.log($(".open-contact-form"));
         $(".open-contact-form").on('click', function (e) {
             e.preventDefault();
+            console.log('ABC');
             $('.hero .contact-form-container').hasClass('slide-in') ? $('.hero .contact-form-container').removeClass('slide-in') : $('.hero .contact-form-container').addClass('slide-in');
         });
 
