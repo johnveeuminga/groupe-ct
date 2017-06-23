@@ -1,12 +1,9 @@
-<div class="bloc-name row">
-    <h1>BLOC #15 Équipe </h1>
-</div>
-
-
+<!-- Block 15 - Team -->
 <div class="toggle-main-container default-padding default-width">
+    @foreach ($block->get_field('bloc_15_teams') as $team)
     <div class="toggle-content-header">
         <div class="toggle-title-container">
-            <h3 class="toggle-content-title" href="">Comité de direction</h3>
+            <h3 class="toggle-content-title" href="#">{{ $team['block_15_team_title'] }}</h3>
         </div>
         <img class="toggle-content-carret" src="{{ themosis_assets() }}/images/icon/icon-chevron-white.png" alt="">
         <div class="triangle-blue"></div>
@@ -14,47 +11,20 @@
     </div>
 
     <div class="toggle-content">
-        @for ($i = 1; $i <= 3; $i++)
+        @foreach($team['bloc_15_team_members'] as $member)
             {{-- job INFO START --}}
             <div class="team-info-container">
                 {{-- BLUE BAR WITH TITLE END --}}
                 <div class="team-info-inner-container">
-                    <img class="team-info-img" src="{{ themosis_assets() }}/images/team/team_nic_pinto.png" alt="">
-                    <h3 class="team-info-name">Nicolas Pinto</h3>
-                    <p class="info team-info-title">Vice-Président exécutif</p>
-                    <a class="info team-info-phone" href="tel:#"><span>T :</span>450.967.3142 poste: 7101</a>
-                    <a class="team-info-email" href="mailto:#">tbelanger@groupect.com</a>
+                    <img class="team-info-img" src="{{ get_the_post_thumbnail_url($member, 'full') }}" alt="{{ get_the_post_thumbnail_caption($member) }}">
+                    <h3 class="team-info-name">{{ $member['bloc_15_team_member']->post_title }}</h3>
+                    <p class="info team-info-title">{{ $member['bloc_15_team_member']->team_member_title }}</p>
+                    <a class="info team-info-phone" href="tel:{{ $member['bloc_15_team_member']->team_member_phone }}"><span>T :</span>{{ $member['bloc_15_team_member']->team_member_phone }} <?php _e('poste:', 'GROUPE-CT'); ?> {{ $member['bloc_15_team_member']->team_member_position }}</a>
+                    <a class="team-info-email" href="mailto:{{ $member['bloc_15_team_member']->team_member_email }}">{{ $member['bloc_15_team_member']->team_member_email }}</a>
                 </div>
             </div>
             {{-- job INFO END --}}
-        @endfor
+        @endforeach
     </div>
-</div> <!-- toggle-main-container END -->
-
-<div class="toggle-main-container default-padding default-width">
-    <div class="toggle-content-header">
-        <div class="toggle-title-container">
-            <h3 class="toggle-content-title" href="">Laval</h3>
-        </div>
-        <img class="toggle-content-carret" src="{{ themosis_assets() }}/images/icon/icon-chevron-white.png" alt="">
-        <div class="triangle-blue"></div>
-        <a class="open-toggle-content" href="#"></a>
-    </div>
-
-    <div class="toggle-content">
-        @for ($i = 1; $i <= 3; $i++)
-            {{-- job INFO START --}}
-            <div class="team-info-container">
-                {{-- BLUE BAR WITH TITLE END --}}
-                <div class="team-info-inner-container">
-                    <img class="team-info-img" src="{{ themosis_assets() }}/images/team/team_nic_pinto.png" alt="">
-                    <h3 class="team-info-name">Karine Blondin-Bérubé CPA, CA</h3>
-                    <p class="info team-info-title">Directrice des Finances et de l’Administration</p>
-                    <a class="info team-info-phone" href="tel:#"><span>T :</span>450.967.3142 poste: 7101</a>
-                    <a class="team-info-email" href="mailto:#">tbelanger@groupect.com</a>
-                </div>
-            </div>
-            {{-- job INFO END --}}
-        @endfor
-    </div>
+    @endforeach
 </div> <!-- toggle-main-container END -->
