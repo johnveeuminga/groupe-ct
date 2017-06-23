@@ -11,7 +11,7 @@
     @include flexbox();
     @include justify-content(space-between);
     @include align-items(center);
-    @include transition(transform 2s ease);
+    @include background-transition();
     height:75px;
     padding: 0px 15px;
     background-color: $blue-sky;
