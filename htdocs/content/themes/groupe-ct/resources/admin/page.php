@@ -6,16 +6,14 @@ acf_add_local_field_group(array (
     'key' => 'post_field_group',
     'title' => 'Post Details',
     'fields' => array (
-        $acf_fields->generate_true_false('post_show_date', __('Show Date', GROUPE_CT)),
-        $acf_fields->generate_true_false('post_is_featured', __('Is featured?', GROUPE_CT)),
-        $acf_fields->generate_image('post_featured_image', __('Featured image', GROUPE_CT), __('Minimum Width : 585px | Minimum Height : 590px', 'GROUPE-CT')),
+        $acf_fields->generate_text('page_html_title', __('Titre H1 HTML', GROUPE_CT)),
     ),
     'location' => array (
         array (
             array (
                 'param' => 'post_type',
                 'operator' => '==',
-                'value' => 'post',
+                'value' => 'page',
             ),
         ),
     ),
