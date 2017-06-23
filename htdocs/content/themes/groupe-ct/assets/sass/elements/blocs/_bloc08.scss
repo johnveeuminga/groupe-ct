@@ -107,6 +107,7 @@
     p {
       @include set-font(22px, $mada, 300, $black);
       padding-bottom: 25px;
+      line-height: 32px;
     }
   }
 
