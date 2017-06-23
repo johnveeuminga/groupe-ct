@@ -9,9 +9,6 @@ class Lego6 extends BaseLego implements LegoInterface
     public function get_unique_fields()
     {
         return [
-            $this->generate_text('bloc_6_subheader',       __('Subheader', 'GROUPE-CT') ),
-            $this->generate_text('bloc_6_title',           __('Title', 'GROUPE-CT') ),
-            $this->generate_textarea('bloc_6_description', __('Description', 'GROUPE-CT') ),
             $this->generate_tab('bloc_6_1',                __('Icon 1', 'GROUPE-CT') ),
             $this->generate_image('bloc_6_1_icon',         __('Icon', 'GROUPE-CT'), __('50x50', 'GROUPE-CT') ),
             $this->generate_text('bloc_6_1_title',         __('Title', 'GROUPE-CT') ),
