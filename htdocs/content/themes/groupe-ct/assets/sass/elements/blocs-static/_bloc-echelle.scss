@@ -38,7 +38,12 @@
       top: -15px;
       left: -2000px;
 
-      &.slide-in,
+      &.slide-in {
+        display: block;
+        transition: 0.5s;
+        left: -15px;
+      }
+
       &.active {
         display: block;
         transition: 0.5s;
