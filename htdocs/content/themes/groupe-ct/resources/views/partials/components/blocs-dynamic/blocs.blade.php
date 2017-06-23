@@ -1,6 +1,4 @@
 <section id="blocs" class="blocs-main-container">
-    @include('partials.components.blocs-dynamic.bloc_10')
-    @include('partials.components.blocs-dynamic.bloc_11')
     @include('partials.components.blocs-dynamic.bloc_12')
     @include('partials.components.blocs-dynamic.bloc_13')
     @include('partials.components.blocs-dynamic.bloc_14')
