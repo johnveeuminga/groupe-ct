@@ -2,6 +2,8 @@
 
   .three-col-icons-item {
     margin: 50px 0;
+    padding: 0!important;
+
     @media (min-width: $screen-xs-min) {
       @include flexbox();
     }
