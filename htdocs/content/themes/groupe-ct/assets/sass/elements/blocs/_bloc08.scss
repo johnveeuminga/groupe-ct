@@ -11,6 +11,7 @@
     @include flexbox();
     @include justify-content(space-between);
     @include align-items(center);
+    @include transition(transform 0.5s ease);
     height:75px;
     padding: 0px 15px;
     background-color: $blue-sky;
@@ -97,16 +98,17 @@
     h1, h2 {
       @include set-font(44px, $poppins, 700, $blue);
       text-transform: uppercase;
-      padding-bottom: 50px;
+      padding-bottom: 25px;
     }
     h3,h4,h5,h6  {
       @include set-font(22px, $mada, 400, $black);
       line-height: 32px;
-      padding-bottom: 25px;
+      padding: 25px 0;
     }
     p {
       @include set-font(22px, $mada, 300, $black);
       padding-bottom: 25px;
+      line-height: 32px;
     }
   }
 
