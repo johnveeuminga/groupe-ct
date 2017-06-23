@@ -9,11 +9,11 @@
 
   @media (min-width: $screen-lg-min) {
     padding: 295px 0 200px 0;
+    background-color: transparent;
   }
 
   @media (min-width: $screen-sm-min) {
     background: url($assets + "/images/bg/background_newsletter.png") no-repeat bottom;
-    background-color: transparent;
     background-size: cover;
   }
   .newsletter-contact-form-container {
