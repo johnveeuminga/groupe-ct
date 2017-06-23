@@ -117,6 +117,10 @@
     .contact-phone {
       @extend .mada30RegBlue;
       margin-bottom: 20px;
+
+      +.primary-btn-blue {
+        margin-top: 40px;
+      }
     }
 
     a {
