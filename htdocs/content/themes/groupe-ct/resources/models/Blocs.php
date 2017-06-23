@@ -71,28 +71,28 @@ class Blocs {
 
 					$this->fields['bloc_4_1_icon'] = get_sub_field('bloc_4_1_icon');
 					$this->fields['bloc_4_1_title'] = get_sub_field('bloc_4_1_title');
-					$this->fields['bloc_4_1_description'] = get_sub_field('bloc_4_1_description');
+					$this->fields['bloc_4_1_description'] = nl2br(get_sub_field('bloc_4_1_description'));
 					$this->fields['bloc_4_1_cta_label'] = get_sub_field('bloc_4_1_cta_label');
 					$this->fields['bloc_4_1_cta_link'] = get_sub_field('bloc_4_1_cta_link');
 					$this->fields['bloc_4_1_cta_blank'] = get_sub_field('bloc_4_1_cta_blank');
 
 					$this->fields['bloc_4_2_icon'] = get_sub_field('bloc_4_2_icon');
 					$this->fields['bloc_4_2_title'] = get_sub_field('bloc_4_2_title');
-					$this->fields['bloc_4_2_description'] = get_sub_field('bloc_4_2_description');
+					$this->fields['bloc_4_2_description'] = nl2br(get_sub_field('bloc_4_2_description'));
 					$this->fields['bloc_4_2_cta_label'] = get_sub_field('bloc_4_2_cta_label');
 					$this->fields['bloc_4_2_cta_link'] = get_sub_field('bloc_4_2_cta_link');
 					$this->fields['bloc_4_2_cta_blank'] = get_sub_field('bloc_4_2_cta_blank');
 
 					$this->fields['bloc_4_3_icon'] = get_sub_field('bloc_4_3_icon');
 					$this->fields['bloc_4_3_title'] = get_sub_field('bloc_4_3_title');
-					$this->fields['bloc_4_3_description'] = get_sub_field('bloc_4_3_description');
+					$this->fields['bloc_4_3_description'] = nl2br(get_sub_field('bloc_4_3_description'));
 					$this->fields['bloc_4_3_cta_label'] = get_sub_field('bloc_4_3_cta_label');
 					$this->fields['bloc_4_3_cta_link'] = get_sub_field('bloc_4_3_cta_link');
 					$this->fields['bloc_4_3_cta_blank'] = get_sub_field('bloc_4_3_cta_blank');
 
 					$this->fields['bloc_4_4_icon'] = get_sub_field('bloc_4_4_icon');
 					$this->fields['bloc_4_4_title'] = get_sub_field('bloc_4_4_title');
-					$this->fields['bloc_4_4_description'] = get_sub_field('bloc_4_4_description');
+					$this->fields['bloc_4_4_description'] = nl2br(get_sub_field('bloc_4_4_description'));
 					$this->fields['bloc_4_4_cta_label'] = get_sub_field('bloc_4_4_cta_label');
 					$this->fields['bloc_4_4_cta_link'] = get_sub_field('bloc_4_4_cta_link');
 					$this->fields['bloc_4_4_cta_blank'] = get_sub_field('bloc_4_4_cta_blank');

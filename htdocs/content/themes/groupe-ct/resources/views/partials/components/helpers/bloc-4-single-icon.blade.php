@@ -6,7 +6,7 @@
             </div>
         @endif
 
-        @if (!empty($title))<h3 class="four-col-icons-title">{{ $title }}</h3>@endif
-        @if (!empty($description))<p class="four-col-icons-desc">{{ $description}}</p>@endif
+        @if (!empty($title))<h3 class="four-col-icons-title">{!! $title !!}</h3>@endif
+        @if (!empty($description))<p class="four-col-icons-desc">{!! $description !!}</p>@endif
     </div>
 @endif
