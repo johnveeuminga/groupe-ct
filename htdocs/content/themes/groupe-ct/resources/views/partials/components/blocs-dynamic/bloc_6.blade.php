@@ -38,13 +38,4 @@
         </div>
 
     </div>
-    <!-- FIXME -->
-    <h3>Missing fields</h3>
-    <ul>
-        <li>bloc_6_subheader</li>
-        <li>bloc_6_title</li>
-        <li>bloc_6_description</li>
-    </ul>
-
-
 </div>
