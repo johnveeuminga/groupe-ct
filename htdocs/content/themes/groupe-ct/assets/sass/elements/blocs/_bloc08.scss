@@ -11,7 +11,7 @@
     @include flexbox();
     @include justify-content(space-between);
     @include align-items(center);
-    @include transition(transform 0.5s ease);
+    @include background-transition();
     height:75px;
     padding: 0px 15px;
     background-color: $blue-sky;
@@ -72,13 +72,15 @@
       -ms-transform: translate(-50%,-0%);
       @include transition(transform 0.5s ease);
     }
+
+    &.active-header {
+      @include background-transition();
+      background-color: $blue;
+    }
   }
 
   /**** Active toggle header *****/
 
-  .active-header {
-    background-color: $blue!important;
-  }
 
   /****** Hide/Show blue triangle *******/
 
