@@ -27,7 +27,7 @@
     {{--</div>--}}
 {{--</section>--}}
 
-<section id="home-echelle" class="bloc-echelle-main-container">
+<section id="home-echelle" class="bloc-echelle-main-container" @if (is_front_page() ) style="padding-top: 50px;" @endif>
 
     @if (is_front_page() === false)
         <div class="benefits-title-container">
