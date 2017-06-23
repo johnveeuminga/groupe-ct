@@ -1,6 +1,6 @@
-<div class="contact-form-container hideMe" style="">
+<div class="contact-form-container" style="">
     <form id="contact-us-form" method="post">
-        <h2 class="contact-form-title">{{ pll__('En savoir plus ? Contactez-nous.') }}</h2>
+        <h2 class="contact-form-title">{{ pll__('En savoir plus ? Contactez-nous.') }}<a href="#" class="close-contact-form">{{ pll__('FERMER') }}&nbsp;<img src="{{ themosis_assets() . '/images/icon/chevron-right-grey.png' }}"/></a></h2>
 
         <p class="contact-success-message" style="display: none;">{{ pll__('Merci de votre intérêt ! Votre demande a été bien reçue. Nous communiquerons avec vous sous peu.') }}</p>
 

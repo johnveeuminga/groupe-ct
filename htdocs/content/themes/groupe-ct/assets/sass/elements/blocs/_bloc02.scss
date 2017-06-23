@@ -1,4 +1,5 @@
 .img-plus-text {
+  align-items: center;
 
   .slider-main-container {
 
@@ -95,6 +96,8 @@
     @include flexbox();
     @include flex-direction(column);
     text-align: center;
+    margin-top: 40px;
+
     @media (min-width: $screen-xs-min) {
       @include flex-direction(row);
       @include justify-content(space-between);
@@ -115,6 +118,10 @@
     .contact-phone {
       @extend .mada30RegBlue;
       margin-bottom: 20px;
+
+      +.primary-btn-blue {
+        margin-top: 40px;
+      }
     }
 
     a {
@@ -130,6 +137,10 @@
     }
 
   }//CONTACT CONTAINER END
+
+  .open-contact-form {
+    margin: initial!important;
+  }
 
   .reverse-elem {
     @media (min-width: $screen-sm-min) {

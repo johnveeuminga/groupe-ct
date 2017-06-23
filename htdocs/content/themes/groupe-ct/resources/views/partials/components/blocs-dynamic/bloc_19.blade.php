@@ -16,11 +16,11 @@ $bloc_19_center_description = isset($bloc_19_center_description) ? $bloc_19_cent
     <div class="section-title-container">
 
         {{--@if(isset($bloc_19_subheader))--}}
-            <li class="{{ $bloc_19_subheader_carret === true ? 'upper-title' : 'upper-title-no-dot' }} {{ $bloc_19_center_subheader === true ? 'align-center' : '' }}">{{ $bloc_19_subheader }}</li> <!-- upper-title-no-dot : enleve le list style -->
+            <p class="{{ $bloc_19_subheader_carret === true ? 'upper-title' : 'upper-title-no-dot' }} {{ $bloc_19_center_subheader === true ? 'align-center' : '' }}">{{ $bloc_19_subheader }}</p> <!-- upper-title-no-dot : enleve le list style -->
         {{--@endif--}}
 
         {{--@if(isset($bloc_19_title))--}}
-            <h2 class="title {{ $bloc_19_center_title === true ? 'align-center' : '' }}">{{ $bloc_19_title }}</h2> <!-- align-center : text-align:center for title and desc  -->
+            <h2 class="title {{ $bloc_19_center_title === true ? 'align-center' : '' }}">{!! $bloc_19_title !!} </h2> <!-- align-center : text-align:center for title and desc  -->
         {{--@endif--}}
 
         {{--@if(isset($bloc_19_description))--}}

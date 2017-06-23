@@ -1,6 +1,5 @@
 .hero, .hero-page  {
   position: relative;
-  background-color: grey;
 
   .hero-content-container {
 
@@ -9,7 +8,8 @@
     @include justify-content(center);
     position: relative;
     width: 100%;
-    min-height: 675px;
+    min-height: 670px;
+    margin-bottom: 90px;
     background-image: url($assets + "/images/home-bg.png");
 
     background-repeat: no-repeat;
@@ -28,7 +28,9 @@
 
     .hero-title-container {
       color: white;
-      width: auto;
+      width: 90%;
+      margin: auto;
+      text-align: center;
 
 
       .hero-title {
@@ -37,6 +39,7 @@
         z-index: 10;
         margin-left: -5px;
         margin-right: -5px;
+        text-transform: uppercase;
         @extend .poppins80BoldWhite;
       }
     }

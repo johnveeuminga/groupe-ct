@@ -2,6 +2,8 @@
 
   .three-col-icons-item {
     margin: 50px 0;
+    padding: 0!important;
+
     @media (min-width: $screen-xs-min) {
       @include flexbox();
     }
@@ -16,21 +18,27 @@
 
       @media (min-width: $screen-md-min) {
         text-align: left;
-        margin-left: 15px;
       }
 
     }
 
     .three-col-icon-text {
-      @media (min-width: $screen-xs-min) {
-        padding-left: 5%;
-      }
+      padding-right: 40px;
+
       .three-col-icons-title {
-        @include set-font(25px, $poppins, 700, $blue);
+        @include set-font(22px, $poppins, 700, $blue);
+        text-transform: uppercase;
+        line-height: 32px;
       }
       .three-col-icons-desc {
-        @extend .mada22LightBlack;
+        @extend .mada18LightBlack;
+        line-height: 27px;
         margin: 15px 0;
+
+        @media (min-width: $screen-lg-min) {
+          margin-top: 40px;
+          margin-bottom: 30px;
+        }
       }
     }
 

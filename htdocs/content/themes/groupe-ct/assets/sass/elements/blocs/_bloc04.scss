@@ -25,10 +25,14 @@
     .four-col-icons-img-container {
       text-align: center;
 
-      @media (min-width: $screen-md-min) {
+      @media (min-width: $screen-sm-min) {
         height:100px;
         @include flexbox();
         @include align-items(flex-end);
+      }
+
+      img {
+        margin: auto;
       }
     }
 

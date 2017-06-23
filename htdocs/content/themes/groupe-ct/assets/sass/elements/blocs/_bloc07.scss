@@ -1,15 +1,30 @@
 .two-col-icons-text-main-container {
+
+  margin-top: 30px;
+  @media (min-width: $screen-sm-min) {
+    margin-top: 120px;
+  }
+
   @include flexbox();
   @include flex-direction(column);
   @media (min-width: $screen-sm-min) {
     @include flex-direction(row);
     @include flex-wrap(wrap);
-    @include align-items(center);
+    @include align-items(baseline);
   }
 
   .two-col-icons-text-item {
+
+    @media (min-width: $screen-sm-min) {
+      &:nth-child(odd) {
+        padding-right: 25px;
+      }
+      &:nth-child(even) {
+        padding-left: 25px;
+      }
+    }
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 85px;
 
     @media (min-width: $screen-xs-min) {
      //flex-basis:45%;
@@ -26,11 +41,13 @@
 
 
     .two-col-icons-text-title {
-      @include set-font(25px, $poppins, 700, $black);
-      margin: 30px 0;
+      @include set-font(30px, $poppins, 700, $black);
+      text-transform: uppercase;
+      margin: 30px 0 45px;
     }
     .two-col-icons-text-desc {
       @include set-font(22px, $mada, 300, $black);
+      line-height: 32px;
     }
 
   }//END FOUR COL ICON ITEM

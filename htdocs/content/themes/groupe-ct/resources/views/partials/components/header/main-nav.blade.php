@@ -43,7 +43,7 @@
         </nav>
     </div>
     <div class="nav-contact-us col-xs-2">
-        <a class="contact-us-link" href="#">
+        <a class="contact-us-link open-contact-form" href="#">
             <span>{{ pll__('CONTACTEZ-NOUS') }}</span>
             <img class="icon-arrow" src="{{ themosis_assets() }}/images/icon/icon-arrow.png" alt="arrow contact us">
         </a>

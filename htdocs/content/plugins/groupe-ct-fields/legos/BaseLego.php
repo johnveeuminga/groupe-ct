@@ -34,7 +34,7 @@ class BaseLego
                 'key' => $prefix . '_cta_link_key',
                 'label' => 'CTA Link',
                 'name' => $prefix . '_cta_link',
-                'type' => 'url',
+                'type' => 'text',
                 'instructions' => '',
                 'required' => 0,
                 'conditional_logic' => $conditional_logic,
