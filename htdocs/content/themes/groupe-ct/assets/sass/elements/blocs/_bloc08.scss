@@ -77,6 +77,7 @@
 
   .active-header {
     background-color: $blue!important;
+    @include transition(transform 0.5s ease);
   }
 
   /****** Hide/Show blue triangle *******/
