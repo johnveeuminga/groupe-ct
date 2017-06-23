@@ -167,6 +167,7 @@ class Bloc {
 					$this->fields['bloc_12_posts'] = Post::all();
 					break;
 				case "bloc_13":
+					$this->fields['bloc_13_cities'] = get_sub_field('bloc_13_city');
 					break;
 				case "bloc_14":
 					break;
