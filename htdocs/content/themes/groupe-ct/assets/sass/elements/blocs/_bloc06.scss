@@ -22,11 +22,14 @@
 
     .three-col-icon-text {
       padding-right: 40px;
+      text-transform: uppercase;
+
       .three-col-icons-title {
-        @include set-font(25px, $poppins, 700, $blue);
+        @include set-font(22px, $poppins, 700, $blue);
+        line-height: 32px;
       }
       .three-col-icons-desc {
-        @extend .mada22LightBlack;
+        @include set-font(18px, $mada, 300, $blue);
         margin: 15px 0;
       }
     }
