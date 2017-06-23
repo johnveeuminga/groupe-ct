@@ -153,6 +153,15 @@ class Bloc {
 					$this->fields['bloc_10_products'] = Product::all();
 					break;
 				case "bloc_11":
+					$this->fields['bloc_11_slide_image_left'] = get_sub_field('bloc_11_slide_image_left');
+					$this->fields['bloc_11_slide_image'] = get_sub_field('bloc_11_slide_image');
+					$this->fields['bloc_11_video_link'] = get_sub_field('bloc_11_video_link');
+					$this->fields['bloc_11_video_caption'] = get_sub_field('bloc_11_video_caption');
+					$this->fields['bloc_11_title'] = get_sub_field('bloc_11_title');
+					$this->fields['bloc_11_subtitle'] = get_sub_field('bloc_11_subtitle');
+					$this->fields['bloc_11_accent_color'] = get_sub_field('bloc_11_accent_color');
+					$this->fields['bloc_11_description'] = get_sub_field('bloc_11_description');
+					$this->fields['bloc_11_brochure'] = get_sub_field('bloc_11_brochure');
 					break;
 				case "bloc_12":
 					break;

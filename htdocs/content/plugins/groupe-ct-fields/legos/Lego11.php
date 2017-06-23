@@ -17,7 +17,7 @@ class Lego11 extends BaseLego implements LegoInterface
 			$this->generate_text('bloc_11_title',                   __('Title', 'GROUPE-CT') ),
 			$this->generate_text('bloc_11_subtitle',                __('Subtitle', 'GROUPE-CT') ),
 			$this->generate_color_picker('bloc_11_accent_color',    __('Accent Color', 'GROUPE-CT') ),
-			$this->generate_textarea('bloc_11_description',         __('Title', 'GROUPE-CT') ),
+			$this->generate_textarea('bloc_11_description',         __('Description', 'GROUPE-CT') ),
 			$this->generate_file('bloc_11_brochure',                __('Brochure', 'GROUPE-CT'), 'pdf'),
 
 		];
