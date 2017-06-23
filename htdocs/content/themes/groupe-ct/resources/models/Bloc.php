@@ -170,6 +170,7 @@ class Bloc {
 					$this->fields['bloc_13_cities'] = get_sub_field('bloc_13_city');
 					break;
 				case "bloc_14":
+					$this->fields['bloc_14_jobs'] = get_sub_field('bloc_14_jobs');
 					break;
 				case "bloc_15":
 					break;
