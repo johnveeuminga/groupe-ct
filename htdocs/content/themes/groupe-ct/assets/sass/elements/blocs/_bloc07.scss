@@ -8,6 +8,15 @@
   }
 
   .two-col-icons-text-item {
+
+    @media (min-width: $screen-sm-min) {
+      &:nth-child(odd) {
+        padding-right: 25px;
+      }
+      &:nth-child(even) {
+        padding-left: 25px;
+      }
+    }
     text-align: center;
     margin-bottom: 85px;
 
