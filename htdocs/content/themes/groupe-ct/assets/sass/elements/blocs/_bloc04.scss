@@ -9,6 +9,7 @@
       @include flex-direction(row);
       @include flex-wrap(wrap);
       @include align-items(baseline);
+
     }
   }
 
@@ -45,12 +46,14 @@
     }
 
     .four-col-icons-title {
-      //@include set-font(25px, $poppins, 700, $black);
-      @extend .poppins25BoldBlack;
+      text-transform: uppercase;
+      @include set-font(20px, $poppins, 700, $black);
+      line-height: 24px;
       margin: 30px 0;
     }
     .four-col-icons-desc {
-      @include set-font(22px, $mada, 300, $black);
+      @include set-font(18px, $mada, 300, $black);
+      line-height: 27px;
     }
 
   }//END FOUR COL ICON ITEM
