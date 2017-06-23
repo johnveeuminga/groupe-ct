@@ -32,6 +32,10 @@
         @extend .mada18LightBlack;
         line-height: 27px;
         margin: 15px 0;
+
+        @media (min-width: $screen-lg-min) {
+          margin-top: 40px;
+        }
       }
     }
 
