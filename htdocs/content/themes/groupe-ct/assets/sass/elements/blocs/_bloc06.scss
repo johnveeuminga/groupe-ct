@@ -16,15 +16,12 @@
 
       @media (min-width: $screen-md-min) {
         text-align: left;
-        margin-left: 15px;
       }
 
     }
 
     .three-col-icon-text {
-      @media (min-width: $screen-xs-min) {
-        padding-left: 5%;
-      }
+      padding-right: 40px;
       .three-col-icons-title {
         @include set-font(25px, $poppins, 700, $blue);
       }
