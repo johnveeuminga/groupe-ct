@@ -134,11 +134,12 @@
         //width:225px!important;
       }
     }
-    .open-contact-form {
-      margin: initial;
-    }
 
   }//CONTACT CONTAINER END
+
+  .open-contact-form {
+    margin: initial!important;
+  }
 
   .reverse-elem {
     @media (min-width: $screen-sm-min) {
