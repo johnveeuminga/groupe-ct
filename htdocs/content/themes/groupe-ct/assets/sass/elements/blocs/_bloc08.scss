@@ -72,13 +72,14 @@
       -ms-transform: translate(-50%,-0%);
       @include transition(transform 0.5s ease);
     }
+
+    .active-header {
+      background-color: $blue!important;
+    }
   }
 
   /**** Active toggle header *****/
 
-  .active-header {
-    background-color: $blue!important;
-  }
 
   /****** Hide/Show blue triangle *******/
 
