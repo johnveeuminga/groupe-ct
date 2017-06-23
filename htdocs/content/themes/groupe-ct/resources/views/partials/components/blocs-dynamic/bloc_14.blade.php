@@ -1,41 +1,36 @@
-<div class="bloc-name row">
-    <h1>BLOC #14 Nous joindre </h1>
-</div>
-
-
-
-
+<!-- Block 14 - Job Offer -->
 <div class="toggle-main-container default-padding default-width">
-   <div class="toggle-content-header">
-       <div class="toggle-title-container">
-           <h3 class="toggle-content-title" href="">EMPLOIS EN Vedette</h3>
-       </div>
-       <img class="toggle-content-carret" src="{{ themosis_assets() }}/images/icon/icon-chevron-white.png" alt="">
-       <div class="triangle-blue"></div>
-       <a class="open-toggle-content" href="#"></a>
-   </div>
+    <div class="toggle-content-header">
+        <div class="toggle-title-container">
+            <h3 class="toggle-content-title" href="#"><?php _e('Emplois en vedette', GROUPE_CT); ?></h3>
+        </div>
+        <img class="toggle-content-carret" src="{{ themosis_assets() }}/images/icon/icon-chevron-white.png" alt="">
+        <div class="triangle-blue"></div>
+        <a class="open-toggle-content" href="#"></a>
+    </div>
 
-   <div class="toggle-content">
+    <div class="toggle-content">
+        @foreach($block->get_field('bloc_14_jobs') as $job)
+        {{-- job INFO START --}}
+        <div class="job-info-container">
+            {{-- BLUE BAR WITH TITLE END --}}
+            <div class="job-info-inner-container">
+                <h3 class="job-info-title">{{ $job['bloc_14_job']->post_title }}</h3>
+                <p class="info job-info-office"><span><?php _e('Bureau rattaché', THEME_TEXTDOMAIN); ?> :</span>{{ $job['bloc_14_job']->job_offer_office  }}</p>
+                <p class="info job-info-adresse"><span><?php _e('Lieu de travail', THEME_TEXTDOMAIN); ?> :</span>{{ $job['bloc_14_job']->job_offer_location  }}</p>
+                <p class="info job-info-section"><span><?php _e('Département', THEME_TEXTDOMAIN); ?> :</span>{{ $job['bloc_14_job']->job_offer_dept  }}</p>
+                <p class="info job-info-limit"><span><?php _e('Date limite pour postuler', THEME_TEXTDOMAIN); ?> :</span>{{ date('Y-m-d', strtotime($job['bloc_14_job']->job_offer_deadline))  }}</p>
 
-       @for ($i = 1; $i <= 5; $i++)
-       {{-- job INFO START --}}
-           <div class="job-info-container">
-               {{-- BLUE BAR WITH TITLE END --}}
-               <div class="job-info-inner-container">
-                   <h3 class="job-info-title">Titre du poste lorem ipsum dolor isit amet</h3>
-                   <p class="info job-info-office"><span><?php _e('Bureau rattaché', THEME_TEXTDOMAIN); ?> :</span>Bureau de Québec</p>
-                   <p class="info job-info-adresse"><span><?php _e('Lieu de travail', THEME_TEXTDOMAIN); ?> :</span>Ville, Province</p>
-                   <p class="info job-info-section"><span><?php _e('Département', THEME_TEXTDOMAIN); ?> :</span>Administration, comptabilité, Marketing, Soutien technique, etc.</p>
-                   <p class="info job-info-limit"><span><?php _e('Date limite pour postuler', THEME_TEXTDOMAIN); ?> :</span>00-00-0000</p>
-
-                   <div class="btn-container">
-                       <a href="mailto:#" class="cta-see-more"><?php _e('en savoir plus', THEME_TEXTDOMAIN); ?></a>
-                       <a class="btn primary-btn-blue" href="#"><?php _e('postuler', THEME_TEXTDOMAIN); ?></a>
-                   </div>
-               </div>
-           </div>
+                <div class="btn-container">
+                    <!-- FIXME modal window missing!! -->
+                    <a href="#" class="cta-see-more"><?php _e('en savoir plus', THEME_TEXTDOMAIN); ?></a>
+                    <!-- FIXME email missing!! -->
+                    <a class="btn primary-btn-blue" href="mailto:#"><?php _e('postuler', THEME_TEXTDOMAIN); ?></a>
+                </div>
+            </div>
+        </div>
        {{-- job INFO END --}}
-        @endfor
+        @endforeach
    </div>
 </div>
 
