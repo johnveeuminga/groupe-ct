@@ -252,20 +252,20 @@
         }
 
 
-        jQuery(window).scroll(function () {
-            if (isScrolledIntoView('.doughnut-chart')) {
-                if (inView) {
-                    return;
+        if ($('.doughnut-chart').length > 0) {
+            jQuery(window).scroll(function () {
+                if (isScrolledIntoView('.doughnut-chart')) {
+                    if (inView) {
+                        return;
+                    }
+                    inView = true;
+                    console.log(this);
+                    new Chart(jQuery(".doughnut-chart01")[0].getContext("2d"), {type:"doughnut", data:data});
+                } else {
+                    inView = false;
                 }
-                inView = true;
-                console.log(this);
-                new Chart(jQuery(".doughnut-chart01")[0].getContext("2d"), {type:"doughnut", data:data});
-            } else {
-                inView = false;
-            }
-        });
-
-
+            });
+        }
     });
 }(jQuery));
 
