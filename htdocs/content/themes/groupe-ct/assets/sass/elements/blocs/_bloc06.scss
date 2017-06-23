@@ -22,14 +22,15 @@
 
     .three-col-icon-text {
       padding-right: 40px;
-      text-transform: uppercase;
 
       .three-col-icons-title {
         @include set-font(22px, $poppins, 700, $blue);
+        text-transform: uppercase;
         line-height: 32px;
       }
       .three-col-icons-desc {
         @extend .mada18LightBlack;
+        line-height: 27px;
         margin: 15px 0;
       }
     }
