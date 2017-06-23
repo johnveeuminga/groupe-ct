@@ -94,9 +94,12 @@
   .wys-content {
     text-align: center;
     padding:50px 0;
-    h1,h2,h3,h4,h5,h6 {
-      @include set-font(30px, $poppins, 700, $blue);
-      padding-bottom: 50px;
+    h1, h2 {
+      @include set-font(44px, $poppins, 700, $blue);
+    }
+    h3,h4,h5,h6  {
+      @include set-font(22px, $mada, bold, $black);
+      line-height: 32px;
     }
     p {
       @include set-font(22px, $mada, 300, $blue);
