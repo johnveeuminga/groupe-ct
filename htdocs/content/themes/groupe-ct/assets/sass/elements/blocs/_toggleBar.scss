@@ -11,9 +11,13 @@
   @include justify-content(space-between);
   @include align-items(center);
   height:60px;
-  padding: 0px 25px;
+  padding: 0px 10px;
   background-color: $blue;
   position: relative;
+  @media (min-width: $screen-xs-min) {
+    padding: 0px 25px;
+  }
+
 
   /*************************/
   .title-container{
@@ -57,6 +61,7 @@
 
 .open-content {
   max-height: 2000px !important;
+  overflow: visible!important;
 }
 
 .toggle-content-carret {

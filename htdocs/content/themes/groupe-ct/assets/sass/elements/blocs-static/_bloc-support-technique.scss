@@ -1,67 +1,235 @@
 .tech-support-main-container {
 
+  /**** General css ****/
   .form-container {
     margin-top: 35px;
-  }
-
-  .form-left-container {
-    padding-left:0;
-    padding-right:25px;
-  }
-  .form-right-container {
-    padding-left:25px;
-    padding-right:0;
-  }
-
-  p {
-    @extend .mada22LightBlack;
-  }
-
-  .tech-support-input {
-    -webkit-appearance: none;
-    border:1px solid $grey-light;
-    @include border-radius(2px);
-    padding: 25px 15px;
-
-  }
-  .input-container {
+    margin-bottom: 70px;
     @include flexbox();
-    margin-bottom: 20px;
-    @include placeholder(18px, $mada, 300, $grey-placeholder, 1);
-  }
+    @include flex-direction(column);
 
-  .form-env-container {
-    @include flexbox();
 
-    .form-left-container p:first-of-type{
+    .text-container {
       margin-bottom:30px;
     }
 
-    #env-division {
-      width:100%;
-    }
-    .input-container:nth-child(2) {
-      @include flexbox();
-      @include justify-content(space-between);
-    }
-    .input-container:nth-child(2) .tech-support-input{
-     @include flex-basis(43%);
-    }
-
-    .form-footer {
-      @include flexbox();
-      @include justify-content(space-between);
-      @include align-items(center);
-
-      .link-forgot-psw {
-        @extend .mada18RegBlack;
+    .form-content-container {
+      @media (min-width: $screen-sm-min) {
+        @include flexbox();
       }
+    }
+
+    .form-left-container, .form-right-container {
+      @include flexbox();
+      @include flex-direction(column);
+
+    }
+    .form-left-container {
+      margin-bottom:30px;
+      @media (min-width: $screen-md-min) {
+        margin-bottom:0px;
+        padding-left:0;
+        padding-right:25px;
+      }
+    }
+    .form-right-container {
+
+      @media (min-width: $screen-md-min) {
+        padding-left:25px;
+        padding-right:0;
+      }
+    }
+
+    .input-container {
+      @include flexbox();
+      @include flex-direction(column);
+      @media (min-width: $screen-sm-min) {
+        @include flex-direction(row);
+      }
+      @include placeholder(18px, $mada, 300, $grey-placeholder, 1);
+    }
+
+    .tech-support-input {
+      -webkit-appearance: none;
+      border:1px solid $grey-light;
+      @include border-radius(2px);
+      padding: 25px 15px;
+      margin-bottom: 20px;
+    }
+
+    /* Base for label styling */
+    [type="checkbox"]:not(:checked),
+    [type="checkbox"]:checked {
+      position: absolute;
+      left: -9999px;
+    }
+    [type="checkbox"]:not(:checked) + label,
+    [type="checkbox"]:checked + label {
+      position: relative;
+      padding-left: 1.95em;
+      padding-top: 0.2em;
+      cursor: pointer;
+    }
+
+    /* checkbox aspect */
+    [type="checkbox"]:not(:checked) + label:before,
+    [type="checkbox"]:checked + label:before {
+      content: '';
+      position: absolute;
+      left: 0; top: 0;
+      width: 1.25em; height: 1.25em;
+      border: 1px solid $grey-light;
+      background: transparent;
+    }
+    /* checked mark aspect */
+    [type="checkbox"]:not(:checked) + label:after,
+    [type="checkbox"]:checked + label:after {
+
+      content: url($assets + '/images/icon/icon-form-check.png');
+      position: absolute;
+      top: 4px; left: 2px;
+      @include transition(all 0.2s ease);
+    }
+    /* checked mark aspect changes */
+    [type="checkbox"]:not(:checked) + label:after {
+      opacity: 0;
+      @include scale(0)
+    }
+    [type="checkbox"]:checked + label:after {
+      opacity: 1;
+      @include scale(1)
     }
 
   }
 
+  /*** Text elements ***/
+  .form-container p {
+    @extend .mada22LightBlack;
+  }
+
+  .form-link {
+    @extend .mada22RegBlack;
+  }
+
+  .form-container .mention, label, select {
+    @include set-font(18px, $mada, 300, $grey-placeholder);
+    margin-bottom: 8px;
+  }
+
+  .form-container textarea {
+    resize: none;
+  }
+
+  .form-container select {
+    background: url($assets + "/images/icon/icon-arrow-black.png") no-repeat 85% 50%;
+  }
+
+
+
+
+
+  /*** THE FORMS ****/
+
+  #form-my-ct {
+
+     .my-ct-link {
+        padding:50px 0;
+        @media (min-width: $screen-md-min) {
+          margin:0 50px;
+        }
+     }
+  }
+
+
+  #form-assistance{
+
+    #assistance-msg {
+      min-height:370px;
+    }
+
+    .opening {
+      @include flexbox();
+      @include justify-content(space-between);
+    }
+    .assistance-opening {
+      width: 45%;
+    }
+
+    .form-right-container .input-container:nth-child(2) {
+      text-align: center;
+    }
+
+    .assistance-upload-container {
+      @include flexbox();
+      @include flex-direction(column);
+      @include align-items(center);
+    }
+
+
+
+    /**** Styling INPUT FILE ****/
+
+    #assistance-upload {
+
+      width: 0.1px;
+      height: 0.1px;
+      opacity: 0;
+      overflow: hidden;
+      position: absolute;
+      z-index: -1;
+
+    }
+
+    #assistance-upload + label {
+      @include flexbox();
+      @include align-items(center);
+      @include justify-content(center);
+      width:160px;
+      padding:12px 0;
+      background-color: $grey-placeholder;
+      @include border-radius(2px);
+      @extend .poppins15BoldWhite;
+      text-transform: uppercase;
+
+      &:after {
+        content: url($assets + "/images/icon/icon-search-glass.png");
+        margin-left:15px;
+      }
+
+    }
+
+    #assistance-upload:focus + label,
+    #assistance-upload + label:hover {
+      background-color: red;
+    }
+    /************************************/
+
+    .form-submit {
+
+      @include flexbox();
+      @include flex-direction(column);
+      margin-top:30px;
+      text-align: center;
+
+      @media (min-width: $screen-sm-min) {
+        @include justify-content(space-between);
+        @include align-items(flex-end);
+      }
+
+      .mention {
+        margin-top:15px;
+      }
+
+    }
+
+  }
+
+  /*** Specials class for forms ***/
   .isBold {
     @extend .mada22RegBlack;
+  }
+
+  .fullWidth {
+    width:100%;
   }
 
 }//SECTION END
