@@ -14,8 +14,8 @@
                 <div class="wys-content">{!! $collapse['bloc_8_content'] !!}</div>
             </div>
         </div>
-        @foreach ($block['bloc_8_blocks'] as $blocks)
-            <?php var_dump($blocks) ?>
-        @endforeach
+{{--        @foreach ($block['bloc_8_blocks'] as $blocks)--}}
+<!--            --><?php //var_dump($blocks) ?>
+        {{--@endforeach--}}
     @endforeach
 </div>
