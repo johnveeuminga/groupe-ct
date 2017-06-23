@@ -74,7 +74,7 @@
     }
 
     &.active-header {
-      @include transition(transform 2s ease);
+      @include background-transition();
       background-color: $blue;
     }
   }
