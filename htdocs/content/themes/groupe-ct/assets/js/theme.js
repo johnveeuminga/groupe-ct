@@ -51,42 +51,16 @@
 
         var contact_timeout_id = null;
 
-        $( ".contact-us-link" ).hover(
-            function() {
-                if (contact_timeout_id !== null) {
-                    window.clearTimeout(contact_timeout_id);
-                    contact_timeout_id = null;
-                }
-                else {
-                    $('.hero .contact-form-container').removeClass('hideMe');
-                }
-            }, function() {
-                if (contact_timeout_id === null) {
-                    contact_timeout_id = window.setTimeout(function() {
-                        contact_timeout_id = null; // EDIT: added this line
-                        $('.hero .contact-form-container').addClass('hideMe');
-                    }, 1000);
-                }
-            }
-        );
+        $(".open-contact-form").on('click', function (e) {
+            e.preventDefault();
+            $('.hero .contact-form-container').hasClass('slide-in') ? $('.hero .contact-form-container').removeClass('slide-in') : $('.hero .contact-form-container').addClass('slide-in');
+        });
 
-        $('.hero .contact-form-container').hover(
-            function() {
-                if (contact_timeout_id !== null) {
-                    window.clearTimeout(contact_timeout_id);
-                    contact_timeout_id = null;
-                } else {
-                    $(this).removeClass('hideMe');
-                }
-            }, function() {
-                if (contact_timeout_id === null) {
-                    contact_timeout_id = window.setTimeout(function() {
-                        contact_timeout_id = null; // EDIT: added this line
-                        $('.hero .contact-form-container').addClass('hideMe');
-                    }, 1000);
-                }
-            }
-        );
+        $(".close-contact-form").on('click', function (e) {
+            e.preventDefault();
+            $('.hero .contact-form-container').removeClass('slide-in');
+        });
+
 
 
 

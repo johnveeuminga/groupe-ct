@@ -4,7 +4,11 @@
 
     position: absolute;
     //bottom:-799px;
-    right:0;
+    transition: 0.5s;
+    right: -2000px;
+    &.slide-in {
+      right:0;
+    }
     z-index: 9999;
     width:620px;
     background-color: $black;
@@ -12,7 +16,14 @@
 
     .contact-form-title {
       @extend .poppins20SemiBoldWhite;
+      text-transform: uppercase;
       margin-bottom:30px;
+    }
+
+    .close-contact-form {
+      float: right;
+      @extend .poppins20SemiBoldWhite;
+      text-transform: uppercase;
     }
 
     .contact-success-message {
