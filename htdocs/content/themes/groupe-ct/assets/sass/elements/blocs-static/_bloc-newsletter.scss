@@ -1,8 +1,15 @@
 .bloc-newsletter{
-  background: url($assets + "/images/bg/background_newsletter.png") no-repeat bottom;
-
   background-color: $blue-dark;
-  padding: 295px 0 200px 0;
+
+  @media ($screen-sm-min) {
+    background: url($assets + "/images/bg/background_newsletter.png") no-repeat bottom;
+    background-color: transparent;
+    background-size: cover;
+  }
+
+  @media ($screen-lg-min) {
+    padding: 295px 0 200px 0;
+  }
 
   @media ($screen-sm-min) {
     padding: 100px 0;
