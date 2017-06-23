@@ -29,7 +29,7 @@
         line-height: 32px;
       }
       .three-col-icons-desc {
-        @include set-font(18px, $mada, 300, $blue);
+        @extend .mada18LightBlack;
         margin: 15px 0;
       }
     }
