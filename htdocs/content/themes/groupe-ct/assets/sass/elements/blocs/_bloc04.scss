@@ -32,19 +32,6 @@
       }
     }
 
-    .four-col-icons-img-container img:nth-child(1) {
-      @media (min-width: $screen-md-min) {
-        display: none;
-      }
-    }
-
-    .four-col-icons-img-container img:nth-child(2) {
-      display: none;
-      @media (min-width: $screen-md-min) {
-        display: block;
-      }
-    }
-
     .four-col-icons-title {
       text-transform: uppercase;
       @include set-font(20px, $poppins, 700, $black);
