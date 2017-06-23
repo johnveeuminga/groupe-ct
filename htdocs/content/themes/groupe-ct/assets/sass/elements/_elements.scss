@@ -208,7 +208,7 @@ body {
 
 .upper-title {
   margin:15px 0;
-  @include set-font(22px, $poppins, 600, $red);
+  @include set-font(22px, $poppins, 700, $red);
   list-style: square;
   text-transform: uppercase;
 
@@ -219,6 +219,7 @@ body {
     width: 10px;
     height: 10px;
     margin-right: 15px;
+    margin-bottom: 2px;
   }
 }
 
