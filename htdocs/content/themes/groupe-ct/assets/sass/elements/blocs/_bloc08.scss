@@ -97,14 +97,16 @@
     h1, h2 {
       @include set-font(44px, $poppins, 700, $blue);
       text-transform: uppercase;
+      padding-bottom: 60px;
     }
     h3,h4,h5,h6  {
-      @include set-font(22px, $mada, bold, $black);
+      @include set-font(22px, $mada, 400, $black);
       line-height: 32px;
+      padding-bottom: 30px;
     }
     p {
       @include set-font(22px, $mada, 300, $blue);
-      padding-bottom:25px;
+      padding-bottom: 30px;
     }
   }
 
