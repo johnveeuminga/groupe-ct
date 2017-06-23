@@ -55,6 +55,7 @@ class Bloc {
 					$this->fields['bloc_3_cta_label'] = get_sub_field('bloc_3_cta_label');
 					$this->fields['bloc_3_cta_link'] = get_sub_field('bloc_3_cta_link');
 					$this->fields['bloc_3_cta_blank'] = get_sub_field('bloc_3_cta_blank');
+					$this->fields['bloc_3_cta_open_contact'] = get_sub_field('bloc_3_cta_open_contact');
 					$this->fields['bloc_3_phone_1_location'] = get_sub_field('bloc_3_phone_1_location');
 					$this->fields['bloc_3_phone_1_label'] = get_sub_field('bloc_3_phone_1_label');
 					$this->fields['bloc_3_phone_1'] = get_sub_field('bloc_3_phone_1');

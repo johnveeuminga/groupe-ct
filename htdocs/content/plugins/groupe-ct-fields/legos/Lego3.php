@@ -16,6 +16,7 @@ class Lego3 extends BaseLego implements LegoInterface
 	        $this->generate_cta('bloc_3' )[0],
 	        $this->generate_cta('bloc_3' )[1],
 	        $this->generate_cta('bloc_3' )[2],
+	        $this->generate_true_false('bloc_3_cta_open_contact', __('Open Contact Form', 'GROUPE-CT')),
 	        $this->generate_text('bloc_3_phone_1_location',  __('Phone 1 - Location', 'GROUPE-CT') ),
 	        $this->generate_text('bloc_3_phone_1_label',     __('Phone 1 - Label', 'GROUPE-CT') ),
 	        $this->generate_text('bloc_3_phone_1',           __('Phone 1', 'GROUPE-CT') ),
