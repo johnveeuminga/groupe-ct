@@ -25,6 +25,6 @@
                 @endif
             </div>
         @endif
-        @if ($block->get_field('bloc_3_cta_link') || $block->get_field('bloc_3_cta_open_contact'))<a class="btn-bloc2 primary-btn-blue @if ($block->get_field('bloc_3_cta_open_contact')) open-contact-form @endif" href="{{ $block->get_field('bloc_3_cta_link') ? '#' : $block->get_field('bloc_3_cta_link') }}" {{ $$block->get_field('bloc_3_cta_blank') ? "target='_blank'" : "" }}>{{ $block->get_field('bloc_3_cta_label') }}</a>@endif
+        @if ($block->get_field('bloc_3_cta_link') || $block->get_field('bloc_3_cta_open_contact'))<a class="btn-bloc2 primary-btn-blue @if ($block->get_field('bloc_3_cta_open_contact')) open-contact-form @endif" href="@if($block->get_field('bloc_3_cta_link'))#@else{{ $block->get_field('bloc_3_cta_link') }}@endif" {{ $$block->get_field('bloc_3_cta_blank') ? "target='_blank'" : "" }}>{{ $block->get_field('bloc_3_cta_label') }}</a>@endif
     </div>
 </div>
