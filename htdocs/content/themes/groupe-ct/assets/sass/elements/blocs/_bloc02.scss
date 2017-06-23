@@ -95,6 +95,8 @@
     @include flexbox();
     @include flex-direction(column);
     text-align: center;
+    margin-top: 40px;
+
     @media (min-width: $screen-xs-min) {
       @include flex-direction(row);
       @include justify-content(space-between);
