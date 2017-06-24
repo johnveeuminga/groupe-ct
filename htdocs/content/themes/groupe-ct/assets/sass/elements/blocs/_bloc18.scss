@@ -3,7 +3,7 @@
 .text-bloc-main-container {
   @media (min-width: $screen-xs-min) {
     @include flexbox();
-    @include flex-wrap(no-wrap);
+    @include flex-wrap(wrap);
     @include justify-content(space-between);
     padding: 75px 0;
   }
