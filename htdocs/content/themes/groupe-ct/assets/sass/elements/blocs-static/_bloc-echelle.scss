@@ -56,11 +56,13 @@
       width: 100%;
     }
 
-    #hover-hybride.slide-in {
+    #hover-hybride.slide-in,
+    #hover-hybride.active {
       left: 30%;
     }
 
-    #hover-numerique.slide-in {
+    #hover-numerique.slide-in,
+    #hover-numerique.active {
       left: 63%;
     }
   }
