@@ -21,11 +21,15 @@
         </div>
     @endforeach
     </div>
+    @if (count($block->get_field('bloc_5_slides')) > 1)
     <div class="slider-link-container">
     @foreach($block->get_field('bloc_5_slides') as $i => $slide)
         <a class="slider-dot slide{{ $i }} white-dot @if($i == 0) {{ 'active-dot' }} @endif" href="#"></a>
     @endforeach
     </div>
+    @else
+        <!-- FIXME Bottom padding problem when not a slider -->
+    @endif
 
     <h3></h3>
 </div>

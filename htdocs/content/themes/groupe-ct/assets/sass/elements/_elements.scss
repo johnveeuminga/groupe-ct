@@ -18,6 +18,7 @@
 @import "blocs/bloc16";
 @import "blocs/bloc17";
 @import "blocs/bloc18";
+@import "blocs/bloc19";
 
 /****** BLOCS STATICS *******/
 @import "blocs-static/bloc-newsletter";
@@ -81,6 +82,7 @@ body {
 .red-border {
   position: relative;
 }
+
 
 /***** BUTTONS & CTA *****/
 
@@ -241,22 +243,6 @@ body {
   @media (min-width: $screen-sm-min) {
     @include set-font(45px, $poppins, 700, $black);
   }
-}
-
-.section-title-container {
-  .title {
-
-    @extend .poppins30BoldBlack;
-    text-transform: uppercase;
-    margin:30px 0;
-    @media (min-width: $screen-sm-min) {
-     @include set-font(45px, $poppins, 700, $black);
-    }
-  }
-  .desc {
-    @extend .mada22LightBlack;
-  }
-
 }
 
 .publication-cat, .publication-title, .publication-date {

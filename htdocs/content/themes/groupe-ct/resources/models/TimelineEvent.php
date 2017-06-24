@@ -13,19 +13,18 @@ use WP_Query;
 class TimelineEvent
 {
 
-	public static function all($hydrate = true, $order = 'DESC')
+	public static function all($hydrate = true, $order = 'ASC')
 	{
 		return self::first(-1, $hydrate, $order);
 
 	}
 
-	public static function first($nb = 1, $hydrate = true, $order = 'DESC')
+	public static function first($nb = 1, $hydrate = true, $order = 'ASC')
 	{
 		$query = new WP_Query([
 			'post_type'         => 'timeline_event',
 			'posts_per_page'    => $nb,
 			'post_status'       => 'publish',
-			'orderby' => 'post_date',
 			'order' => $order
 		]);
 		$events = $query->get_posts();

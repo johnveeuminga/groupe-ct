@@ -10,8 +10,8 @@ class Lego16 extends BaseLego implements LegoInterface
 	{
 		return [
 			$this->generate_select('bloc_16_timeline_order', __('Timeline Order', 'GROUPE-CT'), [
-				'DESC' => __('Most recent first', 'GROUPE-CT'),
-				'ASC' => __('Oldest first', 'GROUPE-CT'),
+				'ASC' => __('Forward', 'GROUPE-CT'),
+				'DESC' => __('Reverse', 'GROUPE-CT'),
 			]),
 		];
 	}

@@ -81,7 +81,7 @@
     }
 
 
-    .text {
+    p {
       margin: 15px 0px;
       @include set-font(16px, $mada, 300, $black);
       line-height: 32px;

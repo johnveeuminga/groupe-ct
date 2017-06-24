@@ -9,6 +9,7 @@ class Lego19 extends BaseLego implements LegoInterface
 	public function get_unique_fields()
 	{
 		return [
+			$this->generate_color_picker('block_19_background_color', __('Background Colour', 'GROUPE-CT')),
 			$this->generate_text('bloc_19_subheader', 'Subheader'),
             $this->generate_true_false('bloc_19_subheader_carret', 'Subheader red square'),
             $this->generate_true_false('bloc_19_center_subheader', 'Center subheader'),
