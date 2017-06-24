@@ -182,6 +182,23 @@ class Bloc {
 					$this->fields['block_16_timeline_events'] = TimelineEvent::all(true, $order);
 					break;
 				case "bloc_17":
+					$this->fields['bloc_17_background_image'] = get_sub_field('bloc_17_background_image');
+
+					$this->fields['bloc_17_1_icon'] = get_sub_field('bloc_17_1_icon');
+					$this->fields['bloc_17_1_number'] = get_sub_field('bloc_17_1_number');
+					$this->fields['bloc_17_1_description'] = get_sub_field('bloc_17_1_description');
+
+					$this->fields['bloc_17_2_icon'] = get_sub_field('bloc_17_2_icon');
+					$this->fields['bloc_17_2_number'] = get_sub_field('bloc_17_2_number');
+					$this->fields['bloc_17_2_description'] = get_sub_field('bloc_17_2_description');
+
+					$this->fields['bloc_17_3_icon'] = get_sub_field('bloc_17_3_icon');
+					$this->fields['bloc_17_3_number'] = get_sub_field('bloc_17_3_number');
+					$this->fields['bloc_17_3_description'] = get_sub_field('bloc_17_3_description');
+
+					$this->fields['bloc_17_4_icon'] = get_sub_field('bloc_17_4_icon');
+					$this->fields['bloc_17_4_number'] = get_sub_field('bloc_17_4_number');
+					$this->fields['bloc_17_4_description'] = get_sub_field('bloc_17_4_description');
 					break;
 				case "bloc_18":
 					break;
