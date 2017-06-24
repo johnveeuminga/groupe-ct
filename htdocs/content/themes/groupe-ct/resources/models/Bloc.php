@@ -126,7 +126,7 @@ class Bloc {
 					$this->fields['bloc_6_3_blocks'] = get_sub_field('bloc_8_blocks');
 					break;
 				case "bloc_7":
-					$this->fields['bloc_7_rows'] = get_sub_field('bloc_7_row');
+					$this->fields['bloc_7_rows'] = get_sub_field('bloc_7_rows');
 					break;
 				case "bloc_8":
 					$this->fields['bloc_8_collapse'] = get_sub_field('bloc_8_collapse');
