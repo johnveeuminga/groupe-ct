@@ -81,9 +81,10 @@ strong {
   margin:0 0 30px 0;
 }
 .size-full {
-  width:100%;
-  height:auto;
-  margin:0 0 30px 0;
+  display: block;
+  height: auto;
+  margin: 0 auto;
+  max-width: 100%;
 }
 p .alignleft {
   float: left;
@@ -103,7 +104,6 @@ p .alignnone {
   margin:5px 0 30px 0;
 }
 p .size-full {
-  width:100%;
   height:auto;
   margin:5px 0 30px 0;
 }
