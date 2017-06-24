@@ -30,12 +30,12 @@
         height: 50px;
         width: 50px;
         text-align: center;
+        @media (max-width: $screen-xs-min - 1) {
+          display: none;
+        }
 
         .title-icon {
           max-width: 50px;
-          @media (min-width: $screen-xs-min) {
-            width:initial;
-          }
         }
       }
     }
