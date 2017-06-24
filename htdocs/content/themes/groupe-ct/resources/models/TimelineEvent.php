@@ -25,7 +25,6 @@ class TimelineEvent
 			'post_type'         => 'timeline_event',
 			'posts_per_page'    => $nb,
 			'post_status'       => 'publish',
-			'orderby' => 'post_date',
 			'order' => $order
 		]);
 		$events = $query->get_posts();
