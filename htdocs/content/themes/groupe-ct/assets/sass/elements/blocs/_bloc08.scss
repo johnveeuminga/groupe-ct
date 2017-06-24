@@ -116,10 +116,9 @@
     .two-col-icons-text-main-container {
       margin-top: 0;
     }
-    .two-col-icons-text-item:nth-child(odd),
-    .two-col-icons-text-item:nth-child(even)
-    {
-      margin: 0!important;
+    
+    .two-col-icons-text-item {
+      margin-bottom: 0!important;
     }
   }
 
