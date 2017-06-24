@@ -6,7 +6,7 @@
     'bloc_19_center_title' => false,
     'bloc_19_center_description' => false,
     'bloc_19_background_color' => 'inherit',
-    'bloc_19_remove_padding' => false,
+    'bloc_19_remove_padding' => true,
     'bloc_19_remove_margin' => false,
 
     'bloc_19_title' => pll__('Réussir votre transition vers la GED'),
