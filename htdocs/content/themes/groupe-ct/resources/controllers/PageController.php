@@ -28,7 +28,7 @@ class PageController extends MainController
 
     public function job_offer()
     {
-	    return view('pages.job-offer-single',[]);
+	    return view('partials.components.job-offer.lightbox',[]);
     }
 
 
