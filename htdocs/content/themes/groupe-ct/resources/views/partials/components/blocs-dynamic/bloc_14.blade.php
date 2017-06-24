@@ -24,8 +24,7 @@
                 <div class="btn-container">
 
                     <a href="{{ get_permalink($job['bloc_14_job']->ID) }}" class="cta-see-more" data-lity><?php _e('en savoir plus', THEME_TEXTDOMAIN); ?></a>
-                    <!-- FIXME email missing!! -->
-                    <a class="btn primary-btn-blue" href="mailto:#"><?php _e('postuler', THEME_TEXTDOMAIN); ?></a>
+                    <a class="btn primary-btn-blue" href="mailto:{{ Option::get('hr', 'hrEmail') }}"><?php _e('postuler', THEME_TEXTDOMAIN); ?></a>
                 </div>
             </div>
         </div>
