@@ -26,7 +26,7 @@
 
 .timeline-bar-line {
   border-left: 3px solid $blue;
-  height:90%;
+  height: calc(100% - 30px);
   width:1px;
   margin:auto;
   position: absolute;
