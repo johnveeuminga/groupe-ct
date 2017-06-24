@@ -28,7 +28,7 @@
     @endforeach
     </div>
     @else
-    <div>&nbsp;</div>
+        <!-- FIXME Bottom padding problem when not a slider -->
     @endif
 
     <h3></h3>
