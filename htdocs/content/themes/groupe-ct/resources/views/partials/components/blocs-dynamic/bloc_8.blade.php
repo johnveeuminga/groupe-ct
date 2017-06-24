@@ -17,9 +17,9 @@
                         @foreach ($collapse['bloc_8_blocks'] as $col)
                             @while ( has_sub_field('bloc_flexible_content', $col['bloc_8_block']->ID) )
                                 <?php
-                                $block = new \Theme\Models\Bloc(get_row_layout());
+                                $new_block = new \Theme\Models\Bloc(get_row_layout());
                                 ?>
-                                @include($block->load_path())
+                                @include($new_block->load_path())
                             @endwhile
                         @endforeach
                     @endif

@@ -10,7 +10,6 @@ class Lego8 extends BaseLego implements LegoInterface
     {
         return [
         	$this->generate_repeater('bloc_8_collapse',     __('Collapsible Drawer', 'GROUPE-CT'), [
-		        // FIXME Image size to be defined
 		        $this->generate_image('bloc_8_icon',        __('Icon', 'GROUPE-CT'), __('Maximmum width: 50px | Maximum Height: 50px', 'GROUPE-CT') ),
 		        $this->generate_text('bloc_8_title',        __('Title', 'GROUPE-CT') ),
 		        $this->generate_wysiwyg('bloc_8_content',   __('Content', 'GROUPE-CT') ),
