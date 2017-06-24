@@ -6,6 +6,7 @@
     @include flex-wrap(no-wrap);
     @include justify-content(space-between);
   }
+
 }
 .text-bloc-container {
   @include flexbox();
