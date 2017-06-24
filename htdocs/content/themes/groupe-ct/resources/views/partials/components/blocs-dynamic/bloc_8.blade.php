@@ -15,13 +15,15 @@
                     {!! $collapse['bloc_8_content'] !!}
                     @if (isset($collapse['bloc_8_blocks']))
                         @foreach ($collapse['bloc_8_blocks'] as $col)
-                            @while ( has_sub_field('bloc_flexible_content', $col['bloc_8_block']->ID) )
-                                <?php
-                                $new_block = new \Theme\Models\Bloc(get_row_layout());
-                                ?>
+                            @if ($col['bloc_8_block'])
+                                @while ( has_sub_field('bloc_flexible_content', $col['bloc_8_block']->ID) )
+                                    <?php
+                                    $new_block = new \Theme\Models\Bloc(get_row_layout());
+                                    ?>
 
-                                @include($new_block->load_path(), ['block' => $new_block])
-                            @endwhile
+                                    @include($new_block->load_path(), ['block' => $new_block])
+                                @endwhile
+                            @endif
                         @endforeach
                     @endif
                 </div>
