@@ -226,6 +226,7 @@ class Bloc {
 					$this->fields['bloc_18_4_cta_blank'] = get_sub_field('bloc_18_4_cta_blank');
 					break;
 				case "bloc_19":
+					$this->fields['block_19_background_color'] = get_sub_field('block_19_background_color');
                     $this->fields['bloc_19_subheader'] = get_sub_field('bloc_19_subheader');
                     $this->fields['bloc_19_subheader_carret'] = get_sub_field('bloc_19_subheader_carret');
                     $this->fields['bloc_19_center_subheader'] = get_sub_field('bloc_19_center_subheader');
