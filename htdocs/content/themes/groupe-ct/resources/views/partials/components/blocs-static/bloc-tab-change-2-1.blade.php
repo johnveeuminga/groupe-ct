@@ -4,6 +4,7 @@
     'bloc_19_subheader' => false,
     'bloc_19_center_title' => false,
     'bloc_19_center_description' => false,
+    'bloc_19_background_color' => 'inherit',
 
     'bloc_19_title' => pll__('Maîtrisez le potentiel de vos nouveaux équipements'),
     'bloc_19_description' => pll__('Gestion changement description 2'),
