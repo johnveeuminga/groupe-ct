@@ -108,7 +108,7 @@ body {
 .primary-btn-blue {
   @extend .primary-btn;
   background-color: $blue;
-  color:white;
+  color:white !important;
  // width:50%;
   text-align: center;
   @media (min-width: $screen-xs-min) {
