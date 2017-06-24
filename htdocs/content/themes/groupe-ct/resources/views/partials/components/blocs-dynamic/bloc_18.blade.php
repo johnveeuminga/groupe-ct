@@ -14,12 +14,6 @@
                 <h3 class="text-bloc-title">{{ $block->get_field('bloc_18_2_title') }}</h3>
                 <p class="text-bloc-text">{{ $block->get_field('bloc_18_2_description') }}</p>
             </div>
-        </div> <!-- TEXT BLOC MAIN CONTAINER END -->
-        <!-- THE ELEMENT END  -->
-
-
-        <!-- THE ELEMENT START  -->
-        <div class="text-bloc-main-container default-width">
             <div class="text-bloc-container">
                 <div class="bloc-top-line"></div>
                 <h3 class="text-bloc-title">{{ $block->get_field('bloc_18_3_title') }}</h3>
