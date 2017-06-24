@@ -243,10 +243,11 @@
                         "red",
                         "blue",
                     ],
-                }],
-            options: {
-                cutoutPercentage: 10
-            }
+                }]
+        };
+
+        var options = {
+            cutoutPercentage: 10
         };
 
         var inView = false;
@@ -272,7 +273,7 @@
                     console.log(this);
                     console.log('HERE IS THE DATA');
                     console.log(data);
-                    new Chart(jQuery(".doughnut-chart01")[0].getContext("2d"), {type:"doughnut", data:data});
+                    new Chart(jQuery(".doughnut-chart01")[0].getContext("2d"), {type:"doughnut", data:data}, options);
                 } else {
                     inView = false;
                 }
