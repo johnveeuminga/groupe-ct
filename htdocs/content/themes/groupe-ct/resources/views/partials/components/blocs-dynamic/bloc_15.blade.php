@@ -1,6 +1,6 @@
 <!-- Block 15 - Team -->
+@foreach ($block->get_field('bloc_15_teams') as $team)
 <div class="toggle-main-container default-padding default-width">
-    @foreach ($block->get_field('bloc_15_teams') as $team)
     <div class="toggle-content-header">
         <div class="toggle-title-container">
             <h3 class="toggle-content-title" href="#">{{ $team['block_15_team_title'] }}</h3>
@@ -26,5 +26,5 @@
             {{-- job INFO END --}}
         @endforeach
     </div>
-    @endforeach
 </div> <!-- toggle-main-container END -->
+@endforeach
