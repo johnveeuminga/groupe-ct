@@ -19,7 +19,8 @@
                                 <?php
                                 $new_block = new \Theme\Models\Bloc(get_row_layout());
                                 ?>
-                                @include($new_block->load_path())
+
+                                @include($new_block->load_path(), ['block' => $new_block])
                             @endwhile
                         @endforeach
                     @endif

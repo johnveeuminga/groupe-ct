@@ -16,7 +16,7 @@
                     <?php
                         $block = new \Theme\Models\Bloc(get_row_layout());
                     ?>
-                    @include($block->load_path())
+                    @include($block->load_path(), ['block' => $block])
                 @endwhile
 
             @endwhile
