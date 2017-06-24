@@ -74,16 +74,20 @@ body {
   left:0;
   bottom:16px;
   border-bottom: 12px solid #a91b2d;
-  width:98%;
+  width:95%;
   margin:auto;
   margin-left:6px;
 }
 
+.red-border {
+  position: relative;
+}
 
 /***** BUTTONS & CTA *****/
 
 
 .primary-btn {
+  display: inline-block;
   padding: 15px 30px;
   @include set-font(15px, $poppins, 700, $blue);
   background-color: white;
@@ -104,7 +108,7 @@ body {
 .primary-btn-blue {
   @extend .primary-btn;
   background-color: $blue;
-  color:white;
+  color:white !important;
  // width:50%;
   text-align: center;
   @media (min-width: $screen-xs-min) {
