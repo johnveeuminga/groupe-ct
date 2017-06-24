@@ -12,7 +12,7 @@
 .text-bloc-container {
   @include flexbox();
   @include flex-direction(column);
-  @include flex-basis(100%);
+  @include flex-basis(50%);
   padding-right: 0;
 
   @media (min-width: $screen-md-min) {
