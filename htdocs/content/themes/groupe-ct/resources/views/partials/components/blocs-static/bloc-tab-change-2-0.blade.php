@@ -6,6 +6,8 @@
     'bloc_19_center_title' => false,
     'bloc_19_center_description' => false,
     'bloc_19_background_color' => 'inherit',
+    'bloc_19_remove_padding' => false,
+    'bloc_19_remove_margin' => false,
 
     'bloc_19_title' => pll__('Accompagnement sur mesure à chaque étape'),
     'bloc_19_description' => pll__('Gestion changement description 1'),
