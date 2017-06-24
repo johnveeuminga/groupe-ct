@@ -14,7 +14,7 @@
 ])
 
 <div class="bloc-container default-width">
-    <div class="bloc-tab-change-main-container no-padding">
+    <div class="bloc-tab-change-main-container">
 
         <div class="tab-change-container tc01">
             <div class="tab-change-title-container">

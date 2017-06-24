@@ -5,7 +5,8 @@
   @media (min-width: 1240px) {
     @include flex-direction(row);
   }
-  padding-top: 25px;
+
+  padding: 25px 0 0 0;
 
   .tab-change-container {
 
