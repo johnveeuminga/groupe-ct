@@ -14,8 +14,7 @@
                 <div class="event">
                     <div class="event-line"></div>
                     <div class="event-txt">
-                        <p class="timeline-date">{{ date_i18n('F Y', strtotime($event->post_date)) }} </p>
-                        <p class="timeline-event">{{ $event->post_content }}</p>
+                        {!! wpautop($event->post_content) !!}
                     </div>
                 </div>
             </div>

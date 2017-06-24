@@ -41,12 +41,19 @@
   z-index: 100;
   width:440px;
 
+  .timeline-dot-container {
+    margin-left: 1px;
+  }
+
   .timeline-event-container {
     @include flexbox();
     @include align-items(flex-start);
     position: relative;
     left:2px;
     margin-bottom:60px;
+    &:first-child {
+      margin-top: 10px;
+    }
   }
 
   .timeline-date-container{
@@ -85,12 +92,16 @@
       width:300px;
     }
 
-    .timeline-date {
+    h2 {
       @extend .poppins22BoldBlue;
       text-transform: uppercase;
+
+      &:not(:first-child) {
+        margin-top: 15px;
+      }
     }
 
-    .timeline-event {
+    p {
       @extend .poppins15LightdBlue;
       margin-top: 5px;
       text-transform: uppercase;
