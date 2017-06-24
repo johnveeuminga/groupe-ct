@@ -2,7 +2,7 @@
 .chart-main-container {
   @include flexbox();
   @include flex-direction(column);
-  @include align-items(center);
+  @include align-items(baseline);
   @media (min-width: $screen-sm-min) {
     @include flex-direction(row);
     @include justify-content(space-around);
