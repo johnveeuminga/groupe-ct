@@ -2,7 +2,6 @@
 <div class="toggle-content-main-container row default-padding">
     <div class="col-xs-12">
 
-        <h2 class="text-bloc-main-title">{!! $block->get_field('bloc_18_title') !!}</h2>
         <!-- THE ELEMENT START  -->
         <div class="text-bloc-main-container default-width">
             <div class="text-bloc-container">

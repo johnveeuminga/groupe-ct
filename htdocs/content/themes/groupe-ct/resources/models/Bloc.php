@@ -213,6 +213,7 @@ class Bloc {
 					$this->fields['bloc_18_2_cta_link'] = get_sub_field('bloc_18_2_cta_link');
 					$this->fields['bloc_18_2_cta_blank'] = get_sub_field('bloc_18_2_cta_blank');
 
+
 					$this->fields['bloc_18_3_title'] = get_sub_field('bloc_18_3_title');
 					$this->fields['bloc_18_3_description'] = get_sub_field('bloc_18_3_description');
 					$this->fields['bloc_18_3_cta_label'] = get_sub_field('bloc_18_3_cta_label');
