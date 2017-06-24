@@ -1,5 +1,5 @@
 <!-- Block 3 - Text/Image & Image/Text - Standalone -->
-<div class="img-plus-text img-plus-text-normal default-padding default-width @if($block->get_field('bloc_3_image_left') !== false) reverse-elem  @endif">
+<div class="img-plus-text img-plus-text-normal default-padding default-width @if($block->get_field('bloc_3_image_left') === false) reverse-elem  @endif">
 
     <div class="img-container">
         <img src="{{ $block->get_field('bloc_3_image')['url'] }}" alt="{{ $block->get_field('bloc_3_image')['alt'] }}">
