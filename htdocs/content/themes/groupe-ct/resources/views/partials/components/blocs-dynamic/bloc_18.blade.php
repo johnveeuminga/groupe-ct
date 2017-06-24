@@ -1,5 +1,5 @@
 <!-- Block 18 - 4-paragraphs -->
-<div class="toggle-content-main-container row default-padding">
+<div class="row default-padding">
     <div class="col-xs-12">
 
         <!-- THE ELEMENT START  -->
