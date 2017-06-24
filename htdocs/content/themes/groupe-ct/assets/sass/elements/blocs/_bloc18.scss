@@ -7,7 +7,9 @@
     @include justify-content(space-between);
     padding: 75px 0;
   }
-
+  @media (min-width: $screen-lg-min) {
+    @include flex-wrap(nonwrap);
+  }
 }
 .text-bloc-container {
   @include flexbox();
