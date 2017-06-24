@@ -1,6 +1,6 @@
 <?php
 // This bloc is sometime used by static bloc.
-$bloc_19_background_color = isset($block->get_field('block_19_background_color')) ? "style='background-color: ".$block->get_field('block_19_background_color')."'" : '';
+$bloc_19_background_color = $block->get_field('block_19_background_color') ? "style='background-color: ".$block->get_field('block_19_background_color')."'" : '';
 $bloc_19_subheader = isset($bloc_19_subheader) ? $bloc_19_subheader : $block->get_field('bloc_19_subheader');
 $bloc_19_subheader_carret = isset($bloc_19_subheader_carret) ? $bloc_19_subheader_carret : $block->get_field('bloc_19_subheader_carret');
 $bloc_19_center_subheader = isset($bloc_19_center_subheader) ? $bloc_19_center_subheader: $block->get_field('bloc_19_center_subheader');
