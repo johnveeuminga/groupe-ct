@@ -240,20 +240,24 @@ body {
   }
 }
 
-.section-title-container {
-  .title {
+.section-title-wrapper {
 
-    @extend .poppins30BoldBlack;
-    text-transform: uppercase;
-    margin:30px 0;
-    @media (min-width: $screen-sm-min) {
-     @include set-font(45px, $poppins, 700, $black);
+  padding: 90px 0;
+  .section-title-container {
+    .title {
+
+      @extend .poppins30BoldBlack;
+      text-transform: uppercase;
+      margin:30px 0;
+      @media (min-width: $screen-sm-min) {
+        @include set-font(45px, $poppins, 700, $black);
+      }
     }
-  }
-  .desc {
-    @extend .mada22LightBlack;
-  }
+    .desc {
+      @extend .mada22LightBlack;
+    }
 
+  }
 }
 
 .publication-cat, .publication-title, .publication-date {
