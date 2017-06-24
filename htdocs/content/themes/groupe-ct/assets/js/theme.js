@@ -244,6 +244,7 @@
                         "#cdd8e0",
                     ],
                 }],
+            cutoutPercentage: 80
         };
 
         var inView = false;
