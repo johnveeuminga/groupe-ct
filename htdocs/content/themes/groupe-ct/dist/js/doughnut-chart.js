@@ -73,9 +73,9 @@ Chart.plugins.register({
         }
 
 
-        jQuery(window).scroll(function () {
+        // jQuery(window).scroll(function () {
             $('.doughnut-chart').each(function() {
-                if (isScrolledIntoView($(this)) && $(this).data('initiated') === false) {
+                // if (isScrolledIntoView($(this)) && $(this).data('initiated') === false) {
                     $(this).data('initiated', true);
                     var description = $(this).data('description'),
                         percentage = parseInt($(this).data().percentage),
@@ -117,10 +117,10 @@ Chart.plugins.register({
                             cutoutPercentage: 80
                         }
                     });
-                }
+                // }
             });
 
-        });
+        // });
     });
 }(jQuery));
 
