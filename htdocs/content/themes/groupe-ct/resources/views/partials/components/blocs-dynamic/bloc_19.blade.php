@@ -8,10 +8,12 @@ $bloc_19_title = isset($bloc_19_title) ? $bloc_19_title : $block->get_field('blo
 $bloc_19_center_title = isset($bloc_19_center_title) ? $bloc_19_center_title : $block->get_field('bloc_19_center_title');
 $bloc_19_description = isset($bloc_19_description) ? $bloc_19_description : $block->get_field('bloc_19_description');
 $bloc_19_center_description = isset($bloc_19_center_description) ? $bloc_19_center_description : $block->get_field('bloc_19_center_description');
+$bloc_19_remove_padding = isset($bloc_19_remove_padding) ? $bloc_19_remove_padding : $block->get_field('bloc_19_remove_padding');
+$bloc_19_remove_margin = isset($bloc_19_remove_margin) ? $bloc_19_remove_margin : $block->get_field('bloc_19_remove_margin');
 
 ?>
 
-<div class="section-title-wrapper" style="background-color: {{ $bloc_19_background_color }}">
+<div class="section-title-wrapper" style="background-color: {{ $bloc_19_background_color }}; @if($bloc_19_remove_padding) padding: 0; @endif">
     <div class="default-padding default-width">
 
         <!-- TITLE START -->
@@ -22,7 +24,7 @@ $bloc_19_center_description = isset($bloc_19_center_description) ? $bloc_19_cent
             {{--@endif--}}
 
             {{--@if(isset($bloc_19_title))--}}
-                <h2 class="title {{ $bloc_19_center_title === true ? 'align-center' : '' }}">{!! $bloc_19_title !!} </h2> <!-- align-center : text-align:center for title and desc  -->
+                <h2 class="title {{ $bloc_19_center_title === true ? 'align-center' : '' }}" style="@if($bloc_19_remove_padding) margin: 0; @endif">{!! $bloc_19_title !!} </h2> <!-- align-center : text-align:center for title and desc  -->
             {{--@endif--}}
 
             {{--@if(isset($bloc_19_description))--}}

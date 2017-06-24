@@ -235,6 +235,8 @@ class Bloc {
                     $this->fields['bloc_19_center_title'] = get_sub_field('bloc_19_center_title');
                     $this->fields['bloc_19_description'] = get_sub_field('bloc_19_description');
                     $this->fields['bloc_19_center_description'] = get_sub_field('bloc_19_center_description');
+                    $this->fields['bloc_19_remove_padding'] = get_sub_field('bloc_19_remove_padding');
+                    $this->fields['bloc_19_remove_margin'] = get_sub_field('bloc_19_remove_margin');
                     break;
 				case "bloc_20":
                     $this->fields['bloc_20_wysiwyg'] = get_sub_field('bloc_20_wysiwyg');

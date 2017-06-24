@@ -17,6 +17,8 @@ class Lego19 extends BaseLego implements LegoInterface
 			$this->generate_true_false('bloc_19_center_title', 'Center Title'),
 			$this->generate_wysiwyg('bloc_19_description', 'Description'),
             $this->generate_true_false('bloc_19_center_description', 'Center description'),
+            $this->generate_true_false('bloc_19_remove_padding', 'Removing padding'),
+            $this->generate_true_false('bloc_19_remove_margin', 'Removing margin'),
 		];
 	}
 
