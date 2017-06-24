@@ -13,8 +13,8 @@ $bloc_19_remove_margin = isset($bloc_19_remove_margin) ? $bloc_19_remove_margin 
 
 ?>
 
-<div class="section-title-wrapper" style="background-color: {{ $bloc_19_background_color }}; @if($bloc_19_remove_padding) padding: 0; @endif">
-    <div class="default-padding default-width">
+<div class="section-title-wrapper row" style="background-color: {{ $bloc_19_background_color }}; @if($bloc_19_remove_padding) padding: 0; @endif">
+    <div class="default-padding default-width col-xs-12">
 
         <!-- TITLE START -->
         <div class="section-title-container">
