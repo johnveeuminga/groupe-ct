@@ -24,6 +24,11 @@ $settings['socialMedia'] = [
 	Field::text('facebook',['title' => 'Facebook']),
 ];
 
+$sections[] = Section::make('hr', 'Human Resources');
+$settings['hr'] = [
+	Field::text('hrEmail',['title' => 'HR Email']),
+];
+
 $page->addSettings($settings);
 $page->addSections($sections);
 
