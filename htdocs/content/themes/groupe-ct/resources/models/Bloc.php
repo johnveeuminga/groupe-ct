@@ -178,10 +178,54 @@ class Bloc {
 					$this->fields['bloc_15_teams'] = get_sub_field('bloc_15_team');
 					break;
 				case "bloc_16":
+					$order = get_sub_field('bloc_16_timeline_order');
+					$this->fields['block_16_timeline_events'] = TimelineEvent::all(true, $order);
 					break;
 				case "bloc_17":
+					$this->fields['bloc_17_background_image'] = get_sub_field('bloc_17_background_image');
+
+					$this->fields['bloc_17_1_icon'] = get_sub_field('bloc_17_1_icon');
+					$this->fields['bloc_17_1_number'] = get_sub_field('bloc_17_1_number');
+					$this->fields['bloc_17_1_description'] = get_sub_field('bloc_17_1_description');
+
+					$this->fields['bloc_17_2_icon'] = get_sub_field('bloc_17_2_icon');
+					$this->fields['bloc_17_2_number'] = get_sub_field('bloc_17_2_number');
+					$this->fields['bloc_17_2_description'] = get_sub_field('bloc_17_2_description');
+
+					$this->fields['bloc_17_3_icon'] = get_sub_field('bloc_17_3_icon');
+					$this->fields['bloc_17_3_number'] = get_sub_field('bloc_17_3_number');
+					$this->fields['bloc_17_3_description'] = get_sub_field('bloc_17_3_description');
+
+					$this->fields['bloc_17_4_icon'] = get_sub_field('bloc_17_4_icon');
+					$this->fields['bloc_17_4_number'] = get_sub_field('bloc_17_4_number');
+					$this->fields['bloc_17_4_description'] = get_sub_field('bloc_17_4_description');
 					break;
 				case "bloc_18":
+					$this->fields['bloc_18_title'] = get_sub_field('bloc_18_title');
+
+					$this->fields['bloc_18_1_title'] = get_sub_field('bloc_18_1_title');
+					$this->fields['bloc_18_1_description'] = get_sub_field('bloc_18_1_description');
+					$this->fields['bloc_18_1_cta_label'] = get_sub_field('bloc_18_1_cta_label');
+					$this->fields['bloc_18_1_cta_link'] = get_sub_field('bloc_18_1_cta_link');
+					$this->fields['bloc_18_1_cta_blank'] = get_sub_field('bloc_18_1_cta_blank');
+
+					$this->fields['bloc_18_2_title'] = get_sub_field('bloc_18_2_title');
+					$this->fields['bloc_18_2_description'] = get_sub_field('bloc_18_2_description');
+					$this->fields['bloc_18_2_cta_label'] = get_sub_field('bloc_18_2_cta_label');
+					$this->fields['bloc_18_2_cta_link'] = get_sub_field('bloc_18_2_cta_link');
+					$this->fields['bloc_18_2_cta_blank'] = get_sub_field('bloc_18_2_cta_blank');
+
+					$this->fields['bloc_18_3_title'] = get_sub_field('bloc_18_3_title');
+					$this->fields['bloc_18_3_description'] = get_sub_field('bloc_18_3_description');
+					$this->fields['bloc_18_3_cta_label'] = get_sub_field('bloc_18_3_cta_label');
+					$this->fields['bloc_18_3_cta_link'] = get_sub_field('bloc_18_3_cta_link');
+					$this->fields['bloc_18_3_cta_blank'] = get_sub_field('bloc_18_3_cta_blank');
+
+					$this->fields['bloc_18_4_title'] = get_sub_field('bloc_18_4_title');
+					$this->fields['bloc_18_4_description'] = get_sub_field('bloc_18_4_description');
+					$this->fields['bloc_18_4_cta_label'] = get_sub_field('bloc_18_4_cta_label');
+					$this->fields['bloc_18_4_cta_link'] = get_sub_field('bloc_18_4_cta_link');
+					$this->fields['bloc_18_4_cta_blank'] = get_sub_field('bloc_18_4_cta_blank');
 					break;
 				case "bloc_19":
                     $this->fields['bloc_19_subheader'] = get_sub_field('bloc_19_subheader');
