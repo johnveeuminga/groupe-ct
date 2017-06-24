@@ -240,8 +240,8 @@
                 {
                     data: [60, 40],
                     backgroundColor: [
-                        "#063a65",
-                        "#cdd8e0",
+                        "red",
+                        "blue",
                     ],
                 }],
             cutoutPercentage: 80
