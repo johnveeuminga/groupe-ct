@@ -11,11 +11,20 @@
                 <a class="open-toggle-content" href="#"></a>
             </div>
             <div class="toggle-content">
-                <div class="wys-content">{!! $collapse['bloc_8_content'] !!}</div>
+                <div class="wys-content">
+                    {!! $collapse['bloc_8_content'] !!}
+                    @if (isset($collapse['bloc_8_blocks']))
+                        @foreach ($collapse['bloc_8_blocks'] as $col)
+                            @while ( has_sub_field('bloc_flexible_content', $col['bloc_8_block']->ID) )
+                                <?php
+                                $block = new \Theme\Models\Bloc(get_row_layout());
+                                ?>
+                                @include($block->load_path())
+                            @endwhile
+                        @endforeach
+                    @endif
+                </div>
             </div>
         </div>
-{{--        @foreach ($block['bloc_8_blocks'] as $blocks)--}}
-<!--            --><?php //var_dump($blocks) ?>
-        {{--@endforeach--}}
     @endforeach
 </div>
