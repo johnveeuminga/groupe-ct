@@ -85,7 +85,7 @@ Chart.plugins.register({
                         label = $(this).data().label;
 
                     var data = {
-                        labels: [ false ],
+                        labels: [ false, false ],
                         datasets: [{
                             data: [ percentage, rest ],
                             backgroundColor: [ primary, unfilled ]
