@@ -32,10 +32,10 @@
             <!-- THE ELEMENT END  -->
         </div>
         <!-- FIXME -->
-        <h3>Missing fields</h3>
+        <!--h3>Missing fields</h3>
         <ul>
             <li>bloc_9_title</li>
-        </ul>
+        </ul-->
     </div>
 </div>
 
