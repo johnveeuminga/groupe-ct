@@ -137,7 +137,6 @@ class Bloc {
 
 					$this->fields['bloc_9_1_label'] = get_sub_field('bloc_9_1_label');
 					$this->fields['bloc_9_1_primary'] = get_sub_field('bloc_9_1_primary');
-					$this->fields['bloc_9_1_secondary'] = get_sub_field('bloc_9_1_secondary');
 					$this->fields['bloc_9_1_unfilled'] = get_sub_field('bloc_9_1_unfilled');
 					$this->fields['bloc_9_1_percentage'] = get_sub_field('bloc_9_1_percentage');
 					$this->fields['bloc_9_1_description'] = get_sub_field('bloc_9_1_description');
@@ -145,7 +144,6 @@ class Bloc {
 
 					$this->fields['bloc_9_2_label'] = get_sub_field('bloc_9_2_label');
 					$this->fields['bloc_9_2_primary'] = get_sub_field('bloc_9_2_primary');
-					$this->fields['bloc_9_2_secondary'] = get_sub_field('bloc_9_2_secondary');
 					$this->fields['bloc_9_2_unfilled'] = get_sub_field('bloc_9_2_unfilled');
 					$this->fields['bloc_9_2_percentage'] = get_sub_field('bloc_9_2_percentage');
 					$this->fields['bloc_9_2_description'] = get_sub_field('bloc_9_2_description');
