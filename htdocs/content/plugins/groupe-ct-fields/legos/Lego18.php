@@ -9,6 +9,8 @@ class Lego18 extends BaseLego implements LegoInterface
 	public function get_unique_fields()
 	{
 		return [
+			$this->generate_tab('bloc_18_1',                  __('Column 1', 'GROUPE-CT') ),
+			$this->generate_text('bloc_18_1_title',           __('Title', 'GROUPE-CT')),
 			$this->generate_textarea('bloc_18_1_description', __('Description', 'GROUPE-CT')),
 			$this->generate_cta('bloc_18_1')[0],
 			$this->generate_cta('bloc_18_1')[1],
