@@ -244,7 +244,7 @@
                         "blue",
                     ],
                 }],
-            cutoutPercentage: 80
+            cutoutPercentage: 10
         };
 
         var inView = false;
