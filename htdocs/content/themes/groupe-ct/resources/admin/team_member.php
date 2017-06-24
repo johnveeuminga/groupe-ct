@@ -22,7 +22,7 @@ acf_add_local_field_group(array (
 	'fields' => array (
 		$acf_fields->generate_text('team_member_title', __('Title', 'GROUPE-CT') ),
 		$acf_fields->generate_text('team_member_phone', __('Phone Number', 'GROUPE-CT') ),
-		$acf_fields->generate_text('team_member_position', __('Position', 'GROUPE-CT') ),
+		$acf_fields->generate_text('team_member_position', __('Extension', 'GROUPE-CT') ),
 		$acf_fields->generate_text('team_member_email', __('Email', 'GROUPE-CT') ),
 	),
 	'location' => array (
