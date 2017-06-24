@@ -96,6 +96,8 @@ Chart.plugins.register({
                         data: data,
                         options: {
                             //responsive: true,
+                            tooltips: {enabled: false},
+                            hover: {mode: null},
                             legend: {
                                 display: false
                             },
