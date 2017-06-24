@@ -1,6 +1,6 @@
 <?php
 // This bloc is sometime used by static bloc.
-$bloc_19_background_color = $block->get_field('block_19_background_color') ? 'style="background-color: '.$block->get_field('block_19_background_color').'"' : '';
+$bloc_19_background_color = $block->get_field('block_19_background_color') ? $block->get_field('block_19_background_color') : 'inherit';
 $bloc_19_subheader = isset($bloc_19_subheader) ? $bloc_19_subheader : $block->get_field('bloc_19_subheader');
 $bloc_19_subheader_carret = isset($bloc_19_subheader_carret) ? $bloc_19_subheader_carret : $block->get_field('bloc_19_subheader_carret');
 $bloc_19_center_subheader = isset($bloc_19_center_subheader) ? $bloc_19_center_subheader: $block->get_field('bloc_19_center_subheader');
@@ -11,7 +11,7 @@ $bloc_19_center_description = isset($bloc_19_center_description) ? $bloc_19_cent
 
 ?>
 
-<div class="default-padding default-width" {{ $bloc_19_background_color }}>
+<div class="default-padding default-width" style="background-color: {{ $bloc_19_background_color }}">
 
     <!-- TITLE START -->
     <div class="section-title-container">
