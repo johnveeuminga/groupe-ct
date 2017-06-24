@@ -16,6 +16,54 @@
 }
 
 
+.job-info-detailed-container {
+  @include flexbox();
+  @include flex-direction(column);
+  position: relative;
+  padding:20px 0;
+
+  p {
+    @extend .mada18RegBlack;
+    span {
+      @extend .mada18LightBlack;
+      padding-right:15px;
+      line-height: 27px;
+    }
+  }
+
+  .job-info-inner-container {
+    padding: 0 2%;
+  }
+
+  .job-info-title {
+    @extend .poppins22BoldBlue;
+    text-transform: uppercase;
+    margin-top: 20px;
+    margin-bottom:20px;
+  }
+
+  .job-info-description {
+    margin: 30px 0;
+    max-height: 38vh;
+    overflow: scroll;
+
+    p {
+      @extend .mada18LightBlack;
+      margin-bottom: 15px;
+    }
+  }
+
+  .btn-container {
+    @include flexbox();
+    @include flex-direction(column);
+    margin: 20px 0;
+    .btn {
+      width:120px;
+    }
+  }
+
+}
+
 
 .job-info-container {
 
@@ -49,6 +97,17 @@
     @extend .poppins22BoldBlue;
     text-transform: uppercase;
     margin-bottom:20px;
+  }
+
+  .job-info-description {
+    margin: 30px 0;
+    max-height: 60vh;
+    overflow: scroll;
+
+    p {
+      @extend .mada18LightBlack;
+      margin-bottom: 15px;
+    }
   }
 
   .btn-container {

@@ -26,11 +26,4 @@ class PageController extends MainController
         return view('pages.publication-list',[]);
     }
 
-    public function job_offer()
-    {
-	    return view('partials.components.job-offer.lightbox',[]);
-    }
-
-
-
 }
