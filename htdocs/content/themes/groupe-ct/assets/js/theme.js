@@ -273,7 +273,8 @@
                     console.log(this);
                     console.log('HERE IS THE DATA');
                     console.log(data);
-                    new Chart(jQuery(".doughnut-chart01")[0].getContext("2d"), {type:"doughnut", data:data}, options);
+                    console.log(options);
+                    new Chart(jQuery(".doughnut-chart01")[0].getContext("2d"), {data:data}, options);
                 } else {
                     inView = false;
                 }
