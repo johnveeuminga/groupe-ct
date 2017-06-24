@@ -1,6 +1,32 @@
 .tech-support-main-container {
 
-  /**** General css ****/
+  /*** Text elements ***/
+  p {
+    @extend .mada22LightBlack;
+    margin-bottom: 30px;
+  }
+
+  .form-link {
+    @extend .mada22RegBlack;
+  }
+
+
+
+  /**** Section header *****/
+
+  .tech-support-header-container {
+    text-align: center;
+    .section-title {
+      @extend .poppins45BoldBlack;
+      text-transform: uppercase;
+      margin-bottom: 30px;
+    }
+    p {
+      margin-bottom: 30px;
+    }
+  }
+
+  /**** Form General css ****/
   .form-container {
     margin-top: 35px;
     margin-bottom: 70px;
@@ -28,13 +54,11 @@
       @media (min-width: $screen-md-min) {
         margin-bottom:0px;
         padding-left:0;
-        padding-right:25px;
       }
     }
     .form-right-container {
 
       @media (min-width: $screen-md-min) {
-        padding-left:25px;
         padding-right:0;
       }
     }
@@ -50,11 +74,36 @@
 
     .tech-support-input {
       -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+
+      padding: 19px 15px;
+      margin-bottom: 10px;
       border:1px solid $grey-light;
       @include border-radius(2px);
-      padding: 25px 15px;
-      margin-bottom: 20px;
+      @extend .mada18LightBlack;
     }
+    .form-left-container .tech-support-input {
+
+      @media (min-width: $screen-sm-min) {
+        margin-right:10px;
+      }
+    }
+
+    .form-right-container .tech-support-input {
+
+      @media (min-width: $screen-sm-min) {
+        margin-left:10px;
+      }
+    }
+
+    select option {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      @extend .mada18LightBlack;
+    }
+
 
     /* Base for label styling */
     [type="checkbox"]:not(:checked),
@@ -101,18 +150,15 @@
 
   }
 
-  /*** Text elements ***/
-  .form-container p {
-    @extend .mada22LightBlack;
-  }
 
-  .form-link {
-    @extend .mada22RegBlack;
-  }
 
   .form-container .mention, label, select {
     @include set-font(18px, $mada, 300, $grey-placeholder);
     margin-bottom: 8px;
+    //margin-left:10px;
+    @media (min-width: $screen-sm-min) {
+     // margin-left:0px;
+    }
   }
 
   .form-container textarea {
@@ -120,16 +166,15 @@
   }
 
   .form-container select {
-    background: url($assets + "/images/icon/icon-arrow-black.png") no-repeat 85% 50%;
+    background: url($assets + "/images/icon/icon-arrow-black.png") no-repeat 95% 50%;
   }
-
-
-
 
 
   /*** THE FORMS ****/
 
   #form-my-ct {
+
+      @include flex-direction(column);
 
      .my-ct-link {
         padding:50px 0;
@@ -142,27 +187,135 @@
 
   #form-assistance{
 
-    #assistance-msg {
-      min-height:370px;
+    .content-container {
+      @media (min-width: $screen-md-min) {
+        @include flexbox();
+        @include flex-direction(row);
+      }
     }
 
-    .opening {
+    .input-container:nth-child(1) {
+      @media (min-width: $screen-sm-min) {
+        select {
+          width:20%;
+        }
+        #assistance-firstname, #assistance-lastname {
+          width:40%;
+        }
+      }
+    }
+    .input-container:nth-child(2) {
+      @media (min-width: $screen-sm-min) {
+        #assistance-email, #assistance-phone {
+          width:40%;
+        }
+        #assistance-ext {
+          width:20%;
+        }
+      }
+    }
+    .input-container:nth-child(3) {
+      @media (min-width: $screen-sm-min) {
+        #assistance-compagny-name, #assistance-office{
+          width:40%;
+        }
+        #assistance-serial {
+          width:20%;
+        }
+      }
+    }
+
+    .input-container:nth-child(4) {
       @include flexbox();
-      @include justify-content(space-between);
-    }
-    .assistance-opening {
-      width: 45%;
+
+      @media (min-width: $screen-sm-min) {
+        @include flex-direction(column);
+      }
+
+      .opening-main-container {
+        @include flexbox();
+        @include flex-direction(column);
+        @media (min-width: $screen-xs-min) {
+          @include flex-direction(row);
+        }
+        @media (min-width: $screen-sm-min) {
+          //@include flex-direction(column);
+        }
+      }
+      .opening {
+        @include flexbox();
+        @include flex-direction(column);
+        @media (min-width: $screen-xs-min) {
+          @include flex-basis(50%);
+        }
+        @media (min-width: $screen-sm-min) {
+          @include flex-basis(100%);
+          .mention {
+            margin-left: 10px;
+          }
+        }
+      }
+
+      .opening:first-of-type {
+        margin-right:20px;
+      }
+
     }
 
-    .form-right-container .input-container:nth-child(2) {
-      text-align: center;
+    #assistance-closed + label {
+      @media (min-width: $screen-sm-min) {
+        margin-left: 10px;
+      }
     }
 
-    .assistance-upload-container {
-      @include flexbox();
-      @include flex-direction(column);
-      @include align-items(center);
+
+
+
+    /**** RIGHT SIDE *****/
+
+    .form-right-container {
+
+      #assistance-msg {
+        min-height:370px;
+        @media (min-width: $screen-sm-min) {
+          width:100%;
+        }
+      }
+
+      .input-container:nth-child(2) {
+        @include flex-direction(column);
+
+        .mention {
+          @media (min-width: $screen-sm-min) {
+            margin-left:10px;
+          }
+        }
+      }
+
+      .assistance-upload-container {
+        @include flexbox();
+        @include flex-direction(column);
+        @include align-items(center);
+        @media (min-width: $screen-sm-min) {
+          @include flex-direction(row);
+          @include justify-content(space-between);
+        }
+      }
+
+      .form-submit {
+        @media (min-width: $screen-sm-min) {
+          @include flex-direction(row-reverse);
+        }
+        .mention {
+          @media (min-width: $screen-sm-min) {
+            margin-bottom:0;
+            margin-left:10px;
+          }
+        }
+      }
+
     }
+
 
 
 
