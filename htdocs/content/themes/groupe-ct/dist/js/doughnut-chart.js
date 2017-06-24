@@ -78,11 +78,11 @@ Chart.plugins.register({
                 if (isScrolledIntoView($(this)) && $(this).data('initiated') === false) {
                     $(this).data('initiated', true);
                     var description = $(this).data('description'),
-                        percentage = parseInt($(this).data('percentage')),
+                        percentage = parseInt($(this).data().percentage),
                         rest = 100 - percentage,
-                        primary = $(this).data('primary'),
-                        unfilled = $(this).data('unfilled'),
-                        label = $(this).data('label');
+                        primary = $(this).data().primary,
+                        unfilled = $(this).data().unfilled,
+                        label = $(this).data().label;
 
                     var data = {
                         labels: [ description, "" ],
