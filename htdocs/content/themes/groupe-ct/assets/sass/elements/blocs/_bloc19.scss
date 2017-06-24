@@ -1,6 +1,9 @@
 .section-title-wrapper {
 
-  padding: 90px 0;
+  padding: 0;
+  @media (min-width: $screen-sm-min) {
+    padding: 90px 0;
+  }
   .section-title-container {
     .title {
 
