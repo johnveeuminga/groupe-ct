@@ -11,7 +11,7 @@ $bloc_19_center_description = isset($bloc_19_center_description) ? $bloc_19_cent
 
 ?>
 
-<div class="default-padding default-width" {{ $block_19_background_color }}>
+<div class="default-padding default-width" {{ $bloc_19_background_color }}>
 
     <!-- TITLE START -->
     <div class="section-title-container">
