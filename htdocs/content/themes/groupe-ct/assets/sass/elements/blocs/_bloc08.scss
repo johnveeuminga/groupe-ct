@@ -20,6 +20,14 @@
       padding: 0px 25px;
     }
 
+    &.environnement-hybride {
+      background-color: #3a6a86;
+    }
+
+    &.environnement-numerique {
+      background-color: #047866;
+    }
+
     .title-container{
       @include flexbox();
       @include align-items(center);

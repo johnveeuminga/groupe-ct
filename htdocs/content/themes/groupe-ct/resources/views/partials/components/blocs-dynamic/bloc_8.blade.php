@@ -1,7 +1,7 @@
 <div class="toggle-content-main-container default-padding default-width">
     @foreach ($block->get_field('bloc_8_collapse') as $collapse)
         <div class="toggle-content-container">
-            <div class="toggle-content-header @if($collapse['bloc_8_active']) active-header @endif">
+            <div class="toggle-content-header @if($collapse['bloc_8_active']) active-header @endif {{ PageHelper::get_page_id(PageHelper::PAGE_1_2_ENVIRONNEMENT_HYBRIDE) === get_the_ID() ? 'environnement-hybride' : '' }} {{ PageHelper::get_page_id(PageHelper::PAGE_1_2_ENVIRONNEMENT_HYBRIDE) === get_the_ID() ? 'environnement-numerique' : '' }}">
                 <div class="title-container">
                     @if ($collapse['bloc_8_icon'])<span class="icon-container"><img class="title-icon" src="{{ $collapse['bloc_8_icon']['url'] }}" alt="{{ $collapse['bloc_8_icon']['alt'] }}"></span>@endif
                     <h3 class="toggle-content-title" href="">{{ $collapse['bloc_8_title'] }}</h3>
