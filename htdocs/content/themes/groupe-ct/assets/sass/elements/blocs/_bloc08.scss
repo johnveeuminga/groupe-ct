@@ -26,10 +26,16 @@
       position: relative;
       z-index:200;
 
-      .title-icon {
+      .icon-container {
+        height: 50px;
         width: 50px;
-        @media (min-width: $screen-xs-min) {
-          width:initial;
+        text-align: center;
+        @media (max-width: $screen-xs-min - 1) {
+          display: none;
+        }
+
+        .title-icon {
+          max-width: 50px;
         }
       }
     }
@@ -115,6 +121,13 @@
 
     .two-col-icons-text-main-container {
       margin-top: 0;
+
+      &.default-padding {
+        padding: 0;
+        @media (min-width: $screen-xs-min) {
+          padding: 0 30px;
+        }
+      }
     }
 
     .two-col-icons-text-item {
