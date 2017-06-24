@@ -26,10 +26,16 @@
       position: relative;
       z-index:200;
 
-      .title-icon {
+      .icon-container {
+        height: 50px;
         width: 50px;
-        @media (min-width: $screen-xs-min) {
-          width:initial;
+        text-align: center;
+
+        .title-icon {
+          max-width: 50px;
+          @media (min-width: $screen-xs-min) {
+            width:initial;
+          }
         }
       }
     }
