@@ -178,6 +178,8 @@ class Bloc {
 					$this->fields['bloc_15_teams'] = get_sub_field('bloc_15_team');
 					break;
 				case "bloc_16":
+					$order = get_sub_field('bloc_16_timeline_order');
+					$this->fields['block_16_timeline_events'] = TimelineEvent::all(true, $order);
 					break;
 				case "bloc_17":
 					break;
