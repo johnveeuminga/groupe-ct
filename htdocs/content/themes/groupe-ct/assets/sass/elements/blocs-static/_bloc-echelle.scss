@@ -59,11 +59,13 @@
     #hover-hybride.slide-in,
     #hover-hybride.active {
       left: 30%;
+      z-index: 400;
     }
 
     #hover-numerique.slide-in,
     #hover-numerique.active {
       left: 63%;
+      z-index: 300;
     }
   }
 
