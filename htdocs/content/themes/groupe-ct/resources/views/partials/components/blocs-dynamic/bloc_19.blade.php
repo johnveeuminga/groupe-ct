@@ -11,25 +11,24 @@ $bloc_19_center_description = isset($bloc_19_center_description) ? $bloc_19_cent
 
 ?>
 
-<div class="default-padding default-width" style="background-color: {{ $bloc_19_background_color }}">
+<div style="background-color: {{ $bloc_19_background_color }}">
+    <div class="default-padding default-width">
 
-    <!-- TITLE START -->
-    <div class="section-title-container">
+        <!-- TITLE START -->
+        <div class="section-title-container">
 
-        {{--@if(isset($bloc_19_subheader))--}}
-            <p class="{{ $bloc_19_subheader_carret === true ? 'upper-title' : 'upper-title-no-dot' }} {{ $bloc_19_center_subheader === true ? 'align-center' : '' }}">{{ $bloc_19_subheader }}</p> <!-- upper-title-no-dot : enleve le list style -->
-        {{--@endif--}}
+            {{--@if(isset($bloc_19_subheader))--}}
+                <p class="{{ $bloc_19_subheader_carret === true ? 'upper-title' : 'upper-title-no-dot' }} {{ $bloc_19_center_subheader === true ? 'align-center' : '' }}">{{ $bloc_19_subheader }}</p> <!-- upper-title-no-dot : enleve le list style -->
+            {{--@endif--}}
 
-        {{--@if(isset($bloc_19_title))--}}
-            <h2 class="title {{ $bloc_19_center_title === true ? 'align-center' : '' }}">{!! $bloc_19_title !!} </h2> <!-- align-center : text-align:center for title and desc  -->
-        {{--@endif--}}
+            {{--@if(isset($bloc_19_title))--}}
+                <h2 class="title {{ $bloc_19_center_title === true ? 'align-center' : '' }}">{!! $bloc_19_title !!} </h2> <!-- align-center : text-align:center for title and desc  -->
+            {{--@endif--}}
 
-        {{--@if(isset($bloc_19_description))--}}
-            <div class="desc {{ $bloc_19_center_description === true ? 'align-center' : '' }}">{!! $bloc_19_description !!}</div>
-        {{--@endif--}}
+            {{--@if(isset($bloc_19_description))--}}
+                <div class="desc {{ $bloc_19_center_description === true ? 'align-center' : '' }}">{!! $bloc_19_description !!}</div>
+            {{--@endif--}}
+        </div>
+        <!-- TITLE END -->
     </div>
-    <!-- TITLE END -->
 </div>
-
-
-
