@@ -1,18 +1,18 @@
 
 
 .text-bloc-main-container {
-
   @media (min-width: $screen-xs-min) {
     @include flexbox();
-    @include flex-wrap(wrap);
+    @include flex-wrap(no-wrap);
     @include justify-content(space-between);
+    padding-right: 20px;
   }
 }
 .text-bloc-container {
   @include flexbox();
   @include flex-direction(column);
   @media (min-width: $screen-xs-min) {
-    @include flex-basis(48%);
+    @include flex-basis(25%);
   }
 
   .bloc-top-line {
