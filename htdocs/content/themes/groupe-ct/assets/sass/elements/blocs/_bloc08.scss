@@ -14,7 +14,10 @@
     @include background-transition();
     height:75px;
     padding: 0px 15px;
-    background-color: $blue-sky;
+    &:not(.environnement-hybride .environnement-numerique) {
+      background-color: $blue-sky;
+    }
+    
     position: relative;
     @media (min-width: $screen-xs-min) {
       padding: 0px 25px;
