@@ -252,34 +252,34 @@
 
         var inView = false;
 
-        function isScrolledIntoView(elem) {
-            var docViewTop = jQuery(window).scrollTop();
-            var docViewBottom = docViewTop + jQuery(window).height();
+        // function isScrolledIntoView(elem) {
+        //     var docViewTop = jQuery(window).scrollTop();
+        //     var docViewBottom = docViewTop + jQuery(window).height();
+        //
+        //     var elemTop = jQuery(elem).offset().top;
+        //     var elemBottom = elemTop + jQuery(elem).height();
+        //
+        //     return ((elemTop <= docViewBottom) && (elemBottom >= docViewTop));
+        // }
 
-            var elemTop = jQuery(elem).offset().top;
-            var elemBottom = elemTop + jQuery(elem).height();
 
-            return ((elemTop <= docViewBottom) && (elemBottom >= docViewTop));
-        }
-
-
-        if ($('.doughnut-chart').length > 0) {
-            jQuery(window).scroll(function () {
-                if (isScrolledIntoView('.doughnut-chart')) {
-                    if (inView) {
-                        return;
-                    }
-                    inView = true;
-                    console.log(this);
-                    console.log('HERE IS THE DATA');
-                    console.log(data);
-                    console.log(options);
-                    new Chart(jQuery(".doughnut-chart01")[0].getContext("2d"), {type:"doughnut", data:data, options: options});
-                } else {
-                    inView = false;
-                }
-            });
-        }
+        // if ($('.doughnut-chart').length > 0) {
+        //     jQuery(window).scroll(function () {
+        //         if (isScrolledIntoView('.doughnut-chart')) {
+        //             if (inView) {
+        //                 return;
+        //             }
+        //             inView = true;
+        //             console.log(this);
+        //             console.log('HERE IS THE DATA');
+        //             console.log(data);
+        //             console.log(options);
+        //             new Chart(jQuery(".doughnut-chart01")[0].getContext("2d"), {type:"doughnut", data:data, options: options});
+        //         } else {
+        //             inView = false;
+        //         }
+        //     });
+        // }
     });
 }(jQuery));
 
