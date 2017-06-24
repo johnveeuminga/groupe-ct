@@ -22,8 +22,8 @@
                 <p class="info job-info-limit"><span><?php _e('Date limite pour postuler', THEME_TEXTDOMAIN); ?> :</span>{{ date('Y-m-d', strtotime($job['bloc_14_job']->job_offer_deadline))  }}</p>
 
                 <div class="btn-container">
-                    <!-- FIXME modal window missing!! -->
-                    <a href="#" class="cta-see-more"><?php _e('en savoir plus', THEME_TEXTDOMAIN); ?></a>
+
+                    <a href="{{ get_permalink($job['bloc_14_job']->ID) }}" class="cta-see-more" data-lity><?php _e('en savoir plus', THEME_TEXTDOMAIN); ?></a>
                     <!-- FIXME email missing!! -->
                     <a class="btn primary-btn-blue" href="mailto:#"><?php _e('postuler', THEME_TEXTDOMAIN); ?></a>
                 </div>
