@@ -1,18 +1,19 @@
 
 
 .text-bloc-main-container {
-
   @media (min-width: $screen-xs-min) {
     @include flexbox();
-    @include flex-wrap(wrap);
+    @include flex-wrap(no-wrap);
     @include justify-content(space-between);
   }
+
 }
 .text-bloc-container {
   @include flexbox();
   @include flex-direction(column);
   @media (min-width: $screen-xs-min) {
-    @include flex-basis(48%);
+    @include flex-basis(25%);
+    padding-right: 20px;
   }
 
   .bloc-top-line {
@@ -21,11 +22,14 @@
   }
   .text-bloc-title{
     @include set-font(22px, $poppins, 700, $blue);
-    padding:20px 0 30px;
+    line-height: 32px;
+    text-transform: uppercase;
+    padding: 0 0 40px;
   }
   .text-bloc-text {
-    @include set-font(22px, $mada, 300, $blue);
-    padding-bottom: 50px;
+    @include set-font(18px, $mada, 300, $black);
+    line-height: 27px;
+    padding: 0 0 35px;
   }
 }
 
