@@ -13,7 +13,7 @@ $bloc_19_remove_margin = isset($bloc_19_remove_margin) ? $bloc_19_remove_margin 
 
 ?>
 
-<div class="section-title-wrapper" style="background-color: {{ $bloc_19_background_color }}; @if($bloc_19_remove_padding) padding: 0; @endif">
+<div class="section-title-wrapper @if($bloc_19_remove_padding) no-padding-xs @endif" style="background-color: {{ $bloc_19_background_color }};">
     <div class="default-padding default-width">
 
         <!-- TITLE START -->
@@ -24,7 +24,7 @@ $bloc_19_remove_margin = isset($bloc_19_remove_margin) ? $bloc_19_remove_margin 
             {{--@endif--}}
 
             {{--@if(isset($bloc_19_title))--}}
-                <h2 class="title {{ $bloc_19_center_title === true ? 'align-center' : '' }}" style="@if($bloc_19_remove_padding) margin: 0; @endif">{!! $bloc_19_title !!} </h2> <!-- align-center : text-align:center for title and desc  -->
+                <h2 class="title {{ $bloc_19_center_title === true ? 'align-center' : '' }} @if($bloc_19_remove_margin) no-margin-xs @endif">{!! $bloc_19_title !!} </h2> <!-- align-center : text-align:center for title and desc  -->
             {{--@endif--}}
 
             {{--@if(isset($bloc_19_description))--}}

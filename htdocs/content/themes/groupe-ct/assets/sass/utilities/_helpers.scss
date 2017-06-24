@@ -5,6 +5,15 @@
   margin:0!important;
 }
 
+@media (min-width: $screen-xs-min) {
+  .no-padding-xs {
+    padding: 0!important;
+  }
+  .no-margin-xs {
+    margin:0!important;
+  }
+}
+
 .default-width {
   max-width:1200px;
   margin:auto;
