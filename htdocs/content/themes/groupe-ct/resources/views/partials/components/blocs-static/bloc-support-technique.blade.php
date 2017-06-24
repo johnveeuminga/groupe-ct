@@ -31,6 +31,7 @@
     </div>
     @include('partials.components.blocs-static.form-support.form-support-technique01')
     @include('partials.components.blocs-static.form-support.form-support-technique02')
+    @include('partials.components.blocs-static.form-support.form-support-technique04')
 
 
 

@@ -9,9 +9,6 @@
   .form-link {
     @extend .mada22RegBlack;
   }
-
-
-
   /**** Section header *****/
 
   .tech-support-header-container {
@@ -155,10 +152,6 @@
   .form-container .mention, label, select {
     @include set-font(18px, $mada, 300, $grey-placeholder);
     margin-bottom: 8px;
-    //margin-left:10px;
-    @media (min-width: $screen-sm-min) {
-     // margin-left:0px;
-    }
   }
 
   .form-container textarea {
@@ -257,7 +250,10 @@
       }
 
       .opening:first-of-type {
-        margin-right:20px;
+        @media (min-width: $screen-xs-min) {
+          margin-right:20px;
+        }
+
       }
 
     }
@@ -267,9 +263,6 @@
         margin-left: 10px;
       }
     }
-
-
-
 
     /**** RIGHT SIDE *****/
 
@@ -316,9 +309,6 @@
 
     }
 
-
-
-
     /**** Styling INPUT FILE ****/
 
     #assistance-upload {
@@ -357,7 +347,6 @@
     /************************************/
 
     .form-submit {
-
       @include flexbox();
       @include flex-direction(column);
       margin-top:30px;
@@ -367,11 +356,52 @@
         @include justify-content(space-between);
         @include align-items(flex-end);
       }
-
       .mention {
         margin-top:15px;
       }
+    }
+  }//END FORM ASSISTANCE
 
+  #form-ressource {
+
+    .form-content-container {
+      @include flexbox();
+      @include flex-direction(column);
+      @media (min-width: $screen-xs-min) {
+        @include flex-direction(row);
+        @include flex-wrap(wrap);
+        @include justify-content(space-between);
+      }
+    }
+    .contact-item {
+      margin-bottom:15px;
+      @media (min-width: $screen-xs-min) {
+        @include flex-basis(33%);
+
+      }
+    }
+
+    .item-title {
+      @extend .poppins22BoldBlue;
+      text-transform: uppercase;
+
+    }
+    .item-info {
+      @include flexbox();
+      @include flex-direction(column);
+
+      p {
+        @extend .mada18LightBlack;
+        margin:0;
+      }
+      span {
+        @extend .mada18RegBlack;
+      }
+      a {
+        @extend .mada18RegBlue;
+        margin-bottom: 10px;
+        //margin-left:45px;
+      }
     }
 
   }
