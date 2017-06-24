@@ -88,6 +88,7 @@ body {
 
 
 .primary-btn {
+  display: inline-block;
   padding: 15px 30px;
   @include set-font(15px, $poppins, 700, $blue);
   background-color: white;
