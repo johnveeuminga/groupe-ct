@@ -23,7 +23,7 @@ class MainController extends BaseController
         Asset::add('form-validation-js',  themosis_assets() . '/js/form-validation.js', ['validate-js'], '', false);
 
 
-        Asset::add('flexgrid', '//cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css', ['screen-css'], '1.0', true);
+        Asset::add('flexgrid', '//cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css', [], '1.0', true);
         Asset::add('font-awesome', '//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css', false, '4.7.0', true);
 
         Asset::add('select2-css', '//cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/css/select2.min.css', false, '4.0.3', true);
