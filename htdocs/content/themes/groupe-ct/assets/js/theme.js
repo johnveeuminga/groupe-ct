@@ -244,7 +244,6 @@
                         "#cdd8e0",
                     ],
                 }],
-            cutoutPercentage: 80
         };
 
         var inView = false;
@@ -268,6 +267,8 @@
                     }
                     inView = true;
                     console.log(this);
+                    console.log('HERE IS THE DATA');
+                    console.log(data);
                     new Chart(jQuery(".doughnut-chart01")[0].getContext("2d"), {type:"doughnut", data:data});
                 } else {
                     inView = false;
