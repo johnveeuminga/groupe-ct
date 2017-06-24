@@ -2,6 +2,16 @@
 <div class="toggle-content-main-container row default-padding">
     <div class="col-xs-12">
 
+    @include('partials.components.blocs-dynamic.bloc_19', [
+        'block' => null,
+        'bloc_19_subheader_carret' => false,
+        'bloc_19_subheader' => false,
+        'bloc_19_center_title' => false,
+        'bloc_19_center_description' => false,
+        'bloc_19_description' => false,
+
+        'bloc_19_title' => $block->get_field('bloc_18_title'),
+    ])
         <!-- THE ELEMENT START  -->
         <div class="text-bloc-main-container default-width">
             <div class="text-bloc-container">
