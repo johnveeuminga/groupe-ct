@@ -9,9 +9,10 @@
  *
  */
 
-Route::get('/components', 'HomeController@blocs');
 Route::any('front', 'PageController@index');
 Route::any('page', 'PageController@index');
+
+Route::any('singular', ['job_offer', 'uses' => 'PageController@job_offer']);
 
 Route::any('single', 'PageController@publication');
 Route::any('postTypeArchive', ['publications' , 'uses' => 'PageController@publication_list']);
