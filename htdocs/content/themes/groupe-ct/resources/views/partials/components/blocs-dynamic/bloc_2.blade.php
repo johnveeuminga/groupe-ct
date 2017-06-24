@@ -2,7 +2,7 @@
 <div class="img-plus-text default-padding default-width">
     <div class="slider-main-container">
         @foreach($block->get_field('bloc_2_slides') as $i => $slide)
-            <div class="slide-container slide{{ $i }} @if($i == 0) {{ 'active-slide' }} @endif @if($slide['bloc_2_slide_image_left']) reverse-elem @endif">
+            <div class="slide-container slide{{ $i }} @if($i == 0) {{ 'active-slide' }} @endif @if(!$slide['bloc_2_slide_image_left']) reverse-elem @endif">
                 <div class="img-container">
                     <img src="{{ $slide['bloc_2_slide_image']['url'] }}" alt="{{ $slide['bloc_2_slide_image']['alt'] }}">
                 </div>
