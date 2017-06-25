@@ -7,8 +7,8 @@
         <div class="prod-logiciel-img-container">
             @if (!empty($block->get_field('bloc_11_video_link')))
                 <a class="youtube-lity" href="{{ $block->get_field('bloc_11_video_link') }}" data-lity></a>
-                <img class="img-video shadow" src="{{ $block->get_field('bloc_11_slide_image')['url'] }}" alt="{{ $block->get_field('bloc_11_slide_image')['alt'] }}">
             @endif
+                <img class="img-video shadow" src="{{ $block->get_field('bloc_11_slide_image')['url'] }}" alt="{{ $block->get_field('bloc_11_slide_image')['alt'] }}">
             @if (!empty($block->get_field('bloc_11_video_caption')))
                 <span class="prod-logiciel-lang">{{ $block->get_field('bloc_11_video_caption') }}</span>
             @endif
@@ -24,7 +24,7 @@
             @if (!empty($block->get_field('bloc_11_description')))
                 <p class="prod-logiciel-text">{{ $block->get_field('bloc_11_description') }}</p>
             @endif
-            @if ($block->get_field('bloc_11_brochure')['url'])
+            @if ($block->get_field('bloc_11_brochure'))
                 <a class="brochure-download-pdf-white" href="{{ $block->get_field('bloc_11_brochure')['url'] }}"><?php _e('BROCHURE', THEME_TEXTDOMAIN); ?></a>
             @endif
         </div>
