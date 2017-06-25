@@ -20,7 +20,7 @@
                                 <img class="product-img" src="{{ $product['bloc_10_image']['url'] }}" alt="{{ $product['bloc_10_image']['alt'] }}">
                             </div>
                             <div class="product-text-container">
-                                <div class="content-container">
+                                <div class="product-text-content-container">
                                     <h3 class="product-title">{{ $product['bloc_10_title'] }}</h3>
                                     <p class="product-desc">{{ $product['bloc_10_description'] }}</p>
                                 </div>

@@ -72,6 +72,11 @@
       line-height: 27px;
     }
 
+    .product-text-content-container {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
     .brochure-download-container {
       padding-top: 15px;
       border-top: 1px solid #9295a0;
