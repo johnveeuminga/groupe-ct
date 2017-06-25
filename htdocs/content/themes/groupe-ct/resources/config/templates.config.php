@@ -11,5 +11,8 @@ return [
      * also on custom post types.
      */
     'custom-template' => ['Custom template', ['page']],
+    'page-2-1' => ['Page 2.1', ['page']],
+    'page-2-2' => ['Page 2.2', ['page']],
+    'page-2-3' => ['Page 2.3', ['page']],
 
 ];

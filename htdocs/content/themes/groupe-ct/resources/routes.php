@@ -11,6 +11,18 @@
 
 Route::any('front', 'PageController@index');
 Route::any('page', 'PageController@index');
+Route::any('template', [
+    'page-2-1',
+    'uses' => 'PageController@page_2_1'
+]);
+Route::any('template', [
+    'page-2-2',
+    'uses' => 'PageController@page_2_2'
+]);
+Route::any('template', [
+    'page-2-3',
+    'uses' => 'PageController@page_2_3'
+]);
 
 Route::any('singular', ['job_offer', 'uses' => 'LightboxController@job_offer']);
 
