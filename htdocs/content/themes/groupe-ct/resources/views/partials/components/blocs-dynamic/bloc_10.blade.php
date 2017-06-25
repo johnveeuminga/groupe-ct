@@ -1,15 +1,5 @@
 <div class="bloc-product-search-main-container">
     <div class="bloc-product-container">
-        @if (PageHelper::is_2_1_subpage(get_the_ID()))
-            @include ('partials.components.helpers.2-1-tabs')
-        @endif
-        @if (PageHelper::is_2_2_subpage(get_the_ID()))
-            @include ('partials.components.helpers.2-2-tabs')
-        @endif
-        @if (PageHelper::is_2_3_subpage(get_the_ID()))
-            @include ('partials.components.helpers.2-3-tabs')
-        @endif
-
         <div class="nav-cat-main-container">
             <!-- insert product category as a class in the <a> -->
             <nav class="nav-cat-container default-padding default-width">
