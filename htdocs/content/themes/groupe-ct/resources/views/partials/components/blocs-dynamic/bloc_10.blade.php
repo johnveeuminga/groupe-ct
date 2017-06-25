@@ -14,7 +14,7 @@
 
             <div class="product-main-container default-padding default-width">
                 @foreach($block->get_field('bloc_10_products') as $product)
-                    <div class="product-container {{ $product['bloc_10_product_category'] }}">
+                    <div class="product-container {{ $product['bloc_10_product_category'][0] }}">
                         <div class="product-inner-container">
                             <div class="product-img-container">
                                 <img class="product-img" src="{{ $product['bloc_10_image']['url'] }}" alt="{{ $product['bloc_10_image']['alt'] }}">
