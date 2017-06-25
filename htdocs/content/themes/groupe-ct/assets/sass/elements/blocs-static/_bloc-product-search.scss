@@ -4,10 +4,6 @@
 .bloc-product-search-main-container {
   position: relative;
   background-color: #f1f1f1;
-  background-image: url($assets + '/images/bg/background_products.jpg');
-  background-position: bottom right;
-  -webkit-background-size: cover;
-  background-size: cover;
 
   .product-dropdown-container {
     background-color: white;
@@ -66,6 +62,10 @@
       -webkit-box-shadow: 0px 0px 41px 1px rgba(0,0,0,0.2);
       -moz-box-shadow: 0px 0px 41px 1px rgba(0,0,0,0.2);
       box-shadow: 0px 0px 41px 1px rgba(0,0,0,0.2);
+      background-image: url($assets + '/images/bg/background_products.jpg');
+      background-position: bottom right;
+      -webkit-background-size: cover;
+      background-size: cover;
     }
   }
 
