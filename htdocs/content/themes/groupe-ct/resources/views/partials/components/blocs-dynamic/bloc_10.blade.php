@@ -4,12 +4,7 @@
             <!-- insert product category as a class in the <a> -->
             <nav class="nav-cat-container default-padding default-width">
                 <h3 class="select-title"><?php _e('Sélectionnez la catégorie de votre choix', THEME_TEXTDOMAIN); ?></h3>
-                <ul class="menu-item-container">
-                    <li class="menu-item"><a class="primary-btn-blue-sky" data-target="2-1-1-a" href="#">{{ pll__('Imprimantes') }}</a></li>
-                    <li class="menu-item"><a class="primary-btn-blue-sky" data-target="2-1-1-b" href="#">{{ pll__('Appareils multifonctions noir et blanc') }}</a></li>
-                    <li class="menu-item"><a class="primary-btn-blue-sky" data-target="2-1-1-c" href="#">{{ pll__('Appareils multifonctions couleur') }}</a></li>
-                    <li class="menu-item"><a class="primary-btn-blue-sky" data-target="2-1-1-d" href="#">{{ pll__('Numériseurs') }}</a></li>
-                </ul>
+                @include('partials.components.helpers.bloc-10-filters')
             </nav>
 
             <div class="product-main-container default-padding default-width">
