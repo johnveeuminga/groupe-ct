@@ -5,7 +5,7 @@
     <!-- THE ELEMENT START  -->
     <div class="prod-logiciel-container {{ $block['bloc_11_slide_image_left'] ? '' : 'reverse-elem' }}"><!-- reverse-elem : to swap img and text div -->
         <div class="prod-logiciel-img-container">
-            @if (!empty($block['bloc_11_video_link')))
+            @if (!empty($block['bloc_11_video_link']))
                 <a class="youtube-lity" href="{{ $block['bloc_11_video_link'] }}" data-lity></a>
             @endif
                 <img class="img-video shadow" src="{{ $block['bloc_11_slide_image']['url'] }}" alt="{{ $block['bloc_11_slide_image']['alt'] }}">
