@@ -1,7 +1,7 @@
     <!-- Block 11 - Software Product -->
 <!-- prod-logiciel MAIN CONTAINER START -->
 <div class="prod-logiciel-main-container default-padding default-width">
-    @foreach($block->get_field('bloc_10_products') as $product)
+    @foreach($block->get_field('bloc_11_software_products') as $product)
         <div class="prod-logiciel-container {{ $block['bloc_11_slide_image_left'] ? '' : 'reverse-elem' }}"><!-- reverse-elem : to swap img and text div -->
             <div class="prod-logiciel-img-container">
                 @if (!empty($block['bloc_11_video_link']))
