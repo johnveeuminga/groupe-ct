@@ -3,7 +3,7 @@
 @section('main')
     <div class="container-fluid" id="_main-container-page-{{ get_the_ID() }}">
         <div class="bloc-product-search-main-container">
-            <div class="bloc-product-container">
+            <div class="bloc-product-outer-container">
                 <nav class="nav-type-container default-width">
                     <ul class="menu-item-container">
                         <li class="menu-item {{ PageHelper::get_page_id(PageHelper::PAGE_2_1_1_EQUIPEMENTS_BUREAU) === get_the_ID() ? 'item-type-active' : '' }}"><a class="" href="{{ PageHelper::get_page_permalink(PageHelper::PAGE_2_1_1_EQUIPEMENTS_BUREAU) }}#main-container-page-{{ PageHelper::get_page_id(PageHelper::PAGE_2_1_1_EQUIPEMENTS_BUREAU) }}">{{ PageHelper::get_page_title(PageHelper::PAGE_2_1_1_EQUIPEMENTS_BUREAU) }}</a></li>
