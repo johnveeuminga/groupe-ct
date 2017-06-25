@@ -175,5 +175,6 @@ if (function_exists('pll_register_string'))
 
     /** misc */
     pll_register_string('MISC', 'CONTACTEZ-NOUS', GROUPE_CT, false);
+    pll_register_string('MISC', 'BROCHURE', GROUPE_CT, false);
 
 }

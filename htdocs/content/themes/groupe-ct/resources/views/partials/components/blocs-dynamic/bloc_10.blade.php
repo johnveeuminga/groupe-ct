@@ -17,12 +17,14 @@
                     <div class="product-container">
                         <div class="product-inner-container">
                             <div class="product-img-container">
-                                <img class="product-img" src="{{ $product->image['url'] }}" alt="{{ $product->image['alt'] }}">
+                                <img class="product-img" src="{{ $product['bloc_10_image']['url'] }}" alt="{{ $product['bloc_10_image']['alt'] }}">
                             </div>
                             <div class="product-text-container">
-                                <h3 class="product-title">{{ $product->post_title }}</h3>
-                                <p class="product-desc">{{ $product->description }}</p>
-                                <a class="brochure-download-pdf-blue" href="{{ $product->brochure }}"><?php _e('BROCHURE', THEME_TEXTDOMAIN); ?></a>
+                                <h3 class="product-title">{{ $product['bloc_10_title'] }}</h3>
+                                <p class="product-desc">{{ $product['bloc_10_description'] }}</p>
+                                @if ($product['bloc_10_product_pdf'])
+                                    <a class="brochure-download-pdf-blue" href="{{ $product['bloc_10_product_pdf']['url'] }}">{{ pll__('BROCHURE') }}</a>
+                                @endif
                             </div>
                         </div>
                     </div>
