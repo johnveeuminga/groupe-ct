@@ -23,7 +23,7 @@
                                 <h3 class="product-title">{{ $product['bloc_10_title'] }}</h3>
                                 <p class="product-desc">{{ $product['bloc_10_description'] }}</p>
                                 @if ($product['bloc_10_product_pdf'])
-                                    <a class="brochure-download-pdf-blue" href="{{ $product['bloc_10_product_pdf']['url'] }}">{{ pll__('BROCHURE') }}</a>
+                                    <a class="brochure-download-pdf-blue" href="{{ $product['bloc_10_product_pdf']['url'] }}" target="_blank">{{ pll__('BROCHURE') }}</a>
                                 @endif
                             </div>
                         </div>
