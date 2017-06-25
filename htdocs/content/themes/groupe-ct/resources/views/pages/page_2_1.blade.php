@@ -2,25 +2,37 @@
 
 @section('main')
     <div class="container-fluid">
-1
-        @if( have_rows('blocks') )
+        <div class="bloc-product-search-main-container">
+            <div class="bloc-product-container">
+                <nav class="nav-type-container default-width">
+                    <ul class="menu-item-container">
+                        <li class="menu-item {{ PageHelper::get_page_id(PageHelper::PAGE_2_1_1_EQUIPEMENTS_BUREAU) === get_the_ID() ? 'item-type-active' : '' }}"><a class="" href="{{ PageHelper::get_page_permalink(PageHelper::PAGE_2_2_1_PARC_IMPRESSION) }}">{{ PageHelper::get_page_title(PageHelper::PAGE_2_2_1_PARC_IMPRESSION) }}</a></li>
+                        <li class="menu-item {{ PageHelper::get_page_id(PageHelper::PAGE_2_1_2_EQUIPEMENTS_PRODUCTION) === get_the_ID() ? 'item-type-active' : '' }}"><a class="" href="{{ PageHelper::get_page_permalink(PageHelper::PAGE_2_1_2_EQUIPEMENTS_PRODUCTION) }}">{{ PageHelper::get_page_title(PageHelper::PAGE_2_1_2_EQUIPEMENTS_PRODUCTION) }}</a></li>
+                        <li class="menu-item {{ PageHelper::get_page_id(PageHelper::PAGE_2_1_3_IMPRESSION_GRAND_FORMAT) === get_the_ID() ? 'item-type-active' : '' }}"><a class="" href="{{ PageHelper::get_page_permalink(PageHelper::PAGE_2_1_3_IMPRESSION_GRAND_FORMAT) }}">{{ PageHelper::get_page_title(PageHelper::PAGE_2_1_3_IMPRESSION_GRAND_FORMAT) }}</a></li>
+                        <li class="menu-item {{ PageHelper::get_page_id(PageHelper::PAGE_2_1_4_FOURNITURES) === get_the_ID() ? 'item-type-active' : '' }}"><a class="" href="{{ PageHelper::get_page_permalink(PageHelper::PAGE_2_1_4_FOURNITURES) }}">{{ PageHelper::get_page_title(PageHelper::PAGE_2_1_4_FOURNITURES) }}</a></li>
+                    </ul>
+                </nav>
 
-            @while ( have_rows('blocks') )
-                <?php the_row(); ?>
+                @if( have_rows('blocks') )
 
-                <?php
-                    $row = get_row();
-                    $row_id = array_shift($row);
-                ?>
-                @while ( has_sub_field('bloc_flexible_content', $row_id) )
-                    <?php
-                        $block = new \Theme\Models\Bloc(get_row_layout());
-                    ?>
-                    @include($block->load_path(), ['block' => $block])
-                @endwhile
+                    @while ( have_rows('blocks') )
+                        <?php the_row(); ?>
 
-            @endwhile
+                        <?php
+                            $row = get_row();
+                            $row_id = array_shift($row);
+                        ?>
+                        @while ( has_sub_field('bloc_flexible_content', $row_id) )
+                            <?php
+                                $block = new \Theme\Models\Bloc(get_row_layout());
+                            ?>
+                            @include($block->load_path(), ['block' => $block])
+                        @endwhile
 
-        @endif
+                    @endwhile
+
+                @endif
+            </div>
+        </div>
     </div>
 @endsection
