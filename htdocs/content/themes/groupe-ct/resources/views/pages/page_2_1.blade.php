@@ -1,7 +1,7 @@
 @extends('templates.main')
 
 @section('main')
-    <div class="container-fluid" id="main-container-page-{{ get_the_ID() }}">
+    <div class="container-fluid" id="_main-container-page-{{ get_the_ID() }}">
         <div class="bloc-product-search-main-container">
             <div class="bloc-product-container">
                 <nav class="nav-type-container default-width">
