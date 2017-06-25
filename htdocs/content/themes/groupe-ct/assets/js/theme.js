@@ -2,9 +2,9 @@
     $(document).ready(function() {
 
         // Scroll to content if hashtag in url
-        var elem = $(window.location.hash.replace('#', ''));
-        if(elem) {
-            $.scrollTo(elem.left, elem.top);
+        var $elem = $(window.location.hash.replace('#', ''));
+        if($elem) {
+            $('html, body').animate({scrollTop: $elem.position().top}, 'fast');
         }
 
         /***** MENU *******/
