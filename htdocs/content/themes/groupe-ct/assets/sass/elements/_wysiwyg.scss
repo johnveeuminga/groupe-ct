@@ -6,27 +6,20 @@
     margin:15px 0;
   }
 
-  h1 {
-    @extend .poppins30BoldBlack;
+  h1, h2 {
+    @include set-font(44px, $poppins, 700, $blue);
+    text-transform: uppercase;
+    padding-bottom: 25px;
   }
-  h2 {
-    @extend .poppins26BoldBlack ;
-  }
-  h3 {
-    @extend .poppins22BoldBlack;
-  }
-  h4 {
-    @extend .poppins18BoldBlack;
-  }
-  h5 {
-    @extend .poppins14BoldBlack;
-  }
-  h6 {
-    @extend .poppins12BoldBlack;
+  h3,h4,h5,h6  {
+    @include set-font(22px, $mada, 400, $black);
+    line-height: 32px;
+    padding: 25px 0;
   }
   p {
-    @extend .mada22LightBlack;
-    margin:20px 0;
+    @include set-font(22px, $mada, 300, $black);
+    padding-bottom: 25px;
+    line-height: 32px;
   }
 
   li {
