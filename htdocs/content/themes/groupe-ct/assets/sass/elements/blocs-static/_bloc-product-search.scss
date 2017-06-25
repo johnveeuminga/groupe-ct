@@ -66,8 +66,8 @@
     .menu-item-container {
       @include flexbox();
       @include flex-wrap(wrap);
-      margin: 10px 0 100px;
-      padding-bottom: 30px;
+      margin: 20px 0 100px;
+      padding-bottom: 45px;
       border-bottom:1px solid #8295a0;
     }
 
