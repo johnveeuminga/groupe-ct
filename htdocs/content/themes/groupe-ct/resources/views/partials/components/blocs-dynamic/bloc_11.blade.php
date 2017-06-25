@@ -24,7 +24,7 @@
             @if (!empty($block->get_field('bloc_11_description')))
                 <p class="prod-logiciel-text">{{ $block->get_field('bloc_11_description') }}</p>
             @endif
-            @if ($block->get_field('bloc_11_brochure'))
+            @if ($block->get_field('bloc_11_brochure')['url'])
                 <a class="brochure-download-pdf-white" href="{{ $block->get_field('bloc_11_brochure')['url'] }}"><?php _e('BROCHURE', THEME_TEXTDOMAIN); ?></a>
             @endif
         </div>
