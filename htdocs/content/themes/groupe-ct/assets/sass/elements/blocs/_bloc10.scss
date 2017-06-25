@@ -73,6 +73,12 @@
       border-bottom:1px solid $blue;
       line-height: 27px;
     }
+
+    .brochure-download-container {
+      padding-top: 15px;
+      border-top: 1px solid #9295a0;
+    }
+
     .product-download-pdf {
       @include inline-flex();
       @include align-items(center);
