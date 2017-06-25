@@ -2,7 +2,7 @@
 
 @section('main')
     <div class="container-fluid">
-
+1
         @if( have_rows('blocks') )
 
             @while ( have_rows('blocks') )
