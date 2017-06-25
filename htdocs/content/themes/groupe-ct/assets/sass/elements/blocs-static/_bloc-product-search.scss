@@ -4,6 +4,10 @@
 .bloc-product-search-main-container {
   background-color: #f1f1f1;
 
+  .wysiwyg-container {
+    max-width: 800px; 
+  }
+
   .product-dropdown-container {
     background-color: white;
     @media (min-width: $screen-sm-min) {
