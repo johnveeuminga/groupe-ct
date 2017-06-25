@@ -170,4 +170,30 @@ class PageHelper
         return get_the_title(self::get_pages_array()[$key][$locale]);
     }
 
+    public static function is_2_1_subpage($page_id)
+    {
+        return  PageHelper::get_page_id(PageHelper::PAGE_2_1_1_EQUIPEMENTS_BUREAU) === $page_id ||
+                PageHelper::get_page_id(PageHelper::PAGE_2_1_2_EQUIPEMENTS_PRODUCTION) === $page_id ||
+                PageHelper::get_page_id(PageHelper::PAGE_2_1_3_IMPRESSION_GRAND_FORMAT) === $page_id ||
+                PageHelper::get_page_id(PageHelper::PAGE_2_1_4_FOURNITURES) === $page_id;
+
+    }
+
+    public static function is_2_2_subpage($page_id)
+    {
+        return  PageHelper::get_page_id(PageHelper::PAGE_2_2_1_PARC_IMPRESSION) === $page_id ||
+                PageHelper::get_page_id(PageHelper::PAGE_2_2_2_RECUPERATION_COUT) === $page_id ||
+                PageHelper::get_page_id(PageHelper::PAGE_2_2_3_FOLLOW_ME_PRINTING) === $page_id ||
+                PageHelper::get_page_id(PageHelper::PAGE_2_2_4_AUTOMATISATION_FLUX) === $page_id;
+
+    }
+
+    public static function is_2_3_subpage($page_id)
+    {
+        return  PageHelper::get_page_id(PageHelper::PAGE_2_3_1_NUMERISATION_INTELLIGENTE) === $page_id ||
+                PageHelper::get_page_id(PageHelper::PAGE_2_3_2_NUMERISATION_TRAITEMENT) === $page_id ||
+                PageHelper::get_page_id(PageHelper::PAGE_2_3_3_ARCHIVAGE) ===  $page_id ||
+                PageHelper::get_page_id(PageHelper::PAGE_2_3_4_AUTOMATISATION_PROCESSUS) === $page_id;
+
+    }
 }

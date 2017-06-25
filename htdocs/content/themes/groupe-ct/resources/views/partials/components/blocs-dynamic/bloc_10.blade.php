@@ -1,23 +1,15 @@
 <div class="bloc-product-search-main-container">
     <div class="bloc-product-container">
-        <div class="product-dropdown-container default-padding">
-            <h3 class="select-title">Sélectionnez le type d’équipement</h3>
-            <select name="dropdown-equipment" id="">
-                <option value="" selected>Équipement de bureau</option>
-                <option value="">Grand format</option>
-                <option value="">Fourniture</option>
-            </select>
-        </div>
+        @if (PageHelper::is_2_1_subpage(get_the_ID()))
+            @include ('partials.components.helpers.2-1-tabs')
+        @endif
+        @if (PageHelper::is_2_2_subpage(get_the_ID()))
+            @include ('partials.components.helpers.2-2-tabs')
+        @endif
+        @if (PageHelper::is_2_3_subpage(get_the_ID()))
+            @include ('partials.components.helpers.2-3-tabs')
+        @endif
 
-
-        <nav class="nav-type-container default-width">
-            <ul class="menu-item-container">
-                <li class="menu-item item-type-active"><a class="" href="#"><?php _e('Équipement de bureau', THEME_TEXTDOMAIN); ?></a></li>
-                <li class="menu-item"><a class="" href="#"><?php _e('Équipement de production', THEME_TEXTDOMAIN); ?></a></li>
-                <li class="menu-item"><a class="" href="#"><?php _e('Grand format', THEME_TEXTDOMAIN); ?></a></li>
-                <li class="menu-item"><a class="" href="#"><?php _e('Fourniture', THEME_TEXTDOMAIN); ?></a></li>
-            </ul>
-        </nav>
         <div class="nav-cat-main-container">
             <!-- insert product category as a class in the <a> -->
             <nav class="nav-cat-container default-padding default-width">
