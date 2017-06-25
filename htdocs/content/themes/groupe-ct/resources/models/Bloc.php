@@ -150,7 +150,7 @@ class Bloc {
 					$this->fields['bloc_9_2_source'] = get_sub_field('bloc_9_2_source');
 					break;
 				case "bloc_10":
-					$this->fields['bloc_10_products'] = Product::all();
+                    $this->fields['bloc_10_products'] = get_sub_field('bloc_10_products');
 					break;
 				case "bloc_11":
 					$this->fields['bloc_11_slide_image_left'] = get_sub_field('bloc_11_slide_image_left');

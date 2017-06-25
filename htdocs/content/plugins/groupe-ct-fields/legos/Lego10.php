@@ -16,8 +16,6 @@ class Lego10 extends BaseLego implements LegoInterface
                 $this->generate_file('bloc_10_product_pdf', 'PDF File', 'pdf')
             ]),
         ];
-
-        return [];
     }
 
     public function get_fields_layout()
