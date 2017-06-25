@@ -8,7 +8,13 @@ class Lego10 extends BaseLego implements LegoInterface
 {
     public function get_unique_fields()
     {
-    	// THIS IS VOLUNTARILY EMPTY -- PRODUCTS WILL BE DEFINED IN TEMPLATES
+        return [
+            $this->generate_image('bloc_3_image',            __('Image', 'GROUPE-CT'), __('Width : 295px | Height : 255px', 'GROUPE-CT') ),
+            $this->generate_text('bloc_10_title', 'Title'),
+            $this->generate_textarea('bloc_10_description', 'Product Description'),
+            $this->generate_file('bloc_10_product_pdf', 'PDF File', 'pdf')
+        ];
+
         return [];
     }
 
