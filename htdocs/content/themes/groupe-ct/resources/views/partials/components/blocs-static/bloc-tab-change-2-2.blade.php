@@ -14,7 +14,7 @@
 ])
 
 <div class="bloc-container default-width">
-    <div class="bloc-tab-change-main-container default-padding shadow">
+    <div class="bloc-tab-change-main-container default-padding">
 
         <div class="tab-change-container tc02">
             <div class="tab-change-title-container">
