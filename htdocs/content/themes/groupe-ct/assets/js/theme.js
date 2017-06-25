@@ -1,7 +1,11 @@
 (function($) {
     $(document).ready(function() {
 
-
+        // Scroll to content if hashtag in url
+        var elem = $(window.location.hash.replace('#', ''));
+        if(elem) {
+            $.scrollTo(elem.left, elem.top);
+        }
 
         /***** MENU *******/
         $('.nav-bottom .nav-link').on('click',function(){
