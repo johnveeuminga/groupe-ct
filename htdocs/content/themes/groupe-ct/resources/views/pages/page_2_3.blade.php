@@ -2,7 +2,8 @@
 
 @section('main')
     <div class="container-fluid">
-3
+        @include('partials.components.blocs-static.bloc-tab-products-2-3')
+
         @if( have_rows('blocks') )
 
             @while ( have_rows('blocks') )

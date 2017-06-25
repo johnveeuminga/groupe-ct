@@ -2,8 +2,10 @@
 
 @section('main')
     <div class="container-fluid">
-2
-        @if( have_rows('blocks') )
+        @include('partials.components.blocs-static.bloc-tab-products-2-2')
+
+
+    @if( have_rows('blocks') )
 
             @while ( have_rows('blocks') )
                 <?php the_row(); ?>
