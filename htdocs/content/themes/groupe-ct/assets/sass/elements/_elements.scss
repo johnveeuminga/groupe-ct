@@ -123,9 +123,6 @@ body {
   @extend .primary-btn;
   background-color: $blue-sky;
   text-align: center;
-  @media (min-width: $screen-xs-min) {
-    width:200px;
-  }
   @media (min-width: $screen-sm-min) {
     padding: 20px 40px;
     @include set-font(15px, $poppins, 700, white);
