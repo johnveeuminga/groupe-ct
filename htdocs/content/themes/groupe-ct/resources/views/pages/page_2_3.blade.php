@@ -1,7 +1,7 @@
 @extends('templates.main')
 
 @section('main')
-    <div class="container-fluid" id="_main-container-page-{{ get_the_ID() }}">
+    <div class="container-fluid template-2-3-container" id="_main-container-page-{{ get_the_ID() }}">
         <div class="bloc-product-search-main-container">
             <div class="bloc-product-outer-container">
                 @include('partials.components.blocs-static.bloc-tab-products-2-3')
