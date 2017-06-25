@@ -2,6 +2,7 @@
   padding-top: 90px;
 }
 .bloc-product-search-main-container {
+  position: relative;
   background-color: #f1f1f1;
 
   .product-dropdown-container {
@@ -92,5 +93,16 @@
   }
 
 
+  &:after {
+    background: inherit;
+    content: '';
+    display: block;
+    height: 50%;
+    left: 0;
+    position: absolute;
+    right: 0;
+    z-index: -1;
+    -webkit-backface-visibility: hidden;
+  }
 }//SECTION END
 
