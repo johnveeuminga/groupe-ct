@@ -204,6 +204,13 @@
             var target = $(this).data().target;
             $('.product-container').fadeOut(300);
             $('.' + target).fadeIn(300);
+
+            if( $(this).parent().hasClass('item-cat-active') ){
+                $(this).parent().removeClass('item-cat-active')
+                 $('.product-container').fadeIn(300);
+            }else {
+                $(this).parent().addClass('item-cat-active').siblings().removeClass('item-cat-active');
+            }
         });
 
         /*** NAV PAGINATION **/
