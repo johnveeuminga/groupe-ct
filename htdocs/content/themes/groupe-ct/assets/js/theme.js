@@ -200,21 +200,10 @@
 
         /*** NAV PRODUCT **/
         $('.nav-cat-container a').on('click', function (e) {
-
             e.preventDefault();
-
-            //Filter products
-            var $catProd = $(this).attr('class').split(' ')[1];
+            var target = $(this).data().target;
             $('.product-container').fadeOut(300);
-            $('.product-container.' + $catProd).fadeIn(300);
-
-            //Add active class to button
-            if( $(this).parent().hasClass('item-cat-active') ){
-                $(this).parent().removeClass('item-cat-active')
-                 $('.product-container').fadeIn(300);
-            }else {
-                $(this).parent().addClass('item-cat-active').siblings().removeClass('item-cat-active');
-            }
+            $('.' + target).fadeIn(300);
         });
 
         /*** NAV PAGINATION **/

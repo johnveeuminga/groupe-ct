@@ -5,16 +5,16 @@
             <nav class="nav-cat-container default-padding default-width">
                 <h3 class="select-title"><?php _e('Sélectionnez la catégorie de votre choix', THEME_TEXTDOMAIN); ?></h3>
                 <ul class="menu-item-container">
-                    <li class="menu-item"><a class="primary-btn-blue-sky prod-printer" href="#"><?php _e('Imprimante', THEME_TEXTDOMAIN); ?></a></li>
-                    <li class="menu-item"><a class="primary-btn-blue-sky prod-multia4" href="#"><?php _e('Multifonction A4', THEME_TEXTDOMAIN); ?></a></li>
-                    <li class="menu-item"><a class="primary-btn-blue-sky prod-multia3" href="#"><?php _e('Multifonction A3', THEME_TEXTDOMAIN); ?></a></li>
-                    <li class="menu-item"><a class="primary-btn-blue-sky prod-num" href="#"><?php _e('Numérisateur', THEME_TEXTDOMAIN); ?></a></li>
+                    <li class="menu-item"><a class="primary-btn-blue-sky" data-target="2-1-1-a" href="#">{{ pll__('Imprimantes') }}</a></li>
+                    <li class="menu-item"><a class="primary-btn-blue-sky" data-target="2-1-1-b" href="#">{{ pll__('Appareils multifonctions noir et blanc') }}</a></li>
+                    <li class="menu-item"><a class="primary-btn-blue-sky" data-target="2-1-1-c" href="#">{{ pll__('Appareils multifonctions couleur') }}</a></li>
+                    <li class="menu-item"><a class="primary-btn-blue-sky" data-target="2-1-1-d" href="#">{{ pll__('Numériseurs') }}</a></li>
                 </ul>
             </nav>
 
             <div class="product-main-container default-padding default-width">
                 @foreach($block->get_field('bloc_10_products') as $product)
-                    <div class="product-container">
+                    <div class="product-container {{ $product['bloc_10_product_category'] }}">
                         <div class="product-inner-container">
                             <div class="product-img-container">
                                 <img class="product-img" src="{{ $product['bloc_10_image']['url'] }}" alt="{{ $product['bloc_10_image']['alt'] }}">

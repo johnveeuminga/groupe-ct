@@ -177,4 +177,10 @@ if (function_exists('pll_register_string'))
     pll_register_string('MISC', 'CONTACTEZ-NOUS', GROUPE_CT, false);
     pll_register_string('MISC', 'BROCHURE', GROUPE_CT, false);
 
+    /** Template 2.1.1  */
+    pll_register_string('PRODUIT ET SOLUTIONS 2.1 - FILTRES', 'Imprimantes', GROUPE_CT, false);
+    pll_register_string('PRODUIT ET SOLUTIONS 2.1 - FILTRES', 'Appareils multifonctions noir et blanc', GROUPE_CT, false);
+    pll_register_string('PRODUIT ET SOLUTIONS 2.1 - FILTRES', 'Appareils multifonctions couleur', GROUPE_CT, false);
+    pll_register_string('PRODUIT ET SOLUTIONS 2.1 - FILTRES', 'Numériseurs', GROUPE_CT, false);
+
 }
