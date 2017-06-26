@@ -89,23 +89,6 @@
         @include set-font(22px, $mada, 300, $black);
       }
 
-
-      .upper-title {
-        margin:15px 0;
-        @include set-font(22px, $poppins, 700, $red);
-        list-style: square;
-        text-transform: uppercase;
-
-        &:before {
-          content: "";
-          background-color: $red;
-          display: inline-block;
-          width: 10px;
-          height: 10px;
-          margin-right: 15px;
-          margin-bottom: 2px;
-        }
-      }
     }
   }//TEXT CONTAINER END
 
@@ -167,4 +150,20 @@
   }
 
 
+  .upper-title {
+    margin:15px 0;
+    @include set-font(22px, $poppins, 700, $red);
+    list-style: square;
+    text-transform: uppercase;
+
+    &:before {
+      content: "";
+      background-color: $red;
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      margin-right: 15px;
+      margin-bottom: 2px;
+    }
+  }
 }//IMG PLUS TEXT END
