@@ -23,7 +23,7 @@
   }
 
   li {
-    @extend .mada18RegBlack;
+    @include set-font(22px, $mada, 300, $black);
     margin:10px 0;
   }
 
