@@ -23,6 +23,10 @@ Route::any('template', [
     'page-2-3',
     'uses' => 'PageController@page_2_3'
 ]);
+Route::any('template', [
+    'post-list',
+    'uses' => 'PageController@publication_list'
+]);
 
 Route::any('singular', ['job_offer', 'uses' => 'LightboxController@job_offer']);
 
