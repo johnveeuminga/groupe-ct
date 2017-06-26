@@ -64,6 +64,20 @@
     position: relative;
     margin-left:20px;
   }
+
+  .publication-nav-item.cta-pub-left {
+    position: relative;
+    margin-top:10px;
+
+    @include set-font(17px, $poppins, 700, $blue );
+    @media (min-width: $screen-sm-min) {
+      position: absolute;
+      margin-top: 0px;
+      left: 0;
+      top: 18px;
+    }
+  }
+
   .publication-nav-item.cta-pub-right {
     position: relative;
     margin-top:10px;
