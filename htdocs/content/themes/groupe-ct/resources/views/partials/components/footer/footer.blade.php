@@ -60,8 +60,6 @@
             <nav class="footer-nav contact">
                 <h4 class="footer-nav-title"><a class="nav-link" href="#">{{ pll_current_language() === 'fr' ? 'English' : 'Français' }}</a></h4>
                 <h4 class="footer-nav-title"><a class="nav-link" href="#newsletter">{{ pll__('Infolettre') }}</a></h4>
-                <h4 class="footer-nav-title"><a href="{{ PageHelper::get_page_permalink(PageHelper::PAGE_3_0_ASSISTANCE) }}">{{ PageHelper::get_page_title(PageHelper::PAGE_3_0_ASSISTANCE) }}</a></h4>
-                <h4 class="footer-nav-title"><a href="{{ PageHelper::get_page_permalink(PageHelper::PAGE_3_0_ASSISTANCE) }}">{{ PageHelper::get_page_title(PageHelper::PAGE_3_0_ASSISTANCE) }}</a></h4>
             </nav>
 
         </div>
