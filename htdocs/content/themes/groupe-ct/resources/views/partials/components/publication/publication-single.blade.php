@@ -56,7 +56,7 @@
             <!-- THE ELEMENT START  -->
             <div class="publication-container"> <!-- reverse-elem : to swap img and text div -->
                 <div class="publication-img-container">
-                    <img class="image-pub shadow" src="{{ get_field('post_featured_image', $post->ID)['url']   }}" alt="">
+                    <img class="image-pub shadow" src="{{ get_field('post_standard_image', $post->ID)['url'] }}" alt="">
                 </div>
                 <div class="buffer"></div>
                 <div class="publication-text-container">
@@ -68,7 +68,7 @@
                     <p class="publication-text">
                         {{ get_the_excerpt(get_the_ID()) }}
                     </p>
-                    <a href="{{ get_the_permalink(get_the_ID()) }}" class="cta-see-more"><?php _e('en savoir plus', THEME_TEXTDOMAIN); ?></a>
+                    <a href="{{ get_the_permalink(get_the_ID()) }}" class="cta-see-more">{{ pll__('Lire la suite') }}</a>
                 </div>
             </div>
             <!-- THE ELEMENT END  -->
