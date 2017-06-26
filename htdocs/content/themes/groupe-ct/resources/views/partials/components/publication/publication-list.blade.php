@@ -8,7 +8,9 @@
             <p class="select-title">{{ pll__('Sélectionnez la catégorie de votre choix') }}</p>
             <ul class="menu-item-container">
                 @foreach (get_categories() as $category)
-                    <li class="menu-item"><a class="primary-btn-grey" href="#"><?php _e('Événement', THEME_TEXTDOMAIN); ?></a></li>
+                    @if ($category->name !== 'Uncategorized')
+                        <li class="menu-item"><a class="primary-btn-grey" href="#" data-target="{{ $category->term_id }}">{{ $category->name }}</a></li>
+                    @endif
                 @endforeach
             </ul>
         </nav>
