@@ -73,6 +73,28 @@ class Post
     {
         $args = [
             'post_type' => 'post',
+            'posts_per_page' => -1,
+        ];
+
+        if (isset($_GET['cat']))  {
+            $args[
+                'tax_query' => [
+                    [
+                        'taxonomy' => 'category',
+                        'field'    => 'term_id',
+                        'terms'    => $_GET['cat'],
+                        'operator' => 'IN',
+                    ]
+                ]   
+            ];
+
+        }
+
+        $query = new \WP_Query($args);
+        $count = $query->post_count;
+
+        $args = [
+            'post_type' => 'post',
             'posts_per_page' => 1,
             'paged' => get_query_var( 'paged' ),
         ];
@@ -81,7 +103,7 @@ class Post
         
 
         return [
-            'count' => wp_count_posts(),
+            'count' => $count,
             'posts' => $query->get_posts(),
         ];
     }
