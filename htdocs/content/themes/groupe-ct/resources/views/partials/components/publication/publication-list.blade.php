@@ -9,7 +9,7 @@
             <ul class="menu-item-container">
                 @foreach (get_terms('category') as $category)
                     @if ($category->name !== 'Uncategorized')
-                        <li class="menu-item"><a class="primary-btn-grey" href="#" data-target="{{ $category->term_id }}">{{ $category->name }}</a></li>
+                        <li class="menu-item"><a class="primary-btn-grey" href="#" data-target="">{{ $category->name }}</a></li>
                     @endif
                 @endforeach
             </ul>
