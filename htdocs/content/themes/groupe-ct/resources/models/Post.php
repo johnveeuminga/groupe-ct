@@ -85,7 +85,7 @@ class Post
                         'terms'    => $_GET['cat'],
                         'operator' => 'IN',
                     ]
-                ]   
+                ]
             ];
 
         }
