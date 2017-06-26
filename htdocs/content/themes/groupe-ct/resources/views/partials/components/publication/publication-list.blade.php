@@ -17,10 +17,15 @@
 
         <div class="publication-nav-container">
             <div class="publication-nav">
+                @if (get_query_var( 'paged' ) > 1)
+                    <a class="publication-nav-item cta-pub-right" href="{{ PageHelper::get_page_permalink(PageHelper::PAGE_5_0_PUBLICATIONS) }}page/{{ get_query_var( 'paged' ) -1 }}">{{ pll__('Page suivante') }}</a>
+                @endif
                 @for ($i = 1; $i <= $count; $i++)
                     <a class="publication-nav-item pagination @if ($i === get_query_var( 'paged' ) || (get_query_var( 'paged' ) === 0 && $i === 1)) active-pagination @endif" href="{{ PageHelper::get_page_permalink(PageHelper::PAGE_5_0_PUBLICATIONS) }}page/{{ $i }}">{{ $i }}</a>
                 @endfor
-                <a class="publication-nav-item cta-pub-right" href="#">{{ pll__('Page suivante') }}</a>
+                @if (get_query_var( 'paged' ) === $count)
+                    <a class="publication-nav-item cta-pub-right" href="{{ PageHelper::get_page_permalink(PageHelper::PAGE_5_0_PUBLICATIONS) }}page/{{ get_query_var( 'paged' ) + 1 }}">{{ pll__('Page suivante') }}</a>
+                @endif
             </div>
         </div>
 
@@ -54,10 +59,15 @@
 
         <div class="publication-nav-container">
             <div class="publication-nav">
+                @if (get_query_var( 'paged' ) > 1)
+                    <a class="publication-nav-item cta-pub-right" href="{{ PageHelper::get_page_permalink(PageHelper::PAGE_5_0_PUBLICATIONS) }}page/{{ get_query_var( 'paged' ) -1 }}">{{ pll__('Page suivante') }}</a>
+                @endif
                 @for ($i = 1; $i <= $count; $i++)
                     <a class="publication-nav-item pagination @if ($i === get_query_var( 'paged' )) active-pagination @endif" href="{{ PageHelper::get_page_permalink(PageHelper::PAGE_5_0_PUBLICATIONS) }}page/{{ $i }}">{{ $i }}</a>
                 @endfor
-                <a class="publication-nav-item cta-pub-right" href="#">{{ pll__('Page suivante') }}</a>
+                @if (get_query_var( 'paged' ) === $count)
+                    <a class="publication-nav-item cta-pub-right" href="{{ PageHelper::get_page_permalink(PageHelper::PAGE_5_0_PUBLICATIONS) }}page/{{ get_query_var( 'paged' ) + 1 }}">{{ pll__('Page suivante') }}</a>
+                @endif
             </div>
         </div>
 
