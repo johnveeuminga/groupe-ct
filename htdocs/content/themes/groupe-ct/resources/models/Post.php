@@ -109,4 +109,45 @@ class Post
             'posts' => $query->get_posts(),
         ];
     }
+
+    public static function get_3_suggested($post)
+    {
+        $category = get_the_category(get_the_ID());
+
+        $args = [
+            'post_type' => 'post',
+            'posts_per_page' => 3,
+        ];
+
+        if ($category) {
+            $args['tax_query'] = [[
+                'taxonomy' => 'category',
+                'field'    => 'term_id',
+                'terms'    => $category[0]->term_id,
+                'operator' => 'IN',
+            ]];
+        }
+
+        $query = new \WP_Query($args);
+
+        $posts = $query->posts;
+        if (count($posts) >= 3) {
+            return $query->posts;
+        }
+
+        $posts_ids = [];
+        foreach ($query->posts as $post) {
+            $posts_ids[] = $post->ID;
+        }
+
+        $args = [
+            'post_type' => 'post',
+            'posts_per_page' => 3,
+            'post__not_in' => $posts_ids,
+        ];
+        $query = new \WP_Query($args);
+
+        return array_merge($posts, $query->posts);
+    }
+
 }
