@@ -52,27 +52,26 @@
         <h2 class="page-title">{!! pll__('Publications<br/>qui pourraient vous intéresser') !!}</h2>
     </div>
     <div class="other-publcation-container">
-        @for ($i = 1; $i <= 3; $i++)
+        @foreach ($suggested as $post)
             <!-- THE ELEMENT START  -->
             <div class="publication-container"> <!-- reverse-elem : to swap img and text div -->
                 <div class="publication-img-container">
-                    <img class="image-pub shadow" src="{{ themosis_assets() }}/images/img/img_pub01.png" alt="">
+                    <img class="image-pub shadow" src="{{ get_field('post_featured_image', $post->ID)['url']   }}" alt="">
                 </div>
                 <div class="buffer"></div>
                 <div class="publication-text-container">
-                    <p class="publication-cat"><?php _e('catégorie', THEME_TEXTDOMAIN); ?></p>
-                    <h3 class="publication-title">publication titre</h3>
-                    <p class="publication-date">date de publication</p>
+                    <p class="publication-cat">{{ get_the_category(get_the_ID())[0]->name }}</p>
+                    <h3 class="publication-title">{{ get_the_title(get_the_ID()) }}</h3>
+                    @if (get_field('post_show_date', $post->ID))
+                        <p class="publication-date">{{ get_the_date( 'd F Y', $post->ID) }}</p>
+                    @endif
                     <p class="publication-text">
-                        Nunc elementum venenatis dui, quis tempor nulla molestie quis. Quisque dignissim sagittis
-                        lorem id blandit. Nulla facilisi. Sed blandit quam ut arcu facilisis aliquet. Orci varius
-                        natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam aliquam,
-                        turpis non bibendum vestibulum, odio turpis viverra massa
+                        {{ get_the_excerpt(get_the_ID()) }}
                     </p>
-                    <a href="#" class="cta-see-more"><?php _e('en savoir plus', THEME_TEXTDOMAIN); ?></a>
+                    <a href="{{ get_the_permalink(get_the_ID()) }}" class="cta-see-more"><?php _e('en savoir plus', THEME_TEXTDOMAIN); ?></a>
                 </div>
             </div>
             <!-- THE ELEMENT END  -->
-        @endfor
+        @endforeach
     </div>
 </section>

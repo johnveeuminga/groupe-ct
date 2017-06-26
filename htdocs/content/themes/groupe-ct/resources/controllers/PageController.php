@@ -20,10 +20,9 @@ class PageController extends MainController
 
     public function publication()
     {
-        var_dump(\Theme\Models\Post::get_3_suggested(get_the_ID()));
-
         return view('pages.publication-single', [
             'post' => the_post(),
+            'suggested' => \Theme\Models\Post::get_3_suggested(get_the_ID()),
         ]);
     }
 
