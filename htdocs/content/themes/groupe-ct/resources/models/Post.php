@@ -110,9 +110,10 @@ class Post
         ];
     }
 
-    public static function get_3_suggested($post)
+    public static function get_3_suggested()
     {
         $category = get_the_category(get_the_ID());
+        $posts_ids = [get_the_ID()];
 
         $args = [
             'post_type' => 'post',
@@ -125,6 +126,7 @@ class Post
                 'field'    => 'term_id',
                 'terms'    => $category[0]->term_id,
                 'operator' => 'IN',
+                'post__not_in' => $posts_ids,
             ]];
         }
 
@@ -135,7 +137,6 @@ class Post
             return $query->posts;
         }
 
-        $posts_ids = [];
         foreach ($query->posts as $post) {
             $posts_ids[] = $post->ID;
         }
