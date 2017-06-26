@@ -1,5 +1,5 @@
 <!-- Bloc 5 - Testimonials -->
-<div class="testimonials-main-container row">
+<div class="testimonials-main-container row no-padding">
 
     <div class="slider-main-container">
     @foreach($block->get_field('bloc_5_slides') as $i => $slide)
