@@ -219,14 +219,6 @@
             }
         });
 
-        /*** NAV PAGINATION **/
-
-        $('.publication-nav-item.pagination').on('click', function (e) {
-            e.preventDefault();
-            $(this).addClass('active-pagination').siblings().removeClass('active-pagination');
-        });
-
-
         $('select').on('change', function() {
             parseInt($(this).selectedIndex) === 1 ? $(this).css('color', 'rgba(255, 255, 255, 0.6)') : $(this).css('color', 'rgba(255, 255, 255, 1)') ;
         })
