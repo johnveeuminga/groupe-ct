@@ -39,6 +39,9 @@
 
 
   .link-pub-list:before {
+    width: 100%;
+  }
+  .link-pub-list:before {
     content:url($assets + "/images/icon/icon-pub-list.png");
     position: absolute;
     left:-30px;
