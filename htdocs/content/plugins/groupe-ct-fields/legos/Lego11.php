@@ -9,7 +9,7 @@ class Lego11 extends BaseLego implements LegoInterface
 	public function get_unique_fields()
 	{
 		return [
-            $this->generate_repeater('bloc_11_software_products',     __('Collapsible Drawer', 'GROUPE-CT'), [
+            $this->generate_repeater('bloc_11_software_products',     __('Produits logiciels', 'GROUPE-CT'), [
                 $this->generate_true_false( 'bloc_11_slide_image_left', __('Image on the left?', 'GROUPE-CT') ),
                 $this->generate_image('bloc_11_slide_image',            __('Image', 'GROUPE-CT'), __('Width : 580px | Height : 360px', 'GROUPE-CT') ),
                 $this->generate_text('bloc_11_video_link',               __('Video Link', 'GROUPE-CT') ),
