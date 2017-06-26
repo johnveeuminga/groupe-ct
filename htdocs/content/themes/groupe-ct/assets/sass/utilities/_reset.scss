@@ -66,42 +66,51 @@ strong {
 .alignleft {
   float: left;
   margin:0 15px 30px 0;
+  max-width: 100%;
 }
 .aligncenter {
   display: block;
   margin: 0 auto 30px auto;
+  max-width: 100%;
 }
 .alignright {
   float: right;
   margin:0 0 30px 15px;
+  max-width: 100%;
 }
 .alignnone {
   float: none;
   display:block;
   margin:0 0 30px 0;
+  max-width: 100%;
 }
 .size-full {
   display: block;
   height: auto;
   margin: 0 auto;
   max-width: 100%;
+  max-width: 100%;
 }
 p .alignleft {
   float: left;
   margin:5px 15px 30px 0;
+  max-width: 100%;
 }
 p .aligncenter {
   display: block;
   margin: 5px auto 30px auto;
+  max-width: 100%;
 }
 p .alignright {
   float: right;
   margin:5px 0 30px 15px;
+  max-width: 100%;
 }
 p .alignnone {
   float: none;
   display:block;
   margin:5px 0 30px 0;
+  max-width: 100%;
 }
 p .size-full {
   display: block;
