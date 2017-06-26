@@ -41,7 +41,7 @@
                     </div>
                     <div class="buffer"></div>
                     <div class="publication-text-container">
-                        <p class="publication-cat"><?php _e('catégorie', THEME_TEXTDOMAIN); ?></p>
+                        <p class="publication-cat">{{ $post->category }}</p>
                         <h3 class="publication-title">{{ $post->post_title }}</h3>
                         @if (get_field('post_show_date', $post->ID))
                             <p class="publication-date">{{ get_the_date( 'd F Y', $post->ID) }}</p>
