@@ -45,7 +45,7 @@
         margin-bottom:25px;
       }
       a {
-        @include set-font(14px, $poppins, 400, white);
+        @include set-font(16px, $poppins, 400, white);
         text-transform: uppercase;
       }
     }
