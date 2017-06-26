@@ -188,8 +188,9 @@ if (function_exists('pll_register_string'))
     pll_register_string('NOS PUBLICATIONS 5.0.0', 'Sélectionnez la catégorie de votre choix', GROUPE_CT, false);
     pll_register_string('NOS PUBLICATIONS 5.0.0', 'Page suivante', GROUPE_CT, false);
     pll_register_string('NOS PUBLICATIONS 5.0.0', 'Lire la suite', GROUPE_CT, false);
-    pll_register_string('NOS PUBLICATIONS 5.0.0', 'Publication précédente', GROUPE_CT, false);
-    pll_register_string('NOS PUBLICATIONS 5.0.0', 'Liste', GROUPE_CT, false);
-    pll_register_string('NOS PUBLICATIONS 5.0.0', 'Publication suivante', GROUPE_CT, false);
+    pll_register_string('NOS PUBLICATIONS 5.1.0', 'Publication précédente', GROUPE_CT, false);
+    pll_register_string('NOS PUBLICATIONS 5.1.0', 'Liste', GROUPE_CT, false);
+    pll_register_string('NOS PUBLICATIONS 5.1.0', 'Publication suivante', GROUPE_CT, false);
+    pll_register_string('NOS PUBLICATIONS 5.1.0', 'Publications qui pourraient vous intéresser', GROUPE_CT, false);
 
 }
