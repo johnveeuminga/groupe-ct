@@ -51,7 +51,7 @@
     <div class="other-publication-title-container">
         <h2 class="page-title">{!! pll__('Publications<br/>qui pourraient vous intéresser') !!}</h2>
     </div>
-    <div class="other-publcation-container">
+    <div class="other-publication-container">
         @foreach ($suggested as $post)
             <!-- THE ELEMENT START  -->
             <div class="publication-container"> <!-- reverse-elem : to swap img and text div -->
