@@ -17,7 +17,6 @@
 
         <div class="publication-nav-container">
             <div class="publication-nav">
-                <a class="publication-nav-item cta-pub-right" href="#">{{ pll__('Page précédente') }}</a>
                 <a class="publication-nav-item pagination active-pagination" href="#">1</a>
                 <a class="publication-nav-item pagination" href="#">2</a>
                 <a class="publication-nav-item pagination" href="#">3</a>
