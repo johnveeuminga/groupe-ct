@@ -138,9 +138,6 @@ body {
     background-color: $blue-sky;
   }
 
-  @media (min-width: $screen-xs-min) {
-    width:200px;
-  }
   @media (min-width: $screen-sm-min) {
     padding: 20px 40px;
     @include set-font(15px, $poppins, 700, white);
