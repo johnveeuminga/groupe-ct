@@ -17,13 +17,14 @@
 
         <div class="publication-nav-container">
             <div class="publication-nav">
+                <a class="publication-nav-item cta-pub-right" href="#">{{ pll__('Page précédente') }}</a>
                 <a class="publication-nav-item pagination active-pagination" href="#">1</a>
                 <a class="publication-nav-item pagination" href="#">2</a>
                 <a class="publication-nav-item pagination" href="#">3</a>
                 <a class="publication-nav-item pagination" href="#">4</a>
                 <a class="publication-nav-item pagination" href="#">5</a>
                 <a class="publication-nav-item pagination next" href="#"><img src="{{ themosis_assets() }}/images/icon/chevron-right-grey.png" alt=""></a>
-                <a class="publication-nav-item cta-pub-right" href="#"><?php _e('Publication suivante', THEME_TEXTDOMAIN); ?></a>
+                <a class="publication-nav-item cta-pub-right" href="#">{{ pll__('Page suivante') }}</a>
             </div>
         </div>
 
