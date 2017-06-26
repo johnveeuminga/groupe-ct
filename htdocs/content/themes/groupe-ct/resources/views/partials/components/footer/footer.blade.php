@@ -59,7 +59,7 @@
 
             <nav class="footer-nav contact">
                 <h4 class="footer-nav-title"><a class="nav-link" href="#">{{ pll_current_language() === 'fr' ? 'English' : 'Français' }}</a></h4>
-                <h4 class="footer-nav-title"><a class="nav-link" href="#newsletter">{{ pll__('Infolettre') }}</a></h4>
+                <h4 class="footer-nav-title"><a class="nav-link scroll-to" href="#" target="#newsletter">{{ pll__('Infolettre') }}</a></h4>
             </nav>
 
         </div>

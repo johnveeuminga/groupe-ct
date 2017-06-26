@@ -7,6 +7,11 @@
             $('html, body').animate({scrollTop: $elem.position().top}, 'slow');
         }
 
+        $('.scroll-to').on('click', function (e) {
+            e.preventDefault();
+            var target = $(this).data().target;
+            $('html, body').animate({scrollTop: $(target).position().top}, 'slow');
+        });
         /***** MENU *******/
         $('.nav-bottom .nav-link').on('click',function(){
             var $navIndex = $(this).attr('class').split(' ')[1];
