@@ -183,4 +183,13 @@ if (function_exists('pll_register_string'))
     pll_register_string('PRODUIT ET SOLUTIONS 2.1 - FILTRES', 'Appareils multifonctions couleur', GROUPE_CT, false);
     pll_register_string('PRODUIT ET SOLUTIONS 2.1 - FILTRES', 'Numériseurs', GROUPE_CT, false);
 
+    /** Template nos publications 5.0.0 */
+    pll_register_string('NOS PUBLICATIONS 5.0.0', 'À la une, chez Groupe CT', GROUPE_CT, false);
+    pll_register_string('NOS PUBLICATIONS 5.0.0', 'Sélectionnez la catégorie de votre choix', GROUPE_CT, false);
+    pll_register_string('NOS PUBLICATIONS 5.0.0', 'Page suivante', GROUPE_CT, false);
+    pll_register_string('NOS PUBLICATIONS 5.0.0', 'Lire la suite', GROUPE_CT, false);
+    pll_register_string('NOS PUBLICATIONS 5.0.0', 'Publication précédente', GROUPE_CT, false);
+    pll_register_string('NOS PUBLICATIONS 5.0.0', 'Liste', GROUPE_CT, false);
+    pll_register_string('NOS PUBLICATIONS 5.0.0', 'Publication suivante', GROUPE_CT, false);
+
 }

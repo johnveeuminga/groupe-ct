@@ -1,26 +1,15 @@
 <section class="publication-list-main-container default-padding default-width">
 
         <div class="publication-header-container">
-            <h2 class="publication-header-title"><?php _e('nos publications', THEME_TEXTDOMAIN); ?></h2>
-            <p class="publication-header-subtitle">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
-            </p>
-            <p class="publication-header-subtitle">
-                aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-                non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
+            <h2 class="publication-header-title">{{ pll__('À la une, chez Groupe CT') }}</h2>
         </div>
 
         <nav class="nav-cat-container">
-            <h3 class="select-title"><?php _e('Sélectionnez la catégorie de votre choix', THEME_TEXTDOMAIN); ?></h3>
+            <p class="select-title">{{ pll__('Sélectionnez la catégorie de votre choix') }}</p>
             <ul class="menu-item-container">
-                <li class="menu-item item-cat-active"><a class="primary-btn-grey" href="#"><?php _e('Nouvelle', THEME_TEXTDOMAIN); ?></a></li>
-                <li class="menu-item"><a class="primary-btn-grey" href="#"><?php _e('Événement', THEME_TEXTDOMAIN); ?></a></li>
-                <li class="menu-item"><a class="primary-btn-grey" href="#"><?php _e('Communiqué de presse', THEME_TEXTDOMAIN); ?></a></li>
-                <li class="menu-item"><a class="primary-btn-grey" href="#"><?php _e('Papier blanc', THEME_TEXTDOMAIN); ?></a></li>
-                <li class="menu-item"><a class="primary-btn-grey" href="#"><?php _e('Étude de cas', THEME_TEXTDOMAIN); ?></a></li>
+                @foreach (get_categories() as $category)
+                    <li class="menu-item"><a class="primary-btn-grey" href="#"><?php _e('Événement', THEME_TEXTDOMAIN); ?></a></li>
+                @endforeach
             </ul>
         </nav>
 
