@@ -68,4 +68,16 @@ class Post
 
         return $query->get_posts();
     }
+
+    public static function get_posts()
+    {
+        $args = [
+            'post_type' => 'post',
+            'numberposts'	=> 1,
+        ];
+
+        $query = new \WP_Query($args);
+
+        return $query->get_posts();
+    }
 }
