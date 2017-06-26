@@ -89,7 +89,7 @@
         @include set-font(22px, $mada, 300, $black);
       }
 
-      .upper-title {
+      &.upper-title {
         margin:15px 0;
         @include set-font(22px, $poppins, 700, $red);
         list-style: square;
