@@ -85,7 +85,7 @@
   @include flex-direction(column);
 
   @media (min-width: $screen-sm-min) {
-    @include align-items(center);
+    @include align-items(baseline);
   }
   @media (min-width: $screen-md-min) {
     @include flex-direction(row);
@@ -93,10 +93,12 @@
 
   .publication-container {
     @media (min-width: $screen-md-min) {
-      padding:0 2%;
       width:calc(100%/3);
     }
 
+    &:nth-child(2) {
+      padding: 0 40px;
+    }
   }
 }
 
