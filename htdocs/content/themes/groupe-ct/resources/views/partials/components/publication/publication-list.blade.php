@@ -1,7 +1,7 @@
 <section class="publication-list-main-container default-padding default-width">
 
         <div class="publication-header-container">
-            <h2 class="publication-header-title">{{ pll__('À la une, chez Groupe CT') }}</h2>
+            <h2 class="publication-header-title">{{ pll__('À la une,<br/>chez Groupe CT') }}</h2>
         </div>
 
         <nav class="nav-cat-container">
