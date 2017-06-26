@@ -39,8 +39,10 @@
     .menu-item {
       margin: 0 20px 0 0;
 
-      &.publication-category.item-cat-active {
-        background-color: $blue;
+      a {
+        &.publication-category.item-cat-active {
+          background-color: $blue;
+        }
       }
     }
   }
