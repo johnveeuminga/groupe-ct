@@ -9,6 +9,9 @@ class Lego4 extends BaseLego implements LegoInterface
     public function get_unique_fields()
     {
         return [
+            $this->generate_cta('bloc_4')[0],
+            $this->generate_cta('bloc_4')[1],
+            $this->generate_cta('bloc_4')[2],
             $this->generate_tab('bloc_4_1',                  __('Icon 1', 'GROUPE-CT') ),
             $this->generate_image('bloc_4_1_icon',           __('Icon', 'GROUPE-CT'), __('Maximum width 100px | Maximum height 100px', 'GROUPE-CT') ),
             $this->generate_text('bloc_4_1_title',           __('Title', 'GROUPE-CT') ),
@@ -37,6 +40,7 @@ class Lego4 extends BaseLego implements LegoInterface
             $this->generate_cta('bloc_4_4')[0],
             $this->generate_cta('bloc_4_4')[1],
             $this->generate_cta('bloc_4_4')[2],
+
         ];
     }
 

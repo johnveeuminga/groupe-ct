@@ -22,9 +22,8 @@
         ])
     </div>
 
-    <!-- FIXME missing global cta -->
-    {{--<div class="btn-container">--}}
-        {{--<a class="primary-btn-blue" href="{{ $block->get_field('bloc_4_1_cta_link') }}" {{ $block->get_field('bloc_4_1_cta_blank') ? 'target="blank"' : '' }}>{{ $block->get_field('bloc_4_1_cta_label') }}</a>--}}
-    {{--</div>--}}
+    <div class="btn-container">
+        <a class="primary-btn-blue" href="{{ $block->get_field('bloc_4_cta_link') }}" {{ $block->get_field('bloc_4_cta_blank') ? 'target="blank"' : '' }}>{{ $block->get_field('bloc_4_cta_label') }}</a>
+    </div>
 
 </div>

@@ -66,9 +66,9 @@ class Bloc {
 					$this->fields['bloc_3_image_left'] = get_sub_field('bloc_3_image_left');
 					break;
 				case "bloc_4":
-					$this->fields['bloc_4_subheader'] = get_sub_field('bloc_4_subheader');
-					$this->fields['bloc_4_title'] = get_sub_field('bloc_4_title');
-					$this->fields['bloc_4_description'] = get_sub_field('bloc_4_description');
+                    $this->fields['bloc_4_cta_label'] = get_sub_field('bloc_4_cta_label');
+                    $this->fields['bloc_4_cta_link'] = get_sub_field('bloc_4_cta_link');
+                    $this->fields['bloc_4_cta_blank'] = get_sub_field('bloc_4_cta_blank');
 
 					$this->fields['bloc_4_1_icon'] = get_sub_field('bloc_4_1_icon');
 					$this->fields['bloc_4_1_title'] = get_sub_field('bloc_4_1_title');
