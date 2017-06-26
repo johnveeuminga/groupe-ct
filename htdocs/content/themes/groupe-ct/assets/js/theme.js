@@ -10,6 +10,7 @@
         $('.scroll-to').on('click', function (e) {
             e.preventDefault();
             var target = $(this).data().target;
+            console.log($(this).data());
             $('html, body').animate({scrollTop: $(target).position().top}, 'slow');
         });
         /***** MENU *******/
