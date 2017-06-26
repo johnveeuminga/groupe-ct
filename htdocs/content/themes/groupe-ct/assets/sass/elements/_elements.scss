@@ -244,9 +244,9 @@ body {
 }
 .publication-cat {
   @extend .poppins15BoldRed;
-  margin-top:25px;
+  margin-top: 25px;
   @media (min-width: $screen-sm-min) {
-    margin-top:10px;
+    margin-top: 0;
   }
 }
 
