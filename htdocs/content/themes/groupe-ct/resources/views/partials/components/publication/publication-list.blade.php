@@ -45,7 +45,7 @@
                         @if (get_field('post_show_date', $post->ID))
                             <p class="publication-date">{{ get_the_date( 'd F Y', $post->ID) }}</p>
                         @endif
-                        <p class="publication-text">{!! nl2br($post->excerpt) !!}</p>
+                        <p class="publication-text">{!! $post->post_excerpt !!}</p>
                         <a href="{{ $post->permalink }}" class="cta-see-more">{{ pll__('Lire la suite') }}</a>
                     </div>
                 </div>
