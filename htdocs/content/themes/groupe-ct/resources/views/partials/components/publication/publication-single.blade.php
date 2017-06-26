@@ -16,16 +16,12 @@
 
         <div class="publication-content-container">
             <div class="pub-info-container">
-                <p class="publication-cat"><?php _e('catégorie', THEME_TEXTDOMAIN); ?></p>
-                <h3 class="publication-title">publication titre</h3>
-                <p class="publication-date">date de publication</p>
+                <p class="publication-cat">{{ $post->category }}</p>
+                <h3 class="publication-title">{{ get_the_title() }}</h3>
+                <p class="publication-date">{{ get_the_date( 'd F Y', $post->ID) }}</p>
             </div>
             <div class="wysiwyg-container">
-
-                    @loop
-                        {!! Loop::content() !!}
-                    @endloop
-
+                {!! get_the_content($post->ID) !!}
             </div>
         </div>
 
