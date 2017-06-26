@@ -21,7 +21,7 @@
                 <p class="publication-date">{{ get_the_date( 'd F Y', get_the_ID()) }}</p>
             </div>
             <div class="wysiwyg-container">
-                {!! get_the_content(get_the_ID()) !!}
+                {!! wpautop(get_the_content(get_the_ID())) !!}
             </div>
         </div>
 
