@@ -11,7 +11,7 @@
             e.preventDefault();
             var target = $(this).data().target;
             console.log($(this).data());
-            $('html, body').animate({scrollTop: $(target).position().top}, 'slow');
+            $('html, body').animate({scrollTop: $(target).position().top - 15}, 'slow');
         });
         /***** MENU *******/
         $('.nav-bottom .nav-link').on('click',function(){
