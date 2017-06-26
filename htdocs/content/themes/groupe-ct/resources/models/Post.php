@@ -77,12 +77,12 @@ class Post
         ];
 
         if (isset($_GET['cat']))  {
-            $args['tax_query'] = [
+            $args['tax_query'] = [[
                                     'taxonomy' => 'category',
                                     'field'    => 'term_id',
                                     'terms'    => $_GET['cat'],
                                     'operator' => 'IN',
-                                ];
+                                ]];
         }
 
         $query = new \WP_Query($args);
