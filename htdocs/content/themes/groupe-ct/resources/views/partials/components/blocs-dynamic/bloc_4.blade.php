@@ -22,8 +22,10 @@
         ])
     </div>
 
-    <div class="btn-container">
-        <a class="primary-btn-blue" href="{{ $block->get_field('bloc_4_cta_link') }}" {{ $block->get_field('bloc_4_cta_blank') ? 'target="blank"' : '' }}>{{ $block->get_field('bloc_4_cta_label') }}</a>
-    </div>
+    @if ($block->get_field('bloc_4_cta_link'))
+        <div class="btn-container">
+            <a class="primary-btn-blue" href="{{ $block->get_field('bloc_4_cta_link') }}" {{ $block->get_field('bloc_4_cta_blank') ? 'target="blank"' : '' }}>{{ $block->get_field('bloc_4_cta_label') }}</a>
+        </div>
+    @endif
 
 </div>
