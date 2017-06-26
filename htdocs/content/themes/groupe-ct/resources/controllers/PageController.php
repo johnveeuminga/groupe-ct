@@ -20,7 +20,9 @@ class PageController extends MainController
 
     public function publication()
     {
-        return view('pages.publication-single',[]);
+        return view('pages.publication-single', [
+            'post' => the_post(),
+        ]);
     }
 
     public function publication_list()

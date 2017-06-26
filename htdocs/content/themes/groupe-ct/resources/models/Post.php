@@ -19,6 +19,13 @@ class Post
 
 	}
 
+	public static function get($id, $hydrate = true)
+	{
+
+		return self::first(-1, $hydrate);
+
+	}
+
 	public static function first($nb = 1, $hydrate = true)
 	{
 		$query = new WP_Query([
