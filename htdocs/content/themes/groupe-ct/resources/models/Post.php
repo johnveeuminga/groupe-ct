@@ -73,7 +73,7 @@ class Post
     {
         $args = [
             'post_type' => 'post',
-            'numberposts'	=> 1,
+            'posts_per_page' => 1,
         ];
 
         $query = new \WP_Query($args);
