@@ -27,4 +27,3 @@ Route::any('template', [
 Route::any('singular', ['job_offer', 'uses' => 'LightboxController@job_offer']);
 
 Route::any('single', 'PageController@publication');
-Route::any('postTypeArchive', ['publications' , 'uses' => 'PageController@publication_list']);

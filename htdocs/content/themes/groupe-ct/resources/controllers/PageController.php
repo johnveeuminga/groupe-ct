@@ -21,6 +21,7 @@ class PageController extends MainController
     {
         return view('pages.publication-single',[]);
     }
+
     public function publication_list()
     {
         return view('pages.publication-list',[]);
