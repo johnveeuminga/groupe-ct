@@ -45,7 +45,7 @@
                             <p class="publication-date">{{ get_the_date( 'd F Y', $post->ID) }}</p>
                         @endif
                         <p class="publication-text">{!! $post->post_excerpt !!}</p>
-                        <a href="{{ $post->permalink }}" class="cta-see-more">{{ pll__('Lire la suite') }}</a>
+                        <a href="{{ get_permalink($post->ID) }}" class="cta-see-more">{{ pll__('Lire la suite') }}</a>
                     </div>
                 </div>
                 <?php $reverse = !$reverse; ?>
