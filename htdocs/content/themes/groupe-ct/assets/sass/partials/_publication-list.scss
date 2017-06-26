@@ -1,7 +1,7 @@
 .publication-list-main-container {
 
-  padding-top:130px;
-  padding-bottom:130px;
+  padding-top: 130px;
+  padding-bottom: 0px;
 
   @include flexbox();
   @include flex-direction(column);
