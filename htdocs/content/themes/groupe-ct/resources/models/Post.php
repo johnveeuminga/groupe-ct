@@ -74,6 +74,7 @@ class Post
         $args = [
             'post_type' => 'post',
             'posts_per_page' => 1,
+            'paged' => 1,
         ];
 
         $query = new \WP_Query($args);
