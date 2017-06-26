@@ -8,6 +8,7 @@
 
 namespace Theme\Controllers;
 use Theme\Models\Page;
+use Theme\Models\Post;
 
 class PageController extends MainController
 {
@@ -24,6 +25,7 @@ class PageController extends MainController
 
     public function publication_list()
     {
+        Post::all();
         return view('pages.publication-list',[]);
     }
 
