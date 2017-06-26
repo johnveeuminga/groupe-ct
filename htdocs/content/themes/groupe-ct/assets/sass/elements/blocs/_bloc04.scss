@@ -1,6 +1,11 @@
 .four-col-icons-main-container {
   position: relative;
   text-align: center;
+  
+  @media (min-width: $screen-sm-min) {
+    padding-top: 75px;
+  }
+
   .four-col-icons-container {
 
     @include flexbox();
