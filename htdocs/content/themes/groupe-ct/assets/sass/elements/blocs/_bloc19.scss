@@ -16,7 +16,9 @@
     }
     .desc {
       @extend .mada22LightBlack;
-      padding-bottom: 40px;
+      p {
+        padding-bottom: 40px;
+      }
     }
 
   }
