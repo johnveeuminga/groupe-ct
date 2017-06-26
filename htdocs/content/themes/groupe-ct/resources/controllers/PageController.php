@@ -25,8 +25,9 @@ class PageController extends MainController
 
     public function publication_list()
     {
-        Post::all();
-        return view('pages.publication-list',[]);
+        return view('pages.publication-list', [
+            'posts' => Post::all(),
+        ]);
     }
 
     public function page_2_1()
