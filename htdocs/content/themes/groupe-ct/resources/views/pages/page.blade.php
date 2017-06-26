@@ -1,7 +1,7 @@
 @extends('templates.main')
 
 @section('main')
-    <div class="container-fluid">
+    <div class="container-fluid" id="">
 
         @if( have_rows('blocks') )
 

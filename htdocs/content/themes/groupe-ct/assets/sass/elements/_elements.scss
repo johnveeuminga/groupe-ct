@@ -251,7 +251,7 @@ body {
 }
 
 .publication-title {
-  @extend .poppins30BoldBlack;
+  @include set-font(44px, $poppins, 700, $black);
   margin:10px 0;
 }
 
