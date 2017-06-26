@@ -10,7 +10,7 @@
   @media (min-width: $screen-sm-min) {
     @include flex-direction(row);
     @include justify-content(center);
-    margin-top: 100px;
+    padding-top: 100px;
   }
 
 
@@ -43,7 +43,7 @@
 
 .publication-container:first-of-type {
   @media (min-width: $screen-sm-min) {
-    margin-top:50px;
+    padding-top:50px;
   }
 
 }

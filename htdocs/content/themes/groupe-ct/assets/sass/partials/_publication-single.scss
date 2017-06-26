@@ -4,7 +4,7 @@
   .publication-container {
     @include flexbox();
     @include flex-direction(column);
-    margin-top:50px;
+    padding-top:50px;
   }
 
 
