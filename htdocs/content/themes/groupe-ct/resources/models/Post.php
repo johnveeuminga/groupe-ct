@@ -118,6 +118,7 @@ class Post
         $args = [
             'post_type' => 'post',
             'posts_per_page' => 3,
+            'post__not_in' => $posts_ids,
         ];
 
         if ($category) {
@@ -126,7 +127,6 @@ class Post
                 'field'    => 'term_id',
                 'terms'    => $category[0]->term_id,
                 'operator' => 'IN',
-                'post__not_in' => $posts_ids,
             ]];
         }
 
