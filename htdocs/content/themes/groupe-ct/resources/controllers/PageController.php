@@ -25,8 +25,10 @@ class PageController extends MainController
 
     public function publication_list()
     {
+        $posts = Post::get_posts();
         return view('pages.publication-list', [
-            'posts' => Post::get_posts(),
+            'posts' => $posts['posts'],
+            'count' => $posts['count'],
         ]);
     }
 

@@ -74,11 +74,15 @@ class Post
         $args = [
             'post_type' => 'post',
             'posts_per_page' => 1,
-            'paged' => 1,
+            'paged' => get_query_var( 'paged' ),
         ];
 
         $query = new \WP_Query($args);
+        
 
-        return $query->get_posts();
+        return [
+            'count' => wp_count_posts(),
+            'posts' => $query->get_posts(),
+        ];
     }
 }
