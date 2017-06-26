@@ -1,7 +1,8 @@
 .publication-main-container{
   @include flexbox();
   @include flex-direction(column);
-
+  margin: 0;
+  padding: 0;
 }
 
 .publication-container {
