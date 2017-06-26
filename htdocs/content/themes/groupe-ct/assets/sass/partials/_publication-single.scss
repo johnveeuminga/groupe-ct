@@ -2,7 +2,6 @@
 .publication-single-main-container {
   @media (min-width: $screen-sm-min) {
     padding-top: 90px;
-
   }
 
   .publication-container {
@@ -27,9 +26,9 @@
     @include justify-content(space-between);
     border-top:1px solid $grey-light;
     border-bottom:1px solid $grey-light;
-    padding:15px 0;
-    margin-top:50px;
-    margin-bottom:30px;
+    padding: 18px 0;
+    margin-top: 50px;
+    margin-bottom: 30px;
   }
 
   .publication-nav-item {
