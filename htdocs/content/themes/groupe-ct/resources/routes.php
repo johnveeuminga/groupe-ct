@@ -10,7 +10,6 @@
  */
 
 Route::any('front', 'PageController@index');
-Route::any('page', 'PageController@index');
 Route::any('template', [
     'page-2-1',
     'uses' => 'PageController@page_2_1'
@@ -28,6 +27,7 @@ Route::any('template', [
     'uses' => 'PageController@publication_list'
 ]);
 
+Route::any('page', 'PageController@index');
 Route::any('singular', ['job_offer', 'uses' => 'LightboxController@job_offer']);
-
 Route::any('single', 'PageController@publication');
+
