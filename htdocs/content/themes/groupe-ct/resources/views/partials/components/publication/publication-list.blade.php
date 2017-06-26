@@ -29,8 +29,9 @@
 
         <!-- INSERT PUBLICATIONS HERE -->
         <div class="publication-main-container default-padding default-width">
+            <?php $reverse = false; ?>
             @foreach ($posts as $post)
-                <div class="publication-container @if($i%2==1) {{ 'reverse-elem' }} @endif"> <!-- reverse-elem : to swap img and text div -->
+                <div class="publication-container @if($reverse) {{ 'reverse-elem' }} @endif"> <!-- reverse-elem : to swap img and text div -->
                     <div class="publication-img-container">
 
                         <img class="image-pub shadow" src="{{ themosis_assets() }}/images/img/img_pub01.png" alt="">
@@ -51,6 +52,7 @@
                         <a href="#" class="cta-see-more"><?php _e('en savoir plus', THEME_TEXTDOMAIN); ?></a>
                     </div>
                 </div>
+                <?php $reverse = !$reverse; ?>
             @endforeach
         </div>
         <!-- END OF PUBLICATIONS-->
