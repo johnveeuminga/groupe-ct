@@ -44,7 +44,7 @@ class Post
 		{
 			$post->image = ['url' => get_the_post_thumbnail_url($post, 'full'), 'alt' => get_the_post_thumbnail_caption($post)];
 			$post->category = get_category(wp_get_post_categories($post->ID)[0])->name;
-			$post->excerpt = get_post_meta($post->ID, 'excerpt')[0];
+			$post->excerpt = get_post_meta($post->ID, 'excerpt');
 			$post->permalink = get_permalink($post->ID);
 		}
 
