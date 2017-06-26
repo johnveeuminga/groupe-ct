@@ -35,12 +35,10 @@
     @include set-font(15px, $poppins, 700, $blue );
     @extend .poppins15BoldBlue;
     position: relative;
-  }
-
-
-  .link-pub-list {
     width: 100%;
   }
+
+
   .link-pub-list:before {
     content:url($assets + "/images/icon/icon-pub-list.png");
     position: absolute;
