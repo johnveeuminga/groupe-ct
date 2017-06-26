@@ -16,7 +16,7 @@
 
         <div class="publication-content-container">
             <div class="pub-info-container">
-                <p class="publication-cat">{{ get_category(wp_get_post_categories($post->ID)[0])->name }}</p>
+                <p class="publication-cat">{{ get_the_category($post->ID)[0]->name }}</p>
                 <h3 class="publication-title">{{ get_the_title() }}</h3>
                 <p class="publication-date">{{ get_the_date( 'd F Y', $post->ID) }}</p>
             </div>
