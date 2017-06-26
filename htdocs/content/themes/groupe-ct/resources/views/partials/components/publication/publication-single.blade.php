@@ -60,15 +60,15 @@
                 </div>
                 <div class="buffer"></div>
                 <div class="publication-text-container">
-                    <p class="publication-cat">{{ get_the_category(get_the_ID())[0]->name }}</p>
-                    <h3 class="publication-title">{{ get_the_title(get_the_ID()) }}</h3>
+                    <p class="publication-cat">{{ get_the_category($post->ID)[0]->name }}</p>
+                    <h3 class="publication-title">{{ get_the_title($post->ID) }}</h3>
                     @if (get_field('post_show_date', $post->ID))
                         <p class="publication-date">{{ get_the_date( 'd F Y', $post->ID) }}</p>
                     @endif
                     <p class="publication-text">
-                        {{ get_the_excerpt(get_the_ID()) }}
+                        {{ get_the_excerpt($post->ID) }}
                     </p>
-                    <a href="{{ get_the_permalink(get_the_ID()) }}" class="cta-see-more">{{ pll__('Lire la suite') }}</a>
+                    <a href="{{ get_the_permalink($post->ID) }}" class="cta-see-more">{{ pll__('Lire la suite') }}</a>
                 </div>
             </div>
             <!-- THE ELEMENT END  -->
