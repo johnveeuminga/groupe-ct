@@ -55,11 +55,9 @@
 
         <div class="publication-nav-container">
             <div class="publication-nav">
-                <a class="publication-nav-item pagination active-pagination" href="#">1</a>
-                <a class="publication-nav-item pagination" href="#">2</a>
-                <a class="publication-nav-item pagination" href="#">3</a>
-                <a class="publication-nav-item pagination" href="#">4</a>
-                <a class="publication-nav-item pagination" href="#">5</a>
+                @for ($i = 1; $i <= $count; $i++)
+                    <a class="publication-nav-item pagination @if ($i === get_query_var( 'paged' )) active-pagination @endif" href="{{ PageHelper::get_page_permalink(PageHelper::PAGE_5_0_PUBLICATIONS) }}/page/{{ $i }}">{{ $i }}</a>
+                @endfor
                 <a class="publication-nav-item pagination next" href="#"><img src="{{ themosis_assets() }}/images/icon/chevron-right-grey.png" alt=""></a>
                 <a class="publication-nav-item cta-pub-right" href="#">{{ pll__('Page suivante') }}</a>
             </div>
