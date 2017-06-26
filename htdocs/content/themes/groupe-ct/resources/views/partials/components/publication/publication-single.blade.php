@@ -18,10 +18,10 @@
             <div class="pub-info-container">
                 <p class="publication-cat">{{ get_the_category(get_the_ID())[0]->name }}</p>
                 <h3 class="publication-title">{{ get_the_title() }}</h3>
-                <p class="publication-date">{{ get_the_date( 'd F Y', $post->ID) }}</p>
+                <p class="publication-date">{{ get_the_date( 'd F Y', get_the_ID()) }}</p>
             </div>
             <div class="wysiwyg-container">
-                {!! get_the_content($post->ID) !!}
+                {!! get_the_content(get_the_ID()) !!}
             </div>
         </div>
 
