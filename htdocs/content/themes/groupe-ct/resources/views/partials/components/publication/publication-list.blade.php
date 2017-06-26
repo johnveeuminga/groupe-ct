@@ -7,7 +7,7 @@
         <nav class="nav-cat-container">
             <p class="select-title">{{ pll__('Sélectionnez la catégorie de votre choix') }}</p>
             <ul class="menu-item-container">
-                @foreach (get_categories() as $category)
+                @foreach (get_terms('category') as $category)
                     @if ($category->name !== 'Uncategorized')
                         <li class="menu-item"><a class="primary-btn-grey" href="#" data-target="{{ $category->term_id }}">{{ $category->name }}</a></li>
                     @endif
