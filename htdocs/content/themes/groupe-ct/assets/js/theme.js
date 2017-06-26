@@ -205,7 +205,7 @@
 
 
         /*** NAV PRODUCT **/
-        $('.nav-cat-container a').on('click', function (e) {
+        $('.nav-cat-container a:not(".publication-category")').on('click', function (e) {
             e.preventDefault();
             var target = $(this).data().target;
             $('.product-container').fadeOut(300);
@@ -221,7 +221,7 @@
 
         $('select').on('change', function() {
             parseInt($(this).selectedIndex) === 1 ? $(this).css('color', 'rgba(255, 255, 255, 0.6)') : $(this).css('color', 'rgba(255, 255, 255, 1)') ;
-        })
+        });
 
 
         /*** BLOCK 9 - STATISTICS **/
