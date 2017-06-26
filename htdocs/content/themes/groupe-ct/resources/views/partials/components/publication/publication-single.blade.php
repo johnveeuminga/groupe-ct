@@ -7,11 +7,11 @@
         <div class="publication-nav-container">
             <div class="publication-nav">
                 @if (get_previous_post())
-                    <a class="publication-nav-item cta-pub-left" href="#"><?php _e('Publication précédente', THEME_TEXTDOMAIN); ?></a>
+                    <a class="publication-nav-item cta-pub-left" href="{{ get_previous_post_link() }}">{{ pll__('Publication précédente') }}</a>
                 @endif
                 <a class="publication-nav-item link-pub-list" href="{{PageHelper::get_page_permalink(PageHelper::PAGE_5_0_PUBLICATIONS) }}"><?php _e('Liste', THEME_TEXTDOMAIN); ?></a>
                 @if (get_next_post())
-                    <a class="publication-nav-item cta-pub-right" href="#"><?php _e('Publication suivante', THEME_TEXTDOMAIN); ?></a>
+                    <a class="publication-nav-item cta-pub-right" href="{{ get_next_post_link() }}">{{ pll__('Publication suivante') }}</a>
                 @endif
             </div>
         </div>
