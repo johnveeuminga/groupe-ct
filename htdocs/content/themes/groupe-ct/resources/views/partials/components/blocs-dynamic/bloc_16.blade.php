@@ -6,8 +6,9 @@
         <div class="timeline-event-main-container">
 
             <!-- EVENT START -->
+            <?php $reverse = false; ?>
             @foreach($block->get_field('block_16_timeline_events') as $event)
-            <div class="timeline-event-container">
+            <div class="timeline-event-container @if ($reverse) left @endif">
                 <div class="timeline-dot-container">
                     <img class="timeline-dot dot-right" src="{{ themosis_assets() }}/images/timeline-icon/dot.png" alt="">
                 </div>
@@ -18,6 +19,7 @@
                     </div>
                 </div>
             </div>
+                <?php $reverse = !$reverse; ?>
             @endforeach
             <!-- EVENT END -->
         </div>

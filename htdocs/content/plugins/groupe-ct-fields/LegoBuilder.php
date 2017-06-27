@@ -70,7 +70,7 @@ class LegoBuilder
 	                        'id' => '',
 	                    ),
 	                    'layouts' => array (
-	                        'bloc_1_layout_key' => $lego1->get_fields_layout(),
+//	                        'bloc_1_layout_key' => $lego1->get_fields_layout(),
 	                        'bloc_2_layout_key' => $lego2->get_fields_layout(),
 	                        'bloc_3_layout_key' => $lego3->get_fields_layout(),
 	                        'bloc_4_layout_key' => $lego4->get_fields_layout(),
@@ -81,7 +81,7 @@ class LegoBuilder
 	                        'bloc_9_layout_key' => $lego9->get_fields_layout(),
 	                        'bloc_10_layout_key' => $lego10->get_fields_layout(),
 	                        'bloc_11_layout_key' => $lego11->get_fields_layout(),
-	                        'bloc_12_layout_key' => $lego12->get_fields_layout(),
+//	                        'bloc_12_layout_key' => $lego12->get_fields_layout(),
 	                        'bloc_13_layout_key' => $lego13->get_fields_layout(),
 	                        'bloc_14_layout_key' => $lego14->get_fields_layout(),
 	                        'bloc_15_layout_key' => $lego15->get_fields_layout(),

@@ -40,6 +40,7 @@
     text-transform: uppercase;
     margin-top: 20px;
     margin-bottom:20px;
+    line-height: 27px;
   }
 
   .job-info-description {
@@ -91,12 +92,22 @@
 
   .job-info-inner-container {
     padding: 0 2%;
+
+    p {
+      @extend .mada18LightBlack;
+      font-weight: 400!important;
+
+      span {
+        font-weight: 300;
+      }
+    }
   }
 
   .job-info-title {
     @extend .poppins22BoldBlue;
     text-transform: uppercase;
     margin-bottom:20px;
+    line-height: 27px;
   }
 
   .job-info-description {
