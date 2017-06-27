@@ -16,8 +16,8 @@ class Lego10 extends BaseLego implements LegoInterface
                 $this->generate_file('bloc_10_product_pdf', 'PDF File', 'pdf'),
                 $this->generate_select('bloc_10_product_category', 'Product category', [
                     '2-1-1-a' => __('2.1.1 - Imprimantes', 'GROUPE-CT'),
-                    '2-1-1-b' => __('2.1.1 - Appareils multifonctions noir et blanc', 'GROUPE-CT'),
-                    '2-1-1-c' => __('2.1.1 - Appareils multifonctions couleur', 'GROUPE-CT'),
+                    '2-1-1-b' => __('2.1.1 - Multifonctions noir et blanc', 'GROUPE-CT'),
+                    '2-1-1-c' => __('2.1.1 - Multifonctions couleur', 'GROUPE-CT'),
                     '2-1-1-d' => __('2.1.1 - Numériseurs', 'GROUPE-CT'),
                     '2-1-2-a' => __('2.1.2 - Production de bas volume', 'GROUPE-CT'),
                     '2-1-2-b' => __('2.1.2 - Production numérique', 'GROUPE-CT'),
