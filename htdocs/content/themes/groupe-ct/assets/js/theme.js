@@ -7,6 +7,11 @@
             $('html, body').animate({scrollTop: $elem.position().top}, 'slow');
         }
 
+        $('.hero-arrow').on('click', function (e) {
+            e.preventDefault();
+            $('html, body').animate({scrollTop: $('main').position().top - 15}, 'slow');
+        });
+
         $('.scroll-to').on('click', function (e) {
             e.preventDefault();
             var target = $(this).data().target;
