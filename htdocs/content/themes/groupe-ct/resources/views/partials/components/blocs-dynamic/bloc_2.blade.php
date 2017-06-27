@@ -3,29 +3,34 @@
     <div class="slider-main-container">
         @foreach($block->get_field('bloc_2_slides') as $i => $slide)
             <div class="slide-container slide{{ $i }} @if($i == 0) {{ 'active-slide' }} @endif @if($slide['bloc_2_slide_image_left'] === false) reverse-elem @endif">
+
                 <div class="img-container">
-                    <img src="{{ $slide['bloc_2_slide_image']['url'] }}" alt="{{ $slide['bloc_2_slide_image']['alt'] }}">
+                    <img src="{{ $block['bloc_2_image']['url'] }}" alt="{{ $block['bloc_2_image']['alt'] }}">
                 </div>
                 <div class="buffer"></div>
-
                 <div class="text-container">
-                    @if (!empty($slide['bloc_2_slide_subheader']))<li class="upper-title">{{ $slide['bloc_2_slide_subheader'] }}</li>@endif
-                    @if (!empty($slide['bloc_2_slide_title']))<h2 class="text-container-title">{{ $slide['bloc_2_slide_title'] }}</h2>@endif
-                    @if (!empty($slide['bloc_2_slide_subtitle']))<h3 class="text-container-subtitle">{{ $slide['bloc_2_slide_subtitle'] }}</h3>@endif
-                    @if (!empty($slide['bloc_2_slide_text']))<p class="text">{{ $slide['bloc_2_slide_text'] }}</p>@endif
-
-
-
-                    @if (!empty($slide['bloc_2_slide_cta_link']))<a class="btn-bloc2 primary-btn-blue" href="{{ $slide['bloc_2_slide_cta_link'] }}" {{ $slide['bloc_2_slide_cta_blank'] ? "target='_blank'" : "" }}>{{ $slide['bloc_2_slide_cta_label'] }}</a>@endif
-
-                    <!-- FIXME -->
-                    <h3>Missing fields</h3>
-                    <ul>
-                        <li>bloc_2_slide_phone_1</li>
-                        <li>bloc_2_slide_phone_2_label</li>
-                        <li>bloc_2_slide_phone_2</li>
-                        <li>bloc_2_slide_image_left</li>
-                    </ul>
+                    @if (!empty($block['bloc_2_subheader']))<p class="upper-title">{{ $block['bloc_2_subheader'] }}</p>@endif
+                    @if (!empty($block['bloc_2_title']))<h2 class="text-container-title">{{ $block['bloc_2_title'] }}</h2>@endif
+                    @if (!empty($block['bloc_2_text']))<p class="text">{!! nl2br($block['bloc_2_text']) !!}</p>@endif
+                    @if (!empty($block['bloc_2_phone_1']) || !empty($block['bloc_2_phone_2']))
+                        <div class="contact-container">
+                            @if (!empty($block['bloc_2_phone_1']))
+                                <div class="contact-content">
+                                    @if (!empty($block['bloc_2_phone_1_location']))<span class="contact-location">{{ $block['bloc_2_phone_1_location'] }}</span>@endif
+                                    @if (!empty($block['bloc_2_phone_1_label']))<a class="contact-phone" href="tel:+{{ $block['bloc_2_phone_1'] }}">{{ $block['bloc_2_phone_1_label'] }}</a>@endif
+                                </div>
+                            @endif
+                            @if (!empty($block['bloc_2_phone_2']))
+                                <div class="contact-content">
+                                    @if (!empty($block['bloc_2_phone_2_location']))<span class="contact-location">{{ $block['bloc_2_phone_2_location'] }}</span>@endif
+                                    @if (!empty($block['bloc_2_phone_2_label']))<a class="contact-phone" href="tel:+{{ $block['bloc_2_phone_2'] }}">{{ $block['bloc_2_phone_2_label'] }}</a>@endif
+                                </div>
+                            @endif
+                        </div>
+                    @endif
+                    <div>
+                        @if ($block['bloc_2_cta_label'])<a class="btn-bloc2 primary-btn-blue @if ($block['bloc_2_cta_open_contact']) open-contact-form @endif" href="@if($block['bloc_2_cta_open_contact'])#@else{{ $block['bloc_2_cta_link'] }}@endif" @if($block['bloc_2_cta_blank'])target='_blank'@endif>{{ $block['bloc_2_cta_label'] }}</a>@endif
+                    </div>
                 </div>
             </div>
         @endforeach
