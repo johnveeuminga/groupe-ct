@@ -17,7 +17,7 @@ class Lego9 extends BaseLego implements LegoInterface
             $this->generate_number('bloc_9_1_percentage',      __('Percentage filled', 'GROUPE-CT') ),
             $this->generate_textarea('bloc_9_1_description',   __('Description', 'GROUPE-CT') ),
             $this->generate_text('bloc_9_1_source',            __('Source', 'GROUPE-CT') ),
-            $this->generate_image('bloc_9_1_image',            __('Image', 'GROUPE-CT') ),
+            $this->generate_image('bloc_9_1_image',            __('Image', 'GROUPE-CT'), __('Minimum Width : 580px | Minimum Height : 580px', 'GROUPE-CT') ),
 	        $this->generate_tab('bloc_9_2',                    __('Icon 2', 'GROUPE-CT') ),
 	        $this->generate_text('bloc_9_2_label',             __('Label', 'GROUPE-CT') ),
 	        $this->generate_color_picker('bloc_9_2_primary',   __('Primary Color', 'GROUPE-CT') ),
@@ -25,7 +25,7 @@ class Lego9 extends BaseLego implements LegoInterface
 	        $this->generate_number('bloc_9_2_percentage',      __('Percentage filled', 'GROUPE-CT') ),
 	        $this->generate_textarea('bloc_9_2_description',   __('Description', 'GROUPE-CT') ),
 	        $this->generate_text('bloc_9_2_source',            __('Source', 'GROUPE-CT') ),
-            $this->generate_image('bloc_9_2_image',            __('Image', 'GROUPE-CT') ),
+            $this->generate_image('bloc_9_2_image',            __('Image', 'GROUPE-CT'), __('Minimum Width : 580px | Minimum Height : 580px', 'GROUPE-CT') ),
         ];
     }
 
