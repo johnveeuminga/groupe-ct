@@ -2,7 +2,7 @@
 <div class="toggle-main-container default-padding default-width">
     <div class="toggle-content-header">
         <div class="toggle-title-container">
-            <h3 class="toggle-content-title" href="#">{{ $job['bloc_14_collapse_title'] }}</h3>
+            <h3 class="toggle-content-title" href="#">{{ $block->get_field('bloc_14_collapse_title') }}</h3>
         </div>
         <img class="toggle-content-carret" src="{{ themosis_assets() }}/images/icon/icon-chevron-white.png" alt="">
         <div class="triangle-blue"></div>
