@@ -92,6 +92,10 @@
 
   .job-info-inner-container {
     padding: 0 2%;
+
+    p {
+      @extend .mada18LightBlack;
+    }
   }
 
   .job-info-title {
