@@ -14,6 +14,15 @@
                         <span>{!! $block->get_field('bloc_9_1_source') !!}</span>
                     </div>
                 </div>
+            @elseif($block->get_field('bloc_9_1_image'))
+                <div class="chart-container">
+                    <div class="chart">
+                        <img src="{{ $block->get_field('bloc_9_1_image')['url'] }}" alt="">
+                    </div>
+                    <div class="chart-text">
+                        <p>{!! $block->get_field('bloc_9_1_description') !!}</p>
+                    </div>
+                </div>
             @endif
             <!-- THE ELEMENT END  -->
 
@@ -26,6 +35,15 @@
                     <div class="chart-text">
                         <p>{!! $block->get_field('bloc_9_2_description') !!}</p>
                         <span>{!! $block->get_field('bloc_9_2_source')  !!}</span>
+                    </div>
+                </div>
+            @elseif($block->get_field('bloc_9_2_image'))
+                <div class="chart-container">
+                    <div class="chart">
+                        <img src="{{ $block->get_field('bloc_9_2_image')['url'] }}" alt="">
+                    </div>
+                    <div class="chart-text">
+                        <p>{!! $block->get_field('bloc_9_2_description') !!}</p>
                     </div>
                 </div>
             @endif
