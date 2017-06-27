@@ -1,16 +1,16 @@
 <!-- Block 15 - Team -->
 @foreach ($block->get_field('bloc_15_teams') as $team)
 <div class="toggle-main-container default-padding default-width">
-    <div class="toggle-content-header">
+    <div class="toggle-content-header active-header">
         <div class="toggle-title-container">
             <h3 class="toggle-content-title" href="#">{{ $team['block_15_team_title'] }}</h3>
         </div>
-        <img class="toggle-content-carret" src="{{ themosis_assets() }}/images/icon/icon-chevron-white.png" alt="">
-        <div class="triangle-blue"></div>
+        <img class="toggle-content-carret toggle-carret" src="{{ themosis_assets() }}/images/icon/icon-chevron-white.png" alt="">
+        <div class="triangle-blue toggle-triangle"></div>
         <a class="open-toggle-content" href="#"></a>
     </div>
 
-    <div class="toggle-content">
+    <div class="toggle-content open-content">
         @foreach($team['bloc_15_team_members'] as $member)
             {{-- job INFO START --}}
             <div class="team-info-container">
