@@ -4,12 +4,12 @@
 
         <div class="top-bar-logo-container"> </div>
         <div class="top-bar-menu-btn-container">
-            <div id="menu-btn">
+            <a href="#menu-mobile" id="menu-btn">
                 <span></span>
                 <span></span>
                 <span></span>
                 <span></span>
-            </div>
+            </a>
         </div>
     </div>
 

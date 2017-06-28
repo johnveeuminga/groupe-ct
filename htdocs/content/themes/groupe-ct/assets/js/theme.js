@@ -20,16 +20,23 @@
             $('html, body').animate({scrollTop: $(target).position().top - 15}, 'slow');
         });
 
-        /***** MENU MOBILE
+        /***** MENU MOBILE *******/
 
-        $(".main-nav-mobile-container").mmenu({
+        $("#mobile-menu").mmenu({
             // options
         }, {
             // configuration
             offCanvas: {
                 pageSelector: "#global-container"
             }
-        }); *******/
+
+        });
+
+        var API = $("#mobile-menu").data( "mmenu" );
+
+        $("#mmenu-btn").click(function() {
+            API.open();
+        });
 
         /***** MENU DESKTOP *******/
         $('.nav-bottom .nav-link').on('click',function(){

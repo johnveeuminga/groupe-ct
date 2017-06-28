@@ -37,6 +37,7 @@
     position: relative;
     top:6px;
     cursor: pointer;
+    display: block;
   }
 
 
@@ -64,10 +65,10 @@
 }
 
 .main-nav-mobile-container {
-  display: none;
-  position: relative;
-  right:15%;
-  width:90%;
+ //display: none;
+  //position: relative;
+  //right:15%;
+  //width:90%;
   //margin-left:auto;
   border: 1px solid $grey-light;
   .link-close-menu {
@@ -83,13 +84,4 @@
     }
   }
 
-}
-
-body {
- // @include flexbox();
-  //@include flex-direction(row-reverse);
-}
-#global-container {
-  //position: relative;
-  //left:-82%;
 }
