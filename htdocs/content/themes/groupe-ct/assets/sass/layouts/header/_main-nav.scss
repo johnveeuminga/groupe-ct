@@ -10,8 +10,28 @@
     background-image: url($assets + "images/logo/logo-ct.png");
     background-position: 50% bottom;
     background-repeat: no-repeat;
-    background-size: 150px;
+    background-size: 200px;
+    @include transition(all 0.25s ease);
+    @media (max-width: 1110px) {
+      background-size: 180px;
+
+    }
   }
+
+  /*** SETTING WIDTH
+
+  .nav-logo-container {
+    @include flex-basis(16%);
+    max-width: 16%;
+  }
+  .nav-container {
+    @include flex-basis(65.28%);
+    max-width: 65.28%;
+  }
+  .nav-contact-us {
+    @include flex-basis(14.5%);
+    max-width: 14.5%;
+  } ***/
 
   .link-home {
     display: block;
@@ -22,15 +42,15 @@
   .nav-container {
     @include flexbox();
     @include flex-direction(column);
-    padding: 40px 20px 0px;
-
+    padding: 60px 40px 42px;
     .nav-top{
-      margin-bottom:40px;
+      padding-bottom:48px;
     }
 
     .nav-link-container {
       @include flexbox();
       @include justify-content(flex-end);
+
       li {
        @include flexbox();
       }
@@ -95,7 +115,6 @@
     .nav-bottom .nav-link{
       font-size: 16px;
       color:$black;
-      padding-bottom: 20px;
       text-transform: uppercase;
       &.has-submenu {
         &:after {
@@ -111,15 +130,20 @@
 
   .nav-contact-us {
     @include flexbox();
-    @include flex-direction(column);
-    @include justify-content(center);
-    @include align-items(center);
     position: relative;
     background-color: $blue;
+
     .contact-us-link {
       display: block;
+      position: absolute;
       width:100%;
       height:100%;
+    }
+
+    .contact-us-text {
+      position: absolute;
+      @include center-img(50%, 18%);
+      width:100%;
       color:white;
       font-family: $poppins;
       font-size: 14px;
@@ -128,12 +152,13 @@
       span {
         width:100%;
         display:block;
-        padding-top: 50px;
+        //padding-top: 50px;
       }
       .icon-arrow {
         margin-top:10px;
       }
     }
+
   }
 
 
