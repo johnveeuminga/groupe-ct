@@ -16,6 +16,9 @@ class MainController extends BaseController
         Asset::add('screen-css', themosis_assets() . '/css/screen.min.css', ['select2-css', 'flexgrid']);
         Asset::add('theme-js',  themosis_assets() . '/js/theme.min.js', ['jquery', 'select2-js', 'doughnut-chart'], '', false);
 
+        Asset::add('mmenu-css', themosis_assets() . '/css/jquery.mmenu.css', ['select2-css', 'flexgrid']);
+        Asset::add('mmenu-js',  themosis_assets() . '/js/jquery.mmenu.js', ['jquery', 'select2-js', 'doughnut-chart'], '', true);
+       // Asset::add('mmenu-cdn', '//cdnjs.com/libraries/jquery.mmenu', ['jquery'],'1.0.0', true);
 
         Asset::add('validate-js', '//cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.16.0/jquery.validate.min.js', ['jquery'],'1.16.0', true);
         Asset::add('validate-method-js', '//cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.16.0/additional-methods.min.js', ['jquery'],'1.16.0', true);

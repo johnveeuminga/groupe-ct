@@ -19,7 +19,19 @@
             console.log($(this).data());
             $('html, body').animate({scrollTop: $(target).position().top - 15}, 'slow');
         });
-        /***** MENU *******/
+
+        /***** MENU MOBILE
+
+        $(".main-nav-mobile-container").mmenu({
+            // options
+        }, {
+            // configuration
+            offCanvas: {
+                pageSelector: "#global-container"
+            }
+        }); *******/
+
+        /***** MENU DESKTOP *******/
         $('.nav-bottom .nav-link').on('click',function(){
             var $navIndex = $(this).attr('class').split(' ')[1];
             $('.sub-menu-container '+ $navIndex).removeClass('hideMe').siblings().addClass('hideMe');
@@ -227,6 +239,10 @@
 
         $('select').on('change', function() {
             parseInt($(this).selectedIndex) === 1 ? $(this).css('color', 'rgba(255, 255, 255, 0.6)') : $(this).css('color', 'rgba(255, 255, 255, 1)') ;
+        });
+
+        $('select.select-support').on('change', function() {
+           parseInt($(this).selectedIndex) === 1 ? $(this).css('color', 'rgba(34, 34, 34, 0.6)') : $(this).css('color', 'rgba(34, 34, 34, 1)') ;
         });
 
 

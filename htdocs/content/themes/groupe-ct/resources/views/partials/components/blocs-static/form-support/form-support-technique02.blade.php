@@ -13,7 +13,7 @@
 
             <!-- INPUT CONTAINER START -->
             <div class="input-container">
-                <select name="assistance-title" id="assistance-title" class="tech-support-input">
+                <select name="assistance-title" id="assistance-title" class="tech-support-input select-support">
                     <option value=""  disabled selected hidden>{{ pll__('Titre*') }}</option>
                     <option value="m">{{ pll__('M.') }}</option>
                     <option value="mme">{{ pll__('Mme') }}</option>
@@ -43,7 +43,7 @@
                 <label for="assistance-compagny-name"></label>
                 <input type="text" id="assistance-compagny-name" class="tech-support-input" name="assistance-compagny-name" placeholder="{{ pll__('Entreprise*') }}">
 
-                <select name="assistance-office" id="assistance-office" class="tech-support-input">
+                <select name="assistance-office" id="assistance-office" class="tech-support-input select-support">
                     <option value=""  disabled selected hidden>{{ pll__('Bureau*') }}</option>
                     <option value="m">{{ pll__('Groupe CT') }}</option>
                     <option value="m">{{ pll__('SAC - Bureau de Québec') }}</option>
@@ -61,13 +61,13 @@
                 <div class="opening-main-container col-sm-12 no-padding">
                     <div class="opening">
                         <span class="mention">{{ pll__("Heures d'ouverture") }}</span>
-                        <select name="assistance-opening01" id="assistance-opening01" class="tech-support-input assistance-opening">
+                        <select name="assistance-opening01" id="assistance-opening01" class="tech-support-input select-support assistance-opening">
                             <option value=""  disabled selected hidden>{{ pll__('Heures') }}</option>
                             @for ($i = 0; $i <= 24; $i++)
                                 <option value="{{ $i  }}">{{ $i  }}</option>
                             @endfor
                         </select>
-                        <select name="assistance-opening02" id="assistance-opening02" class="tech-support-input assistance-opening">
+                        <select name="assistance-opening02" id="assistance-opening02" class="tech-support-input select-support assistance-opening">
                             <option value=""  disabled selected hidden>{{ pll__('Minutes') }}</option>
                             @for ($i = 0; $i <= 30; $i++)
                                 <option value="{{ $i  }}">{{ $i  }}</option>
@@ -78,13 +78,13 @@
 
                     <div class="opening">
                         <span class="mention">{{ pll__("Heures de fermeture") }}</span>
-                        <select name="assistance-opening03" id="assistance-opening03" class="tech-support-input assistance-opening">
+                        <select name="assistance-opening03" id="assistance-opening03" class="tech-support-input select-support assistance-opening">
                             <option value=""  disabled selected hidden>{{ pll__('Heure') }}</option>
                             @for ($i = 0; $i <= 24; $i++)
                                 <option value="{{ $i  }}">{{ $i  }}</option>
                             @endfor
                         </select>
-                        <select name="assistance-opening04" id="assistance-opening04" class="tech-support-input assistance-opening">
+                        <select name="assistance-opening04" id="assistance-opening04" class="tech-support-input select-support assistance-opening">
                             <option value=""  disabled selected hidden>{{ pll__('Minutes') }}</option>
                             @for ($i = 0; $i <= 24; $i++)
                                 <option value="{{ $i  }}">{{ $i  }}</option>
