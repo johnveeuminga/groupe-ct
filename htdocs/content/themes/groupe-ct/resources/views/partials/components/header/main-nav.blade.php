@@ -1,6 +1,6 @@
 <div class="nav-content-container nav-mobile row">
 
-    <div class="nav-content col-xs-10 col-xs-offset-1">
+    <div class="nav-content col-xs-12 no-padding">
 
         <div class="nav-logo-container"> </div>
         <div class="nav-menu-btn-container">
@@ -44,9 +44,12 @@
     </div>
     <div class="nav-contact-us col-xs-2">
         <a class="contact-us-link open-contact-form" href="#">
+
+        </a>
+        <div class="contact-us-text">
             <span>{{ pll__('CONTACTEZ-NOUS') }}</span>
             <img class="icon-arrow" src="{{ themosis_assets() }}/images/icon/icon-arrow.png" alt="arrow contact us">
-        </a>
+        </div>
 
     </div>
 
