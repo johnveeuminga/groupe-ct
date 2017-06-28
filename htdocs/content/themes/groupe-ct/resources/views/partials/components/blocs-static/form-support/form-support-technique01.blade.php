@@ -1,4 +1,4 @@
-<!---->
+
 <div id="section-mon-ct" class="toggle-main-container">
     <div class="toggle-content-header">
         <div class="toggle-title-container">
@@ -20,11 +20,11 @@
             </div>
             <div class="form-content-container">
                 <div class="form-left-container col-sm-6">
-                    <a class="my-ct-link primary-btn-blue" href="#">{{ pll__('Groupe CT') }}</a>
+                    <a class="my-ct-link primary-btn-blue" href="http://www.einfo.groupect.com" target="_blank">{{ pll__('Groupe CT') }}</a>
                 </div>
 
                 <div class="form-right-container col-sm-6">
-                    <a class="my-ct-link primary-btn-blue" href="#">{{ pll__('Solutions d\'affaires de la Capitale') }}</a>
+                    <a class="my-ct-link primary-btn-blue" href="http://www.einfo.sacgroupect.com" target="_blank">{{ pll__('Solutions d\'affaires de la Capitale') }}</a>
                 </div>
             </div>
         </form>

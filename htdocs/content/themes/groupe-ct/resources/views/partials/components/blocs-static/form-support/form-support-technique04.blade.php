@@ -3,7 +3,7 @@
 <div id="form-ressource" class="toggle-main-container">
     <div class="toggle-content-header">
         <div class="toggle-title-container">
-            <h3 class="toggle-content-title" href="">{{ pll__('Par téléphone') }}</h3>
+            <h3 class="toggle-content-title" href="">{{ pll__('Contacter le service à la clientèle') }}</h3>
         </div>
         <img class="toggle-content-carret" src="{{ themosis_assets() }}/images/icon/icon-chevron-white.png" alt="">
         <div class="triangle-blue"></div>
@@ -15,7 +15,7 @@
             <div class="text-container col-xs-12">
                 <p>{{ pll__('Que vous soyez déjà client ou non, notre équipe est là pour vous.') }}</p>
                 <p>
-                    {{ pll__('os agents de service à la clientèle répondent à vos appels en tout temps du lundi au vendredi de 8h à 17h.
+                    {{ pll__('Nos agents de service à la clientèle répondent à vos appels en tout temps du lundi au vendredi de 8h à 17h.
                     Vous pouvez également faire une demande d’assistance 24h sur 24, 7 jours sur 7 via') }}
                     <a class="form-link" href="#">{{ pll__('Mon CT') }}</a>{{ pll__(', par courriel ou via le') }} <a class="form-link"href="#"> {{ pll__('formulaire en ligne') }}</a>
 
