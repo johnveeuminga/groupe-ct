@@ -25,7 +25,7 @@
 		<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N49C66Q" height="0" width="0" style="display:none;visibility:hidden"></iframe>
 	</noscript>
 	<!-- End Google Tag Manager (noscript) -->
-
+	@include('partials.components.header.main-nav-mobile')
 	<div id="global-container">
 <!--		include header -->
         @include('templates.header')

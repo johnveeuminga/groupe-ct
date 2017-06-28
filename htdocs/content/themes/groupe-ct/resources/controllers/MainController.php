@@ -13,8 +13,13 @@ class MainController extends BaseController
     public function __construct()
     {
         Asset::add('jquery', '//code.jquery.com/jquery-3.1.1.min.js', '3.1.1', true);
-        Asset::add('screen-css', themosis_assets() . '/css/screen.min.css', ['select2-css', 'flexgrid']);
-        Asset::add('theme-js',  themosis_assets() . '/js/theme.min.js', ['jquery', 'select2-js', 'doughnut-chart'], '', false);
+        Asset::add('screen-css', themosis_assets() . '/css/screen.min.css', ['flexgrid']);
+        Asset::add('theme-js',  themosis_assets() . '/js/theme.min.js', ['jquery', 'doughnut-chart'], '', false);
+
+        //Asset::add('mmenu-cdn', '//cdnjs.com/libraries/jquery.mmenu', '1.0.0', true);
+
+        Asset::add('mmenu-css', themosis_assets() . '/css/jquery.mmenu.css', '',true);
+        Asset::add('mmenu-js',  themosis_assets() . '/js/jquery.mmenu.js', ['jquery'], '', true);
 
 
         Asset::add('validate-js', '//cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.16.0/jquery.validate.min.js', ['jquery'],'1.16.0', true);
@@ -26,8 +31,7 @@ class MainController extends BaseController
         Asset::add('flexgrid', '//cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css', [], '1.0', true);
         Asset::add('font-awesome', '//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css', false, '4.7.0', true);
 
-        Asset::add('select2-css', '//cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/css/select2.min.css', false, '4.0.3', true);
-        Asset::add('select2-js', '//cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js', ['jquery'], '4.0.3', false);
+
 
         Asset::add('charts-js', '//cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js', ['jquery'], '2.5.0', false);
         Asset::add('doughnut-chart',  themosis_assets() . '/js/doughnut-chart.js', ['charts-js'], '', false);

@@ -1,19 +1,21 @@
-.nav-content-container.nav-mobile {
+.top-bar-content-container.top-bar-mobile {
   position: relative;
   background-color: $primary-bg;
   height:80px;
+  border: 1px solid red;
+
 
   @media (min-width: $screen-md-min) {
     display: none;
   }
 
-  .nav-content {
+  .top-bar-content {
     @include flexbox();
     @include justify-content(space-between);
     @include align-items(center);
   }
 
-  .nav-logo-container {
+  .top-bar-logo-container {
     height:75px;
     width: 75px;
     background-image: url($assets + "images/logo/logo-ct.png");
@@ -24,7 +26,7 @@
   }
 
 
-  .nav-menu-btn-container {
+  .top-bar-menu-btn-container {
     background-color: $blue;
     padding:10px;
   }
@@ -35,6 +37,7 @@
     position: relative;
     top:6px;
     cursor: pointer;
+    display: block;
   }
 
 
@@ -59,8 +62,26 @@
   #menu-btn span:nth-child(4) {
     top: 12px;
   }
-
-
 }
 
+.main-nav-mobile-container {
+ display: none;
+  //position: relative;
+  //right:15%;
+  //width:90%;
+  //margin-left:auto;
+  border: 1px solid $grey-light;
+  .link-close-menu {
+    @include flexbox();
+    @include align-items(center);
+    @include justify-content(center);
+    width:30px;
+    height:30px;
+    background-color: $blue;
+    img {
+      width:20px;
+      @include rotate(90);
+    }
+  }
 
+}

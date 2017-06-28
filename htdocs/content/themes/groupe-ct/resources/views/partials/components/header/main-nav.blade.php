@@ -1,19 +1,3 @@
-<div class="nav-content-container nav-mobile row">
-
-    <div class="nav-content col-xs-12 no-padding">
-
-        <div class="nav-logo-container"> </div>
-        <div class="nav-menu-btn-container">
-            <div id="menu-btn">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div>
-    </div>
-
-</div> <!-- SECTION END -->
 
 <div class="nav-content-container desktop row">
 

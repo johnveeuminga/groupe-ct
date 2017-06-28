@@ -73,13 +73,18 @@
       -webkit-appearance: none;
       -moz-appearance: none;
       appearance: none;
-
+      background-color: #fafafa;
       padding: 19px 15px;
       margin-bottom: 10px;
       border:1px solid $grey-light;
       @include border-radius(2px);
       @extend .mada18LightBlack;
     }
+
+    select::-ms-expand {
+      display: none!important;
+    }
+
     .form-left-container .tech-support-input {
 
       @media (min-width: $screen-sm-min) {
@@ -90,16 +95,11 @@
     .form-right-container .tech-support-input {
 
       @media (min-width: $screen-sm-min) {
-        margin-left:10px;
+        //margin-left:10px;
       }
     }
 
-    select option {
-      -webkit-appearance: none;
-      -moz-appearance: none;
-      appearance: none;
-      @extend .mada18LightBlack;
-    }
+
 
 
     /* Base for label styling */
@@ -162,11 +162,26 @@
     background: url($assets + "/images/icon/icon-arrow-black.png") no-repeat 95% 50%;
   }
 
+  .form-submit {
+    @include flexbox();
+    @include flex-direction(column);
+    margin-top:30px;
+    text-align: center;
+
+    @media (min-width: $screen-sm-min) {
+      @include justify-content(space-between);
+      @include align-items(flex-end);
+    }
+    .mention {
+      margin-top:15px;
+    }
+  }
+
 
   /*** THE FORMS ****/
 
-  #form-my-ct {
 
+  #form-my-ct {
       @include flex-direction(column);
 
      .my-ct-link {
@@ -177,7 +192,7 @@
      }
   }
 
-
+  /*** FORM 2 ***/
   #form-assistance{
 
     .content-container {
@@ -210,15 +225,22 @@
     .input-container:nth-child(3) {
       @media (min-width: $screen-sm-min) {
         #assistance-compagny-name, #assistance-office{
-          width:40%;
-        }
-        #assistance-serial {
-          width:20%;
+          width:50%;
         }
       }
     }
 
     .input-container:nth-child(4) {
+
+      @media (min-width: $screen-sm-min) {
+        #assistance-serial {
+          width:40%;
+        }
+      }
+
+    }
+
+    .input-container:nth-child(5) {
       @include flexbox();
 
       @media (min-width: $screen-sm-min) {
@@ -244,14 +266,23 @@
         @media (min-width: $screen-sm-min) {
           @include flex-basis(100%);
           .mention {
-            margin-left: 10px;
+            //margin-left: 10px;
           }
+        }
+      }
+
+      .hour-to {
+        @media (min-width: $screen-xs-min) {
+          margin:0 40px 8px 30px;
         }
       }
 
       .opening:first-of-type {
         @media (min-width: $screen-xs-min) {
           margin-right:20px;
+        }
+        @media (min-width: $screen-sm-min) {
+          margin-right:0px;
         }
 
       }
@@ -260,7 +291,7 @@
 
     #assistance-closed + label {
       @media (min-width: $screen-sm-min) {
-        margin-left: 10px;
+        //margin-left: 10px;
       }
     }
 
@@ -293,6 +324,10 @@
           @include flex-direction(row);
           @include justify-content(space-between);
         }
+      }
+
+      .btn-upload {
+        cursor: pointer;
       }
 
       .form-submit {
@@ -329,6 +364,7 @@
       width:160px;
       padding:12px 0;
       background-color: $grey-placeholder;
+      @include transition(all 0.25s ease);
       @include border-radius(2px);
       @extend .poppins15BoldWhite;
       text-transform: uppercase;
@@ -342,26 +378,86 @@
 
     #assistance-upload:focus + label,
     #assistance-upload + label:hover {
-      background-color: red;
+      background-color: $blue-sky;
     }
     /************************************/
 
-    .form-submit {
-      @include flexbox();
-      @include flex-direction(column);
-      margin-top:30px;
-      text-align: center;
 
-      @media (min-width: $screen-sm-min) {
-        @include justify-content(space-between);
-        @include align-items(flex-end);
-      }
-      .mention {
-        margin-top:15px;
-      }
-    }
   }//END FORM ASSISTANCE
 
+  /*** FORM 3 ***/
+  #form-fourniture{
+
+    .content-container {
+      @media (min-width: $screen-md-min) {
+        @include flexbox();
+        @include flex-direction(row);
+      }
+    }
+
+    .input-container:nth-child(1) {
+      @media (min-width: $screen-sm-min) {
+        select {
+          width:20%;
+        }
+        #fourniture-firstname, #fourniture-lastname {
+          width:40%;
+        }
+      }
+    }
+    .input-container:nth-child(2) {
+      @media (min-width: $screen-sm-min) {
+        #fourniture-email, #fourniture-phone {
+          width:40%;
+        }
+        #fourniture-ext {
+          width:20%;
+        }
+      }
+    }
+    .input-container:nth-child(3) {
+      @media (min-width: $screen-sm-min) {
+        #fourniture-compagny-name, #fourniture-office{
+          width:50%;
+        }
+      }
+    }
+
+    .input-container:nth-child(4) {
+      margin-bottom: 10px;
+
+      @media (min-width: $screen-sm-min) {
+        @include align-items(center);
+        #fourniture-serial {
+          width:30%;
+        }
+      }
+      @media (min-width: $screen-md-min) {
+        #fourniture-serial {
+          width:40%;
+        }
+      }
+    }
+
+    .input-container:nth-child(5) {
+      @include flexbox();
+
+      @media (min-width: $screen-sm-min) {
+        @include flex-direction(column);
+      }
+    }
+
+    .form-right-container {
+
+      #fourniture-msg {
+        min-height: 370px;
+        @media (min-width: $screen-sm-min) {
+          width: 100%;
+        }
+      }
+    }
+  }
+  /*** FORM 4 ***/
   #form-ressource {
 
     .form-content-container {
