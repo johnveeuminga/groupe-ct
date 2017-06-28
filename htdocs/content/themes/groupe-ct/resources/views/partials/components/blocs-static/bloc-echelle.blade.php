@@ -38,9 +38,9 @@
     @endif
 
     <div class="bloc-echelle-container default-padding default-width bloc-echelle-michael">
-        <a href="{{ PageHelper::get_page_permalink(PageHelper::PAGE_1_1_ENVIRONNEMENT_PAPIER) }}"><div class="hover-zone zone-papier" data-target="#hover-papier"></div></a>
-        <a href="{{ PageHelper::get_page_permalink(PageHelper::PAGE_1_2_ENVIRONNEMENT_HYBRIDE) }}"><div class="hover-zone zone-hybride" data-target="#hover-hybride"></div></a>
-        <a href="{{ PageHelper::get_page_permalink(PageHelper::PAGE_1_3_ENVIRONNEMENT_NUMERIQUE) }}"><div class="hover-zone zone-numerique" data-target="#hover-numerique"></div></a>
+        <a class="hover-zone-container" href="{{ PageHelper::get_page_permalink(PageHelper::PAGE_1_1_ENVIRONNEMENT_PAPIER) }}"><div class="hover-zone zone-papier" data-target="#hover-papier"></div></a>
+        <a class="hover-zone-container" href="{{ PageHelper::get_page_permalink(PageHelper::PAGE_1_2_ENVIRONNEMENT_HYBRIDE) }}"><div class="hover-zone zone-hybride" data-target="#hover-hybride"></div></a>
+        <a class="hover-zone-container" href="{{ PageHelper::get_page_permalink(PageHelper::PAGE_1_3_ENVIRONNEMENT_NUMERIQUE) }}"><div class="hover-zone zone-numerique" data-target="#hover-numerique"></div></a>
         <img id="echelle-background-image" src="{{ themosis_assets() }}/images/echelle/desktop/main.png" class="" />
         <img id="hover-papier" class="{{ PageHelper::get_page_id(PageHelper::PAGE_1_1_ENVIRONNEMENT_PAPIER) === get_the_ID() ? 'active' : '' }}" src="{{ themosis_assets() }}/images/echelle/desktop/hover-papier.png">
         <img id="hover-hybride" class="{{ PageHelper::get_page_id(PageHelper::PAGE_1_2_ENVIRONNEMENT_HYBRIDE) === get_the_ID() ? 'active' : '' }}" src="{{ themosis_assets() }}/images/echelle/desktop/hover-hybride.png">
