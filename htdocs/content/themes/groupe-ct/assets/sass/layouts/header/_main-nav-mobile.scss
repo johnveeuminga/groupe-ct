@@ -130,11 +130,13 @@
     text-transform: uppercase;
     position: relative;
     display: block;
-    width:100%;
+    width:80%;
+
   }
   .menu-item {
     position: relative;
     width:90%;
+
   }
 
   .sub-menu-trigger {
@@ -143,12 +145,13 @@
     right:15px;
     top:-11px;
     z-index: 10;
-    width: 65px;
+    width: 35px;
     height:35px;
+
   }
 
   .fa-plus-circle,.fa-minus-circle {
-    @include center-img(0%, 50%);
+    @include center-img(50%, 50%);
 
     color:$black;
   }
