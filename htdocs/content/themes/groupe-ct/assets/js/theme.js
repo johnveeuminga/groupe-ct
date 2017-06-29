@@ -44,9 +44,9 @@
         });
 
         // TOGGLE SUB MENU SECOND LEVEL
-        $('.nav-sub .sub-sub-menu').on('click', function (e) {
+        $('.sub-sub-menu-trigger').on('click', function (e) {
             e.preventDefault();
-            $(this).parent().parent().siblings('.nav-link-container').toggleClass('open-sub-menu-mobile');
+            $(this).parent().siblings('.nav-link-container').toggleClass('open-sub-menu-mobile');
         });
 
 

@@ -7,6 +7,8 @@
             <nav class="nav-sub">
                 <div class="nav-section-title-container">
                     <h3 class="nav-section-title"><a class="sub-sub-menu" href="{{ PageHelper::get_page_permalink(PageHelper::PAGE_2_1_1_EQUIPEMENTS_BUREAU) }}"><?= pll__('Équipements d\'impression', GROUPE_CT) ?></a></h3>
+                    <a class="sub-sub-menu-trigger" href="#"><i class="fa fa-plus-circle" aria-hidden="true"></i></a>
+                    <a class="sub-sub-menu-trigger hideMe" href="#"><i class="fa fa-minus-circle" aria-hidden="true"></i></a>
                 </div>
                 <ul class="nav-link-container have-toggle">
                     @include('partials.components.header.sub-menu-nav-link-atom', ['page_id' => PageHelper::PAGE_2_1_1_EQUIPEMENTS_BUREAU])
@@ -18,6 +20,8 @@
             <nav class="nav-sub">
                 <div class="nav-section-title-container">
                     <h3 class="nav-section-title"><a class="sub-sub-menu" href="{{ PageHelper::get_page_permalink(PageHelper::PAGE_2_2_1_PARC_IMPRESSION) }}"><?= pll__('Services d\'impression gérés', GROUPE_CT) ?></a></h3>
+                    <a class="sub-sub-menu-trigger" href="#"><i class="fa fa-plus-circle" aria-hidden="true"></i></a>
+                    <a class="sub-sub-menu-trigger hideMe" href="#"><i class="fa fa-minus-circle" aria-hidden="true"></i></a>
                 </div>
                 <ul class="nav-link-container have-toggle">
                     @include('partials.components.header.sub-menu-nav-link-atom', ['page_id' => PageHelper::PAGE_2_2_1_PARC_IMPRESSION])
@@ -29,6 +33,8 @@
             <nav class="nav-sub">
                 <div class="nav-section-title-container">
                     <h3 class="nav-section-title"><a class="sub-sub-menu" href="{{ PageHelper::get_page_permalink(PageHelper::PAGE_2_3_1_NUMERISATION_INTELLIGENTE) }}"><?= pll__('Gestion électronique des documents', GROUPE_CT) ?></a></h3>
+                    <a class="sub-sub-menu-trigger" href="#"><i class="fa fa-plus-circle" aria-hidden="true"></i></a>
+                    <a class="sub-sub-menu-trigger hideMe" href="#"><i class="fa fa-minus-circle" aria-hidden="true"></i></a>
                 </div>
                 <ul class="nav-link-container have-toggle">
                     @include('partials.components.header.sub-menu-nav-link-atom', ['page_id' => PageHelper::PAGE_2_3_1_NUMERISATION_INTELLIGENTE])

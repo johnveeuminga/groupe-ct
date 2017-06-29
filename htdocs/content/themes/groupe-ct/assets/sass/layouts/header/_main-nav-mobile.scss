@@ -139,7 +139,7 @@
 
   }
 
-  .sub-menu-trigger {
+  .sub-menu-trigger, .sub-sub-menu-trigger {
     position: absolute;
     display: block;
     right:15px;
@@ -147,12 +147,10 @@
     z-index: 10;
     width: 35px;
     height:35px;
-
   }
 
   .fa-plus-circle,.fa-minus-circle {
     @include center-img(50%, 50%);
-
     color:$black;
   }
 

@@ -30,6 +30,10 @@
     margin-top: 15px;
   }
 
+  .nav-section-title-container {
+    position: relative;
+  }
+
   .nav-sub-container {
     @include flexbox();
     @include flex-direction(column);
