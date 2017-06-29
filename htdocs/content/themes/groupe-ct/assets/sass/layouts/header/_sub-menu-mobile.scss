@@ -10,13 +10,6 @@
   @include flex-direction(column);
   @include transition(all 0.6s ease);
 
-
-  .sub-menu-title {
-    margin-top: 15px;
-    margin-bottom: 25px;
-    @extend .poppins14BoldBlack;
-  }
-
   .sub-sub-menu {
     display: block;
     width:80%;

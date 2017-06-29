@@ -79,12 +79,13 @@
   z-index: 999;
   right: -100vw;
   padding: 15px;
+  @include transition(all 0.6s ease);
 
   @media (min-width: $screen-sm-min) {
     width:50%;
   }
 
-  @include transition(all 0.6s ease);
+
   border: 1px solid $grey-light;
 
   @media (min-width: $screen-md-min) {
@@ -186,17 +187,30 @@
 
 }
 
+#global-container {
+  max-width:1920px!important;
+  margin:auto!important;
+  width:100%;
+  position: relative;
+  left:0;
+  top:0;
+  @include transition(all 0.6s ease);
+}
+
 .menu-mobile-active {
   right: -50px!important;
   overflow-y: auto!important;
+  @include transition(all 0.6s ease);
   @media (min-width: $screen-sm-min) {
-    //right: -350px!important;
+    //right: -150px!important;
   }
 }
 
 .move-global {
   position:fixed!important;
   left:-100px!important;
-
+  @media (min-width: $screen-sm-min) {
+    left:-200px!important;
+  }
 }
 
