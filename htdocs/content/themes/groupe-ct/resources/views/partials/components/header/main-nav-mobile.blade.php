@@ -1,4 +1,4 @@
-<div id="menu-mobile" class="main-nav-mobile-container not-active">
+<div id="menu-mobile" class="main-nav-mobile-container">
     <a class="close-menu-btn" href="#"><img src="{{ themosis_assets() }}/images/icon/icon-arrow.png" alt=""></a>
     <div class="nav-content-container mobile">
         <nav class="nav-bottom">
