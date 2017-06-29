@@ -14,16 +14,13 @@
   .sub-menu-title {
     margin-top: 15px;
     margin-bottom: 25px;
-    color:$black;
+    @extend .poppins14BoldBlack;
 
-    a {
-      @extend .poppins14BoldBlack;
-
-    }
   }
   .nav-section-title {
-    a {
+    a,h3 {
       @extend .poppins14BoldBlack;
+      text-transform: uppercase;
     }
     //padding-bottom:15px;
     margin-top: 15px;

@@ -35,9 +35,11 @@
         });
 
         // TOGGLE SUB MENU FIRST LEVEL
-        $('#menu-mobile .nav-link').on('click', function (e) {
+        $('#menu-mobile .sub-menu-trigger').on('click', function (e) {
             e.preventDefault();
             $(this).siblings('.sub-menu-container-mobile').toggleClass('open-sub-menu-mobile');
+            $(this).toggleClass('hideMe').siblings().removeClass('hideMe');
+
         });
 
         // TOGGLE SUB MENU SECOND LEVEL
