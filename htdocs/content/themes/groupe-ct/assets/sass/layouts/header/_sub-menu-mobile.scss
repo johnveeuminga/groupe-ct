@@ -2,6 +2,7 @@
 .sub-menu-container-mobile {
   max-height:0;
   overflow: hidden;
+  //border: 1px solid red;
   width: 90%;
   margin-left:15px;
 
@@ -13,21 +14,19 @@
   .sub-menu-title {
     margin-top: 15px;
     margin-bottom: 25px;
-
     color:$black;
-    text-transform: uppercase;
+
     a {
       @extend .poppins14BoldBlack;
+
     }
   }
   .nav-section-title {
     a {
       @extend .poppins14BoldBlack;
     }
-
-    padding-bottom:15px;
+    //padding-bottom:15px;
     margin-top: 15px;
-    text-transform: uppercase;
   }
 
   .nav-sub-container {
@@ -37,6 +36,7 @@
   }
 
   .have-toggle {
+    //border: 1px solid blue;
     max-height:0;
     overflow: hidden;
     @include transition(all 0.6s ease);
@@ -47,21 +47,6 @@
     color:$grey-light;
     text-transform: uppercase;
     text-decoration: none;
-    position: relative;
-    &:after {
-      display: none;
-      content:url($assets + "/images/icon/icon-red-arrow.png");
-      position: absolute;
-      right:-18%;
-      top:-5px;
-    }
-
-    &:hover {
-      color:$red;
-      &:after {
-        display:block;
-      }
-    }
   }
 
 }
