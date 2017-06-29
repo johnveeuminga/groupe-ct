@@ -15,21 +15,25 @@
     margin-top: 15px;
     margin-bottom: 25px;
     @extend .poppins14BoldBlack;
-
   }
+
+  .sub-sub-menu {
+    display: block;
+    width:80%;
+  }
+
   .nav-section-title {
     a,h3 {
       @extend .poppins14BoldBlack;
       text-transform: uppercase;
     }
-    //padding-bottom:15px;
     margin-top: 15px;
   }
 
   .nav-sub-container {
     @include flexbox();
     @include flex-direction(column);
-
+    padding: 15px 0;
   }
 
   .have-toggle {
