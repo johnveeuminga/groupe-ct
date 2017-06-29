@@ -16,10 +16,10 @@ class MainController extends BaseController
         Asset::add('screen-css', themosis_assets() . '/css/screen.min.css', ['flexgrid']);
         Asset::add('theme-js',  themosis_assets() . '/js/theme.min.js', ['jquery', 'doughnut-chart'], '', false);
 
-        //Asset::add('mmenu-cdn', '//cdnjs.com/libraries/jquery.mmenu', '1.0.0', true);
+        //Asset::add('mmenu-cdn', 'https://cdnjs.cloudflare.com/ajax/libs/jQuery.mmenu/6.1.0/jquery.mmenu.js', '1.0.0', true);
 
-        Asset::add('mmenu-css', themosis_assets() . '/css/jquery.mmenu.css', '',true);
-        Asset::add('mmenu-js',  themosis_assets() . '/js/jquery.mmenu.js', ['jquery'], '', true);
+        //Asset::add('mmenu-css', themosis_assets() . '/css/jquery.mmenu.css', '',true);
+        //Asset::add('mmenu-js',  themosis_assets() . '/js/jquery.mmenu.js', ['jquery'], '', true);
 
 
         Asset::add('validate-js', '//cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.16.0/jquery.validate.min.js', ['jquery'],'1.16.0', true);

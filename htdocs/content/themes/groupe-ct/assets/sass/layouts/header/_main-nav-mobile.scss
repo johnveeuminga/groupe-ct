@@ -2,7 +2,6 @@
   position: relative;
   background-color: $primary-bg;
   height:80px;
-  border: 1px solid red;
 
 
   @media (min-width: $screen-md-min) {
@@ -65,13 +64,17 @@
 }
 
 .main-nav-mobile-container {
- display: none;
-  //position: relative;
-  //right:15%;
-  //width:90%;
-  //margin-left:auto;
+
+  position: fixed;
+  width:0;
+  height:100%;
+  background-color: white;
+  z-index: 999;
+  right: -50px;
+
+  @include transition(all 0.6s ease);
   border: 1px solid $grey-light;
-  .link-close-menu {
+  .close-menu-btn{
     @include flexbox();
     @include align-items(center);
     @include justify-content(center);
@@ -83,5 +86,24 @@
       @include rotate(90);
     }
   }
+
+}
+
+#global-container {
+  width:100%;
+  position: relative;
+  left:0;
+  @include transition(all 0.6s ease);
+
+}
+
+.menu-mobile-active {
+  right: 0px!important;
+  width:90%!important;
+}
+
+.move-global {
+  position:fixed!important;
+  left:-100px!important;
 
 }

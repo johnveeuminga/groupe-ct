@@ -20,23 +20,19 @@
             $('html, body').animate({scrollTop: $(target).position().top - 15}, 'slow');
         });
 
-        /***** MENU MOBILE *******/
+        /***** MENU MOBILE **/
 
-        $("#mobile-menu").mmenu({
-            // options
-        }, {
-            // configuration
-            offCanvas: {
-                pageSelector: "#global-container"
-            }
-
+        $('#menu-btn').on('click', function () {
+            $('.main-nav-mobile-container').addClass('menu-mobile-active');
+            $('#global-container').addClass('move-global ');
         });
 
-        var API = $("#mobile-menu").data( "mmenu" );
 
-        $("#mmenu-btn").click(function() {
-            API.open();
+        $('.close-menu-btn').on('click', function () {
+            $('.main-nav-mobile-container').removeClass('menu-mobile-active');
+            $('#global-container').removeClass('move-global');
         });
+
 
         /***** MENU DESKTOP *******/
         $('.nav-bottom .nav-link').on('click',function(){
