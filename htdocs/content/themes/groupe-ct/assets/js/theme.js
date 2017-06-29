@@ -40,7 +40,7 @@
             $('.sub-menu-container '+ $navIndex).removeClass('hideMe').siblings().addClass('hideMe');
         });
 
-        $( ".nav-bottom .nav-link" ).hover(
+        $( ".nav-content-container.desktop .nav-bottom .nav-link" ).hover(
             function() {
                 var $navIndex = $(this).attr('class').split(' ')[1];
                 $('.sub-menu-main-container').find('.'+ $navIndex).removeClass('hide-from-screen');
