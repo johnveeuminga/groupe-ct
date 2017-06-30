@@ -50,4 +50,9 @@ class PageController extends MainController
         return view('pages.page_2_3',[]);
     }
 
+    public function page_3_0()
+    {
+        return view('pages.page_3_0',[]);
+    }
+
 }

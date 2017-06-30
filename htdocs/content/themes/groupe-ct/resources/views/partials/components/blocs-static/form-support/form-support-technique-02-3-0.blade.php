@@ -13,8 +13,7 @@
             <div class="text-container col-xs-12">
 
                 <p>
-                    {{ pll__('Pour toute demande d’assistance technique, veuillez remplir le formulaire ci-dessous. Si vous êtes déjà un client de Groupe CT,
-                    nous vous recommandons d’utiliser le portail ') }}<a href="#section-mon-ct" class="form-link">{{ pll__('Mon CT.') }}</a>
+                    {{ pll__('Demande d\'assistance - Description') }}<a href="#section-mon-ct" class="form-link">{{ pll__('Mon CT.') }}</a>
                 </p>
             </div>
             <div class="content-container">

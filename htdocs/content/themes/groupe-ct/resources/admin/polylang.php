@@ -193,4 +193,14 @@ if (function_exists('pll_register_string'))
     pll_register_string('NOS PUBLICATIONS 5.1.0', 'Publication suivante', GROUPE_CT, false);
     pll_register_string('NOS PUBLICATIONS 5.1.0', 'Publications<br/>qui pourraient vous intéresser', GROUPE_CT, false);
 
+    /** Assitance technique section 3.0 */
+    pll_register_string('ASSISTANCE TECHNIQUE - Accèder à mon CT - 3.0', 'Accéder à Mon CT', GROUPE_CT, false);
+    pll_register_string('ASSISTANCE TECHNIQUE - Accèder à mon CT - 3.0', 'Accéder CT - Description', GROUPE_CT, true);
+    pll_register_string('ASSISTANCE TECHNIQUE - Accèder à mon CT - 3.0', 'Groupe CT', GROUPE_CT, false);
+    pll_register_string('ASSISTANCE TECHNIQUE - Accèder à mon CT - 3.0', 'Solutions d\'affaires de la Capitale', GROUPE_CT, false);
+    pll_register_string('ASSISTANCE TECHNIQUE - Demande d\'assistance - 3.0', 'Compléter une demande d\'assistance', GROUPE_CT, false);
+    pll_register_string('ASSISTANCE TECHNIQUE - Demande d\'assistance - 3.0', 'Demande d\'assistance - Description', GROUPE_CT, true);
+    pll_register_string('ASSISTANCE TECHNIQUE - Demande d\'assistance - 3.0', 'Mon CT', GROUPE_CT, true);
+
+
 }

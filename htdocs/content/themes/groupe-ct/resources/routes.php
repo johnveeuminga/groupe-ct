@@ -23,6 +23,10 @@ Route::any('template', [
     'uses' => 'PageController@page_2_3'
 ]);
 Route::any('template', [
+    'page-3-0',
+    'uses' => 'PageController@page_3_0'
+]);
+Route::any('template', [
     'post-list',
     'uses' => 'PageController@publication_list'
 ]);
