@@ -4,6 +4,7 @@
     max-width: 1200px;
   }
 
+
   /*** Text elements ***/
   p {
     @extend .mada22LightBlack;
@@ -31,6 +32,7 @@
   .form-container {
     margin-top: 35px;
     margin-bottom: 70px;
+    width: 100%;
     @include flexbox();
     @include flex-direction(column);
 
