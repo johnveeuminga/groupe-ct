@@ -13,7 +13,7 @@
             <div class="text-container col-xs-12">
 
                 <p>
-                    {!! nl2br(pll__('Demande d\'assistance - Description')) !!}&nbsp;<a href="#section-mon-ct" class="form-link">{{ pll__('Mon CT.') }}</a>
+                    {!! nl2br(pll__('Demande d\'assistance - Description')) !!}&nbsp;<a class="scroll-to" href="#" data-target="#section-mon-ct" class="form-link">{{ pll__('Mon CT.') }}</a>
                 </p>
             </div>
             <div class="content-container">
