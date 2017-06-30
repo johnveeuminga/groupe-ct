@@ -49,7 +49,6 @@
         transition: 0.5s;
         left: -15px;
       }
-
     }
 
     #echelle-background-image {
@@ -86,17 +85,11 @@
       @media (min-width: $screen-sm-min) {
         @include flex-basis(35%);
       }
-
     }
-    .title {
 
+    .title {
       @extend .poppins22RegBlack;
       text-transform: uppercase;
-
-      @media (min-width: $screen-xs-min) {
-
-      }
-
     }
 
   }
@@ -106,7 +99,7 @@
     @include flexbox();
     @include flex-direction(column);
     position: relative;
-    //max-width:700px;
+
     width:100%;
     margin:auto;
     background-image: url($assets + "/images/echelle/echelle-mobile.png");
@@ -117,11 +110,6 @@
     left:0;
     top:0;
     text-align: center;
-    //img {
-    //  max-width:535px;
-    //  border: 1px solid blue;
-    //  margin:auto;
-    //}
 
     @media (min-width: $screen-xs-min) {
       height:450px;
@@ -167,30 +155,9 @@
 
   }
 
-  .benefit-bg.paper {
-    background-image: url($assets + "/images/echelle/over-papier-mobilev02.png");
-
-    @media (min-width: $screen-sm-min) {
-      background-image: url($assets + "/images/echelle/over-papier-desktopv02.png");
-    }
 
 
-  }
-  .benefit-bg.hyb {
-     background-image: url($assets + "/images/echelle/over-hybrid-mobilev02.png");
-    @media (min-width: $screen-sm-min) {
-      background-image: url($assets + "/images/echelle/over-hybrid-desktopv02.png");
-    }
 
-  }
-  .benefit-bg.num {
-    background-image: url($assets + "/images/echelle/over-num-mobilev02.png");
-    @media (min-width: $screen-sm-min) {
-      background-image: url($assets + "/images/echelle/over-num-desktopv02.png");
-    }
-
-
-  }
 
   .cat-container {
     @include flexbox();

@@ -20,23 +20,35 @@
             $('html, body').animate({scrollTop: $(target).position().top - 15}, 'slow');
         });
 
-        /***** MENU MOBILE *******/
+        /***** MENU MOBILE **/
 
-        $("#mobile-menu").mmenu({
-            // options
-        }, {
-            // configuration
-            offCanvas: {
-                pageSelector: "#global-container"
-            }
+        $('#menu-btn').on('click', function () {
+            $('.main-nav-mobile-container').addClass('menu-mobile-active');
+            $('#global-container').addClass('move-global');
+            $('body').addClass('body-no-scroll');
+        });
+
+
+        $('.close-menu-btn').on('click', function () {
+            $('.main-nav-mobile-container').removeClass('menu-mobile-active');
+            $('#global-container').removeClass('move-global');
+            $('body').removeClass('body-no-scroll');
+        });
+
+        // TOGGLE SUB MENU FIRST LEVEL
+        $('#menu-mobile .sub-menu-trigger').on('click', function (e) {
+            e.preventDefault();
+            $(this).siblings('.sub-menu-container-mobile').toggleClass('open-sub-menu-mobile');
+            $(this).toggleClass('hideMe').siblings().removeClass('hideMe');
 
         });
 
-        var API = $("#mobile-menu").data( "mmenu" );
-
-        $("#mmenu-btn").click(function() {
-            API.open();
+        // TOGGLE SUB MENU SECOND LEVEL
+        $('.sub-sub-menu-trigger').on('click', function (e) {
+            e.preventDefault();
+            $(this).parent().siblings('.nav-link-container').toggleClass('open-sub-menu-mobile');
         });
+
 
         /***** MENU DESKTOP *******/
         $('.nav-bottom .nav-link').on('click',function(){
@@ -44,7 +56,7 @@
             $('.sub-menu-container '+ $navIndex).removeClass('hideMe').siblings().addClass('hideMe');
         });
 
-        $( ".nav-bottom .nav-link" ).hover(
+        $( ".nav-content-container.desktop .nav-bottom .nav-link" ).hover(
             function() {
                 var $navIndex = $(this).attr('class').split(' ')[1];
                 $('.sub-menu-main-container').find('.'+ $navIndex).removeClass('hide-from-screen');

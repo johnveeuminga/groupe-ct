@@ -2,7 +2,6 @@
   position: relative;
   background-color: $primary-bg;
   height:80px;
-  border: 1px solid red;
 
 
   @media (min-width: $screen-md-min) {
@@ -64,14 +63,36 @@
   }
 }
 
-.main-nav-mobile-container {
- display: none;
-  //position: relative;
-  //right:15%;
-  //width:90%;
-  //margin-left:auto;
+/*** TOP BAR END *****/
+
+/**** MOBILE MENU START *****/
+
+#menu-mobile{
+
+  //display:none;
+  //right:-50px;
+
+  position: fixed;
+  width:90%;
+  height:100%;
+  background-color: white;
+  z-index: 999;
+  right: -100vw;
+  padding: 15px;
+  @include transition(all 0.6s ease);
+
+  @media (min-width: $screen-sm-min) {
+    width:50%;
+  }
+
+
   border: 1px solid $grey-light;
-  .link-close-menu {
+
+  @media (min-width: $screen-md-min) {
+    display:none;
+  }
+
+  .close-menu-btn{
     @include flexbox();
     @include align-items(center);
     @include justify-content(center);
@@ -84,4 +105,112 @@
     }
   }
 
+  /*** THE NAV ****/
+
+  .nav-link {
+    text-decoration: none;
+    font-family: $poppins;
+    font-weight: 500;
+
+    &:hover {
+      color: $red;
+    }
+  }
+
+  .nav-bottom {
+    margin-top:30px;
+  }
+
+  .nav-bottom .menu-item {
+    margin: 20px 0;
+  }
+
+  .nav-bottom .nav-link{
+    font-size: 16px;
+    color:$black;
+    text-transform: uppercase;
+    position: relative;
+    display: block;
+    width:80%;
+
+  }
+  .menu-item {
+    position: relative;
+    width:90%;
+
+  }
+
+  .sub-menu-trigger, .sub-sub-menu-trigger {
+    position: absolute;
+    display: block;
+    right:15px;
+    top:-11px;
+    z-index: 10;
+    width: 35px;
+    height:35px;
+  }
+
+  .fa-plus-circle,.fa-minus-circle {
+    @include center-img(50%, 50%);
+    color:$black;
+  }
+
+  .nav-top {
+    margin-top:30px;
+    margin-bottom:30px;
+  }
+
+  .nav-top .menu-item {
+    margin: 15px 0;
+  }
+
+  .nav-top .nav-link{
+    font-size: 14px;
+    color:$grey-light;
+  }
+
+  .nav-top .link-account{
+    @include flexbox();
+    @include align-items(center);
+    //margin-right:25px;
+    padding-right: 0;
+    position: relative;
+    color:$black;
+
+    &:before {
+      content:url($assets + "/images/icon/icon-account.png");
+      position: relative;
+      padding-right:5px;
+    }
+  }
+
+
 }
+
+#global-container {
+  max-width:1920px!important;
+  margin:auto!important;
+  width:100%;
+  position: relative;
+  left:0;
+  top:0;
+  @include transition(all 0.6s ease);
+}
+
+.menu-mobile-active {
+  right: -50px!important;
+  overflow-y: auto!important;
+  @include transition(all 0.6s ease);
+  @media (min-width: $screen-sm-min) {
+    //right: -150px!important;
+  }
+}
+
+.move-global {
+  position:fixed!important;
+  left:-100px!important;
+  @media (min-width: $screen-sm-min) {
+    left:-200px!important;
+  }
+}
+

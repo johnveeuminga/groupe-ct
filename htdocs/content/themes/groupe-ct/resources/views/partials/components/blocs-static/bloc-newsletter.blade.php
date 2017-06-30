@@ -39,7 +39,8 @@
                         <input type="email" id="newsletter-email" name="newsletter-email" placeholder="{{ pll__('Courriel*') }}">
                     </div>
                     <div class="contact-row">
-                        <scpan class="mandatory-field-msg">{{ pll__('* Champs obligatoires') }}</scpan>
+                        <input type="checkbox" name="newsletter-accept" id="newsletter-accept">
+                        <label for="newsletter-accept">{{ pll__("Sed ut perspiciatis unde omnis iste natus error") }}</label>
                         <button type="submit" class="submit-btn">{{ pll__('Soumettre') }}</button>
                     </div>
                 </div>
