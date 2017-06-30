@@ -1,5 +1,9 @@
 .tech-support-main-container {
 
+  .toggle-main-container {
+    max-width: 1200px;
+  }
+
   /*** Text elements ***/
   p {
     @extend .mada22LightBlack;
