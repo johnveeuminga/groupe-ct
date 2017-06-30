@@ -1,15 +1,15 @@
 
 <div id="section-mon-ct" class="toggle-main-container">
-    <div class="toggle-content-header">
+    <div class="toggle-content-header active-header">
         <div class="toggle-title-container">
             <h3 class="toggle-content-title" href="">{{ pll__('Accéder à Mon CT') }}</h3>
         </div>
-        <img class="toggle-content-carret" src="{{ themosis_assets() }}/images/icon/icon-chevron-white.png" alt="">
-        <div class="triangle-blue"></div>
+        <img class="toggle-content-carret toggle-carret" src="{{ themosis_assets() }}/images/icon/icon-chevron-white.png" alt="">
+        <div class="triangle-blue toggle-triangle"></div>
         <a class="open-toggle-content" href="#"></a>
     </div>
 
-    <div class="toggle-content">
+    <div class="toggle-content open-content">
         <form id="form-my-ct" class="form-container">
             <div class="text-container col-xs-12">
                 <p>{{ nl2br(pll__('Accéder CT - Description')) }}</p>
