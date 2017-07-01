@@ -97,31 +97,31 @@
 
 @keyframes enlargewidth {
   from { width: 0; }
-  to   { width: 100%; }
+  to   { width: 95%; }
 }
 
 /* Firefox < 16 */
 @-moz-keyframes enlargewidth {
   from { width: 0; }
-  to   { width: 100%; }
+  to   { width: 95%; }
 }
 
 /* Safari, Chrome and Opera > 12.1 */
 @-webkit-keyframes enlargewidth {
   from { width: 0; }
-  to   { width: 100%; }
+  to   { width: 95%; }
 }
 
 /* Internet Explorer */
 @-ms-keyframes enlargewidth {
   from { width: 0; }
-  to   { width: 100%; }
+  to   { width: 95%; }
 }
 
 /* Opera < 12.1 */
 @-o-keyframes enlargewidth {
   from { width: 0; }
-  to   { width: 100%; }
+  to   { width: 95%; }
 }
 
 

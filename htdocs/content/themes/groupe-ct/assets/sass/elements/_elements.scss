@@ -81,13 +81,7 @@ main {
   width: 95%;
   margin: auto;
   margin-left: 6px;
-  @include animate-width(.5s);
-
-  -webkit-transition: width 1s ease-out;
-  -moz-transition: width 1s ease-out;
-  -ms-transition: width 1s ease-out;
-  -o-transition: width 1s ease-out;
-  transition: width 1s ease-out;
+  @include animate-width(2s);
 }
 
 .red-border {
