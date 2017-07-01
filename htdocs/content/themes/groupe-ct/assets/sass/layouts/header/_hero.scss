@@ -114,8 +114,10 @@
 
     .hero-content {
       display: none;
+      @include fade-out();
 
       &.active-slide {
+        @include fade-in();
         display: block;
       }
     }
