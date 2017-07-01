@@ -41,7 +41,7 @@ acf_add_local_field_group(array (
 ));
 
 acf_add_local_field_group(array (
-    'key' => 'page_field_group_home',
+    'key' => 'page_field_group',
     'title' => 'Page Details',
     'fields' => [
         [
