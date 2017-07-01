@@ -105,7 +105,13 @@
 }
 
 
-
+.hero {
+  h1 {
+    &.hero-title {
+      @include set-font(70px, $poppins, 700, white);
+    }
+  }
+}
 
 
 

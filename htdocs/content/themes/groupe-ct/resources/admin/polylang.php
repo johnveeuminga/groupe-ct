@@ -152,6 +152,7 @@ if (function_exists('pll_register_string'))
     pll_register_string('MODULE sur la page 2.3 GESTION ÉLECTRONIQUE DES DOCUMENTS', 'Accompagnement en continu pour vous informer des nouvelles tendances et technologies qui pourraient bonifier votre environnement numérique', GROUPE_CT, false);
 
     /** Partners bloc-static/bloc-tab-change-2-3.blade.php  */
+    pll_register_string('MODULE Partenaire', 'Nos partenaires', GROUPE_CT, false);
     pll_register_string('MODULE Partenaire', 'Partenaire description', GROUPE_CT, true);
 
     /** Bloc À propos contact bloc-static/bloc-a-propos-3-col-4-0-col */
