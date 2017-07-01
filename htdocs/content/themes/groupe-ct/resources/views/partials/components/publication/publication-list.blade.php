@@ -32,7 +32,7 @@
                 <div class="publication-container @if($reverse) {{ 'reverse-elem' }} @endif"> <!-- reverse-elem : to swap img and text div -->
                     <div class="publication-img-container">
 
-                        <?php $src = get_field('post_featured_image', $post->ID) ? get_field('post_standard_image', $post->ID)['url'] : themosis_assets() . '/images/img/img_pub01.png'; ?>
+                        <?php $src = get_field('post_standard_image', $post->ID) ? get_field('post_standard_image', $post->ID)['url'] : themosis_assets() . '/images/img/img_pub01.png'; ?>
                         <img class="image-pub shadow" src="{{ $src }}">
 
                         <span></span>
