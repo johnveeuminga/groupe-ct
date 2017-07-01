@@ -43,7 +43,7 @@ acf_add_local_field_group(array (
 
 
 acf_add_local_field_group(array (
-    'key' => 'group_5957c8c3e3f018',
+    'key' => 'group_5957c8c3e3f08',
     'title' => 'Home Slider',
     'fields' => [
         [
@@ -86,3 +86,4 @@ acf_add_local_field_group(array (
     'active' => 1,
     'description' => '',
 ));
+
