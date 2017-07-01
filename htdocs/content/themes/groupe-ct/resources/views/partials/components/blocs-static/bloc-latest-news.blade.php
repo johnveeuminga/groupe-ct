@@ -10,4 +10,5 @@ $posts = \Theme\Models\Post::get_featured();
             @include('partials.components.helpers.single-blog-preview', ['post' => $posts[1]])
         @endif
     </div>
+    <div class="overlay"></div>
 </section>
