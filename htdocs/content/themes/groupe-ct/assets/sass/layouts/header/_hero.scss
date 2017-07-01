@@ -113,6 +113,7 @@
     max-width: 100%;
 
     .hero-content {
+      position: absolute;
       opacity: 0;
       -webkit-transition: opacity 1s ease-in-out;
       -moz-transition: opacity 1s ease-in-out;
