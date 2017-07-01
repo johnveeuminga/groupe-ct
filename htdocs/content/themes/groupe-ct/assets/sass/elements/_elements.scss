@@ -44,7 +44,11 @@ body {
 
 }
 
-
+main {
+  position: relative;
+  z-index: 99999;
+  margin-top: -100px;
+}
 
 //Reset flexboxgrid
 .container-fluid {
