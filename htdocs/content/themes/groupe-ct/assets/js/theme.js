@@ -9,7 +9,7 @@
 
         $('.hero-arrow').on('click', function (e) {
             e.preventDefault();
-            $('html, body').animate({scrollTop: $('main').position().top}, 'slow');
+            $('html, body').animate({scrollTop: $('main').position().top - 120}, 'slow');
 
         });
 
