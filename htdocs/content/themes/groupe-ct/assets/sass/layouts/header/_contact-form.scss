@@ -23,6 +23,7 @@
       @extend .poppins20SemiBoldWhite;
       text-transform: uppercase;
       margin-bottom:30px;
+      width: 100%;
     }
 
     .close-contact-form {
@@ -38,7 +39,7 @@
     .contact-field-container {
       @include flexbox();
       @include flex-direction(column);
-
+      width: 100%;
 
       .contact-row {
         @include flexbox();
