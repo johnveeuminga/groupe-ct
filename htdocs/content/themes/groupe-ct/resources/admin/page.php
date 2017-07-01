@@ -9,7 +9,6 @@ acf_add_local_field_group(array (
         $acf_fields->generate_text('page_header_image_desktop', __('Header desktop', GROUPE_CT)),
         $acf_fields->generate_image('page_header_image_desktop', __('Image Desktop', 'GROUPE-CT'), __('Minimum Width : 1920px | Minimum Height : 670px', 'GROUPE-CT') ),
         $acf_fields->generate_image('page_header_image_mobile', __('Image Mobile', 'GROUPE-CT'), __('Minimum Width : 415px | Minimum Height : 735px', 'GROUPE-CT') ),
-
     ),
     'location' => array (
         array (
@@ -66,9 +65,9 @@ acf_add_local_field_group(array (
             'button_label' => '',
             'sub_fields' => array (
                 $acf_fields->generate_image('bloc_1_slide_image_desktop', __('Image', 'GROUPE-CT'), __('Minimum Width : 1920px | Minimum Height : 1175px', 'GROUPE-CT') ),
-                $acf_fields->generate_image('bloc_1_slide_image_mobile', __('Image', 'GROUPE-CT'), __('Minimum Width : 1920px | Minimum Height : 1175px', 'GROUPE-CT') ),
+                $acf_fields->generate_image('bloc_1_slide_image_mobile', __('Image Mobile', 'GROUPE-CT'), __('Minimum Width : 415px | Minimum Height : 735px', 'GROUPE-CT') ),
                 $acf_fields->generate_text('bloc_1_slide_title', __('Title', 'GROUPE-CT') ),
-                $acf_fields->generate_wysiwyg('bloc_1_slide_description', __('Description', 'GROUPE-CT') ),
+                $acf_fields->generate_textarea('bloc_1_slide_description', __('Description', 'GROUPE-CT') ),
                 $acf_fields->generate_cta('bloc_1_slide')[0],
                 $acf_fields->generate_cta('bloc_1_slide')[1],
                 $acf_fields->generate_cta('bloc_1_slide')[2],
