@@ -21,7 +21,7 @@
             @endforeach
         </div>
         <div class="slider-link-container-bloc02">
-            @foreach($block->get_field('bloc_1_slider') as $slide)
+            @foreach(get_field('home_slider') as $i => $slide)
                 <a class="slider-dot slide{{ $i }} blue-dot @if($i == 0) {{ 'active-dot-blue' }} @endif" href="#"></a>
             @endforeach
         </div>
