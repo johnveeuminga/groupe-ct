@@ -80,3 +80,8 @@ img.carret-right {
   background: rgba(0, 0, 0, 0.7);
   z-index: 10;
 }
+
+.overlay-content {
+  position: relative;
+  z-index: 11;
+}

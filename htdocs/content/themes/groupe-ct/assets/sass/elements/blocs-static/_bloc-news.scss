@@ -26,6 +26,7 @@
   }
 
   .news-inner-container {
+    @extend .overlay-content;
     padding:60px 30px 20px 30px;
     @media (min-width: $screen-md-min) {
       padding:120px 60px 40px 60px;
