@@ -91,9 +91,12 @@
 
     }
     .nav-bottom .menu-item{
-
       @include flexbox();
-      margin-left: 30px;
+      margin-left: 15px;
+
+      @media (min-width: $screen-xxl-min){
+        margin-left: 30px;
+      }
       position: relative;
     }
 
@@ -123,7 +126,7 @@
       @media (min-width: $screen-xxl-min){
         font-size: 16px;
       }
-      
+
       color:$black;
       text-transform: uppercase;
       &.has-submenu {
