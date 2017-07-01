@@ -42,7 +42,7 @@
   .nav-container {
     @include flexbox();
     @include flex-direction(column);
-    padding: 60px 40px 42px;
+    padding: 30px 30px 30px;
     .nav-top{
       padding-bottom:48px;
     }
