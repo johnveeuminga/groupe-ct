@@ -36,6 +36,11 @@
   @include animate(fadeout 0.25s ease-out);
 }
 
+
+@mixin animate-width($seconds: 0.25s) {
+  @include animate(enlargewidth $seconds ease-out);
+}
+
 @mixin animate ($animation) {
   -webkit-animation: $animation;
   -moz-animation: $animation;
@@ -87,6 +92,38 @@
   -ms-transform-origin: $origin;
   transform-origin: $origin;
 }
+
+
+
+@keyframes enlargewidth {
+  from { width: 0; }
+  to   { width: 100%; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes enlargewidth {
+  from { width: 0; }
+  to   { width: 100%; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes enlargewidth {
+  from { width: 0; }
+  to   { width: 100%; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes enlargewidth {
+  from { width: 0; }
+  to   { width: 100%; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes enlargewidth {
+  from { width: 0; }
+  to   { width: 100%; }
+}
+
 
 
 @keyframes fadein {

@@ -75,16 +75,13 @@ main {
   content:"";
   position: absolute;
   z-index: -1;
-  left:0;
+  left: 0;
   bottom:16px;
   border-bottom: 12px solid #a91b2d;
   width: 95%;
   margin: auto;
   margin-left: 6px;
-  -webkit-transition: width 0.5s ease-in-out;
-  -moz-transition: width 0.5s ease-in-out;
-  -o-transition: width 0.5s ease-in-out;
-  transition: width 0.5s ease-in-out;
+  @include animate-width(.5s);
 }
 
 .red-border {
