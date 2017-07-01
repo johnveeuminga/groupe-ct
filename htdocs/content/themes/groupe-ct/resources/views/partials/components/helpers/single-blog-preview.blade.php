@@ -11,4 +11,5 @@
             <a href="{{ get_the_permalink($post->ID) }}" class="news-read-more-cta">{{ pll__('Lire la nouvelle') }}</a>
         </div>
     </div>
+    <div class="overlay"></div>
 </div>
