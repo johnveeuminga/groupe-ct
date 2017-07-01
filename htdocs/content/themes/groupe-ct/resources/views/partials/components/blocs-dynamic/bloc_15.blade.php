@@ -19,7 +19,7 @@
                     <img class="team-info-img" src="{{ get_the_post_thumbnail_url($member['bloc_15_team_member'], 'full') }}" alt="{{ get_the_post_thumbnail_caption($member['bloc_15_team_member']) }}">
                     <h3 class="team-info-name">{{ $member['bloc_15_team_member']->post_title }}</h3>
                     <p class="info team-info-title">{{ $member['bloc_15_team_member']->team_member_title }}</p>
-                    <a class="info team-info-phone" href="tel:{{ $member['bloc_15_team_member']->team_member_phone }}"><span>T :</span>{{ $member['bloc_15_team_member']->team_member_phone }} <?php _e('poste:', 'GROUPE-CT'); ?> {{ $member['bloc_15_team_member']->team_member_position }}</a>
+                    <a class="info team-info-phone" href="tel:{{ $member['bloc_15_team_member']->team_member_phone }}"><span>T :</span>{{ $member['bloc_15_team_member']->team_member_phone }} {{ pll__('Poste:') }} {{ $member['bloc_15_team_member']->team_member_position }}</a>
                     <a class="team-info-email" href="mailto:{{ $member['bloc_15_team_member']->team_member_email }}">{{ $member['bloc_15_team_member']->team_member_email }}</a>
                 </div>
             </div>

@@ -203,5 +203,8 @@ if (function_exists('pll_register_string'))
     pll_register_string('ASSISTANCE TECHNIQUE - Demande d\'assistance - 3.0', 'Demande d\'assistance - Description', GROUPE_CT, true);
     pll_register_string('ASSISTANCE TECHNIQUE - Demande d\'assistance - 3.0', 'Mon CT', GROUPE_CT, true);
 
+    /** */
+    pll_register_string('', 'Poste:', false);
+
 
 }
