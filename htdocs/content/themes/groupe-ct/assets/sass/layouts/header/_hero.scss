@@ -111,7 +111,17 @@
 
   .hero-content-container {
     max-width: 100%;
+
+    .hero-content {
+      display: none;
+
+      &.active-slide {
+        display: block;
+      }
+    }
   }
+
+
 
   h1 {
     @include set-font(70px, $poppins, 700, white);
@@ -167,5 +177,6 @@
       width: 100%;
     }
   }
+
 }
 
