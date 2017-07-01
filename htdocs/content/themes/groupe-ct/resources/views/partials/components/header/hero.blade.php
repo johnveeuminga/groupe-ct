@@ -11,6 +11,7 @@
                     <div class="img-container">
                         <img src="{{ $slide['bloc_1_slide_image_desktop']['url'] }}" alt="{{ $slide['bloc_1_slide_image_desktop']['alt'] }}">
                         <div class="overlay"></div>
+                        <div class="triangle"></div>
                     </div>
                     <div class="buffer"></div>
 
