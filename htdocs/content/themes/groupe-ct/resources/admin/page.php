@@ -41,8 +41,8 @@ acf_add_local_field_group(array (
 ));
 
 acf_add_local_field_group(array (
-    'key' => 'page_field_group',
-    'title' => 'Page Details',
+    'key' => 'home_field_group',
+    'title' => 'Home Details',
     'fields' => [
         [
             $acf_fields->generate_repeater('bloc_1_slider', __('Slider', 'GROUPE-CT'),
