@@ -284,34 +284,48 @@
 
         var inView = false;
 
-        // function isScrolledIntoView(elem) {
-        //     var docViewTop = jQuery(window).scrollTop();
-        //     var docViewBottom = docViewTop + jQuery(window).height();
-        //
-        //     var elemTop = jQuery(elem).offset().top;
-        //     var elemBottom = elemTop + jQuery(elem).height();
-        //
-        //     return ((elemTop <= docViewBottom) && (elemBottom >= docViewTop));
-        // }
-
-
-        // if ($('.doughnut-chart').length > 0) {
-        //     jQuery(window).scroll(function () {
-        //         if (isScrolledIntoView('.doughnut-chart')) {
-        //             if (inView) {
-        //                 return;
-        //             }
-        //             inView = true;
-        //             console.log(this);
-        //             console.log('HERE IS THE DATA');
-        //             console.log(data);
-        //             console.log(options);
-        //             new Chart(jQuery(".doughnut-chart01")[0].getContext("2d"), {type:"doughnut", data:data, options: options});
-        //         } else {
-        //             inView = false;
-        //         }
-        //     });
-        // }
+        $('#form-assistance').on('submit', function() {
+            $.ajax({
+                url: groupect.ajaxurl,
+                type: 'POST',
+                dataType: 'json',
+                data: {
+                    action: 'assistance',
+                    'assistance-title': $form.find('#assistance-title').val(),
+                    'assistance-firstname': $form.find('#newsletter-firstname').val(),
+                    'assistance-lastname': $form.find('#newsletter-lastname').val(),
+                    'assistance-email-name': $form.find('#assistance-email').val(),
+                    'assistance-phone': $form.find('#assistance-phone').val(),
+                    'assistance-ext': $form.find('#assistance-ext').val(),
+                    'assistance-compagny-name': $form.find('#assistance-compagny-name').val()
+                    'assistance-office': $form.find('#assistance-compagny-name').val(),
+                    'assistance-serial': $form.find('#assistance-serial').val(),
+                    'assistance-opening01': $form.find('#assistance-opening01').val(),
+                    'assistance-opening02': $form.find('#assistance-opening02').val(),
+                    'assistance-opening03': $form.find('#assistance-opening03').val(),
+                    'assistance-opening04': $form.find('#assistance-opening04').val(),
+                    'assistance-closed': $form.find('#assistance-closed').val()
+                }
+            }).done(function (data) {
+                if (data.status === 'success') {
+                    // $form.find('.newsletter-desc').hide();
+                    // $form.find('.contact-field-container').hide(250, function () {
+                    //     $form.find('.newsletter-success').show(250, function() {
+                    //         setTimeout(function () {
+                    //             $('html, body').animate({scrollTop:$('#home-newsletter').position().top}, 'fast');
+                    //         }, 25);
+                    //     });
+                    // });
+                } else {
+                    // $form.find('.server-error').html(data.error.message).show();
+                    // $form.find('.form-errors').show(250, function () {
+                    //     setTimeout(function () {
+                    //         $('html, body').animate({scrollTop:$('.form-errors').position().top - 30}, 'fast');
+                    //     }, 50);
+                    // });
+                }
+            });
+        });
     });
 }(jQuery));
 

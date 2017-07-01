@@ -9,6 +9,13 @@
     </div>
 
     <div class="toggle-content open-content">
+        <div id="assistance-success" style="display: none">
+            Objet: Confirmation de demande d’assistance
+
+            Merci d’avoir contacté l’assistance technique CT. Votre demande a été reçue avec succès et sera traitée dans les plus brefs délais durant nos heures d’ouverture. Un agent communiquera avec vous sous peu.
+
+            Merci !
+        </div>
         <form id="form-assistance" class="form-container">
             <div class="text-container col-xs-12">
 

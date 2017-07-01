@@ -70,3 +70,33 @@ Ajax::listen('contact', function() {
 
     die();
 });
+
+Ajax::listen('assistance', function() {
+
+//    Groupe CT : service@ctgroupect.com
+//SAC - Québec : service@sacgroupect.com
+//SAC - Beauce : support@sacgroupect.com
+
+    $to = 'michael.villeneuve@ctrlweb.ca'; // @todo condition sur l'environnement pour prod : ventes@ctgro[upect.com
+    $subject = 'Demande d’assistance - formulaire du site Web';
+    $body = '';
+    $body .= '<p>Titre : ' . $_POST['assistance-title'] . '</p>';
+    $body .= '<p>Prénom : ' . $_POST['assistance-firstname'] . '</p>';
+    $body .= '<p>Nom : ' . $_POST['assistance-lastname'] . '</p>';
+    $body .= '<p>Entreprise : ' . $_POST['assistance-compagny-name'] . '</p>';
+    $body .= '<p>Courriel : ' . $_POST['assistance-email'] . '</p>';
+    $body .= '<p>Téléphone : ' . $_POST['assistance-phone'] . '</p>';
+    $body .= '<p>Poste: ' . $_POST['assistance-ext'] . '</p>';
+    $body .= '<p>Numéro de série de l’appareil : ' . $_POST['assistance-serial'] . '</p>';
+    $body .= '<p>Bureau : ' . $_POST['assistance-office'] . '</p>';
+    $body .= '<p>Description du problème : ' . nl2br($_POST['assistance-message']) . '</p>';
+    $body .= '<p>Heures d’ouverture : ' . $_POST['assistance-assistance-opening01'] . ':' . $_POST['assistance-assistance-opening02'] . ' à ' . $_POST['assistance-assistance-opening03'] . ':' . $_POST['assistance-assistance-opening04'] . '</p>';
+    $body .= '<p>Bureau fermé le midi : ' . isset($_POST['assistance-message']) ? 'Oui' : 'Non' . '</p>';
+    $body .= '<p>Test d’impression : ' . 'tbd' . '</p>';
+    $body .= '<p>Langue du formulaire : ' . pll_current_language() . '</p>';
+
+    $headers = array('Content-Type: text/html; charset=UTF-8','From: Groupe CT Website <donotreply@groupect.com');
+    wp_mail( $to, $subject, $body, $headers );
+
+    die();
+});
