@@ -10,7 +10,7 @@
     background-image: url($assets + "images/logo/logo-ct.png");
     background-position: 50% bottom;
     background-repeat: no-repeat;
-    background-size: 200px;
+    background-size: 150px;
     @include transition(all 0.25s ease);
     @media (max-width: 1110px) {
       background-size: 180px;
@@ -44,7 +44,7 @@
     @include flex-direction(column);
     padding: 30px 30px 30px;
     .nav-top{
-      padding-bottom:48px;
+      padding-bottom: 40px;
     }
 
     .nav-link-container {
@@ -66,9 +66,9 @@
 
     .nav-top .nav-link{
       font-size: 14px;
-      color:$grey-light;
-      padding:0 15px;
-      border-right:1px solid $grey-light;
+      color: $grey-light;
+      padding: 0 15px;
+      border-right: 1px solid $grey-light;
     }
 
     .nav-top .link-account{
