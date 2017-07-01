@@ -115,12 +115,15 @@
     .hero-content {
       position: absolute;
       opacity: 0;
+      top: 0;
+      left: 0;
       -webkit-transition: opacity 0.5s ease-in-out;
       -moz-transition: opacity 0.5s ease-in-out;
       -o-transition: opacity 0.5s ease-in-out;
       transition: opacity 0.5s ease-in-out;
 
       &.active-slide {
+
         opacity: 1;
       }
     }
