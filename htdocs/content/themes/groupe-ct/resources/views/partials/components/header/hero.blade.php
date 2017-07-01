@@ -4,10 +4,10 @@
     @include('partials.components.header.contact-form')
 
 
-    @if (get_field('home_slider'))
+    @if (is_array(get_field('home_slider')))
         <div class="hero-content-container">
             @foreach(get_field('home_slider') as $i => $slide)
-                <div class="hero-content slide-container slide{{ $i }} @if($i == 0) {{ 'active-slide' }} @endif">
+                <div class="hero-content slide-container @if($i == 0) {{ 'active-slide' }} @endif" data-hero-slide="{{ $i }}">
                     <div class="img-container">
                         <img src="{{ $slide['bloc_1_slide_image_desktop']['url'] }}" alt="{{ $slide['bloc_1_slide_image_desktop']['alt'] }}">
                         <div class="overlay"></div>
@@ -18,15 +18,15 @@
                     <div class="text-container">
                         <h1 class="hero-title">{!! $slide['bloc_1_slide_title'] !!}</h1>
                         <h2 class="hero-subtitle">{!! $slide['bloc_1_slide_description'] !!}</h2>
+                        <a href="#" class="hero-arrow-container" ><img class="hero-arrow" src="{{ themosis_assets() }}/images/icon/icon-hero-arrow.png" alt=""></a>
                         {{--<a class="btn-bloc2 primary-btn-blue" href="{{ $slide['bloc_1_slide_cta_link'] }}">{{ $slide['bloc_1_slide_cta_label'] }}</a>--}}
                     </div>
 
-                    <a href="#"><img class="hero-arrow" src="{{ themosis_assets() }}/images/icon/icon-hero-arrow.png" alt=""></a>
                 </div>
             @endforeach
-            <div class="slider-link-container-bloc01">
+            <div class="slider-link-hero-container">
                 @foreach(get_field('home_slider') as $i => $slide)
-                    <a class="slider-dot slide{{ $i }} blue-dot @if($i == 0) {{ 'active-dot-blue' }} @endif" href="#"></a>
+                    <a class="slider-hero-dot @if($i == 0) {{ 'active-hero-slide' }} @endif" href="#" data-target="{{ $i }}"></a>
                 @endforeach
             </div>
 
