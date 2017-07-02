@@ -30,11 +30,10 @@
 <!--		include header -->
         @include('templates.header')
 		<main>
-
-		@yield ('main')
-			@include('templates.footer')
+			@yield ('main')
 		</main>
 		<!-- include footer -->
+        @include('templates.footer')
 	</div>
 
     <?php wp_footer(); ?>

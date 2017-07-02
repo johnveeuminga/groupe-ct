@@ -21,6 +21,6 @@
         <img src="{{ themosis_assets() }}/images/echelle/echelle-mobile.png" alt="">
         <a class="mobile-zone-container zone-papier" href="{{ PageHelper::get_page_permalink(PageHelper::PAGE_1_1_ENVIRONNEMENT_PAPIER) }}"></a>
         <a class="mobile-zone-container zone-hybride" href="{{ PageHelper::get_page_permalink(PageHelper::PAGE_1_2_ENVIRONNEMENT_HYBRIDE) }}"></a>
-        <a class="mobile-zone-container zone-numerique" href="{{ PageHelper::get_page_permalink(PageHelper::PAGE_1_3_ENVIRONNEMENT_NUMERIQUE) }}"></div></a>
+        <a class="mobile-zone-container zone-numerique" href="{{ PageHelper::get_page_permalink(PageHelper::PAGE_1_3_ENVIRONNEMENT_NUMERIQUE) }}"></a>
     </div>
 </section>
