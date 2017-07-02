@@ -196,4 +196,14 @@ class PageHelper
                 PageHelper::get_page_id(PageHelper::PAGE_2_3_4_AUTOMATISATION_PROCESSUS) === $page_id;
 
     }
+
+    public static function parse_excerpt($words, $max)
+    {
+        if (strlen($words) > $max) {
+            $pos = strpos($words, ' ', 200);
+            $words = substr($words, 0, $pos);
+        }
+
+        return $words;
+    }
 }
