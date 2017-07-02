@@ -209,7 +209,11 @@
   }
 
   .red-border:after {
-    bottom: 36px;
+    bottom: 22px;
+
+    @media (min-width: $screen-xxl-min) {
+      bottom: 36px;
+    }
   }
 
   .triangle {
