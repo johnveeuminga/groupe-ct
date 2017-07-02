@@ -32,9 +32,9 @@
 		<main>
 
 		@yield ('main')
+			@include('templates.footer')
 		</main>
 		<!-- include footer -->
-        @include('templates.footer')
 	</div>
 
     <?php wp_footer(); ?>
