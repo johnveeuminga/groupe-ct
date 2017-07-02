@@ -58,7 +58,11 @@ main {
 
 //Reset flexboxgrid
 .container-fluid {
-  padding:0!important;
+  padding-top: 30px;
+
+  @media (min-width: $screen-sm-min) {
+    padding:0!important;
+  }
 }
 
 .row {
