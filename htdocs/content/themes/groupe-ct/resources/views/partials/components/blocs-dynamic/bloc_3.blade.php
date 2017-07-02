@@ -13,14 +13,14 @@
             <div class="contact-container">
                 @if (!empty($block->get_field('bloc_3_phone_1')))
                     <div class="contact-content">
-                        @if (!empty('bloc_3_phone_1_location'))<span class="contact-location">{{ $block->get_field('bloc_3_phone_1_location') }}</span>@endif
-                        @if (!empty('bloc_3_phone_1_label'))<a class="contact-phone" href="tel:+{{ $block->get_field('bloc_3_phone_1') }}">{{ $block->get_field('bloc_3_phone_1_label') }}</a>@endif
+                        @if (!empty('bloc_3_phone_1_location'))<span class="contact-location">{!! $block->get_field('bloc_3_phone_1_location') !!}</span>@endif
+                        @if (!empty('bloc_3_phone_1_label'))<a class="contact-phone" href="tel:+{!! $block->get_field('bloc_3_phone_1') !!}">{!! $block->get_field('bloc_3_phone_1_label') !!}</a>@endif
                     </div>
                 @endif
                 @if (!empty($block->get_field('bloc_3_phone_2')))
                     <div class="contact-content">
-                        @if (!empty('bloc_3_phone_2_location'))<span class="contact-location">{{ $block->get_field('bloc_3_phone_2_location') }}</span>@endif
-                        @if (!empty('bloc_3_phone_2_label'))<a class="contact-phone" href="tel:+{{ $block->get_field('bloc_3_phone_2') }}">{{ $block->get_field('bloc_3_phone_2_label') }}</a>@endif
+                        @if (!empty('bloc_3_phone_2_location'))<span class="contact-location">{!! $block->get_field('bloc_3_phone_2_location') !!}</span>@endif
+                        @if (!empty('bloc_3_phone_2_label'))<a class="contact-phone" href="tel:+{!! $block->get_field('bloc_3_phone_2') !!}">{!! $block->get_field('bloc_3_phone_2_label') !!}</a>@endif
                     </div>
                 @endif
             </div>
