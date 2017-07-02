@@ -8,8 +8,10 @@
     .title {
       @include set-font(44px, $poppins, 700, $black);
       text-transform: uppercase;
-      margin:30px 0;
       @extend .h2-size;
+      @media (min-width: $screen-sm-min) {
+        margin:30px 0;
+      }
     }
     .desc {
       @extend .mada22LightBlack;
