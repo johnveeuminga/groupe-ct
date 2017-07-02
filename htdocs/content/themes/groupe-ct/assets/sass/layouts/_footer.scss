@@ -33,8 +33,7 @@
 
       &.contact {
         @media (min-width: $screen-sm-min) and (max-width: $screen-md-min -1) {
-          @include flex-direction(row);
-          flex-basis:auto;
+          flex-basis: 80%;
         }
       }
     }
