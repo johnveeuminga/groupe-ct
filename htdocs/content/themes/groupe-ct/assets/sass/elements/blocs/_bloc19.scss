@@ -13,6 +13,7 @@
     }
     .desc {
       @extend .mada22LightBlack;
+      @extend .text-size;
       p {
         padding-bottom: 40px;
       }
