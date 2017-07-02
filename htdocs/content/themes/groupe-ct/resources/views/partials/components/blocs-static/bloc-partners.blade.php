@@ -12,7 +12,7 @@
                 <img class="partners-logo" src="{{ themosis_assets() }}/images/logo/logo-canon.png" alt="">
             </div>
             <div class="logo-container">
-                <img class="partners-logo" src="{{ themosis_assets() }}/images/logo/logo-oce.png" alt="">
+                <img class="partners-logo" src="{{ themosis_assets() }}/images/logo/logo-oce.png" alt="" width="150">
             </div>
             <div class="logo-container">
                 <img class="partners-logo" src="{{ themosis_assets() }}/images/logo/logo-hp.png" alt="">
