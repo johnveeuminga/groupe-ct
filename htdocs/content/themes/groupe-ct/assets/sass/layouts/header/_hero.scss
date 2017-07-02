@@ -109,7 +109,7 @@
   position: relative;
   width: 100%;
   overflow: hidden;
-  
+
   height: calc(100vh - 80px);
   @media (min-width: $screen-sm-min) {
     height: auto;
@@ -145,7 +145,7 @@
 
 
   h1 {
-    @include set-font(42px, $poppins, 700, white);
+    @include set-font(36px, $poppins, 700, white);
     width: 100%;
     text-transform: uppercase;
 
