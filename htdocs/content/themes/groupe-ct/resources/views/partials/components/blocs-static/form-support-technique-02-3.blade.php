@@ -1,4 +1,4 @@
-<div id="section-mon-ct" class="toggle-main-container">
+<div id="_section-02" class="toggle-main-container">
     <div class="toggle-content-header active-header">
         <div class="toggle-title-container">
             <h3 class="toggle-content-title" href="">{{ pll__('Compléter une demande d\'assistance') }}</h3>
