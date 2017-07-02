@@ -29,7 +29,7 @@
 	<div id="global-container">
 <!--		include header -->
         @include('templates.header')
-		<main>
+		<main {{ is_front_page() ? 'class="front-page"' : '' }}>
 			@yield ('main')
 		</main>
 		<!-- include footer -->

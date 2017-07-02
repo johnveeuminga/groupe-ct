@@ -48,11 +48,13 @@ main {
   position: relative;
   z-index: 2000;
 
-  @media (min-width: $screen-md-min) {
-    margin-top: -50px;
-  }
-  @media (min-width: $screen-xxl-min) {
-    margin-top: -100px;
+  &.front-page {
+    @media (min-width: $screen-md-min) {
+      margin-top: -50px;
+    }
+    @media (min-width: $screen-xxl-min) {
+      margin-top: -100px;
+    }
   }
 }
 
