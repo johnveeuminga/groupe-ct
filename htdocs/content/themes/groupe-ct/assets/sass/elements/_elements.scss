@@ -48,6 +48,10 @@ main {
   position: relative;
   z-index: 2000;
   margin-top: -100px;
+
+  @media (min-width: $screen-md-min) {
+    margin-top: -50px;
+  }
 }
 
 //Reset flexboxgrid

@@ -136,6 +136,11 @@
     line-height: 87px;
     text-transform: uppercase;
     width: 75%;
+
+    @media (min-width: $screen-md-min) {
+      @include set-font(50px, $poppins, 700, white);
+      line-height: 60px;
+    }
   }
 
   h2 {
@@ -143,6 +148,11 @@
     line-height: 38px;
     width: 75%;
     margin-top: 35px;
+
+    @media (min-width: $screen-md-min) {
+      @include set-font(20px, $poppins, 700, white);
+      line-height: 32px;
+    }
   }
 
   .slide-container {
@@ -152,7 +162,11 @@
       left: 25%;
       top: 15%;
       z-index: 825;
-    }
+
+      @media (min-width: $screen-md-min) {
+        top: 7%;
+        width: 90%;
+      }
   }
 
   .red-border:after {
@@ -167,7 +181,7 @@
     height: 0;
     border-bottom: 600px solid white;
     border-right: 1920px solid transparent;
-    z-index: 815;
+    z-index: 810;
   }
 
   .img-container {
@@ -183,13 +197,22 @@
     .hero-arrow {
       margin-top: 50px;
     }
+
+
+    @media (min-width: $screen-md-min) {
+      width: 27%;
+    }
   }
 
   .slider-link-hero-container {
     position: absolute;
     top: 20%;
     left: 10%;
-    z-index: 800;
+    z-index: 815;
+
+    @media (min-width: $screen-md-min) {
+        top: 15%;
+    }
 
     .slider-hero-dot {
       background-image: url($assets + '/images/icon/bullet_hero_inactive.png');
