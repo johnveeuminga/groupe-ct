@@ -132,14 +132,14 @@
 
 
   h1 {
-    @include set-font(70px, $poppins, 700, white);
-    line-height: 87px;
+    @include set-font(65px, $poppins, 700, white);
+    width: 100%;
     text-transform: uppercase;
-    width: 75%;
 
     @media (min-width: $screen-md-min) {
       @include set-font(50px, $poppins, 700, white);
       line-height: 60px;
+      width: 75%;
     }
 
     @media (min-width: $screen-xxl-min) {
@@ -149,14 +149,15 @@
   }
 
   h2 {
-    @include set-font(26px, $poppins, 300, white);
-    line-height: 38px;
-    width: 75%;
-    margin-top: 35px;
+    @include set-font(20px, $poppins, 300, white);
+    line-height: 32px;
+    margin-top: 15px;
 
     @media (min-width: $screen-md-min) {
       @include set-font(20px, $poppins, 300, white);
       line-height: 32px;
+      width: 75%;
+      margin-top: 35px;
     }
 
     @media (min-width: $screen-xxl-min) {
@@ -168,13 +169,14 @@
   .slide-container {
     .text-container {
       position: absolute;
-      width: 75%;
-      left: 25%;
-      top: 15%;
+      width: 90%;
+      left: 5%;
+      top: 5%;
       z-index: 825;
 
       @media (min-width: $screen-md-min) {
         top: 7%;
+        left: 25%;
         width: 90%;
       }
 
@@ -198,6 +200,11 @@
     border-bottom: 600px solid white;
     border-right: 1920px solid transparent;
     z-index: 810;
+    display: none;
+
+    @media (min-width: $screen-md-min) {
+      display: block;
+    }
   }
 
   .img-container {
