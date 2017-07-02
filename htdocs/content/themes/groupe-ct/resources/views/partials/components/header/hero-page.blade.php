@@ -14,6 +14,7 @@
             @if (is_array(get_field('page_header_image_mobile')))
                 <img src="{{ get_field('page_header_image_mobile')['url'] }}" class="image-mobile" alt="{{ get_field('page_header_image_mobile')['alt'] }}">
             @endif
+            <div class="overlay"></div>
         </div>
     </div>
 
