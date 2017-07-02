@@ -152,6 +152,7 @@
     @media (min-width: $screen-md-min) {
       @include set-font(20px, $poppins, 300, white);
       line-height: 32px;
+
     }
   }
 
@@ -167,6 +168,7 @@
         top: 7%;
         width: 90%;
       }
+    }
   }
 
   .red-border:after {
