@@ -16,14 +16,14 @@
                         <div class="contact-container">
                             @if (!empty($slide['bloc_2_slide_phone_1']))
                                 <div class="contact-content">
-                                    @if (!empty($slide['bloc_2_slide_phone_1_location']))<span class="contact-location">{{ $slide['bloc_2_slide_phone_1_location'] }}</span>@endif
-                                    @if (!empty($slide['bloc_2_slide_phone_1_label']))<a class="contact-phone" href="tel:+{{ $slide['bloc_2_slide_phone_1'] }}">{{ $slide['bloc_2_slide_phone_1_label'] }}</a>@endif
+                                    @if (!empty($slide['bloc_2_slide_phone_1_location']))<span class="contact-location">{!! $slide['bloc_2_slide_phone_1_location']  !!}</span>@endif
+                                    @if (!empty($slide['bloc_2_slide_phone_1_label']))<a class="contact-phone" href="tel:+{!! $slide['bloc_2_slide_phone_1'] !!}">{!! $slide['bloc_2_slide_phone_1_label'] !!}</a>@endif
                                 </div>
                             @endif
                             @if (!empty($slide['bloc_2_slide_phone_2']))
                                 <div class="contact-content">
-                                    @if (!empty($slide['bloc_2_slide_phone_2_location']))<span class="contact-location">{{ $slide['bloc_2_slide_phone_2_location'] }}</span>@endif
-                                    @if (!empty($slide['bloc_2_slide_phone_2_label']))<a class="contact-phone" href="tel:+{{ $slide['bloc_2_slide_phone_2'] }}">{{ $slide['bloc_2_slide_phone_2_label'] }}</a>@endif
+                                    @if (!empty($slide['bloc_2_slide_phone_2_location']))<span class="contact-location">{!! $slide['bloc_2_slide_phone_2_location'] !!}</span>@endif
+                                    @if (!empty($slide['bloc_2_slide_phone_2_label']))<a class="contact-phone" href="tel:+{!! $slide['bloc_2_slide_phone_2'] !!}">{!! $slide['bloc_2_slide_phone_2_label'] !!}</a>@endif
                                 </div>
                             @endif
                         </div>
