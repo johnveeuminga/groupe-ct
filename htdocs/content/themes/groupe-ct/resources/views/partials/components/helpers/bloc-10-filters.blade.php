@@ -1,8 +1,8 @@
 <ul class="menu-item-container">
     @if (PageHelper::get_page_id(PageHelper::PAGE_2_1_1_EQUIPEMENTS_BUREAU) === get_the_ID())
         <li class="menu-item"><a class="primary-btn-blue-sky" data-target="2-1-1-a" href="#">{{ pll__('Imprimantes') }}</a></li>
-        <li class="menu-item"><a class="primary-btn-blue-sky" data-target="2-1-1-b" href="#">{{ pll__('Appareils multifonctions noir et blanc') }}</a></li>
-        <li class="menu-item"><a class="primary-btn-blue-sky" data-target="2-1-1-c" href="#">{{ pll__('Appareils multifonctions couleur') }}</a></li>
+        <li class="menu-item"><a class="primary-btn-blue-sky" data-target="2-1-1-b" href="#">{{ pll__('Multifonctions noir et blanc') }}</a></li>
+        <li class="menu-item"><a class="primary-btn-blue-sky" data-target="2-1-1-c" href="#">{{ pll__('Multifonctions couleur') }}</a></li>
         <li class="menu-item"><a class="primary-btn-blue-sky" data-target="2-1-1-d" href="#">{{ pll__('Numériseurs') }}</a></li>
     @endif
     @if (PageHelper::get_page_id(PageHelper::PAGE_2_1_2_EQUIPEMENTS_PRODUCTION) === get_the_ID())
