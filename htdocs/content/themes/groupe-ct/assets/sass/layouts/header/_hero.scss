@@ -265,15 +265,6 @@
     left: 0;
     bottom: 0;
 
-    @include transform(rotate(90deg));
-    -webkit-transform-origin: bottom;
-    -moz-transform-origin: bottom;
-    -ms-transform-origin: bottom;
-    -o-transform-origin: bottom;
-    transform-origin: bottom;
-
-
-
     @media (min-width: $screen-sm-min) {
       top: 20%;
       left: 10%;
@@ -289,7 +280,6 @@
       top: 20%;
     }
 
-
     .slider-hero-dot {
       background-image: url($assets + '/images/icon/bullet_hero_inactive.png');
       background-repeat: no-repeat;
@@ -298,8 +288,16 @@
       height: 21px;
       display: block;
       margin: auto;
-      padding-bottom: 25px;
       position: relative;
+      float: left;
+      padding-right: 25px;
+
+      @media (min-width: $screen-sm-min) {
+        float: none;
+        padding-bottom: 25px;
+        padding-right: 0;
+      }
+
 
       &.active-hero-slide {
         background-image: url($assets + '/images/icon/bullet_hero_active.png');
@@ -307,11 +305,14 @@
         &:after {
           content: ' ';
           position: absolute;
-          left: 50%;
-          width: 2px;
           background-color: white;
-          height: 26px;
-          bottom: -1px;
+
+          @media (min-width: $screen-sm-min) {
+            left: 50%;
+            height: 26px;
+            bottom: -1px;
+            width: 2px;
+          }
         }
       }
 
