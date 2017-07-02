@@ -283,7 +283,7 @@
     .slider-hero-dot {
       background-image: url($assets + '/images/icon/bullet_hero_inactive.png');
       background-repeat: no-repeat;
-      background-position: center top;
+      background-position: left;
       width: 21px;
       height: 21px;
       display: block;
@@ -293,6 +293,7 @@
       padding-right: 25px;
 
       @media (min-width: $screen-sm-min) {
+        background-position: center top;
         float: none;
         padding-bottom: 25px;
         padding-right: 0;
@@ -325,12 +326,19 @@
       &:after {
         content: ' ';
         position: absolute;
-        bottom: 2px;
-        left: 50%;
-        margin-left: -1px;
-        width: 2px;
         background-color: white;
-        height: 28px;
+        width: 28px;
+        height: 2px;
+        bottom: 9px;
+        margin-left: -3px;
+
+        @media (min-width: $screen-sm-min) {
+          bottom: 2px;
+          left: 50%;
+          margin-left: -1px;
+          width: 2px;
+          height: 28px;
+        }
       }
     }
   }
