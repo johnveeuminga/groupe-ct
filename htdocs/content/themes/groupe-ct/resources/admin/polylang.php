@@ -185,6 +185,18 @@ if (function_exists('pll_register_string'))
     pll_register_string('PRODUIT ET SOLUTIONS 2.1 - FILTRES', 'Multifonctions couleur', GROUPE_CT, false);
     pll_register_string('PRODUIT ET SOLUTIONS 2.1 - FILTRES', 'Numériseurs', GROUPE_CT, false);
 
+    pll_register_string('PRODUIT ET SOLUTIONS 2.1 - FILTRES', 'Production de bas volume', GROUPE_CT, false);
+    pll_register_string('PRODUIT ET SOLUTIONS 2.1 - FILTRES', 'Production numérique', GROUPE_CT, false);
+    pll_register_string('PRODUIT ET SOLUTIONS 2.1 - FILTRES', 'Production de haut volume', GROUPE_CT, false);
+
+    pll_register_string('PRODUIT ET SOLUTIONS 2.1 - FILTRES', 'Impression de plan', GROUPE_CT, false);
+    pll_register_string('PRODUIT ET SOLUTIONS 2.1 - FILTRES', 'Impression graphique', GROUPE_CT, false);
+    pll_register_string('PRODUIT ET SOLUTIONS 2.1 - FILTRES', 'Impression de haut volume', GROUPE_CT, false);
+
+    pll_register_string('PRODUIT ET SOLUTIONS 2.1 - FILTRES', 'Consommables pour grands formats', GROUPE_CT, false);
+    pll_register_string('PRODUIT ET SOLUTIONS 2.1 - FILTRES', 'Consommables pour imprimantes', GROUPE_CT, false);
+    pll_register_string('PRODUIT ET SOLUTIONS 2.1 - FILTRES', 'Papiers spécialisés', GROUPE_CT, false);
+
     /** Template nos publications 5.0.0 */
     pll_register_string('NOS PUBLICATIONS 5.0.0', 'À la une,<br/>chez Groupe CT', GROUPE_CT, false);
     pll_register_string('NOS PUBLICATIONS 5.0.0', 'Sélectionnez la catégorie de votre choix', GROUPE_CT, false);
