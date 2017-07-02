@@ -9,7 +9,8 @@
             @foreach(get_field('home_slider') as $i => $slide)
                 <div class="hero-content slide-container @if($i == 0) {{ 'active-slide' }} @endif" data-hero-slide="{{ $i }}">
                     <div class="img-container">
-                        <img src="{{ $slide['bloc_1_slide_image_mobile']['url'] }}" srcset="{{ $slide['bloc_1_slide_image_desktop']['url'] }} 768w" sizes="(min-width: 768px) 100vw" alt="{{ $slide['bloc_1_slide_image_desktop']['alt'] }}">
+                        <img src="{{ $slide['bloc_1_slide_image_desktop']['url'] }}" class="image-desktop" alt="{{ $slide['bloc_1_slide_image_desktop']['alt'] }}">
+                        <img src="{{ $slide['bloc_1_slide_image_mobile']['url'] }}" class="image-mobile" alt="{{ $slide['bloc_1_slide_image_desktop']['alt'] }}">
                         <div class="overlay"></div>
                         <div class="triangle"></div>
                     </div>

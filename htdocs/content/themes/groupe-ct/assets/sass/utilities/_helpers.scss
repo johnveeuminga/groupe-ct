@@ -85,3 +85,17 @@ img.carret-right {
   position: relative;
   z-index: 11;
 }
+
+.image-desktop {
+  display: none;
+  @media (min-width: $screen-sm-min) {
+    display: block;
+  }
+}
+
+.image-mobile {
+  display: block;
+  @media (min-width: $screen-sm-min) {
+    display: none;
+  }
+}
