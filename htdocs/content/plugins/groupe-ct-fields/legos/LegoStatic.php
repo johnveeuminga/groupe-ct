@@ -24,6 +24,7 @@ class LegoStatic extends BaseLego implements LegoInterface
 			    'form-support-technique-02-3' => 'Form Compléter une demande d’assistance - 3.0',
 			    'form-support-technique-03-3' => 'Form Commander des fournitures - 3.0',
 			    'form-support-technique-04-3' => 'Form Contacter le service à la clientèle - 3.0',
+			    'form-support-technique-05-3' => 'Lecture de compteurs - 3.0',
 			    'bloc-partners' => 'Bloc Partenaires',
 			    'bloc-latest-news' => 'Bloc dernières nouvelles',
 			    'bloc-newsletter' => 'Bloc Infolettre',
