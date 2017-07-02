@@ -177,6 +177,11 @@
         top: 7%;
         width: 90%;
       }
+
+      @media (min-width: $screen-xxl-min) {
+        top: 15%;
+        width: 75%;
+      }
     }
   }
 
