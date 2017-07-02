@@ -11,8 +11,8 @@
     <div class="toggle-content open-content">
         <form id="form-ressource" class="form-container">
             <div class="text-container col-xs-12">
-                <p>{{ pll__('Si vous avez des équipements sous contrat de service avec Groupe CT, nous recommandons de transmettre vos compteurs via Mon CT. (Lien vers le tiroir Mon CT) Vous pouvez également transmettre vos compteurs par téléphone. (lien vers tiroir Téléphone)') }}</p>
-                <p><a href="#" class="scroll-to" data-target="_section-04">{{ pll__('Renseignez-vous sur la transmission des compteurs automatique.') }}</a></p>
+                <p>{!! pll__('Compteur description 1') !!} </p>
+                <p><a href="#" class="scroll-to" data-target="_747">{!!  pll__('Compteur description 2') !!}</a></p>
             </div>
             <div class="form-footer">
                 <p></p>
