@@ -238,6 +238,11 @@ main {
   @include set-font(22px, $poppins, 600, $red);
   list-style: none;
   text-transform: uppercase;
+
+
+  @media (min-width: $screen-lg-min) {
+    margin-top: 50px;
+  }
 }
 
 
