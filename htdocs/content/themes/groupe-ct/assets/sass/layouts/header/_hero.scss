@@ -8,12 +8,12 @@
     @include justify-content(center);
     position: relative;
     width: 100%;
-    min-height: 670px;
-
     background-repeat: no-repeat;
+    min-height: 100vh;
 
     @media (min-width: $screen-sm-min) {
       background-size: 100%;
+      min-height: 670px;
     }
 
     .hero-content {
