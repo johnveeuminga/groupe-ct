@@ -256,9 +256,17 @@
 
   .slider-link-hero-container {
     position: absolute;
-    top: 20%;
-    left: 10%;
     z-index: 815;
+    @include transform(rotate(-90deg));
+    left: 50%;
+    bottom: 0;
+
+    @media (min-width: $screen-sm-min) {
+      top: 20%;
+      left: 10%;
+      bottom: auto;
+      @include transform(rotate(0));
+    }
 
     @media (min-width: $screen-md-min) {
       top: 15%;
