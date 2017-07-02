@@ -154,6 +154,9 @@
     margin-top: 15px;
 
     @media (min-width: $screen-md-min) {
+      margin-top: 5px;
+    }
+    @media (min-width: $screen-md-min) {
       @include set-font(20px, $poppins, 300, white);
       line-height: 32px;
       width: 75%;
@@ -173,6 +176,12 @@
       left: 5%;
       top: 5%;
       z-index: 825;
+
+      @media (min-width: $screen-sm-min) {
+        width: 75%;
+        left: 20%;
+        top: 10%;
+      }
 
       @media (min-width: $screen-md-min) {
         top: 7%;
@@ -218,7 +227,10 @@
     left: 33%;
 
     .hero-arrow {
-      margin-top: 50px;
+      margin-top: 10px;
+      @media (min-width: $screen-md-min) {
+        margin-top: 50px;
+      }
     }
 
 
