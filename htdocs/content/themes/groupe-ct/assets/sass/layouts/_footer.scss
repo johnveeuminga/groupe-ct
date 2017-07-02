@@ -32,9 +32,7 @@
       }
 
       &.contact {
-        @media (min-width: $screen-sm-min) and (max-width: $screen-md-min -1) {
-          flex-basis: 80%;
-        }
+        flex-basis: 80%;
       }
     }
 
