@@ -212,9 +212,23 @@ if (function_exists('pll_register_string'))
     pll_register_string('ASSISTANCE TECHNIQUE - Accèder à mon CT - 3.0', 'Accéder CT - Description', GROUPE_CT, true);
     pll_register_string('ASSISTANCE TECHNIQUE - Accèder à mon CT - 3.0', 'Groupe CT', GROUPE_CT, false);
     pll_register_string('ASSISTANCE TECHNIQUE - Accèder à mon CT - 3.0', 'Solutions d\'affaires de la Capitale', GROUPE_CT, false);
+
     pll_register_string('ASSISTANCE TECHNIQUE - Demande d\'assistance - 3.0', 'Compléter une demande d\'assistance', GROUPE_CT, false);
     pll_register_string('ASSISTANCE TECHNIQUE - Demande d\'assistance - 3.0', 'Demande d\'assistance - Description', GROUPE_CT, true);
     pll_register_string('ASSISTANCE TECHNIQUE - Demande d\'assistance - 3.0', 'Mon CT', GROUPE_CT, false);
+
+    pll_register_string('ASSISTANCE TECHNIQUE - Demande d\'assistance - 3.0', 'Contacter le service à la clientèle', GROUPE_CT, false);
+    pll_register_string('ASSISTANCE TECHNIQUE - Demande d\'assistance - 3.0', 'Que vous soyez déjà client ou non, notre équipe est là pour vous.', GROUPE_CT, false);
+    pll_register_string('ASSISTANCE TECHNIQUE - Demande d\'assistance - 3.0', 'Nos agents de service à la clientèle répondent à vos appels en tout temps du lundi au vendredi de 8h à 17h. Vous pouvez également faire une demande d’assistance 24h sur 24, 7 jours sur 7 via', GROUPE_CT, false);
+    pll_register_string('ASSISTANCE TECHNIQUE - Demande d\'assistance - 3.0', 'par courriel ou via le', GROUPE_CT, false);
+    pll_register_string('ASSISTANCE TECHNIQUE - Demande d\'assistance - 3.0', 'formulaire en ligne', GROUPE_CT, false);
+    pll_register_string('ASSISTANCE TECHNIQUE - Demande d\'assistance - 3.0', 'Votre demande sera traité le jour ouvrable suivant.', GROUPE_CT, false);
+    pll_register_string('ASSISTANCE TECHNIQUE - Demande d\'assistance - 3.0', 'Pour placer un appel de service, accédez à', GROUPE_CT, false);
+    pll_register_string('ASSISTANCE TECHNIQUE - Demande d\'assistance - 3.0', 'ou communiquez avec nous via les options suivantes:', GROUPE_CT, false);
+    pll_register_string('ASSISTANCE TECHNIQUE - Demande d\'assistance - 3.0', 'Montréal et les environs', GROUPE_CT, false);
+    pll_register_string('ASSISTANCE TECHNIQUE - Demande d\'assistance - 3.0', 'Toronto et Ouest canadien', GROUPE_CT, false);
+    pll_register_string('ASSISTANCE TECHNIQUE - Demande d\'assistance - 3.0', 'Québec', GROUPE_CT, false);
+    pll_register_string('ASSISTANCE TECHNIQUE - Demande d\'assistance - 3.0', 'Beauce', GROUPE_CT, false);
 
     pll_register_string('ASSISTANCE TECHNIQUE - Lecture de compteurs- 3.0', 'Fournir une lecture de compteur', GROUPE_CT, false);
     pll_register_string('ASSISTANCE TECHNIQUE - Lecture de compteurs- 3.0', 'Compteur description 1', GROUPE_CT, true);

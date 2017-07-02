@@ -13,11 +13,10 @@
             <div class="text-container col-xs-12">
                 <p>{{ pll__('Que vous soyez déjà client ou non, notre équipe est là pour vous.') }}</p>
                 <p>
-                    {{ pll__('Nos agents de service à la clientèle répondent à vos appels en tout temps du lundi au vendredi de 8h à 17h.
-                    Vous pouvez également faire une demande d’assistance 24h sur 24, 7 jours sur 7 via') }}
-                    <a class="form-link" href="#">{{ pll__('Mon CT') }}</a>{{ pll__(', par courriel ou via le') }} <a class="form-link"href="#"> {{ pll__('formulaire en ligne') }}</a>
+                    {{ pll__('Nos agents de service à la clientèle répondent à vos appels en tout temps du lundi au vendredi de 8h à 17h. Vous pouvez également faire une demande d’assistance 24h sur 24, 7 jours sur 7 via') }}
+                    <a class="form-link" href="#">{{ pll__('Mon CT') }}</a>, {{ pll__('par courriel ou via le') }} <a class="form-link"href="#"> {{ pll__('formulaire en ligne') }}</a>.
 
-                    {{ pll__('. Votre demande sera traité le jour ouvrable suivant.') }}
+                    {{ pll__('Votre demande sera traité le jour ouvrable suivant.') }}
 
                 </p>
 
@@ -30,7 +29,7 @@
                 <div class="contact-item">
                     <h3 class="item-title">{{ pll__('Montréal et les environs') }}</h3>
                     <div class="item-info">
-                        <p>T : <span>1 800 967-3103</span></p>
+                        <p>T : <span><a href="tel:+18009673103">1 800 967-3103</a></span></p>
                         <a href="mailto:service@ctgroupect.com">service@ctgroupect.com</a>
                         <a href="mailto:fournitures@ctgroupect.com">fournitures@ctgroupect.com</a>
                     </div>
@@ -39,7 +38,7 @@
                 <div class="contact-item">
                     <h3 class="item-title">{{ pll__('Toronto et Ouest canadien') }}</h3>
                     <div class="item-info">
-                        <p>T : <span>1 800 463-3271</span></p>
+                        <p>T : <span><a href="tel:+18004633271">1 800 463-3271</a></span></p>
                         <a href="mailto:service@ctgroupect.com">service@ctgroupect.com</a>
                         <a href="mailto:supplies@ctgroupect.com">supplies@ctgroupect.com</a>
                     </div>
@@ -48,7 +47,7 @@
                 <div class="contact-item">
                     <h3 class="item-title">{{ pll__('Québec') }}</h3>
                     <div class="item-info">
-                        <p>T : <span>418.614.5301</span></p>
+                        <p>T : <span><a href="tel:+4186145301">418.614.5301</a></span></p>
                         <a href="mailto:service@ctgroupect.com">service@ctgroupect.com</a>
                         <a href="mailto:fournitures@sacgroupect.com">fournitures@sacgroupect.com
                         </a>
@@ -58,7 +57,7 @@
                 <div class="contact-item">
                     <h3 class="item-title">{{ pll__('Beauce') }}</h3>
                     <div class="item-info">
-                        <p>T : <span>1 888 389-3040</span></p>
+                        <p>T : <span><a href="tel:+18883893040">1 888 389-3040</a></span></p>
                         <a href="mailto:support@sacgroupect.com">support@sacgroupect.com</a>
                     </div>
                 </div>
