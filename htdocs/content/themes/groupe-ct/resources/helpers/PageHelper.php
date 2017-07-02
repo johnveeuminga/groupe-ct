@@ -201,7 +201,7 @@ class PageHelper
     {
         if (strlen($words) > $max) {
             $pos = strpos($words, ' ', 200);
-            $words = substr($words, 0, $pos);
+            $words = substr($words, 0, $pos) . ' ...';
         }
 
         return $words;
