@@ -8,13 +8,11 @@
     @include justify-content(center);
     position: relative;
     width: 100%;
-    height: calc(100vh - 80px);
     min-height: 670px;
 
     background-repeat: no-repeat;
 
     @media (min-width: $screen-sm-min) {
-      height: auto;
       background-size: 100%;
     }
 
@@ -111,6 +109,12 @@
   position: relative;
   width: 100%;
 
+  height: calc(100vh - 80px);
+  @media (min-width: $screen-sm-min) {
+    height: auto;
+  }
+
+
   .hero-content-container {
     max-width: 100%;
 
@@ -123,6 +127,12 @@
       -moz-transition: opacity 0.5s ease-in-out;
       -o-transition: opacity 0.5s ease-in-out;
       transition: opacity 0.5s ease-in-out;
+
+      height: 100%;
+      @media (min-width: $screen-sm-min) {
+        height: auto;
+      }
+
 
       &.active-slide {
 

@@ -1,5 +1,9 @@
 
 .sub-menu-main-container {
+  display: none;
+  @media (min-width: $screen-sm-min) {
+    display: block;
+  }
 
   background-color: $black;
   position: relative;
