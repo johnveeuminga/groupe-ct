@@ -136,7 +136,7 @@
     width: 100%;
     text-transform: uppercase;
 
-    @media (min-width: $screen-md-min) {
+    @media (min-width: $screen-sm-min) {
       @include set-font(50px, $poppins, 700, white);
       line-height: 60px;
       width: 75%;
