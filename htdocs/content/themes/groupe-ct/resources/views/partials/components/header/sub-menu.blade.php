@@ -76,7 +76,7 @@
                 </div>
 
                 <ul class="nav-link-container">
-                    <li class="menu-item"><a class="nav-link" href="{{ PageHelper::get_page_permalink(PageHelper::PAGE_3_0_ASSISTANCE) }}#TBD"><?= pll__('Accéder à Mon CT', GROUPE_CT) ?></a></li>
+                    <li class="menu-item"><a class="nav-link" href="{{ PageHelper::get_page_permalink(PageHelper::PAGE_3_0_ASSISTANCE) }}#section-01"><?= pll__('Accéder à Mon CT', GROUPE_CT) ?></a></li>
                     <li class="menu-item"><a class="nav-link" href="{{ PageHelper::get_page_permalink(PageHelper::PAGE_3_0_ASSISTANCE) }}#TBD"><?= pll__('Compléter une demande d’assistance', GROUPE_CT) ?></a></li>
                     <li class="menu-item"><a class="nav-link" href="{{ PageHelper::get_page_permalink(PageHelper::PAGE_3_0_ASSISTANCE) }}#TBD"><?= pll__('Commander des fournitures', GROUPE_CT) ?></a></li>
                     <li class="menu-item"><a class="nav-link" href="{{ PageHelper::get_page_permalink(PageHelper::PAGE_3_0_ASSISTANCE) }}#TBD"><?= pll__('Contacter le service à la clientèle', GROUPE_CT) ?></a></li>

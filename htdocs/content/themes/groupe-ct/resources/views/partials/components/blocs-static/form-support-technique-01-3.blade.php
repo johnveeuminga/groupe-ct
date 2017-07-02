@@ -1,5 +1,5 @@
 
-<div id="_section-mon-ct" class="toggle-main-container">
+<div id="_section-01" class="toggle-main-container">
     <div class="toggle-content-header active-header">
         <div class="toggle-title-container">
             <h3 class="toggle-content-title" href="">{{ pll__('Accéder à Mon CT') }}</h3>
