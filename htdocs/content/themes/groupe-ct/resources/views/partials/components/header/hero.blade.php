@@ -24,15 +24,12 @@
 
                 </div>
             @endforeach
-            <div class="mobile-outer-container">
-                <div class="mobile-innner-container">
-                    <div class="slider-link-hero-container">
-                        @foreach(get_field('home_slider') as $i => $slide)
-                            <a class="slider-hero-dot @if($i == 0) {{ 'active-hero-slide' }} @endif" href="#" data-target="{{ $i }}"></a>
-                        @endforeach
-                    </div>
-                </div>
+            <div class="slider-link-hero-container">
+                @foreach(get_field('home_slider') as $i => $slide)
+                    <a class="slider-hero-dot @if($i == 0) {{ 'active-hero-slide' }} @endif" href="#" data-target="{{ $i }}"></a>
+                @endforeach
             </div>
+
         </div>
     @endif
 </section>
