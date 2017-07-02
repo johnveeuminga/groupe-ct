@@ -226,8 +226,7 @@
     left: 33%;
 
     .hero-arrow {
-      margin-top: 10px;
-      @media (min-width: $screen-md-min) {
+      @media (min-width: $screen-sm-min) {
         margin-top: 50px;
       }
     }
