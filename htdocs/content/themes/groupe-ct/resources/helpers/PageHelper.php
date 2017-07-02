@@ -36,99 +36,99 @@ class PageHelper
     	return [
 		    self::PAGE_0_ACCUEIL => [
 			    'fr' => 158,
-			    'en' => null,
+			    'en' => 255,
 		    ],
 		    self::PAGE_1_0_APPROCHE_CONSEIL => [
 			    'fr' => 160,
-			    'en' => null,
+			    'en' => 807,
 		    ],
 		    self::PAGE_1_1_ENVIRONNEMENT_PAPIER => [
 			    'fr' => 162,
-			    'en' => null,
+			    'en' => 765,
 		    ],
 		    self::PAGE_1_2_ENVIRONNEMENT_HYBRIDE => [
 			    'fr' => 165,
-			    'en' => null,
+			    'en' => 889,
 		    ],
             self::PAGE_1_3_ENVIRONNEMENT_NUMERIQUE => [
                 'fr' => 167,
-                'en' => null,
+                'en' => 924,
             ],
 		    self::PAGE_2_0_PRODUITS_SOLUTIONS => [
 			    'fr' => 169,
-			    'en' => null,
+			    'en' => 775,
 		    ],
 		    self::PAGE_2_1_1_EQUIPEMENTS_BUREAU => [
 			    'fr' => 171,
-			    'en' => null,
+			    'en' => 861,
 		    ],
 		    self::PAGE_2_1_2_EQUIPEMENTS_PRODUCTION => [
 			    'fr' => 204,
-			    'en' => null,
+			    'en' => 863,
 		    ],
 		    self::PAGE_2_1_3_IMPRESSION_GRAND_FORMAT => [
 			    'fr' => 206,
-			    'en' => null,
+			    'en' => 865,
 		    ],
 		    self::PAGE_2_1_4_FOURNITURES => [
 			    'fr' => 211,
-			    'en' => null,
+			    'en' => 867,
 		    ],
 		    self::PAGE_2_2_1_PARC_IMPRESSION => [
 			    'fr' => 214,
-			    'en' => null,
+			    'en' => 868,
 		    ],
 		    self::PAGE_2_2_2_RECUPERATION_COUT => [
 			    'fr' => 216,
-			    'en' => null,
+			    'en' => 869,
 		    ],
 		    self::PAGE_2_2_3_FOLLOW_ME_PRINTING => [
 			    'fr' => 218,
-			    'en' => null,
+			    'en' => 873,
 		    ],
 		    self::PAGE_2_2_4_AUTOMATISATION_FLUX => [
 			    'fr' => 220,
-			    'en' => null,
+			    'en' => 874,
 		    ],
 		    self::PAGE_2_3_1_NUMERISATION_INTELLIGENTE => [
 			    'fr' => 222,
-			    'en' => null,
+			    'en' => 875,
 		    ],
 		    self::PAGE_2_3_2_NUMERISATION_TRAITEMENT => [
 			    'fr' => 225,
-			    'en' => null,
+			    'en' => 876,
 		    ],
 		    self::PAGE_2_3_3_ARCHIVAGE => [
 			    'fr' => 227,
-			    'en' => null,
+			    'en' => 877,
 		    ],
 		    self::PAGE_2_3_4_AUTOMATISATION_PROCESSUS => [
 			    'fr' => 229,
-			    'en' => null,
+			    'en' => 878,
 		    ],
 		    self::PAGE_3_0_ASSISTANCE => [
 			    'fr' => 231,
-			    'en' => null,
+			    'en' => 1117,
 		    ],
 		    self::PAGE_4_0_A_PROPOS => [
 			    'fr' => 233,
-			    'en' => null,
+			    'en' => 979,
 		    ],
 		    self::PAGE_4_1_MOT_DIRECTION => [
 			    'fr' => 235,
-			    'en' => null,
+			    'en' => 1012,
 		    ],
 		    self::PAGE_4_2_DIVISIONS => [
 			    'fr' => 237,
-			    'en' => null,
+			    'en' => 1019,
 		    ],
 		    self::PAGE_4_3_HISTORIQUE => [
 			    'fr' => 239,
-			    'en' => null,
+			    'en' => 1032,
 		    ],
 		    self::PAGE_4_4_EQUIPE => [
 			    'fr' => 241,
-			    'en' => null,
+			    'en' => 1074,
 		    ],
 		    self::PAGE_4_5_DEVELOPPEMENT_DURABLE => [
 			    'fr' => 243,
