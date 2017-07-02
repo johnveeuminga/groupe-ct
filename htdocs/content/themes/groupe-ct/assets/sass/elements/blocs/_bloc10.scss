@@ -64,6 +64,10 @@
     -moz-box-shadow: 0px 0px 41px 1px rgba(0,0,0,0.2);
     box-shadow: 0px 0px 41px 1px rgba(0,0,0,0.2);
 
+    .product-text-content-container {
+      height: 290px;
+    }
+
     .product-title {
      @extend .poppins22BoldBlack;
      text-transform: uppercase;
