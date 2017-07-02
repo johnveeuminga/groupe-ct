@@ -266,7 +266,7 @@
     bottom: 0;
 
     @include transform(rotate(90deg));
-    -webkit-transform-origin:;
+    -webkit-transform-origin: bottom;
     -moz-transform-origin: bottom;
     -ms-transform-origin: bottom;
     -o-transform-origin: bottom;
