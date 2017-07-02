@@ -232,13 +232,10 @@
       width: 100%;
       height: 33%;
 
-      .zone-papier {
-
-      }
-      .zone-hybride {
+      &.zone-hybride {
         top: 33%;
       }
-      .zone-numerique {
+      &.zone-numerique {
         top: 66%;
       }
     }
