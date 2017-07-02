@@ -31,8 +31,10 @@
         flex-basis:auto;
       }
 
-      &.contact {
-        flex-basis: 80%;
+      @media (min-width: $screen-sm-min) and (max-width: $screen-md-min - 1) {
+        &.contact {
+          flex-basis: 80%;
+        }
       }
     }
 
