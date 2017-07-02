@@ -9,12 +9,8 @@
     position: relative;
     width: 100%;
     min-height: 670px;
-
     background-repeat: no-repeat;
-
-    @media (min-width: $screen-sm-min) {
-      background-size: 100%;
-    }
+    background-size: cover;
 
     .hero-content {
       @include flexbox();
