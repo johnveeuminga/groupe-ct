@@ -1,32 +1,3 @@
-{{--<section id="home-echelle" class="bloc-echelle-main-container">--}}
-    {{--<div class="bloc-echelle-container default-padding default-width">--}}
-
-        {{--<div class="benefits-container">--}}
-            {{--<img src="{{ themosis_assets() }}/images/echelle/echelle-mobile.png" alt="">--}}
-            {{--<div class="benefit-bg paper hideMe">--}}
-
-                {{--<img src="{{ themosis_assets() }}/images/echelle/over-papier-mobile.png" alt="">--}}
-            {{--</div>--}}
-            {{--<div class="benefit-bg hyb hideMe">--}}
-
-                {{--<img src="{{ themosis_assets() }}/images/echelle/over-hybrid-mobile.png" alt="">--}}
-            {{--</div>--}}
-            {{--<div class="benefit-bg num hideMe">--}}
-
-                {{--<img src="{{ themosis_assets() }}/images/echelle/over-num-mobile.png" alt="">--}}
-            {{--</div>--}}
-
-            {{--<div class="cat-container">--}}
-                {{--<div class="cat paper col-sm-4"><a href="#"></a></div>--}}
-                {{--<div class="cat hyb col-sm-4"><a href="#"></a></div>--}}
-                {{--<div class="cat num col-sm-4"><a href="#"></a></div>--}}
-            {{--</div>--}}
-
-
-        {{--</div>--}}
-    {{--</div>--}}
-{{--</section>--}}
-
 <section id="home-echelle" class="bloc-echelle-main-container">
 
     @if (is_front_page() === false)
@@ -37,7 +8,7 @@
         </div>
     @endif
 
-    <div class="bloc-echelle-container default-padding default-width bloc-echelle-michael">
+    <div class="bloc-echelle-container default-padding default-width">
         <a class="hover-zone-container" href="{{ PageHelper::get_page_permalink(PageHelper::PAGE_1_1_ENVIRONNEMENT_PAPIER) }}"><div class="hover-zone zone-papier" data-target="#hover-papier"></div></a>
         <a class="hover-zone-container" href="{{ PageHelper::get_page_permalink(PageHelper::PAGE_1_2_ENVIRONNEMENT_HYBRIDE) }}"><div class="hover-zone zone-hybride" data-target="#hover-hybride"></div></a>
         <a class="hover-zone-container" href="{{ PageHelper::get_page_permalink(PageHelper::PAGE_1_3_ENVIRONNEMENT_NUMERIQUE) }}"><div class="hover-zone zone-numerique" data-target="#hover-numerique"></div></a>
@@ -45,5 +16,11 @@
         <img id="hover-papier" class="{{ PageHelper::get_page_id(PageHelper::PAGE_1_1_ENVIRONNEMENT_PAPIER) === get_the_ID() ? 'active' : '' }}" src="{{ themosis_assets() }}/images/echelle/desktop/hover-papier-{{ pll_current_language() }}.png">
         <img id="hover-hybride" class="{{ PageHelper::get_page_id(PageHelper::PAGE_1_2_ENVIRONNEMENT_HYBRIDE) === get_the_ID() ? 'active' : '' }}" src="{{ themosis_assets() }}/images/echelle/desktop/hover-hybride-{{ pll_current_language() }}.png">
         <img id="hover-numerique"  class="{{ PageHelper::get_page_id(PageHelper::PAGE_1_3_ENVIRONNEMENT_NUMERIQUE) === get_the_ID() ? 'active' : '' }}" src="{{ themosis_assets() }}/images/echelle/desktop/hover-numerique-{{ pll_current_language() }}.png">
+    </div>
+    <div class="bloc-echelle-mobile-container">
+        <img src="{{ themosis_assets() }}/images/echelle/echelle-mobile.png" alt="">
+        <a class="mobile-zone-container" href="{{ PageHelper::get_page_permalink(PageHelper::PAGE_1_1_ENVIRONNEMENT_PAPIER) }}"><div class="mobile-zone zone-papier" data-target="#hover-papier"></div></a>
+        <a class="mobile-zone-container" href="{{ PageHelper::get_page_permalink(PageHelper::PAGE_1_2_ENVIRONNEMENT_HYBRIDE) }}"><div class="mobile-zone zone-hybride" data-target="#hover-hybride"></div></a>
+        <a class="mobile-zone-container" href="{{ PageHelper::get_page_permalink(PageHelper::PAGE_1_3_ENVIRONNEMENT_NUMERIQUE) }}"><div class="mobile-zone zone-numerique" data-target="#hover-numerique"></div></a>
     </div>
 </section>
