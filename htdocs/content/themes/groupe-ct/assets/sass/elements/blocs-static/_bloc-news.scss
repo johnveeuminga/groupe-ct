@@ -46,6 +46,12 @@
     height: 180px;
     border-bottom: 1px solid white;
     margin-bottom:30px;
+
+    display: none;
+    @media (min-width: $screen-sm-min) {
+      display: block;
+    }
+
     @media (min-width: $screen-md-min) {
       height: 180px;
     }
