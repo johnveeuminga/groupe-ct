@@ -16,6 +16,15 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="icon" type="image/png" href="{{ themosis_assets() }}/images/favicon/Favicon_16X16.png" />
+	<link rel="icon" type="image/x-icon" href="{{ themosis_assets() }}/images/favicon/Favicon_16X16.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="57x57" href="{{ themosis_assets() }}/images/favicon/Favicon_57x57.png">
+	<link rel="apple-touch-icon-precomposed" sizes="76x76" href="{{ themosis_assets() }}/images/favicon/Favicon_76x76.png">
+	<link rel="apple-touch-icon-precomposed" sizes="120x120" href="{{ themosis_assets() }}/images/favicon/Favicon_120x120.png">
+	<link rel="apple-touch-icon-precomposed" sizes="152x152" href="{{ themosis_assets() }}/images/favicon/Favicon_152x152.png">
+	<link rel="apple-touch-icon-precomposed" sizes="180x180" href="{{ themosis_assets() }}/images/favicon/Favicon_180x180.png">
+
 	<?php wp_head(); ?>
 
 </head>
