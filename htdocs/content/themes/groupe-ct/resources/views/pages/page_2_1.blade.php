@@ -7,6 +7,16 @@
                 @include('partials.components.blocs-static.bloc-tab-products-2-1')
 
                 <div class="bg_white">
+                    @if (PageHelper::get_page_id(PageHelper::PAGE_2_1_4_FOURNITURES) === get_the_ID())
+                        <div class="bloc-product-search-main-container">
+                            <div class="bloc-product-container">
+                                <div class="nav-cat-main-container">
+                                    &nbsp;
+                                </div>
+                            </div>
+                        </div>
+                    @endif
+
                     @if( have_rows('blocks') )
 
                         @while ( have_rows('blocks') )
