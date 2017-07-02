@@ -319,12 +319,6 @@
         }
       }
 
-      &:last-of-type {
-        &:after {
-          display: none;
-        }
-      }
-
       &:after {
         content: ' ';
         position: absolute;
@@ -341,6 +335,12 @@
           margin-left: -1px;
           width: 2px;
           height: 28px;
+        }
+      }
+
+      &:last-of-type {
+        &:after {
+          display: none;
         }
       }
     }
