@@ -247,11 +247,7 @@ main {
 
 .title {
   @include set-font(44px, $poppins, 700, $black);
-  text-transform: uppercase;
-  @media (min-width: $screen-sm-min) {
-    margin:30px 0;
-    @include set-font(45px, $poppins, 700, $black);
-  }
+  @extend .h2-size;
 }
 
 .publication-cat, .publication-title, .publication-date {
