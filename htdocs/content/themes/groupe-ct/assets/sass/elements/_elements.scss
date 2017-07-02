@@ -47,10 +47,12 @@ body {
 main {
   position: relative;
   z-index: 2000;
-  margin-top: -100px;
 
   @media (min-width: $screen-md-min) {
     margin-top: -50px;
+  }
+  @media (min-width: $screen-xxl-min) {
+    margin-top: -100px;
   }
 }
 
