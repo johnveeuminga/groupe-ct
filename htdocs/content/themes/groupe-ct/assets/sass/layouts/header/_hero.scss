@@ -150,7 +150,7 @@
     margin-top: 35px;
 
     @media (min-width: $screen-md-min) {
-      @include set-font(20px, $poppins, 700, white);
+      @include set-font(20px, $poppins, 300, white);
       line-height: 32px;
     }
   }
