@@ -22,7 +22,12 @@
     .newsletter-title-container {
       text-align: center;
       color:white!important;
-      margin-bottom: 60px;
+      margin-bottom: 30px;
+
+      @media (min-width: $screen-sm-min) {
+        margin-bottom: 60px;
+      }
+
 
       .newsletter-upper-title {
         text-transform: uppercase;
