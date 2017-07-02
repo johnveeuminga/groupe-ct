@@ -216,6 +216,7 @@ if (function_exists('pll_register_string'))
     pll_register_string('ASSISTANCE TECHNIQUE - Demande d\'assistance - 3.0', 'Demande d\'assistance - Description', GROUPE_CT, true);
     pll_register_string('ASSISTANCE TECHNIQUE - Demande d\'assistance - 3.0', 'Mon CT', GROUPE_CT, false);
 
+    pll_register_string('ASSISTANCE TECHNIQUE - Lecture de compteurs- 3.0', 'Fournir une lecture de compteur', GROUPE_CT, false);
     pll_register_string('ASSISTANCE TECHNIQUE - Lecture de compteurs- 3.0', 'Compteur description 1', GROUPE_CT, true);
     pll_register_string('ASSISTANCE TECHNIQUE - Lecture de compteurs- 3.0', 'Compteur description 2', GROUPE_CT, true);
 
