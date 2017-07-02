@@ -301,8 +301,13 @@
         padding-right: 0;
       }
 
+      &:last-of-type {
+        padding: 0;
+      }
 
-      &.active-hero-slide {
+
+
+        &.active-hero-slide {
         background-image: url($assets + '/images/icon/bullet_hero_active.png');
 
         &:after {
