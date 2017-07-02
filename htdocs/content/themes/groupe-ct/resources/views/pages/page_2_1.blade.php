@@ -6,7 +6,7 @@
             <div class="bloc-product-outer-container">
                 @include('partials.components.blocs-static.bloc-tab-products-2-1')
 
-                <div class="bg_white">
+                <div class="bg_white" style="padding-top: 30px;">
                     @if( have_rows('blocks') )
 
                         @while ( have_rows('blocks') )
