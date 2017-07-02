@@ -8,11 +8,13 @@
     @include justify-content(center);
     position: relative;
     width: 100%;
+    height: calc(100vh - 80px);
     min-height: 670px;
 
     background-repeat: no-repeat;
 
     @media (min-width: $screen-sm-min) {
+      height: auto;
       background-size: 100%;
     }
 
@@ -226,7 +228,8 @@
     left: 33%;
 
     .hero-arrow {
-      @media (min-width: $screen-sm-min) {
+      margin-top: 25px;
+      @media (min-width: $screen-md-min) {
         margin-top: 50px;
       }
     }
