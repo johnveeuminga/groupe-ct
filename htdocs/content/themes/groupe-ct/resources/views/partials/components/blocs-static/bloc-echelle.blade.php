@@ -3,7 +3,7 @@
     @if (is_front_page() === false)
         <div class="benefits-title-container">
             <div class="line"></div>
-            <div class="title"><?php _e('Échelle numérique', THEME_TEXTDOMAIN); ?></div>
+            <div class="title">{{ pll__('Échelle numérique') }}</div>
             <div class="line"></div>
         </div>
     @endif
