@@ -4,6 +4,7 @@
         // Scroll to content if hashtag in url
         var $elem = $('#_' + window.location.hash.replace('#', ''));
         if($elem.position()) {
+            console.log($elem.position().top);
             $('html, body').animate({scrollTop: $elem.position().top}, 'slow');
         }
 
