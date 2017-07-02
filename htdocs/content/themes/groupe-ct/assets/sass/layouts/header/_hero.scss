@@ -141,6 +141,11 @@
       @include set-font(50px, $poppins, 700, white);
       line-height: 60px;
     }
+
+    @media (min-width: $screen-xxl-min) {
+      @include set-font(70px, $poppins, 700, white);
+      line-height: 87px;
+    }
   }
 
   h2 {
@@ -152,7 +157,11 @@
     @media (min-width: $screen-md-min) {
       @include set-font(20px, $poppins, 300, white);
       line-height: 32px;
+    }
 
+    @media (min-width: $screen-xxl-min) {
+      @include set-font(26px, $poppins, 300, white);
+      line-height: 38px;
     }
   }
 
@@ -204,6 +213,10 @@
     @media (min-width: $screen-md-min) {
       left: 27%;
     }
+
+    @media (min-width: $screen-xxl-min) {
+      left: 33%;
+    }
   }
 
   .slider-link-hero-container {
@@ -213,8 +226,13 @@
     z-index: 815;
 
     @media (min-width: $screen-md-min) {
-        top: 15%;
+      top: 15%;
     }
+
+    @media (min-width: $screen-xxl-min) {
+      top: 20%;
+    }
+
 
     .slider-hero-dot {
       background-image: url($assets + '/images/icon/bullet_hero_inactive.png');
