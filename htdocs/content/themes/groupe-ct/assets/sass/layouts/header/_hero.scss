@@ -144,7 +144,7 @@
 
 
   h1 {
-    @include set-font(65px, $poppins, 700, white);
+    @include set-font(42px, $poppins, 700, white);
     width: 100%;
     text-transform: uppercase;
 
@@ -235,7 +235,12 @@
 
   .hero-arrow-container {
     position: absolute;
-    left: 33%;
+    left: 50%;
+    margin-left: -40px;
+
+    @media (min-width: $screen-sm-min) {
+      left: 33%;
+    }
 
     .hero-arrow {
       margin-top: 25px;
