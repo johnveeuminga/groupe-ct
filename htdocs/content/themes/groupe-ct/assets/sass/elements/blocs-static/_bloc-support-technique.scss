@@ -345,7 +345,11 @@
           @include justify-content(space-between);
         }
       }
-
+      #file-too-large {
+        margin: 0;
+        width: 100%;
+        @include set-font(14px, $mada, 300, $red);
+      }
       .btn-upload {
         cursor: pointer;
       }
