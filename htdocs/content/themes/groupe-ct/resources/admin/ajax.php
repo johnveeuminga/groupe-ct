@@ -106,6 +106,6 @@ Ajax::listen('assistance', function() {
     die();
 });
 
-Ajax::listen('assistance', function() {
+Ajax::listen('upload-file', function() {
    var_dump('WOW');die();
 });
