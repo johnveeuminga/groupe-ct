@@ -327,8 +327,9 @@
       
       #file-path {
         width: 100%;
-        text-decoration: underline;
+        text-decoration: underline!important;
         padding-top: 10px;
+        @extend .poppins22BoldBlue;
       }
 
       .input-container:nth-child(2) {
