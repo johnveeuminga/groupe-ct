@@ -89,7 +89,7 @@ Ajax::listen('assistance', function() {
     $body .= '<p>Poste: ' . $_POST['assistance-ext'] . '</p>';
     $body .= '<p>Numéro de série de l’appareil : ' . $_POST['assistance-serial'] . '</p>';
     $body .= '<p>Bureau : ' . $_POST['assistance-office'] . '</p>';
-    $body .= '<p>Description du problème : ' . nl2br($_POST['assistance-message']) . '</p>';
+    $body .= '<p>Description du problème : ' . nl2br($_POST['assistance-msg']) . '</p>';
     $body .= '<p>Heures d’ouverture : ' . $_POST['assistance-assistance-opening01'] . ':' . $_POST['assistance-assistance-opening02'] . ' à ' . $_POST['assistance-assistance-opening03'] . ':' . $_POST['assistance-assistance-opening04'] . '</p>';
     $body .= '<p>Bureau fermé le midi : ' . isset($_POST['assistance-message']) ? 'Oui' : 'Non' . '</p>';
     $body .= '<p>Test d’impression : ' . 'tbd' . '</p>';
