@@ -262,6 +262,10 @@
     margin:5px 0;
   }
 
+  > p {
+    @include set-font(14px, $mada, 300, $red);
+  }
+
 }
 
 
