@@ -302,6 +302,19 @@
             cutoutPercentage: 80
         };
 
+
+        $('#assistance-upload').on('change', function () {
+            var fileInput = document.getElementById('assistance-upload');
+            var file = fileInput.files[0];
+            var formData = new FormData();
+            formData.append('file', file);
+            formData.append('action', 'upload-file');
+
+            var xhr = new XMLHttpRequest();
+            // Add any event handlers here...
+            xhr.open('POST', groupect.ajaxurl, true);
+            xhr.send(formData);
+        });
   });
 }(jQuery));
 

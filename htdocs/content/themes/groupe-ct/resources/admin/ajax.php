@@ -105,3 +105,7 @@ Ajax::listen('assistance', function() {
 
     die();
 });
+
+Ajax::listen('assistance', function() {
+   var_dump('WOW');die();
+});
