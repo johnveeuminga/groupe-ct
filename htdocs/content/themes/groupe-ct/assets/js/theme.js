@@ -358,6 +358,7 @@
                     $form.find('.content-container').hide(250);
                     if (data.status === 'success') {
                         $form.find('#assistance-success').show(250, function() {
+                            console.log(isElementInViewport($('#assistance-success')));
                             if (isElementInViewport($('#assistance-success'))) {
                                 setTimeout(function () {
                                     $('html, body').animate({scrollTop:$('#assistance-success').position().top}, 'fast');
