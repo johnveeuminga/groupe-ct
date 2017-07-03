@@ -134,13 +134,13 @@ function sanitizeFilename($f) {
 
 Ajax::listen('upload-file', function() {
     if ($_FILES['file']['size'] < 26214400) {
-        $file_name = sanitize_file_name($_FILES['file']['name']);
+        $file_name = time() . '-' . sanitize_file_name($_FILES['file']['name']);
         $target_file = wp_upload_dir()['basedir'] . '/assistance-files/' . $file_name;
         move_uploaded_file($_FILES["file"]["tmp_name"], $target_file);
 
         echo json_encode([
             'status' => 'success',
-            'file_path' => $target_file,
+            'file_path' => $file_name,
         ]);
 
     } else {
