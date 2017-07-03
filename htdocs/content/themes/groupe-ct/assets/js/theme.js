@@ -317,7 +317,7 @@
                     'assistance-title': $form.find('#assistance-title').val(),
                     'assistance-firstname': $form.find('#assistance-firstname').val(),
                     'assistance-lastname': $form.find('#assistance-lastname').val(),
-                    'assistance-email-name': $form.find('#assistance-email').val(),
+                    'assistance-email': $form.find('#assistance-email').val(),
                     'assistance-phone': $form.find('#assistance-phone').val(),
                     'assistance-ext': $form.find('#assistance-ext').val(),
                     'assistance-compagny-name': $form.find('#assistance-compagny-name').val(),
