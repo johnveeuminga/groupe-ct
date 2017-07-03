@@ -324,20 +324,22 @@
           width:100%;
         }
       }
+      
+      #file-path {
+        display: block;
+        width: 100%;
+        text-decoration: underline;
+        padding-top: 100%;
+      }
 
       .input-container:nth-child(2) {
         @include flex-direction(column);
-
-        .mention {
-          @media (min-width: $screen-sm-min) {
-            margin-left:10px;
-          }
-        }
       }
 
       .assistance-upload-container {
         @include flexbox();
         @include flex-direction(column);
+        flex-wrap: wrap;
         @include align-items(center);
         @media (min-width: $screen-sm-min) {
           @include flex-direction(row);
