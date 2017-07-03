@@ -129,11 +129,11 @@
                             <input type="file" name="assistance-upload" id="assistance-upload" class="tech-support-input">
                             <label class="btn-upload" for="assistance-upload">{{ pll__("Parcourir") }}</label>
                         </div>
-                        <span class="mention">{{ pll__('Poids maximal de X Mo') }}</span>
+                        <span class="mention">{{ pll__('Poids maximal de 25 Mo') }}</span>
                     </div>
                     <div class="form-submit">
 
-                        <a class="submit-btn primary-btn-blue" href="#">{{ pll__('Soumettre ma demande') }}</a>
+                        <button type="submit" class="submit-btn primary-btn-blue">{{ pll__('Soumettre ma demande') }}</button>
                         <span class="mention">*{{ pll__('Champ obligatoires') }}</span>
                     </div>
                 </div>

@@ -304,7 +304,9 @@
 
         var inView = false;
 
-        $('#form-assistance').on('submit', function() {
+        $('#form-assistance').on('submit', function(e) {
+            e.preventDefault();
+
             $.ajax({
                 url: groupect.ajaxurl,
                 type: 'POST',
