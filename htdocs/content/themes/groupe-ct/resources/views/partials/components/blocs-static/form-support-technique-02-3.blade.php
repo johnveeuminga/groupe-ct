@@ -16,11 +16,9 @@
                 </p>
             </div>
             <div id="assistance-success" style="display: none">
-                Objet: Confirmation de demande d’assistance
-
-                Merci d’avoir contacté l’assistance technique CT. Votre demande a été reçue avec succès et sera traitée dans les plus brefs délais durant nos heures d’ouverture. Un agent communiquera avec vous sous peu.
-
-                Merci !
+                <h3>{{ pll__('Confirmation de demande d\'assistance') }}</h3>
+                <p><{{ pll__('Merci d\'avoir contacté l\'assistance technique CT. Votre demande a été reçue avec succès et sera traitée dans les plus brefs délais durant nos heures d\'ouverture. Un agent communiquera avec vous sous peu.') }}/p>
+                <p>{{ pll__('Merci !') }}</p>
             </div>
             <div class="form-errors" style="display: none;">
                 <p class="server-errors"></p>
@@ -71,7 +69,7 @@
                     <!-- INPUT CONTAINER START -->
                     <div class="input-container">
                         <label for="assistance-serial"></label>
-                        <input type="text" id="assistance-serial" class="tech-support-input" name="assistance-serial" placeholder="{{ pll__('Numéro de série de l’appareil*') }}">
+                        <input type="text" id="assistance-serial" class="tech-support-input" name="assistance-serial" placeholder="{{ pll__('Numéro de série de l\'appareil*') }}">
                     </div>
 
 
