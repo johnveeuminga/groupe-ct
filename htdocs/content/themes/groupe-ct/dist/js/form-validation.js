@@ -181,6 +181,15 @@
                 'assistance-phone': {
                     required: true
                 },
+                'assistance-msg': {
+                    required: true
+                },
+                'assistance-serial': {
+                    required: true
+                },
+                'assistance-office': {
+                    required: true
+                },
                 'assistance-message': {
                     required: true
                 }
