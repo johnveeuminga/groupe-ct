@@ -306,6 +306,7 @@
 
         $('#form-assistance').on('submit', function(e) {
             e.preventDefault();
+            var $form = $(this);
 
             $.ajax({
                 url: groupect.ajaxurl,
