@@ -9,7 +9,7 @@
         }
     @endif
     @if (is_array(get_field('page_header_image_mobile')))
-        @media (max-width: 768px) { /* or 301 if you want really the same as previously.  */
+        @media (max-width: 767px) { /* or 301 if you want really the same as previously.  */
             .hero-content-container {
                 background-image: url({{ get_field('page_header_image_mobile')['url'] }});
             }

@@ -8,7 +8,15 @@
     @include justify-content(center);
     position: relative;
     width: 100%;
-    min-height: 670px;
+
+    @media (min-width: $screen-sm-min) {
+      min-height: 470px;
+    }
+
+    @media (min-width: $screen-xxl-min) {
+      min-height: 670px;
+    }
+
     background-repeat: no-repeat;
     background-size: cover;
 
