@@ -125,7 +125,7 @@
 
         $form_assistance.validate({
             groups: {
-                required_fields: 'assistance-title assistance-firstname assistance-lastname assistance-compagny-name assistance-city assistance-email assistance-phone assistance-message'
+                required_fields: 'assistance-title assistance-firstname assistance-lastname assistance-compagny-name assistance-city assistance-email assistance-phone assistance-msg assistance-serial assistance-office'
             },
             invalidHandler: function(event, validator) {
                 $('html, body').animate({scrollTop: $form_assistance.position().top}, 'fast');
@@ -142,7 +142,10 @@
                         validator.errorMap.hasOwnProperty("assistance-city") ||
                         validator.errorMap.hasOwnProperty("assistance-email") ||
                         validator.errorMap.hasOwnProperty("assistance-phone") ||
-                        validator.errorMap.hasOwnProperty("assistance-message")
+                        validator.errorMap.hasOwnProperty("assistance-email") ||
+                        validator.errorMap.hasOwnProperty("assistance-msg") ||
+                        validator.errorMap.hasOwnProperty("assistance-office") ||
+                        validator.errorMap.hasOwnProperty("assistance-serial")
                     ) {
                         $form_assistance.find('.error-required').show();
                     }
