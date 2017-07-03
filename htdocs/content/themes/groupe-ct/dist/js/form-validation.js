@@ -5,6 +5,22 @@
 (function($) {
     $(document).ready(function() {
 
+        function isElementInViewport (el) {
+
+            //special bonus for those using jQuery
+            if (typeof jQuery === "function" && el instanceof jQuery) {
+                el = el[0];
+            }
+
+            var rect = el.getBoundingClientRect();
+
+            return (
+                rect.top >= 0 &&
+                rect.left >= 0 &&
+                rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) && /*or $(window).height() */
+                rect.right <= (window.innerWidth || document.documentElement.clientWidth) /*or $(window).width() */
+            );
+        }
 
         /**** JQUERY VALIDATION *****/
         var $form = $( "#contact-us-form" );
@@ -104,6 +120,130 @@
                 $(element).removeClass("field-error");
             }
         });
+
+        var $form_assistance = $( "#form-assistance" );
+
+        $form_assistance.validate({
+            groups: {
+                required_fields: 'assistance-title assistance-firstname assistance-lastname assistance-compagny-name assistance-city assistance-email assistance-phone assistance-message'
+            },
+            invalidHandler: function(event, validator) {
+                $('html, body').animate({scrollTop:$('#contact-us-form').position().top}, 'fast');
+
+                var errors = validator.numberOfInvalids();
+
+                if (errors) {
+                    $form_assistance.find('.error-msg-container').show();
+
+                    if (validator.errorMap.hasOwnProperty('assistance-title') ||
+                        validator.errorMap.hasOwnProperty("assistance-firstname") ||
+                        validator.errorMap.hasOwnProperty("assistance-lastname") ||
+                        validator.errorMap.hasOwnProperty("assistance-compagny-name") ||
+                        validator.errorMap.hasOwnProperty("assistance-city") ||
+                        validator.errorMap.hasOwnProperty("assistance-email") ||
+                        validator.errorMap.hasOwnProperty("assistance-phone") ||
+                        validator.errorMap.hasOwnProperty("assistance-message")
+                    ) {
+                        $form_assistance.find('.error-required').show();
+                    }
+
+                    if (validator.errorMap.hasOwnProperty("assistance-email")) {
+                        $form_assistance.find('.error-email').show();
+                    }
+                }
+            },
+            errorPlacement: function(error, element) {
+
+            },
+            rules: {
+                'assistance-title': {
+                    required: true
+                },
+                'assistance-firstname': {
+                    required: true
+                },
+                'assistance-lastname': {
+                    required: true
+                },
+                'assistance-compagny-name': {
+                    required: true
+                },
+                'assistance-city': {
+                    required: true
+                },
+                'assistance-email': {
+                    required: true,
+                    email: true
+                },
+                'assistance-phone': {
+                    required: true
+                },
+                'assistance-message': {
+                    required: true
+                }
+            },
+            submitHandler: function(form) {
+                $form_assistance.find('.error-msg-container').show();
+                $form_assistance.find('.assistance-field-container').hide(250, function () {
+                    $form_assistance.find('.assistance-success-message').show(250);
+                });
+
+                $.ajax({
+                    url: groupect.ajaxurl,
+                    type: 'POST',
+                    dataType: 'json',
+                    data: {
+                        action: 'assistance',
+                        'assistance-title': $form.find('#assistance-title').val(),
+                        'assistance-firstname': $form.find('#assistance-firstname').val(),
+                        'assistance-lastname': $form.find('#assistance-lastname').val(),
+                        'assistance-email': $form.find('#assistance-email').val(),
+                        'assistance-phone': $form.find('#assistance-phone').val(),
+                        'assistance-ext': $form.find('#assistance-ext').val(),
+                        'assistance-compagny-name': $form.find('#assistance-compagny-name').val(),
+                        'assistance-office': $form.find('#assistance-compagny-name').val(),
+                        'assistance-serial': $form.find('#assistance-serial').val(),
+                        'assistance-opening01': $form.find('#assistance-opening01').val(),
+                        'assistance-opening02': $form.find('#assistance-opening02').val(),
+                        'assistance-opening03': $form.find('#assistance-opening03').val(),
+                        'assistance-opening04': $form.find('#assistance-opening04').val(),
+                        'assistance-msg': $form.find('#assistance-msg').val(),
+                        'assistance-closed': $form.find('#assistance-closed').val()
+                    }
+                }).done(function (data) {
+                    is_submitting = false;
+                    $form.find('.submit-btn > i').remove();
+                    $form.find('.content-container').hide(250);
+                    if (data.status === 'success') {
+                        $form.find('#assistance-success').show(250, function() {
+                            console.log(isElementInViewport($('#assistance-success')));
+                            if (false === isElementInViewport($('#assistance-success'))) {
+                                setTimeout(function () {
+                                    $('html, body').animate({scrollTop:$('#assistance-success').position().top}, 'fast');
+                                }, 25);
+                            }
+                        });
+                    } else {
+                        $form.find('.server-error').html(data.error.message).show();
+                        $form.find('.form-errors').show(250, function () {
+                            setTimeout(function () {
+                                $('html, body').animate({scrollTop:$('.form-errors').position().top - 30}, 'fast');
+                            }, 50);
+                        });
+                    }
+                });
+
+                return false;
+            },
+
+            highlight: function(element) {
+                $(element).addClass("field-error");
+            },
+            unhighlight: function(element) {
+                $(element).removeClass("field-error");
+            }
+        });
+
 
 
 

@@ -20,8 +20,11 @@
                 <p>{{ pll__('Merci d\'avoir contacté l\'assistance technique CT. Votre demande a été reçue avec succès et sera traitée dans les plus brefs délais durant nos heures d\'ouverture. Un agent communiquera avec vous sous peu.') }}</p>
                 <p>{{ pll__('Merci !') }}</p>
             </div>
-            <div class="form-errors" style="display: none;">
-                <p class="server-errors"></p>
+
+            <div class="error-msg-container" style="display: none;">
+                <p class="error-required" style="display: none;">{{ pll__('Veuillez remplir tous les champs requis.') }}</p>
+                <p class="error-email" style="display: none;">{{ pll__('Veuillez utiliser un format de courriel valide.') }}</p>
+                <p class="error server-error" style="display: none;"></p>
             </div>
             <div class="content-container">
                 <div class="form-left-container col-md-6">
