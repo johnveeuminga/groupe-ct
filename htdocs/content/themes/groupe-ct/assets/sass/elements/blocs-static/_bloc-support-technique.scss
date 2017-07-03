@@ -11,7 +11,10 @@
     margin-bottom: 30px;
   }
   .error-msg-container {
-    @include set-font(14px, $mada, 300, $red);
+    p {
+      @include set-font(14px, $mada, 300, $red);
+    }
+
   }
 
   .form-link {

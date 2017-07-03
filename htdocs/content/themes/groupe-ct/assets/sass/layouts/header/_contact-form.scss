@@ -263,7 +263,7 @@
   }
 
   > p {
-    @include set-font(14px, $mada, 300, $red)!important;
+    @include set-font(14px, $mada, 300, $red);
   }
 
 }
