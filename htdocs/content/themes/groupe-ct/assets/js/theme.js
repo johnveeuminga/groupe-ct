@@ -319,7 +319,9 @@
                 url: groupect.ajaxurl,
                 type: 'POST',
                 dataType: 'json',
-                data: formData
+                data: formData,
+                processData: false,
+                contentType: false
             }).done(function (data) {
                 console.log(data);
             });
