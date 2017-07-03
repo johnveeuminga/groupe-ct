@@ -17,8 +17,10 @@
   }
 
   .two-col-icons-text-item {
-
+    margin-bottom: 30px;
     @media (min-width: $screen-sm-min) {
+      margin-bottom: 45px;
+
       &:nth-child(odd) {
         padding-right: 25px;
       }
