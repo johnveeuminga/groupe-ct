@@ -33,8 +33,8 @@
                     <div class="input-container">
                         <select name="assistance-title" id="assistance-title" class="tech-support-input select-support">
                             <option value=""  disabled selected hidden>{{ pll__('Titre*') }}</option>
-                            <option value="m">{{ pll__('M.') }}</option>
-                            <option value="mme">{{ pll__('Mme') }}</option>
+                            <option value="M.">{{ pll__('M.') }}</option>
+                            <option value="Mme">{{ pll__('Mme') }}</option>
                         </select>
 
                         <label for="assistance-firstname"></label>
@@ -61,18 +61,18 @@
                         <label for="assistance-compagny-name"></label>
                         <input type="text" id="assistance-compagny-name" class="tech-support-input" name="assistance-compagny-name" placeholder="{{ pll__('Entreprise*') }}">
 
-                        <select name="assistance-office" id="assistance-office" class="tech-support-input select-support">
-                            <option value=""  disabled selected hidden>{{ pll__('Sélectionner votre point de service*') }}</option>
-                            <option value="m">{{ pll__('Groupe CT') }}</option>
-                            <option value="m">{{ pll__('SAC - Bureau de Québec') }}</option>
-                            <option value="mme">{{ pll__('SAC - Bureau de la Beauce') }}</option>
-                        </select>
+                        <label for="assistance-serial"></label>
+                        <input type="text" id="assistance-serial" class="tech-support-input" name="assistance-serial" placeholder="{{ pll__('Numéro de série de l\'appareil*') }}">
                     </div>
 
                     <!-- INPUT CONTAINER START -->
                     <div class="input-container">
-                        <label for="assistance-serial"></label>
-                        <input type="text" id="assistance-serial" class="tech-support-input" name="assistance-serial" placeholder="{{ pll__('Numéro de série de l\'appareil*') }}">
+                        <select name="assistance-office" id="assistance-office" class="tech-support-input select-support">
+                            <option value=""  disabled selected hidden>{{ pll__('Sélectionner votre point de service*') }}</option>
+                            <option value="1">{{ pll__('Groupe CT') }}</option>
+                            <option value="2">{{ pll__('SAC - Bureau de Québec') }}</option>
+                            <option value="3">{{ pll__('SAC - Bureau de la Beauce') }}</option>
+                        </select>
                     </div>
 
 
