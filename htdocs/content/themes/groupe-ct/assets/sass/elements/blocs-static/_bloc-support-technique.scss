@@ -289,6 +289,8 @@
       }
 
       .hour-to {
+        align-items: center;
+        display: flex;
         @media (min-width: $screen-xs-min) {
           margin:0 40px 8px 30px;
         }
