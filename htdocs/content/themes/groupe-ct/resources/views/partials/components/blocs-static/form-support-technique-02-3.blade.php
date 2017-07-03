@@ -9,21 +9,21 @@
     </div>
 
     <div class="toggle-content open-content">
-        <div id="assistance-success" style="display: none">
-            Objet: Confirmation de demande d’assistance
-
-            Merci d’avoir contacté l’assistance technique CT. Votre demande a été reçue avec succès et sera traitée dans les plus brefs délais durant nos heures d’ouverture. Un agent communiquera avec vous sous peu.
-
-            Merci !
-        </div>
-        <div class="form-errors" style="display: none;">
-            <p class="server-errors"></p>
-        </div>
         <form id="form-assistance" class="form-container">
             <div class="text-container col-xs-12">
                 <p>
                     {!! nl2br(pll__('Demande d\'assistance - Description')) !!}&nbsp;<a class="scroll-to" href="#" data-target="#section-mon-ct" class="form-link"><strong>{{ pll__('Mon CT.') }}</strong></a>
                 </p>
+            </div>
+            <div id="assistance-success" style="display: none">
+                Objet: Confirmation de demande d’assistance
+
+                Merci d’avoir contacté l’assistance technique CT. Votre demande a été reçue avec succès et sera traitée dans les plus brefs délais durant nos heures d’ouverture. Un agent communiquera avec vous sous peu.
+
+                Merci !
+            </div>
+            <div class="form-errors" style="display: none;">
+                <p class="server-errors"></p>
             </div>
             <div class="content-container">
                 <div class="form-left-container col-md-6">
