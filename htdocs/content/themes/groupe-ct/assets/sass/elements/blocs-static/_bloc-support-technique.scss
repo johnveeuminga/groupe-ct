@@ -330,6 +330,7 @@
         text-decoration: underline!important;
         padding-top: 10px;
         @extend .poppins22BoldBlue;
+        @include text-size();
       }
 
       .input-container:nth-child(2) {
