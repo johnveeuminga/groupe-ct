@@ -99,5 +99,9 @@ Ajax::listen('assistance', function() {
     $headers = array('Content-Type: text/html; charset=UTF-8','From: Groupe CT Website <donotreply@groupect.com');
     wp_mail( $to, $subject, $body, $headers );
 
+    echo json_encode([
+        'status' => 'success'
+    ]);
+
     die();
 });
