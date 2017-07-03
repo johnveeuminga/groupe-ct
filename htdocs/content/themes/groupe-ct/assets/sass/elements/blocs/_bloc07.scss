@@ -47,6 +47,10 @@
       @include set-font(30px, $poppins, 700, $black);
       text-transform: uppercase;
       margin: 30px 0 45px;
+
+      @media (min-width: $screen-xxl-min) {
+        margin: 30px 0 45px;
+      }
     }
     .two-col-icons-text-desc {
       @include set-font(22px, $mada, 300, $black);
