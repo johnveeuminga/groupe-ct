@@ -1,8 +1,11 @@
 .row-303 {
-  margin-top: 30px;
+  margin-top: 45px;
+  @media (min-width: $screen-xxl-min) {
+    margin-top: 30px;
+  }
 
-  .title {
+  .section-title-wrapper .section-title-container .title {
     margin-top: 0;
-    padding-top: 15px;
+    padding: 15px 0 0;
   }
 }
