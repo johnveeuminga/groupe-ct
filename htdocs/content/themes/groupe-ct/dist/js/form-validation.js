@@ -128,7 +128,7 @@
                 required_fields: 'assistance-title assistance-firstname assistance-lastname assistance-compagny-name assistance-city assistance-email assistance-phone assistance-message'
             },
             invalidHandler: function(event, validator) {
-                $('html, body').animate({scrollTop:$('#contact-us-form').position().top}, 'fast');
+                $('html, body').animate({scrollTop: $form_assistance.position().top}, 'fast');
 
                 var errors = validator.numberOfInvalids();
 
