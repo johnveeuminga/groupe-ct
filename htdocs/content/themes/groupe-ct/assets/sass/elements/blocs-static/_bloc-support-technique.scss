@@ -329,8 +329,7 @@
         width: 100%;
         text-decoration: underline!important;
         padding-top: 10px;
-        @extend .poppins22BoldBlue;
-        @include font-size(12px);
+        @include set-font(12px, $poppins, 700, $blue);
       }
 
       .input-container:nth-child(2) {
