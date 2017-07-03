@@ -10,6 +10,9 @@
     @extend .mada22LightBlack;
     margin-bottom: 30px;
   }
+  .error-msg-container {
+    @include set-font(14px, $mada, 300, $red);
+  }
 
   .form-link {
     @extend .mada22RegBlack;
