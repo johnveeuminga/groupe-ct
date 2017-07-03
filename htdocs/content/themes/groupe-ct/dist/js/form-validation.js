@@ -206,28 +206,29 @@
                     dataType: 'json',
                     data: {
                         action: 'assistance',
-                        'assistance-title': $form.find('#assistance-title').val(),
-                        'assistance-firstname': $form.find('#assistance-firstname').val(),
-                        'assistance-lastname': $form.find('#assistance-lastname').val(),
-                        'assistance-email': $form.find('#assistance-email').val(),
-                        'assistance-phone': $form.find('#assistance-phone').val(),
-                        'assistance-ext': $form.find('#assistance-ext').val(),
-                        'assistance-compagny-name': $form.find('#assistance-compagny-name').val(),
-                        'assistance-office': $form.find('#assistance-compagny-name').val(),
-                        'assistance-serial': $form.find('#assistance-serial').val(),
-                        'assistance-opening01': $form.find('#assistance-opening01').val(),
-                        'assistance-opening02': $form.find('#assistance-opening02').val(),
-                        'assistance-opening03': $form.find('#assistance-opening03').val(),
-                        'assistance-opening04': $form.find('#assistance-opening04').val(),
-                        'assistance-msg': $form.find('#assistance-msg').val(),
-                        'assistance-closed': $form.find('#assistance-closed').val()
+                        'assistance-title': $form_assistance.find('#assistance-title').val(),
+                        'assistance-firstname': $form_assistance.find('#assistance-firstname').val(),
+                        'assistance-lastname': $form_assistance.find('#assistance-lastname').val(),
+                        'assistance-email': $form_assistance.find('#assistance-email').val(),
+                        'assistance-phone': $form_assistance.find('#assistance-phone').val(),
+                        'assistance-ext': $form_assistance.find('#assistance-ext').val(),
+                        'assistance-compagny-name': $form_assistance.find('#assistance-compagny-name').val(),
+                        'assistance-office': $form_assistance.find('#assistance-compagny-name').val(),
+                        'assistance-serial': $form_assistance.find('#assistance-serial').val(),
+                        'assistance-opening01': $form_assistance.find('#assistance-opening01').val(),
+                        'assistance-opening02': $form_assistance.find('#assistance-opening02').val(),
+                        'assistance-opening03': $form_assistance.find('#assistance-opening03').val(),
+                        'assistance-opening04': $form_assistance.find('#assistance-opening04').val(),
+                        'assistance-msg': $form_assistance.find('#assistance-msg').val(),
+                        'assistance-file': $form_assistance.find('#file-path').attr('href'),
+                        'assistance-closed': $form_assistance.find('#assistance-closed').val()
                     }
                 }).done(function (data) {
                     is_submitting = false;
-                    $form.find('.submit-btn > i').remove();
-                    $form.find('.content-container').hide(250);
+                    $form_assistance.find('.submit-btn > i').remove();
+                    $form_assistance.find('.content-container').hide(250);
                     if (data.status === 'success') {
-                        $form.find('#assistance-success').show(250, function() {
+                        $form_assistance.find('#assistance-success').show(250, function() {
                             console.log(isElementInViewport($('#assistance-success')));
                             if (false === isElementInViewport($('#assistance-success'))) {
                                 setTimeout(function () {
@@ -236,8 +237,8 @@
                             }
                         });
                     } else {
-                        $form.find('.server-error').html(data.error.message).show();
-                        $form.find('.form-errors').show(250, function () {
+                        $form_assistance.find('.server-error').html(data.error.message).show();
+                        $form_assistance.find('.form-errors').show(250, function () {
                             setTimeout(function () {
                                 $('html, body').animate({scrollTop:$('.form-errors').position().top - 30}, 'fast');
                             }, 50);
