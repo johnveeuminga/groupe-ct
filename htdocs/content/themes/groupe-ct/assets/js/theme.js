@@ -315,8 +315,8 @@
                 data: {
                     action: 'assistance',
                     'assistance-title': $form.find('#assistance-title').val(),
-                    'assistance-firstname': $form.find('#newsletter-firstname').val(),
-                    'assistance-lastname': $form.find('#newsletter-lastname').val(),
+                    'assistance-firstname': $form.find('#assistance-firstname').val(),
+                    'assistance-lastname': $form.find('#assistance-lastname').val(),
                     'assistance-email-name': $form.find('#assistance-email').val(),
                     'assistance-phone': $form.find('#assistance-phone').val(),
                     'assistance-ext': $form.find('#assistance-ext').val(),
