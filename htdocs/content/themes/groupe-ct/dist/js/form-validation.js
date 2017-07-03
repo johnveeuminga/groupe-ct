@@ -85,7 +85,7 @@
                 }
             },
             submitHandler: function(form) {
-                $form.find('.error-msg-container').show();
+                $form.find('.error-msg-container').hide();
                 $form.find('.contact-field-container').hide(250, function () {
                     $form.find('.contact-success-message').show(250);
                 });
@@ -195,7 +195,7 @@
                 }
             },
             submitHandler: function(form) {
-                $form_assistance.find('.error-msg-container').show();
+                $form_assistance.find('.error-msg-container').hide();
                 $form_assistance.find('.assistance-field-container').hide(250, function () {
                     $form_assistance.find('.assistance-success-message').show(250);
                 });

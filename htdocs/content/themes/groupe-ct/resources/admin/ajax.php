@@ -93,7 +93,7 @@ Ajax::listen('assistance', function() {
     $body .= '<p>Heures d’ouverture : ' . $_POST['assistance-opening01'] . ':' . $_POST['assistance-opening02'] . ' à ' . $_POST['assistance-opening03'] . ':' . $_POST['assistance-opening04'] . '</p>';
     $opened = isset($_POST['assistance-message']) ? 'Oui' : 'Non';
     $body .= '<p>Bureau fermé le midi : ' . $opened . '</p>';
-    $body .= '<p>Test d’impression : ' . $_POST['assistance-file'] . '</p>';
+    $body .= '<p>Test d’impression : <a href="' . home_url() . $_POST['assistance-file'] . '">' . home_url() . $_POST['assistance-file'] . '</a></p>';
     $body .= '<p>Langue du formulaire : ' . pll_current_language() . '</p>';
 
     $headers = array('Content-Type: text/html; charset=UTF-8','From: Groupe CT Website <donotreply@groupect.com');
