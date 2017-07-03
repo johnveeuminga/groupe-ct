@@ -2,6 +2,9 @@
 
   padding: 0;
   @media (min-width: $screen-sm-min) {
+    padding: 45px 0;
+  }
+  @media (min-width: $screen-xxl-min) {
     padding: 90px 0;
   }
   .section-title-container {
