@@ -91,7 +91,8 @@ Ajax::listen('assistance', function() {
     $body .= '<p>Bureau : ' . $_POST['assistance-office'] . '</p>';
     $body .= '<p>Description du problème : ' . nl2br($_POST['assistance-msg']) . '</p>';
     $body .= '<p>Heures d’ouverture : ' . $_POST['assistance-opening01'] . ':' . $_POST['assistance-opening02'] . ' à ' . $_POST['assistance-opening03'] . ':' . $_POST['assistance-opening04'] . '</p>';
-    $body .= '<p>Bureau fermé le midi : ' . isset($_POST['assistance-message']) ? 'Oui' : 'Non' . '</p>';
+    $opened = isset($_POST['assistance-message']) ? 'Oui' : 'Non';
+    $body .= '<p>Bureau fermé le midi : ' . $opened . '</p>';
     $body .= '<p>Test d’impression : ' . 'tbd' . '</p>';
     $body .= '<p>Langue du formulaire : ' . pll_current_language() . '</p>';
 
