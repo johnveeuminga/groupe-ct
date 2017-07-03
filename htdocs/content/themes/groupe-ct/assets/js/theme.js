@@ -310,6 +310,7 @@
             formData.append('file', file);
             formData.append('action', 'upload-file');
             $('#file-too-large').hide();
+            $('#file-path').hide();
 
             $.ajax({
                 url: groupect.ajaxurl,
@@ -321,6 +322,7 @@
             }).done(function (data) {
                 if (data.status === 'success') {
                     $('#file-path').attr('href', '/content/uploads/assistance-files/' + data.file_path);
+                    $('#file-path').show(250);
                 } else {
                     $('#file-too-large').show(250);
                 }
