@@ -107,5 +107,12 @@ Ajax::listen('assistance', function() {
 });
 
 Ajax::listen('upload-file', function() {
-   var_dump('WOW');die();
+    if ($_FILES['file']['size'] < 26214400) {
+        $file_name = mb_ereg_replace("([^\w\s\d\-_~,;\[\]\(\).])", '', $_FILES['file']['name']);
+        $target_file = wp_upload_dir()['basedir'] . '/assistance-files/' . $file_name;
+        move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file);
+    } else {
+        var_dump($_FILES);
+    }
+    die();
 });
