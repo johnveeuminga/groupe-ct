@@ -309,11 +309,6 @@
             var formData = new FormData();
             formData.append('file', file);
             formData.append('action', 'upload-file');
-            //
-            // var xhr = new XMLHttpRequest();
-            // // Add any event handlers here...
-            // xhr.open('POST', groupect.ajaxurl, true);
-            // xhr.send(formData);
 
             $.ajax({
                 url: groupect.ajaxurl,
@@ -323,7 +318,11 @@
                 processData: false,
                 contentType: false
             }).done(function (data) {
-                console.log(data);
+                if (data.status === 'success') {
+
+                } else {
+
+                }
             });
         });
   });

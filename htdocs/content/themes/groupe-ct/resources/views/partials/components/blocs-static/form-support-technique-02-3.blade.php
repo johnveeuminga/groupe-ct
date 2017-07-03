@@ -131,6 +131,8 @@
                             <span class="mention">{{ pll__("Joindre un test d'impression") }}</span>
                             <input type="file" name="assistance-upload" id="assistance-upload" class="tech-support-input">
                             <label class="btn-upload" for="assistance-upload">{{ pll__("Parcourir") }}</label>
+                            <a href="#" target="_blank" id="file-path"></a>
+                            <p id="file-too-large" style="display: none;">{{ pll__('Veuillez respecter le poid maximal!') }}</p>
                         </div>
                         <span class="mention">{{ pll__('Poids maximal de 25 Mo') }}</span>
                     </div>
