@@ -310,7 +310,7 @@
             $('#file-too-large').hide();
             $('#file-path').hide();
 
-            if (file.size < 25000000) {
+            if (file.size > 25000000) {
                 $('#file-too-large').show(250);
                 return false;
             }
