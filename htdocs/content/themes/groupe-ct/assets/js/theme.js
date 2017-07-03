@@ -359,7 +359,7 @@
                     if (data.status === 'success') {
                         $form.find('#assistance-success').show(250, function() {
                             console.log(isElementInViewport($('#assistance-success')));
-                            if (isElementInViewport($('#assistance-success'))) {
+                            if (false === isElementInViewport($('#assistance-success'))) {
                                 setTimeout(function () {
                                     $('html, body').animate({scrollTop:$('#assistance-success').position().top}, 'fast');
                                 }, 25);
