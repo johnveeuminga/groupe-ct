@@ -308,6 +308,11 @@
             var file = fileInput.files[0];
             var formData = new FormData();
 
+            if (file.size < 26214400) {
+                $('#file-too-large').show(250);
+                return false;
+            }
+
             console.log(file.size);
             console.log(file);
             formData.append('file', file);
