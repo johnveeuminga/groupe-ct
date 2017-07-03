@@ -25,6 +25,8 @@
 	<link rel="apple-touch-icon-precomposed" sizes="152x152" href="{{ themosis_assets() }}/images/favicon/Favicon_152x152.png">
 	<link rel="apple-touch-icon-precomposed" sizes="180x180" href="{{ themosis_assets() }}/images/favicon/Favicon_180x180.png">
 
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
 	<?php wp_head(); ?>
 
 </head>
