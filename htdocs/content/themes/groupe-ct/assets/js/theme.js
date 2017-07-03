@@ -311,7 +311,7 @@
                 is_submitting = true;
                 var $form = $(this);
 
-                $form.find('submit-btn').append('<i class="fa fa-spin fa-spinner"></i>"');
+                $form.find('.submit-btn').append('<i class="fa fa-spin fa-spinner"></i>"');
 
                 $.ajax({
                     url: groupect.ajaxurl,
@@ -337,7 +337,7 @@
                     }
                 }).done(function (data) {
                     is_submitting = false;
-                    $form.find('submit-btn > i').remove();
+                    $form.find('.submit-btn > i').remove();
 
                     if (data.status === 'success') {
                         $form.find('.newsletter-desc').hide();
