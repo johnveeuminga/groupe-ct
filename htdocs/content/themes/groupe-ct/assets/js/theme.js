@@ -305,6 +305,23 @@
         var inView = false,
             is_submitting = false;
 
+        function isElementInViewport (el) {
+
+            //special bonus for those using jQuery
+            if (typeof jQuery === "function" && el instanceof jQuery) {
+                el = el[0];
+            }
+
+            var rect = el.getBoundingClientRect();
+
+            return (
+                rect.top >= 0 &&
+                rect.left >= 0 &&
+                rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) && /*or $(window).height() */
+                rect.right <= (window.innerWidth || document.documentElement.clientWidth) /*or $(window).width() */
+            );
+        }
+
         $('#form-assistance').on('submit', function(e) {
             e.preventDefault();
             if (is_submitting === false) {
@@ -341,9 +358,11 @@
                     $form.find('.content-container').hide(250);
                     if (data.status === 'success') {
                         $form.find('#assistance-success').show(250, function() {
-                            setTimeout(function () {
-                                $('html, body').animate({scrollTop:$('#assistance-success').position().top}, 'fast');
-                            }, 25);
+                            if (isElementInViewport($('#assistance-success'))) {
+                                setTimeout(function () {
+                                    $('html, body').animate({scrollTop:$('#assistance-success').position().top}, 'fast');
+                                }, 25);
+                            }
                         });
                     } else {
                         $form.find('.server-error').html(data.error.message).show();
