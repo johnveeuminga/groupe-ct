@@ -239,17 +239,20 @@
     .input-container:nth-child(3) {
       @media (min-width: $screen-sm-min) {
         #assistance-compagny-name, #assistance-office{
-          width:50%;
+          width: 34%;
         }
       }
     }
-
+    #assistance-serial {
+      width:60%;
+    }
+    #assistance-office {
+      width: 100%;
+    }
     .input-container:nth-child(4) {
 
       @media (min-width: $screen-sm-min) {
-        #assistance-serial {
-          width:40%;
-        }
+
       }
 
     }
