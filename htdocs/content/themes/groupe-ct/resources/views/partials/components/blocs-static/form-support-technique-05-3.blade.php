@@ -11,7 +11,7 @@
     <div class="toggle-content open-content">
         <div class="text-container col-xs-12">
             <p>{!! pll__('Compteur description 1') !!} </p>
-            <p><a href="#" class="scroll-to" data-target="#_747">{!!  pll__('Compteur description 2') !!}</a></p>
+            <p><a href="#" class="scroll-to form-link" data-target="#_747">{!!  pll__('Compteur description 2') !!}</a></p>
         </div>
     </div>
 </div>
