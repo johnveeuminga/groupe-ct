@@ -17,7 +17,7 @@
                 </p>
                 <p>
                     {{ pll__('D’autres options s’offrent à vous. Contactez un agent par téléphone ou par courriel. Si vous êt déjà un client de Groupe CT, nous vous recommandons d’utiliser le portail') }}
-                    <a href="#section-mon-ct" class="form-link">{{ pll__('Mon CT.') }}</a>
+                    <a href="#" data-target="#_section-01" class="form-link scroll-to">{{ pll__('Mon CT.') }}</a>
                 </p>
             </div>
             <div id="fourniture-success" style="display: none">
@@ -81,10 +81,10 @@
                     <div class="input-container">
                         <select name="fourniture-office" id="fourniture-office" class="tech-support-input select-support">
                             <option value=""  disabled selected hidden>{{ pll__('Sélectionner votre point de service*') }}</option>
-                            <option value="m">{{ pll__('Groupe CT - Grande région de Montréal') }}</option>
-                            <option value="m">{{ pll__('Groupe CT - Grande région de Toronto') }}</option>
-                            <option value="m">{{ pll__('SAC - Région de Québec') }}</option>
-                            <option value="mme">{{ pll__('SAC - Région de la Beaucee') }}</option>
+                            <option value="1">{{ pll__('Groupe CT - Grande région de Montréal') }}</option>
+                            <option value="2">{{ pll__('Groupe CT - Grande région de Toronto') }}</option>
+                            <option value="3">{{ pll__('SAC - Région de Québec') }}</option>
+                            <option value="4">{{ pll__('SAC - Région de la Beauce') }}</option>
                         </select>
                     </div>
 

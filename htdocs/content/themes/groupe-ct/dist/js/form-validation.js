@@ -214,7 +214,8 @@
                         'assistance-phone': $form_assistance.find('#assistance-phone').val(),
                         'assistance-ext': $form_assistance.find('#assistance-ext').val(),
                         'assistance-compagny-name': $form_assistance.find('#assistance-compagny-name').val(),
-                        'assistance-office': $form_assistance.find('#assistance-compagny-name').val(),
+                        'assistance-office': $form_assistance.find('#assistance-office').val(),
+                        'assistance-office-name': $form_assistance.find('#assistance-office option:selected').text(),
                         'assistance-serial': $form_assistance.find('#assistance-serial').val(),
                         'assistance-opening01': $form_assistance.find('#assistance-opening01').val(),
                         'assistance-opening02': $form_assistance.find('#assistance-opening02').val(),
@@ -222,7 +223,7 @@
                         'assistance-opening04': $form_assistance.find('#assistance-opening04').val(),
                         'assistance-msg': $form_assistance.find('#assistance-msg').val(),
                         'assistance-file': $form_assistance.find('#file-path').attr('href'),
-                        'assistance-closed': $form_assistance.find('#assistance-closed').val()
+                        'assistance-closed': $form.find('#fourniture-closed').is(':checked') ? true : false,
                     }
                 }).done(function (data) {
                     is_submitting = false;
@@ -385,7 +386,8 @@
                         'fourniture-phone': $form_fourniture.find('#fourniture-phone').val(),
                         'fourniture-ext': $form_fourniture.find('#fourniture-ext').val(),
                         'fourniture-compagny-name': $form_fourniture.find('#fourniture-compagny-name').val(),
-                        'fourniture-office': $form_fourniture.find('#fourniture-compagny-name').val(),
+                        'fourniture-office': $form_fourniture.find('#fourniture-office').val(),
+                        'fourniture-office-name': $form_fourniture.find('#fourniture-office option:selected').text(),
                         'fourniture-serial': $form_fourniture.find('#fourniture-serial').val(),
                         'fourniture-msg': $form_fourniture.find('#fourniture-msg').val(),
                         'fourniture-contract': $form.find('#fourniture-contract').is(':checked') ? true : false,

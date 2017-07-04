@@ -1,4 +1,4 @@
-<div id="_section-04" class="toggle-main-container">
+<div id="_section-05" class="toggle-main-container">
     <div class="toggle-content-header active-header">
         <div class="toggle-title-container">
             <h3 class="toggle-content-title" href="">{{ pll__('Fournir une lecture de compteur') }}</h3>

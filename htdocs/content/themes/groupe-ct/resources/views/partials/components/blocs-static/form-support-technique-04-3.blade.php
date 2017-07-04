@@ -14,7 +14,7 @@
                 <p>{{ pll__('Que vous soyez déjà client ou non, notre équipe est là pour vous.') }}</p>
                 <p>
                     {{ pll__('Nos agents de service à la clientèle répondent à vos appels en tout temps du lundi au vendredi de 8h à 17h. Vous pouvez également faire une demande d’assistance 24h sur 24, 7 jours sur 7 via') }}
-                    <a class="form-link scroll-to" href="#" data-target="#_section-01">{{ pll__('Mon CT') }}</a>, {{ pll__('par courriel ou via le') }} <a class="form-link open-contact-form" href="#"> {{ pll__('formulaire en ligne') }}</a>.
+                    <a class="form-link scroll-to" href="#" data-target="#_section-01">{{ pll__('Mon CT') }}</a>, {{ pll__('par courriel ou via le') }} <a class="form-link scroll-to" data-target="#_section-02" href="#"> {{ pll__('formulaire en ligne') }}</a>.
 
                     {{ pll__('Votre demande sera traité le jour ouvrable suivant.') }}
 

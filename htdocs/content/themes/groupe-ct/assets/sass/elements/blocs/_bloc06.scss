@@ -1,8 +1,20 @@
 .three-col-icons-main-container {
-  padding-bottom: 50px;
-
+  padding: 30px 0 20px;
+  .three-col-icons-container {
+    padding: 0 30px;
+    text-align: center;
+    @media (min-width: $screen-sm-min) {
+      text-align: left;
+    }
+    .cta-see-more {
+      @include justify-content(center);
+      @media (min-width: $screen-sm-min) {
+        @include justify-content(left);
+      }
+    }
+  }
   .three-col-icons-item {
-    margin: 0;
+    margin: 0 0 50px;
     padding: 0!important;
 
     @media (min-width: $screen-xs-min) {
@@ -11,11 +23,16 @@
     @media (min-width: $screen-md-min) {
       @include flexbox();
       @include flex-direction(column);
+      margin: 0;
     }
 
     .three-col-icons-img-container {
 
       margin-bottom: 30px;
+
+      @media (min-width: $screen-sm-min) {
+        padding-right: 15px;
+      }
 
       @media (min-width: $screen-md-min) {
         text-align: left;
@@ -41,10 +58,6 @@
         }
       }
 
-      padding: 0 30px;
-      @media (min-width: $screen-md-min) {
-        padding: 0;
-      }
     }
 
   }//END three COL ICON ITEM

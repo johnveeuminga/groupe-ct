@@ -50,7 +50,8 @@ Ajax::listen('newsletter', function() {
 });
 
 Ajax::listen('contact', function() {
-    $to = 'michael.villeneuve@ctrlweb.ca'; // @todo condition sur l'environnement pour prod : ventes@ctgro[upect.com
+    $to = 'michael.villeneuve@ctrlweb.ca';
+
     $subject = 'Demande d\'information - formulaire Contact du site Web';
     $body = '';
     $body .= '<p>Titre : ' . $_POST['contact-title'] . '</p>';
@@ -65,10 +66,11 @@ Ajax::listen('contact', function() {
     $body .= '<p>Message : ' . nl2br($_POST['contact-message']) . '</p>';
     $body .= '<p>Langue du formulaire : ' . pll_current_language() . '</p>';
 
+
     if (isset($_POST['contact-accept']) && $_POST['contact-accept'] == true) {
         $mailchimp = new MailchimpHelper();
 
-        var_dump($mailchimp->save(
+        $mailchimp->save(
             $_POST['contact-email'],
             [
                 'FNAME' => $_POST['contact-firstname'],
@@ -77,7 +79,7 @@ Ajax::listen('contact', function() {
                 'BUSINESS' => $_POST['contact-compagny-name'],
                 'PHONE' => $_POST['contact-phone'],
             ]
-        ));
+        );
     }
     $headers = array('Content-Type: text/html; charset=UTF-8','From: Groupe CT Website <donotreply@groupect.com');
     wp_mail( $to, $subject, $body, $headers );
@@ -87,11 +89,18 @@ Ajax::listen('contact', function() {
 
 Ajax::listen('assistance', function() {
 
-//    Groupe CT : service@ctgroupect.com
-//SAC - Québec : service@sacgroupect.com
-//SAC - Beauce : support@sacgroupect.com
+    switch ($_POST['assistance-office']) {
+        case 1:
+            $to = 'service@ctgroupect.com';
+            break;
+        case 2:
+            $to = 'service@sacgroupect.com';
+            break;
+        case 3:
+            $to = 'support@sacgroupect.com';
+            break;
+    }
 
-    $to = 'michael.villeneuve@ctrlweb.ca'; // @todo condition sur l'environnement pour prod : ventes@ctgro[upect.com
     $subject = 'Demande d’assistance - formulaire du site Web';
     $body = '';
     $body .= '<p>Titre : ' . $_POST['assistance-title'] . '</p>';
@@ -102,13 +111,18 @@ Ajax::listen('assistance', function() {
     $body .= '<p>Téléphone : ' . $_POST['assistance-phone'] . '</p>';
     $body .= '<p>Poste: ' . $_POST['assistance-ext'] . '</p>';
     $body .= '<p>Numéro de série de l’appareil : ' . $_POST['assistance-serial'] . '</p>';
-    $body .= '<p>Bureau : ' . $_POST['assistance-office'] . '</p>';
+    $body .= '<p>Bureau : ' . $_POST['assistance-office-name'] . '</p>';
     $body .= '<p>Description du problème : ' . nl2br($_POST['assistance-msg']) . '</p>';
     $body .= '<p>Heures d’ouverture : ' . $_POST['assistance-opening01'] . ':' . $_POST['assistance-opening02'] . ' à ' . $_POST['assistance-opening03'] . ':' . $_POST['assistance-opening04'] . '</p>';
-    $opened = isset($_POST['assistance-message']) ? 'Oui' : 'Non';
+    $opened = $_POST['assistance-closed'] ? 'Oui' : 'Non';
     $body .= '<p>Bureau fermé le midi : ' . $opened . '</p>';
     $body .= '<p>Test d’impression : <a href="' . home_url() . $_POST['assistance-file'] . '">' . home_url() . $_POST['assistance-file'] . '</a></p>';
     $body .= '<p>Langue du formulaire : ' . pll_current_language() . '</p>';
+
+    if (!isset($_SERVER['APP_ENV']) || 'production' !== $_SERVER['APP_ENV']) {
+        $body .= '<p>NOTE DE DEV --- SERA ENVOYÉ À ' . $to . ' EN PRODUCTION</p>';
+        $to = 'michael.villeneuve@ctrlweb.ca';
+    }
 
     $headers = array('Content-Type: text/html; charset=UTF-8','From: Groupe CT Website <donotreply@groupect.com');
     wp_mail( $to, $subject, $body, $headers );
@@ -122,12 +136,23 @@ Ajax::listen('assistance', function() {
 
 Ajax::listen('fourniture', function() {
 
-//    Groupe CT : service@ctgroupect.com
-//SAC - Québec : service@sacgroupect.com
-//SAC - Beauce : support@sacgroupect.com
+    switch ($_POST['fourniture-office']) {
+        case 1:
+            $to = $_POST['fourniture-contract'] ? 'fournitures@ctgroupect.com' : 'fournitures@ctgroupect.com';
+            break;
+        case 2:
+            $to = $_POST['fourniture-contract'] ? 'supplies@ctgroupect.com' : 'supplies@ctgroupect.com';
+            break;
+        case 3:
+            $to = $_POST['fourniture-contract'] ? 'fournitures@sacgroupect.com' : 'fournitures@sacgroupect.com';
+            break;
+        case 4:
+            $to = $_POST['fourniture-contract'] ? 'support@sacgroupect.com' : 'support@sacgroupect.com';
+        break;
+    }
 
     $to = 'michael.villeneuve@ctrlweb.ca'; // @todo condition sur l'environnement pour prod : ventes@ctgro[upect.com
-    $subject = 'Demande d’fourniture - formulaire du site Web';
+    $subject = 'Commande de fournitures - formulaire du site Web';
     $body = '';
     $body .= '<p>Titre : ' . $_POST['fourniture-title'] . '</p>';
     $body .= '<p>Prénom : ' . $_POST['fourniture-firstname'] . '</p>';
@@ -137,11 +162,20 @@ Ajax::listen('fourniture', function() {
     $body .= '<p>Téléphone : ' . $_POST['fourniture-phone'] . '</p>';
     $body .= '<p>Poste: ' . $_POST['fourniture-ext'] . '</p>';
     $body .= '<p>Numéro de série de l’appareil : ' . $_POST['fourniture-serial'] . '</p>';
-    $body .= '<p>Bureau : ' . $_POST['fourniture-office'] . '</p>';
+
+    $contract = $_POST['assistance-closed'] ? 'Oui' : 'Non';
+    $body .= '<p>Appareil sous contrat de service : ' . $contract . '</p>';
+
+    $body .= '<p>Bureau : ' . $_POST['fourniture-office-name'] . '</p>';
     $body .= '<p>Description du problème : ' . nl2br($_POST['fourniture-msg']) . '</p>';
     $opened = isset($_POST['fourniture-contract']) ? 'Oui' : 'Non';
     $body .= '<p>Contract : ' . $opened . '</p>';
     $body .= '<p>Langue du formulaire : ' . pll_current_language() . '</p>';
+
+    if (!isset($_SERVER['APP_ENV']) || 'production' !== $_SERVER['APP_ENV']) {
+        $body .= '<p>NOTE DE DEV --- SERA ENVOYÉ À ' . $to . ' EN PRODUCTION</p>';
+        $to = 'michael.villeneuve@ctrlweb.ca';
+    }
 
     $headers = array('Content-Type: text/html; charset=UTF-8','From: Groupe CT Website <donotreply@groupect.com');
     wp_mail( $to, $subject, $body, $headers );

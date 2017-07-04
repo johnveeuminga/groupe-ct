@@ -2,10 +2,10 @@
   position: relative;
   text-align: center;
 
-  padding-top: 30px;
-  @media (min-width: $screen-md-min) {
-    padding-top: 75px;
-  }
+  padding-top: 15px;
+  //@media (min-width: $screen-md-min) {
+  //  padding-top: 75px;
+  //}
 
   .four-col-icons-container {
 
@@ -21,18 +21,18 @@
 
   .four-col-icons-item {
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     @media (min-width: $screen-md-min) {
       @include flexbox();
       @include flex-direction(column);
       @include align-items(center);
+      margin-bottom: 0;
     }
 
     .four-col-icons-img-container {
       text-align: center;
       margin: auto;
-      height: 92px;
-
+      height: 100%;
       @media (min-width: $screen-sm-min) {
         max-width: 130px;
         @include flexbox();
