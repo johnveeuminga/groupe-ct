@@ -9,3 +9,23 @@
     padding: 15px 0 0;
   }
 }
+
+.row-849,
+.row-859,
+.row-399,
+.row-401,
+.row-402,
+.row-957 {
+  @media (max-width: $screen-sm-min) {
+    padding-top: 20px;
+  }
+}
+
+.row-741 {
+  h2 {
+    margin-bottom: 0;
+  }
+  @media (max-width: $screen-sm-min) {
+    padding-top: 20px;
+  }
+}

@@ -57,6 +57,10 @@ main {
       margin-top: -100px;
     }
   }
+
+  @media (max-width: $screen-sm-min) {
+    padding-top: 30px;
+  }
 }
 
 //Reset flexboxgrid
@@ -85,8 +89,10 @@ main {
   position: absolute;
   z-index: -1;
   left: 0;
-  bottom:16px;
-  border-bottom: 12px solid #a91b2d;
+  border-bottom: 6px solid #a91b2d;
+  @media (min-width: $screen-sm-min) {
+    border-bottom: 12px solid #a91b2d;
+  }
   width: 95%;
   margin: auto;
   margin-left: 6px;
@@ -242,8 +248,8 @@ main {
   list-style: none;
   text-transform: uppercase;
 
-
-  @media (min-width: $screen-lg-min) {
+  margin-top: 30px;
+  @media (min-width: $screen-sm-min) {
     margin-top: 50px;
   }
 }
@@ -439,24 +445,13 @@ main {
 }
 
 
-
-/* JUST FOR DEV */
-
-.bloc-name {
-  background-color: $red;
-  padding: 25px;
-  margin:50px 0;
-  @include set-font(16px, $poppins, 400, white);
-  display: none;
-}
-
 .h2-size {
   @include font-size(27px);
   text-transform: uppercase;
 
   @media (min-width: $screen-sm-min) {
     @include font-size(32px);
-    padding: 30px 0;
+    padding: 30px 0 0;
   }
 
   @media (min-width: $screen-md-min) {
@@ -465,12 +460,31 @@ main {
   }
 }
 
-.text-size {
-  @include font-size(16px);
-  line-height: 24px;
+.h3-size {
+  @include set-font(22px, $mada, 400, $black);
+  text-transform: uppercase;
+  padding: 25px 0;
 
   @media (min-width: $screen-sm-min) {
+    @include set-font(22px, $mada, 400, $black);
+    line-height: 32px;
+  }
+
+}
+
+.text-size {
+  //@include font-size(18px);
+  //line-height: 24px;
+
+  //@media (min-width: $screen-sm-min) {
     @include font-size(22px);
     line-height: 32px;
+  //}
+}
+
+.center-mobile {
+  text-align: center;
+  @media (min-width: $screen-md-min) {
+    text-align: left;
   }
 }

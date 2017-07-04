@@ -2,12 +2,56 @@
 
   .toggle-main-container {
     max-width: 1200px;
+
+    .toggle-content-title {
+      margin-left: 20px;
+    }
+    @media (min-width: $screen-sm-min) {
+      .toggle-content-title {
+        margin-left: 0;
+      }
+    }
+    @media (min-width: $screen-lg-min) {
+      .toggle-content-title {
+        margin-left: 15px;
+      }
+    }
+    #form-my-ct {
+      p {
+        padding: 0 30px;
+
+
+        @media (min-width: $screen-lg-min) {
+          padding: 0;
+        }
+      }
+    }
   }
 
+
+  #_section-02 {
+    .toggle-content-header {
+      padding: 10px 25px 10px 10px;
+      @media (min-width: $screen-sm-min) {
+        padding: 10px 25px 10px 25px;
+      }
+    }
+  }
+  
+  #form-assistance {
+    display: block!important;
+    p {
+      padding: 0 30px;
+      @media (min-width: $screen-lg-min) {
+        padding: 0 ;
+      }
+    }
+  }
 
   /*** Text elements ***/
   p {
     @extend .mada22LightBlack;
+    @extend .text-size;
     margin-bottom: 30px;
   }
   .error-msg-container {
@@ -38,8 +82,14 @@
 
   /**** Form General css ****/
   .form-container {
-    margin-top: 35px;
-    margin-bottom: 70px;
+    margin: 35px 0 25px;
+    @media (min-width: $screen-sm-min) {
+      margin: 35px 0 5px;
+    }
+    @media (min-width: $screen-md-min) {
+      margin: 35px 0;
+    }
+
     width: 100%;
     @include flexbox();
     @include flex-direction(column);
@@ -59,18 +109,31 @@
       @include flexbox();
       @include flex-direction(column);
 
-    }
-    .form-left-container {
-      margin-bottom:30px;
-      @media (min-width: $screen-md-min) {
-        margin-bottom:0px;
-        padding-left:0;
+      @media (max-width: $screen-sm-min - 1) {
+        input, select {
+          display: flex;
+          width: 100% !important;
+        }
+        .input-container {
+          flex-direction: row;
+          flex-wrap: wrap;
+          justify-content: center;
+        }
       }
-    }
-    .form-right-container {
 
-      @media (min-width: $screen-md-min) {
-        padding-right:0;
+    }
+
+    .form-right-container {
+      @media (max-width: $screen-md-min - 1) {
+        input, select {
+          display: flex;
+          width: 100% !important;
+        }
+        .input-container {
+          flex-direction: row;
+          flex-wrap: wrap;
+          justify-content: center;
+        }
       }
     }
 
@@ -196,20 +259,31 @@
 
 
   #form-my-ct {
-      @include flex-direction(column);
+    display: block;
 
-     .my-ct-link {
-        padding:50px 0;
-        @media (min-width: $screen-md-min) {
-          margin:0 50px;
-        }
-     }
+    .my-ct-link {
+      padding:50px 0;
+      @media (min-width: $screen-md-min) {
+        margin:0 50px;
+      }
+    }
+
+    .form-content-container {
+      padding: 0 30px;
+      @media (min-width: $screen-sm-min) {
+        padding: 0 20px;
+      }
+      @media (min-width: $screen-md-min) {
+        padding: 0;
+      }
+    }
   }
 
   /*** FORM 2 ***/
   #form-assistance{
 
     .content-container {
+      margin: 30px;
       @media (min-width: $screen-md-min) {
         @include flexbox();
         @include flex-direction(row);
@@ -265,14 +339,15 @@
       }
 
       .opening-main-container {
-        @include flexbox();
-        @include flex-direction(column);
-        @media (min-width: $screen-xs-min) {
+        display: block;
+        @media (min-width: $screen-md-min) {
+          @include flexbox();
+          @include flex-direction(column);
           @include flex-direction(row);
         }
-        @media (min-width: $screen-sm-min) {
-          //@include flex-direction(column);
-        }
+
+        //background: red;
+        //height: 300px;
       }
       .opening {
         @include flexbox();
@@ -286,6 +361,11 @@
             //margin-left: 10px;
           }
         }
+
+        @media (max-width: $screen-sm-min - 1) {
+          flex-direction: row;
+          flex-wrap: wrap;
+        }
       }
 
       .hour-to {
@@ -293,6 +373,10 @@
         display: flex;
         @media (min-width: $screen-xs-min) {
           margin:0 40px 8px 30px;
+        }
+
+        @media (max-width: $screen-md-min - 1) {
+          display: none;
         }
       }
 
@@ -319,9 +403,9 @@
     .form-right-container {
 
       #assistance-msg {
-        min-height:370px;
         @media (min-width: $screen-sm-min) {
           width:100%;
+          min-height:370px;
         }
       }
       
@@ -479,16 +563,24 @@
     .form-right-container {
 
       #fourniture-msg {
-        min-height: 370px;
         @media (min-width: $screen-sm-min) {
           width: 100%;
+          min-height: 370px;
         }
       }
+    }
+
+    .submit-btn {
+      border: 0;
+    }
+
+    .text-container, .content-container {
+      margin: 0 30px 30px;
     }
   }
   /*** FORM 4 ***/
   #form-ressource {
-
+    display: block;
     .form-content-container {
       @include flexbox();
       @include flex-direction(column);
@@ -529,6 +621,11 @@
       }
     }
 
+    .text-container,
+    .content-container,
+    .form-content-container{
+      margin: 0 30px;
+    }
   }
 
   /*** Specials class for forms ***/
@@ -538,6 +635,10 @@
 
   .fullWidth {
     width:100%;
+  }
+
+  #_section-04 .text-container{
+    margin: 0 30px;
   }
 
 }//SECTION END

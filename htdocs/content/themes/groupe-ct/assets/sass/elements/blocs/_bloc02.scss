@@ -62,19 +62,23 @@
     }
 
     .text-container-title {
-     @extend .poppins44BoldBlack;
-     @extend .h2-size;
+      @extend .poppins44BoldBlack;
+      @extend .h2-size;
+      @extend .center-mobile;
     }
+
     .text-container-subtitle {
       @include set-font(22px, $poppins, 700, $blue);
       text-transform: uppercase;
       margin:15px 0;
+      @extend .center-mobile;
     }
 
 
     p {
       @include set-font(16px, $mada, 300, $black);
       @extend .text-size;
+      @extend .center-mobile;
       margin: 15px 0;
 
       &.upper-title {

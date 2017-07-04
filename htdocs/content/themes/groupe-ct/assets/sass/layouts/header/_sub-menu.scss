@@ -18,7 +18,7 @@
     left:0;
     top:0;
     background-color: $black;
-    @include transition(left 0.6s ease);
+    //@include transition(left 0.6s ease);
   }
 
   .sub-menu-title {
@@ -68,6 +68,30 @@
       }
     }
 
+  }
+
+  .nl1 {
+    .nav-sub {
+      height: 240px;
+    }
+  }
+
+  .nl2 {
+    .nav-sub-container {
+      height: 190px;
+    }
+  }
+
+  .nl3 {
+    .nav-sub {
+      height: 240px;
+    }
+  }
+
+  .nl4 {
+    .nav-sub {
+      height: 290px;
+    }
   }
 }
 

@@ -62,6 +62,14 @@
     top: 12px;
   }
 }
+.mobile-open-contact-form {
+  text-transform: !important;
+
+  :first-letter {
+    text-transform: uppercase!important;
+  }
+
+}
 
 /*** TOP BAR END *****/
 

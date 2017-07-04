@@ -1,11 +1,6 @@
 .two-col-icons-text-main-container {
 
-  margin: 45px auto;
-
-  @media (min-width: $screen-xxl-min) {
-    margin-top: 120px;
-    margin-bottom: 85px;
-  }
+  margin: 45px auto 0;
 
   @include flexbox();
   @include flex-direction(column);
@@ -29,9 +24,6 @@
     }
     text-align: center;
 
-    @media (min-width: $screen-xs-min) {
-     //flex-basis:45%;
-    }
     @media (min-width: $screen-md-min) {
       @include flexbox();
       @include flex-direction(column);
@@ -44,12 +36,16 @@
 
 
     .two-col-icons-text-title {
-      @include set-font(30px, $poppins, 700, $black);
+      @include set-font(24px, $poppins, 700, $black);
       text-transform: uppercase;
-      margin: 30px 0 45px;
+      margin: 15px 0;
 
+      @media (min-width: $screen-sm-min) {
+        @include set-font(30px, $poppins, 700, $black);
+        margin: 15px;
+      }
       @media (min-width: $screen-xxl-min) {
-        margin: 30px 0 45px;
+        margin: 30px;
       }
     }
     .two-col-icons-text-desc {

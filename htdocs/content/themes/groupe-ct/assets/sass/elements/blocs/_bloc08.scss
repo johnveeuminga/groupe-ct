@@ -1,6 +1,6 @@
 .toggle-content-main-container {
 
-  padding:50px 0;
+  padding:50px 0 0;
 
   .toggle-content-container {
     margin-bottom:10px;
@@ -96,7 +96,7 @@
 
     &.active-header {
       @include background-transition();
-      background-color: $blue;
+      background-color: $blue!important;
     }
   }
 
@@ -117,11 +117,18 @@
 
   .wys-content {
     text-align: center;
-    padding: 110px 0;
+
+    padding: 50px 0 30px;
+    @media (min-width: $screen-sm-min) {
+      padding: 60px 0;
+    }
+
     h1, h2 {
       @include set-font(44px, $poppins, 700, $blue);
       text-transform: uppercase;
       padding-bottom: 25px;
+
+      @extend .h2-size;
     }
     h3,h4,h5,h6  {
       @include set-font(22px, $mada, 400, $black);
@@ -150,6 +157,16 @@
     }
   }
 
+  .toggle-content {
+    @media (max-width: $screen-sm-min) {
+      width: 90%;
+      padding: 0 30px;
+    }
+    @media (max-width: $screen-sm-min) {
+      width: 82%;
+    }
+
+  }
 
 }//toggle-content-main-container END
 

@@ -2,7 +2,8 @@
   position: relative;
   text-align: center;
 
-  @media (min-width: $screen-sm-min) {
+  padding-top: 30px;
+  @media (min-width: $screen-md-min) {
     padding-top: 75px;
   }
 
@@ -30,6 +31,7 @@
     .four-col-icons-img-container {
       text-align: center;
       margin: auto;
+      height: 92px;
 
       @media (min-width: $screen-sm-min) {
         max-width: 130px;
@@ -59,8 +61,18 @@
       @media (min-width: $screen-sm-min) {
         @include font-size(18px);
       }
+
     }
 
+    @media (min-width: $screen-sm-min) and (max-width: $screen-md-min ) {
+      &:nth-child(odd) {
+        padding-right: 15px;
+      }
+
+      &:nth-child(even) {
+        padding-left: 15px;
+      }
+    }
   }//END FOUR COL ICON ITEM
 
   .btn-container {

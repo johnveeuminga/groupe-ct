@@ -21,17 +21,17 @@ $bloc_19_remove_margin = isset($bloc_19_remove_margin) ? $bloc_19_remove_margin 
         <!-- TITLE START -->
         <div class="section-title-container">
 
-            {{--@if(isset($bloc_19_subheader))--}}
+            @if(isset($bloc_19_subheader) && !empty($bloc_19_subheader))
                 <p class="{{ $bloc_19_subheader_carret === true ? 'upper-title' : 'upper-title-no-dot' }} {{ $bloc_19_center_subheader === true ? 'align-center' : '' }}">{{ $bloc_19_subheader }}</p> <!-- upper-title-no-dot : enleve le list style -->
-            {{--@endif--}}
+            @endif
 
-            {{--@if(isset($bloc_19_title))--}}
+            @if(isset($bloc_19_title) && !empty($bloc_19_title))
                 <h2 class="title {{ $bloc_19_center_title === true ? 'align-center' : '' }} @if($bloc_19_remove_margin) no-margin-xs @endif">{!! $bloc_19_title !!} </h2> <!-- align-center : text-align:center for title and desc  -->
-            {{--@endif--}}
+            @endif
 
-            {{--@if(isset($bloc_19_description))--}}
+            @if(isset($bloc_19_description) && !empty($bloc_19_description))
                 <div class="desc {{ $bloc_19_center_description === true ? 'align-center' : '' }}">{!! $bloc_19_description !!}</div>
-            {{--@endif--}}
+            @endif
         </div>
         <!-- TITLE END -->
     </div>

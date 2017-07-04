@@ -1,6 +1,11 @@
 .hero-page  {
   position: relative;
 
+  height: calc(100vh - 120px);
+  @media (min-width: $screen-sm-min) {
+    height: auto;
+  }
+
   .hero-content-container {
 
     @include flexbox();
@@ -42,7 +47,21 @@
         margin-left: -5px;
         margin-right: -5px;
         text-transform: uppercase;
-        @extend .poppins80BoldWhite;
+
+        @include set-font(32px, $poppins, 700, white);
+        text-transform: uppercase;
+        @media (min-width: $screen-xs-min) {
+          @include set-font(42px, $poppins, 700, white);
+        }
+
+        @media (min-width: $screen-sm-min) {
+          @include set-font(50px, $poppins, 700, white);
+        }
+
+        @media (min-width: $screen-xxl-min) {
+          @include set-font(70px, $poppins, 700, white);
+          line-height: 87px;
+        }
       }
     }
 
@@ -66,14 +85,20 @@
 
       z-index: -1;
       left: 0;
-      bottom: 40px;
       border-bottom: 12px solid #a91b2d;
       width: 98%;
       margin: auto;
       margin-left: 12px;
 
-    }
+      bottom: 17px;
+      @media (min-width: $screen-sm-min) {
+        bottom: 26px;
+      }
 
+      @media (min-width: $screen-xxl-min) {
+        bottom: 36px;
+      }
+    }
   }
 
   .hero-arrow {
@@ -84,13 +109,14 @@
       position: relative;
     }
   }
+
 }
 
 
 .hero {
   position: relative;
   width: 100%;
-  overflow: hidden;
+  //overflow: hidden;
 
   height: calc(100vh - 120px);
   @media (min-width: $screen-sm-min) {
@@ -196,6 +222,11 @@
 
   .red-border:after {
     bottom: 17px;
+
+
+    @media (min-width: $screen-sm-min) {
+      bottom: 26px;
+    }
 
     @media (min-width: $screen-xxl-min) {
       bottom: 36px;

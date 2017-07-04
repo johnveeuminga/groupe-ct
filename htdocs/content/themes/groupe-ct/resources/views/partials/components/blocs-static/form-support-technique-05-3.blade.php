@@ -9,15 +9,10 @@
     </div>
 
     <div class="toggle-content open-content">
-        <form id="form-ressource" class="form-container">
-            <div class="text-container col-xs-12">
-                <p>{!! pll__('Compteur description 1') !!} </p>
-                <p><a href="#" class="scroll-to" data-target="#_747">{!!  pll__('Compteur description 2') !!}</a></p>
-            </div>
-            <div class="form-footer">
-                <p></p>
-            </div>
-        </form>
+        <div class="text-container col-xs-12">
+            <p>{!! pll__('Compteur description 1') !!} </p>
+            <p><a href="#" class="scroll-to" data-target="#_747">{!!  pll__('Compteur description 2') !!}</a></p>
+        </div>
     </div>
 </div>
 

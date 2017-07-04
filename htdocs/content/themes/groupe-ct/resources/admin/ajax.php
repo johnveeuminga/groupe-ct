@@ -65,6 +65,20 @@ Ajax::listen('contact', function() {
     $body .= '<p>Message : ' . nl2br($_POST['contact-message']) . '</p>';
     $body .= '<p>Langue du formulaire : ' . pll_current_language() . '</p>';
 
+    if (isset($_POST['contact-accept']) && $_POST['contact-accept'] == true) {
+        $mailchimp = new MailchimpHelper();
+
+        var_dump($mailchimp->save(
+            $_POST['contact-email'],
+            [
+                'FNAME' => $_POST['contact-firstname'],
+                'LNAME' => $_POST['contact-lastname'],
+                'TITLE' => $_POST['contact-title'],
+                'BUSINESS' => $_POST['contact-compagny-name'],
+                'PHONE' => $_POST['contact-phone'],
+            ]
+        ));
+    }
     $headers = array('Content-Type: text/html; charset=UTF-8','From: Groupe CT Website <donotreply@groupect.com');
     wp_mail( $to, $subject, $body, $headers );
 
@@ -94,6 +108,39 @@ Ajax::listen('assistance', function() {
     $opened = isset($_POST['assistance-message']) ? 'Oui' : 'Non';
     $body .= '<p>Bureau fermé le midi : ' . $opened . '</p>';
     $body .= '<p>Test d’impression : <a href="' . home_url() . $_POST['assistance-file'] . '">' . home_url() . $_POST['assistance-file'] . '</a></p>';
+    $body .= '<p>Langue du formulaire : ' . pll_current_language() . '</p>';
+
+    $headers = array('Content-Type: text/html; charset=UTF-8','From: Groupe CT Website <donotreply@groupect.com');
+    wp_mail( $to, $subject, $body, $headers );
+
+    echo json_encode([
+        'status' => 'success'
+    ]);
+
+    die();
+});
+
+Ajax::listen('fourniture', function() {
+
+//    Groupe CT : service@ctgroupect.com
+//SAC - Québec : service@sacgroupect.com
+//SAC - Beauce : support@sacgroupect.com
+
+    $to = 'michael.villeneuve@ctrlweb.ca'; // @todo condition sur l'environnement pour prod : ventes@ctgro[upect.com
+    $subject = 'Demande d’fourniture - formulaire du site Web';
+    $body = '';
+    $body .= '<p>Titre : ' . $_POST['fourniture-title'] . '</p>';
+    $body .= '<p>Prénom : ' . $_POST['fourniture-firstname'] . '</p>';
+    $body .= '<p>Nom : ' . $_POST['fourniture-lastname'] . '</p>';
+    $body .= '<p>Entreprise : ' . $_POST['fourniture-compagny-name'] . '</p>';
+    $body .= '<p>Courriel : ' . $_POST['fourniture-email'] . '</p>';
+    $body .= '<p>Téléphone : ' . $_POST['fourniture-phone'] . '</p>';
+    $body .= '<p>Poste: ' . $_POST['fourniture-ext'] . '</p>';
+    $body .= '<p>Numéro de série de l’appareil : ' . $_POST['fourniture-serial'] . '</p>';
+    $body .= '<p>Bureau : ' . $_POST['fourniture-office'] . '</p>';
+    $body .= '<p>Description du problème : ' . nl2br($_POST['fourniture-msg']) . '</p>';
+    $opened = isset($_POST['fourniture-contract']) ? 'Oui' : 'Non';
+    $body .= '<p>Contract : ' . $opened . '</p>';
     $body .= '<p>Langue du formulaire : ' . pll_current_language() . '</p>';
 
     $headers = array('Content-Type: text/html; charset=UTF-8','From: Groupe CT Website <donotreply@groupect.com');
