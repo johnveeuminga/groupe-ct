@@ -108,6 +108,7 @@
     .form-left-container, .form-right-container {
       @include flexbox();
       @include flex-direction(column);
+      padding: 0;
 
       @media (max-width: $screen-sm-min - 1) {
         input, select {
@@ -126,6 +127,7 @@
     .form-right-container {
       @media (max-width: $screen-md-min - 1) {
         input, select {
+
           display: flex;
           width: 100% !important;
         }
@@ -163,7 +165,6 @@
     }
 
     .form-left-container .tech-support-input {
-
       @media (min-width: $screen-sm-min) {
         margin-right:10px;
       }
@@ -287,6 +288,10 @@
       @media (min-width: $screen-md-min) {
         @include flexbox();
         @include flex-direction(row);
+      }
+      @media (min-width: $screen-lg-min) {
+        margin: 0;
+        padding: 0;
       }
     }
 
@@ -576,6 +581,10 @@
 
     .text-container, .content-container {
       margin: 0 30px 30px;
+      @media (min-width: $screen-lg-min) {
+        margin: 0;
+        padding: 0;
+      }
     }
   }
   /*** FORM 4 ***/
@@ -625,6 +634,10 @@
     .content-container,
     .form-content-container{
       margin: 0 30px;
+      @media (min-width: $screen-lg-min) {
+        margin: 0;
+        padding: 0;
+      }
     }
   }
 
@@ -639,6 +652,10 @@
 
   #_section-04 .text-container{
     margin: 0 30px;
+    @media (min-width: $screen-lg-min) {
+      margin: 0;
+      padding: 0;
+    }
   }
 
 }//SECTION END
