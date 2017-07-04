@@ -23,7 +23,7 @@
             <div id="fourniture-success" style="display: none">
                 <p><strong>{{ pll__('Confirmation de commande de fournitures') }}</strong></p>
                 <p>{{ pll__('Merci d\'utiliser le service de commande en ligne CT. Votre commande a été reçue avec succès et sera traitée dans les plus brefs délais durant les heures ouvrables. Un agent communiquera avec vous sous peu.') }}</p>
-                <p>{{ pll__('Saviez-vous que Groupe CT offre un service de commande de cartouches automatisé sans frais? Renseignez-vous dès maintenant! (lien vers la section Printfleet du support)') }}</p>
+                <p>{{ pll__('Saviez-vous que Groupe CT offre un service de commande de cartouches automatisé sans frais? Renseignez-vous dès maintenant!') }}</p>
                 <p>{{ pll__('Merci !') }}</p>
             </div>
 

@@ -12,7 +12,7 @@
         <form id="form-assistance" class="form-container">
             <div class="text-container col-xs-12">
                 <p>
-                    {!! nl2br(pll__('Demande d\'assistance - Description')) !!}&nbsp;<a class="scroll-to form-link" href="#" data-target="#_section-01">{{ pll__('Mon CT.') }}</a>
+                    {!! nl2br(pll__('Demande d\'assistance - Description')) !!}
                 </p>
             </div>
             <div id="assistance-success" style="display: none">
