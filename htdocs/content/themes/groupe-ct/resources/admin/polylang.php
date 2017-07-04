@@ -235,6 +235,11 @@ if (function_exists('pll_register_string'))
     pll_register_string('ASSISTANCE TECHNIQUE - Lecture de compteurs- 3.0', 'Compteur description 1', GROUPE_CT, true);
     pll_register_string('ASSISTANCE TECHNIQUE - Lecture de compteurs- 3.0', 'Compteur description 2', GROUPE_CT, true);
 
+    pll_register_string('ASSISTANCE TECHNIQUE - Lecture de compteurs- 3.0', 'Confirmation de commande de fournitures', GROUPE_CT, false);
+    pll_register_string('ASSISTANCE TECHNIQUE - Lecture de compteurs- 3.0', 'Compteur description 1', GROUPE_CT, true);
+    pll_register_string('ASSISTANCE TECHNIQUE - Lecture de compteurs- 3.0', 'Compteur description 2', GROUPE_CT, true);
+
+
     /** */
     pll_register_string('', 'Poste:', false);
 

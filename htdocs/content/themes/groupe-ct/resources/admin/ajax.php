@@ -64,7 +64,7 @@ Ajax::listen('contact', function() {
     $body .= '<p>Téléphone : ' . $_POST['contact-phone'] . '</p>';
     $body .= '<p>Poste : ' . $_POST['contact-ext'] . '</p>';
     $body .= '<p>Message : ' . nl2br($_POST['contact-message']) . '</p>';
-    $body .= '<p>Langue du formulaire : ' . pll_current_language() . '</p>';
+    $body .= '<p>Langue du formulaire : ' . pll_current_language() === 'fr' ? 'français' : 'anglais' . '</p>';
 
 
     if (isset($_POST['contact-accept']) && $_POST['contact-accept'] == true) {
@@ -117,7 +117,7 @@ Ajax::listen('assistance', function() {
     $opened = $_POST['assistance-closed'] ? 'Oui' : 'Non';
     $body .= '<p>Bureau fermé le midi : ' . $opened . '</p>';
     $body .= '<p>Test d’impression : <a href="' . home_url() . $_POST['assistance-file'] . '">' . home_url() . $_POST['assistance-file'] . '</a></p>';
-    $body .= '<p>Langue du formulaire : ' . pll_current_language() . '</p>';
+    $body .= '<p>Langue du formulaire : ' . pll_current_language() === 'fr' ? 'français' : 'anglais' . '</p>';
 
     if (!isset($_SERVER['APP_ENV']) || 'production' !== $_SERVER['APP_ENV']) {
         $body .= '<p>NOTE DE DEV --- SERA ENVOYÉ À ' . $to . ' EN PRODUCTION</p>';
@@ -167,8 +167,8 @@ Ajax::listen('fourniture', function() {
     $body .= '<p>Appareil sous contrat de service : ' . $contract . '</p>';
 
     $body .= '<p>Bureau : ' . $_POST['fourniture-office-name'] . '</p>';
-    $body .= '<p>Description du problème : ' . nl2br($_POST['fourniture-msg']) . '</p>';
-    $body .= '<p>Langue du formulaire : ' . pll_current_language() . '</p>';
+    $body .= '<p>Détail de la commande : ' . nl2br($_POST['fourniture-msg']) . '</p>';
+    $body .= '<p>Langue du formulaire : ' . pll_current_language() === 'fr' ? 'français' : 'anglais' . '</p>';
 
     if (!isset($_SERVER['APP_ENV']) || 'production' !== $_SERVER['APP_ENV']) {
         $body .= '<p>NOTE DE DEV --- SERA ENVOYÉ À ' . $to . ' EN PRODUCTION</p>';

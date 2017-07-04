@@ -16,13 +16,14 @@
                     {{ pll__('Commandez rapidement et facilement des fournitures en remplissant le formulaire ci-dessous. Votre commande sera livrée dans un délai de 24 à 48 h ouvrable.') }}
                 </p>
                 <p>
-                    {{ pll__('D’autres options s’offrent à vous. Contactez un agent par téléphone ou par courriel. Si vous êt déjà un client de Groupe CT, nous vous recommandons d’utiliser le portail') }}
+                    {{ pll__('D\'autres options s\'offrent à vous. Contactez un agent par téléphone ou par courriel. Si vous êt déjà un client de Groupe CT, nous vous recommandons d\'utiliser le portail') }}
                     <a href="#" data-target="#_section-01" class="form-link scroll-to">{{ pll__('Mon CT.') }}</a>
                 </p>
             </div>
             <div id="fourniture-success" style="display: none">
-                <p><strong>{{ pll__('Confirmation de demande d\'assistance') }}</strong></p>
-                <p>{{ pll__('Merci d\'avoir contacté l\'assistance technique CT. Votre demande a été reçue avec succès et sera traitée dans les plus brefs délais durant nos heures d\'ouverture. Un agent communiquera avec vous sous peu.') }}</p>
+                <p><strong>{{ pll__('Confirmation de commande de fournitures') }}</strong></p>
+                <p>{{ pll__('Merci d\'utiliser le service de commande en ligne CT. Votre commande a été reçue avec succès et sera traitée dans les plus brefs délais durant les heures ouvrables. Un agent communiquera avec vous sous peu.') }}</p>
+                <p>{{ pll__('Saviez-vous que Groupe CT offre un service de commande de cartouches automatisé sans frais? Renseignez-vous dès maintenant! (lien vers la section Printfleet du support)') }}</p>
                 <p>{{ pll__('Merci !') }}</p>
             </div>
 
@@ -72,7 +73,7 @@
                     <!-- INPUT CONTAINER START -->
                     <div class="input-container">
                         <label for="fourniture-serial"></label>
-                        <input type="text" id="fourniture-serial" class="tech-support-input" name="fourniture-serial" placeholder="{{ pll__('Numéro de série de l’appareil*') }}">
+                        <input type="text" id="fourniture-serial" class="tech-support-input" name="fourniture-serial" placeholder="{{ pll__('Numéro de série de l\'appareil*') }}">
                         <input type="checkbox" name="fourniture-contract" id="fourniture-contract">
                         <label for="fourniture-contract">{{ pll__("Équipement sous contrat de service") }}</label>
                     </div>
@@ -94,7 +95,7 @@
                     <!-- INPUT CONTAINER START -->
                     <div class="input-container">
                         <label for="fourniture-msg"></label>
-                        <textarea name="fourniture-msg" id="fourniture-msg" class="tech-support-input" cols="30" rows="10" placeholder="{{ pll__('Détail de la commande (No# d’item, description, quantité, …)*') }}"></textarea>
+                        <textarea name="fourniture-msg" id="fourniture-msg" class="tech-support-input" cols="30" rows="10" placeholder="{{ pll__('Détail de la commande (No# d\'item, description, quantité, …)*') }}"></textarea>
                     </div>
 
                     <div class="form-submit">
