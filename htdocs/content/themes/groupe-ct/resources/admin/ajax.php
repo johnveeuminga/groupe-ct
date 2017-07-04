@@ -163,13 +163,11 @@ Ajax::listen('fourniture', function() {
     $body .= '<p>Poste: ' . $_POST['fourniture-ext'] . '</p>';
     $body .= '<p>Numéro de série de l’appareil : ' . $_POST['fourniture-serial'] . '</p>';
 
-    $contract = $_POST['assistance-closed'] ? 'Oui' : 'Non';
+    $contract = $_POST['fourniture-contract'] ? 'Oui' : 'Non';
     $body .= '<p>Appareil sous contrat de service : ' . $contract . '</p>';
 
     $body .= '<p>Bureau : ' . $_POST['fourniture-office-name'] . '</p>';
     $body .= '<p>Description du problème : ' . nl2br($_POST['fourniture-msg']) . '</p>';
-    $opened = isset($_POST['fourniture-contract']) ? 'Oui' : 'Non';
-    $body .= '<p>Contract : ' . $opened . '</p>';
     $body .= '<p>Langue du formulaire : ' . pll_current_language() . '</p>';
 
     if (!isset($_SERVER['APP_ENV']) || 'production' !== $_SERVER['APP_ENV']) {
