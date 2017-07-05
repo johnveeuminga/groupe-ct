@@ -1,4 +1,4 @@
-<div class="bloc-contact-container default-padding default-width">
+<div class="bloc-contact-container default-padding default-width static-4-7">
 
     <div class="contact-container">
         <div class="inner-container">
