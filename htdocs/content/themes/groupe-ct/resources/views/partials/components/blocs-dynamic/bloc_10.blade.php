@@ -1,34 +1,18 @@
-<div class="bloc-product-search-main-container">
-    <div class="bloc-product-container">
-        <div class="nav-cat-main-container">
-            <!-- insert product category as a class in the <a> -->
-            <nav class="nav-cat-container default-padding default-width">
-                <h3 class="select-title"><?php _e('Sélectionnez la catégorie de votre choix', THEME_TEXTDOMAIN); ?></h3>
-                @include('partials.components.helpers.bloc-10-filters')
-            </nav>
+<div class="prod-logiciel-main-container default-padding default-width">
+    <div class="prod-logiciel-container"><!-- reverse-elem : to swap img and text div -->
+        <div class="prod-logiciel-img-container">
+            <a class="youtube-lity" href='<iframe width="560" height="315" src="https://www.youtube.com/embed/uo2dRacms_c" frameborder="0" allowfullscreen></iframe>' data-lity></a>
 
-            <div class="product-main-container default-padding default-width">
-                @foreach($block->get_field('bloc_10_products') as $product)
-                    <div class="product-container {{ empty($product['bloc_10_product_category']) ? '' : $product['bloc_10_product_category'] }}">
-                        <div class="product-inner-container">
-                            <div class="product-img-container">
-                                <img class="product-img" src="{{ $product['bloc_10_image']['url'] }}" alt="{{ $product['bloc_10_image']['alt'] }}">
-                            </div>
-                            <div class="product-text-container">
-                                <div class="product-text-content-container">
-                                    <h3 class="product-title">{{ $product['bloc_10_title'] }}</h3>
-                                    <p class="product-desc">{{ $product['bloc_10_description'] }}</p>
-                                </div>
-                                <div class="brochure-download-container">
-                                    @if ($product['bloc_10_product_pdf'])
-                                        <a class="brochure-download-pdf-blue" href="{{ $product['bloc_10_product_pdf']['url'] }}" target="_blank">{{ pll__('BROCHURE') }}</a>
-                                    @endif
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                @endforeach
+            <img class="img-video shadow" src="{{ themosis_assets() }}/images/img/img-medaille-bg-video.jpg">
+        </div>
+        <div class="buffer"></div>
+        <div class="prod-logiciel-text-container">
+            <div class="medaille-container">
+                <h2 class="prod-logiciel-title">{{ pll__('LES MÉDAILLÉS DE LA RELÈVE') }}</h2>
             </div>
+                <p class="prod-logiciel-text">{!! pll__('medaille description') !!}</p>
+
         </div>
     </div>
-</div>
+</div><!-- prod-logiciel MAIN CONTAINER END -->
+
