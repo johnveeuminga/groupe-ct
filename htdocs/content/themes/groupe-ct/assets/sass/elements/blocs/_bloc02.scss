@@ -99,10 +99,8 @@
       }
 
 
-      .text {
-        @media (min-width: $screen-lg-min) {
-          padding-right: 20px!important;
-        }
+      @media (min-width: $screen-lg-min) {
+        padding-right: 20px!important;
       }
     }
 
