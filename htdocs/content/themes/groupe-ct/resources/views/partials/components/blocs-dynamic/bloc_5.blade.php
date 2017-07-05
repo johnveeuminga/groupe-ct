@@ -5,9 +5,9 @@
     @foreach($block->get_field('bloc_5_slides') as $i => $slide)
         <div class="slide-container slide{{ $i }} @if($i == 0) {{ 'active-slide' }} @endif  @if($slide['bloc_5_slide_reverse_image']) reverse-elem @endif">
             <div class="text-container col-md-6">
-                <img class="testimonial-quote" src="{{ themosis_assets() }}/images/icon/icon-testimonial-quote-top.png" alt="">
-                <p class="text">{{ $slide['bloc_5_slide_testimonial'] }}</p>
                 <img class="testimonial-quote" src="{{ themosis_assets() }}/images/icon/icon-testimonial-quote-bottom.png" alt="">
+                <p class="text">{{ $slide['bloc_5_slide_testimonial'] }}</p>
+                <img class="testimonial-quote" src="{{ themosis_assets() }}/images/icon/icon-testimonial-quote-top.png" alt="">
                 <p class="testimonial-name">{{ $slide['bloc_5_slide_author'] }} - <span class="testimonial-desc">{{ $slide['bloc_5_slide_author_title'] }}</span></p>
 
                 @if ($slide['bloc_5_slide_cta_label'])
