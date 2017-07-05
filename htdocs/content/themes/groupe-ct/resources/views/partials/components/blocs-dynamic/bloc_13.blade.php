@@ -10,13 +10,13 @@
            @foreach($city['block_13_office'] as $office)
            {{-- CONTACT INFO START --}}
            <div class="contact-info-container">
-               @if(!empty($office['bloc_13_office_title']))<h3 class="contact-info-title">{{ $office['block_13_office_title'] }}</h3>@endif
-               @if(!empty($office['bloc_13_office_address']))<a class="info contact-info-adress" href="{{ $office['block_13_office_gmap_link'] }}" target="_blank">{!! $office['block_13_office_address'] !!}</a>@endif
-               @if(!empty($office['bloc_13_office_phone']))<a class="info contact-info-phone01" href="tel:"><span>T:</span> {{ $office['block_13_office_phone'] }}</a>@endif
-               @if(!empty($office['bloc_13_office_fax']))<p class="info contact-info-fax"><span>F:</span> {{ $office['block_13_office_fax'] }}</p>@endif
-               @if(!empty($office['bloc_13_office_toll_free']))<a class="info contact-info-phone02" href="tel:"><span>T:</span> {{ $office['block_13_office_toll_free'] }}</a>@endif
-               @if(!empty($office['bloc_13_office_email']))<a class="info contact-info-email" href="mailto:{{ $office['block_13_office_email'] }}">{{ $office['block_13_office_email'] }}</a>@endif
-               @if(!empty($office['bloc_13_office_email_2']))<a class="info contact-info-email" href="mailto:{{ $office['block_13_office_email_2'] }}">{{ $office['block_13_office_email_2'] }}</a>@endif
+               @if(!empty($office['block_13_office_title']))<h3 class="contact-info-title">{{ $office['block_13_office_title'] }}</h3>@endif
+               @if(!empty($office['block_13_office_address']))<a class="info contact-info-adress" href="{{ $office['block_13_office_gmap_link'] }}" target="_blank">{!! $office['block_13_office_address'] !!}</a>@endif
+               @if(!empty($office['block_13_office_phone']))<a class="info contact-info-phone01" href="tel:"><span>T:</span> {{ $office['block_13_office_phone'] }}</a>@endif
+               @if(!empty($office['block_13_office_fax']))<p class="info contact-info-fax"><span>F:</span> {{ $office['block_13_office_fax'] }}</p>@endif
+               @if(!empty($office['block_13_office_toll_free']))<a class="info contact-info-phone02" href="tel:"><span>T:</span> {{ $office['block_13_office_toll_free'] }}</a>@endif
+               @if(!empty($office['block_13_office_email']))<a class="info contact-info-email" href="mailto:{{ $office['block_13_office_email'] }}">{{ $office['block_13_office_email'] }}</a>@endif
+               @if(!empty($office['block_13_office_email_2']))<a class="info contact-info-email" href="mailto:{{ $office['block_13_office_email_2'] }}">{{ $office['block_13_office_email_2'] }}</a>@endif
            </div>
            {{-- CONTACT INFO END --}}
            @endforeach
