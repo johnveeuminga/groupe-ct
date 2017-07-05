@@ -12,7 +12,7 @@
     <div class="toggle-content open-content">
         @foreach($block->get_field('bloc_14_jobs') as $job)
         {{-- job INFO START --}}
-            @if ($job)
+            @if ($job['bloc_14_job'])
                 <div class="job-info-container">
                     {{-- BLUE BAR WITH TITLE END --}}
                     <div class="job-info-inner-container">
