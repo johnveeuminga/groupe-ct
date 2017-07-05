@@ -177,4 +177,8 @@
   @media (min-width: $screen-md-min) {
     padding-bottom: 0;
   }
+
+  a {
+    @extend .form-link;
+  }
 }//IMG PLUS TEXT END
