@@ -41,6 +41,11 @@
       @include flex-direction(row);
       @include align-items(center);
     }
+
+    a {
+      backround-color: white;
+      color: $black;
+    }
   }
 
 
