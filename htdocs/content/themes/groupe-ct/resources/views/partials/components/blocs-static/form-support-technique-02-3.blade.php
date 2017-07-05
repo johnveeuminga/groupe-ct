@@ -134,7 +134,7 @@
                             <a href="#" target="_blank" id="file-path" style="display: none;"></a>
                             <p id="file-too-large" style="display: none;">{{ pll__('Veuillez respecter le poid maximal!') }}</p>
                         </div>
-                        <span class="mention">{{ pll__('Poids maximal de 25 Mo') }}</span>
+                        <span class="mention">{{ pll__('Poids maximal de') }} 25 {{ pll__('Mo') }}</span>
                     </div>
                     <div class="form-submit">
 
