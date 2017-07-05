@@ -30,5 +30,12 @@
       }
     }
 
+    .upper-title {
+      text-align: center;
+      @media (min-width: $screen-md-min) {
+        text-align: left;
+      }
+    }
+
   }
 }
