@@ -132,19 +132,19 @@ class PageHelper
 		    ],
 		    self::PAGE_4_5_DEVELOPPEMENT_DURABLE => [
 			    'fr' => 243,
-			    'en' => null,
+			    'en' => 1110
 		    ],
 		    self::PAGE_4_6_CARRIERE => [
 			    'fr' => 245,
-			    'en' => null,
+			    'en' => 1121,
 		    ],
 		    self::PAGE_4_7_NOUS_JOINDRE=> [
 			    'fr' => 247,
-			    'en' => null,
+			    'en' => 1172,
 		    ],
 		    self::PAGE_5_0_PUBLICATIONS => [
 			    'fr' => 249,
-			    'en' => null,
+			    'en' => 1220,
 		    ],
 	    ];
     }
