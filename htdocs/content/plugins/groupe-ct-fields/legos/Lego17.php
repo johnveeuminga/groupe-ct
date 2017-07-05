@@ -10,6 +10,7 @@ class Lego17 extends BaseLego implements LegoInterface
 	{
 		return [
 			// FIXME Image size to be defined
+			$this->generate_tab('bloc_17_1',                  __('Statistic 1', 'GROUPE-CT') ),
 			$this->generate_image('bloc_17_1_icon',           __('Icon', 'GROUPE-CT'), __('Width: 100px | Height: 100px', 'GROUPE-CT') ),
 			$this->generate_text('bloc_17_1_number',          __('Stat Number', 'GROUPE-CT')),
 			$this->generate_text('bloc_17_1_description',     __('Stat Description', 'GROUPE-CT')),
