@@ -280,8 +280,8 @@ if (function_exists('pll_register_string'))
     pll_register_string('CARRIÈRE 4.1.6 CARRIÈRE', 'Lieu de travail :', GROUPE_CT, false);
     pll_register_string('CARRIÈRE 4.1.6 CARRIÈRE', 'Département :', GROUPE_CT, false);
     pll_register_string('CARRIÈRE 4.1.6 CARRIÈRE', 'Date limite pour postuler :', GROUPE_CT, false);
-    pll_register_string('CARRIÈRE 4.1.6 CARRIÈRE', 'En savoir plus :', GROUPE_CT, false);
-    pll_register_string('CARRIÈRE 4.1.6 CARRIÈRE', 'Postuler :', GROUPE_CT, false);
+    pll_register_string('CARRIÈRE 4.1.6 CARRIÈRE', 'En savoir plus', GROUPE_CT, false);
+    pll_register_string('CARRIÈRE 4.1.6 CARRIÈRE', 'Postuler', GROUPE_CT, false);
 
 
     /** */

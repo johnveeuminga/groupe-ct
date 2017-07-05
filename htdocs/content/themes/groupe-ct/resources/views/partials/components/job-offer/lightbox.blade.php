@@ -18,7 +18,7 @@
                     </div>
 
                     <div class="btn-container">
-                        <a class="btn primary-btn-blue" href="mailto:#"><?php _e('postuler', THEME_TEXTDOMAIN); ?></a>
+                        <a class="btn primary-btn-blue" href="mailto:#">{{ pll__('Postuler') }}</a>
                     </div>
                 </div>
             </div>
