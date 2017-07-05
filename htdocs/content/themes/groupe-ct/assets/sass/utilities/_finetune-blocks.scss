@@ -54,6 +54,7 @@
       flex-wrap: wrap;
       text-align: center;
       @include justify-content(center);
+      @include align-items(center);
 
       @media (min-width: $screen-md-min) {
         @include font-size(45px);
