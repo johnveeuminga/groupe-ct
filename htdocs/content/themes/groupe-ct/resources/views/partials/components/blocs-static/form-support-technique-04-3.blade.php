@@ -20,7 +20,7 @@
 
                 </p>
 
-                <p> {{ pll__('Pour placer un appel de service, accédez à') }} <a class="form-link scroll-to" href="#" data-target="#_section-01">{{ pll__('Mon CT') }}</a>
+                <p> {{ pll__('Pour un meilleur suivi de vos appels de service, accédez à') }} <a class="form-link scroll-to" href="#" data-target="#_section-01">{{ pll__('Mon CT') }}</a>
                     {{ pll__('ou communiquez avec nous via les options suivantes:') }}
                 </p>
             </div>
