@@ -50,26 +50,9 @@
     }
   }
 
-
-
-  .img-container.mobile {
-    @media (min-width: $screen-md-min) {
-      display:none;
-    }
-  }
-
-  .img-container.desktop{
-    display:none;
-    @media (min-width: $screen-md-min) {
-      //display:block;
-      @include flexbox();
-      @include align-items(center);
-      @include justify-content(center);
-    }
-  }
-
   .img-container {
     max-width: 580px;
+    padding: 0;
   }
   .text-container {
     @include flexbox();
