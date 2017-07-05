@@ -31,6 +31,9 @@
     @include flexbox();
     @include flex-direction(column);
     @include justify-content(space-between);
+    &.reverse-elem {
+      @include flex-direction(column-reverse);
+    }
 
     position: absolute;
     left:0;
@@ -41,7 +44,9 @@
     @media (min-width: $screen-md-min) {
       @include flex-direction(row);
       &.reverse-elem {
-        @include flex-direction(row-reverse);
+        @media (min-width: $screen-md-min) {
+          @include flex-direction(row-reverse);
+        }
       }
       @include align-items(center);
     }
@@ -55,20 +60,24 @@
 
   .img-container {
     max-width: 580px;
-    padding: 0;
+    margin: auto;
+    padding: 30px 0 0;
+    @media (min-width: $screen-sm-min) {
+      padding: 50px 0 0;
+    }
+    @media (min-width: $screen-md-min) {
+      padding: 0;
+    }
   }
   .text-container {
     @include flexbox();
     @include flex-direction(column);
     @include align-items(center);
     text-align: center;
-    padding-top:50px;
+    padding: 0px 30px 30px;
 
-    @media (min-width: $screen-sm-min) {
-
-    }
     @media (min-width: $screen-md-min) {
-      padding-top:0px;
+      padding: 0px;
     }
 
     .testimonial-quote {
