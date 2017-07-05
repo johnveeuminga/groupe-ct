@@ -6,6 +6,10 @@
     @media (min-width: $screen-sm-min) {
       text-align: left;
     }
+    @media (min-width: $screen-lg-min) {
+      padding: 0;
+    }
+
     .cta-see-more {
       @include justify-content(center);
       @media (min-width: $screen-sm-min) {
