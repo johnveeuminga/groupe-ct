@@ -46,5 +46,11 @@
 }
 
 .bloc-medal {
-  
+  .prod-logiciel-container {
+    flex-direction: row-reverse;
+
+    h2 {
+      @extend .h2-size;
+    }
+  }
 }
