@@ -95,7 +95,7 @@
                     <!-- INPUT CONTAINER START -->
                     <div class="input-container">
                         <label for="fourniture-msg"></label>
-                        <textarea name="fourniture-msg" id="fourniture-msg" class="tech-support-input" cols="30" rows="10" placeholder="{{ pll__('Détail de la commande (No# d\'item, description, quantité, …)*') }}"></textarea>
+                        <textarea name="fourniture-msg" id="fourniture-msg" class="tech-support-input" cols="30" rows="10" placeholder="{{ pll__('Détail de la commande (No# d\'item, description, quantité, …)') }}*"></textarea>
                     </div>
 
                     <div class="form-submit">
