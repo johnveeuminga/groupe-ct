@@ -6,7 +6,8 @@
                     <h3 class="newsletter-upper-title">{{ pll__('Infolettre') }}</h3>
                     <h2 class="newsletter-title">{{ pll__('Restez à la page') }}</h2>
                     <p class="newsletter-desc">{{ pll__('Abonnez-vous à l\'infolettre pour recevoir les dernières nouvelles de Groupe CT.') }}</p>
-                    <p class="newsletter-success" style="display: none;">{{ pll__('Merci de votre intérêt ! Vous recevrez un courriel sous peu pour compléter votre inscription. À bientôt !') }}</p>
+                    <p class="newsletter-success" style="display: none;">{{ pll__('Votre inscription à l\'infolettre est complétée.') }}</p>
+                    <p class="newsletter-success" style="display: none;">{{ pll__('Vous recevrez des nouvelles de Groupe CT sous peu. Restez à l\'affût !') }}</p>
                 </div>
                 <div id="newsletter-errors-container" class="form-messages form-errors error-msg-container" style="display: none;">
                     <p class="error-required" style="display: none;">{{ pll__('Veuillez remplir tous les champs requis.') }}</p>

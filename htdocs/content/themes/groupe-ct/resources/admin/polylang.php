@@ -37,7 +37,8 @@ if (function_exists('pll_register_string'))
     pll_register_string('', 'Courriel*', GROUPE_CT, false);
     pll_register_string('', 'Retirée', GROUPE_CT, false);
     pll_register_string('', 'Soumettre', GROUPE_CT, false);
-    pll_register_string('', 'Merci de votre intérêt ! Vous recevrez un courriel sous peu pour compléter votre inscription. À bientôt !', GROUPE_CT, false);
+    pll_register_string('', 'Votre inscription à l\'infolettre est complétée.', GROUPE_CT, false);
+    pll_register_string('', 'Vous recevrez des nouvelles de Groupe CT sous peu. Restez à l\'affût !', GROUPE_CT, false);
 
     /** CONTACT FORM */
     pll_register_string('', 'En savoir plus ? Contactez-nous.', GROUPE_CT, false);
