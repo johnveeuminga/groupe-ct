@@ -8,7 +8,7 @@
             <div class="job-info-detailed-container">
                 <div class="job-info-inner-container">
                     <h2 class="job-info-title">{{ $post->post_title }}</h2>
-                    @if(!empty($post->job_offer_office))<p class="info job-info-office"><span>{{ pll__('Bureau rattaché :') }}</span>{{ $post->job_offer_office  }}</p>@endif
+                    @if(!empty($post->job_offer_office))<p class="info job-info-office"><span>{{ pll__('Bureau affilié :') }}</span>{{ $post->job_offer_office  }}</p>@endif
                     @if(!empty($post->job_offer_office))<p class="info job-info-adresse"><span>{{ pll__('Lieu de travail :') }}</span>{{ $post->job_offer_location  }}</p>@endif
                     @if(!empty($post->job_offer_office))<p class="info job-info-section"><span>{{ pll__('Département :') }}</span>{{ $post->job_offer_dept  }}</p>@endif
                     @if(!empty($post->job_offer_office))<p class="info job-info-limit"><span>{{ pll__('Date limite pour postuler :') }}</span>{{ $post->job_offer_deadline }}</p>@endif
