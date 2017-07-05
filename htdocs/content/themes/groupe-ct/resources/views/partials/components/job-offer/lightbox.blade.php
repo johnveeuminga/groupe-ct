@@ -8,10 +8,10 @@
             <div class="job-info-detailed-container">
                 <div class="job-info-inner-container">
                     <h2 class="job-info-title">{{ $post->post_title }}</h2>
-                    <p class="info job-info-office"><span><?php _e('Bureau rattaché', THEME_TEXTDOMAIN); ?> :</span>{{ $post->job_offer_office  }}</p>
-                    <p class="info job-info-adresse"><span><?php _e('Lieu de travail', THEME_TEXTDOMAIN); ?> :</span>{{ $post->job_offer_location  }}</p>
-                    <p class="info job-info-section"><span><?php _e('Département', THEME_TEXTDOMAIN); ?> :</span>{{ $post->job_offer_dept  }}</p>
-                    <p class="info job-info-limit"><span><?php _e('Date limite pour postuler', THEME_TEXTDOMAIN); ?> :</span>{{ date('Y-m-d', strtotime($post->job_offer_deadline))  }}</p>
+                    @if(!empty($job['bloc_14_job']->job_offer_office))<p class="info job-info-office"><span>{{ pll__('Bureau rattaché :') }}</span>{{ $job['bloc_14_job']->job_offer_office  }}</p>@endif
+                    @if(!empty($job['bloc_14_job']->job_offer_office))<p class="info job-info-adresse"><span>{{ pll__('Lieu de travail :') }}</span>{{ $job['bloc_14_job']->job_offer_location  }}</p>@endif
+                    @if(!empty($job['bloc_14_job']->job_offer_office))<p class="info job-info-section"><span>{{ pll__('Département :') }}</span>{{ $job['bloc_14_job']->job_offer_dept  }}</p>@endif
+                    @if(!empty($job['bloc_14_job']->job_offer_office))<p class="info job-info-limit"><span>{{ pll__('Date limite pour postuler :') }}</span>{{ $job['bloc_14_job']->job_offer_deadline }}</p>@endif
 
                     <div class="info job-info-description">
                     {!! wpautop($post->post_content) !!}
