@@ -1,4 +1,4 @@
-<section class="publication-single-main-container default-padding default-width">
+<section class="publication-single-main-container default-width">
     <div class="publication-container">
         <div class="publication-content-container">
             <div class="wysiwyg-container">
