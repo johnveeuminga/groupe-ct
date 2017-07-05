@@ -253,7 +253,7 @@ if (function_exists('pll_register_string'))
     pll_register_string('ASSISTANCE TECHNIQUE - Lecture de compteurs- 3.0', 'Groupe CT - Grande région de Toronto', GROUPE_CT, false);
     pll_register_string('ASSISTANCE TECHNIQUE - Lecture de compteurs- 3.0', 'SAC - Région de la Beauce', GROUPE_CT, false);
     pll_register_string('ASSISTANCE TECHNIQUE - Lecture de compteurs- 3.0', 'SAC - Région de Québec', GROUPE_CT, false);
-    pll_register_string('ASSISTANCE TECHNIQUE - Lecture de compteurs- 3.0', 'Détail de la commande (No# d’item, description, quantité, …)', GROUPE_CT, false);
+    pll_register_string('ASSISTANCE TECHNIQUE - Lecture de compteurs- 3.0', 'Détail de la commande (No# d\'item, description, quantité, …)', GROUPE_CT, false);
     pll_register_string('ASSISTANCE TECHNIQUE - Lecture de compteurs- 3.0', 'Soumettre la commande', GROUPE_CT, false);
     pll_register_string('ASSISTANCE TECHNIQUE - Lecture de compteurs- 3.0', 'Soumettre ma demande', GROUPE_CT, false);
     pll_register_string('ASSISTANCE TECHNIQUE - Lecture de compteurs- 3.0', 'Confirmation de commande de fournitures', GROUPE_CT, false);
