@@ -259,6 +259,9 @@ if (function_exists('pll_register_string'))
     pll_register_string('ASSISTANCE TECHNIQUE - Lecture de compteurs- 3.0', 'Merci d\'utiliser le service de commande en ligne CT. Votre commande a été reçue avec succès et sera traitée dans les plus brefs délais durant les heures ouvrables. Un agent communiquera avec vous sous peu.', GROUPE_CT, false);
     pll_register_string('ASSISTANCE TECHNIQUE - Lecture de compteurs- 3.0', 'Saviez-vous que Groupe CT offre un service de commande de cartouches automatisé sans frais? Renseignez-vous dès maintenant!', GROUPE_CT, false);
     pll_register_string('ASSISTANCE TECHNIQUE - Lecture de compteurs- 3.0', 'Pour un meilleur suivi de vos appels de service, accédez à', GROUPE_CT, false);
+    pll_register_string('ASSISTANCE TECHNIQUE - Lecture de compteurs- 3.0', 'Renseignez-vous sur la transmission des compteurs automatique.', GROUPE_CT, false);
+    pll_register_string('ASSISTANCE TECHNIQUE - Lecture de compteurs- 3.0', 'Heures', GROUPE_CT, false);
+    pll_register_string('ASSISTANCE TECHNIQUE - Lecture de compteurs- 3.0', 'Minutes', GROUPE_CT, false);
 
 
     pll_register_string('ASSISTANCE TECHNIQUE - Lecture de compteurs- 3.0', 'Compteur description 1', GROUPE_CT, true);
