@@ -1,6 +1,7 @@
 .testimonials-main-container {
 
-
+  max-width: 1200px;
+  margin: auto!important;
 
   position: relative;
 
@@ -28,7 +29,7 @@
   .slide-container {
     @include flexbox();
     @include flex-direction(column);
-    @include justify-content(center);
+    @include justify-content(space-between);
 
     position: absolute;
     left:0;
