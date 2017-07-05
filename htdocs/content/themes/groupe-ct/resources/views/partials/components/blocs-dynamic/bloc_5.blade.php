@@ -12,7 +12,7 @@
 
                 @if ($slide['bloc_5_slide_cta_label'])
                     <div>
-                        <a class="btn-bloc2 primary-btn-blue @if ($slide['bloc_5_slide_cta_open_contact']) open-contact-form @endif" href="@if($slide['bloc_5_slide_cta_open_contact'])#@else{{ $slide['bloc_5_slide_cta_link'] }}@endif" @if($slide['bloc_5_slide_cta_blank'])target='_blank'@endif>{{ $slide['bloc_5_slide_cta_label'] }}</a>
+                        <a class="btn-bloc2 primary-btn-blue" href="@if($slide['bloc_5_slide_cta_open_contact'])#@else{{ $slide['bloc_5_slide_cta_link'] }}@endif" @if($slide['bloc_5_slide_cta_blank'])target='_blank'@endif>{{ $slide['bloc_5_slide_cta_label'] }}</a>
                     </div>
                 @endif
             </div>
