@@ -49,23 +49,24 @@
   .prod-logiciel-container {
     flex-direction: row-reverse;
 
-    h2 {
-      @include font-size(27px);
-      text-transform: uppercase;
-
-      @media (min-width: $screen-sm-min) {
-        @include font-size(32px);
-        padding: 30px 0 0;
-      }
-
-      @media (min-width: $screen-md-min) {
-        @include font-size(45px);
-        padding: 30px 0 20px;
-      }
-    }
-    
     .medaille-container {
       display: flex;
     }
   }
+
+  h2 {
+    @include font-size(27px);
+    text-transform: uppercase;
+
+    @media (min-width: $screen-sm-min) {
+      @include font-size(32px);
+      padding: 30px 0 0;
+    }
+
+    @media (min-width: $screen-md-min) {
+      @include font-size(45px);
+      padding: 30px 0 20px;
+    }
+  }
+
 }
