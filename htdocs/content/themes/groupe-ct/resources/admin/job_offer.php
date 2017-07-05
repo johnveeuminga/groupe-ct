@@ -23,7 +23,7 @@ acf_add_local_field_group(array (
 		$acf_fields->generate_text('job_offer_office', __('Office', 'GROUPE-CT') ),
 		$acf_fields->generate_text('job_offer_location', __('Work Location', 'GROUPE-CT') ),
 		$acf_fields->generate_text('job_offer_dept', __('Department', 'GROUPE-CT') ),
-		$acf_fields->generate_datepicker('job_offer_deadline', __('Deadline', 'GROUPE-CT') ),
+		$acf_fields->generate_text('job_offer_deadline', __('Deadline', 'GROUPE-CT') ),
 	),
 	'location' => array (
 		array (
