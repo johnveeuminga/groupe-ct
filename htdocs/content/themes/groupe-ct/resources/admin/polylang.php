@@ -241,7 +241,7 @@ if (function_exists('pll_register_string'))
     pll_register_string('ASSISTANCE TECHNIQUE - Demande d\'assistance - 3.0', 'Joindre un test d\'impression', GROUPE_CT, false);
     pll_register_string('ASSISTANCE TECHNIQUE - Demande d\'assistance - 3.0', 'Poids maximal de', GROUPE_CT, false);
     pll_register_string('ASSISTANCE TECHNIQUE - Demande d\'assistance - 3.0', 'Mo', GROUPE_CT, false);
-    pll_register_string('ASSISTANCE TECHNIQUE - Demande d\'assistance - 3.0', 'Confirmation de demande d’assistance', GROUPE_CT, false);
+    pll_register_string('ASSISTANCE TECHNIQUE - Demande d\'assistance - 3.0', 'Confirmation de demande d\'assistance', GROUPE_CT, false);
     pll_register_string('ASSISTANCE TECHNIQUE - Demande d\'assistance - 3.0', 'Merci d\'avoir contacté l\'assistance technique CT. Votre demande a été reçue avec succès et sera traitée dans les plus brefs délais durant nos heures d\'ouverture . Un agent communiquera avec vous sous peu .', GROUPE_CT, false);
     pll_register_string('ASSISTANCE TECHNIQUE - Demande d\'assistance - 3.0', 'Merci !', GROUPE_CT, false);
 
