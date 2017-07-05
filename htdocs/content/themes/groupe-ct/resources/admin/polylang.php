@@ -238,7 +238,7 @@ if (function_exists('pll_register_string'))
     pll_register_string('ASSISTANCE TECHNIQUE - Demande d\'assistance - 3.0', 'Heures d\'ouverture', GROUPE_CT, false);
     pll_register_string('ASSISTANCE TECHNIQUE - Demande d\'assistance - 3.0', 'à', GROUPE_CT, false);
     pll_register_string('ASSISTANCE TECHNIQUE - Demande d\'assistance - 3.0', 'Bureau fermé le midi', GROUPE_CT, false);
-    pll_register_string('ASSISTANCE TECHNIQUE - Demande d\'assistance - 3.0', 'Joindre un test d’impression', GROUPE_CT, false);
+    pll_register_string('ASSISTANCE TECHNIQUE - Demande d\'assistance - 3.0', 'Joindre un test d\'impression', GROUPE_CT, false);
     pll_register_string('ASSISTANCE TECHNIQUE - Demande d\'assistance - 3.0', 'Poids maximal de', GROUPE_CT, false);
     pll_register_string('ASSISTANCE TECHNIQUE - Demande d\'assistance - 3.0', 'Mo', GROUPE_CT, false);
     pll_register_string('ASSISTANCE TECHNIQUE - Demande d\'assistance - 3.0', 'Confirmation de demande d’assistance', GROUPE_CT, false);
