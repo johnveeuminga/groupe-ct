@@ -18,7 +18,7 @@
                     </div>
 
                     <div class="btn-container">
-                        <a class="btn primary-btn-blue" href="mailto:#">{{ pll__('Postuler 2') }}</a>
+                        <a class="btn primary-btn-blue" href="mailto:#">{{ pll__('Postuler') }}</a>
                     </div>
                 </div>
             </div>

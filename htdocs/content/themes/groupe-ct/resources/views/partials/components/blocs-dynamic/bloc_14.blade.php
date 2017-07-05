@@ -24,7 +24,7 @@
 
                         <div class="btn-container">
 
-                            <a href="{{ get_permalink($job['bloc_14_job']->ID) }}" class="cta-see-more" data-lity>{{ pll__('En savoir plus') }}</a>
+                            <a href="{{ get_permalink($job['bloc_14_job']->ID) }}" class="cta-see-more" data-lity>{{ pll__('En savoir plus 2') }}</a>
                             <a class="btn primary-btn-blue" href="mailto:{{ Option::get('hr', 'hrEmail') }}">{{ pll__('Postuler') }}</a>
                         </div>
                     </div>
