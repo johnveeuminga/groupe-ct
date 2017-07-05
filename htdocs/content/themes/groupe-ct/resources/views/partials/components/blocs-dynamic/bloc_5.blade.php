@@ -10,18 +10,17 @@
                 <img class="testimonial-quote" src="{{ themosis_assets() }}/images/icon/icon-testimonial-quote-bottom.png" alt="">
                 <p class="testimonial-name">{{ $slide['bloc_5_slide_author'] }} - <span class="testimonial-desc">{{ $slide['bloc_5_slide_author_title'] }}</span></p>
 
-                @if ($slide['bloc_2_slide_cta_label'])<a class="btn-bloc2 primary-btn-blue @if ($slide['bloc_2_slide_cta_open_contact']) open-contact-form @endif" href="@if($slide['bloc_2_slide_cta_open_contact'])#@else{{ $slide['bloc_2_slide_cta_link'] }}@endif" @if($slide['bloc_2_slide_cta_blank'])target='_blank'@endif>{{ $slide['bloc_2_slide_cta_label'] }}</a>@endif
+                @if ($slide['bloc_5_slide_cta_label'])
+                    <div>
+                        <a class="btn-bloc2 primary-btn-blue @if ($slide['bloc_5_slide_cta_open_contact']) open-contact-form @endif" href="@if($slide['bloc_5_slide_cta_open_contact'])#@else{{ $slide['bloc_5_slide_cta_link'] }}@endif" @if($slide['bloc_5_slide_cta_blank'])target='_blank'@endif>{{ $slide['bloc_5_slide_cta_label'] }}</a>
+                    </div>
+                @endif
             </div>
 
             <div class="img-container col-md-6">
                 <img src="{{ $slide['bloc_5_slide_image']['url'] }}" alt="{{ $slide['bloc_5_slide_image']['alt'] }}">
             </div>
 
-            @if ($slide['bloc_5_slide_cta_label'])
-                <div>
-                    <a class="btn-bloc2 primary-btn-blue @if ($slide['bloc_5_slide_cta_open_contact']) open-contact-form @endif" href="@if($slide['bloc_5_slide_cta_open_contact'])#@else{{ $slide['bloc_5_slide_cta_link'] }}@endif" @if($slide['bloc_5_slide_cta_blank'])target='_blank'@endif>{{ $slide['bloc_5_slide_cta_label'] }}</a>
-                </div>
-            @endif
         </div>
     @endforeach
     </div>
