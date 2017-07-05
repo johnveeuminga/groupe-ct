@@ -28,9 +28,12 @@
                             @endif
                         </div>
                     @endif
-                    <div>
-                        @if ($slide['bloc_2_slide_cta_label'])<a class="btn-bloc2 primary-btn-blue @if ($slide['bloc_2_slide_cta_open_contact']) open-contact-form @endif" href="@if($slide['bloc_2_slide_cta_open_contact'])#@else{{ $slide['bloc_2_slide_cta_link'] }}@endif" @if($slide['bloc_2_slide_cta_blank'])target='_blank'@endif>{{ $slide['bloc_2_slide_cta_label'] }}</a>@endif
-                    </div>
+
+                    @if ($slide['bloc_2_slide_cta_label'])
+                        <div>
+                            <a class="btn-bloc2 primary-btn-blue @if ($slide['bloc_2_slide_cta_open_contact']) open-contact-form @endif" href="@if($slide['bloc_2_slide_cta_open_contact'])#@else{{ $slide['bloc_2_slide_cta_link'] }}@endif" @if($slide['bloc_2_slide_cta_blank'])target='_blank'@endif>{{ $slide['bloc_2_slide_cta_label'] }}</a>
+                        </div>
+                    @endif
                 </div>
             </div>
         @endforeach
