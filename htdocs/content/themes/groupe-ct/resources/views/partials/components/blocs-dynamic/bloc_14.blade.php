@@ -20,7 +20,7 @@
                         @if(!empty($job['bloc_14_job']->job_offer_office))<p class="info job-info-office"><span>{{ pll__('Bureau rattaché :') }}</span>{{ $job['bloc_14_job']->job_offer_office  }}</p>@endif
                         @if(!empty($job['bloc_14_job']->job_offer_office))<p class="info job-info-adresse"><span>{{ pll__('Lieu de travail :') }}</span>{{ $job['bloc_14_job']->job_offer_location  }}</p>@endif
                         @if(!empty($job['bloc_14_job']->job_offer_office))<p class="info job-info-section"><span>{{ pll__('Département :') }}</span>{{ $job['bloc_14_job']->job_offer_dept  }}</p>@endif
-                        @if(!empty($job['bloc_14_job']->job_offer_office))<p class="info job-info-limit"><span>{{ pll__('Date limite pour postuler :') }}</span>{{ date('Y-m-d', strtotime($job['bloc_14_job']->job_offer_deadline))  }}</p>
+                        @if(!empty($job['bloc_14_job']->job_offer_office))<p class="info job-info-limit"><span>{{ pll__('Date limite pour postuler :') }}</span>{{ date('Y-m-d', strtotime($job['bloc_14_job']->job_offer_deadline))  }}</p>@endif
 
                         <div class="btn-container">
 
