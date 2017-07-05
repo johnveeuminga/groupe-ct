@@ -97,6 +97,13 @@
           margin-bottom: 2px;
         }
       }
+
+
+      .text {
+        @media (min-width: $screen-lg-min) {
+          padding-right: 20px!important;
+        }
+      }
     }
 
   }//TEXT CONTAINER END
