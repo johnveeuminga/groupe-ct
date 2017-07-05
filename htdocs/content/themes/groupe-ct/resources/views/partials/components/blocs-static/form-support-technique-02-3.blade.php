@@ -101,7 +101,7 @@
                             <div class="opening">
                                 <span class="mention">{{ pll__("Heures de fermeture") }}</span>
                                 <select name="assistance-opening03" id="assistance-opening03" class="tech-support-input select-support assistance-opening">
-                                    <option value=""  disabled selected hidden>{{ pll__('Heure') }}</option>
+                                    <option value=""  disabled selected hidden>{{ pll__('Heures') }}</option>
                                     @for ($i = 0; $i <= 23; $i++)
                                         <option value="{{ strlen($i) === 1 ? '0' . $i : $i }}">{{ strlen($i) === 1 ? '0' . $i : $i }}</option>
                                     @endfor

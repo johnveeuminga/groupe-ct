@@ -262,6 +262,7 @@ if (function_exists('pll_register_string'))
     pll_register_string('ASSISTANCE TECHNIQUE - Lecture de compteurs- 3.0', 'Renseignez-vous sur la transmission des compteurs automatique.', GROUPE_CT, false);
     pll_register_string('ASSISTANCE TECHNIQUE - Lecture de compteurs- 3.0', 'Heures', GROUPE_CT, false);
     pll_register_string('ASSISTANCE TECHNIQUE - Lecture de compteurs- 3.0', 'Minutes', GROUPE_CT, false);
+    pll_register_string('ASSISTANCE TECHNIQUE - Lecture de compteurs- 3.0', 'Heures de fermeture', GROUPE_CT, false);
 
 
     pll_register_string('ASSISTANCE TECHNIQUE - Lecture de compteurs- 3.0', 'Compteur description 1', GROUPE_CT, true);
