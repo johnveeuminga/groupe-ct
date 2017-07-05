@@ -23,7 +23,8 @@ class Lego13 extends BaseLego implements LegoInterface
 							$this->generate_text('block_13_office_phone', 'Phone'),
 							$this->generate_text('block_13_office_fax', 'Fax'),
 							$this->generate_text('block_13_office_toll_free', 'Toll Free'),
-							$this->generate_text('block_13_office_email', 'Email'),
+                            $this->generate_text('block_13_office_email', 'Email'),
+                            $this->generate_text('block_13_office_email_2', 'Email 2'),
 							$this->generate_url('block_13_office_gmap_link', 'Google Maps Link'),
 						]
 					)
