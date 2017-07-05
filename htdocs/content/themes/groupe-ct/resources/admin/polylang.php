@@ -246,6 +246,11 @@ if (function_exists('pll_register_string'))
     pll_register_string('ASSISTANCE TECHNIQUE - Demande d\'assistance - 3.0', 'Merci !', GROUPE_CT, false);
 
     pll_register_string('ASSISTANCE TECHNIQUE - Lecture de compteurs- 3.0', 'Fournir une lecture de compteur', GROUPE_CT, false);
+    pll_register_string('ASSISTANCE TECHNIQUE - Lecture de compteurs- 3.0', 'Commandez rapidement et facilement des fournitures en remplissant le formulaire ci-dessous. Votre commande sera livrée dans un délai de 24 à 48 h ouvrable.', GROUPE_CT, false);
+    pll_register_string('ASSISTANCE TECHNIQUE - Lecture de compteurs- 3.0', 'D\'autres options s\'offrent à vous. Contactez un agent par téléphone ou par courriel. Si vous êt déjà un client de Groupe CT, nous vous recommandons d\'utiliser le portail', GROUPE_CT, false);
+    pll_register_string('ASSISTANCE TECHNIQUE - Lecture de compteurs- 3.0', 'D\'autres options s\'offrent à vous. Contactez un agent par téléphone ou par courriel. Si vous êt déjà un client de Groupe CT, nous vous recommandons d\'utiliser le portail', GROUPE_CT, false);
+
+
     pll_register_string('ASSISTANCE TECHNIQUE - Lecture de compteurs- 3.0', 'Compteur description 1', GROUPE_CT, true);
     pll_register_string('ASSISTANCE TECHNIQUE - Lecture de compteurs- 3.0', 'Compteur description 2', GROUPE_CT, true);
 

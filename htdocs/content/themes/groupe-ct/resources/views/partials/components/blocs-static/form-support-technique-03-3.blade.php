@@ -17,7 +17,7 @@
                 </p>
                 <p>
                     {{ pll__('D\'autres options s\'offrent à vous. Contactez un agent par téléphone ou par courriel. Si vous êt déjà un client de Groupe CT, nous vous recommandons d\'utiliser le portail') }}
-                    <a href="#" data-target="#_section-01" class="form-link scroll-to">{{ pll__('Mon CT.') }}</a>
+                    <a href="#" data-target="#_section-01" class="form-link scroll-to">{{ pll__('Mon CT') }}.</a>
                 </p>
             </div>
             <div id="fourniture-success" style="display: none">
