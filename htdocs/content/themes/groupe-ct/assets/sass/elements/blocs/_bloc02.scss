@@ -98,6 +98,7 @@
         }
       }
     }
+
   }//TEXT CONTAINER END
 
   .contact-container {
@@ -149,6 +150,7 @@
 
   .open-contact-form {
     margin: initial!important;
+
   }
 
   .reverse-elem {
@@ -157,4 +159,16 @@
     }
   }
 
+  .cta-container {
+    text-align: center;
+    @media (min-width: $screen-lg-min) {
+      text-align: left;
+
+    }
+  }
+
+  padding-bottom: 30px;
+  @media (min-width: $screen-md-min) {
+    padding-bottom: 0;
+  }
 }//IMG PLUS TEXT END

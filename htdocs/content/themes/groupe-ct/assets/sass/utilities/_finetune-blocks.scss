@@ -51,6 +51,23 @@
 
     .medaille-container {
       display: flex;
+      flex-wrap: wrap;
+      text-align: center;
+      @include justify-content(center);
+
+      @media (min-width: $screen-md-min) {
+        @include font-size(45px);
+        padding: 30px 0 20px;
+      }
+      @media (min-width: $screen-lg-min) {
+        flex-wrap: nowrap;
+      }
+      img {
+        margin-bottom: 0;
+      }
+      h2 {
+        width: 100%;
+      }
     }
   }
 
@@ -71,8 +88,13 @@
     }
   }
 
+
   img {
-    margin-right: 40px;
+    margin: 0 0 30px 0;
+
+    @media (min-width: $screen-lg-min) {
+      margin: 0 40px 0 0;
+    }
   }
 
   .prod-logiciel-img-container {
