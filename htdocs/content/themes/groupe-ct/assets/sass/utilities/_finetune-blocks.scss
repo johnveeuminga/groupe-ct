@@ -55,6 +55,8 @@
   }
 
   h2 {
+    font-family: Poppins,sans-serif;
+    font-weight: 700;
     @include font-size(27px);
     text-transform: uppercase;
 
