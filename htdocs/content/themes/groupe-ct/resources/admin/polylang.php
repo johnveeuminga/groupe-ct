@@ -276,6 +276,13 @@ if (function_exists('pll_register_string'))
     pll_register_string('ASSISTANCE TECHNIQUE - Lecture de compteurs- 3.0', 'Compteur description 1', GROUPE_CT, true);
     pll_register_string('ASSISTANCE TECHNIQUE - Lecture de compteurs- 3.0', 'Compteur description 2', GROUPE_CT, true);
 
+    pll_register_string('CARRIÈRE 4.1.6 CARRIÈRE', 'Bureau rattaché :', GROUPE_CT, false);
+    pll_register_string('CARRIÈRE 4.1.6 CARRIÈRE', 'Lieu de travail :', GROUPE_CT, false);
+    pll_register_string('CARRIÈRE 4.1.6 CARRIÈRE', 'Département :', GROUPE_CT, false);
+    pll_register_string('CARRIÈRE 4.1.6 CARRIÈRE', 'Date limite pour postuler :', GROUPE_CT, false);
+    pll_register_string('CARRIÈRE 4.1.6 CARRIÈRE', 'En savoir plus :', GROUPE_CT, false);
+    pll_register_string('CARRIÈRE 4.1.6 CARRIÈRE', 'Postuler :', GROUPE_CT, false);
+
 
     /** */
     pll_register_string('', 'Poste:', false);
