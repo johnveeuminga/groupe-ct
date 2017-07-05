@@ -10,7 +10,7 @@
                 <img src="{{ themosis_assets() }}/images/img/img-medaille.png">
                 <h2>{{ pll__('LES MÉDAILLÉS DE LA RELÈVE') }}</h2>
             </div>
-            <p class="prod-logiciel-text">{!! pll__('medaille description') !!}</p>
+            <p class="prod-logiciel-text">{!! nl2br(pll__('medaille description')) !!}</p>
 
         </div>
     </div>
