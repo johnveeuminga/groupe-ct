@@ -39,6 +39,8 @@
                         <option>{{ pll__('Marketing') }}</option>
                         <option>{{ pll__('Administration') }}</option>
                         <option>{{ pll__('Technologies de l\'information') }}</option>
+                        <option>{{ pll__('Service à la clientèle') }}</option>
+                        <option>{{ pll__('Cadre supérieur') }}</option>
                         <option>{{ pll__('Ventes') }}</option>
                         <option>{{ pll__('Achats') }}</option>
                         <option>{{ pll__('Ressources humaines') }}</option>

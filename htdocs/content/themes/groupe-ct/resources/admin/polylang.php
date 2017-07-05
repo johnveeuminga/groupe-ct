@@ -48,6 +48,8 @@ if (function_exists('pll_register_string'))
     pll_register_string('', 'Marketing', GROUPE_CT, false);
     pll_register_string('', 'Administration', GROUPE_CT, false);
     pll_register_string('', 'Technologies de l\'information', GROUPE_CT, false);
+    pll_register_string('', 'Customer service', GROUPE_CT, false);
+    pll_register_string('', 'Management', GROUPE_CT, false);
     pll_register_string('', 'Ventes', GROUPE_CT, false);
     pll_register_string('', 'Achats', GROUPE_CT, false);
     pll_register_string('', 'Ressources humaines', GROUPE_CT, false);

@@ -50,7 +50,7 @@ Ajax::listen('newsletter', function() {
 });
 
 Ajax::listen('contact', function() {
-    $to = 'michael.villeneuve@ctrlweb.ca';
+    $to = 'ventes@ctgroupect.com';
 
     $subject = 'Demande d\'information - formulaire Contact du site Web';
     $body = '';
@@ -81,6 +81,12 @@ Ajax::listen('contact', function() {
             ]
         );
     }
+
+    if (!isset($_SERVER['APP_ENV']) || 'production' !== $_SERVER['APP_ENV']) {
+        $body .= '<p>NOTE DE DEV --- SERA ENVOYÉ À ' . $to . ' EN PRODUCTION</p>';
+        $to = 'michael.villeneuve@ctrlweb.ca';
+    }
+
     $headers = array('Content-Type: text/html; charset=UTF-8','From: Groupe CT Website <donotreply@groupect.com');
     wp_mail( $to, $subject, $body, $headers );
 
