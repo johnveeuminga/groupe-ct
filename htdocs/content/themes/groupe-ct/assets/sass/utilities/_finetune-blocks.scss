@@ -72,7 +72,11 @@
   }
 
   img {
-    padding-right: 40px;
+    margin-right: 40px;
+  }
+
+  .prod-logiciel-img-container {
+    @include align-self(center);
   }
 
 }
