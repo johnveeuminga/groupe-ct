@@ -47,6 +47,13 @@
         @media (min-width: $screen-md-min) {
           @include flex-direction(row-reverse);
         }
+
+        @media (min-width: $screen-lg-min) {
+          p {
+            padding-right: 20px!important;
+          }
+        }
+
       }
       @include align-items(center);
     }
@@ -113,5 +120,7 @@
   }//TEXT CONTAINER END
 
   margin-bottom: 30px;
+
+
 }
 
