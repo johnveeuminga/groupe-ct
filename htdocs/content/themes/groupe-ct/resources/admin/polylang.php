@@ -232,9 +232,8 @@ if (function_exists('pll_register_string'))
     pll_register_string('ASSISTANCE TECHNIQUE - Demande d\'assistance - 3.0', 'Beauce', GROUPE_CT, false);
     pll_register_string('ASSISTANCE TECHNIQUE - Demande d\'assistance - 3.0', 'Numéro de série de l\'appareil*', GROUPE_CT, false);
     pll_register_string('ASSISTANCE TECHNIQUE - Demande d\'assistance - 3.0', 'Sélectionner votre point de service*', GROUPE_CT, false);
-    pll_register_string('ASSISTANCE TECHNIQUE - Demande d\'assistance - 3.0', 'SAC - Quebec City office', GROUPE_CT, false);
-    pll_register_string('ASSISTANCE TECHNIQUE - Demande d\'assistance - 3.0', 'SAC - Beauce office', GROUPE_CT, false);
-    pll_register_string('ASSISTANCE TECHNIQUE - Demande d\'assistance - 3.0', 'SAC - Beauce office', GROUPE_CT, false);
+    pll_register_string('ASSISTANCE TECHNIQUE - Demande d\'assistance - 3.0', 'SAC - Bureau de Québec', GROUPE_CT, false);
+    pll_register_string('ASSISTANCE TECHNIQUE - Demande d\'assistance - 3.0', 'SAC - Bureau de la Beauce', GROUPE_CT, false);
     pll_register_string('ASSISTANCE TECHNIQUE - Demande d\'assistance - 3.0', 'Description du problème*', GROUPE_CT, false);
     pll_register_string('ASSISTANCE TECHNIQUE - Demande d\'assistance - 3.0', 'Heures d\'ouverture', GROUPE_CT, false);
     pll_register_string('ASSISTANCE TECHNIQUE - Demande d\'assistance - 3.0', 'à', GROUPE_CT, false);
