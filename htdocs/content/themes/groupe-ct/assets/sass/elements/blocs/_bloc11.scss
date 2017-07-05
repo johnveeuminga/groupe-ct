@@ -6,9 +6,10 @@
 .prod-logiciel-container {
   @include flexbox();
   @include flex-direction(column);
+  margin-top: 30px;
   @media (min-width: $screen-sm-min) {
     @include flex-direction(row);
-    margin-top: 100px;
+    margin-top: 50px;
   }
 
   .prod-logiciel-img-container {

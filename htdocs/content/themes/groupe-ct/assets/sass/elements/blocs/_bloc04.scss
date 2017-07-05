@@ -76,7 +76,11 @@
   }//END FOUR COL ICON ITEM
 
   .btn-container {
-      margin-top: 20px;
+    margin-bottom: 30px;
+
+    @media (min-width: $screen-md-min ) {
+      margin-bottom: 50px;
+    }
   }
 
 
