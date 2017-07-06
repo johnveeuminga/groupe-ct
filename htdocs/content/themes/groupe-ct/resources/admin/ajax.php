@@ -124,7 +124,8 @@ Ajax::listen('assistance', function() {
     $opened = $_POST['assistance-closed'] ? 'Oui' : 'Non';
     $body .= '<p>Bureau fermé le midi : ' . $opened . '</p>';
     $body .= '<p>Test d’impression : <a href="' . home_url() . $_POST['assistance-file'] . '">' . home_url() . $_POST['assistance-file'] . '</a></p>';
-    $body .= '<p>Langue du formulaire : ' . pll_current_language() === 'fr' ? 'français' : 'anglais' . '</p>';
+    $lang = pll_current_language() === 'fr' ? 'français' : 'anglais';
+    $body .= '<p>Langue du formulaire : ' . $lang . '</p>';
 
     if (!isset($_SERVER['APP_ENV']) || 'production' !== $_SERVER['APP_ENV']) {
         $body .= '<p>NOTE DE DEV --- SERA ENVOYÉ À ' . $to . ' EN PRODUCTION</p>';
@@ -175,7 +176,8 @@ Ajax::listen('fourniture', function() {
 
     $body .= '<p>Bureau : ' . $_POST['fourniture-office-name'] . '</p>';
     $body .= '<p>Détail de la commande : ' . nl2br($_POST['fourniture-msg']) . '</p>';
-    $body .= '<p>Langue du formulaire : ' . pll_current_language() === 'fr' ? 'français' : 'anglais' . '</p>';
+    $lang = pll_current_language() === 'fr' ? 'français' : 'anglais';
+    $body .= '<p>Langue du formulaire : ' . $lang . '</p>';
 
     if (!isset($_SERVER['APP_ENV']) || 'production' !== $_SERVER['APP_ENV']) {
         $body .= '<p>NOTE DE DEV --- SERA ENVOYÉ À ' . $to . ' EN PRODUCTION</p>';
