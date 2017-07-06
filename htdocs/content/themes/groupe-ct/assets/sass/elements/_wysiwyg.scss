@@ -11,6 +11,9 @@
     text-transform: uppercase;
     padding-bottom: 25px;
     @extend .h2-size;
+    @media (max-width: $screen-sm-min) {
+      padding-bottom: 0;
+    }
   }
   h3,h4,h5,h6  {
     @include set-font(22px, $mada, 400, $black);
