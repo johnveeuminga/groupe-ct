@@ -160,7 +160,6 @@ Ajax::listen('fourniture', function() {
         break;
     }
 
-    $to = 'michael.villeneuve@ctrlweb.ca'; // @todo condition sur l'environnement pour prod : ventes@ctgro[upect.com
     $subject = 'Commande de fournitures - formulaire du site Web';
     $body = '';
     $body .= '<p>Titre : ' . $_POST['fourniture-title'] . '</p>';
