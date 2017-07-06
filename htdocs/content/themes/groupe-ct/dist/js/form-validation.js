@@ -105,7 +105,7 @@
                         'contact-phone': $form.find('#contact-phone').val(),
                         'contact-ext': $form.find('#contact-ext').val(),
                         'contact-email': $form.find('#contact-email').val(),
-                        'contact-message': $form.find('#contact-message').text(),
+                        'contact-message': $form.find('#contact-message').val(),
                         'contact-accept': $form.find('#contact-accept').val()
                     }
                 });
@@ -221,7 +221,7 @@
                         'assistance-opening02': $form_assistance.find('#assistance-opening02').val(),
                         'assistance-opening03': $form_assistance.find('#assistance-opening03').val(),
                         'assistance-opening04': $form_assistance.find('#assistance-opening04').val(),
-                        'assistance-msg': $form_assistance.find('#assistance-msg').html(),
+                        'assistance-msg': $form_assistance.find('#assistance-msg').val(),
                         'assistance-file': $form_assistance.find('#file-path').attr('href'),
                         'assistance-closed': $form.find('#fourniture-closed').is(':checked') ? true : false,
                     }
@@ -389,7 +389,7 @@
                         'fourniture-office': $form_fourniture.find('#fourniture-office').val(),
                         'fourniture-office-name': $form_fourniture.find('#fourniture-office option:selected').text(),
                         'fourniture-serial': $form_fourniture.find('#fourniture-serial').val(),
-                        'fourniture-msg': $form_fourniture.find('#fourniture-msg').html(),
+                        'fourniture-msg': $form_fourniture.find('#fourniture-msg').val(),
                         'fourniture-contract': $form.find('#fourniture-contract').is(':checked') ? true : false,
                         'fourniture-closed': $form_fourniture.find('#fourniture-closed').val()
                     }
