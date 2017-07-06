@@ -105,7 +105,7 @@
                         'contact-phone': $form.find('#contact-phone').val(),
                         'contact-ext': $form.find('#contact-ext').val(),
                         'contact-email': $form.find('#contact-email').val(),
-                        'contact-message': $form.find('#contact-message').html(),
+                        'contact-message': $form.find('#contact-message').text(),
                         'contact-accept': $form.find('#contact-accept').val()
                     }
                 });
