@@ -315,14 +315,14 @@
 /**** FORMS ****/
 
 .error-msg-container {
-  @include set-font(14px, $mada, 300, $red);
+  @include set-font(16px, $mada, 300, $red);
   .error {
     display: block;
     margin:5px 0;
   }
 
   > p {
-    @include set-font(14px, $mada, 300, $red);
+    @include set-font(16px, $mada, 300, $red);
   }
 
 }

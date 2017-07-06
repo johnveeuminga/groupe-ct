@@ -19,8 +19,8 @@
                         <div class="select-container">
                             <select name="newsletter-title" id="newsletter-title">
                                 <option value=""  disabled selected hidden>{{ pll__('Titre*') }}</option>
-                                <option value="m">{{ pll__('M.') }}</option>
-                                <option value="mme">{{ pll__('Mme') }}</option>
+                                <option value="M.">{{ pll__('M.') }}</option>
+                                <option value="Mme">{{ pll__('Mme') }}</option>
                             </select>
                         </div>
 

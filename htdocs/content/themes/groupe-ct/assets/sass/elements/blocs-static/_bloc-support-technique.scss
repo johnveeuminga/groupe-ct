@@ -70,7 +70,7 @@
   }
   .error-msg-container {
     p {
-      @include set-font(14px, $mada, 300, $red);
+      @include set-font(16px, $mada, 300, $red);
       margin: 5px 0;
       line-height: 18px;
     }
