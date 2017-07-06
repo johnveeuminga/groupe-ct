@@ -7,17 +7,17 @@
   @include flexbox();
   @include flex-direction(row);
   @include justify-content(space-between);
-  margin-top: 30px;
+  margin-top: 0px;
   flex-wrap: wrap;
   @media (min-width: $screen-sm-min) {
     flex-wrap: wrap;
     @include flex-direction(row);
-    margin-top: 50px;
   }
 
   .prod-logiciel-img-container {
     position: relative;
     width: 100%;
+    height: 100%;
 
     @media (min-width: $screen-lg-min) {
       @include flex-basis(45%);
@@ -29,7 +29,6 @@
       display: block;
       width: 100%;
       height: 100%;
-      max-width: 580px;
       z-index: 100;
       background-image: url($assets + "/images/icon/icon-play.png");
       background-repeat: no-repeat;
@@ -54,11 +53,11 @@
     .prod-logiciel-lang {
       @extend .mada17LightBlack;
       position: absolute;
-      left:0;
-      bottom:-25px;
+      left: 0;
+      bottom: -35px;
       @media (min-width: $screen-sm-min) {
-        bottom:auto;
-        margin-top: 10px;
+        //bottom: auto;
+        //margin-top: 10px;
       }
     }
   }
@@ -92,7 +91,7 @@
 
 
     @media (min-width: $screen-xs-min) {
-      margin:35px 0;
+      margin:50px 0;
     }
     @media (min-width: $screen-lg-min) {
       @include flex-basis(45%);
@@ -103,13 +102,19 @@
     .prod-logiciel-title {
       @extend .poppins30BoldBlack;
       margin:10px 0;
-      @media (min-width: $screen-sm-min) {
+      text-align: center;
+      @media (min-width: $screen-md-min) {
         margin-top:0px;
+        text-align: left;
       }
     }
 
     .prod-logiciel-subtitle {
       @extend .poppins22BoldGreen;
+      text-align: center;
+      @media (min-width: $screen-md-min) {
+        text-align: left;
+      }
     }
 
     .prod-logiciel-text {
@@ -120,6 +125,14 @@
         text-align: left;
       }
     }
+    .brochure-container {
+      width: 100%;
+      text-align: center;
+      @media (min-width: $screen-md-min) {
+        text-align: left;
+      }
+    }
+
   }
 }
 

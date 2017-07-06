@@ -7,7 +7,7 @@
     flex-wrap: nowrap;
   }
 
-  padding: 25px 0;
+  padding: 25px 0 0 0;
 
   .tab-change-container {
 
@@ -59,7 +59,6 @@
   }
 
   .tab-change-img-container {
-
     @media (min-width: 1240px) {
       text-align: center;
       height:96px;

@@ -6,4 +6,11 @@
       }
     }
   }
+
+  .prod-logiciel-container {
+    @media (min-width: $screen-lg-min) {
+      margin-top: 70px;
+    }
+  }
 }
+

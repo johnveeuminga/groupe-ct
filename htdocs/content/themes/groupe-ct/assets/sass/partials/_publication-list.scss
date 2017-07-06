@@ -1,6 +1,6 @@
 .publication-list-main-container {
 
-  padding-top: 130px;
+  padding-top: 45px;
   padding-bottom: 0px;
 
   @include flexbox();
@@ -11,7 +11,7 @@
     max-width:835px;
     margin:auto;
     text-align: center;
-    margin-bottom: 55px;
+    margin-bottom: 30px;
     .publication-header-title {
       @extend .poppins44BoldBlack;
       text-transform: uppercase;
@@ -41,6 +41,9 @@
       .publication-category.item-cat-active {
         background-color: $blue;
       }
+      .publication-category:hover {
+        background-color: $blue;
+      }
     }
   }
 
@@ -64,6 +67,7 @@
     position: relative;
     margin-left:20px;
   }
+
 
   .publication-nav-item.cta-pub-left {
     position: relative;
@@ -92,6 +96,15 @@
 
   }
 
+  .cta-container {
+    text-align: center;
+    a {
+      @include justify-content(center);
+      @media (min-width: $screen-lg-min) {
+        @include justify-content(flex-start);
+      }
+    }
+  }
 
 }
 

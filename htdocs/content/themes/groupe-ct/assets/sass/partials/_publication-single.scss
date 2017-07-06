@@ -82,8 +82,9 @@
 
 .other-publication-container {
   @include flexbox();
-  @include flex-direction(column);
-
+  @include flex-direction(row);
+  flex-wrap: wrap;
+  text-align: center;
   @media (min-width: $screen-sm-min) {
     @include align-items(baseline);
   }
@@ -112,6 +113,17 @@
   .publication-date {
     margin-bottom: 10px;
   }
+
+  .cta-container {
+    text-align: center;
+    a {
+      @include justify-content(center);
+      @media (min-width: $screen-lg-min) {
+        @include justify-content(flex-start);
+      }
+    }
+  }
+
 }
 
 

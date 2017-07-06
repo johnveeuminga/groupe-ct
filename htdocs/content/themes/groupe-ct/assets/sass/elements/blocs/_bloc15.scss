@@ -24,8 +24,8 @@
   @include flexbox();
   @include flex-direction(column);
   position: relative;
-  padding:40px 0;
-  width:100%;
+  width: 100%;
+  padding: 40px 0;
   @media (min-width: $screen-sm-min) {
     width:calc(100%/2);
   }

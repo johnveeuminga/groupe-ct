@@ -56,7 +56,8 @@
             <!-- THE ELEMENT START  -->
             <div class="publication-container"> <!-- reverse-elem : to swap img and text div -->
                 <div class="publication-img-container">
-                    <img class="image-pub shadow" src="{{ get_field('post_standard_image', $post->ID)['url'] }}" alt="">
+                    <?php $src = get_field('post_standard_image', $post->ID) ? get_field('post_standard_image', $post->ID)['url'] : themosis_assets() . '/images/img/img_pub01.png'; ?>
+                    <img class="image-pub shadow" src="{{ $src }}" alt="">
                 </div>
                 <div class="buffer"></div>
                 <div class="publication-text-container">
@@ -68,7 +69,9 @@
                     <p class="publication-text">
                         {{ get_the_excerpt($post->ID) }}
                     </p>
-                    <a href="{{ get_the_permalink($post->ID) }}" class="cta-see-more">{{ pll__('Lire la suite') }}</a>
+                    <div class="cta-container">
+                        <a href="{{ get_the_permalink($post->ID) }}" class="cta-see-more">{{ pll__('Lire la suite') }}</a>
+                    </div>
                 </div>
             </div>
             <!-- THE ELEMENT END  -->

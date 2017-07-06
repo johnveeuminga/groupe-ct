@@ -15,6 +15,17 @@
             }
         }
     @endif
+
+    @if (get_post_type( get_the_ID() === 'post'))
+        /*.hero-content-container {*/
+            {{--background-image: url({{ get_field('page_header_image_desktop', PageHelper::get_page_id(PageHelper::PAGE_5_0_PUBLICATIONS))['url'] }});--}}
+        /*}*/
+        /*@media (max-width: 767px) { !* or 301 if you want really the same as previously.  *!*/
+            /*.hero-content-container {*/
+                {{--background-image: url({{ get_field('page_header_image_mobile', PageHelper::get_page_id(PageHelper::PAGE_5_0_PUBLICATIONS))['url'] }});--}}
+            /*}*/
+        /*}*/
+    @endif
 </style>
 
 <section class="hero-page row">
@@ -24,15 +35,14 @@
 
     <div class="hero-content-container">
         <div class="hero-title-container">
-            @loop
-                <h1 class="hero-title">@if(get_field('page_html_title', Loop::id()) && !empty(get_field('page_html_title', Loop::id()))){!! get_field('page_html_title', Loop::id())  !!} @else<span class="red-border">{{ Loop::title() }}</span>@endif</h1>
-            @endloop
-            @if (is_array(get_field('page_header_image_desktop')))
-                {{--<img src="{{ get_field('page_header_image_desktop')['url'] }}" class="image-desktop" alt="{{ get_field('page_header_image_desktop')['alt'] }}">--}}
-            @endif
-            @if (is_array(get_field('page_header_image_mobile')))
-                {{--<img src="{{ get_field('page_header_image_mobile')['url'] }}" class="image-mobile" alt="{{ get_field('page_header_image_mobile')['alt'] }}">--}}
-            @endif
+
+            {{--@if (get_post_type( get_the_ID() === 'post'))--}}
+{{--                <h1 class="hero-title">@if(get_field('page_html_title', PageHelper::get_page_id(PageHelper::PAGE_5_0_PUBLICATIONS)) && !empty(get_field('page_html_title', Loop::id()))){!! get_field('page_html_title', PageHelper::get_page_id(PageHelper::PAGE_5_0_PUBLICATIONS))  !!} @else<span class="red-border">{{ get_the_title(PageHelper::get_page_id(PageHelper::PAGE_5_0_PUBLICATIONS)) }}</span>@endif</h1>--}}
+            {{--@else--}}
+                @loop
+                    <h1 class="hero-title">@if(get_field('page_html_title', Loop::id()) && !empty(get_field('page_html_title', Loop::id()))){!! get_field('page_html_title', Loop::id())  !!} @else<span class="red-border">{{ Loop::title() }}</span>@endif</h1>
+                @endloop
+            {{--@endif--}}
         </div>
         <div class="overlay"></div>
     </div>

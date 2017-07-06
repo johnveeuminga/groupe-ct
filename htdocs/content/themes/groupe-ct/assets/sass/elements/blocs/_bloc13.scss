@@ -9,7 +9,6 @@
   @include flexbox();
   @include justify-content(space-between);
   @include flex-direction(column);
-  @include align-items(center);
   @media (min-width: $screen-xs-min) {
     @include flex-direction(row);
     @include flex-wrap(wrap);
@@ -38,6 +37,7 @@
     @extend .mada18LightBlack;
     margin-left:50px;
     margin-bottom: 20px;
+    margin-right: 20px;
     position: relative;
     line-height: 20px;
     &:before {
@@ -69,4 +69,7 @@
 
 
 
+.contact-info-fax {
+  color: $black!important;
+}
 

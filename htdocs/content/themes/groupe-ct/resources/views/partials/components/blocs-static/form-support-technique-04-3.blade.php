@@ -27,7 +27,7 @@
             <div class="form-content-container">
 
                 <div class="contact-item">
-                    <h3 class="item-title">{{ pll__('Montréal et les environs') }}</h3>
+                    <h3 class="item-title">{!! pll__('Montréal et les environs') !!} </h3>
                     <div class="item-info">
                         <p>T : <span><a href="tel:+18009673103">1 800 967-3103</a></span></p>
                         <a href="mailto:service@ctgroupect.com">service@ctgroupect.com</a>
@@ -36,7 +36,7 @@
                 </div>
 
                 <div class="contact-item">
-                    <h3 class="item-title">{{ pll__('Toronto et Ouest canadien') }}</h3>
+                    <h3 class="item-title">{!! pll__('Toronto et Ouest canadien') !!} </h3>
                     <div class="item-info">
                         <p>T : <span><a href="tel:+18004633271">1 800 463-3271</a></span></p>
                         <a href="mailto:service@ctgroupect.com">service@ctgroupect.com</a>
@@ -45,7 +45,7 @@
                 </div>
 
                 <div class="contact-item">
-                    <h3 class="item-title">{{ pll__('Québec') }}</h3>
+                    <h3 class="item-title">{!! pll__('Québec') !!} </h3>
                     <div class="item-info">
                         <p>T : <span><a href="tel:+4186145301">418.614.5301</a></span></p>
                         <a href="mailto:service@ctgroupect.com">service@ctgroupect.com</a>
@@ -55,7 +55,7 @@
                 </div>
 
                 <div class="contact-item">
-                    <h3 class="item-title">{{ pll__('Beauce') }}</h3>
+                    <h3 class="item-title">{!! pll__('Beauce') !!} </h3>
                     <div class="item-info">
                         <p>T : <span><a href="tel:+18883893040">1 888 389-3040</a></span></p>
                         <a href="mailto:support@sacgroupect.com">support@sacgroupect.com</a>

@@ -15,15 +15,17 @@
             </ul>
         </nav>
 
-        <div class="publication-nav-container">
-            <div class="publication-nav">
-                @if (get_query_var( 'paged' ) > 1)<a class="publication-nav-item cta-pub-left" href="{{ PageHelper::get_page_permalink(PageHelper::PAGE_5_0_PUBLICATIONS) }}page/{{ get_query_var( 'paged' ) -1 }}/@if(isset($_GET['cat']))?cat={{ $_GET['cat'] }}@endif">{{ pll__('Page précédente') }}</a>@endif
-                @for ($i = 1; $i <= $count; $i++)
-                    <a class="publication-nav-item pagination @if ($i === get_query_var( 'paged' ) || (get_query_var( 'paged' ) === 0 && $i === 1)) active-pagination @endif" href="{{ PageHelper::get_page_permalink(PageHelper::PAGE_5_0_PUBLICATIONS) }}page/{{ $i }}/@if(isset($_GET['cat']))?cat={{ $_GET['cat'] }}@endif">{{ $i }}</a>
-                @endfor
-                @if (get_query_var( 'paged' ) < $count && $count !== 1)<a class="publication-nav-item cta-pub-right" href="{{ PageHelper::get_page_permalink(PageHelper::PAGE_5_0_PUBLICATIONS) }}page/{{ get_query_var( 'paged' ) + 1 === 1 ? 2 : get_query_var( 'paged' ) + 1 }}/@if(isset($_GET['cat']))?cat={{ $_GET['cat'] }}@endif">{{ pll__('Page suivante') }}</a>@endif
+        @if ($count > 1)
+            <div class="publication-nav-container">
+                <div class="publication-nav">
+                    @if (get_query_var( 'paged' ) > 1)<a class="publication-nav-item cta-pub-left" href="{{ PageHelper::get_page_permalink(PageHelper::PAGE_5_0_PUBLICATIONS) }}page/{{ get_query_var( 'paged' ) -1 }}/@if(isset($_GET['cat']))?cat={{ $_GET['cat'] }}@endif">{{ pll__('Page précédente') }}</a>@endif
+                    @for ($i = 1; $i <= $count; $i++)
+                        <a class="publication-nav-item pagination @if ($i === get_query_var( 'paged' ) || (get_query_var( 'paged' ) === 0 && $i === 1)) active-pagination @endif" href="{{ PageHelper::get_page_permalink(PageHelper::PAGE_5_0_PUBLICATIONS) }}page/{{ $i }}/@if(isset($_GET['cat']))?cat={{ $_GET['cat'] }}@endif">{{ $i }}</a>
+                    @endfor
+                    @if (get_query_var( 'paged' ) < $count && $count !== 1)<a class="publication-nav-item cta-pub-right" href="{{ PageHelper::get_page_permalink(PageHelper::PAGE_5_0_PUBLICATIONS) }}page/{{ get_query_var( 'paged' ) + 1 === 1 ? 2 : get_query_var( 'paged' ) + 1 }}/@if(isset($_GET['cat']))?cat={{ $_GET['cat'] }}@endif">{{ pll__('Page suivante') }}</a>@endif
+                </div>
             </div>
-        </div>
+        @endif
 
         <!-- INSERT PUBLICATIONS HERE -->
         <div class="publication-main-container default-padding default-width">
@@ -45,7 +47,9 @@
                             <p class="publication-date">{{ get_the_date( 'd F Y', $post->ID) }}</p>
                         @endif
                         <p class="publication-text">{!! $post->post_excerpt !!}</p>
-                        <a href="{{ get_permalink($post->ID) }}" class="cta-see-more">{{ pll__('Lire la suite') }}</a>
+                        <div class="cta-container">
+                            <a href="{{ get_permalink($post->ID) }}" class="cta-see-more">{{ pll__('Lire la suite') }}</a>
+                        </div>
                     </div>
                 </div>
                 <?php $reverse = !$reverse; ?>
@@ -53,16 +57,18 @@
         </div>
         <!-- END OF PUBLICATIONS-->
 
-        <div class="publication-nav-container">
-            <div class="publication-nav">
-                @if (get_query_var( 'paged' ) > 1)
-                    <a class="publication-nav-item cta-pub-left" href="{{ PageHelper::get_page_permalink(PageHelper::PAGE_5_0_PUBLICATIONS) }}page/{{ get_query_var( 'paged' ) -1 }}/@if(isset($_GET['cat']))?cat={{ $_GET['cat'] }}@endif">{{ pll__('Page précédente') }}</a>
-                @endif
-                @for ($i = 1; $i <= $count; $i++)
-                    <a class="publication-nav-item pagination @if ($i === get_query_var( 'paged' ) || (get_query_var( 'paged' ) === 0 && $i === 1)) active-pagination @endif" href="{{ PageHelper::get_page_permalink(PageHelper::PAGE_5_0_PUBLICATIONS) }}page/{{ $i }}/@if(isset($_GET['cat']))?cat={{ $_GET['cat'] }}@endif">{{ $i }}</a>
-                @endfor
-                @if (get_query_var( 'paged' ) < $count && $count !== 1)<a class="publication-nav-item cta-pub-right" href="{{ PageHelper::get_page_permalink(PageHelper::PAGE_5_0_PUBLICATIONS) }}page/{{ get_query_var( 'paged' ) + 1 === 1 ? 2 : get_query_var( 'paged' ) + 1 }}/@if(isset($_GET['cat']))?cat={{ $_GET['cat'] }}@endif">{{ pll__('Page suivante') }}</a>@endif
+        @if ($count > 1)
+            <div class="publication-nav-container">
+                <div class="publication-nav">
+                    @if (get_query_var( 'paged' ) > 1)
+                        <a class="publication-nav-item cta-pub-left" href="{{ PageHelper::get_page_permalink(PageHelper::PAGE_5_0_PUBLICATIONS) }}page/{{ get_query_var( 'paged' ) -1 }}/@if(isset($_GET['cat']))?cat={{ $_GET['cat'] }}@endif">{{ pll__('Page précédente') }}</a>
+                    @endif
+                    @for ($i = 1; $i <= $count; $i++)
+                        <a class="publication-nav-item pagination @if ($i === get_query_var( 'paged' ) || (get_query_var( 'paged' ) === 0 && $i === 1)) active-pagination @endif" href="{{ PageHelper::get_page_permalink(PageHelper::PAGE_5_0_PUBLICATIONS) }}page/{{ $i }}/@if(isset($_GET['cat']))?cat={{ $_GET['cat'] }}@endif">{{ $i }}</a>
+                    @endfor
+                    @if (get_query_var( 'paged' ) < $count && $count !== 1)<a class="publication-nav-item cta-pub-right" href="{{ PageHelper::get_page_permalink(PageHelper::PAGE_5_0_PUBLICATIONS) }}page/{{ get_query_var( 'paged' ) + 1 === 1 ? 2 : get_query_var( 'paged' ) + 1 }}/@if(isset($_GET['cat']))?cat={{ $_GET['cat'] }}@endif">{{ pll__('Page suivante') }}</a>@endif
+                </div>
             </div>
-        </div>
+        @endif
 
 </section>

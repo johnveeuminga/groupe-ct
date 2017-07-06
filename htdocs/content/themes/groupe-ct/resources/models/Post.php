@@ -97,7 +97,7 @@ class Post
 
         $args = [
             'post_type' => 'post',
-            'posts_per_page' => 1,
+            'posts_per_page' => 10,
             'paged' => get_query_var( 'paged' ),
         ];
 
@@ -105,7 +105,7 @@ class Post
         
 
         return [
-            'count' => $count,
+            'count' => $count / 10,
             'posts' => $query->get_posts(),
         ];
     }

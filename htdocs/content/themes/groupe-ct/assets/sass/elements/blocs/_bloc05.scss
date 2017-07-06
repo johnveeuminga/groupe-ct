@@ -119,7 +119,10 @@
 
   }//TEXT CONTAINER END
 
-  margin-bottom: 30px;
+
+  @media (min-width: $screen-lg-min) {
+    margin-bottom: 30px;
+  }
 
 
 }

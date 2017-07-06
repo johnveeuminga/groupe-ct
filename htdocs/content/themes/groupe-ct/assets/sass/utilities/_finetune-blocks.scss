@@ -36,6 +36,18 @@
   h2 {
     padding: 0!important;
   }
+
+  .desc {
+    margin-bottom: 0!important;
+    padding-bottom: 0!important;
+    p {
+      margin-bottom: 0!important;
+    }
+  }
+}
+
+.row-749 {
+  padding-bottom: 0;
 }
 
 .row-470 {
@@ -54,6 +66,8 @@
 }
 
 .bloc-medal {
+  margin-top: 30px;
+
   .prod-logiciel-container {
     flex-direction: row-reverse;
 
@@ -68,6 +82,7 @@
         @include font-size(45px);
         padding: 30px 0 20px;
       }
+
       @media (min-width: $screen-lg-min) {
         flex-wrap: nowrap;
       }

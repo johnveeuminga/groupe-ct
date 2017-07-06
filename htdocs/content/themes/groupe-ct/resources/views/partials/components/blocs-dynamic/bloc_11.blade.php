@@ -24,7 +24,9 @@
                     <p class="prod-logiciel-text">{!! nl2br($product['bloc_11_description']) !!}</p>
                 @endif
                 @if ($product['bloc_11_brochure'])
-                    <a class="brochure-download-pdf-white" href="{{ $product['bloc_11_brochure']['url'] }}" target="_blank">{{ pll__('BROCHURE') }}</a>
+                    <div class="brochure-container">
+                        <a class="brochure-download-pdf-white" href="{{ $product['bloc_11_brochure']['url'] }}" target="_blank">{{ pll__('BROCHURE') }}</a>
+                    </div>
                 @endif
             </div>
         </div>
