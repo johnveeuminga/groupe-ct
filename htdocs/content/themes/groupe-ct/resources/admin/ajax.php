@@ -119,7 +119,8 @@ Ajax::listen('assistance', function() {
     $body .= '<p>Poste: ' . $_POST['assistance-ext'] . '</p>';
     $body .= '<p>Numéro de série de l’appareil : ' . $_POST['assistance-serial'] . '</p>';
     $body .= '<p>Bureau : ' . $_POST['assistance-office-name'] . '</p>';
-    $body .= '<p>Description du problème : ' . nl2br($_POST['assistance-msg']) . '</p>';
+    $problem = nl2br($_POST['assistance-msg']);
+    $body .= '<p>Description du problème : ' . $problem . '</p>';
     $body .= '<p>Heures d’ouverture : ' . $_POST['assistance-opening01'] . ':' . $_POST['assistance-opening02'] . ' à ' . $_POST['assistance-opening03'] . ':' . $_POST['assistance-opening04'] . '</p>';
     $opened = $_POST['assistance-closed'] ? 'Oui' : 'Non';
     $body .= '<p>Bureau fermé le midi : ' . $opened . '</p>';
@@ -175,7 +176,8 @@ Ajax::listen('fourniture', function() {
     $body .= '<p>Appareil sous contrat de service : ' . $contract . '</p>';
 
     $body .= '<p>Bureau : ' . $_POST['fourniture-office-name'] . '</p>';
-    $body .= '<p>Détail de la commande : ' . nl2br($_POST['fourniture-msg']) . '</p>';
+    $commande = nl2br($_POST['fourniture-msg']);
+    $body .= '<p>Détail de la commande : ' . $commande . '</p>';
     $lang = pll_current_language() === 'fr' ? 'français' : 'anglais';
     $body .= '<p>Langue du formulaire : ' . $lang . '</p>';
 
