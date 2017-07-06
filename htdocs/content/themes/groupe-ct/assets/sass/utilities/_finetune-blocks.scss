@@ -78,6 +78,7 @@
       @include justify-content(center);
       @include align-items(center);
 
+
       @media (min-width: $screen-md-min) {
         @include font-size(45px);
         padding: 30px 0 20px;
@@ -88,6 +89,9 @@
       }
       img {
         margin-bottom: 0;
+        @media (max-width: $screen-sm-min - 1) {
+          display: none;
+        }
       }
       h2 {
         width: 100%;
