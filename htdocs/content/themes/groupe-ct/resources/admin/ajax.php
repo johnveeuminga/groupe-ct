@@ -64,7 +64,8 @@ Ajax::listen('contact', function() {
     $body .= '<p>Téléphone : ' . $_POST['contact-phone'] . '</p>';
     $body .= '<p>Poste : ' . $_POST['contact-ext'] . '</p>';
     $body .= '<p>Message : ' . nl2br($_POST['contact-message']) . '</p>';
-    $body .= '<p>Langue du formulaire : ' . pll_current_language() === 'fr' ? 'français' : 'anglais' . '</p>';
+    $lang = pll_current_language() === 'fr' ? 'français' : 'anglais';
+    $body .= '<p>Langue du formulaire : ' . $lang . '</p>';
 
 
     if (isset($_POST['contact-accept']) && $_POST['contact-accept'] == true) {
