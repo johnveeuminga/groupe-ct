@@ -40,7 +40,7 @@
 	<div id="global-container">
 <!--		include header -->
         @include('templates.header')
-		<main {{ is_front_page() ? 'class="front-page"' : '' }}>
+		<main {{ is_front_page() ? 'class="front-page"' : 'class="main-' . get_the_ID() . '"' }}>
 			@yield ('main')
 		</main>
 		<!-- include footer -->

@@ -1,9 +1,10 @@
 .bloc-tab-change-main-container {
 
   @include flexbox();
-  @include flex-direction(column);
+  @include flex-direction(row);
+  flex-wrap: wrap;
   @media (min-width: 1240px) {
-    @include flex-direction(row);
+    flex-wrap: nowrap;
   }
 
   padding: 25px 0;
@@ -33,13 +34,27 @@
 
   .tab-change-title-container {
     @include flexbox();
-    @include flex-direction(column);
+    @include flex-direction(row);
+    @include flex-wrap(wrap);
     @include align-items(center);
 
-    @include flex-basis(40%);
-    margin-bottom:25px;
-    @media (min-width: 1240px) {
+
+    @media (max-width: 1240px - 1) {
+      width: 100%;
+      @include justify-content(center);
+      .tab-change-img-container,
+      h2 {
+        width: 100%;
+        text-align: center;
+      }
+    }
+
+    @media (min-width: $screen-sm-min) {
       @include flex-basis(40%);
+      margin-bottom:25px;
+      @media (min-width: 1240px) {
+        @include flex-basis(40%);
+      }
     }
   }
 
@@ -71,11 +86,20 @@
   /**** CONTENT *****/
 
   .tab-change-content-container {
-    @include flex-basis(60%);
+    @media (min-width: $screen-sm-min) {
+      @include flex-basis(60%);
+    }
     @media (min-width: 1240px) {
       @include flex-basis(100%);
+      margin-top: 30px;
     }
+    
     margin-top: 30px;
+    @media (min-width: 1240px) {
+      h3 {
+        margin-top: 0;
+      }
+    }
   }
 
   .tab-change-content-title {
@@ -105,6 +129,7 @@
     @include rotate(90);
     @include align-self(center);
 
+    left:44%;
     @media (min-width: $screen-sm-min) {
       left:44%;
     }
@@ -134,6 +159,7 @@
     bottom:-81px;
     position: absolute;
     z-index: 99;
+    left:44%;
     @media (min-width: $screen-sm-min) {
       left:44%;
     }

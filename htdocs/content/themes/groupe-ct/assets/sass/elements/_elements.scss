@@ -58,7 +58,7 @@ main {
     }
   }
 
-  @media (max-width: $screen-sm-min) {
+  @media (max-width: $screen-sm-min - 1) {
     padding-top: 30px;
   }
 }

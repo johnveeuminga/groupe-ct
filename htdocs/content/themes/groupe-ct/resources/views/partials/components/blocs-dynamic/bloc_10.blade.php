@@ -3,7 +3,7 @@
         <div class="nav-cat-main-container">
             <!-- insert product category as a class in the <a> -->
             <nav class="nav-cat-container default-padding default-width">
-                <h3 class="select-title"><?php _e('Sélectionnez la catégorie de votre choix', THEME_TEXTDOMAIN); ?></h3>
+                <h3 class="select-title">{{ pll_('Sélectionnez la catégorie de votre choix'); ?></h3>
                 @include('partials.components.helpers.bloc-10-filters')
             </nav>
 
