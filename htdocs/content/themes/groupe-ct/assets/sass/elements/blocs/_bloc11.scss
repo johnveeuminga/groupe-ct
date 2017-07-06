@@ -87,16 +87,13 @@
 
   .prod-logiciel-text-container {
     padding-bottom:25px;
-    margin:50px 0;
-
 
     @media (min-width: $screen-xs-min) {
-      margin:50px 0;
+      margin: 0;
     }
     @media (min-width: $screen-lg-min) {
       @include flex-basis(45%);
       max-width:600px;
-      margin:0;
     }
 
     .prod-logiciel-title {
