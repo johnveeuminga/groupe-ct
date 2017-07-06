@@ -6,10 +6,11 @@
     margin:15px 0;
   }
 
-    h1, h2 {
+  h1, h2 {
     @include set-font(44px, $poppins, 700, $black);
     text-transform: uppercase;
     padding-bottom: 25px;
+    @extend .h2-size;
   }
   h3,h4,h5,h6  {
     @include set-font(22px, $mada, 400, $black);

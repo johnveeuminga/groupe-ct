@@ -26,7 +26,7 @@
                     @endif
                 @else
                     @if (isset(pll_get_post_translations(get_the_ID())['fr']))
-                        <li class="menu-item"><a class="nav-link" href="{{ get_permalink(pll_get_post_translations(get_the_ID())['fr']) }}">Français</a></li>
+                        <li class="menu-item"><a class="nav-linàk" href="{{ get_permalink(pll_get_post_translations(get_the_ID())['fr']) }}">Français</a></li>
                     @endif
                 @endif
 
