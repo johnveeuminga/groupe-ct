@@ -39,12 +39,14 @@
       max-width: 48%;
       z-index: 500;
       top: -15px;
-      left: -2000px;
-
+      left: 0px;
+      height:0;
+      //@include transform()
       &.slide-in {
         display: block;
         transition: 0.5s;
         left: -15px;
+
       }
 
       &.active {
@@ -53,6 +55,17 @@
         left: -15px;
       }
     }
+
+
+    #hover-hybride {
+      left: 30%;
+      height:100%;
+
+    }
+    #hover-numerique {
+      left: 63%
+    }
+
 
     #echelle-background-image {
       width: 100%;
@@ -224,7 +237,8 @@
   .bloc-echelle-mobile-container {
     position: relative;
     display: block;
-    margin: 30px 0;
+    margin: 40px 0 30px;
+
     text-align: center;
     img {
       width: 100%;

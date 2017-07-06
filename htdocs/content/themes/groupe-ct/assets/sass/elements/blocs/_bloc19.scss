@@ -44,17 +44,23 @@
     font-family: $poppins;
     font-weight: 700;
     margin:15px 0;
+
   }
 
   h1, h2 {
     @include set-font(44px, $poppins, 700, $black);
     text-transform: uppercase;
     padding-bottom: 25px;
+
+    @media (max-width: $screen-sm-min) {
+      padding-bottom: 0!important;
+    }
   }
   h3,h4,h5,h6  {
     @include set-font(22px, $mada, 400, $black);
     line-height: 32px;
     padding: 25px 0;
+
   }
   p {
     @include set-font(22px, $mada, 300, $black);

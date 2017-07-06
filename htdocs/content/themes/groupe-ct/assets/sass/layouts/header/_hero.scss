@@ -116,12 +116,14 @@
 .hero {
   position: relative;
   width: 100%;
-  //overflow: hidden;
+  overflow: hidden;
 
   height: calc(100vh - 120px);
   @media (min-width: $screen-sm-min) {
     height: auto;
+    overflow: hidden;
   }
+
 
 
   .hero-content-container {
@@ -266,7 +268,9 @@
 
     .hero-arrow {
       margin-top: 25px;
+      display: none;
       @media (min-width: $screen-md-min) {
+        display: block;
         margin-top: 50px;
       }
     }

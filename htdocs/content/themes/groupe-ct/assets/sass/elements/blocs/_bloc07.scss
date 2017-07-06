@@ -30,8 +30,15 @@
       @include align-items(center);
     }
 
+
     .two-col-icons-text-img-container {
       text-align: center;
+      @media (max-width: $screen-md-min) {
+        padding-bottom: 30px;
+      }
+      @media (max-width: $screen-xs-min) {
+        padding-bottom: 15px;
+      }
     }
 
 
@@ -57,3 +64,15 @@
 
 
 }//SECTION 02 END
+
+.two-col-icons-text-title {
+
+  @media (max-width: $screen-md-min - 1) {
+    margin: 0!important;
+    padding-bottom: 20px!important;
+  }
+  @media (max-width: $screen-sm-min - 1) {
+    margin: 0!important;
+    padding-bottom: 10px!important;
+  }
+}
