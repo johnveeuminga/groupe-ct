@@ -135,6 +135,8 @@
         });
 
 
+        
+        $('nav-sub-container').css('left', '');
 
         /**** ECHELLE NUMERIQUE ********/
 

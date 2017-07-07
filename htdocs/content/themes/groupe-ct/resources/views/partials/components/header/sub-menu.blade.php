@@ -2,10 +2,6 @@
 
     <div class="sub-menu-container nl1 row hide-from-screen">
 
-        <div class="sub-menu-title-container col-xs-10 col-xs-offset-2">
-            <h2 class="sub-menu-title"></h2>
-        </div>
-
         <div class="nav-sub-container row">
             <nav class="nav-sub nav-sub-left col-xs-3 col-xs-offset-2">
                 <div class="nav-section-title-container">
@@ -111,4 +107,3 @@
     </div>
 
 </div> <!-- SUB MENU MAIN CONTAINER END -->
-
