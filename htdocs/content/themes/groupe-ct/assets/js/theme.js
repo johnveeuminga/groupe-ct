@@ -28,6 +28,9 @@
         });
 
 
+        if (window.location.hash === 'contact-form') {
+            $('.contact-form-container').addClass('slide-in');
+        }
 
         /***** MENU MOBILE **/
 
