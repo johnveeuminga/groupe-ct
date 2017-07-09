@@ -1,7 +1,7 @@
 <?php
 
 PostType::make('acquisition', __('Acquisitions', 'GROUPE-CT'), __('Acquisition', 'GROUPE-CT') )->set([
-    'menu_icon' => 'dashicons-dashicons-networking',
+    'menu_icon' => 'dashicons-networking',
     'public' => true,
     'publicly_queryable' => true,
     'show_ui' => true,
