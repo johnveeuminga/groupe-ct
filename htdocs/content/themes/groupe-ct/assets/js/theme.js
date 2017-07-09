@@ -28,7 +28,7 @@
         });
 
 
-        if (window.location.hash === 'contact-form') {
+        if (window.location.hash === '#contact-form') {
             $('.contact-form-container').addClass('slide-in');
         }
 
