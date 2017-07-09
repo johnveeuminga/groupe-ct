@@ -501,33 +501,33 @@
             submitHandler: function(form) {
                 if (can_submit_newsletter) {
                     can_submit_newsletter = false;
-                    $form.find('.form-messages').hide(250);
+                    $form_newsletter.find('.form-messages').hide(250);
                     $.ajax({
                         url: groupect.ajaxurl,
                         type: 'POST',
                         dataType: 'json',
                         data: {
                             action: 'newsletter',
-                            'newsletter-title': $form.find('#newsletter-title').val(),
-                            'newsletter-firstname': $form.find('#newsletter-firstname').val(),
-                            'newsletter-lastname': $form.find('#newsletter-lastname').val(),
-                            'newsletter-compagny-name': $form.find('#newsletter-compagny-name').val(),
-                            'newsletter-phone': $form.find('#newsletter-phone').val(),
-                            'newsletter-email': $form.find('#newsletter-email').val()
+                            'newsletter-title': $form_newsletter.find('#newsletter-title').val(),
+                            'newsletter-firstname': $form_newsletter.find('#newsletter-firstname').val(),
+                            'newsletter-lastname': $form_newsletter.find('#newsletter-lastname').val(),
+                            'newsletter-compagny-name': $form_newsletter.find('#newsletter-compagny-name').val(),
+                            'newsletter-phone': $form_newsletter.find('#newsletter-phone').val(),
+                            'newsletter-email': $form_newsletter.find('#newsletter-email').val()
                         }
                     }).done(function(data) {
                         if (data.status === 'success') {
-                            $form.find('.newsletter-desc').hide();
-                            $form.find('.contact-field-container').hide(250, function () {
-                                $form.find('.newsletter-success').show(250, function() {
+                            $form_newsletter.find('.newsletter-desc').hide();
+                            $form_newsletter.find('.contact-field-container').hide(250, function () {
+                                $form_newsletter.find('.newsletter-success').show(250, function() {
                                     setTimeout(function () {
                                         $('html, body').animate({scrollTop:$('#home-newsletter').position().top}, 'fast');
                                     }, 25);
                                 });
                             });
                         } else {
-                            $form.find('.server-error').html(data.error.message).show();
-                            $form.find('.form-errors').show(250, function () {
+                            $form_newsletter.find('.server-error').html(data.error.message).show();
+                            $form_newsletter.find('.form-errors').show(250, function () {
                                 setTimeout(function () {
                                     $('html, body').animate({scrollTop:$('.form-errors').position().top - 30}, 'fast');
                                 }, 50);
