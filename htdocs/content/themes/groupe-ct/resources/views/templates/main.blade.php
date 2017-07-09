@@ -29,7 +29,7 @@
 
 	<?php wp_head(); ?>
 
-	@if (get_theID() === PageHelper::get_page_id(PageHelper::PAGE_4_6_CARRIERE))
+	@if (get_the_ID() === PageHelper::get_page_id(PageHelper::PAGE_4_6_CARRIERE))
 		<style>
 			.lity-iframe-container {
 				padding-top: 90%; /* 4:3 ratio */
