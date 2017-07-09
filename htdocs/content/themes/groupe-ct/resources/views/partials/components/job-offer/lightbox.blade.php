@@ -4,7 +4,7 @@
 </head>
 <body style="background-color: white; overflow: hidden;">
     <div id="global-container">
-        <main>
+        <main style="padding-bottom: 100px;">
             <div class="job-info-detailed-container">
                 <div class="job-info-inner-container">
                     <h2 class="job-info-title">{{ $post->post_title }}</h2>
