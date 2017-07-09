@@ -2,7 +2,7 @@
 <head>
     <?php wp_head(); ?>
 </head>
-<body style="background-color: white">
+<body style="background-color: white; overflow: hidden;">
     <div id="global-container">
         <main>
             <div class="job-info-detailed-container">
