@@ -3,7 +3,7 @@
     <?php wp_head(); ?>
 </head>
 <body style="background-color: white; overflow: hidden;">
-    <div id="global-container">
+    <div>
         <main style="padding-bottom: 100px;">
             <div class="job-info-detailed-container">
                 <div class="job-info-inner-container">

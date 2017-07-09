@@ -29,6 +29,13 @@
 
 	<?php wp_head(); ?>
 
+	@if (get_theID() === PageHelper::get_page_id(PageHelper::PAGE_4_6_CARRIERE))
+		<style>
+			.lity-iframe-container {
+				padding-top: 90%; /* 4:3 ratio */
+			}
+		</style>
+	@endif
 </head>
 <body>
 	<!-- Google Tag Manager (noscript) -->
