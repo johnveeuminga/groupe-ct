@@ -499,6 +499,8 @@
                 },
             },
             submitHandler: function(form) {
+                $form_newsletter.find('.error-email').hide();
+                $form_newsletter.find('.error-required').hide();
                 if (can_submit_newsletter) {
                     can_submit_newsletter = false;
                     $form_newsletter.find('.form-messages').hide(250);
@@ -526,6 +528,7 @@
                                 });
                             });
                         } else {
+                            can_submit_newsletter = true;
                             $form_newsletter.find('.server-error').html(data.error.message).show();
                             $form_newsletter.find('.form-errors').show(250, function () {
                                 setTimeout(function () {
