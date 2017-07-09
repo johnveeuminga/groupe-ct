@@ -330,12 +330,12 @@
 
 input.field-error,
 textarea.field-error {
-  border: 1px solid $red!important;
+  border: 2px solid $red!important;
   color: $red!important;
 }
 
 select.field-error {
-  border: 1px solid $red!important;
+  border: 2px solid $red!important;
 }
 
 .submit-btn {
