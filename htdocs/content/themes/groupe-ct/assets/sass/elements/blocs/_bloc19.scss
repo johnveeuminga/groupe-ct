@@ -66,6 +66,11 @@
     @include set-font(22px, $mada, 300, $black);
     padding-bottom: 25px;
     line-height: 32px;
+
+    &.upper-title,
+    &.upper-title-no-dot{
+      @include set-font(22px, $poppins, 700, $red);
+    }
   }
 
   li {
