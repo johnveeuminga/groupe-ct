@@ -205,55 +205,6 @@
 
         });
 
-        /** Newsletter **/
-        $('#form-newsletter').on('submit', function(e) {
-            e.preventDefault();
-
-            var validate = true; // RÉMI FAIT LA VALIDATION ICI
-
-            if (validate) {
-                submit_form_newsletter($(this));
-            } else {
-                // SHOW ERROR MESSAGE
-            }
-        });
-
-        function submit_form_newsletter($form) {
-            $form.find('.form-messages').hide(250);
-            $.ajax({
-                url: groupect.ajaxurl,
-                type: 'POST',
-                dataType: 'json',
-                data: {
-                    action: 'newsletter',
-                    'newsletter-title': $form.find('#newsletter-title').val(),
-                    'newsletter-firstname': $form.find('#newsletter-firstname').val(),
-                    'newsletter-lastname': $form.find('#newsletter-lastname').val(),
-                    'newsletter-compagny-name': $form.find('#newsletter-compagny-name').val(),
-                    'newsletter-phone': $form.find('#newsletter-phone').val(),
-                    'newsletter-email': $form.find('#newsletter-email').val()
-                }
-            }).done(function(data) {
-                if (data.status === 'success') {
-                    $form.find('.newsletter-desc').hide();
-                    $form.find('.contact-field-container').hide(250, function () {
-                        $form.find('.newsletter-success').show(250, function() {
-                            setTimeout(function () {
-                                $('html, body').animate({scrollTop:$('#home-newsletter').position().top}, 'fast');
-                            }, 25);
-                        });
-                    });
-                } else {
-                    $form.find('.server-error').html(data.error.message).show();
-                    $form.find('.form-errors').show(250, function () {
-                        setTimeout(function () {
-                            $('html, body').animate({scrollTop:$('.form-errors').position().top - 30}, 'fast');
-                        }, 50);
-                    });
-                }
-            });
-        }
-
         /*** NAV PRODUCT **/
         $('.nav-cat-container a:not(".publication-category")').on('click', function (e) {
             e.preventDefault();

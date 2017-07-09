@@ -432,5 +432,118 @@
             }
         });
 
+
+        var $form_newsletter = $( "#form-newsletter" ),
+            can_submit_newsletter = true;
+
+        $form_newsletter.validate({
+            groups: {
+                required_fields: 'newsletter-title newsletter-firstname newsletter-lastname newsletter-compagny-name newsletter-email newsletter-phone'
+            },
+            invalidHandler: function(event, validator) {
+                $('html, body').animate({scrollTop: $form_newsletter.position().top}, 'fast');
+                $form_newsletter.find('.error-email').hide();
+                $form_newsletter.find('.error-required').hide();
+
+                var errors = validator.numberOfInvalids();
+
+                if (errors) {
+                    $form_newsletter.find('.error-msg-container').show();
+
+                    if (validator.errorMap.hasOwnProperty('newsletter-title') ||
+                        validator.errorMap.hasOwnProperty("newsletter-firstname") ||
+                        validator.errorMap.hasOwnProperty("newsletter-lastname") ||
+                        validator.errorMap.hasOwnProperty("newsletter-compagny-name") ||
+                        validator.errorMap.hasOwnProperty("newsletter-email") ||
+                        validator.errorMap.hasOwnProperty("newsletter-phone")
+                    ) {
+                        $form_newsletter.find('.error-required').show();
+                    }
+
+                    if (validator.errorMap.hasOwnProperty("newsletter-email")) {
+                        $form_newsletter.find('.error-email').show();
+                    }
+                }
+            },
+            errorPlacement: function(error, element) {
+
+            },
+            rules: {
+                'newsletter-title': {
+                    required: true
+                },
+                'newsletter-firstname': {
+                    required: true
+                },
+                'newsletter-lastname': {
+                    required: true
+                },
+                'newsletter-compagny-name': {
+                    required: true
+                },
+                'newsletter-email': {
+                    required: true,
+                    email: true
+                },
+                'newsletter-phone': {
+                    required: true
+                },
+                'newsletter-msg': {
+                    required: true
+                },
+                'newsletter-serial': {
+                    required: true
+                },
+                'newsletter-office': {
+                    required: true
+                },
+            },
+            submitHandler: function(form) {
+                if (can_submit_newsletter) {
+                    can_submit_newsletter = false;
+                    $form.find('.form-messages').hide(250);
+                    $.ajax({
+                        url: groupect.ajaxurl,
+                        type: 'POST',
+                        dataType: 'json',
+                        data: {
+                            action: 'newsletter',
+                            'newsletter-title': $form.find('#newsletter-title').val(),
+                            'newsletter-firstname': $form.find('#newsletter-firstname').val(),
+                            'newsletter-lastname': $form.find('#newsletter-lastname').val(),
+                            'newsletter-compagny-name': $form.find('#newsletter-compagny-name').val(),
+                            'newsletter-phone': $form.find('#newsletter-phone').val(),
+                            'newsletter-email': $form.find('#newsletter-email').val()
+                        }
+                    }).done(function(data) {
+                        if (data.status === 'success') {
+                            $form.find('.newsletter-desc').hide();
+                            $form.find('.contact-field-container').hide(250, function () {
+                                $form.find('.newsletter-success').show(250, function() {
+                                    setTimeout(function () {
+                                        $('html, body').animate({scrollTop:$('#home-newsletter').position().top}, 'fast');
+                                    }, 25);
+                                });
+                            });
+                        } else {
+                            $form.find('.server-error').html(data.error.message).show();
+                            $form.find('.form-errors').show(250, function () {
+                                setTimeout(function () {
+                                    $('html, body').animate({scrollTop:$('.form-errors').position().top - 30}, 'fast');
+                                }, 50);
+                            });
+                        }
+                    });
+                }
+                return false;
+            },
+
+            highlight: function(element) {
+                $(element).addClass("field-error");
+            },
+            unhighlight: function(element) {
+                $(element).removeClass("field-error");
+            }
+        });
     });
 }(jQuery));
