@@ -102,7 +102,11 @@ class Post
         ];
 
         $query = new \WP_Query($args);
-        
+
+        if (isset($_GET['cat']))  {
+            $args['cat'] = $_GET['cat'];
+        }
+
 
         return [
             'count' => $count / 10,
