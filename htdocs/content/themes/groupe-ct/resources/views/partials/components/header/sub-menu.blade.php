@@ -19,7 +19,7 @@
     <div class="sub-menu-container nl2 row hide-from-screen">
 
         <div class="sub-menu-title-container col-xs-10 col-xs-offset-2">
-            <h2 class="sub-menu-title"><a href="{{ PageHelper::get_page_permalink(PageHelper::PAGE_2_0_PRODUITS_SOLUTIONS) }}"><?= pll__('Des solutions qui travaillent en synergie', GROUPE_CT) ?></a></h2>
+            <h3  class="sub-menu-title"><a href="{{ PageHelper::get_page_permalink(PageHelper::PAGE_2_0_PRODUITS_SOLUTIONS) }}"><?= pll__('Des solutions qui travaillent en synergie', GROUPE_CT) ?></a></h3>
         </div>
 
         <div class="nav-sub-container row">
