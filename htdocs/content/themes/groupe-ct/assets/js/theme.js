@@ -73,6 +73,13 @@
                 var $navIndex = $(this).attr('class').split(' ')[1];
                 $('.sub-menu-main-container').find('.'+ $navIndex).removeClass('hide-from-screen');
                 $(this).siblings('.menu-item-triangle').addClass('show-arrow');
+                if ($navIndex === 'nl1' || $navIndex === 'nl3' || $navIndex === 'nl4') {
+                    var $triangle = jQuery('.menu-item-triangle.show-arrow');
+                    var left = $triangle.offset().left - $triangle.position().left;
+                    $('.sub-menu-main-container').find('.'+ $navIndex).find('.nav-sub').css('left', left + 'px');
+                }
+
+
             }, function() {
                 var $navIndex = $(this).attr('class').split(' ')[1];
                 if ($('.sub-menu-main-container')) {
@@ -135,7 +142,7 @@
         });
 
 
-        
+
         $('nav-sub-container').css('left', '');
 
         /**** ECHELLE NUMERIQUE ********/
@@ -176,7 +183,7 @@
             $('.slider-hero-dot[data-target="' + $next.attr('data-hero-slide') + '"]').addClass('active-hero-slide');
 
         }, 8000);
-        
+
 
         $('.slider-hero-dot').on('click', function (e) {
             e.preventDefault();
