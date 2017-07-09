@@ -56,6 +56,7 @@
         $('.sub-sub-menu-trigger').on('click', function (e) {
             e.preventDefault();
             $(this).parent().siblings('.nav-link-container').toggleClass('open-sub-menu-mobile');
+            $(this).toggleClass('hideMe').siblings().removeClass('hideMe');
         });
 
 
