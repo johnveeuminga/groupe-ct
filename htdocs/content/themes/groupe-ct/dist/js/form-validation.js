@@ -31,6 +31,8 @@
             },
             invalidHandler: function(event, validator) {
                 $('html, body').animate({scrollTop:$('#contact-us-form').position().top}, 'fast');
+                $form.find('.error-email').hide();
+                $form.find('.error-required').hide();
 
                 var errors = validator.numberOfInvalids();
 
@@ -130,6 +132,9 @@
             },
             invalidHandler: function(event, validator) {
                 $('html, body').animate({scrollTop: $form_assistance.position().top}, 'fast');
+                $form.find('.error-email').hide();
+                $form.find('.error-required').hide();
+
 
                 var errors = validator.numberOfInvalids();
 
@@ -310,6 +315,8 @@
             },
             invalidHandler: function(event, validator) {
                 $('html, body').animate({scrollTop: $form_fourniture.position().top}, 'fast');
+                $form.find('.error-email').hide();
+                $form.find('.error-required').hide();
 
                 var errors = validator.numberOfInvalids();
 
