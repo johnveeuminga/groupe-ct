@@ -52,11 +52,12 @@
       text-transform: uppercase;
       text-decoration: none;
       position: relative;
+      display: block;
       &:after {
         display: none;
         content:url($assets + "/images/icon/icon-red-arrow.png");
         position: absolute;
-        right:-60px;
+        right:-30px;
         top:0px;
       }
 
