@@ -52,15 +52,26 @@
       text-transform: uppercase;
       text-decoration: none;
       position: relative;
-      &:after {
+      display: flex;
+      //&:after {
+      //  display: none;
+      //  content:url($assets + "/images/icon/icon-red-arrow.png");
+      //  position: absolute;
+      //  right:-60px;
+      //  top:0px;
+      //}
+      .arrow-hover {
         display: none;
-        content:url($assets + "/images/icon/icon-red-arrow.png");
-        position: absolute;
-        right:-60px;
-        top:0px;
       }
 
       &:hover {
+        .arrow-hover {
+          display: block;
+          position: absolute;
+          right: -60px;
+          margin-left: 15px;
+          bottom: 0;
+        }
         color:$red;
         &:after {
           display:block;
