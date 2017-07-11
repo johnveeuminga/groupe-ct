@@ -44,9 +44,9 @@
 	</noscript>
 	<!-- End Google Tag Manager (noscript) -->
 	<a href="#inline" data-lity>Inline</a>
-	<div id="inline" class="lity-hide" style="background-image: url('{{ themosis_assets() }}/images/bg/interstiel.jpg'); width: 1920px; height: 1080px;">
+	<div id="interstitiel" class="lity-hide" style="background-image: url('{{ themosis_assets() }}/images/bg/interstiel.jpg'); width: 1920px; height: 1080px;">
 		some content;
-		<div class="btn-container" style="position: absolute;bottom: 50px;width: 100%;display: flex;justify-content: center;">
+		<div class="btn-container">
 			<a class="btn-bloc2 primary-btn-blue" href="#">Poursuivre votre<br/>visite</a>
 			<a class="btn-bloc2 primary-btn-blue" style="margin: 0 15px;" href="#">Lire le communiqué<br/>de presse</a>
 			<a class="btn-bloc2 primary-btn-blue" href="#">Joindre solutions d'affaires<br/>de la capitale (SAC)</a>

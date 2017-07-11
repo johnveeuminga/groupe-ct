@@ -138,3 +138,19 @@
     margin-bottom: 0;
   }
 }
+
+#interstitiel {
+  .btn-container {
+    position: absolute;
+    bottom: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center
+  }
+  .primary-btn-blue {
+    background: white;
+    &:hover {
+      color: $red;
+    }
+  }
+}
