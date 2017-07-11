@@ -8,7 +8,7 @@
     @if (PageHelper::get_page_id(PageHelper::PAGE_2_1_2_EQUIPEMENTS_PRODUCTION) === get_the_ID())
         <li class="menu-item"><a class="primary-btn-blue-sky" data-target="2-1-2-a" href="#">{{ pll__('Production de bas volume') }}</a></li>
         <li class="menu-item"><a class="primary-btn-blue-sky" data-target="2-1-2-b" href="#">{{ pll__('Production numérique') }}</a></li>
-        <li class="menu-item"><a class="primary-btn-blue-sky" data-target="2-1-2-c" href="#">{{ pll__('Production de haut volume') }}</a></li>
+        {{--<li class="menu-item"><a class="primary-btn-blue-sky" data-target="2-1-2-c" href="#">{{ pll__('Production de haut volume') }}</a></li>--}}
     @endif
     @if (PageHelper::get_page_id(PageHelper::PAGE_2_1_3_IMPRESSION_GRAND_FORMAT) === get_the_ID())
         <li class="menu-item"><a class="primary-btn-blue-sky" data-target="2-1-3-a" href="#">{{ pll__('Impression de plan') }}</a></li>

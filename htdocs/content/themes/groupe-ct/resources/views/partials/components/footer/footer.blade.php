@@ -15,7 +15,7 @@
                 <h4 class="footer-nav-title"><a href="{{ PageHelper::get_page_permalink(PageHelper::PAGE_2_0_PRODUITS_SOLUTIONS) }}">{{ PageHelper::get_page_title(PageHelper::PAGE_2_0_PRODUITS_SOLUTIONS) }}</a></h4>
                 <ul class="nav-link-container">
 
-                    <li class="menu-item"><a class="nav-link" href="{{ PageHelper::get_page_permalink(PageHelper::PAGE_2_2_1_PARC_IMPRESSION) }}"><?= pll__('Équipements d\'impression', GROUPE_CT) ?></a></li>
+                    <li class="menu-item"><a class="nav-link" href="{{ PageHelper::get_page_permalink(PageHelper::PAGE_2_1_1_EQUIPEMENTS_BUREAU) }}"><?= pll__('Équipements d\'impression', GROUPE_CT) ?></a></li>
                     @include('partials.components.header.sub-menu-nav-link-atom', ['page_id' => PageHelper::PAGE_2_1_1_EQUIPEMENTS_BUREAU, 'margin_left' => true])
                     @include('partials.components.header.sub-menu-nav-link-atom', ['page_id' => PageHelper::PAGE_2_1_2_EQUIPEMENTS_PRODUCTION, 'margin_left' => true])
                     @include('partials.components.header.sub-menu-nav-link-atom', ['page_id' => PageHelper::PAGE_2_1_3_IMPRESSION_GRAND_FORMAT, 'margin_left' => true])
@@ -80,7 +80,7 @@
 
             </div>
             <div class="legal-container">
-                <p>© <?php echo date("Y"); ?> &copy;&nbsp;{{ pll__('2017 Groupe C.T Tous droits réservé') }}</p>
+                <p><?php echo date("Y"); ?>&copy; {{ pll__('Groupe C.T Tous droits réservé') }}</p>
                 <a href="#">{{ pll__('Mentions légales') }}</a>
             </div>
 

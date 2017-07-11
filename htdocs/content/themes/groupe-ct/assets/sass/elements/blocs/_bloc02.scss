@@ -178,7 +178,7 @@
     padding-bottom: 0;
   }
 
-  a {
+  a:not(.primary-btn-blue) {
     @extend .form-link;
   }
 }//IMG PLUS TEXT END

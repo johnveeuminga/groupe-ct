@@ -28,6 +28,9 @@
         });
 
 
+        if (window.location.hash === '#contact-form') {
+            $('.contact-form-container').addClass('slide-in');
+        }
 
         /***** MENU MOBILE **/
 
@@ -56,6 +59,7 @@
         $('.sub-sub-menu-trigger').on('click', function (e) {
             e.preventDefault();
             $(this).parent().siblings('.nav-link-container').toggleClass('open-sub-menu-mobile');
+            $(this).toggleClass('hideMe').siblings().removeClass('hideMe');
         });
 
 
@@ -73,6 +77,13 @@
                 var $navIndex = $(this).attr('class').split(' ')[1];
                 $('.sub-menu-main-container').find('.'+ $navIndex).removeClass('hide-from-screen');
                 $(this).siblings('.menu-item-triangle').addClass('show-arrow');
+                if ($navIndex === 'nl1' || $navIndex === 'nl3' || $navIndex === 'nl4') {
+                    var $triangle = jQuery('.menu-item-triangle.show-arrow');
+                    var left = $triangle.offset().left - $triangle.position().left;
+                    $('.sub-menu-main-container').find('.'+ $navIndex).find('.nav-sub').css('left', left + 'px');
+                }
+
+
             }, function() {
                 var $navIndex = $(this).attr('class').split(' ')[1];
                 if ($('.sub-menu-main-container')) {
@@ -135,7 +146,7 @@
         });
 
 
-        
+
         $('nav-sub-container').css('left', '');
 
         /**** ECHELLE NUMERIQUE ********/
@@ -162,11 +173,7 @@
         });
 
         setInterval( function () {
-            console.log('HEY!');
             var $next = $('.hero-content-container').find('.active-slide').removeClass('active-slide').next();
-
-            console.log($next.hasClass('slide-container'));
-
             if (!$next.hasClass('slide-container')) {
                 $next = $('.hero-content-container').children().first();
             }
@@ -176,7 +183,7 @@
             $('.slider-hero-dot[data-target="' + $next.attr('data-hero-slide') + '"]').addClass('active-hero-slide');
 
         }, 8000);
-        
+
 
         $('.slider-hero-dot').on('click', function (e) {
             e.preventDefault();
@@ -200,55 +207,6 @@
             $(this).siblings('.toggle-content-carret').toggleClass('toggle-carret');
 
         });
-
-        /** Newsletter **/
-        $('#form-newsletter').on('submit', function(e) {
-            e.preventDefault();
-
-            var validate = true; // RÉMI FAIT LA VALIDATION ICI
-
-            if (validate) {
-                submit_form_newsletter($(this));
-            } else {
-                // SHOW ERROR MESSAGE
-            }
-        });
-
-        function submit_form_newsletter($form) {
-            $form.find('.form-messages').hide(250);
-            $.ajax({
-                url: groupect.ajaxurl,
-                type: 'POST',
-                dataType: 'json',
-                data: {
-                    action: 'newsletter',
-                    'newsletter-title': $form.find('#newsletter-title').val(),
-                    'newsletter-firstname': $form.find('#newsletter-firstname').val(),
-                    'newsletter-lastname': $form.find('#newsletter-lastname').val(),
-                    'newsletter-compagny-name': $form.find('#newsletter-compagny-name').val(),
-                    'newsletter-phone': $form.find('#newsletter-phone').val(),
-                    'newsletter-email': $form.find('#newsletter-email').val()
-                }
-            }).done(function(data) {
-                if (data.status === 'success') {
-                    $form.find('.newsletter-desc').hide();
-                    $form.find('.contact-field-container').hide(250, function () {
-                        $form.find('.newsletter-success').show(250, function() {
-                            setTimeout(function () {
-                                $('html, body').animate({scrollTop:$('#home-newsletter').position().top}, 'fast');
-                            }, 25);
-                        });
-                    });
-                } else {
-                    $form.find('.server-error').html(data.error.message).show();
-                    $form.find('.form-errors').show(250, function () {
-                        setTimeout(function () {
-                            $('html, body').animate({scrollTop:$('.form-errors').position().top - 30}, 'fast');
-                        }, 50);
-                    });
-                }
-            });
-        }
 
         /*** NAV PRODUCT **/
         $('.nav-cat-container a:not(".publication-category")').on('click', function (e) {

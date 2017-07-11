@@ -29,6 +29,13 @@
 
 	<?php wp_head(); ?>
 
+	@if (get_the_ID() === PageHelper::get_page_id(PageHelper::PAGE_4_6_CARRIERE))
+		<style>
+			.lity-iframe-container {
+				padding-top: 90%; /* 4:3 ratio */
+			}
+		</style>
+	@endif
 </head>
 <body>
 	<!-- Google Tag Manager (noscript) -->
@@ -36,6 +43,19 @@
 		<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N49C66Q" height="0" width="0" style="display:none;visibility:hidden"></iframe>
 	</noscript>
 	<!-- End Google Tag Manager (noscript) -->
+	{{--<a href="#interstitiel" data-lity>Inline</a>--}}
+	<div id="interstitiel" class="lity-hide" style="background-image: url('{{ themosis_assets() }}/images/bg/interstiel.jpg');">
+		<div class="content">
+			<h2>SOLUTIONS D'AFFAIRES DE LA CAPITALE, UNE SOCIÉTÉ DE GROUPE CT.</h2>
+			<p>Une entreprise québécoise d'envergure nationale qui offre une expertise reconnue en gestion documentaire et en technologie d'impression pour les entreprise de Québec</p>
+		</div>
+		<div class="btn-container">
+			<a class="btn-bloc2 primary-btn" href="#">Poursuivre votre<br/>visite</a>
+			<a class="btn-bloc2 primary-btn" style="margin: 0 15px;" href="#">Lire le communiqué<br/>de presse</a>
+			<a class="btn-bloc2 primary-btn" href="#">Joindre solutions d'affaires<br/>de la capitale (SAC)</a>
+		</div>
+	</div>
+
 	@include('partials.components.header.main-nav-mobile')
 	<div id="global-container">
 <!--		include header -->

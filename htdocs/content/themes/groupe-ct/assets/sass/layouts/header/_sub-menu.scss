@@ -31,6 +31,7 @@
   .nav-section-title {
     padding-bottom:15px;
     text-transform: uppercase;
+    @include set-font(17px, $poppins, 400, white);
 
     a {
       color: white;
@@ -52,15 +53,26 @@
       text-transform: uppercase;
       text-decoration: none;
       position: relative;
-      &:after {
+      display: inline;
+      //&:after {
+      //  display: none;
+      //  content:url($assets + "/images/icon/icon-red-arrow.png");
+      //  position: absolute;
+      //  right:-60px;
+      //  top:0px;
+      //}
+      .arrow-hover {
         display: none;
-        content:url($assets + "/images/icon/icon-red-arrow.png");
-        position: absolute;
-        right:-60px;
-        top:0px;
       }
 
       &:hover {
+        .arrow-hover {
+          display: block;
+          position: absolute;
+          right: -60px;
+          margin-left: 15px;
+          bottom: 0;
+        }
         color:$red;
         &:after {
           display:block;
@@ -71,8 +83,11 @@
   }
 
   .nl1 {
+    height: 375px;
     .nav-sub {
-      height: 240px;
+      position: absolute;
+      margin: 0;
+      top: 85px;
     }
   }
 
@@ -83,14 +98,20 @@
   }
 
   .nl3 {
+    height: 375px;
     .nav-sub {
-      height: 240px;
+      position: absolute;
+      margin: 0;
+      top: 85px;
     }
   }
 
   .nl4 {
+    height: 425px!important;
     .nav-sub {
-      height: 290px;
+      position: absolute;
+      margin: 0;
+      top: 85px;
     }
   }
 }

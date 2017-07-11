@@ -130,3 +130,58 @@
   }
 
 }
+
+.row-261,
+.row-1102 {
+  .upper-title-no-dot {
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+}
+
+#interstitiel {
+  position: relative;
+  width: 1920px;
+  max-width: 95vw;
+  height: 1080px;
+  max-height: 95vh!important;
+  .content {
+    position: absolute;
+    top: 30vh;
+    left: 26vw;
+    max-width: 770px;
+    h2 {
+      @include set-font(44px, $poppins, 700, $black);
+      text-transform: uppercase;
+      padding-bottom: 25px;
+      @extend .h2-size;
+      @media (max-width: $screen-sm-min) {
+        padding-bottom: 0;
+      }
+      color: white;
+    }
+    p {
+      @include set-font(22px, $mada, 300, $black);
+      padding-bottom: 25px;
+      line-height: 32px;
+      color: white;
+    }
+  }
+
+  .btn-container {
+    position: absolute;
+    bottom: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: $blue!important;
+  }
+  .primary-btn {
+    background: white;
+    text-align: center;
+    &:hover {
+      background: $red!important;
+      color: white!important;
+    }
+  }
+}

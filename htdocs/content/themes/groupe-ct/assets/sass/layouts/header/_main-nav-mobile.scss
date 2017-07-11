@@ -1,5 +1,9 @@
 .top-bar-content-container.top-bar-mobile {
-  position: relative;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 999;
+  width: 100%;
   background-color: $primary-bg;
   height:80px;
 
@@ -199,8 +203,11 @@
   width:100%;
   position: relative;
   left:0;
-  top:0;
+  top: 80px;
   @include transition(all 0.6s ease);
+  @media (min-width: $screen-md-min) {
+    top: 0
+  }
 }
 
 .menu-mobile-active {

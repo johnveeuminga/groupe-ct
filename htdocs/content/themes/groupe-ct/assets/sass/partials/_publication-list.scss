@@ -37,7 +37,19 @@
     }
 
     .menu-item {
-      margin: 0 20px 0 0;
+      margin: 0 20px 20px 0;
+      width: 100%;
+      display: flex;
+      a {
+        width: 100%;
+      }
+      @media (min-width: $screen-sm-min) {
+        width: auto;
+        a {
+          width: auto;
+        }
+      }
+
       .publication-category.item-cat-active {
         background-color: $blue;
       }
@@ -50,9 +62,6 @@
   .publication-nav {
     @include flexbox();
     @include flex-wrap(wrap);
-    @media (min-width: $screen-sm-min) {
-
-    }
     position: relative;
     @include justify-content(center);
     border-top:1px solid $grey-light;

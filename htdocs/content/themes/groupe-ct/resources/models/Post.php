@@ -101,8 +101,12 @@ class Post
             'paged' => get_query_var( 'paged' ),
         ];
 
+        if (isset($_GET['cat']))  {
+            $args['cat'] = $_GET['cat'];
+        }
+
         $query = new \WP_Query($args);
-        
+
 
         return [
             'count' => $count / 10,
