@@ -70,7 +70,6 @@ acf_add_local_field_group(array (
                 $acf_fields->generate_textarea('bloc_1_slide_description', __('Description', 'GROUPE-CT') ),
                 $this->generate_cta('bloc_1_slide' )[0],
                 $this->generate_cta('bloc_1_slide' )[1],
-                $this->generate_cta('bloc_1_slide' )[2],
             ),
         ),
     ),
