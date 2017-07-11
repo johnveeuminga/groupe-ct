@@ -44,7 +44,7 @@
 	</noscript>
 	<!-- End Google Tag Manager (noscript) -->
 	<a href="#inline" data-lity>Inline</a>
-	<div id="inline" class="lity-hide" style="background-image: url('{{ themosis() }}/images/bg/interstiel.jpg'); width: 1920px; height: 1080px;">
+	<div id="inline" class="lity-hide" style="background-image: url('{{ themosis_assets() }}/images/bg/interstiel.jpg'); width: 1920px; height: 1080px;">
 		some content;
 	</div>
 
