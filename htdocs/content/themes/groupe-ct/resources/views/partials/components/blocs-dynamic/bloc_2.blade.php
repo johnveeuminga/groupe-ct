@@ -1,5 +1,5 @@
 <!-- Block 2 - Text/Image & Image/Text - Slider -->
-<div class="img-plus-text default-padding default-width">
+<div class="img-plus-text img-plus-text-slider default-padding default-width">
     <div class="slider-main-container">
         @foreach($block->get_field('bloc_2_slides') as $i => $slide)
             <div class="slide-container slide{{ $i }} @if($i == 0) {{ 'active-slide' }} @endif @if($slide['bloc_2_slide_image_left'] === false) reverse-elem @endif">
