@@ -240,10 +240,10 @@ class Bloc {
 				    $this->fields['bloc_static_file'] = get_sub_field('bloc_static_file');
 					break;
 				case "bloc_padding":
-				    $this->fields['padding_mobile'] = get_sub_field('padding_mobile');
-				    $this->fields['padding_tablet'] = get_sub_field('padding_tablet');
-				    $this->fields['padding_laptop'] = get_sub_field('padding_laptop');
-				    $this->fields['padding_desktop'] = get_sub_field('padding_desktop');
+				    $this->fields['bloc_padding_mobile'] = get_sub_field('bloc_padding_mobile');
+				    $this->fields['bloc_padding_tablet'] = get_sub_field('bloc_padding_tablet');
+				    $this->fields['bloc_padding_laptop'] = get_sub_field('bloc_padding_laptop');
+				    $this->fields['bloc_padding_desktop'] = get_sub_field('bloc_padding_desktop');
 					break;
 				default:
 					break;
