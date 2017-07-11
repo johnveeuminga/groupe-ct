@@ -45,6 +45,10 @@
 	<!-- End Google Tag Manager (noscript) -->
 	<a href="#interstitiel" data-lity>Inline</a>
 	<div id="interstitiel" class="lity-hide" style="background-image: url('{{ themosis_assets() }}/images/bg/interstiel.jpg');">
+		<div class="content">
+			<h2>SOLUTIONS D'AFFAIRES DE LA CAPITALE, UNE SOCIÉTÉ DE GROUPE CT.</h2>
+			<p>Une entreprise québécoise d'envergure nationale qui offre une expertise reconnue en gestion documentaire et en technologie d'impression pour les entreprise de Québec</p>
+		</div>
 		<div class="btn-container">
 			<a class="btn-bloc2 primary-btn" href="#">Poursuivre votre<br/>visite</a>
 			<a class="btn-bloc2 primary-btn" style="margin: 0 15px;" href="#">Lire le communiqué<br/>de presse</a>

@@ -144,7 +144,13 @@
   width: 1920px;
   max-width: 95vw;
   height: 1080px;
-  max-height: 95vh;
+  max-height: 95vh!important;
+  .content {
+    position: absolute;
+    top: 100px;
+    left: 150px;
+    max-width: 800px;
+  }
 
   .btn-container {
     position: absolute;
