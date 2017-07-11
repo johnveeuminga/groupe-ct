@@ -46,9 +46,9 @@
 	<a href="#interstitiel" data-lity>Inline</a>
 	<div id="interstitiel" class="lity-hide" style="background-image: url('{{ themosis_assets() }}/images/bg/interstiel.jpg');">
 		<div class="btn-container">
-			<a class="btn-bloc2 primary-btn-blue" href="#">Poursuivre votre<br/>visite</a>
-			<a class="btn-bloc2 primary-btn-blue" style="margin: 0 15px;" href="#">Lire le communiqué<br/>de presse</a>
-			<a class="btn-bloc2 primary-btn-blue" href="#">Joindre solutions d'affaires<br/>de la capitale (SAC)</a>
+			<a class="btn-bloc2 primary-btn" href="#">Poursuivre votre<br/>visite</a>
+			<a class="btn-bloc2 primary-btn" style="margin: 0 15px;" href="#">Lire le communiqué<br/>de presse</a>
+			<a class="btn-bloc2 primary-btn" href="#">Joindre solutions d'affaires<br/>de la capitale (SAC)</a>
 		</div>
 	</div>
 
