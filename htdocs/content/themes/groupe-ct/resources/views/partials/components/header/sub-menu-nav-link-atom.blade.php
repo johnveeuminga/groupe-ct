@@ -1,1 +1,1 @@
-<li class="menu-item"><a class="nav-link @if (isset($margin_left) && $margin_left) margin-left-15 @endif" href="{{ PageHelper::get_page_permalink($page_id) }}">{{ PageHelper::get_page_title($page_id) }}<img class="arrow-hover" src="{{ themosis_assets() }}/images/icon/icon-red-arrow.png" /></a></li>
+<li class="menu-item"><a class="nav-link @if (isset($margin_left) && $margin_left) margin-left-15 @endif" href="{{ PageHelper::get_page_permalink($page_id) }}">{{ PageHelper::get_page_title($page_id) }}</a></li>
