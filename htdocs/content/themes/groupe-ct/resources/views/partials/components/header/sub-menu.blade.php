@@ -23,7 +23,7 @@
         </div>
 
         <div class="nav-sub-container row">
-            <nav class="nav-sub nav-sub-left col-xs-4 col-xs-offset-2">
+            <nav class="nav-sub nav-sub-left col-xs-3 col-xs-offset-2">
                 <div class="nav-section-title-container">
                     <h3 class="nav-section-title"><a href="{{ PageHelper::get_page_permalink(PageHelper::PAGE_2_1_1_EQUIPEMENTS_BUREAU) }}"><?= pll__('Équipements d\'impression', GROUPE_CT) ?></a></h3>
                 </div>
