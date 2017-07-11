@@ -63,6 +63,7 @@
       .cta-see-more {
         @media (min-width: $screen-md-min) {
           text-align: left;
+          justify-content: flex-start;
         }
       }
     }
