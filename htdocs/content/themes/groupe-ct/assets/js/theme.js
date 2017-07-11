@@ -8,6 +8,7 @@
                 console.log($elem);
                 console.log($elem.position().top);
                 $('html, body').animate({scrollTop: $elem.position().top}, 'slow');
+                $elem.trigger('click');
             }
         }, 25);
 
