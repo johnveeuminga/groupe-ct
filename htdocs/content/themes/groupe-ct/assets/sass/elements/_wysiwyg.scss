@@ -59,7 +59,7 @@
     margin-left: 15px;
   }
 
-  a.not(.btn-bloc2) {
+  a:not(.btn-bloc2) {
     @extend .form-link;
   }
 }
