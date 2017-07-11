@@ -124,8 +124,14 @@
     overflow: hidden;
   }
 
-
-
+  .primary-btn-blue {
+    background-color: white;
+    margin-top: 30px;
+    &:hover {
+      background: $blue;
+      color: white;
+    }
+  }
   .hero-content-container {
     max-width: 100%;
     width: 100%;
