@@ -173,7 +173,7 @@
             }else{
                 $(this).addClass('active-dot').siblings().removeClass('active-dot');
             }
-            $(this).parent().siblings('.slider-main-container').find('.' + $slideNumber).addClass('active-slide').siblings().removeClass('active-slide');
+            $(this).parents('.slider-main-container').find('.' + $slideNumber).addClass('active-slide').siblings().removeClass('active-slide');
         });
 
         setInterval( function () {

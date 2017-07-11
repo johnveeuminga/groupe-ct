@@ -17,7 +17,7 @@
                 @endif
 
                 @if (count($block->get_field('bloc_5_slides')) > 1)
-                    <div class="slider-link-container">
+                    <div class="slider-link-container testinmonials-slides-link-container">
                         @foreach($block->get_field('bloc_5_slides') as $i => $slide)
                             <a class="slider-dot slide{{ $i }} white-dot @if($i == 0) {{ 'active-dot' }} @endif" href="#"></a>
                         @endforeach
