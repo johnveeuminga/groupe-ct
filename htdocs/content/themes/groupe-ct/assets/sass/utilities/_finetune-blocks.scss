@@ -158,7 +158,8 @@
     background: white;
     text-align: center;
     &:hover {
-      color: $red!important;
+      background: $red!important;
+      color: white!important;
     }
   }
 }
