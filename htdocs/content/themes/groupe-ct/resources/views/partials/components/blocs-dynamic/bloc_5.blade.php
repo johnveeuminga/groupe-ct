@@ -3,7 +3,7 @@
 
     <div class="slider-main-container">
     @foreach($block->get_field('bloc_5_slides') as $i => $slide)
-        <div class="slide-container slide{{ $i }} @if($i == 0) {{ 'active-slide' }} @endif  @if($slide['bloc_5_slide_reverse_image']) reverse-elem @endif">
+        <div class="slide-container slide{{ $i }} @if($i == 0) {{ 'active-slide' }} @endif">
             <div class="text-container col-md-6">
                 <img class="testimonial-quote" src="{{ themosis_assets() }}/images/icon/icon-testimonial-quote-bottom.png" alt="">
                 <p class="text">{{ $slide['bloc_5_slide_testimonial'] }}</p>

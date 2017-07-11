@@ -14,7 +14,6 @@ class Lego5 extends BaseLego implements LegoInterface
 		        $this->generate_textarea('bloc_5_slide_testimonial', __('Text', 'GROUPE-CT') ),
 		        $this->generate_text('bloc_5_slide_author',          __('Author', 'GROUPE-CT') ),
                 $this->generate_text('bloc_5_slide_author_title',    __('Author Title', 'GROUPE-CT') ),
-                $this->generate_true_false('bloc_5_slide_reverse_image',    __('Image à gauche', 'GROUPE-CT') ),
                 $this->generate_cta('bloc_5_slide' )[0],
                 $this->generate_cta('bloc_5_slide' )[1],
                 $this->generate_cta('bloc_5_slide' )[2],
