@@ -16,6 +16,7 @@
 .product-container {
   position: relative;
   z-index: 1;
+  margin: auto;
   @media (min-width: $screen-sm-min) {
     width:calc(100%/2);
   }
