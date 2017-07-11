@@ -2,6 +2,7 @@
 <style style="text/css" scoped>
     #padding-{{$rand}} {
         width: 100%;
+        height: 0;
     }
 
     @media (min-width: 1440px) {
