@@ -158,11 +158,13 @@
       @media (max-width: $screen-sm-min) {
         padding-bottom: 0;
       }
+      color: white;
     }
     p {
       @include set-font(22px, $mada, 300, $black);
       padding-bottom: 25px;
       line-height: 32px;
+      color: white;
     }
   }
 
