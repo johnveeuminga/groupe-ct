@@ -127,7 +127,10 @@
 
   .slider-link-container {
     position: absolute;
-    left: 25%;
+    left: 50%;
+    @media (min-width: $screen-md-min) {
+      left: 25%;
+    }
     bottom: 0;
     transform: translateX(-50%);
     .slider-dot {
