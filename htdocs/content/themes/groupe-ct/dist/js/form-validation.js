@@ -108,7 +108,7 @@
                         'contact-ext': $form.find('#contact-ext').val(),
                         'contact-email': $form.find('#contact-email').val(),
                         'contact-message': $form.find('#contact-message').val(),
-                        'contact-accept': $form.find('#contact-accept').val()
+                        'contact-accept': $form.find('#contact-accept').is(':checked') ? true : false
                     }
                 });
 
