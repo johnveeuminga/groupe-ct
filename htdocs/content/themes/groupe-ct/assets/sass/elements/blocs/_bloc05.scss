@@ -89,10 +89,10 @@
     @include flex-direction(column);
     @include align-items(center);
     text-align: center;
-    padding: 0px 30px 30px;
+    padding: 0 30px 30px;
 
     @media (min-width: $screen-md-min) {
-      padding: 0px;
+      padding: 0;
     }
 
     .testimonial-quote {
@@ -127,8 +127,9 @@
 
   .slider-link-container {
     position: absolute;
-    left: 50%;
+    left: 25%;
     bottom: 0;
+    transform: translateX(-50%);
     .slider-dot {
       background: transparent!important;
     }
