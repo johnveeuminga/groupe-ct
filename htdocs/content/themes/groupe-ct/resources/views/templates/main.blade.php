@@ -46,6 +46,11 @@
 	<a href="#inline" data-lity>Inline</a>
 	<div id="inline" class="lity-hide" style="background-image: url('{{ themosis_assets() }}/images/bg/interstiel.jpg'); width: 1920px; height: 1080px;">
 		some content;
+		<div class="btn-container">
+			<a class="btn-bloc2" href="#">Poursuivre votre visite</a>
+			<a class="btn-bloc2" href="#">Lire le communiqué de presse</a>
+			<a class="btn-bloc2" href="#">Joindre solutions d'affaires de la capitale (SAC)</a>
+		</div>
 	</div>
 
 	@include('partials.components.header.main-nav-mobile')
