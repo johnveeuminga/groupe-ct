@@ -3,7 +3,7 @@
   background-color: $primary-bg;
   display: none;
   @media (min-width: 1200px) and (max-width: 1350px) {
-    .nav-content-container.desktop .nav-container .nav-bottom .nav-link {
+    .nav-container .nav-bottom .nav-link {
       width: 130px;
     }
   }
