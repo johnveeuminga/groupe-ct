@@ -4,7 +4,7 @@
  * Class LegoStatic
  * Charge les blocs statiques sur demande
  */
-class LegoStatic extends BaseLego implements LegoInterface
+class LegoPadding extends BaseLego implements LegoInterface
 {
 	public function get_unique_fields()
 	{
