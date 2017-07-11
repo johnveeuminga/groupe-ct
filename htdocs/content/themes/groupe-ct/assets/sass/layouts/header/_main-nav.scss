@@ -108,7 +108,9 @@
       z-index: 1000;
       @include center-img(50%,-20%);
       text-align: center;
+      left: calc(50% - 30px);
       .triangle {
+        padding: 0 50px;
         width: 120px;
       }
 
