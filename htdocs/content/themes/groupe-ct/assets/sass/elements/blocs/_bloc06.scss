@@ -44,7 +44,6 @@
     }
 
     .three-col-icon-text {
-
       .three-col-icons-title {
         @include set-font(22px, $poppins, 700, $blue);
         text-transform: uppercase;
@@ -61,7 +60,11 @@
           padding-right: 20px;
         }
       }
-
+      .cta-see-more {
+        @media (min-width: $screen-md-min) {
+          text-align: left;
+        }
+      }
     }
 
   }//END three COL ICON ITEM
@@ -74,11 +77,6 @@
   }
   .three-col-icons-item:nth-child(3) .three-col-icons-title{
     color:$green;
-  }
-  .cta-see-more {
-    @media (min-width: $screen-md-min) {
-      text-align: left;
-    }
   }
 
 }//SECTION END
