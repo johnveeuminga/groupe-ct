@@ -2,6 +2,11 @@
   position: relative;
   background-color: $primary-bg;
   display: none;
+  @media (min-width: 1200px) and (max-width: 1350px) {
+    .nav-link {
+      width: 130px;
+    }
+  }
   @media (min-width: $screen-lg-min) {
     @include flexbox();
   }
