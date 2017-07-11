@@ -12,7 +12,7 @@ class LegoPadding extends BaseLego implements LegoInterface
 			$this->generate_number('bloc_padding_mobile', 'Padding Mobile (768px<)'),
 			$this->generate_number('bloc_padding_tablet', 'Padding Tablet (1024x<)'),
 			$this->generate_number('bloc_padding_laptop', 'Padding Laptop (1440<)'),
-			$this->generate_number('bloc_padding_desktop', 'Padding Desktop (1440>)'), 
+			$this->generate_number('bloc_padding_desktop', 'Padding Desktop (1440>)'),
 		];
 	}
 
@@ -21,7 +21,7 @@ class LegoPadding extends BaseLego implements LegoInterface
 		return [
 			'key' => 'bloc_padding_key',
 			'name' => 'bloc_padding',
-			'label' => 'Bloc Static',
+			'label' => 'Bloc Padding',
 			'display' => 'block',
 			'sub_fields' => $this->get_unique_fields(),
 			'min' => '',
