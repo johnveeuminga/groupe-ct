@@ -147,9 +147,23 @@
   max-height: 95vh!important;
   .content {
     position: absolute;
-    top: 100px;
-    left: 150px;
+    top: 30vh;
+    left: 26vw;
     max-width: 800px;
+    h2 {
+      @include set-font(44px, $poppins, 700, $black);
+      text-transform: uppercase;
+      padding-bottom: 25px;
+      @extend .h2-size;
+      @media (max-width: $screen-sm-min) {
+        padding-bottom: 0;
+      }
+    }
+    p {
+      @include set-font(22px, $mada, 300, $black);
+      padding-bottom: 25px;
+      line-height: 32px;
+    }
   }
 
   .btn-container {
