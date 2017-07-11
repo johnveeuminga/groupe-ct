@@ -3,7 +3,7 @@
     <div class="sub-menu-container nl1 row hide-from-screen">
 
         <div class="nav-sub-container row">
-            <nav class="nav-sub nav-sub-left col-xs-3 col-xs-offset-2">
+            <nav class="nav-sub nav-sub-left col-xs-4 col-xs-offset-2">
                 <div class="nav-section-title-container">
                     <h3 class="nav-section-title"><a href="{{ PageHelper::get_page_permalink(PageHelper::PAGE_1_0_APPROCHE_CONSEIL) }}"><?= pll__('Un accompagnement sur mesure adapté à votre entreprise', GROUPE_CT) ?></a></h3>
                 </div>
@@ -23,7 +23,7 @@
         </div>
 
         <div class="nav-sub-container row">
-            <nav class="nav-sub nav-sub-left col-xs-3 col-xs-offset-2">
+            <nav class="nav-sub nav-sub-left col-xs-4 col-xs-offset-2">
                 <div class="nav-section-title-container">
                     <h3 class="nav-section-title"><a href="{{ PageHelper::get_page_permalink(PageHelper::PAGE_2_1_1_EQUIPEMENTS_BUREAU) }}"><?= pll__('Équipements d\'impression', GROUPE_CT) ?></a></h3>
                 </div>
@@ -66,7 +66,7 @@
         </div>
 
         <div class="nav-sub-container row">
-            <nav class="nav-sub nav-sub-left col-xs-3 col-xs-offset-2">
+            <nav class="nav-sub nav-sub-left col-xs-4 col-xs-offset-2">
                 <div class="nav-section-title-container">
                     <h3 class="nav-section-title"><a href="{{ PageHelper::get_page_permalink(PageHelper::PAGE_3_0_ASSISTANCE) }}"><?= pll__('L\'Assistance technique CT : l\'efficacité sur toute la ligne', GROUPE_CT) ?></a></h3>
                 </div>
@@ -89,7 +89,7 @@
         </div>
 
         <div class="nav-sub-container row">
-            <nav class="nav-sub nav-sub-left col-xs-3 col-xs-offset-2">
+            <nav class="nav-sub nav-sub-left col-xs-4 col-xs-offset-2">
                 <div class="nav-section-title-container">
                     <h3 class="nav-section-title"><a href="{{ PageHelper::get_page_permalink(PageHelper::PAGE_4_0_A_PROPOS) }}"><?= pll__('Une entreprise à taille humaine', GROUPE_CT) ?></a></h3>
                 </div>
