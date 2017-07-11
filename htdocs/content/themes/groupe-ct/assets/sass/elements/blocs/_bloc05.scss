@@ -125,5 +125,13 @@
   }
 
 
+  .slider-link-container {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    a.slider-dot {
+      background: transparent;
+    }
+  }
 }
 

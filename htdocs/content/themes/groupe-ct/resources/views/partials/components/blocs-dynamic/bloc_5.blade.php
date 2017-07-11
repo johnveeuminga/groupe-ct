@@ -15,6 +15,14 @@
                         <a class="btn-bloc2 primary-btn-blue" href="{{ $slide['bloc_5_slide_cta_link'] }}" @if($slide['bloc_5_slide_cta_blank'])target='_blank'@endif>{{ $slide['bloc_5_slide_cta_label'] }}</a>
                     </div>
                 @endif
+
+                @if (count($block->get_field('bloc_5_slides')) > 1)
+                    <div class="slider-link-container">
+                        @foreach($block->get_field('bloc_5_slides') as $i => $slide)
+                            <a class="slider-dot slide{{ $i }} white-dot @if($i == 0) {{ 'active-dot' }} @endif" href="#"></a>
+                        @endforeach
+                    </div>
+                @endif
             </div>
 
             <div class="img-container col-md-6">
@@ -24,14 +32,6 @@
         </div>
     @endforeach
     </div>
-    @if (count($block->get_field('bloc_5_slides')) > 1)
-        <div class="slider-link-container">
-            @foreach($block->get_field('bloc_5_slides') as $i => $slide)
-                <a class="slider-dot slide{{ $i }} white-dot @if($i == 0) {{ 'active-dot' }} @endif" href="#"></a>
-            @endforeach
-        </div>
-    @endif
-
 </div>
 
 
