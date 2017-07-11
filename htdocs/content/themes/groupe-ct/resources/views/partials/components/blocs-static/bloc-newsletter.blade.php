@@ -40,7 +40,7 @@
                         <input type="email" id="newsletter-email" name="newsletter-email" placeholder="{{ pll__('Courriel*') }}">
                     </div>
                     <div class="contact-row">
-                        <button type="submit" class="submit-btn">{{ pll__('Soumettre') }}</button>
+                        <button type="submit" id="submit-newsletter" class="submit-btn">{{ pll__('Soumettre') }}</button>
                     </div>
                 </div>
             </div>

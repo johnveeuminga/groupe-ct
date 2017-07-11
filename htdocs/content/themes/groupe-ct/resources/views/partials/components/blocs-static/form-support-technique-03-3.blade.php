@@ -9,7 +9,8 @@
     </div>
 
     <div class="toggle-content">
-        <form id="form-fourniture" class="form-container">
+        <form id="form-fournit
+        ure" class="form-container">
             <div class="text-container col-xs-12">
 
                 <p>
@@ -100,7 +101,7 @@
 
                     <div class="form-submit">
 
-                        <button type="submit" class="submit-btn primary-btn-blue" href="#">{{ pll__('Soumettre ma demande') }}</button>
+                        <button type="submit" id="submit-fourniture" class="submit-btn primary-btn-blue" href="#">{{ pll__('Soumettre ma demande') }}</button>
                         <span class="mention">*{{ pll__('Champ obligatoires') }}</span>
                     </div>
                 </div>

@@ -138,7 +138,7 @@
                     </div>
                     <div class="form-submit">
 
-                        <button type="submit" class="submit-btn primary-btn-blue">{{ pll__('Soumettre ma demande') }}</button>
+                        <button type="submit" id="submit-assistance" class="submit-btn primary-btn-blue">{{ pll__('Soumettre ma demande') }}</button>
                         <span class="mention">{{ pll__('* Champs obligatoires') }}</span>
                     </div>
                 </div>
