@@ -1,14 +1,14 @@
 <div id="_section-04" class="toggle-main-container">
-    <div class="toggle-content-header active-header">
+    <div class="toggle-content-header">
         <div class="toggle-title-container">
             <h3 class="toggle-content-title" href="">{{ pll__('Contacter le service à la clientèle') }}</h3>
         </div>
         <img class="toggle-content-carret toggle-carret" src="{{ themosis_assets() }}/images/icon/icon-chevron-white.png" alt="">
-        <div class="triangle-blue toggle-triangle"></div>
+        <div class="triangle-blue"></div>
         <a class="open-toggle-content" href="#"></a>
     </div>
 
-    <div class="toggle-content open-content">
+    <div class="toggle-content">
         <form id="form-ressource" class="form-container">
             <div class="text-container col-xs-12">
                 <p>{{ pll__('Que vous soyez déjà client ou non, notre équipe est là pour vous.') }}</p>
