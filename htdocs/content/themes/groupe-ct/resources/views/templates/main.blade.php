@@ -43,8 +43,8 @@
 		<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N49C66Q" height="0" width="0" style="display:none;visibility:hidden"></iframe>
 	</noscript>
 	<!-- End Google Tag Manager (noscript) -->
-	<a href="#inline" data-lity>Inline</a>
-	<div id="interstitiel" class="lity-hide" style="background-image: url('{{ themosis_assets() }}/images/bg/interstiel.jpg'); width: 1920px; height: 1080px;">
+	<a href="#interstitiel" data-lity>Inline</a>
+	<div id="interstitiel" class="lity-hide" style="background-image: url('{{ themosis_assets() }}/images/bg/interstiel.jpg');">
 		some content;
 		<div class="btn-container">
 			<a class="btn-bloc2 primary-btn-blue" href="#">Poursuivre votre<br/>visite</a>

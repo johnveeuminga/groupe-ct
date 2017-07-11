@@ -140,6 +140,11 @@
 }
 
 #interstitiel {
+  width: 1920px;
+  max-width: 95vw;
+  height: 1080px;
+  max-height: 95vh;
+  
   .btn-container {
     position: absolute;
     bottom: 50px;
