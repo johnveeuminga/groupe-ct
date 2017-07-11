@@ -2,7 +2,7 @@
   position: relative;
   background-color: $primary-bg;
   display: none;
-  @media (min-width: $screen-md-min) {
+  @media (min-width: $screen-lg-min) {
     @include flexbox();
   }
 
