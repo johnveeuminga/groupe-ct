@@ -23,6 +23,7 @@ include_once __DIR__ . '/legos/Lego18.php';
 include_once __DIR__ . '/legos/Lego19.php';
 include_once __DIR__ . '/legos/Lego20.php';
 include_once __DIR__ . '/legos/LegoStatic.php';
+include_once __DIR__ . '/legos/LegoPadding.php';
 
 class LegoBuilder
 {
@@ -51,6 +52,7 @@ class LegoBuilder
 		    $lego19 = new Lego19();
 		    $lego20 = new Lego20();
 		    $legoStatic = new LegoStatic();
+		    $legoPadding = new LegoPadding();
 
 	        acf_add_local_field_group(array (
 	            'key' => 'group_5920b39e18711',
@@ -91,6 +93,7 @@ class LegoBuilder
 	                        'bloc_19_layout_key' => $lego19->get_fields_layout(),
 	                        'bloc_20_layout_keyo' => $lego20->get_fields_layout(),
 	                        'bloc_static_layout_key' => $legoStatic->get_fields_layout(),
+	                        'bloc_padding' => $legoPadding->get_fields_layout(),
 	                    ),
 	                    'button_label' => 'Add Row',
 	                    'min' => '',
