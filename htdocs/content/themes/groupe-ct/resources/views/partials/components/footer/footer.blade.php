@@ -80,7 +80,7 @@
 
             </div>
             <div class="legal-container">
-                <p>© <?php echo date("Y"); ?>&copy;&nbsp;{{ pll__('Groupe C.T Tous droits réservé') }}</p>
+                <p><?php echo date("Y"); ?>&copy; {{ pll__('Groupe C.T Tous droits réservé') }}</p>
                 <a href="#">{{ pll__('Mentions légales') }}</a>
             </div>
 
