@@ -68,7 +68,7 @@ Ajax::listen('contact', function() {
     $body .= '<p>Langue du formulaire : ' . $lang . '</p>';
 
 
-    if (isset($_POST['contact-accept']) && $_POST['contact-accept'] == true) {
+    if (isset($_POST['contact-accept']) && $_POST['contact-accept'] === "true") {
         $mailchimp = new MailchimpHelper();
 
         $mailchimp->save(
