@@ -20,7 +20,9 @@
                         <h1 class="hero-title">{!! $slide['bloc_1_slide_title'] !!}</h1>
                         <h2 class="hero-subtitle">{!! $slide['bloc_1_slide_description'] !!}</h2>
                         <a href="#" class="hero-arrow-container" ><img class="hero-arrow" src="{{ themosis_assets() }}/images/icon/icon-hero-arrow.png" alt=""></a>
-                        {{--<a class="btn-bloc2 primary-btn-blue" href="{{ $slide['bloc_1_slide_cta_link'] }}">{{ $slide['bloc_1_slide_cta_label'] }}</a>--}}
+                        @if(!empty('bloc_1_slide_cta_link'))
+                            <a class="btn-bloc2 primary-btn-blue" href="{{ $slide['bloc_1_slide_cta_link'] }}">{{ $slide['bloc_1_slide_cta_label'] }}</a>
+                        @endif
                     </div>
 
                 </div>
