@@ -43,6 +43,11 @@
 		<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N49C66Q" height="0" width="0" style="display:none;visibility:hidden"></iframe>
 	</noscript>
 	<!-- End Google Tag Manager (noscript) -->
+	<a href="#inline" data-lity>Inline</a>
+	<div id="inline" class="lity-hide" style="background-image: url('{{ themosis() }}/images/bg/interstiel.jpg'); width: 1920px; height: 1080px;">
+		some content;
+	</div>
+
 	@include('partials.components.header.main-nav-mobile')
 	<div id="global-container">
 <!--		include header -->
