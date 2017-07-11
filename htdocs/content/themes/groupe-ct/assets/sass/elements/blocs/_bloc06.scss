@@ -41,7 +41,6 @@
       @media (min-width: $screen-md-min) {
         text-align: left;
       }
-
     }
 
     .three-col-icon-text {
@@ -75,6 +74,11 @@
   }
   .three-col-icons-item:nth-child(3) .three-col-icons-title{
     color:$green;
+  }
+  .cta-see-more {
+    @media (min-width: $screen-md-min) {
+      text-align: left;
+    }
   }
 
 }//SECTION END
