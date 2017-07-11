@@ -129,8 +129,8 @@
     position: absolute;
     left: 50%;
     bottom: 0;
-    a.slider-dot {
-      background: transparent;
+    .slider-dot {
+      background: transparent!important;
     }
   }
 }
