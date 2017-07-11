@@ -152,12 +152,12 @@
     width: 100%;
     display: flex;
     justify-content: center;
-    color: $blue;
+    color: $blue!important;
   }
   .primary-btn-blue {
     background: white;
     &:hover {
-      color: $red;
+      color: $red!important;
     }
   }
 }
