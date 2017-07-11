@@ -9,12 +9,10 @@ class LegoPadding extends BaseLego implements LegoInterface
 	public function get_unique_fields()
 	{
 		return [
-			$this->generate_select('bloc_padding', 'Bloc Padding', [
-			    'bloc_padding_mobile' => 'Padding Mobile (768px<)',
-			    'bloc_padding_tablet' => 'Padding Tablet (1024x<)',
-			    'bloc_padding_laptop' => 'Padding Laptop (1440<)',
-			    'bloc_padding_desktop' => 'Padding Desktop (1440>)',
-            ]),
+			$this->generate_number('bloc_padding_mobile', 'Padding Mobile (768px<)'),
+			$this->generate_number('bloc_padding_tablet', 'Padding Tablet (1024x<)'),
+			$this->generate_number('bloc_padding_laptop', 'Padding Laptop (1440<)'),
+			$this->generate_number('bloc_padding_desktop', 'Padding Desktop (1440>)'), 
 		];
 	}
 
