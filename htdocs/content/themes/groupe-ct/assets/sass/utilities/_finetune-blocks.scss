@@ -227,6 +227,14 @@
       color: white!important;
     }
   }
+
+  .lity-close {
+    top: 15px!important;
+    right: 15px!important;
+    background: $blue!important;
+    position: absolute;
+    display: none;
+  }
 }
 
 #_main-container-page-211,
@@ -269,12 +277,5 @@
     outline: none;
     -webkit-box-shadow: none;
     box-shadow: none;
-  }
-  .lity-close {
-    top: 15px!important;
-    right: 15px!important;
-    background: $blue!important;
-    position: absolute;
-    display: none;
   }
 }
