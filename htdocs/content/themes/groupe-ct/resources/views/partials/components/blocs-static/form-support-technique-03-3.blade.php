@@ -9,10 +9,8 @@
     </div>
 
     <div class="toggle-content">
-        <form id="form-fournit
-        ure" class="form-container">
+        <form id="form-fourniture" class="form-container">
             <div class="text-container col-xs-12">
-
                 <p>
                     {{ pll__('Commandez rapidement et facilement des fournitures en remplissant le formulaire ci-dessous. Votre commande sera livrée dans un délai de 24 à 48 h ouvrable.') }}
                 </p>
