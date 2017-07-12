@@ -15,9 +15,24 @@ class PageController extends MainController
 
 	public function index()
 	{
+        $domain = parse_url($_SERVER['HTTP_REFERER'], PHP_URL_HOST);
+	    $args = [
+	        'post_type' => 'acquisition',
+            'meta_query'	=> [
+                [
+                    'key'	 	=> 'acquisition_domain',
+                    'value'	  	=> '%' . $domain . '%',
+                    'compare' 	=> 'LIKE',
+                ],
+            ]
+        ];
 
-
-		return view('pages.page',[]);
+        $query = new \WP_Query($args);
+        $acquisition = $query->post_count > 0 ? $query->posts[0] : false;
+        
+		return view('pages.page', [
+		    'acquisition' => $acquisition,
+        ]);
 	}
 
     public function publication()
