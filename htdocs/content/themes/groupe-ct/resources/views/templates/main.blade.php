@@ -47,7 +47,6 @@
 
 	@if (isset($acquisition) && $acquisition)
 		<div id="interstitiel" class="lity-hide" style="background-image: url('{{ themosis_assets() }}/images/bg/interstiel.jpg');">
-			<a href="#" class="custom-close-lity close-data-lity">x</a>
 			<div class="content">
 				<h2>{!! get_field('acquisition_title', $acquisition->ID) !!}</h2>
 				<p>{!! get_field('acquisition_description', $acquisition->ID) !!}</p>
