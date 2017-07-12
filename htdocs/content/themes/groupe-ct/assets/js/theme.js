@@ -257,6 +257,9 @@
         var $popup = $('#interstitiel');
         if ($popup.length > 0) {
             var instance = lity($popup);
+            $('.close-data-lity').on('click', function() {
+                instsance.close();
+            });
             console.log(instance);
         }
 
