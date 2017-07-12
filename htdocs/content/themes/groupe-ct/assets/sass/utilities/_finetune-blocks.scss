@@ -151,8 +151,8 @@
     position: absolute;
     top: 30vh;
     max-height: 60vh;
-    left: calc(50% - 335px);
-    max-width: 770px;
+    left: 20%;
+    max-width: 60%;
     h2 {
       @include set-font(44px, $poppins, 700, $black);
       @include font-size(27px);
