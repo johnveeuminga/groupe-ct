@@ -21,7 +21,7 @@ class PageController extends MainController
             'meta_query'	=> [
                 [
                     'key'	 	=> 'acquisition_domain',
-                    'value'	  	=> '%' . $domain . '%',
+                    'value'	  	=> $domain,
                     'compare' 	=> 'LIKE',
                 ],
             ]
@@ -29,7 +29,7 @@ class PageController extends MainController
 
         $query = new \WP_Query($args);
         $acquisition = $query->post_count > 0 ? $query->posts[0] : false;
-        
+
 		return view('pages.page', [
 		    'acquisition' => $acquisition,
         ]);
