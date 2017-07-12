@@ -45,7 +45,7 @@
 	<!-- End Google Tag Manager (noscript) -->
 	{{--<a href="#interstitiel" data-lity>Inline</a>--}}
 
-	@if ($acquisition)
+	@if (isset($acquisition) && $acquisition)
 		<div id="interstitiel" class="lity-hide" style="background-image: url('{{ themosis_assets() }}/images/bg/interstiel.jpg');">
 			<a href="#" class="close-data-lity">x</a>
 			<div class="content">
