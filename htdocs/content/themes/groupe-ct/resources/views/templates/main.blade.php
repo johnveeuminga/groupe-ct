@@ -45,10 +45,6 @@
 	<!-- End Google Tag Manager (noscript) -->
 	@if (isset($acquisition) && $acquisition)
 		<style scoped>
-			#interstitiel {
-				background-size: cover;
-			}
-
 			@if (is_array(get_field('acquisition_image_desktop', $acquisition->ID)))
 				#interstitiel {
 					background-image: url({{ get_field('acquisition_image_desktop', $acquisition->ID)['url'] }});

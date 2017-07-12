@@ -141,6 +141,8 @@
 
 #interstitiel {
   position: relative;
+  background-size: cover;
+  background-position: center;
   width: 1920px;
   max-width: 95vw;
   height: 1080px;
@@ -148,7 +150,7 @@
   .content {
     position: absolute;
     top: 30vh;
-    left: 26vw;
+    left: calc(50% - 335px);
     max-width: 770px;
     h2 {
       @include set-font(44px, $poppins, 700, $black);
