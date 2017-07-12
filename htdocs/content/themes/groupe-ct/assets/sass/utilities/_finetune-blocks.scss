@@ -253,6 +253,9 @@
   right: 15px!important;
   position: absolute;
 
+  span {
+    margin: 0 30px; 
+  }
   .close-interstitiel {
     z-index: 9994;
     background: $blue!important;
