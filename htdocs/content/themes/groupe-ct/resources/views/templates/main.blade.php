@@ -60,12 +60,10 @@
 		</style>
 
 		<div id="interstitiel" class="lity-hide">
-			<div class="togle">
-				<a href="#abc">test</a>
-				<a href="#abc" class="lity-close">×</a>
-				<a href="#abc" class="lity-close">×</a>
-				<a href="#abc" class="lity-close">×</a>
-			</div>
+			<a href="#abc">test</a>
+			<a href="#abc" class="lity-close">×</a>
+			<a href="#abc" class="lity-close">×</a>
+			<a href="#abc" class="lity-close">×</a>
 		</div>
 	@endif
 
