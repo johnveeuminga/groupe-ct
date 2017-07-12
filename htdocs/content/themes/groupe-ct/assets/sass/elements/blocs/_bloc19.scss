@@ -6,6 +6,7 @@
   }
 
   .section-title-container {
+    h2,
     .title {
       @include set-font(44px, $poppins, 700, $black);
       text-transform: uppercase;
