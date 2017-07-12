@@ -207,6 +207,7 @@
     color: $blue!important;
     text-align: center;
     align-items: center;
+    display: flex;
     &:hover {
       background: $red!important;
       color: white!important;
