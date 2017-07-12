@@ -181,7 +181,8 @@
     @media (max-width: $screen-sm-min) {
       flex-wrap: wrap;
       a {
-        width: 100%;
+        width: 90%;
+        margin: 30px auto;
       }
     }
   }
