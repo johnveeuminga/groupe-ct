@@ -177,6 +177,13 @@
     display: flex;
     justify-content: center;
     color: $blue!important;
+
+    @media (max-width: $screen-sm-min) {
+      flex-wrap: wrap;
+      a {
+        width: 100%;
+      }
+    }
   }
   .primary-btn {
     background: white;
