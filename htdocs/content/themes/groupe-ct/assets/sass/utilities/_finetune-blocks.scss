@@ -151,8 +151,14 @@
     position: absolute;
     top: 30vh;
     max-height: 60vh;
-    left: 20%;
-    max-width: 60%;
+    left: 10%;
+    max-width: 80%;
+
+    @media (min-width: $screen-md-min) {
+      left: 20%;
+      max-width: 60%;
+    }
+
     h2 {
       @include set-font(44px, $poppins, 700, $black);
       @include font-size(27px);
@@ -197,6 +203,7 @@
       bottom: 0;
       a {
         width: 90%;
+        padding: 0 15px;
         margin: 0 auto 15px auto!important;
       }
     }
