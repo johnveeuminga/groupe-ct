@@ -61,9 +61,9 @@
 
 		<div id="interstitiel" class="lity-hide">
 			<div>
-				<a href="#abc" class="lity-close">×</a>
-				<a href="#abc" class="lity-close">×</a>
-				<a href="#abc" class="lity-close">×</a>
+				<div>a</div>
+				<div>b</div>
+				<div>c</div>
 			</div>
 		</div>
 	@endif
