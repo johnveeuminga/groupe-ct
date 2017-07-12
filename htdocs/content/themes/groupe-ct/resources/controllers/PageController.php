@@ -34,7 +34,7 @@ class PageController extends MainController
                 'post_type' => 'acquisition',
                 'meta_query'	=> [
                     [
-                        'key'	 	=> 'acquisition_hash',
+                        'key'	 	=> 'acquisition_custom_hash',
                         'value'	  	=> $domain,
                         'compare' 	=> 'LIKE',
                     ],
