@@ -63,15 +63,15 @@
 			<div class="content">
 				<h2>{!! get_field('acquisition_title', $acquisition->ID) !!}</h2>
 				<p>{!! get_field('acquisition_description', $acquisition->ID) !!}</p>
-			</div>
-			<div class="btn-container">
-				<a class="btn-bloc2 primary-btn close-data-lity" href="#">{!! pll__('Poursuivre votre<br/>visite') !!}</a>
-				@if (!empty(get_field('acquisition_2_cta_link', $acquisition->ID)))
-					<a class="btn-bloc2 primary-btn" style="margin: 0 15px;" href="{{ get_field('acquisition_1_cta_link', $acquisition->ID) }}" @if(get_field('acquisition_1_cta_blank', $acquisition->ID)) target="_blank" @endif>{!! get_field('acquisition_1_cta_label', $acquisition->ID) !!}</a>
-				@endif
-				@if (!empty(get_field('acquisition_2_cta_link', $acquisition->ID)))
-					<a class="btn-bloc2 primary-btn" href="{{ get_field('acquisition_2_cta_link', $acquisition->ID) }}" @if(get_field('acquisition_2_cta_blank', $acquisition->ID)) target="_blank" @endif>{!! get_field('acquisition_2_cta_label', $acquisition->ID) !!}</a>
-				@endif
+				<div class="btn-container">
+					<a class="btn-bloc2 primary-btn close-data-lity" href="#">{!! pll__('Poursuivre votre<br/>visite') !!}</a>
+					@if (!empty(get_field('acquisition_2_cta_link', $acquisition->ID)))
+						<a class="btn-bloc2 primary-btn" style="margin: 0 15px;" href="{{ get_field('acquisition_1_cta_link', $acquisition->ID) }}" @if(get_field('acquisition_1_cta_blank', $acquisition->ID)) target="_blank" @endif>{!! get_field('acquisition_1_cta_label', $acquisition->ID) !!}</a>
+					@endif
+					@if (!empty(get_field('acquisition_2_cta_link', $acquisition->ID)))
+						<a class="btn-bloc2 primary-btn" href="{{ get_field('acquisition_2_cta_link', $acquisition->ID) }}" @if(get_field('acquisition_2_cta_blank', $acquisition->ID)) target="_blank" @endif>{!! get_field('acquisition_2_cta_label', $acquisition->ID) !!}</a>
+					@endif
+				</div>
 			</div>
 		</div>
 	@endif
