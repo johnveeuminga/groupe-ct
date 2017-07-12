@@ -57,7 +57,7 @@
                     <input type="text" id="contact-ext" name="contact-ext" placeholder="{{ pll__('Poste') }}">
                 </div>
                 <div class="contact-row">
-                    <textarea rows="6" cols="10" id="contact-message" name="contact-message" placeholder="{{ pll__('Message*') }}"></textarea>
+                    <textarea rows="3" cols="10" id="contact-message" name="contact-message" placeholder="{{ pll__('Message*') }}"></textarea>
                 </div>
                 <div class="contact-row">
                     <div class="check-container">
