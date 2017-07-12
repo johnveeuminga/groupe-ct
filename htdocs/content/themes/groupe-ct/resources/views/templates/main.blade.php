@@ -61,11 +61,11 @@
 
 		<div id="interstitiel" class="lity-hide">
 			<div class="content">
-				<div class="interstitiel-toggle">
+				<div class="togle">
 					<a href="#abc">test</a>
-					<a class="lity-close">×</a>
-					<a class="lity-close">×</a>
-					<a class="lity-close">×</a>
+					<a href="#abc" class="lity-close">×</a>
+					<a href="#abc" class="lity-close">×</a>
+					<a href="#abc" class="lity-close">×</a>
 				</div>
 			</div>
 		</div>
