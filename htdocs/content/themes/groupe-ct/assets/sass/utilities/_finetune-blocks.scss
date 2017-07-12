@@ -190,6 +190,7 @@
     display: flex;
     justify-content: center;
     color: $blue!important;
+    margin-top: 60px;
 
     @media (max-width: $screen-sm-min - 1) {
       flex-wrap: wrap;
