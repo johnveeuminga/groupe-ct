@@ -63,7 +63,9 @@
 			<div class="content">
 				<div class="interstitiel-toggle">
 					<a href="#abc">test</a>
-					<a class="lity-close" >×</a>
+					<a class="lity-close">×</a>
+					<a class="lity-close">×</a>
+					<a class="lity-close">×</a>
 				</div>
 			</div>
 		</div>
