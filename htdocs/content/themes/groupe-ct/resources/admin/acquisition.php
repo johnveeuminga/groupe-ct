@@ -34,11 +34,6 @@ acf_add_local_field_group(array (
         $acf_fields->generate_cta('acquisition_2' )[0],
         $acf_fields->generate_cta('acquisition_2' )[1],
         $acf_fields->generate_cta('acquisition_2' )[2],
-        $acf_fields->generate_tab('acquisition_3', 'CTA #3'),
-        $acf_fields->generate_cta('acquisition_3' )[0],
-        $acf_fields->generate_cta('acquisition_3' )[1],
-        $acf_fields->generate_cta('acquisition_3' )[2],
-
     ),
     'location' => array (
         array (
