@@ -15,6 +15,8 @@ class PageController extends MainController
 
 	public function index()
 	{
+
+
 		return view('pages.page',[]);
 	}
 
