@@ -178,7 +178,7 @@
       line-height: 32px;
       color: white;
     }
-    @media (max-width: $screen-sm-min) {
+    @media (max-width: $screen-sm-min - 1) {
       top: 115px;
       left: 15px;
       width: calc(100% - 30px);
@@ -193,7 +193,7 @@
     justify-content: center;
     color: $blue!important;
 
-    @media (max-width: $screen-sm-min) {
+    @media (max-width: $screen-sm-min - 1) {
       flex-wrap: wrap;
       bottom: 0;
       a {
