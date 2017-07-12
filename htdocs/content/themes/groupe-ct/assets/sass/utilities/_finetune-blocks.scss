@@ -189,6 +189,7 @@
       top: 16vh;
       left: 15px;
       width: calc(100% - 30px);
+      max-width: calc(100% - 30px);
     }
   }
 
@@ -204,6 +205,7 @@
     @media (max-width: $screen-sm-min - 1) {
       flex-wrap: wrap;
       bottom: 0;
+      margin-top: 0;
       a {
         width: 90%;
         padding: 15px;
