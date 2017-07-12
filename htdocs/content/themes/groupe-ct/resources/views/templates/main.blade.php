@@ -73,7 +73,9 @@
 					@endif
 				</div>
 			</div>
+
 			<div class="interstitiel-toggle">
+				<a href="#abc" class="test">English</a>
 				<button class="lity-close" type="button" aria-label="Close (Press escape to close)" data-lity-close="">×</button>
 			</div>
 		</div>
