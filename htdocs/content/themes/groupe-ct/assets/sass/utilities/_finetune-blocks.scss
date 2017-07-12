@@ -199,7 +199,6 @@
       a {
         width: 90%;
         margin: 0 auto 15px auto!important;
-        align-items: center;
       }
     }
   }
@@ -207,6 +206,7 @@
     background: white;
     color: $blue!important;
     text-align: center;
+    align-items: center;
     &:hover {
       background: $red!important;
       color: white!important;
