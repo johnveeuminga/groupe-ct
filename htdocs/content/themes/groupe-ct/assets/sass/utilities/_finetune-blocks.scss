@@ -199,14 +199,14 @@
     margin-top: 60px;
 
     a {
-      padding: 0 15px;
+      padding: 15px;
     }
     @media (max-width: $screen-sm-min - 1) {
       flex-wrap: wrap;
       bottom: 0;
       a {
         width: 90%;
-        padding: 0 15px;
+        padding: 15px;
         margin: 0 auto 15px auto!important;
       }
     }
