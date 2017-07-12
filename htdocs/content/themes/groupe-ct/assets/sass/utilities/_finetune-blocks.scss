@@ -239,16 +239,16 @@
   }
 }
 
-.lity-close {
-  top: 15px!important;
-  right: 15px!important;
-  background: $blue!important;
-  position: absolute;
-}
 
 .interstitiel-toggle {
   top: 15px!important;
   right: 15px!important;
-  background: $blue!important;
   position: absolute;
+
+  .lity-close {
+    top: 15px!important;
+    right: 15px!important;
+    background: $blue!important;
+    position: absolute;
+  }
 }
