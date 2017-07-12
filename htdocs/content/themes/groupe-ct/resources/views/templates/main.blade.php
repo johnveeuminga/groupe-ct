@@ -43,10 +43,23 @@
 		<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N49C66Q" height="0" width="0" style="display:none;visibility:hidden"></iframe>
 	</noscript>
 	<!-- End Google Tag Manager (noscript) -->
-	{{--<a href="#interstitiel" data-lity>Inline</a>--}}
-
 	@if (isset($acquisition) && $acquisition)
-		<div id="interstitiel" class="lity-hide" style="background-image: url('{{ themosis_assets() }}/images/bg/interstiel.jpg');">
+		<style scoped>
+			@if (is_array(get_field('acquisition_image_desktop')))
+				#interstitiel {
+					background-image: url({{ get_field('page_header_image_desktop')['url'] }});
+				}
+			@endif
+            @if (is_array(get_field('acquisition_image_mobile')))
+                @media (max-width: 767px) { /* or 301 if you want really the same as previously.  */
+				#interstitiel {
+					background-image: url({{ get_field('acquisition_image_mobile')['url'] }});
+				}
+			}
+			@endif
+		</style>
+
+		<div id="interstitiel" class="lity-hide">
 			<div class="content">
 				<h2>{!! get_field('acquisition_title', $acquisition->ID) !!}</h2>
 				<p>{!! get_field('acquisition_description', $acquisition->ID) !!}</p>
