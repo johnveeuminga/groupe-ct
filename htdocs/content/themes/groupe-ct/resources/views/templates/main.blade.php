@@ -55,10 +55,10 @@
 			<div class="btn-container">
 				<a class="btn-bloc2 primary-btn close-data-lity" href="#">{!! pll__('Poursuivre votre<br/>visite') !!}</a>
 				@if (!empty(get_field('acquisition_2_cta_link', $acquisition->ID)))
-					<a class="btn-bloc2 primary-btn" style="margin: 0 15px;" href="{{ get_field('acquisition_1_cta_link', $acquisition->ID) }}">{!! get_field('acquisition_1_label', $acquisition->ID) !!}</a>
+					<a class="btn-bloc2 primary-btn" style="margin: 0 15px;" href="{{ get_field('acquisition_1_cta_link', $acquisition->ID) }}">{!! get_field('acquisition_1_cta_label', $acquisition->ID) !!}</a>
 				@endif
 				@if (!empty(get_field('acquisition_2_cta_link', $acquisition->ID)))
-					<a class="btn-bloc2 primary-btn" href="{{ get_field('acquisition_2_cta_link', $acquisition->ID) }}">{!! get_field('acquisition_2_cata_label', $acquisition->ID) !!}</a>
+					<a class="btn-bloc2 primary-btn" href="{{ get_field('acquisition_2_cta_link', $acquisition->ID) }}">{!! get_field('acquisition_2_cta_label', $acquisition->ID) !!}</a>
 				@endif
 			</div>
 		</div>

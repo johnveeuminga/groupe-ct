@@ -257,7 +257,7 @@
         var $popup = $('#interstitiel');
         if ($popup.length > 0) {
             var instance = lity($popup);
-            instance.open();
+            console.log(instance);
         }
 
   });
