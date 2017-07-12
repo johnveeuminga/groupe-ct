@@ -168,6 +168,12 @@
       line-height: 32px;
       color: white;
     }
+
+
+    @media (max-width: $screen-sm-min) {
+      left: 15px;
+      width: calc(100% - 30px);
+    }
   }
 
   .btn-container {
