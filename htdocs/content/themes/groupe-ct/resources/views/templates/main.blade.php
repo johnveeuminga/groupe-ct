@@ -72,11 +72,11 @@
 						<a class="btn-bloc2 primary-btn" href="{{ get_field('acquisition_2_cta_link', $acquisition->ID) }}" @if(get_field('acquisition_2_cta_blank', $acquisition->ID)) target="_blank" @endif>{!! get_field('acquisition_2_cta_label', $acquisition->ID) !!}</a>
 					@endif
 				</div>
+			</div>
 
-				<div class="interstitiel-toggle">
-					<a href="#">English</a>
-					<a href="#" class="close-interstitiel">x</a>
-				</div>
+			<div class="interstitiel-toggle">
+				<a href="#">English</a>
+				<a href="#" class="close-interstitiel">x</a>
 			</div>
 		</div>
 	@endif
