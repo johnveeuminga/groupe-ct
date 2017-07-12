@@ -45,17 +45,24 @@
 	<!-- End Google Tag Manager (noscript) -->
 	{{--<a href="#interstitiel" data-lity>Inline</a>--}}
 
-	<div id="interstitiel" class="lity-hide" style="background-image: url('{{ themosis_assets() }}/images/bg/interstiel.jpg');">
-		<div class="content">
-			<h2>SOLUTIONS D'AFFAIRES DE LA CAPITALE, UNE SOCIÉTÉ DE GROUPE CT.</h2>
-			<p>Une entreprise québécoise d'envergure nationale qui offre une expertise reconnue en gestion documentaire et en technologie d'impression pour les entreprise de Québec</p>
+	@if ($acquisition)
+		<div id="interstitiel" class="lity-hide" style="background-image: url('{{ themosis_assets() }}/images/bg/interstiel.jpg');">
+			<a href="#" class="close-data-lity">x</a>
+			<div class="content">
+				<h2>{!! get_field('acquisition_title', $acquisition->ID) !!}</h2>
+				<p>{!! get_field('acquisition_description', $acquisition->ID) !!}</p>
+			</div>
+			<div class="btn-container">
+				<a class="btn-bloc2 primary-btn close-data-lity" href="#">{!! pll__('Poursuivre votre<br/>visite') !!}</a>
+				@if (!empty(get_field('acquisition_2_cta_link', $acquisition->ID)))
+					<a class="btn-bloc2 primary-btn" style="margin: 0 15px;" href="{{ get_field('acquisition_1_cta_link', $acquisition->ID) }}">{!! get_field('acquisition_1_label', $acquisition->ID) !!}</a>
+				@endif
+				@if (!empty(get_field('acquisition_2_cta_link', $acquisition->ID)))
+					<a class="btn-bloc2 primary-btn" href="{{ get_field('acquisition_2_cta_link', $acquisition->ID) }}">{!! get_field('acquisition_2_cata_label', $acquisition->ID) !!}</a>
+				@endif
+			</div>
 		</div>
-		<div class="btn-container">
-			<a class="btn-bloc2 primary-btn" href="#">Poursuivre votre<br/>visite</a>
-			<a class="btn-bloc2 primary-btn" style="margin: 0 15px;" href="#">Lire le communiqué<br/>de presse</a>
-			<a class="btn-bloc2 primary-btn" href="#">Joindre solutions d'affaires<br/>de la capitale (SAC)</a>
-		</div>
-	</div>
+	@endif
 
 	@include('partials.components.header.main-nav-mobile')
 	<div id="global-container">
