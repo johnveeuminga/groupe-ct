@@ -45,15 +45,15 @@
 	<!-- End Google Tag Manager (noscript) -->
 	@if (isset($acquisition) && $acquisition)
 		<style scoped>
-			@if (is_array(get_field('acquisition_image_desktop')))
+			@if (is_array(get_field('acquisition_image_desktop', $acquisition->ID)))
 				#interstitiel {
-					background-image: url({{ get_field('page_header_image_desktop')['url'] }});
+					background-image: url({{ get_field('page_header_image_desktop', $acquisition->ID)['url'] }});
 				}
 			@endif
-            @if (is_array(get_field('acquisition_image_mobile')))
+            @if (is_array(get_field('acquisition_image_mobile', $acquisition->ID)))
                 @media (max-width: 767px) { /* or 301 if you want really the same as previously.  */
 				#interstitiel {
-					background-image: url({{ get_field('acquisition_image_mobile')['url'] }});
+					background-image: url({{ get_field('acquisition_image_mobile', $acquisition->ID)['url'] }});
 				}
 			}
 			@endif
