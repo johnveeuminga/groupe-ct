@@ -150,6 +150,7 @@
   .content {
     position: absolute;
     top: 30vh;
+    max-height: 60vh;
     left: calc(50% - 335px);
     max-width: 770px;
     h2 {
