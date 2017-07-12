@@ -149,6 +149,7 @@
   max-height: 95vh!important;
   .content {
     position: absolute;
+    overflow-y: scroll;
     top: 30vh;
     max-height: 77vh;
     left: 10%;
