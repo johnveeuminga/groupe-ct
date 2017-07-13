@@ -31,5 +31,8 @@
     span {
       @include set-font(14px, $mada, 400, $blue);
     }
+    @media (max-width: $screen-sm-min - 1) {
+      margin-bottom: 50px;
+    }
   }
 }
