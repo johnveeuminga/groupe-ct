@@ -3,7 +3,8 @@
   .publication-container {
     @include flexbox();
     @include flex-direction(column);
-    padding-top:50px;
+    //
+    //padding-top:50px;
   }
 
 
