@@ -59,7 +59,7 @@
 			@endif
 		</style>
 
-		< id="interstitiel" class="lity-hide">
+		<div id="interstitiel" class="lity-hide">
 			<div class="content">
 				<h2>{!! get_field('acquisition_title', $acquisition->ID) !!}</h2>
 				<p>{!! get_field('acquisition_description', $acquisition->ID) !!}</p>
