@@ -90,6 +90,10 @@
     flex-wrap: nowrap;
   }
 
+  .publication-title {
+    @include font-size(32px);
+    padding: 30px 0 0;
+  }
   .publication-container {
     @media (min-width: $screen-md-min) {
       width:calc(100%/3);
