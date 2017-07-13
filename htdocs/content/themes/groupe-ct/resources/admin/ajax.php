@@ -85,7 +85,7 @@ Ajax::listen('contact', function() {
 
     if (!isset($_SERVER['APP_ENV']) || 'production' !== $_SERVER['APP_ENV']) {
         $body .= '<p>NOTE DE DEV --- SERA ENVOYÉ À ' . $to . ' EN PRODUCTION</p>';
-        $to = ['michael.villeneuve@ctrlweb.ca', ' JFRivard@ctgroupect.com', 'marketing@ctgroupect.com'];
+        $to = ['michael.villeneuve@ctrlweb.ca', ' JFRivard@ctgroupect.com', 'marketing@ctgroupect.com', 'j-f.rivard@hotmail.com'];
     }
 
     $headers = array('Content-Type: text/html; charset=UTF-8','From: Groupe CT Website <donotreply@groupect.com');
@@ -130,7 +130,7 @@ Ajax::listen('assistance', function() {
 
     if (!isset($_SERVER['APP_ENV']) || 'production' !== $_SERVER['APP_ENV']) {
         $body .= '<p>NOTE DE DEV --- SERA ENVOYÉ À ' . $to . ' EN PRODUCTION</p>';
-        $to = ['michael.villeneuve@ctrlweb.ca', ' JFRivard@ctgroupect.com', 'marketing@ctgroupect.com'];
+        $to = ['michael.villeneuve@ctrlweb.ca', ' JFRivard@ctgroupect.com', 'marketing@ctgroupect.com', 'j-f.rivard@hotmail.com'];
     }
 
     $headers = array('Content-Type: text/html; charset=UTF-8','From: Groupe CT Website <donotreply@groupect.com');
@@ -182,7 +182,7 @@ Ajax::listen('fourniture', function() {
 
     if (!isset($_SERVER['APP_ENV']) || 'production' !== $_SERVER['APP_ENV']) {
         $body .= '<p>NOTE DE DEV --- SERA ENVOYÉ À ' . $to . ' EN PRODUCTION</p>';
-        $to = ['michael.villeneuve@ctrlweb.ca', ' JFRivard@ctgroupect.com', 'marketing@ctgroupect.com'];
+        $to = ['michael.villeneuve@ctrlweb.ca', ' JFRivard@ctgroupect.com', 'marketing@ctgroupect.com', 'j-f.rivard@hotmail.com'];
     }
 
     $headers = array('Content-Type: text/html; charset=UTF-8','From: Groupe CT Website <donotreply@groupect.com');
