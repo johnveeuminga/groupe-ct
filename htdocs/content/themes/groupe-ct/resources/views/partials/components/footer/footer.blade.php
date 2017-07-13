@@ -58,7 +58,15 @@
             </nav>
 
             <nav class="footer-nav contact">
-                <h4 class="footer-nav-title"><a class="nav-link" href="#">{{ pll_current_language() === 'fr' ? 'English' : 'Français' }}</a></h4>
+                @if (pll_current_language() === 'fr')
+                    @if (isset(pll_get_post_translations(get_the_ID())['en']))
+                        <h4 class="footer-nav-title"><a class="nav-link" href="{{ get_permalink(pll_get_post_translations(get_the_ID())['en']) }}">English</a></h4>
+                    @endif
+                @else
+                    @if (isset(pll_get_post_translations(get_the_ID())['fr']))
+                        <h4 class="footer-nav-title"><a class="nav-link" href="{{ get_permalink(pll_get_post_translations(get_the_ID())['fr']) }}">Français</a></h4>
+                    @endif
+                @endif
                 <h4 class="footer-nav-title"><a class="nav-link scroll-to" href="#" data-target="#form-newsletter">{{ pll__('Infolettre') }}</a></h4>
             </nav>
 
