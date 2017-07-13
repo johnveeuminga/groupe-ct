@@ -142,6 +142,7 @@
       @include flex-direction(row);
       @include flex-wrap(wrap);
       @include justify-content(center);
+      height: 73px;
       padding: 0;
 
       @media (max-width: $screen-sm-min - 1) {
