@@ -25,7 +25,6 @@
         @if (get_post_type(get_the_ID()) !== 'post')
             <div class="hero-content-container">
                 <div class="hero-title-container">
-                    <h1 class="hero-title">@if(get_field('page_html_title', PageHelper::get_page_id(PageHelper::PAGE_5_0_PUBLICATIONS)) && !empty(get_field('page_html_title', Loop::id()))){!! get_field('page_html_title', PageHelper::get_page_id(PageHelper::PAGE_5_0_PUBLICATIONS))  !!} @else<span class="red-border">{{ get_the_title(PageHelper::get_page_id(PageHelper::PAGE_5_0_PUBLICATIONS)) }}</span>@endif</h1>
                     @loop
                         <h1 class="hero-title">@if(get_field('page_html_title', Loop::id()) && !empty(get_field('page_html_title', Loop::id()))){!! get_field('page_html_title', Loop::id())  !!} @else<span class="red-border">{{ Loop::title() }}</span>@endif</h1>
                     @endloop
