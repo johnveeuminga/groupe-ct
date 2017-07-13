@@ -1,3 +1,11 @@
+@if (get_post_type(get_the_ID()) === 'post')
+    <style scoped>
+        .hero-page {
+            display: none;
+        }
+    </style>
+@endif
+
 @if (get_post_type(get_the_ID()) !== 'post')
     <style scoped>
         .hero-content-container {
