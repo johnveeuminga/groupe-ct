@@ -59,7 +59,7 @@
 			@endif
 		</style>
 
-		<div id="interstitiel" class="lity-hide">
+		< id="interstitiel" class="lity-hide">
 			<div class="content">
 				<h2>{!! get_field('acquisition_title', $acquisition->ID) !!}</h2>
 				<p>{!! get_field('acquisition_description', $acquisition->ID) !!}</p>
@@ -75,7 +75,15 @@
 			</div>
 
 			<div class="interstitiel-toggle">
-				<a class="language" href="#">{{ pll_current_language() ? 'English' : 'Français' }}</a><span>|</span><a href="#" class="close-interstitiel">x</a>
+				@if (pll_current_language() === 'fr')
+					@if (isset(pll_get_post_translations(get_the_ID())['en']))
+						<a class="language" href="{{ get_permalink(pll_get_post_translations(get_the_ID())['fr']) }}">Français</a><span>|</span><a href="#" class="close-interstitiel">x</a>
+					@endif
+				@else
+					@if (isset(pll_get_post_translations(get_the_ID())['fr']))
+						<a class="language" href="{{ get_permalink(pll_get_post_translations(get_the_ID())['fr']) }}">Français</a><span>|</span><a href="#" class="close-interstitiel">x</a>
+					@endif
+				@endif
 			</div>
 		</div>
 	@endif
