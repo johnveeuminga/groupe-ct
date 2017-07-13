@@ -86,12 +86,12 @@
   }
   @media (min-width: $screen-md-min) {
     @include flex-direction(row);
+    flex-wrap: nowrap;
   }
 
   .publication-container {
     @media (min-width: $screen-md-min) {
       width:calc(100%/3);
-      flex-wrap: nowrap;
     }
 
     &:nth-child(2) {
