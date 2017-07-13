@@ -103,7 +103,9 @@
     }
 
     &:nth-child(2) {
+      @media (min-width: $screen-md-min) {
       padding: 0 40px;
+      }
     }
   }
 
