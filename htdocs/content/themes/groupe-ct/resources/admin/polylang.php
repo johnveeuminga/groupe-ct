@@ -185,6 +185,8 @@ if (function_exists('pll_register_string'))
     pll_register_string('MISC', 'Échelle numérique', GROUPE_CT, false);
     pll_register_string('MISC', 'Veuillez respecter le poid maximal!', GROUPE_CT, false);
     pll_register_string('MISC', 'Poursuivre votre visite', GROUPE_CT, false);
+    pll_register_string('MISC', 'FERMER', GROUPE_CT, false);
+    pll_register_string('MISC', 'À', GROUPE_CT, false);
 
     /** Template 2.1.1  */
     pll_register_string('PRODUIT ET SOLUTIONS 2.1 - FILTRES', 'Imprimantes', GROUPE_CT, false);

@@ -61,7 +61,7 @@
                 </div>
                 <div class="contact-row">
                     <div class="check-container">
-                        <input type="checkbox" name="contact-accept" id="contact-accept" class="contact-accept"><label for="contact-accept">{{ pll__('J\'accepte de recevoir l\'infolettre et les offres du Groupe CT. ') }}</label>
+                        <input type="checkbox" name="contact-accept" id="contact-accept" class="contact-accept"><label for="contact-accept">{{ pll__('J\'accepte de recevoir l\'infolettre et les offres du Groupe CT.') }}</label>
                     </div>
 
                     <button type="submit" id="submit-contact" class="primary-btn submit-btn">{{ pll__('Envoyer') }}</button>
