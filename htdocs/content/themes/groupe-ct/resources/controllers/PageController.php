@@ -28,7 +28,9 @@ class PageController extends MainController
             ];
             $query = new \WP_Query($args);
             $acquisition = $query->post_count > 0 ? $query->posts[0] : false;
-        } elseif(isset($_GET['referer'])) {
+        }
+
+        if(isset($_GET['referer'])) {
             $domain = $_GET['referer'];
             $args = [
                 'post_type' => 'acquisition',
