@@ -254,10 +254,10 @@
   position: absolute;
   @include set-font(18px, $mada, 400, $black);
   color: $dark-gray!important;
-  &:active {
+  a:active {
     color: $dark-gray!important;
   }
-  &:-webkit-any-link {
+  a:-webkit-any-link {
     color: $dark-gray!important;
   }
 
