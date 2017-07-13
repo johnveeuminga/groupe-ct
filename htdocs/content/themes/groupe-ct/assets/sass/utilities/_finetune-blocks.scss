@@ -252,8 +252,8 @@
   top: 15px!important;
   right: 15px!important;
   position: absolute;
-  @include set-font(18px, $mada, 300, $black);
-  color: $dark-gray;
+  @include set-font(18px, $mada, 400, $black);
+  color: $dark-gray!important;
 
   span {
     margin: 0 30px;
