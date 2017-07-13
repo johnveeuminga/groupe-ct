@@ -30,6 +30,7 @@ class PageHelper
     const PAGE_4_6_CARRIERE = 'carriere';
     const PAGE_4_7_NOUS_JOINDRE = 'nous-joindre';
     const PAGE_5_0_PUBLICATIONS = 'publications';
+    const PAGE_5_0_LEGAL = 'legal';
 
     private static function get_pages_array()
     {
@@ -145,6 +146,10 @@ class PageHelper
 		    self::PAGE_5_0_PUBLICATIONS => [
 			    'fr' => 249,
 			    'en' => 1220,
+		    ],
+		    self::PAGE_5_0_LEGAL=> [
+			    'fr' => 1532,
+			    'en' => 1536,
 		    ],
 	    ];
     }
