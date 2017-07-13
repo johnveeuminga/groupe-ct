@@ -307,6 +307,7 @@
     display: block;
 
     .my-ct-link {
+      width: 100%;
       padding:50px 0;
       @media (min-width: $screen-md-min) {
         margin:0 50px;
