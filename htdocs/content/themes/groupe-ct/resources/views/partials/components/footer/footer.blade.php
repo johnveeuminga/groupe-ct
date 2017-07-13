@@ -80,7 +80,7 @@
 
             </div>
             <div class="legal-container">
-                <p><?php echo date("Y"); ?> &copy;{{ pll__('Groupe C.T Tous droits réservé') }}&nbsp;-&nbsp;</p><a class="nav-link" href="{{ PageHelper::get_page_permalink(PageHelper::PAGE_5_0_LEGAL) }}">{{ PageHelper::get_page_title(PageHelper::PAGE_5_0_LEGAL) }}</a>
+                <p><?php echo date("Y"); ?> &copy; {{ pll__('Groupe C.T Tous droits réservé') }}&nbsp;-&nbsp;</p><a class="nav-link" href="{{ PageHelper::get_page_permalink(PageHelper::PAGE_5_0_LEGAL) }}">{{ PageHelper::get_page_title(PageHelper::PAGE_5_0_LEGAL) }}</a>
             </div>
 
 
