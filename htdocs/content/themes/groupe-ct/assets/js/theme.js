@@ -259,7 +259,7 @@
             setTimeout(function () {
                 var instance = lity($popup);
                 $('.lity-close').appendTo($popup);
-                $('.close-data-lity').on('click', function() {
+                $('.close-interstitiel').on('click', function() {
                     instance.close();
                 });
             }, 100);
