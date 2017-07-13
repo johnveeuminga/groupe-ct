@@ -142,9 +142,11 @@
       @include flex-direction(row);
       @include flex-wrap(wrap);
       @include justify-content(center);
-      height: 73px;
       padding: 0;
 
+      .input-container {
+        height: 73px;
+      }
       @media (max-width: $screen-sm-min - 1) {
         input, select {
           display: flex;
