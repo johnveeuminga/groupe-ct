@@ -29,10 +29,6 @@ class PageController extends MainController
             $query = new \WP_Query($args);
             $acquisition = $query->post_count > 0 ? $query->posts[0] : false;
         } elseif(isset($_GET['referer'])) {
-            header("Cache-Control: no-cache, no-store, must-revalidate"); // HTTP 1.1.
-            header("Pragma: no-cache"); // HTTP 1.0.
-            header("Expires: 0"); // Proxies.
-
             $domain = $_GET['referer'];
             $args = [
                 'post_type' => 'acquisition',
