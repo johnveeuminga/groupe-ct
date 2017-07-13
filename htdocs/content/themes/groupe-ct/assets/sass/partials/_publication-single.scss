@@ -24,8 +24,10 @@
     border-top:1px solid $grey-light;
     border-bottom:1px solid $grey-light;
     padding: 18px 0;
-    margin-top: 50px;
-    margin-bottom: 30px;
+    margin: 30px 0;
+    @media (min-width: $screen-sm-min) {
+      margin-top: 50px;
+    }
   }
 
   .publication-nav-item {
