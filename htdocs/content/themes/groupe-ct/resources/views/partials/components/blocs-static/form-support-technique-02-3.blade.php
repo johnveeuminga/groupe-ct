@@ -114,8 +114,10 @@
                                 </select>
                             </div>
                         </div>  <!-- OPENING MAIN CONTAINER -->
-                        <input type="checkbox" name="assistance-closed" id="assistance-closed">
-                        <label for="assistance-closed">{{ pll__("Bureau fermé le midi") }}</label>
+                        <div class="input-container">
+                            <input type="checkbox" name="assistance-closed" id="assistance-closed">
+                            <label for="assistance-closed">{{ pll__("Bureau fermé le midi") }}</label>
+                        </div>
                     </div>
 
                 </div> <!-- FORM LEFT END -->
