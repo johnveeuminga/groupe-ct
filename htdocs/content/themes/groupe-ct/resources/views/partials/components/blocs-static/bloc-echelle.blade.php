@@ -18,7 +18,7 @@
         <img id="hover-numerique"  class="{{ PageHelper::get_page_id(PageHelper::PAGE_1_3_ENVIRONNEMENT_NUMERIQUE) === get_the_ID() ? 'active' : '' }}" src="{{ themosis_assets() }}/images/echelle/desktop/hover-digital-{{ pll_current_language() }}.png">
     </div>
     <div class="bloc-echelle-mobile-container">
-        <img src="{{ themosis_assets() }}/images/echelle/echelle-mobile.png" alt="">
+        <img src="{{ themosis_assets() }}/images/echelle/echelle-{{ pll_current_language() }}.png" alt="">
         <a class="mobile-zone-container zone-papier" href="{{ PageHelper::get_page_permalink(PageHelper::PAGE_1_1_ENVIRONNEMENT_PAPIER) }}"></a>
         <a class="mobile-zone-container zone-hybride" href="{{ PageHelper::get_page_permalink(PageHelper::PAGE_1_2_ENVIRONNEMENT_HYBRIDE) }}"></a>
         <a class="mobile-zone-container zone-numerique" href="{{ PageHelper::get_page_permalink(PageHelper::PAGE_1_3_ENVIRONNEMENT_NUMERIQUE) }}"></a>
