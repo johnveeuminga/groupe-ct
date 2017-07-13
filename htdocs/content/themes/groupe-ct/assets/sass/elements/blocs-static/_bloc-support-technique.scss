@@ -626,6 +626,10 @@
         padding: 0;
       }
     }
+    .form-submit {
+      width: 100%;
+      flex-direction: row-reverse;
+    }
   }
   /*** FORM 4 ***/
   #form-ressource {
