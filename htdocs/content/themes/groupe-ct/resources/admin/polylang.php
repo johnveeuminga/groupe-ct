@@ -21,7 +21,7 @@ if (function_exists('pll_register_string'))
 
     /** FOOTER **/
     pll_register_string('', 'Mentions légales', GROUPE_CT, false);
-    pll_register_string('', '2017 Groupe C.T Tous droits réservé', GROUPE_CT, false);
+    pll_register_string('', 'Groupe C.T Tous droits réservé', GROUPE_CT, false);
 
     /** NEWSLETTER **/
     pll_register_string('', 'Infolettre', GROUPE_CT, false);
