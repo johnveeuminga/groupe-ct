@@ -91,6 +91,7 @@
   .publication-container {
     @media (min-width: $screen-md-min) {
       width:calc(100%/3);
+      flex-wrap: nowrap;
     }
 
     &:nth-child(2) {
