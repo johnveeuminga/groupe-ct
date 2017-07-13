@@ -140,6 +140,8 @@
     .form-left-container, .form-right-container {
       @include flexbox();
       @include flex-direction(row);
+      @include flex-wrap(wrap);
+      @include justify-content(center);
       padding: 0;
 
       @media (max-width: $screen-sm-min - 1) {
@@ -149,8 +151,6 @@
         }
         .input-container {
           flex-direction: row;
-          flex-wrap: wrap;
-          justify-content: center;
           height: 73px;
           width: 100%;
         }
