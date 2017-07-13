@@ -141,7 +141,7 @@
 
 #interstitiel {
   position: relative;
-  background-size: cover;
+  background-size: cover!important;
   background-position: top center;
   @media (max-width: $screen-sm-min - 1) {
     background-position: center 60px!important;
