@@ -25,7 +25,9 @@
     margin-bottom: 30px;
     @media (min-width: $screen-md-min) {
       @include flexbox();
-      @include flex-direction(column);
+      @include flex-direction(row);
+      @include justify-content(center);
+      @include flex-wrap(wrap);
       @include align-items(center);
       margin-bottom: 0;
     }
