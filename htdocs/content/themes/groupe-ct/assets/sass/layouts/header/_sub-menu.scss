@@ -24,6 +24,8 @@
   .sub-menu-title {
     margin-bottom: 25px;
     text-transform: uppercase;
+    @include set-font(17px, $poppins, 400, white);
+
     a {
       color: white;
     }
