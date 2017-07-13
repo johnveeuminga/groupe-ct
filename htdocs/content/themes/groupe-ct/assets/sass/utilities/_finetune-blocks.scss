@@ -254,6 +254,9 @@
   position: absolute;
   @include set-font(18px, $mada, 400, $black);
   color: $dark-gray!important;
+  &:active {
+    color: $dark-gray!important;
+  }
 
   span {
     margin: 0 30px;
