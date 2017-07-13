@@ -82,6 +82,8 @@
 				@else
 					@if (isset(pll_get_post_translations(get_the_ID())['fr']))
 						<a class="language" href="{{ get_permalink(pll_get_post_translations(get_the_ID())['fr']) }}">Français</a><span>|</span><a href="#" class="close-interstitiel">x</a>
+					@else
+						<a href="#" class="close-interstitiel">x</a>
 					@endif
 				@endif
 			</div>
