@@ -1,7 +1,7 @@
 <section class="publication-single-main-container default-padding default-width">
     <div class="publication-container">
         <div class="publication-page-title-container">
-            <h2 class="page-title"><?php _e('NOS PUBLICATIONS', THEME_TEXTDOMAIN); ?></h2>
+            <h2 class="page-title">{{ pll__('NOS PUBLICATIONS') }}</h2>
         </div>
 
         <div class="publication-nav-container">
@@ -11,7 +11,7 @@
                 @else
                     <span></span>
                 @endif
-                <a class="publication-nav-item link-pub-list" href="{{PageHelper::get_page_permalink(PageHelper::PAGE_5_0_PUBLICATIONS) }}"><?php _e('Liste', THEME_TEXTDOMAIN); ?></a>
+                <a class="publication-nav-item link-pub-list" href="{{PageHelper::get_page_permalink(PageHelper::PAGE_5_0_PUBLICATIONS) }}">{{ pll__('liste') }}</a>
                 @if (get_next_post())
                     <a class="publication-nav-item cta-pub-right" href="{{ get_permalink(get_next_post()) }}">{{ pll__('Publication suivante') }}</a>
                 @else
@@ -39,7 +39,7 @@
                 @else
                     <span></span>
                 @endif
-                <a class="publication-nav-item link-pub-list" href="{{PageHelper::get_page_permalink(PageHelper::PAGE_5_0_PUBLICATIONS) }}"><?php _e('Liste', THEME_TEXTDOMAIN); ?></a>
+                <a class="publication-nav-item link-pub-list" href="{{PageHelper::get_page_permalink(PageHelper::PAGE_5_0_PUBLICATIONS) }}">{{ pll__('liste') }}</a>
                 @if (get_next_post())
                     <a class="publication-nav-item cta-pub-right" href="{{ get_permalink(get_next_post()) }}">{{ pll__('Publication suivante') }}</a>
                 @else
