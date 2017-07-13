@@ -257,6 +257,9 @@
   &:active {
     color: $dark-gray!important;
   }
+  &:-webkit-any-link {
+    color: $dark-gray!important;
+  }
 
   span {
     margin: 0 30px;
