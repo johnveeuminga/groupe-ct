@@ -75,7 +75,7 @@
 			</div>
 
 			<div class="interstitiel-toggle">
-				<a href="#">English</a><span>|</span><a href="#" class="close-interstitiel">x</a>
+				<a class="language" href="#">{{ pll_current_language() ? 'English' : 'Français' }}</a><span>|</span><a href="#" class="close-interstitiel">x</a>
 			</div>
 		</div>
 	@endif

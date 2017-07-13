@@ -254,13 +254,13 @@
   position: absolute;
   @include set-font(18px, $mada, 400, $black);
   color: $dark-gray!important;
-  a:active {
+  a.language:active {
     color: $dark-gray!important;
   }
-  a:hover {
+  a.language:hover {
     color: $dark-gray!important;
   }
-  a:-webkit-any-link {
+  a.language:-webkit-any-link {
     color: $dark-gray!important;
   }
 
