@@ -291,6 +291,9 @@
       @include justify-content(space-between);
       @include align-items(flex-end);
     }
+    @media (max-width: $screen-sm-min - 1) {
+      flex-wrap: wrap;
+    }
     .mention {
       margin-top:15px;
     }
