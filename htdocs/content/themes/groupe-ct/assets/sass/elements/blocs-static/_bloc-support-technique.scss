@@ -544,9 +544,7 @@
 
   /*** FORM 3 ***/
   #form-fourniture{
-
-    @include flex-direction(row);
-    @include flex-wrap(wrap);
+    display: block;
     .content-container {
       @media (min-width: $screen-md-min) {
         @include flexbox();
@@ -622,7 +620,11 @@
     }
 
     .text-container, .content-container {
-      margin: 0 30px 30px;
+      padding: 0 30px 30px;
+      @media (min-width: $screen-sm-min - 1) {
+        margin-bottom: 0;
+      }
+
       @media (min-width: $screen-lg-min) {
         margin: 0;
         padding: 0;
