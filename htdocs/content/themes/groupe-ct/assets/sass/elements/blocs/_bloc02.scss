@@ -173,8 +173,9 @@
     text-align: center;
     @media (min-width: $screen-lg-min) {
       text-align: left;
-
+      padding-bottom: 0;
     }
+    padding-bottom: 30px;
   }
 
   padding-bottom: 30px;
