@@ -324,6 +324,7 @@
 
     .content-container {
       margin: 30px;
+      @include align-items(flex-start);
       @media (min-width: $screen-md-min) {
         @include flexbox();
         @include flex-direction(row);
