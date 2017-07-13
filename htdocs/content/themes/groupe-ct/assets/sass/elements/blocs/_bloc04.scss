@@ -35,6 +35,7 @@
     .four-col-icons-img-container {
       text-align: center;
       margin: auto;
+      width: 100%;
       height: 100%;
       min-height: 90px;
       @media (min-width: $screen-sm-min) {
@@ -51,6 +52,7 @@
 
     .four-col-icons-title {
       text-transform: uppercase;
+      width: 100%;
       @include set-font(20px, $poppins, 700, $black);
       line-height: 24px;
       margin: 15px 0;
