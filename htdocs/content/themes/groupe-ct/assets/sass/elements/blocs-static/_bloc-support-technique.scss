@@ -154,7 +154,9 @@
           width: 100% !important;
         }
         .input-container {
+          height: auto;
           flex-direction: row;
+          flex-wrap: wrap;
         }
       }
 
