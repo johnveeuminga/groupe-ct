@@ -620,7 +620,7 @@
     }
 
     .text-container, .content-container {
-      padding: 0 30px 30px;
+      margin: 0 30px 30px;
       @media (min-width: $screen-sm-min - 1) {
         margin-bottom: 0;
       }
