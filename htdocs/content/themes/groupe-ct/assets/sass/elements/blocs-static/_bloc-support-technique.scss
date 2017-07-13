@@ -543,11 +543,14 @@
   /*** FORM 3 ***/
   #form-fourniture{
 
+    @include flex-direction(row);
+    @include flex-wrap(wrap);
     .content-container {
       @media (min-width: $screen-md-min) {
         @include flexbox();
         @include flex-direction(row);
       }
+      @include align-items(flex-start);
     }
 
     .input-container:nth-child(1) {
