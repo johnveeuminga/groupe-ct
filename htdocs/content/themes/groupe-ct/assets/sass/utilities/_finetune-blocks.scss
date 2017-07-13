@@ -291,6 +291,7 @@
     background: $blue!important;
     @media (max-width: $screen-sm-min - 1) {
       background: white!important;
+      color: $dark-gray;
     }
 
     width: 35px;
