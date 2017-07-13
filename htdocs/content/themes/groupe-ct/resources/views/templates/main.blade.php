@@ -77,11 +77,11 @@
 			<div class="interstitiel-toggle">
 				@if (pll_current_language() === 'fr')
 					@if (isset(pll_get_post_translations(get_the_ID())['en']))
-						<a class="language" href="{{ get_permalink(pll_get_post_translations(get_the_ID())['fr']) }}">Français</a><span>|</span><a href="#" class="close-interstitiel">x</a>
+						<a class="language" href="{{ get_permalink(pll_get_post_translations(get_the_ID())['fr']) }}?referer={{ get_field('acquisition_custom_hash', $acquisition->ID) }}">Français</a><span>|</span><a href="#" class="close-interstitiel">x</a>
 					@endif
 				@else
 					@if (isset(pll_get_post_translations(get_the_ID())['fr']))
-						<a class="language" href="{{ get_permalink(pll_get_post_translations(get_the_ID())['fr']) }}">Français</a><span>|</span><a href="#" class="close-interstitiel">x</a>
+						<a class="language" href="{{ get_permalink(pll_get_post_translations(get_the_ID())['fr']) }}?referer={{ get_field('acquisition_custom_hash', $acquisition->ID) }}">Français</a><span>|</span><a href="#" class="close-interstitiel">x</a>
 					@else
 						<a href="#" class="close-interstitiel">x</a>
 					@endif
