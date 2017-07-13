@@ -14,10 +14,10 @@
                 <p>
                     {{ pll__('Commandez rapidement et facilement des fournitures en remplissant le formulaire ci-dessous. Votre commande sera livrée dans un délai de 24 à 48 h ouvrable.') }}
                 </p>
-                <p>
-                    {{ pll__('D\'autres options s\'offrent à vous. Contactez un agent par téléphone ou par courriel. Si vous êt déjà un client de Groupe CT, nous vous recommandons d\'utiliser le portail') }}
-                    <a href="#" data-target="#_section-01" class="form-link scroll-to">{{ pll__('Mon CT') }}.</a>
-                </p>
+                {{--<p>--}}
+                    {{--{{ pll__('D\'autres options s\'offrent à vous. Contactez un agent par téléphone ou par courriel. Si vous êt déjà un client de Groupe CT, nous vous recommandons d\'utiliser le portail') }}--}}
+                    {{--<a href="#" data-target="#_section-01" class="form-link scroll-to">{{ pll__('Mon CT') }}.</a>--}}
+                {{--</p>--}}
             </div>
             <div id="fourniture-success" style="display: none">
                 <p><strong>{{ pll__('Confirmation de commande de fournitures') }}</strong></p>
