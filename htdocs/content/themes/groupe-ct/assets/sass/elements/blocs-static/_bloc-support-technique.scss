@@ -139,7 +139,7 @@
 
     .form-left-container, .form-right-container {
       @include flexbox();
-      @include flex-direction(column);
+      @include flex-direction(row);
       padding: 0;
 
       @media (max-width: $screen-sm-min - 1) {
@@ -151,6 +151,8 @@
           flex-direction: row;
           flex-wrap: wrap;
           justify-content: center;
+          height: 73px;
+          width: 100%;
         }
       }
 
@@ -173,7 +175,7 @@
 
     .input-container {
       @include flexbox();
-      @include flex-direction(column);
+      @include flex-direction(row);
       @media (min-width: $screen-sm-min) {
         @include flex-direction(row);
       }
@@ -355,7 +357,7 @@
       }
     }
     #assistance-serial {
-      width:60%;
+      width: 66%;
     }
     #assistance-office {
       width: 100%;
@@ -370,21 +372,17 @@
 
     .input-container:nth-child(5) {
       @include flexbox();
-
+      height: auto;
       @media (min-width: $screen-sm-min) {
-        @include flex-direction(column);
+        @include flex-direction(row);
       }
 
       .opening-main-container {
         display: block;
         @media (min-width: $screen-md-min) {
           @include flexbox();
-          @include flex-direction(column);
           @include flex-direction(row);
         }
-
-        //background: red;
-        //height: 300px;
       }
       .opening {
         @include flexbox();
