@@ -144,7 +144,7 @@
   background-size: cover;
   background-position: top center;
   @media (max-width: $screen-sm-min - 1) {
-    background-position: center 60px;
+    background-position: center 60px!important;
     background: #232321;
   }
   
