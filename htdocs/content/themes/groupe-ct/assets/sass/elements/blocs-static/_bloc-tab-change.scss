@@ -112,6 +112,9 @@
     @extend .mada18LightWhite;
     list-style: none;
     position: relative;
+    list-style-type: disc;
+    list-style-position: outside;
+    margin-left: 20px;
   }
 
   .triangle {
