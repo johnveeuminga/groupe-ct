@@ -1,6 +1,6 @@
 @if (get_post_type(get_the_ID()) === 'post')
     <style scoped>
-        .hero-page {
+        .hero-title-container {
             display: none;
         }
     </style>
@@ -27,17 +27,17 @@
     </style>
 @endif
 
-    <section class="hero-page row">
-        @include('partials.components.header.sub-menu')
-        @include('partials.components.header.contact-form')
-        @if (get_post_type(get_the_ID()) !== 'post')
-            <div class="hero-content-container">
-                <div class="hero-title-container">
-                    @loop
-                        <h1 class="hero-title">@if(get_field('page_html_title', Loop::id()) && !empty(get_field('page_html_title', Loop::id()))){!! get_field('page_html_title', Loop::id())  !!} @else<span class="red-border">{{ Loop::title() }}</span>@endif</h1>
-                    @endloop
-                </div>
-                <div class="overlay"></div>
+<section class="hero-page row">
+    @include('partials.components.header.sub-menu')
+    @include('partials.components.header.contact-form')
+    @if (get_post_type(get_the_ID()) !== 'post')
+        <div class="hero-content-container">
+            <div class="hero-title-container">
+                @loop
+                    <h1 class="hero-title">@if(get_field('page_html_title', Loop::id()) && !empty(get_field('page_html_title', Loop::id()))){!! get_field('page_html_title', Loop::id())  !!} @else<span class="red-border">{{ Loop::title() }}</span>@endif</h1>
+                @endloop
             </div>
-        @endif
-    </section>
+            <div class="overlay"></div>
+        </div>
+    @endif
+</section>
