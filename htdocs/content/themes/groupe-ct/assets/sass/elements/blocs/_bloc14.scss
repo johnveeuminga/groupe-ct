@@ -92,7 +92,7 @@
       }
 
     }
-    a {
+    a:not(.btn) {
       @extend .form-link;
     }
   }
