@@ -18,7 +18,7 @@
                     </div>
 
                     <div class="btn-container">
-                        <a class="btn primary-btn-blue" href="mailto:#">{{ pll__('Postuler') }}</a>
+                        <a class="btn primary-btn-blue" style="color: white;!important;" href="mailto:{{ Option::get('hr', 'hrEmail') }}">{{ pll__('Postuler') }}</a>
                     </div>
                 </div>
             </div>
