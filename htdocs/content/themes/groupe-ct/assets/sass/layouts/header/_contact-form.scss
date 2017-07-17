@@ -4,6 +4,9 @@
   .contact-form-container {
 
     position: absolute;
+
+    max-height: 90vh;
+    overflow-y: auto;
     //bottom:-799px;
     transition: 0.5s;
     right: -2000px;
