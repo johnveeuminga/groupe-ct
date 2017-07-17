@@ -191,8 +191,8 @@
                 }
 
                 $next.addClass('active-slide');
-                var $navIndex = $this.attr('class').split(' ')[1];
-                console.log($this.attr('class').split(' '));
+                var $navIndex = $next.attr('class').split(' ')[1];
+                console.log($next.attr('class').split(' '));
                 $this.find('.active-dot-blue').removeClass('active-dot-blue');
                 console.log('.slider-dot.' + $navIndex);
                 $this.find('.slider-dot.' + $navIndex).addClass('active-dot-blue');
