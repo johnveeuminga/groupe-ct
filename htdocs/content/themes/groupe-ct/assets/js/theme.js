@@ -182,7 +182,7 @@
         });
 
 
-        $('.img-plus-text-slider, testimonials-main-container').each(function(i) {
+        $('.img-plus-text-slider, .testimonials-main-container').each(function(i) {
             var $this = $(this);
             setInterval( function () {
                 var $next = $this.find('.active-slide').removeClass('active-slide').next();
