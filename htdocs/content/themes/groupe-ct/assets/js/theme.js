@@ -194,7 +194,7 @@
                 var $navIndex = $next.attr('class').split(' ')[1];
                 var dotClass = $this.hasClass('img-plus-text-slider') ? 'active-dot-blue' : 'active-dot' ;
                 console.log($next.attr('class').split(' '));
-                $this.find('.active-dot-blue').removeClass(dotClass);
+                $this.find('.' + dotClass).removeClass(dotClass);
                 console.log('.slider-dot.' + $navIndex);
                 $this.find('.slider-dot.' + $navIndex).addClass(dotClass);
             }, 8000);
