@@ -8,10 +8,6 @@
 
     position: relative;
     width: 100%;
-    min-height:780px;
-    @media (min-width: $screen-md-min) {
-      min-height:350px;
-    }
   }
 
   .slide-container {
