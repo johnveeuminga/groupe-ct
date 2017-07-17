@@ -56,7 +56,6 @@
   .text-container {
 
     @include flexbox();
-    @include flex-direction(column);
     @media (min-width: $screen-sm-min) {
       @include flex-basis(50%);
     }
