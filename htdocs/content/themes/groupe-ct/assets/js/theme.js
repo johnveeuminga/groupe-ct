@@ -191,10 +191,10 @@
                 }
 
                 $next.addClass('active-slide');
-                console.log('EQ');
-                console.log($next.eq());
+                var $navIndex = $(this).attr('class').split(' ')[1];
                 $this.find('.active-dot-blue').removeClass('active-dot-blue');
-                $this.find('.slider-dot.slide' + i).addClass('active-dot-blue');
+                console.log('.slider-dot.' + $navIndex);
+                $this.find('.slider-dot.' + $navIndex).addClass('active-dot-blue');
             }, 8000);
         });
 
