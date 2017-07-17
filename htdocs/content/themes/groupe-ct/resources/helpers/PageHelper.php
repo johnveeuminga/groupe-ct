@@ -205,7 +205,7 @@ class PageHelper
     public static function parse_excerpt($words, $max)
     {
         if (strlen($words) > $max) {
-            $pos = strpos((string) $words, ' ', 200);
+            $pos = strpos((string) $words, ' ', $max);
             $words = substr($words, 0, $pos) . ' ...';
         }
 
