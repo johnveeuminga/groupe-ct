@@ -5,7 +5,7 @@
             @if (is_array($block->get_field('bloc_6_1_icon')))
                 <div class="three-col-icons-img-container">
                     @if (!empty($block->get_field('bloc_6_1_cta_link')))
-                        <a href="{{ $block->get_field('bloc_6_1_cta_link') }}" {{ $block->get_field('bloc_6_1_cta_blank') ? 'target="blank"' : '' }}>
+                        <a class="three-col-icons-img-container-link" href="{{ $block->get_field('bloc_6_1_cta_link') }}" {{ $block->get_field('bloc_6_1_cta_blank') ? 'target="blank"' : '' }}>
                     @endif
                     <img class="three-col-icons-img" src="{{ $block->get_field('bloc_6_1_icon')['url'] }}" alt="{{ $block->get_field('bloc_6_1_icon')['alt'] }}" >
                     @if (!empty($block->get_field('bloc_6_1_cta_link')))
@@ -30,7 +30,7 @@
             @if (is_array($block->get_field('bloc_6_2_icon')))
                 <div class="three-col-icons-img-container">
                     @if (!empty($block->get_field('bloc_6_2_cta_link')))
-                        <a href="{{ $block->get_field('bloc_6_2_cta_link') }}" {{ $block->get_field('bloc_6_2_cta_blank') ? 'target="blank"' : '' }}>
+                        <a class="three-col-icons-img-container-link" href="{{ $block->get_field('bloc_6_2_cta_link') }}" {{ $block->get_field('bloc_6_2_cta_blank') ? 'target="blank"' : '' }}>
                     @endif
                     <img class="three-col-icons-img" src="{{ $block->get_field('bloc_6_2_icon')['url'] }}" alt="{{ $block->get_field('bloc_6_2_icon')['alt'] }}" >
                     @if (!empty($block->get_field('bloc_6_2_cta_link')))
@@ -56,7 +56,7 @@
             @if (is_array($block->get_field('bloc_6_3_icon')))
                 <div class="three-col-icons-img-container">
                     @if (!empty($block->get_field('bloc_6_3_cta_link')))
-                        <a href="{{ $block->get_field('bloc_6_3_cta_link') }}" {{ $block->get_field('bloc_6_3_cta_blank') ? 'target="blank"' : '' }}>
+                        <a class="three-col-icons-img-container-link" href="{{ $block->get_field('bloc_6_3_cta_link') }}" {{ $block->get_field('bloc_6_3_cta_blank') ? 'target="blank"' : '' }}>
                     @endif
                     <img class="three-col-icons-img" src="{{ $block->get_field('bloc_6_3_icon')['url'] }}" alt="{{ $block->get_field('bloc_6_3_icon')['alt'] }}" >
                     @if (!empty($block->get_field('bloc_6_3_cta_link')))
