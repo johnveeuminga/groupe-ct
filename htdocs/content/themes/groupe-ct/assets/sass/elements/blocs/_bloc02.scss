@@ -12,7 +12,7 @@
 
   .slide-container {
     @include flexbox();
-    @include flex-direction(column);
+    @include flex-direction(row);
 
     position: absolute;
     width: 100%;
