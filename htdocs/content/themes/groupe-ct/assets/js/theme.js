@@ -30,8 +30,8 @@
                 $('html, body').animate({scrollTop: $(target).position().top - 15}, 'slow');
             }
 
-            console.log($(target).hasClass('open-toggle-content'));
-            console.log($(target).prev());
+            console.log($(target).find('.open-toggle-content').length > 0);
+            console.log($(target).find('.open-toggle-content').prev());
             if ($(target).find('.open-toggle-content').length > 0 && $(target).find('.open-toggle-content').prev().hasClass('toggle-triangle') === false) {
                 $(target).trigger('click');
             }
