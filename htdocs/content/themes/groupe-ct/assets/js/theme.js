@@ -192,7 +192,8 @@
 
                 $next.addClass('active-slide');
                 $this.find('.active-dot-blue').removeClass('active-dot-blue');
-                $('.slider-dot.slide' + i).addClass('active-dot-blue');
+                console.log($('.slider-dot.slide' + i));
+                $this.find('.slider-dot.slide' + i).addClass('active-dot-blue');
             }, 8000);
         });
 
