@@ -29,6 +29,10 @@
             } else {
                 $('html, body').animate({scrollTop: $(target).position().top - 15}, 'slow');
             }
+
+            if ($(target).hasClass('open-toggle-content') && $(target).prev().hasClass('toggle-triangle') === false) {
+                $(target).trigger('click');
+            }
         });
 
 
