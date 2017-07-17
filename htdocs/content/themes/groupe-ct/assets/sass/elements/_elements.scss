@@ -180,6 +180,9 @@ main {
   &:hover {
     opacity: 0.8;
   }
+  &:focus {
+    outline: 0;
+  }
 }
 
 .contact-link-cta, .news-read-more-cta{
