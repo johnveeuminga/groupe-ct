@@ -100,9 +100,10 @@
       /*** ROW #1 ***/
       .contact-row:nth-child(1){
         .select-container {
-          @include flex-basis(17%);
+          //
           @media (min-width: $screen-sm-min) {
             margin-right:3%;
+            @include flex-basis(17%);
           }
           background: url($assets + "/images/icon/icon-arrow.png") no-repeat 85% 50%;
         }
@@ -114,18 +115,25 @@
         }
 
         input {
-          @include flex-basis(35%);
+
+          @media (min-width: $screen-sm-min) {
+            @include flex-basis(35%);
+          }
         }
       }
       /*** ROW #2 **/
       .contact-row:nth-child(2){
         input {
-          @include flex-basis(45%);
-        }
-        .select-container {
-          @include flex-basis(48%);
 
           @media (min-width: $screen-sm-min) {
+            @include flex-basis(45%);
+          }
+        }
+        .select-container {
+
+
+          @media (min-width: $screen-sm-min) {
+            @include flex-basis(48%);
             margin-left:3%;
           }
           background: url($assets + "/images/icon/icon-arrow.png") no-repeat 85% 50%;
@@ -136,13 +144,19 @@
           }
         }
         input {
-          @include flex-basis(45%);
+
+          @media (min-width: $screen-sm-min) {
+            @include flex-basis(45%);
+          }
         }
       }
 
       .contact-row:nth-child(3) {
         input {
-          @include flex-basis(100%);
+
+          @media (min-width: $screen-sm-min) {
+            @include flex-basis(100%);
+          }
         }
       }
 
@@ -185,6 +199,7 @@
       }
 
       @include placeholder(18px, $mada, 300, white, 0.6);
+
 
     }
 
