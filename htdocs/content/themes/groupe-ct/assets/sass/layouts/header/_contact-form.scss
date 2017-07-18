@@ -5,22 +5,43 @@
 
     position: absolute;
 
-    max-height: 90vh;
+
+    //height:100%;
     overflow-y: auto;
-    //bottom:-799px;
+
     transition: 0.5s;
     right: -2000px;
     &.slide-in {
+      position: fixed;
+      top: 0;
       right:0;
     }
     &.sticky {
-      position: fixed;
-      top: 0;
+      //position: fixed;
+      //top: 0;
+      //width:70%;
+
+      @media (min-width: $screen-sm-min) {
+        max-height: 90vh;
+        padding:40px;
+      }
     }
     z-index: 9999;
-    width:620px;
+
     background-color: $black;
-    padding:40px;
+    padding:20px;
+
+    @media (min-width: $screen-xs-min) {
+      width:70vw!important;
+    }
+    @media (min-width: $screen-sm-min) {
+      width:620px;
+    }
+
+    .contact-form-inner-container {
+      width:100%;
+      -ms-overflow-style:none;
+    }
 
     .contact-form-title {
       @extend .poppins20SemiBoldWhite;
@@ -184,9 +205,12 @@
 
         .check-container{
           @include flexbox();
-          @include flex-basis(60%);
+          @include flex-basis(100%);
           @extend .mada18LightWhite;
           padding-right: 15px;
+          @media (min-width: $screen-sm-min) {
+            @include flex-basis(60%);
+          }
         }
         .submit-btn {
 
