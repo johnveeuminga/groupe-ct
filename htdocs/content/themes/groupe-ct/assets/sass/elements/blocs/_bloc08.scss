@@ -7,11 +7,13 @@
   }
 
   .toggle-content-header {
+    position: relative;
 
-    @include flexbox();
-    @include justify-content(space-between);
-    @include align-items(center);
+    //@include flexbox();
+    //@include justify-content(space-between);
+    //@include align-items(center);
     @include background-transition();
+
     height:75px;
     padding: 0px 15px;
     &:not(.environnement-hybride .environnement-numerique) {
@@ -55,6 +57,7 @@
       }
     }
     .toggle-content-title {
+
       @include set-font(18px, $poppins, 600, white);
       margin-left:5px;
       @media (min-width: $screen-xs-min) {
@@ -65,14 +68,20 @@
 
     }
 
+
+
     .toggle-content-carret {
-      @include rotate(0);
-      @include transition(transform 0.6s ease);
+
+      //@include rotate(0);
+     // @include transition(transform 0.6s ease);
+      //position: absolute;
+      //right:20px;
+      //top:25px;
     }
 
 
     .toggle-carret {
-      @include rotate(180);
+     // @include rotate(180);
     }
 
 

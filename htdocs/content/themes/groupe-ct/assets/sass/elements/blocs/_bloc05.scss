@@ -69,6 +69,7 @@
 
   .img-container {
     max-width: 580px;
+    width:100%;
     margin: auto;
     padding: 0;
     @media (min-width: $screen-sm-min) {
@@ -104,6 +105,7 @@
     }
 
     .text {
+      width:100%;
       @include set-font(20px, $poppins, 300, white);
       line-height: 30px;
       @media (min-width: $screen-sm-min) {

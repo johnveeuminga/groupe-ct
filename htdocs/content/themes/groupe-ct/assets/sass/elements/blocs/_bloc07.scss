@@ -2,9 +2,10 @@
 
   margin: 45px auto 0;
 
-  @include flexbox();
-  @include flex-direction(column);
+  //@include flexbox();
+  //@include flex-direction(column);
   @media (min-width: $screen-sm-min) {
+    @include flexbox();
     @include flex-direction(row);
     @include flex-wrap(wrap);
     @include align-items(baseline);
@@ -25,9 +26,9 @@
     text-align: center;
 
     @media (min-width: $screen-md-min) {
-      @include flexbox();
-      @include flex-direction(column);
-      @include align-items(center);
+      //@include flexbox();
+      //@include flex-direction(column);
+      //@include align-items(center);
     }
 
 

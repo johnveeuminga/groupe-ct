@@ -30,12 +30,16 @@
     }
 
   }
+  .inner-container {
+    width:100%;
+  }
 
   .contact-title {
     @extend .poppins30BoldWhite;
     margin:15px 0;
     text-transform: uppercase;
     line-height: 40px;
+
     @media (min-width: $screen-md-min) {
       margin-top:60px;
       margin-bottom:15px;

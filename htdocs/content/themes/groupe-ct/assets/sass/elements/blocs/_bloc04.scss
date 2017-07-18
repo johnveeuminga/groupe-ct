@@ -6,7 +6,8 @@
 
   .four-col-icons-container {
 
-    //@include flexbox();
+    @include flexbox();
+    @include flex-wrap(wrap);
     //@include flex-direction(column);
 
     @media (min-width: $screen-sm-min) {
@@ -40,13 +41,14 @@
 
       @media (min-width: $screen-sm-min) {
         max-width: 130px;
-        //@include flexbox();
-        //@include align-items(flex-end);
       }
 
       img {
         @include center-img(50%, 50%);
-        max-width: 100%;
+        max-width: 90px;
+        @media (min-width: $screen-sm-min) {
+          max-width: 130px;
+        }
       }
     }
 

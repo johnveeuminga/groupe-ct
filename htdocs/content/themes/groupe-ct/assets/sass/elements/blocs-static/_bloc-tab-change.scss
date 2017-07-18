@@ -15,15 +15,16 @@
     @include flex-direction(column);
     padding: 60px 25px;
     position: relative;
+    @include flex-basis(100%);
 
     @media (min-width: $screen-sm-min) {
       @include flex-direction(row);
     }
 
 
-    @include flex-basis(100%);
     @media (min-width: 1240px) {
       @include flex-direction(column);
+      min-height:690px;
       @include flex-basis(33%);
       padding: 33px 40px;
     }
@@ -38,9 +39,11 @@
     @include flex-wrap(wrap);
     @include align-items(center);
 
+    @include justify-content(center);
 
     @media (max-width: 1240px - 1) {
       width: 100%;
+
       @include justify-content(center);
       .tab-change-img-container,
       h2 {
@@ -184,7 +187,7 @@
     background-color: $blue01;
     border-bottom: 2px solid #05355f;
 
-    @media1240px {
+    @media (min-width: 1240px) {
       border-right: 2px solid #05355f;
       border-bottom:none;
     }
