@@ -103,12 +103,13 @@
       @include justify-content(space-between);
       @include align-content(center);
       margin-top:20px;
-      margin-bottom:0px;
+
     }
     @media (min-width: $screen-md-min) {
 
       @include flex-direction(row-reverse);
       margin-top:50px;
+      margin-bottom:0px;
     }
 
     .social-media-container {
