@@ -23,13 +23,13 @@
 
       @media (min-width: $screen-sm-min) {
         max-height: 90vh;
-        padding:40px;
+        //padding:40px;
       }
     }
     z-index: 9999;
 
     background-color: $black;
-    padding:20px;
+    padding:40px;
 
     @media (min-width: $screen-xs-min) {
       width:70vw!important;
