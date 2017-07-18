@@ -63,6 +63,18 @@ main {
   }
 }
 
+//Reset input for IE
+
+select::-ms-expand {
+  display: none;
+}
+
+textarea {
+  -ms-overflow-style: none;
+}
+
+
+
 //Reset flexboxgrid
 .container-fluid {
   padding:0!important;

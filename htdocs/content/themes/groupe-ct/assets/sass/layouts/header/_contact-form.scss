@@ -66,6 +66,12 @@
 
       }
 
+      select::-ms-expand {
+        display: none;
+      }
+
+      -ms-overflow-style: none;
+
       textarea:focus, input:focus, select:focus, .select2-selection:focus{
         outline: none;
       }
