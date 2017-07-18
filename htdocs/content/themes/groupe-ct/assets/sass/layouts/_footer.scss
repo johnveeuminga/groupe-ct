@@ -97,11 +97,13 @@
     @include flexbox();
     @include flex-direction(column);
 
+    margin-bottom:40px;
 
     @media (min-width: $screen-sm-min) {
       @include justify-content(space-between);
       @include align-content(center);
       margin-top:20px;
+      margin-bottom:0px;
     }
     @media (min-width: $screen-md-min) {
 
