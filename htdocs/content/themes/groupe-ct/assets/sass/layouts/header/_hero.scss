@@ -16,11 +16,11 @@
 
     @media (min-width: $screen-sm-min) {
       min-height: 470px;
+
     }
 
     @media (min-width: $screen-xxl-min) {
       min-height: 570px;
-
     }
 
     background-repeat: no-repeat;
@@ -136,6 +136,13 @@
   .hero-content-container {
     max-width: 100%;
     width: 100%;
+
+    @media (min-width: $screen-md-min) {
+      padding-top:80px;
+    }
+    @media (min-width: $screen-lg-min) {
+      padding-top:0px;
+    }
 
     .hero-content {
       position: absolute;
