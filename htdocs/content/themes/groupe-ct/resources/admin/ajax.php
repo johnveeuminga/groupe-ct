@@ -1,4 +1,7 @@
 <?php
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
+
 require __DIR__ . '/../../../../../../vendor/autoload.php';
 use Mailgun\Mailgun;
 
@@ -66,6 +69,9 @@ Ajax::listen('newsletter', function() {
 });
 
 Ajax::listen('contact', function() {
+    error_reporting(E_ALL);
+    ini_set('display_errors', 1);
+
     $to = 'ventes@ctgroupect.com';
 
     $subject = 'Demande d\'information - formulaire Contact du site Web';
