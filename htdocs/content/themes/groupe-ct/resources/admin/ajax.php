@@ -1,4 +1,20 @@
 <?php
+require __DIR__ . '/../../../../../../vendor/autoload.php';
+use Mailgun\Mailgun;
+
+function sendMessage($to, $subject, $text) {
+    //Your credentials
+    $mg = new Mailgun("key-3b091c2b4257fc6514c32cbf97d191fc");
+    $domain = "www.groupect.com";
+
+    $mg->sendMessage($domain, array(
+            'from'=>'donotreply@groupect.com',
+            'to'=> $to,
+            'subject' => $subject,
+            'text' => $text
+        )
+    );
+}
 
 Ajax::listen('newsletter', function() {
 
@@ -88,9 +104,9 @@ Ajax::listen('contact', function() {
         $to = ['michael.villeneuve@ctrlweb.ca', ' JFRivard@ctgroupect.com', 'marketing@ctgroupect.com', 'j-f.rivard@hotmail.com'];
     }
 
-    $headers = array('Content-Type: text/html; charset=UTF-8','From: Groupe CT Website <donotreply@groupect.com');
-    wp_mail( $to, $subject, $body, $headers );
-
+//    $headers = array('Content-Type: text/html; charset=UTF-8','From: Groupe CT Website <donotreply@groupect.com');
+//    wp_mail( $to, $subject, $body, $headers );
+    sendMessage('michael.villenevue@ctrlweb.ca', $subject, $body);
     die();
 });
 
