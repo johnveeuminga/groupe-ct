@@ -31,9 +31,6 @@
     background-color: $black;
     padding:40px;
 
-    @media (min-width: $screen-xs-min) {
-      width:70vw!important;
-    }
     @media (min-width: $screen-sm-min) {
       width:620px;
     }
