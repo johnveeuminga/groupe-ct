@@ -323,9 +323,10 @@
     }
 
     .slider-hero-dot {
-      background-image: url($assets + '/images/icon/bullet_hero_inactive.png');
+      background-image: url($assets + '/images/icon/bullet_hero_inactive.svg');
       background-repeat: no-repeat;
       background-position: left;
+      background-size: 15px 15px;
       width: 21px;
       height: 21px;
       display: block;
@@ -348,8 +349,8 @@
 
 
         &.active-hero-slide {
-        background-image: url($assets + '/images/icon/bullet_hero_active.png');
-
+        background-image: url($assets + '/images/icon/bullet_hero_active.svg');
+        background-size: 21px 21px;
         &:after {
           content: ' ';
           position: absolute;
