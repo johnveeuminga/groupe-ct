@@ -177,12 +177,16 @@ select::-ms-expand {
   @include set-font(15px, $poppins, 700, $blue );
   text-transform: uppercase;
   position: relative;
+  height:40px;
   @include flexbox();
   @include align-items(center);
   @include transition(all 0.25s ease);
   &:after {
-    content:url($assets + "/images/icon/icon-cta-arrow-blue.png");
+    content:url($assets + "/images/icon/icon-cta-arrow-blue.svg");
     margin-left: 20px;
+    display: block;
+    width:32px;
+
   }
   &:hover {
     opacity: 0.8;
@@ -512,3 +516,5 @@ select::-ms-expand {
     color: $red!important;
   }
 }
+
+

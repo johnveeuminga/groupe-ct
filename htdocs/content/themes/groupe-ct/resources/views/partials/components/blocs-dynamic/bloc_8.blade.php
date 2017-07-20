@@ -6,7 +6,7 @@
                     @if ($collapse['bloc_8_icon'])<span class="icon-container"><img class="title-icon" src="{{ $collapse['bloc_8_icon']['url'] }}" alt="{{ $collapse['bloc_8_icon']['alt'] }}"></span>@endif
                     <h3 class="toggle-content-title" href="">{{ $collapse['bloc_8_title'] }}</h3>
                 </div>
-                <img class="toggle-content-carret @if($collapse['bloc_8_active']) toggle-carret @endif" src="{{ themosis_assets() }}/images/icon/icon-chevron-white.png" alt="">
+                <img class="toggle-content-carret @if($collapse['bloc_8_active']) toggle-carret @endif" src="{{ themosis_assets() }}/images/icon/icon-chevron-white.svg" alt="">
                 <div class="triangle-blue @if($collapse['bloc_8_active']) toggle-triangle @endif"></div>
                 <a class="open-toggle-content" href="#"></a>
             </div>

@@ -199,6 +199,7 @@
       border:1px solid $grey-light;
       @include border-radius(2px);
       @extend .mada18LightBlack;
+
     }
 
     select::-ms-expand {
@@ -278,7 +279,9 @@
   }
 
   .form-container select {
-    background: url($assets + "/images/icon/icon-arrow-black.png") no-repeat 95% 50%;
+    background: url($assets + "/images/icon/icon-chevron-black-down.svg") no-repeat 95% 50%;
+    background-size:24px 24px;
+
   }
 
   .form-submit {
@@ -406,6 +409,7 @@
           @include flex-basis(100%);
           .mention {
             //margin-left: 10px;
+
           }
         }
 
@@ -429,7 +433,7 @@
 
       .opening:first-of-type {
         @media (min-width: $screen-xs-min) {
-          margin-right:20px;
+          //margin-right:20px;
         }
         @media (min-width: $screen-sm-min) {
           margin-right:0px;
@@ -450,6 +454,7 @@
     .form-right-container {
 
       #assistance-msg {
+        width:100%;
         @media (min-width: $screen-sm-min) {
           width:100%;
           min-height:370px;
@@ -612,8 +617,9 @@
     .form-right-container {
 
       #fourniture-msg {
+        width: 100%;
         @media (min-width: $screen-sm-min) {
-          width: 100%;
+
           min-height: 370px;
         }
       }
@@ -636,7 +642,22 @@
     }
     .form-submit {
       width: 100%;
-      flex-direction: row-reverse;
+
+      //@include flexbox();
+      @include flex-direction(column);
+      margin-top:30px;
+      text-align: center;
+
+      @media (min-width: $screen-sm-min) {
+        @include justify-content(space-between);
+        @include align-items(flex-end);
+      }
+      @media (max-width: $screen-sm-min - 1) {
+        flex-wrap: wrap;
+      }
+      .mention {
+        margin-top:15px;
+      }
     }
   }
   /*** FORM 4 ***/
@@ -720,3 +741,4 @@
   }
 
 }//SECTION END
+

@@ -34,8 +34,8 @@
     @media (min-width: $screen-xs-min) {
       width:70vw!important;
     }
-    @media (min-width: $screen-sm-min) {
-      width:620px;
+    @media (min-width: $screen-md-min) {
+      width:620px!important;
     }
 
     .contact-form-inner-container {
@@ -49,6 +49,12 @@
       margin-bottom:30px;
       margin-top: 0;
       width: 100%;
+    }
+
+    .arrow-right {
+      width:21px;
+      @include rotate(90);
+      opacity: 0.6;
     }
 
     .close-contact-form {
@@ -136,7 +142,7 @@
            @include flex-basis(17%);
            border:1px solid white;
            margin-right:3%;
-           background: url($assets + "/images/icon/icon-arrow.png") no-repeat 85% 50%;
+           background: url($assets + "/images/icon/icon-chevron-white-down.svg") no-repeat 85% 50%;
            background-color: transparent;
         }
 
@@ -144,7 +150,9 @@
           @include flex-basis(17%);
           border:1px solid white;
           margin-right:3%;
-          background: url($assets + "/images/icon/icon-arrow.png") no-repeat 85% 50%;
+          //background: url($assets + "/images/icon/icon-arrow.png") no-repeat 85% 50%;
+          background: url($assets + "/images/icon/icon-chevron-white-down.svg") no-repeat 85% 50%;
+          background-size: 24px;
           color: rgba(255, 255, 255, 0.6);
 
           option {
@@ -171,8 +179,10 @@
           @include flex-basis(50.5%);
           border:1px solid white;
           margin-right:3%;
-          background: url($assets + "/images/icon/icon-arrow.png") no-repeat 85% 50%;
+          background: url($assets + "/images/icon/icon-chevron-white-down.svg") no-repeat 95% 50%;
+          background-size: 24px;
           color: rgba(255, 255, 255, 0.6);
+
 
           option {
               background-color: #222;
