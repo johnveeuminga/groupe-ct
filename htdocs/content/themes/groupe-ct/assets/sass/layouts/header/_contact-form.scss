@@ -144,6 +144,7 @@
            margin-right:3%;
            background: url($assets + "/images/icon/icon-chevron-white-down.svg") no-repeat 85% 50%;
            background-color: transparent;
+
         }
 
         select {
@@ -151,8 +152,11 @@
           border:1px solid white;
           margin-right:3%;
           //background: url($assets + "/images/icon/icon-arrow.png") no-repeat 85% 50%;
-          background: url($assets + "/images/icon/icon-chevron-white-down.svg") no-repeat 85% 50%;
-          background-size: 24px;
+          background: url($assets + "/images/icon/icon-chevron-white-down.svg") no-repeat 95% 50%;
+          background-size: 24px 24px;
+          @media (min-width: $screen-sm-min) {
+            background-position: 85% 50%;
+          }
           color: rgba(255, 255, 255, 0.6);
 
           option {
@@ -180,7 +184,7 @@
           border:1px solid white;
           margin-right:3%;
           background: url($assets + "/images/icon/icon-chevron-white-down.svg") no-repeat 95% 50%;
-          background-size: 24px;
+          background-size: 24px 24px;
           color: rgba(255, 255, 255, 0.6);
 
 

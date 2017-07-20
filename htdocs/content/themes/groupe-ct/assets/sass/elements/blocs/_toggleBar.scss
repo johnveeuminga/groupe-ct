@@ -8,7 +8,8 @@
 .toggle-content-header {
 
   @include flexbox();
-  @include justify-content(space-between);
+  //@include justify-content(space-between);
+
   @include align-items(center);
   height:60px;
   padding: 0px 10px;
@@ -23,6 +24,7 @@
   .title-container{
     @include flexbox();
     @include align-items(center);
+
   }
   .toggle-content-title {
     @include set-font(20px, $poppins, 600, white);
@@ -32,16 +34,29 @@
     text-transform: uppercase;
     width:250px;
     @media (min-width: $screen-xs-min) {
-      width:400px;
+      //width:400px;
     }
     @media (min-width: $screen-sm-min) {
-      width:500px;
+     // width:500px;
     }
     @media (min-width: $screen-md-min) {
-      width:700px;
+     // width:700px;
     }
   }
 
+  .toggle-title-container {
+    //border: 1px solid red;
+  }
+
+  .toggle-content-carret {
+    //border: 1px solid red;
+    position: absolute;
+    right:15px;
+    top:19px;
+    @media (min-width: $screen-sm-min) {
+      right:5px;
+    }
+  }
 
   .triangle-blue {
     border-top: 30px solid $blue;
