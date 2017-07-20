@@ -2,7 +2,13 @@
 <!-- Generator: Adobe Illustrator 21.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 575 401" style="enable-background:new 0 0 575 401;" xml:space="preserve">
-<style type="text/css">
+	<defs>
+	<style>
+		@import url('https://fonts.googleapis.com/css?family=Poppins:400,600');
+	</style>
+</defs>
+
+	<style type="text/css">
 	.st0{fill:#2E87BC;}
 	.st1{fill:#1D5572;}
 	.st2{fill:#3A6A86;}
@@ -14,8 +20,9 @@
 	.st8{fill:#FFFFFF;stroke:#FFFFFF;stroke-width:0.9362;stroke-miterlimit:10;}
 	.st9{fill:#FFFFFF;}
 	.st10{fill:#FFFFFF;stroke:#FFFFFF;stroke-width:1.2482;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
-	.st11{font-family:'Poppins-SemiBold';}
+	.st11{font-family:'Poppins', sans-serif;}
 	.st12{font-size:28.1043px;}
+	.st13{font-weight:600;}
 </style>
 <g>
 	<polygon class="st0" points="0,102.7 0,0 575,0 575,102.7 288,144.8 	"/>
@@ -111,7 +118,7 @@
 		c0.2-0.3,0.4-0.6,0.4-0.9v-56h1.8v59.1L167.2,371.6L167.2,371.6z M214.8,376.3h-42.9v-2.2h39.5c0.3,0,0.6-0.1,0.9-0.4
 		c0.2-0.3,0.4-0.6,0.4-0.9v-55.7h2.1L214.8,376.3L214.8,376.3z"/>
 </g>
-<text transform="matrix(1 0 0 1 246.2288 80.7286)" class="st9 st11 st12">Papier</text>
-<text transform="matrix(1 0 0 1 246.2288 220.7878)" class="st9 st11 st12">Hybride</text>
-<text transform="matrix(1 0 0 1 246.2288 354.1615)" class="st9 st11 st12">Numérique</text>
+<text transform="matrix(1 0 0 1 246.2288 80.7286)" class="st9 st11 st12 st13">Papier</text>
+<text transform="matrix(1 0 0 1 246.2288 220.7878)" class="st9 st11 st12 st13">Hybride</text>
+<text transform="matrix(1 0 0 1 246.2288 354.1615)" class="st9 st11 st12 st13">NumÃ©rique</text>
 </svg>

@@ -34,6 +34,18 @@
   z-index: 1;
 }
 
+.timeline-event-container:nth-child(odd) {
+  .timeline-dot-container {
+      margin-left: 2px;
+  }
+}
+
+.timeline-event-container:nth-child(even) {
+  .timeline-dot-container {
+      margin-right:1px;
+  }
+}
+
 .timeline-event-main-container{
   @include flexbox();
   @include flex-direction(column);
@@ -43,24 +55,14 @@
   margin-bottom: 30px;
 
   .timeline-dot-container {
-    margin-left: 1px;
     position: relative;
-    &:before {
-      content: '';
-      position: absolute;
 
-      width:32px;
-      height:32px;
-      -webkit-filter: drop-shadow( -5px -5px 5px #000 );
-      filter: drop-shadow( -5px -5px 5px #000 );
-    }
     .timeline-dot {
-        width:34px;
-      //text-shadow: 3px -3px 15px rgba(150, 150, 150, 1);
-      //box-shadow: 2px 2px 50px 2px rgba(0,0,0,0.55);
-      //-webkit-svg-shadow: 0 0 7px #000;
+        width:30px;
+        height:32px;
     }
   }
+
 
   .timeline-event-container {
     @include flexbox();
