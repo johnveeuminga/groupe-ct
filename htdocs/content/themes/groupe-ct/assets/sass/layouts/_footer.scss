@@ -125,8 +125,11 @@
         display: block;
         position: relative;
 
+
         .social-icon{
           margin-left:15px;
+          width:60px;
+          height:60px;
         }
         .social-icon.over {
           opacity: 0;

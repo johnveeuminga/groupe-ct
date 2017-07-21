@@ -8,8 +8,9 @@
 	.st2{fill:#3F748E;}
 	.st3{fill:#FFFFFF;stroke:#FFFFFF;stroke-width:1.5045;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
 	.st4{fill:#FFFFFF;}
-	.st5{font-family:'Poppins-SemiBold';}
+	.st5{font-family:'Poppins', sans-serif;}
 	.st6{font-size:33.874px;}
+	.st7{font-weight:600;}
 </style>
 <g>
 	<polygon class="st0" points="496.9,182 0,182 48.1,90.8 0,0 496.9,0 545,90.8 	"/>
@@ -49,5 +50,5 @@
 			s4.8,2.2,4.8,4.8C216.4,118.7,214.3,120.9,211.6,120.9z"/>
 	</g>
 </g>
-<text transform="matrix(1 0 0 1 256.4085 107.6132)" class="st4 st5 st6">Hybrid</text>
+<text transform="matrix(1 0 0 1 256.4085 107.6132)" class="st4 st5 st6 st7">Hybrid</text>
 </svg>

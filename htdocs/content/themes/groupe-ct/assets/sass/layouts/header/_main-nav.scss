@@ -12,10 +12,10 @@
   }
 
   .nav-logo-container {
-    background-image: url($assets + "images/logo/logo-ct.png");
+    background-image: url($assets + "images/logo/logo-ct.svg");
     background-position: 50% bottom;
     background-repeat: no-repeat;
-    background-size: 150px;
+    background-size: 140px 120px;
     @include transition(all 0.25s ease);
     @media (max-width: 1110px) {
       background-size: 180px;
@@ -83,7 +83,10 @@
       position: relative;
       color:$black;
       &:before {
-        content:url($assets + "/images/icon/icon-account.png");
+        content:url($assets + "/images/icon/icon-account.svg");
+        background-size: 24px 24px;
+        width:25px;
+        height:24px;
         position: absolute;
         left:-15px;
         top:-5px;

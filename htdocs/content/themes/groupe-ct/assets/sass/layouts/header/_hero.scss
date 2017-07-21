@@ -103,6 +103,8 @@
 
   .hero-arrow {
     display: block;
+
+
     @include center-img(50%, 0%);
     @media (min-width: $screen-sm-min) {
       margin-top:100px;
@@ -281,6 +283,8 @@
     }
 
     .hero-arrow {
+      width:80px;
+      height:80px;
       margin-top: 25px;
       display: none;
       @media (min-width: $screen-md-min) {

@@ -50,6 +50,7 @@
   .menu-item {
     @include flexbox();
     @include align-items(center);
+    //border: 1px solid red;
     &:hover {
       .arrow-hover {
         visibility: visible;

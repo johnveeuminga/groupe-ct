@@ -68,6 +68,10 @@ main {
 select::-ms-expand {
   display: none;
 }
+//Reset input for FIREFOX
+select {
+  -moz-appearance:none;
+}
 
 
 //Reset flexboxgrid
@@ -222,7 +226,10 @@ select::-ms-expand {
 .brochure-download-pdf-blue {
   @extend .brochure-download-pdf;
   &:after {
-    content: url($assets + "/images/icon/pdf_dl_blue.png");
+    content: url($assets + "/images/icon/pdf_dl_blue.svg");
+    width:44px;
+    height:32px;
+    display: block;
   }
 }
 
@@ -232,7 +239,10 @@ select::-ms-expand {
   background-color: $blue;
   padding: 10px 30px;
   &:after {
-    content: url($assets + "/images/icon/pdf_dl_white.png");
+    content: url($assets + "/images/icon/pdf_dl_white.svg");
+    width:44px;
+    height:32px;
+    display: block;
   }
 }
 
