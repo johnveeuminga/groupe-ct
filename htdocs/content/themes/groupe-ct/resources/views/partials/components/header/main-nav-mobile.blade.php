@@ -1,5 +1,5 @@
 <div id="menu-mobile" class="main-nav-mobile-container">
-    <a class="close-menu-btn" href="#"><img src="{{ themosis_assets() }}/images/icon/icon-arrow.png" alt=""></a>
+    <a class="close-menu-btn" href="#"><img src="{{ themosis_assets() }}/images/icon/icon-chevron-white.svg" alt=""></a>
     <div class="nav-content-container mobile">
         <nav class="nav-bottom">
             <ul class="nav-link-container">

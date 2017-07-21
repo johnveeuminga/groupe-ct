@@ -68,6 +68,10 @@ main {
 select::-ms-expand {
   display: none;
 }
+//Reset input for FIREFOX
+select {
+  -moz-appearance:none;
+}
 
 
 //Reset flexboxgrid
@@ -177,12 +181,16 @@ select::-ms-expand {
   @include set-font(15px, $poppins, 700, $blue );
   text-transform: uppercase;
   position: relative;
+  height:40px;
   @include flexbox();
   @include align-items(center);
   @include transition(all 0.25s ease);
   &:after {
-    content:url($assets + "/images/icon/icon-cta-arrow-blue.png");
+    content:url($assets + "/images/icon/icon-cta-arrow-blue.svg");
     margin-left: 20px;
+    display: block;
+    width:32px;
+
   }
   &:hover {
     opacity: 0.8;
@@ -218,7 +226,10 @@ select::-ms-expand {
 .brochure-download-pdf-blue {
   @extend .brochure-download-pdf;
   &:after {
-    content: url($assets + "/images/icon/pdf_dl_blue.png");
+    content: url($assets + "/images/icon/pdf_dl_blue.svg");
+    width:44px;
+    height:32px;
+    display: block;
   }
 }
 
@@ -228,7 +239,10 @@ select::-ms-expand {
   background-color: $blue;
   padding: 10px 30px;
   &:after {
-    content: url($assets + "/images/icon/pdf_dl_white.png");
+    content: url($assets + "/images/icon/pdf_dl_white.svg");
+    width:44px;
+    height:32px;
+    display: block;
   }
 }
 
@@ -512,3 +526,5 @@ select::-ms-expand {
     color: $red!important;
   }
 }
+
+

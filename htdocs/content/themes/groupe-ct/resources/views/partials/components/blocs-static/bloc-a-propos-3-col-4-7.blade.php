@@ -3,7 +3,7 @@
     <div class="contact-container">
         <div class="inner-container">
             <div class="about-img-container">
-                <img class="contact-icon" src="{{ themosis_assets() }}/images/icon/icon-help.png" alt="">
+                <img class="contact-icon" src="{{ themosis_assets() }}/images/icon/icon-help.svg" alt="">
             </div>
             <h2 class="contact-title">{!!  pll__('Demander<br/>conseil') !!}</h2>
             <p class="contact-text">{!! nl2br(pll__('Contact nous joindre col 1')) !!}</p>
@@ -14,7 +14,7 @@
     <div class="contact-container">
         <div class="inner-container">
             <div class="about-img-container">
-                <img class="contact-icon" src="{{ themosis_assets() }}/images/icon/icon-assist.png" alt="">
+                <img class="contact-icon" src="{{ themosis_assets() }}/images/icon/icon-assist.svg" alt="">
             </div>
             <h2 class="contact-title">{{ pll__('Assistance technique') }}</h2>
             <p class="contact-text">{!! nl2br(pll__('Contact nous joindre col 2')) !!}</p>
@@ -25,7 +25,7 @@
     <div class="contact-container">
         <div class="inner-container">
             <div class="about-img-container">
-                <img class="contact-icon" src="{{ themosis_assets() }}/images/icon/icon-fourniture.png" alt="">
+                <img class="contact-icon" src="{{ themosis_assets() }}/images/icon/icon-fourniture.svg" alt="">
             </div>
             <h2 class="contact-title">{{ pll__('Commande de fournitures') }}</h2>
             <p class="contact-text">{!! nl2br(pll__('Contact nous joindre col 3')) !!}</p>

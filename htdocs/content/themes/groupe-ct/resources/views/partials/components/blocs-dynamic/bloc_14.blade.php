@@ -4,7 +4,7 @@
         <div class="toggle-title-container">
             <h3 class="toggle-content-title" href="#">{{ $block->get_field('bloc_14_collapse_title') }}</h3>
         </div>
-        <img class="toggle-content-carret toggle-carret" src="{{ themosis_assets() }}/images/icon/icon-chevron-white.png" alt="">
+        <img class="toggle-content-carret toggle-carret" src="{{ themosis_assets() }}/images/icon/icon-chevron-white.svg" alt="">
         <div class="triangle-blue toggle-triangle"></div>
         <a class="open-toggle-content" href="#"></a>
     </div>

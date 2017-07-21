@@ -80,10 +80,12 @@
     display: block;
     &:after {
       position: absolute;
-      top:-1px;
+      top:-3px;
       right:0;
-      content:url($assets + "/images/icon/icon-cta-arrow-white.png");
-
+      content:url($assets + "/images/icon/icon-cta-arrow-white.svg");
+      display: block;
+      width:32px;
+      height:20px;
     }
   }
 }

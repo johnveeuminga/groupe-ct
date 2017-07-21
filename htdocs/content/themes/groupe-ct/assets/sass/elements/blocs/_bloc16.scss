@@ -34,6 +34,18 @@
   z-index: 1;
 }
 
+.timeline-event-container:nth-child(odd) {
+  .timeline-dot-container {
+      margin-left: 2px;
+  }
+}
+
+.timeline-event-container:nth-child(even) {
+  .timeline-dot-container {
+      margin-right:1px;
+  }
+}
+
 .timeline-event-main-container{
   @include flexbox();
   @include flex-direction(column);
@@ -43,8 +55,14 @@
   margin-bottom: 30px;
 
   .timeline-dot-container {
-    margin-left: 1px;
+    position: relative;
+
+    .timeline-dot {
+        width:30px;
+        height:32px;
+    }
   }
+
 
   .timeline-event-container {
     @include flexbox();

@@ -40,7 +40,7 @@
         </a>
         <div class="contact-us-text">
             <span>{{ pll__('CONTACTEZ-NOUS') }}</span>
-            <img class="icon-arrow" src="{{ themosis_assets() }}/images/icon/icon-arrow.png" alt="arrow contact us">
+            <img class="icon-arrow" src="{{ themosis_assets() }}/images/icon/icon-chevron-white-down.svg" alt="arrow contact us">
         </div>
 
     </div>

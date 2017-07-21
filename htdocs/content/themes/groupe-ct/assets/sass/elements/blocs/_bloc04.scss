@@ -43,12 +43,16 @@
         max-width: 130px;
       }
 
-      img {
+      .four-col-icons-img {
+
         @include center-img(50%, 50%);
-        max-width: 90px;
+        max-width: 100px;
+        max-height:100px;
+
         @media (min-width: $screen-sm-min) {
           max-width: 130px;
         }
+
       }
     }
 
