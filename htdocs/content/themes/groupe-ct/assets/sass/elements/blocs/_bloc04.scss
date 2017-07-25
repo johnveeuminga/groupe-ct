@@ -40,17 +40,17 @@
       height: 90px;
 
       @media (min-width: $screen-sm-min) {
-        max-width: 130px;
+        max-width: 90px;
       }
 
       .four-col-icons-img {
 
         @include center-img(50%, 50%);
-        max-width: 100px;
-        max-height:100px;
+        max-width: 80px;
+        max-height:80px;
 
         @media (min-width: $screen-sm-min) {
-          max-width: 130px;
+          max-width: 90px;
         }
 
       }
