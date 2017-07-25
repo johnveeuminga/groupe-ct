@@ -1,7 +1,10 @@
 @if (get_post_type(get_the_ID()) === 'post')
     <style scoped>
-        .hero-title-container, .hero-page {
+        .hero-title-container{
             display: none;
+        }
+        .hero-page {
+            height:0;
         }
     </style>
 @endif

@@ -111,6 +111,8 @@
     padding: 0;
   }
   .publication-container {
+    width:100%;
+
     @media (min-width: $screen-md-min) {
       width:calc(100%/3);
     }
@@ -121,13 +123,28 @@
       }
     }
   }
+  .publication-img-container {
+    width:100%;
+    min-height:260px;
 
+  }
   .image-pub {
     margin-bottom: 30px;
+
+  }
+
+  .publication-text-container {
+
+    @media (min-width: 1200px) {
+      min-height: 600px;
+    }
+
+
   }
 
   .publication-text {
     margin: 10px 0 20px;
+
   }
 
   .publication-date {
