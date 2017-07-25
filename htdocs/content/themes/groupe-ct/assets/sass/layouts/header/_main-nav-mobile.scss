@@ -147,7 +147,7 @@
   .menu-item {
     position: relative;
     width:90%;
-
+    z-index: 10;
   }
 
   .sub-menu-trigger, .sub-sub-menu-trigger {
@@ -155,9 +155,10 @@
     display: block;
     right:15px;
     top:-11px;
-    z-index: 10;
+
     width: 35px;
     height:35px;
+    z-index: 100;
   }
 
   .fa-plus-circle,.fa-minus-circle {
@@ -211,7 +212,7 @@
   top: 80px;
   @include transition(all 0.6s ease);
   @media (min-width: $screen-md-min) {
-    top: 0
+    top: 0;
   }
 }
 
