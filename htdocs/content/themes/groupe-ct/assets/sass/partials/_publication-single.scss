@@ -3,14 +3,19 @@
   .publication-container {
     @include flexbox();
     @include flex-direction(column);
-    //
-    //padding-top:50px;
+
+
   }
 
 
   .publication-page-title-container, .other-publication-title-container {
     text-align: center;
-
+    @media (min-width: $screen-sm-min) {
+      padding-top:80px;
+    }
+    @media (min-width: $screen-xs-min) {
+      padding-top:0px;
+    }
     .page-title {
       @extend .poppins44BoldBlack;
       text-transform: uppercase;
