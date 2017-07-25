@@ -7,7 +7,7 @@
             </div>
             <h2 class="contact-title">{{ pll__('À l\'avant-garde depuis 1987') }}</h2>
             <p class="contact-text">{!! nl2br(pll__('Contact a propos col 1')) !!}</p>
-            <a class="contact-link-cta" href="{{ PageHelper::get_page_permalink(PageHelper::PAGE_4_3_HISTORIQUE) }}"><img class="contact-cta" src="{{ themosis_assets() }}/images/icon/icon-cta-arrow-white.png" alt=""></a>
+            <a class="contact-link-cta" href="{{ PageHelper::get_page_permalink(PageHelper::PAGE_4_3_HISTORIQUE) }}"><img class="contact-cta" src="{{ themosis_assets() }}/images/icon/icon-cta-arrow-white.svg" alt=""></a>
         </div>
     </div>
 
@@ -18,7 +18,7 @@
             </div>
             <h2 class="contact-title">{{ pll__('Une équipe engagée') }}</h2>
             <p class="contact-text">{!! nl2br(pll__('Contact a propos col 2')) !!}</p>
-            <a class="contact-link-cta" href="{{ PageHelper::get_page_permalink(PageHelper::PAGE_4_4_EQUIPE) }}"><img class="contact-cta" src="{{ themosis_assets() }}/images/icon/icon-cta-arrow-white.png" alt=""></a>
+            <a class="contact-link-cta" href="{{ PageHelper::get_page_permalink(PageHelper::PAGE_4_4_EQUIPE) }}"><img class="contact-cta" src="{{ themosis_assets() }}/images/icon/icon-cta-arrow-white.svg" alt=""></a>
         </div>
     </div>
 
@@ -29,7 +29,7 @@
             </div>
             <h2 class="contact-title">{!!  pll__('Nos<br/>sociétés') !!}</h2>
             <p class="contact-text">{!! nl2br(pll__('Contact a propos col 3')) !!}</p>
-            <a class="contact-link-cta" href="{{ PageHelper::get_page_permalink(PageHelper::PAGE_4_2_DIVISIONS) }}"><img class="contact-cta" src="{{ themosis_assets() }}/images/icon/icon-cta-arrow-white.png" alt=""></a>
+            <a class="contact-link-cta" href="{{ PageHelper::get_page_permalink(PageHelper::PAGE_4_2_DIVISIONS) }}"><img class="contact-cta" src="{{ themosis_assets() }}/images/icon/icon-cta-arrow-white.svg" alt=""></a>
         </div>
     </div>
 
