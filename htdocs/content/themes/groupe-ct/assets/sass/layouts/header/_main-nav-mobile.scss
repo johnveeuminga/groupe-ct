@@ -21,10 +21,10 @@
   .top-bar-logo-container {
     height:75px;
     width: 75px;
-    background-image: url($assets + "images/logo/logo-ct.png");
+    background-image: url($assets + "images/logo/logo-ct.svg");
     background-position: 50% 50%;
     background-repeat: no-repeat;
-    background-size: 70px;
+    background-size: 70px 70px;
 
   }
 
@@ -182,14 +182,19 @@
   .nav-top .link-account{
     @include flexbox();
     @include align-items(center);
-    //margin-right:25px;
     padding-right: 0;
     position: relative;
     color:$black;
-
+    margin-left:25px;
     &:before {
-      content:url($assets + "/images/icon/icon-account.png");
-      position: relative;
+      content:url($assets + "/images/icon/icon-account.svg");
+      background-size: 24px 24px;
+      width:25px;
+      height:24px;
+
+      position: absolute;
+      top:-7px;
+      left:-28px;
       padding-right:5px;
     }
   }

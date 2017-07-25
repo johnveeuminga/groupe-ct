@@ -77,13 +77,13 @@
             <div class="social-media-container">
 
                 <a class="social-link" href="https://www.linkedin.com/company/ct-conseil-et-technologie" target="_blank">
-                    <img class="social-icon" src="{{ themosis_assets() }}/images/icon/icon-linked.png" alt="">
-                    <img class="social-icon over" src="{{ themosis_assets() }}/images/icon/icon-over-linked.png" alt="">
+                    <img class="social-icon" src="{{ themosis_assets() }}/images/icon/icon-linked.svg" alt="">
+                    <img class="social-icon over" src="{{ themosis_assets() }}/images/icon/icon-over-linked.svg" alt="">
                 </a>
 
                 <a class="social-link" href="https://www.facebook.com/GroupeCT/" target="_blank">
-                    <img class="social-icon" src="{{ themosis_assets() }}/images/icon/icon-fb.png" alt="">
-                    <img class="social-icon over" src="{{ themosis_assets() }}/images/icon/icon-over-fb.png" alt="">
+                    <img class="social-icon" src="{{ themosis_assets() }}/images/icon/icon-fb.svg" alt="">
+                    <img class="social-icon over" src="{{ themosis_assets() }}/images/icon/icon-over-fb.svg" alt="">
                 </a>
 
             </div>

@@ -114,7 +114,7 @@
             function() {
                 var $navIndex = $(this).attr('class').split(' ')[1];
                 $(this).removeClass('hide-from-screen');
-                console.log($('.nav-link.' + $navIndex));
+
                 $('.nav-link.' + $navIndex).siblings('.menu-item-triangle').addClass('show-arrow');
             }, function() {
                 var $navIndex = $(this).attr('class').split(' ')[1];

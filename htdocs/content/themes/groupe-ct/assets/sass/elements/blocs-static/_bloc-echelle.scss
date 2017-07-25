@@ -41,6 +41,7 @@
       top: -15px;
       left: 0px;
       height:0;
+
       @include transform(scale(0));
       //@include transform()
       @include transition(transform 1s ease);
@@ -48,7 +49,9 @@
         display: block;
         transition: 0.5s;
         left: -15px;
+        top:-5px;
         height:auto;
+        width:500px;
         @include transform(scale(1));
       }
 
@@ -59,17 +62,27 @@
       }
     }
 
+    #hover-papier {
+      left: 0%;
+    }
 
     #hover-hybride {
       left: 30%;
+      top: 5px!important;
     }
     #hover-numerique {
-      left: 63%
+      left: 59%
     }
 
 
     #echelle-background-image {
       width: 100%;
+    }
+
+    #hover-papier.slide-in,
+    #hover-papier.active {
+      left: 0%;
+      z-index: 400;
     }
 
     #hover-hybride.slide-in,

@@ -19,7 +19,7 @@
         <div class="tab-change-container tc03">
             <div class="tab-change-title-container">
                 <div class="tab-change-img-container">
-                    <img class="tab-change-icon" src="{{ themosis_assets() }}/images/icon/icon-planif.png" alt="">
+                    <img class="tab-change-icon" src="{{ themosis_assets() }}/images/icon/icon-planif.svg" alt="">
                 </div>
 
                 <h2 class="tab-change-title">{{ pll__('PLANIFICATION') }}</h2>
@@ -44,7 +44,7 @@
         <div class="tab-change-container tc03">
             <div class="tab-change-title-container">
                 <div class="tab-change-img-container">
-                    <img class="tab-change-icon" src="{{ themosis_assets() }}/images/icon/icon-install.png" alt="">
+                    <img class="tab-change-icon" src="{{ themosis_assets() }}/images/icon/icon-install.svg" alt="">
                 </div>
 
                 <h2 class="tab-change-title">{{ pll__('EXÉCUTION ET INSTALLATION') }}</h2>
@@ -66,7 +66,7 @@
         <div class="tab-change-container tc03">
             <div class="tab-change-title-container">
                 <div class="tab-change-img-container">
-                    <img class="tab-change-icon" src="{{ themosis_assets() }}/images/icon/icon-formation.png" alt="">
+                    <img class="tab-change-icon" src="{{ themosis_assets() }}/images/icon/icon-formation.svg" alt="">
                 </div>
 
                 <h2 class="tab-change-title">{{ pll__('FORMATION') }}</h2>
