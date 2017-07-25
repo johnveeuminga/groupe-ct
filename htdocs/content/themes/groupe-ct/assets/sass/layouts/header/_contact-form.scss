@@ -51,6 +51,7 @@
       margin-bottom:30px;
       margin-top: 0;
       width: 100%;
+
     }
 
     .arrow-right {
@@ -61,6 +62,7 @@
 
     .close-contact-form {
       float: right;
+      padding-bottom:15px;
       @extend .poppins20SemiBoldWhite;
       text-transform: uppercase;
     }
