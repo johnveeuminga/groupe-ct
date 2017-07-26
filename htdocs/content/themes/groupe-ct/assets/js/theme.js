@@ -45,14 +45,15 @@
         $('#menu-btn').on('click', function () {
             $('.main-nav-mobile-container').addClass('menu-mobile-active');
             $('#global-container').addClass('move-global');
-            $('body').addClass('body-no-scroll');
+            //$('body').addClass('body-no-scroll');
+
         });
 
 
         $('.close-menu-btn').on('click', function () {
             $('.main-nav-mobile-container').removeClass('menu-mobile-active');
             $('#global-container').removeClass('move-global');
-            $('body').removeClass('body-no-scroll');
+            //$('body').removeClass('body-no-scroll');
         });
 
         // TOGGLE SUB MENU FIRST LEVEL

@@ -112,7 +112,9 @@ Ajax::listen('contact', function() {
 
 //    $headers = array('Content-Type: text/html; charset=UTF-8','From: Groupe CT Website <donotreply@groupect.com');
 //    wp_mail( $to, $subject, $body, $headers );
-    sendMessage($to, $subject, $body);
+   // sendMessage($to, $subject, $body);
+    sendMessage($to, $subject, htmlspecialchars_decode($body));
+
     die();
 });
 
@@ -156,7 +158,8 @@ Ajax::listen('assistance', function() {
     }
 
     $headers = array('Content-Type: text/html; charset=UTF-8','From: Groupe CT Website <donotreply@groupect.com');
-    sendMessage($to, $subject, $body);
+    //sendMessage($to, $subject, $body);
+    sendMessage($to, $subject, htmlspecialchars_decode($body));
 
     echo json_encode([
         'status' => 'success'
@@ -208,7 +211,9 @@ Ajax::listen('fourniture', function() {
     }
 
     $headers = array('Content-Type: text/html; charset=UTF-8','From: Groupe CT Website <donotreply@groupect.com');
-    sendMessage($to, $subject, $body);
+    //echo htmlspecialchars_decode($body);
+    //die();
+    sendMessage($to, $subject, htmlspecialchars_decode($body));
 
     echo json_encode([
         'status' => 'success'

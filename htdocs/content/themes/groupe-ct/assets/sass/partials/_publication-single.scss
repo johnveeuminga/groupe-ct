@@ -3,13 +3,26 @@
   .publication-container {
     @include flexbox();
     @include flex-direction(column);
-    //
-    //padding-top:50px;
+
+
   }
 
 
   .publication-page-title-container, .other-publication-title-container {
     text-align: center;
+    padding-top:0px;
+
+    @media (min-width: $screen-sm-min) {
+      //padding-top:80px;
+    }
+    @media (min-width: $screen-md-min) {
+      padding-top:80px;
+    }
+
+    @media (min-width: 1200px) {
+      padding-top:0px;
+    }
+
 
     .page-title {
       @extend .poppins44BoldBlack;
@@ -25,6 +38,7 @@
     border-bottom:1px solid $grey-light;
     padding: 18px 0;
     margin: 30px 0;
+    position: relative;
     @media (min-width: $screen-sm-min) {
       margin-top: 50px;
     }
@@ -40,6 +54,7 @@
   .link-pub-list {
     position: absolute;
     left: 50%;
+    top:40%;
   }
 
   .link-pub-list:before {
@@ -47,13 +62,20 @@
     position: absolute;
     left:-30px;
     top:-5px;
+    @media (min-width: $screen-sm-min) {
+
+    }
   }
 
   .cta-pub-left, .cta-pub-right {
 
     color:transparent;
+    width:25%;
+    height:25px;
+
     @media (min-width: $screen-sm-min) {
       color:$blue;
+      width:auto;
     }
 
     text-transform: uppercase;
@@ -63,15 +85,28 @@
   }
 
   .cta-pub-left:before {
-    content:url($assets + "/images/icon/icon-cta-arrow-blue.png");
+    content:url($assets + "/images/icon/icon-cta-arrow-blue.svg");
     @include rotate(180);
     margin-right:10px;
     margin-top:-5px;
+    width:15px;
+    display: block;
+
+    @media (min-width: $screen-sm-min) {
+      width:25px;
+    }
+
   }
+
   .cta-pub-right:after {
-    content:url($assets + "/images/icon/icon-cta-arrow-blue.png");
+    content:url($assets + "/images/icon/icon-cta-arrow-blue.svg");
     margin-left:10px;
     margin-top:2px;
+    width:15px;
+    display: block;
+    @media (min-width: $screen-sm-min) {
+      width:25px;
+    }
   }
 }
 
@@ -98,6 +133,8 @@
     padding: 0;
   }
   .publication-container {
+    width:100%;
+
     @media (min-width: $screen-md-min) {
       width:calc(100%/3);
     }
@@ -108,13 +145,28 @@
       }
     }
   }
+  .publication-img-container {
+    width:100%;
+    min-height:260px;
 
+  }
   .image-pub {
     margin-bottom: 30px;
+
+  }
+
+  .publication-text-container {
+
+    @media (min-width: 1200px) {
+      min-height: 600px;
+    }
+
+
   }
 
   .publication-text {
     margin: 10px 0 20px;
+
   }
 
   .publication-date {

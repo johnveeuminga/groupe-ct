@@ -23,7 +23,16 @@
 
   .stats-icon-container {
     height:100px;
+    width:100px;
+    position: relative;
+    img {
+      max-width:100px;
+      @include center-img(50%, 50%);
+    }
+
   }
+
+
 
   .stats-number-container {
     margin-top:60px;
