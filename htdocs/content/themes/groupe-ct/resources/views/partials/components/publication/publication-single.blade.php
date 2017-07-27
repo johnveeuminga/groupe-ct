@@ -39,7 +39,7 @@
                 @else
                     <span></span>
                 @endif
-                <a class="publication-nav-item link-pub-list" href="{{PageHelper::get_page_permalink(PageHelper::PAGE_5_0_PUBLICATIONS) }}">{{ pll__('liste') }}</a>
+                <a class="publication-nav-item link-pub-list" href="{{PageHelper::get_page_permalink(PageHelper::PAGE_5_0_PUBLICATIONS) }}">{{ pll__('Liste') }}</a>
                 @if (get_next_post())
                     <a class="publication-nav-item cta-pub-right" href="{{ get_permalink(get_next_post()) }}">{{ pll__('Publication suivante') }}</a>
                 @else
