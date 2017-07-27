@@ -1,7 +1,12 @@
 <section class="publication-single-main-container default-padding default-width">
     <div class="publication-container">
         <div class="publication-page-title-container">
-            <h2 class="page-title">{{ pll__('NOS PUBLICATIONS') }}</h2>
+
+            @if( pll_current_language() == "fr")
+                <h2 class="page-title">{{ pll__('NOS PUBLICATIONS') }}</h2>
+            @else
+                <h2 class="page-title">{{ pll__('OUR PUBLICATIONS') }}</h2>
+            @endif
         </div>
 
         <div class="publication-nav-container">
