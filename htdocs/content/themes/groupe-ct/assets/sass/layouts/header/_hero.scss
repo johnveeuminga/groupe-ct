@@ -79,26 +79,28 @@
       }
     }
 
-    .red-border:after {
-      content: "";
-      position: absolute;
-
-      z-index: -1;
-      left: 0;
-      border-bottom: 12px solid #a91b2d;
-      width: 98%;
-      margin: auto;
-      margin-left: 12px;
-
-      bottom: 17px;
-      @media (min-width: $screen-sm-min) {
-        bottom: 26px;
-      }
-
-      @media (min-width: $screen-xxl-min) {
-        bottom: 36px;
-      }
-    }
+    //.red-border:after {
+    //  content: "";
+    //  position: absolute;
+    //
+    //  z-index: -1;
+    //  left: 0;
+    //  border-bottom: 12px solid #a91b2d;
+    //  width: 98%;
+    //  margin: auto;
+    //  margin-left: 12px;
+    //
+    //  bottom: 17px;
+    //
+    //
+    //  @media (min-width: $screen-sm-min) {
+    //    bottom: 26px;
+    //  }
+    //
+    //  @media (min-width: $screen-xxl-min) {
+    //    bottom: 26px;
+    //  }
+    //}
   }
 
   .hero-arrow {
@@ -238,18 +240,17 @@
     }
   }
 
-  .red-border:after {
-    bottom: 17px;
-
-
-    @media (min-width: $screen-sm-min) {
-      bottom: 26px;
-    }
-
-    @media (min-width: $screen-xxl-min) {
-      bottom: 36px;
-    }
-  }
+  //.red-border:after {
+  //  bottom: 17px;
+  //
+  //  @media (min-width: $screen-sm-min) {
+  //    bottom: 26px;
+  //  }
+  //
+  //  @media (min-width: $screen-xxl-min) {
+  //    bottom: 36px;
+  //  }
+  //}
 
   .triangle {
     position: absolute;
