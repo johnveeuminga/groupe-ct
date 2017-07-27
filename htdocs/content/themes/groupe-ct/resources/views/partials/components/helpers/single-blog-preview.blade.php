@@ -8,7 +8,12 @@
             <p class="news-excerpt">{{ PageHelper::parse_excerpt(get_the_excerpt($post->ID), 100) }}</p>
         </div>
         <div class="news-footer">
-            <a href="{{ get_the_permalink($post->ID) }}" class="news-read-more-cta">{{ pll__('Lire la nouvelle') }}</a>
+
+            @if( pll_current_language() == "fr")
+                <a href="{{ get_the_permalink($post->ID) }}" class="news-read-more-cta">{{ pll__('Lire la nouvelle') }}</a>
+            @else
+                <a href="{{ get_the_permalink($post->ID) }}" class="news-read-more-cta">{{ pll__('Read the news') }}</a>
+            @endif
         </div>
     </div>
     <div class="overlay"></div>
