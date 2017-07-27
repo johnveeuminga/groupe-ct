@@ -2,7 +2,14 @@
 <div class="nav-content-container desktop row">
 
     <div class="nav-logo-container col-xs-2">
-        <a class="link-home" href="<?php echo get_home_url(); ?>"></a>
+
+
+            @if( pll_current_language() == "fr")
+                <a class="link-home" href="<?php echo get_home_url(); ?>"></a>
+            @else
+                <a class="link-home" href="<?php echo get_home_url(); ?>/en/home/"></a>
+            @endif
+
     </div>
     <div class="nav-container col-xs-8">
 
