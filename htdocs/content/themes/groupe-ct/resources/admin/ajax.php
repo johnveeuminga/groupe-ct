@@ -14,7 +14,7 @@ function sendMessage($to, $subject, $text) {
             'from'=>'donotreply@groupect.com',
             'to'=> $to,
             'subject' => $subject,
-            'text' => $text
+            'html' => $text
         )
     );
 }
