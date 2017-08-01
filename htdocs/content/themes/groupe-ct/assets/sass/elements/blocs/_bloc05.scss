@@ -72,6 +72,7 @@
     width:100%;
     margin: auto;
     padding: 0;
+
     @media (min-width: $screen-sm-min) {
       padding: 50px 0 0;
     }
@@ -93,7 +94,7 @@
     @include align-items(center);
     text-align: center;
     padding: 0 30px 30px;
-
+    margin:auto;
     @media (min-width: $screen-md-min) {
       padding: 0;
     }
