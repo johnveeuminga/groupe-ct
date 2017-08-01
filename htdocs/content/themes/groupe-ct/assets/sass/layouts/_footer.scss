@@ -6,6 +6,11 @@
   @media (min-width: $screen-md-min) {
     padding:100px 0 50px;
   }
+
+  .footer-inner-container {
+    padding:0 35px;
+  }
+
   .footer-top {
     @include flexbox();
     @include flex-direction(column);

@@ -1,5 +1,5 @@
 <div class="footer-main-container row">
-    <div class="col-xs-10 col-xs-offset-1">
+    <div class="footer-inner-container col-xs-12">
 
         <div class="footer-top">
             <nav class="footer-nav footer-nav-01">

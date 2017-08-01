@@ -118,17 +118,7 @@ select {
   @include animate-width(2s);
 }
 
-//.red-border:after {
-//    bottom: 12px;
-//
-//    @media (min-width: $screen-sm-min) {
-//      bottom: 18px;
-//    }
-//
-//    @media (min-width: $screen-xxl-min) {
-//      bottom: 26px;
-//    }
-//}
+
 
 .red-border:after {
   bottom: 6px;
