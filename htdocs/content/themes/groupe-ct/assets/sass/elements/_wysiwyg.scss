@@ -68,5 +68,21 @@
   }
   a:not(.btn-bloc2, .btn) {
     @extend .form-link;
+
+  }
+}
+.desc.align-center a {
+
+  width:80%;
+  margin:10px auto;
+  @media (min-width: $screen-sm-min) {
+    width:20%;
+  }
+}
+.desc.align-center p:last-of-type{
+
+  @media (min-width: $screen-sm-min) {
+    @include flexbox();
+    @include flex-direction(space-between);
   }
 }
