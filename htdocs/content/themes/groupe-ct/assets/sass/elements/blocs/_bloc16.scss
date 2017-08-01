@@ -38,8 +38,8 @@
   .timeline-dot-container {
     margin-left: 2px;
     @media (min-width: $screen-md-min) {
-      margin-left: 3px;
-
+      //margin-left: 4px;
+      margin-left: 2px;
     }
   }
 }
@@ -48,8 +48,9 @@
   .timeline-dot-container {
       margin-left:2px;
     @media (min-width: $screen-md-min) {
-      margin-right: 0px;
-
+      margin-left:0;
+      //margin-right: 3px;
+      margin-right: 1px;
     }
   }
 }
@@ -68,6 +69,10 @@
     .timeline-dot {
         width:30px;
         height:31px;
+      @media (min-width: $screen-md-min) {
+        width:30px;
+        height:30px;
+      }
     }
   }
 
