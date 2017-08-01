@@ -95,11 +95,19 @@ select {
 @import "typo";
 @import "wysiwyg";
 
+.red-border {
+  position: relative;
+
+  //border: 1px solid red;
+  display: inline-block;
+}
+
 .red-border:after {
   content:"";
   position: absolute;
   z-index: -1;
   left: 0;
+
   border-bottom: 6px solid #a91b2d;
   @media (min-width: $screen-sm-min) {
     border-bottom: 12px solid #a91b2d;
@@ -110,21 +118,30 @@ select {
   @include animate-width(2s);
 }
 
+//.red-border:after {
+//    bottom: 12px;
+//
+//    @media (min-width: $screen-sm-min) {
+//      bottom: 18px;
+//    }
+//
+//    @media (min-width: $screen-xxl-min) {
+//      bottom: 26px;
+//    }
+//}
+
 .red-border:after {
-    bottom: 12px;
-
-    @media (min-width: $screen-sm-min) {
-      bottom: 18px;
-    }
-
-    @media (min-width: $screen-xxl-min) {
-      bottom: 26px;
-    }
+  bottom: 6px;
+  @media (min-width: $screen-sm-min) {
+    bottom: 9px;
   }
 
-.red-border {
-  position: relative;
+  @media (min-width: $screen-xxl-min) {
+    bottom: 20px;
+  }
 }
+
+
 
 /***** BUTTONS & CTA *****/
 
