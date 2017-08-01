@@ -36,13 +36,21 @@
 
 .timeline-event-container:nth-child(odd) {
   .timeline-dot-container {
-      margin-left: 2px;
+    margin-left: 2px;
+    @media (min-width: $screen-md-min) {
+      margin-left: 3px;
+
+    }
   }
 }
 
 .timeline-event-container:nth-child(even) {
   .timeline-dot-container {
-      margin-right:1px;
+      margin-left:2px;
+    @media (min-width: $screen-md-min) {
+      margin-right: 0px;
+
+    }
   }
 }
 
@@ -59,7 +67,7 @@
 
     .timeline-dot {
         width:30px;
-        height:32px;
+        height:31px;
     }
   }
 
