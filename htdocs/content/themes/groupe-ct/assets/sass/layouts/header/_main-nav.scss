@@ -58,6 +58,7 @@
 
       li {
        @include flexbox();
+
       }
       .nav-link {
         text-decoration: none;
@@ -100,23 +101,25 @@
     }
     .nav-bottom .menu-item{
       @include flexbox();
+      position: relative;
       margin-left: 15px;
 
       @media (min-width: $screen-xxl-min){
         margin-left: 30px;
       }
-      position: relative;
+
     }
 
     .menu-item-triangle {
       display: none;
-      //border: 1px solid red;
-
       width: 160px;
       z-index: 1000;
-      @include center-img(50%,-20%);
+      @include center-img(50%,-15%);
       text-align: center;
       left: calc(50% - 30px);
+      @media (max-width: 1350px) {
+        top:18px;
+      }
       .triangle {
         padding: 0 50px;
         width: 120px;
