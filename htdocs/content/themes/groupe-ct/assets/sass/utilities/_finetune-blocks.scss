@@ -203,8 +203,10 @@
     display: flex;
     justify-content: center;
     color: $blue!important;
-    margin-top: 60px;
-
+    //margin-top: 60px;
+    @media (min-width: $screen-lg-min) {
+      margin-top: 60px;
+    }
     a {
       padding: 15px;
     }
