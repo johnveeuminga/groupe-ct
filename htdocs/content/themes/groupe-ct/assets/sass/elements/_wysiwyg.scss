@@ -83,8 +83,8 @@
     width:20%;
   }
 }
-.desc.align-center p:last-of-type{
 
+.desc.align-center .intro-btn-container {
   @media (min-width: $screen-sm-min) {
     @include flexbox();
     @include flex-direction(space-between);
