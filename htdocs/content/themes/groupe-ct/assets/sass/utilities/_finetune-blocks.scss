@@ -167,7 +167,8 @@
       @include set-font(44px, $poppins, 700, $black);
       @include font-size(27px);
       text-transform: uppercase;
-
+      //padding-bottom: 25px;
+      padding: 30px 0 25px;
       @media (min-width: $screen-sm-min) {
         @include font-size(32px);
         padding: 30px 0 0;
@@ -178,7 +179,7 @@
         //padding: 30px 0 20px;
         padding: 30px 0 20px;
       }
-      padding-bottom: 25px;
+
       @media (max-width: $screen-sm-min) {
         //padding-bottom: 0;
       }
