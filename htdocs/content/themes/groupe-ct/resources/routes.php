@@ -18,6 +18,10 @@ Route::any('template', [
     'page-2-2',
     'uses' => 'PageController@page_2_2'
 ]);
+Route::any('single', [
+    874,
+    'uses' => 'PageController@page_2_2'
+]);
 Route::any('template', [
     'page-2-3',
     'uses' => 'PageController@page_2_3'
