@@ -30,7 +30,7 @@
             <div class="pub-info-container">
                 <p class="publication-cat">{{ get_the_category(get_the_ID())[0]->name }}</p>
                 <h3 class="publication-title">{{ get_the_title() }}</h3>
-                <p class="publication-date">{{ get_the_date( 'd F Y', get_the_ID()) }}</p>
+                <p class="publication-date">{{ pll_current_language() === 'fr' ? get_the_date( 'd F Y', get_the_ID()) : get_the_date( 'F d Y', get_the_ID()) }}</p>
             </div>
             <div class="wysiwyg-container">
                 {!! wpautop(get_the_content(get_the_ID())) !!}
@@ -69,7 +69,7 @@
                     <p class="publication-cat">{{ get_the_category($post->ID)[0]->name }}</p>
                     <h3 class="publication-title">{{ get_the_title($post->ID) }}</h3>
                     @if (get_field('post_show_date', $post->ID))
-                        <p class="publication-date">{{ get_the_date( 'd F Y', $post->ID) }}</p>
+                        <p class="publication-date">{{ pll_current_language() === 'fr' ? get_the_date( 'd F Y', $post->ID) : get_the_date( 'F d Y', $post->ID) }}</p>
                     @endif
                     <p class="publication-text">
                         {{ get_the_excerpt($post->ID) }}

@@ -2,7 +2,7 @@
     <div class="news-inner-container">
         <div class="news-content">
             @if (get_field('post_show_date', $post->ID))
-                <p class="news-date">{{ get_the_date( 'd F Y', $post->ID) }}</p>
+                <p class="news-date">{{ pll_current_language() === 'fr' ? get_the_date( 'd F Y', $post->ID) : get_the_date( 'F d Y', $post->ID) }}</p>
             @endif
             <h2 class="news-title">{{ get_the_title($post->ID) }}</h2>
             <p class="news-excerpt">{{ PageHelper::parse_excerpt(get_the_excerpt($post->ID), 100) }}</p>

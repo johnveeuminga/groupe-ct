@@ -44,7 +44,7 @@
                         <p class="publication-cat">{{ $post->category }}</p>
                         <h3 class="publication-title">{{ $post->post_title }}</h3>
                         @if (get_field('post_show_date', $post->ID))
-                            <p class="publication-date">{{ get_the_date( 'd F Y', $post->ID) }}</p>
+                            <p class="publication-date">{{ pll_current_language() === 'fr' ? get_the_date( 'd F Y', $post->ID) : get_the_date( 'F d Y', $post->ID) }}</p>
                         @endif
                         <p class="publication-text">{!! $post->post_excerpt !!}</p>
                         <div class="cta-container">
