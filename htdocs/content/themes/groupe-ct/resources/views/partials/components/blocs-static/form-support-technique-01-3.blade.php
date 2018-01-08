@@ -14,13 +14,13 @@
                 <p>{{ nl2br(pll__('Accéder CT - Description')) }}</p>
             </div>
             <div class="form-content-container">
-                <div class="form-left-container col-sm-6">
+                <div class="form-left-container col-sm-6" style="margin:auto;">
                     <a class="my-ct-link primary-btn-blue" href="https://einfo.groupect.com/Gateway/Login?ReturnUrl=%2f" target="_blank">{{ pll__('Groupe CT') }}</a>
                 </div>
 
-                <div class="form-right-container col-sm-6">
-                    {{--<a class="my-ct-link primary-btn-blue" href="https://einfo.sacgroupect.com/Gateway/Login?ReturnUrl=%2f" target="_blank">{{ pll__('Solutions d\'affaires de la Capitale') }}</a>--}}
-                </div>
+                {{--<div class="form-right-container col-sm-6">
+                    <a class="my-ct-link primary-btn-blue" href="https://einfo.sacgroupect.com/Gateway/Login?ReturnUrl=%2f" target="_blank">{{ pll__('Solutions d\'affaires de la Capitale') }}</a>
+                </div>--}}
             </div>
         </form>
     </div>
