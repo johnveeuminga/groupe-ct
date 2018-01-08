@@ -19,7 +19,7 @@
                 </div>
 
                 <div class="form-right-container col-sm-6">
-                    <a class="my-ct-link primary-btn-blue" href="https://einfo.sacgroupect.com/Gateway/Login?ReturnUrl=%2f" target="_blank">{{ pll__('Solutions d\'affaires de la Capitale') }}</a>
+                    {{--<a class="my-ct-link primary-btn-blue" href="https://einfo.sacgroupect.com/Gateway/Login?ReturnUrl=%2f" target="_blank">{{ pll__('Solutions d\'affaires de la Capitale') }}</a>--}}
                 </div>
             </div>
         </form>

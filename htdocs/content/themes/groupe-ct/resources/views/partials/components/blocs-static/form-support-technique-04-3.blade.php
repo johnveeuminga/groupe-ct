@@ -30,8 +30,8 @@
                     <h3 class="item-title">{!! pll__('Montréal et les environs') !!} </h3>
                     <div class="item-info">
                         <p>T : <span><a href="tel:+18009673103">1 800 967-3103</a></span></p>
-                        <a href="mailto:service@ctgroupect.com">service@ctgroupect.com</a>
-                        <a href="mailto:fournitures@ctgroupect.com">fournitures@ctgroupect.com</a>
+                        <a href="mailto:service@groupect.com">service@groupect.com</a>
+                        <a href="mailto:fournitures@groupect.com">fournitures@groupect.com</a>
                     </div>
                 </div>
 
@@ -39,8 +39,8 @@
                     <h3 class="item-title">{!! pll__('Toronto et Ouest canadien') !!} </h3>
                     <div class="item-info">
                         <p>T : <span><a href="tel:+18004633271">1 800 463-3271</a></span></p>
-                        <a href="mailto:service@ctgroupect.com">service@ctgroupect.com</a>
-                        <a href="mailto:supplies@ctgroupect.com">supplies@ctgroupect.com</a>
+                        <a href="mailto:service@groupect.com">service@groupect.com</a>
+                        <a href="mailto:supplies@groupect.com">supplies@groupect.com</a>
                     </div>
                 </div>
 
@@ -48,8 +48,8 @@
                     <h3 class="item-title">{!! pll__('Québec') !!} </h3>
                     <div class="item-info">
                         <p>T : <span><a href="tel:+4186145301">418.614.5301</a></span></p>
-                        <a href="mailto:service@ctgroupect.com">service@ctgroupect.com</a>
-                        <a href="mailto:fournitures@sacgroupect.com">fournitures@sacgroupect.com
+                        <a href="mailto:service@groupect.com">service@groupect.com</a>
+                        <a href="mailto:fournitures@groupect.com">fournitures@groupect.com
                         </a>
                     </div>
                 </div>
@@ -58,7 +58,7 @@
                     <h3 class="item-title">{!! pll__('Beauce') !!} </h3>
                     <div class="item-info">
                         <p>T : <span><a href="tel:+18883893040">1 888 389-3040</a></span></p>
-                        <a href="mailto:support@sacgroupect.com">support@sacgroupect.com</a>
+                        <a href="mailto:support@groupect.com">support@groupect.com</a>
                     </div>
                 </div>
             </div>
