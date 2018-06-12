@@ -13,4 +13,9 @@ return [
     'Theme\\Providers\\' => themosis_path('theme.resources').'providers',
     ''  => themosis_path('theme.resources').'helpers',
 
+    /**
+     * WooCommerce related functions/actions.
+     */
+    'Theme\\WooCommerce\\' => themosis_path('theme.resources').'admin/woocommerce',
+
 ];

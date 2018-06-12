@@ -28,7 +28,9 @@
 
         <div class="publication-content-container">
             <div class="pub-info-container">
-                <p class="publication-cat">{{ get_the_category(get_the_ID())[0]->name }}</p>
+                @if(isset(get_the_category(get_the_ID())[0]))
+                    <p class="publication-cat">{{ get_the_category(get_the_ID())[0]->name }}</p>
+                @endif
                 <h3 class="publication-title">{{ get_the_title() }}</h3>
                 <p class="publication-date">{{ pll_current_language() === 'fr' ? get_the_date( 'd F Y', get_the_ID()) : get_the_date( 'F d Y', get_the_ID()) }}</p>
             </div>

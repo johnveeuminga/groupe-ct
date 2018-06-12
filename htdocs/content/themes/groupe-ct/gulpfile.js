@@ -116,13 +116,17 @@ var errorReport = function(err)
 // Sass
 // Compatibility with Bootstrap 3.3.7 Sass
 gulp.task('sass:dev', function () {
+    var tailwindcss = require('tailwindcss');
+
     return gulp.src(dirs.src + '/sass/*.scss')
     //.pipe(sourcemaps.init())
         .pipe(sass({
             outputStyle: 'compressed',
             precision: 10
         }).on('error', sass.logError))
-        .pipe(postcss([autoprefixer({
+        .pipe(postcss([
+            tailwindcss('./tailwind.js'),
+            autoprefixer({
             browsers: [
                 "Android 2.3",
                 "Android >= 4",
@@ -149,7 +153,9 @@ gulp.task('sass', function () {
             outputStyle: 'compressed',
             precision: 10
         }).on('error', sass.logError))
-        .pipe(postcss([autoprefixer({
+         .pipe(postcss([
+            tailwindcss('tailwind.js'),
+            autoprefixer({
             browsers: [
                 "Android 2.3",
                 "Android >= 4",
@@ -181,7 +187,7 @@ gulp.task('sass', function () {
 var config = Object.create(webpackConfig);
 
 //config.devtool = 'sourcemap';
-config.debug = true;
+// config.debug = true;
 
 var compiler = webpack(config);
 
@@ -236,12 +242,13 @@ gulp.task('watch', function()
 {
     bs.init({
         https: false,
-        proxy: 'groupe-ct.local',
+        proxy: 'staging-avec-git.local',
     });
 
     //gulp.watch(dirs.src + '/stylus/**/*.style', gulp.series('stylus:dev'));
     gulp.watch(dirs.src + '/sass/**/*.scss', gulp.series('sass:dev'));
     gulp.watch(dirs.src + '/js/**/*.js', gulp.series('webpack:dev')).on('change', bs.reload);
+    gulp.watch(dirs.src + '/js/**/*.vue', gulp.series('webpack:dev')).on('change', bs.reload);
 });
 
 /*------------*/

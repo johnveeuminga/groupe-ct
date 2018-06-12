@@ -9,7 +9,19 @@
  *
  */
 
+
 Route::any('front', 'PageController@index');
+Route::get('singular', ['job_offer', 'uses' => 'LightboxController@job_offer']);
+Route::get('singular', ['product', 'uses' => 'ProductController@single']);
+
+/**
+ * Custom WooCommerce product brand and product type route.
+ * i.e(/product/hp/printers).
+ */
+Route::get('products/brand/{brand}/{product_type}', 'ProductController@getProductsWithBrandType');
+Route::get('product-category/{product_cat}', 'ProductController@productSubCat');
+
+
 Route::any('template', [
     'page-2-1',
     'uses' => 'PageController@page_2_1'
@@ -18,7 +30,7 @@ Route::any('template', [
     'page-2-2',
     'uses' => 'PageController@page_2_2'
 ]);
-Route::any('single', [
+Route::get('single', [
     874,
     'uses' => 'PageController@page_2_2'
 ]);
@@ -36,6 +48,7 @@ Route::any('template', [
 ]);
 
 Route::any('page', 'PageController@index');
-Route::any('singular', ['job_offer', 'uses' => 'LightboxController@job_offer']);
-Route::any('single', 'PageController@publication');
+Route::get('single', 'PageController@publication');
+
+
 

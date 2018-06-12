@@ -38,6 +38,9 @@ class MainController extends BaseController
 
         Asset::add('lity-css', themosis_assets() . '/css/lity.min.css');
         Asset::add('lity-js',  themosis_assets() . '/js/lity.min.js', ['jquery'], '', false);
+
+        Asset::add('slick-css', '//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.css');
+        Asset::add('slick-js', '//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js', ['jquery'], '1.9.0', true);
     }
 
 

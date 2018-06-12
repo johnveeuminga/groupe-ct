@@ -1,5 +1,8 @@
-@import "utilities/reset";
+@tailwind preflight;
+@tailwind components;
+@tailwind utilities;
 
+@import "utilities/reset";
 
 @import "utilities/typography";
 @import "utilities/variables";
@@ -24,4 +27,5 @@
 @import "pages/template-2-1";
 @import "pages/template-2-2";
 @import "pages/template-2-3";
-
+@import "pages/product-brand-index";
+@import "pages/product-single";

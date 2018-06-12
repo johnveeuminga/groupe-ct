@@ -1,5 +1,6 @@
 var webpack = require('webpack'),
     path = require('path');
+    vueloader = require('vue-loader/lib/plugin');
 
 module.exports = {
     cache: true,
@@ -13,11 +14,25 @@ module.exports = {
         filename: '[name].min.js'
     },
     module: {
-        loaders: [
+        rules: [
+            {
+                test: /\.vue$/,
+                loader: 'vue-loader',
+            },
             {
                 test: /\.js$/,
                 exclude: /node_modules/,
-                loader: 'babel-loader'
+                loader: 'babel-loader',
+                query: {
+                   presets: ['es2015', ]
+                }
+            },
+            {
+                test: /\.css$/,
+                use: [
+                    'vue-style-loader',
+                    'css-loader'
+                ]
             }
         ]
     },
@@ -35,6 +50,12 @@ module.exports = {
             $: "jQuery",
             backbone: "Backbone",
             underscore: "_"
-        })
-    ]
+        }),
+        new vueloader()
+    ],
+    resolve: {
+        alias: {
+            'vue$': 'vue/dist/vue.esm.js'
+        }
+    }
 };

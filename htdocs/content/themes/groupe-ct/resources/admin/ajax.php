@@ -267,3 +267,62 @@ Ajax::listen('upload-file', function() {
     }
     die();
 });
+
+Ajax::listen('get-products', function(){
+    $result = [];
+    if(isset($_GET['filters'])){
+        $filter_array = json_decode(stripslashes($_GET['filters']));
+
+        $attributes = [];
+        foreach($filter_array as $index=>$filter_group){
+            if(!empty($filter_group)){
+                $values = [];
+                foreach($filter_group as $filter){
+                    $values[] = $filter;
+                }
+
+                $attributes[] = [
+                    'taxonomy' => $index,
+                    'field' => 'term_id',
+                    'terms' => $values,
+                ];
+            }  
+        }
+
+        $args = [
+            'post_type' => 'product',
+        ];
+
+        if($attributes){
+            $args['tax_query'] = ['relation' => 'AND', $attributes];
+        }
+
+        $query = new WP_Query($args);
+
+        if(!$query->posts){
+            $result['data'] = '<p class="font-sans-mada text-center text-lg py-4 w-full font-bold">No Products according to search</p>';
+        }else{
+            ob_start();
+        ?>
+            <?php foreach($query->posts as $product): ?>
+                <div class="col-md-3 product-brand__products-col">
+                    <div class="product-brand__product my-8">
+                        <img src="<?php echo get_the_post_thumbnail_url($product->ID)?>" alt="<?php echo $product->post_title?>" class="w-100 block">
+                        <a href="<?php echo get_the_permalink($product->ID); ?>" class="font-sans-mada text-blue text-lg">
+                            <?php echo $product->post_title; ?>
+                        </a>
+                    </div>
+                </div>
+            <?php
+            endforeach;
+            $result['data'] = ob_get_clean();
+        }
+             
+    }else{
+        $result['error'] = true;
+        die();
+    }
+
+    echo json_encode($result);
+    die();
+});

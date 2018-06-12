@@ -37,7 +37,7 @@
 		</style>
 	@endif
 </head>
-<body>
+<body <?php body_class(); ?>>
 	<!-- Google Tag Manager (noscript) -->
 	<noscript>
 		<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N49C66Q" height="0" width="0" style="display:none;visibility:hidden"></iframe>
@@ -102,8 +102,6 @@
 		<!-- include footer -->
         @include('templates.footer')
 	</div>
-
     <?php wp_footer(); ?>
-
 </body>
 </html>
